@@ -123,6 +123,20 @@ Not established:
 
 For V12, the safest division is: use the analytical (m)-pole as the geometry-independent baseline; derive dimensionless FEM correction amplitudes and phases at explicit radii from the saved P4 solutions; validate reduced-field trajectories against the native P4 controls; and keep the V11 XY/phase maps as exact finite-time FEM-informed validation slices rather than acceptance statistics.
 
+## V12 field-strength normalization audit
+
+For equal 250 V electrode peaks, the h50 angular RMS RF field per applied volt is strongly radius dependent. At `r=4 mm`, A is `47.8887 V m⁻¹ V⁻¹` while C is `15.8434 V m⁻¹ V⁻¹` (A/C=`3.02`). At `r=7.5 mm`, A is `353.962` and C is `367.233 V m⁻¹ V⁻¹` (C/A=`1.037`). Thus the equal-peak scan is a valid voltage-protocol comparison, but it is not a global equal-effective-field comparison and cannot establish a radius-independent strength ranking.
+
+The V12 `matched` protocol states its rule and reference radius explicitly. B uses `250√2 = 353.553390593 V` to match the leading m=4 pseudopotential of rotating A. Real C matches the full angular RMS of both RF field quadratures of real A at `r_ref`; the ideal m=6 control instead matches the leading-mode RMS field of ideal A at the same radius. h50 voltages for `A=250 V` are:
+
+| `r_ref` | B and ideal B | Real FEM C, full field match | Ideal m=6 C, leading-mode match |
+|---:|---:|---:|---:|
+| 2 mm | 353.553 V | 3020.080 V | 3020.070 V |
+| 4 mm | 353.553 V | 755.658 V | 755.018 V |
+| 6 mm | 353.553 V | 342.778 V | 335.563 V |
+
+The several-fold shift with `r_ref` follows the different radial growth of m=4 and m=6 fields, with smaller corrections from the FEM higher harmonics. Matched results must be reported at 2, 4, and 6 mm as separate protocols; one radius cannot establish that one order is universally superior. Full-field and leading-mode voltages are recorded separately in each run's `model_coefficients.json`.
+
 ## New V12 paired h35/h50 acceptance-method pilot
 
 A new, deduplicated Sobol subset was run on the N48 h35 and h50 fields using the same eight physical starts for each model and mesh: equal peak 250 V, RF phase 0°, horizon 1000 RF periods, DOP853 `rtol=2e-10`, `max_step=T_RF/64`, four worker processes. All 48 trajectories completed. The retention classifications agreed for all 24 model/start mesh pairs: A retained 7/8, B 2/8, and C 8/8 on both meshes. This small subset is only a mesh-sensitivity pilot; it is not an acceptance estimate or evidence of indefinite retention.

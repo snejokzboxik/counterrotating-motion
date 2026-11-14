@@ -98,8 +98,17 @@ def _voltage_table(mesh: int, protocol: str, reference_mm: float) -> dict[str, f
     result = {name: 250.0 for name in ("A", "B", "C", "idealA", "idealB", "idealC")}
     result["B"] = result["idealB"] = 250.0 * math.sqrt(2.0)
     radius = reference_mm * 1e-3
-    result["C"] = result["idealC"] = 250.0 * math.sqrt(
+    # Real C is matched to the full real A field at r_ref. The ideal m=6
+    # control instead matches the leading-mode RMS field there, so the control
+    # isolates mode order without inheriting the FEM higher-mode correction.
+    result["C"] = 250.0 * math.sqrt(
         _angular_rf_strength(qa, radius) / _angular_rf_strength(qc, radius))
+    qa_lead_c, qa_lead_s = _active_coefficients(qa, "idealA")
+    qc_lead_c, qc_lead_s = _active_coefficients(qc, "idealC")
+    qa_lead = HarmonicQuadratures(qa_lead_c, qa_lead_s, qa.reference_radius)
+    qc_lead = HarmonicQuadratures(qc_lead_c, qc_lead_s, qc.reference_radius)
+    result["idealC"] = 250.0 * math.sqrt(
+        _angular_rf_strength(qa_lead, radius) / _angular_rf_strength(qc_lead, radius))
     return result
 
 
@@ -469,7 +478,8 @@ def main():
     p.add_argument("--models", default="A,B,C")
     p.add_argument("--meshes", default="35,50")
     p.add_argument("--scales", default="0.5,1,2")
-    p.add_argument("--protocol", choices=("equal", "matched"), default="equal")
+    p.add_argument("--protocol", choices=("equal", "matched"), default="equal",
+                   help="equal electrode peak voltage, or explicit field-strength matching: B at leading m=4; FEM C to total A RMS at reference radius; ideal C to leading-mode RMS")
     p.add_argument("--reference-mm", type=float, default=4.0)
     p.add_argument("--phase-deg", type=float, default=0.0,
                    help="fixed initial RF phase; use --phase-average to sample it uniformly")

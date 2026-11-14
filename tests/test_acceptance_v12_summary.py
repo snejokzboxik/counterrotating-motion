@@ -91,3 +91,15 @@ def test_paired_ratio_uses_ratio_of_mean_retention_fractions(tmp_path):
     pair = next(row)
     assert float(pair["ratio_of_mean_retention_fractions"]) == 2.0
     assert len(__import__("json").loads(pair["left_minus_right_retention_student_t_95pct_ci"])) == 2
+
+
+def test_matched_voltage_reports_radius_dependent_real_and_ideal_c():
+    at_2mm = MODULE._voltage_table(50, "matched", 2.0)
+    at_4mm = MODULE._voltage_table(50, "matched", 4.0)
+    at_6mm = MODULE._voltage_table(50, "matched", 6.0)
+
+    assert abs(at_4mm["B"] - 250.0 * 2**0.5) < 1e-10
+    assert abs(at_4mm["idealB"] - at_4mm["B"]) < 1e-12
+    assert at_2mm["C"] > at_4mm["C"] > at_6mm["C"]
+    assert at_6mm["C"] > at_6mm["idealC"]
+    assert abs(at_4mm["C"] - 755.6575062984871) < 1e-8
