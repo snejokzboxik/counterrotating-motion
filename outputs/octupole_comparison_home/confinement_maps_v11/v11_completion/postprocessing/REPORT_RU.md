@@ -23,7 +23,19 @@ XY с нулевой скоростью, 305 координат, равные 25
 
 Равные 250 В. Полные дисковые сетки 21/41/61 и измеренные переходы на рёбрах исходной сетки с шагом 0.25 мм.
 
-Ожидает расчёта.
+| Данные | Стартов | Удержано | Вышло | Численных ошибок |
+|---|---:|---:|---:|---:|
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase00` | 696 | 544 | 152 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase45` | 672 | 472 | 200 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase90` | 432 | 352 | 80 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase00_41` | 3735 | 3039 | 696 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase45_41` | 3735 | 3171 | 564 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_41` | 3735 | 3579 | 156 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase00_61` | 8427 | 6791 | 1636 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase45_61` | 8427 | 7075 | 1352 | 0 |
+| `outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_61` | 8427 | 8027 | 400 | 0 |
+
+Выявлено интервалов между двумя измеренными противоположными исходами — 332. См. `boundary_transitions.csv`. В интервале возможны дополнительные смены статуса.
 
 ## Карты начальных скоростей
 
@@ -56,5 +68,25 @@ XY с нулевой скоростью, 305 координат, равные 25
 | Протокол | Фаза, ° | Сетка | A, мм² | B, мм² | C, мм² |
 |---|---:|---:|---:|---:|---:|
 | equal | 0 | 21×21 | 169.312 | 90.562 | 162.562 |
+| equal | 0 | 41×41 | 169.453 | 95.766 | 162.141 |
+| equal | 0 | 61×61 | 168.062 | 95.562 | 160.812 |
 | equal | 45 | 21×21 | 167.062 | 113.062 | 167.062 |
+| equal | 45 | 41×41 | 167.766 | 107.016 | 171.141 |
+| equal | 45 | 61×61 | 167.062 | 105.562 | 169.562 |
 | equal | 90 | 21×21 | 162.562 | 155.812 | 171.562 |
+| equal | 90 | 41×41 | 166.078 | 162.141 | 175.078 |
+| equal | 90 | 61×61 | 166.062 | 160.312 | 175.312 |
+
+Изменение клеточной оценки площади при переходе 41×41 → 61×61 приведено без экстраполяции.
+
+| Фаза, ° | Схема | Изменение, мм² |
+|---:|---|---:|
+| 0 | A | -1.391 |
+| 0 | B | -0.203 |
+| 0 | C | -1.328 |
+| 45 | A | -0.703 |
+| 45 | B | -1.453 |
+| 45 | C | -1.578 |
+| 90 | A | -0.016 |
+| 90 | B | -1.828 |
+| 90 | C | +0.234 |

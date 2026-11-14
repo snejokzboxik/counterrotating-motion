@@ -30,9 +30,55 @@
       "stage": "phase90",
       "kind": "xy",
       "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_21"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "boundary",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase00"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "boundary",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase45"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "boundary",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/boundary/phase90"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase00_41"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase45_41"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_41"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase00_61"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase45_61"
+    },
+    {
+      "stage": "boundary_area",
+      "kind": "xy",
+      "directory": "outputs/octupole_comparison_home/confinement_maps_v11/v11_completion/xy/phase90_61"
     }
   ],
   "completed_stages": [
-    "phase90"
+    "phase90",
+    "boundary_area"
   ]
 }
