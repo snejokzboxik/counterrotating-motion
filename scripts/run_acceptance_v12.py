@@ -9,9 +9,10 @@ Quick performance pilot (not an acceptance result)::
 
 Initial production stage (phase 0, equal peak, 4 independent scrambles)::
 
-    python scripts/run_acceptance_v12.py --sample-power 10 --replicates 4 \
-        --horizon 1000 --segment 100 --models A,B,C --meshes 35,50 \
-        --scales 0.5,1,2 --workers 8 --tag equal_phase0
+    python scripts/run_acceptance_v12.py --sample-power 8 --replicates 4 \
+        --horizon 1000 --segment 250 --models A,B,C,idealA,idealB,idealC \
+        --meshes 50 --scales 0.25,0.5,0.75,1,1.5,2,4 --workers 8 \
+        --tag equal_broad_lambda_h50
 
 Each launch point is shared across all models/meshes/scales. Per-trajectory
 atomic JSON checkpoints make interrupted runs resumable without repeating
@@ -28,6 +29,7 @@ import json
 import math
 import os
 from pathlib import Path
+import platform
 import sys
 import time
 
@@ -36,6 +38,7 @@ os.environ.setdefault("MKL_NUM_THREADS", "1")
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("NUMEXPR_NUM_THREADS", "1")
 import numpy as np
+import scipy
 from scipy.stats import qmc
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -134,6 +137,18 @@ def _make_model_specs(kinds: list[str], meshes: list[int], scales: list[float], 
             q, source = _load_q(mesh, kind)
             hashes[f"{kind}_h{mesh}"] = _sha(source)
             c, s = _active_coefficients(q, kind)
+            leading_order = 6 if kind.endswith("C") else 4
+            leading_c = np.zeros_like(c)
+            leading_s = np.zeros_like(s)
+            leading_c[leading_order] = c[leading_order]
+            leading_s[leading_order] = s[leading_order]
+            leading_q = HarmonicQuadratures(leading_c, leading_s, q.reference_radius)
+            model_q = HarmonicQuadratures(c, s, q.reference_radius)
+            comparison_radius_m = reference_mm * 1e-3
+            leading_rms2 = _angular_rf_strength(leading_q, comparison_radius_m)
+            total_rms2 = _angular_rf_strength(model_q, comparison_radius_m)
+            leading_coefficient_norm = float(math.sqrt(
+                abs(leading_c[leading_order])**2 + abs(leading_s[leading_order])**2))
             v0 = volts[kind]
             for scale in scales:
                 name = f"{kind}_h{mesh}_scale{scale:g}"
@@ -141,6 +156,11 @@ def _make_model_specs(kinds: list[str], meshes: list[int], scales: list[float], 
                     "name": name, "kind": kind, "mesh_um": mesh,
                     "voltage_V": v0 * scale, "scale_factor": scale,
                     "coupling": E_CHARGE * v0 * scale / (MASS * OMEGA**2 * LENGTH**2),
+                    "leading_order": leading_order,
+                    "leading_quadrature_coefficient_norm": leading_coefficient_norm,
+                    "comparison_radius_m": comparison_radius_m,
+                    "leading_rms_field_per_volt_V_m": math.sqrt(leading_rms2),
+                    "total_rms_field_per_volt_V_m": math.sqrt(total_rms2),
                     "cosine": _complex_pairs(c), "sine": _complex_pairs(s),
                     "reference_radius_m": q.reference_radius, "length_m": LENGTH,
                     "aperture_rho": 1.0, "phase_deg": phase_deg,
@@ -213,7 +233,10 @@ def _job_worker(job: tuple) -> dict:
         resume_period=start_period,
     )
     elapsed = time.perf_counter() - began
-    spec_row = {k: spec[k] for k in ("kind", "mesh_um", "voltage_V", "scale_factor", "coupling", "source_sha256")}
+    spec_row = {k: spec[k] for k in ("kind", "mesh_um", "voltage_V", "scale_factor", "coupling",
+                                      "leading_order", "leading_quadrature_coefficient_norm",
+                                      "comparison_radius_m", "leading_rms_field_per_volt_V_m",
+                                      "total_rms_field_per_volt_V_m", "source_sha256")}
     row = {
         "config_hash": config_hash, "job_id": job_id, "sample_id": sample_id,
         "model": model_name, **spec_row,
@@ -228,12 +251,13 @@ def _job_worker(job: tuple) -> dict:
     return row
 
 
-def _generate_samples(rep: int, power: int, seed: int, phase_deg: float | None):
+def _generate_samples(rep: int, power: int, seed: int, phase_deg: float | None,
+                      injection_radius_m: float, max_energy_ev: float):
     dimensions = 5 if phase_deg is None else 4
     engine = qmc.Sobol(d=dimensions, scramble=True, seed=seed + 104729 * rep)
     points = engine.random_base2(power)
-    rho_max = INJECTION_RADIUS_M / LENGTH
-    u_max = math.sqrt(2 * MAX_ENERGY_EV * E_CHARGE / (MASS * (LENGTH * OMEGA)**2))
+    rho_max = injection_radius_m / LENGTH
+    u_max = math.sqrt(2 * max_energy_ev * E_CHARGE / (MASS * (LENGTH * OMEGA)**2))
     rho = rho_max * np.sqrt(points[:, 0])
     theta = 2 * np.pi * points[:, 1]
     speed = u_max * np.sqrt(points[:, 2])
@@ -276,21 +300,32 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 row = json.loads(path.read_text(encoding="utf-8"))
             except Exception:
                 continue
-            if row.get("complete") and row.get("status") in ("retained", "escaped"):
+            if row.get("status") in ("retained", "escaped", "numerical_error"):
                 records.append(row)
+    # Keep the latest record for each task. A numerical-error attempt can be
+    # retried on a later invocation and must not coexist with its successful
+    # replacement in the acceptance denominator.
+    latest = {r["job_id"]: r for r in records if r.get("job_id")}
+    records = list(latest.values())
+    valid_statuses = {"retained", "escaped"}
+    valid_records = [r for r in records if r.get("complete") and r.get("status") in valid_statuses]
+    numerical_errors = sum(r.get("status") == "numerical_error" for r in records)
     n_per_rep = 2**sample_power
     models = sorted({s["name"] for s in specs})
     estimates = []
     for model in models:
         fractions, n_ok = [], []
-        subset = [r for r in records if r["model"] == model]
+        subset = [r for r in valid_records if r["model"] == model]
         for rep in range(replicates):
             group = [r for r in subset if r["sample_id"].startswith(f"r{rep:02d}_")]
-            n = len(group)
-            if n == n_per_rep:
+            sample_ids = {r["sample_id"] for r in group}
+            n = len(sample_ids)
+            if n == n_per_rep and len(group) == n_per_rep:
                 fractions.append(sum(r["status"] == "retained" for r in group) / n)
             n_ok.append(n)
-        if fractions:
+        # Do not publish a model estimate until every planned point in every
+        # independent scramble has a valid binary outcome.
+        if len(fractions) == replicates:
             mean = float(np.mean(fractions))
             se = float(np.std(fractions, ddof=1) / math.sqrt(len(fractions))) if len(fractions) > 1 else None
             spec = next(s for s in specs if s["name"] == model)
@@ -298,6 +333,11 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 "model": model, "kind": spec["kind"], "mesh_um": spec["mesh_um"],
                 "scale_factor": spec["scale_factor"], "voltage_V": spec["voltage_V"],
                 "coupling_Lambda": spec["coupling"], "horizon_RF": subset[0]["horizon_RF"],
+                "leading_order": spec["leading_order"],
+                "leading_quadrature_coefficient_norm": spec["leading_quadrature_coefficient_norm"],
+                "comparison_radius_m": spec["comparison_radius_m"],
+                "leading_rms_field_at_comparison_radius_V_m": spec["voltage_V"] * spec["leading_rms_field_per_volt_V_m"],
+                "total_rms_field_at_comparison_radius_V_m": spec["voltage_V"] * spec["total_rms_field_per_volt_V_m"],
                 "samples_per_replicate": n_per_rep, "complete_replicates": len(fractions),
                 "retention_fraction_mean": mean, "retention_fraction_replica_SE": se,
                 "a4_dimensionless_mean": mean * domain_dimless,
@@ -313,18 +353,19 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
             writer.writeheader(); writer.writerows(estimates)
     # Paired differences use the identical sample_id for each model pair.
     pair_rows = []
-    by_model_sample = {(r["model"], r["sample_id"]): r for r in records}
+    by_model_sample = {(r["model"], r["sample_id"]): r for r in valid_records}
     factor_groups = sorted({(s["mesh_um"], s["scale_factor"]) for s in specs})
     for mesh, scale in factor_groups:
         candidates = [s for s in specs if s["mesh_um"] == mesh and s["scale_factor"] == scale]
         kinds_present = {s["kind"] for s in candidates}
-        pairs = [("A", "B"), ("A", "C"), ("B", "C")]
+        pairs = [("A", "B"), ("A", "C"), ("B", "C"),
+                 ("idealA", "idealB"), ("idealA", "idealC"), ("idealB", "idealC")]
         for left, right in pairs:
             if left not in kinds_present or right not in kinds_present:
                 continue
             left_id = f"{left}_h{mesh}_scale{scale:g}"
             right_id = f"{right}_h{mesh}_scale{scale:g}"
-            delta_reps, ratio_reps, discordant = [], [], 0
+            delta_reps, left_reps, right_reps, discordant = [], [], [], 0
             total_pairs = 0
             for rep in range(replicates):
                 sample_ids = [f"r{rep:02d}_{i:06d}" for i in range(n_per_rep)]
@@ -336,23 +377,38 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 ind_right = np.array([r["status"] == "retained" for r in rows_right], dtype=float)
                 delta = ind_left - ind_right
                 delta_reps.append(float(np.mean(delta)))
+                left_reps.append(float(ind_left.mean()))
+                right_reps.append(float(ind_right.mean()))
                 total_pairs += len(delta)
                 discordant += int(np.count_nonzero(delta))
-                p_left, p_right = float(ind_left.mean()), float(ind_right.mean())
-                ratio_reps.append(None if p_right == 0 else p_left / p_right)
-            if not delta_reps:
+            # Paired comparisons also require a complete valid ensemble for
+            # every scramble; errors are unresolved states, never escapes.
+            if len(delta_reps) != replicates:
                 continue
             delta_mean = float(np.mean(delta_reps))
             delta_se = float(np.std(delta_reps, ddof=1)/math.sqrt(len(delta_reps))) if len(delta_reps) > 1 else None
-            ratios = [r for r in ratio_reps if r is not None]
+            p_left_mean = float(np.mean(left_reps))
+            p_right_mean = float(np.mean(right_reps))
+            ratio_of_means = None if p_right_mean == 0 else p_left_mean / p_right_mean
+            ratio_ci = None
+            if replicates > 1 and p_right_mean > 0:
+                seed_material = f"{mesh}|{scale:.12g}|{left}|{right}|{sample_power}|{replicates}"
+                bootstrap_seed = int(hashlib.sha256(seed_material.encode()).hexdigest()[:8], 16)
+                rng = np.random.default_rng(bootstrap_seed)
+                indices = rng.integers(0, replicates, size=(5000, replicates))
+                b_left = np.mean(np.asarray(left_reps)[indices], axis=1)
+                b_right = np.mean(np.asarray(right_reps)[indices], axis=1)
+                ratios = b_left[b_right > 0] / b_right[b_right > 0]
+                if len(ratios):
+                    ratio_ci = [float(np.quantile(ratios, 0.025)), float(np.quantile(ratios, 0.975))]
             pair_rows.append({
                 "mesh_um": mesh, "scale_factor": scale, "model_left": left_id,
                 "model_right": right_id, "left_minus_right_retention_fraction": delta_mean,
                 "paired_replica_SE": delta_se,
                 "delta_a4_dimensionless": delta_mean*domain_dimless,
                 "delta_A4_m4_per_s2": delta_mean*domain_dimless*physical_factor,
-                "paired_ratio_left_over_right_mean": None if not ratios else float(np.mean(ratios)),
-                "paired_ratio_replica_SE": None if len(ratios) < 2 else float(np.std(ratios, ddof=1)/math.sqrt(len(ratios))),
+                "ratio_of_mean_retention_fractions": ratio_of_means,
+                "ratio_of_means_bootstrap_95pct": json.dumps(ratio_ci),
                 "discordant_pairs": discordant, "total_pairs": total_pairs,
                 "discordant_pair_fraction": discordant/total_pairs if total_pairs else None,
                 "complete_replicates": len(delta_reps),
@@ -362,12 +418,14 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
             writer = csv.DictWriter(stream, fieldnames=list(pair_rows[0]))
             writer.writeheader(); writer.writerows(pair_rows)
     summary = {
-        "complete_trajectory_records": len(records), "planned_trajectories": replicates*n_per_rep*len(specs),
+        "complete_trajectory_records": len(valid_records), "planned_trajectories": replicates*n_per_rep*len(specs),
+        "numerical_error_records": numerical_errors,
         "full_run": full_run, "complete_estimates": len(estimates) if full_run else 0,
         "estimates_csv": "acceptance_estimates.csv" if estimates and full_run else None,
         "paired_comparisons": len(pair_rows) if full_run else 0,
         "paired_differences_csv": "paired_acceptance_differences.csv" if pair_rows and full_run else None,
-        "note": "No volume estimate is issued for a capped performance pilot. In full runs an estimate requires every QMC point for that model to complete in every listed scramble.",
+        "models_without_complete_estimate": sorted(set(models) - {r["model"] for r in estimates}),
+        "note": "Only complete retained/escaped outcomes enter estimates. Numerical errors remain unresolved and prevent an estimate for any incomplete model or paired comparison.",
     }
     _atomic_json(root / "progress_summary.json", summary)
     return summary
@@ -388,6 +446,10 @@ def main():
     p.add_argument("--phase-deg", type=float, default=0.0,
                    help="fixed initial RF phase; use --phase-average to sample it uniformly")
     p.add_argument("--phase-average", action="store_true")
+    p.add_argument("--injection-radius-mm", type=float, default=INJECTION_RADIUS_M * 1e3,
+                   help="uniform coordinate-disk radius inside the 8 mm aperture")
+    p.add_argument("--max-energy-ev", type=float, default=MAX_ENERGY_EV,
+                   help="uniform upper limit of the velocity-disk kinetic-energy measure")
     p.add_argument("--workers", type=int, default=min(8, max(1, (os.cpu_count() or 2) - 2)))
     p.add_argument("--rtol", type=float, default=2e-10)
     p.add_argument("--atol", type=float, default=2e-12)
@@ -410,11 +472,15 @@ def main():
     scales = [float(s) for s in args.scales.split(",") if s.strip()]
     if any(m not in (35, 50) for m in meshes) or any(s <= 0 for s in scales):
         p.error("meshes must be 35/50 and all field scales positive")
+    injection_radius_m = args.injection_radius_mm * 1e-3
+    if not (0 < injection_radius_m < LENGTH) or args.max_energy_ev <= 0:
+        p.error("injection radius must be inside the 8 mm aperture and maximum energy must be positive")
+    if not (0 < args.reference_mm < LENGTH * 1e3):
+        p.error("reference radius must lie strictly inside the 8 mm aperture")
     if args.phase_average and args.phase_deg != 0.0:
         p.error("--phase-average cannot be combined with nonzero --phase-deg")
 
     fixed_phase = None if args.phase_average else args.phase_deg
-    phase_label = "uniform" if fixed_phase is None else f"{fixed_phase:g}deg"
     specs, field_meta = _make_model_specs(kinds, meshes, scales, args.protocol,
                                           args.reference_mm, args.phase_deg if fixed_phase is not None else 0.0)
     cfg = {
@@ -423,15 +489,18 @@ def main():
         "seed": args.seed, "horizon_RF": args.horizon, "segment_RF": args.segment,
         "models": kinds, "meshes_um": meshes, "scales": scales,
         "protocol": args.protocol, "matched_reference_radius_mm": args.reference_mm if args.protocol == "matched" else None,
+        "field_diagnostic_radius_mm": args.reference_mm,
         "phase_mode": "uniform-average" if fixed_phase is None else "fixed",
-        "phase_deg": fixed_phase, "domain": {"injection_radius_m": INJECTION_RADIUS_M,
-                                                  "max_energy_eV": MAX_ENERGY_EV,
+        "phase_deg": fixed_phase, "domain": {"injection_radius_m": injection_radius_m,
+                                                  "injection_radius_mm": args.injection_radius_mm,
+                                                  "max_energy_eV": args.max_energy_ev,
                                                   "coordinate_measure": "uniform disk area",
                                                   "velocity_measure": "uniform disk area in vx,vy"},
         "physical": {"mass_kg": MASS, "charge_C": E_CHARGE, "frequency_Hz": FREQUENCY,
                      "length_m": LENGTH, "aperture_m": LENGTH},
         "solver": {"method": "DOP853", "rtol": args.rtol, "atol_dimensionless": args.atol,
                    "max_step_rf_fraction": args.max_step_rf, "samples_per_rf_for_max_radius": args.samples_per_rf},
+        "software": {"python": platform.python_version(), "numpy": np.__version__, "scipy": scipy.__version__},
         "compute": {"workers": args.workers, "logical_cpus": os.cpu_count(),
                     "max_jobs_test_cap": args.max_jobs or None,
                     "mode": "per-trajectory atomic checkpoint; one parent journal writer"},
@@ -452,8 +521,8 @@ def main():
         raise ValueError("model coefficients differ from saved run; refusing to overwrite")
     _atomic_json(spec_path, specs)
 
-    rho_max = INJECTION_RADIUS_M / LENGTH
-    u_max = math.sqrt(2 * MAX_ENERGY_EV * E_CHARGE / (MASS * (LENGTH * OMEGA)**2))
+    rho_max = injection_radius_m / LENGTH
+    u_max = math.sqrt(2 * args.max_energy_ev * E_CHARGE / (MASS * (LENGTH * OMEGA)**2))
     volume_dimless = math.pi**2 * rho_max**2 * u_max**2
     physical_factor = LENGTH**4 * OMEGA**2
     meta = {"horizon_RF": args.horizon, "config_hash": config_hash}
@@ -462,17 +531,24 @@ def main():
     known = set()
     completed_rows = []
     if journal.exists():
+        latest_rows = {}
         for line in journal.read_text(encoding="utf-8").splitlines():
             try:
                 row = json.loads(line)
-                if row.get("complete") and row.get("status") in ("retained", "escaped"):
-                    known.add(row["job_id"])
-                    completed_rows.append(row)
+                if row.get("status") in ("retained", "escaped", "numerical_error"):
+                    latest_rows[row["job_id"]] = row
+                    if row.get("complete") and row.get("status") in ("retained", "escaped"):
+                        known.add(row["job_id"])
             except Exception: pass
+        completed_rows = list(latest_rows.values())
     jobs = []
+    sample_hashes = {}
     for rep in range(args.replicates):
-        states, table = _generate_samples(rep, args.sample_power, args.seed, fixed_phase)
-        _write_samples(out_root / f"initial_states_r{rep:02d}.csv", table)
+        states, table = _generate_samples(rep, args.sample_power, args.seed, fixed_phase,
+                                          injection_radius_m, args.max_energy_ev)
+        sample_path = out_root / f"initial_states_r{rep:02d}.csv"
+        _write_samples(sample_path, table)
+        sample_hashes[sample_path.name] = _sha(sample_path)
         for i, state in enumerate(states):
             sample_id = f"r{rep:02d}_{i:06d}"
             phase_rad = float(table["phase_rad"][i])
@@ -496,6 +572,12 @@ def main():
                 jobs.append((job_id, sample_id, worker_spec_name, state.tolist(), start_period,
                              resume_state, str(ckpt), args.horizon, args.segment, args.rtol,
                              args.atol, args.max_step_rf, args.samples_per_rf, config_hash, phase_rad))
+    _atomic_json(out_root / "initial_state_manifest.json", {
+        "sampler": "scipy.stats.qmc.Sobol(scramble=True)",
+        "software": cfg["software"], "seed": args.seed,
+        "sample_power_per_replicate": args.sample_power, "replicates": args.replicates,
+        "phase_mode": cfg["phase_mode"], "sha256_by_file": sample_hashes,
+    })
     if args.max_jobs:
         jobs = jobs[:args.max_jobs]
     _atomic_json(out_root / "run_state.json", {"status": "running", "planned_jobs": args.replicates*2**args.sample_power*len(specs),
@@ -518,6 +600,7 @@ def main():
             if row["job_id"] not in known:
                 stream.write(json.dumps(row, allow_nan=False) + "\n")
                 done += 1
+                completed_rows = [r for r in completed_rows if r.get("job_id") != row["job_id"]]
                 completed_rows.append(row)
                 if done % progress_every == 0:
                     stream.flush(); os.fsync(stream.fileno())
@@ -526,7 +609,8 @@ def main():
                                          records=completed_rows)
                     print(f"{done}/{len(jobs)} new tasks, wall={time.perf_counter()-started:.1f}s, "
                           f"complete={summary['complete_trajectory_records']}/{summary['planned_trajectories']}", flush=True)
-                known.add(row["job_id"])
+                if row.get("complete") and row.get("status") in ("retained", "escaped"):
+                    known.add(row["job_id"])
         stream.flush(); os.fsync(stream.fileno())
     summary = _summarize(out_root, specs, args.replicates, args.sample_power,
                          volume_dimless, physical_factor, not args.max_jobs,
