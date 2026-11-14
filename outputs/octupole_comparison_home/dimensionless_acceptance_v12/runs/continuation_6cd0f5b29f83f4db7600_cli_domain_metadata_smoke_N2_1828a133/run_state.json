@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "planned_trajectories": 1,
+  "complete_trajectories": 1,
+  "status_counts_this_invocation": {
+    "retained": 0,
+    "escaped": 0,
+    "numerical_error": 0
+  },
+  "wall_seconds_this_invocation": 0.0031964000081643462,
+  "config_hash": "1828a13307500708b40b",
+  "finished_utc": "2026-11-14T20:13:31Z"
+}

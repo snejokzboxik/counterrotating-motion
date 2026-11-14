@@ -1,0 +1,28 @@
+{
+  "config_hash": "d5cb7c60631def87c18b",
+  "job_id": "cf937e3a3f50cd13dd820f3a",
+  "sample_id": "r00_000000",
+  "model": "A_h50_scale1",
+  "kind": "A",
+  "mesh_um": 50,
+  "voltage_V": 250.0,
+  "scale_factor": 1.0,
+  "coupling": 0.009546882869371316,
+  "source_sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+  "horizon_RF": 1000,
+  "phase_rad": 0.0,
+  "status": "retained",
+  "complete": true,
+  "reached_RF": 1000.0,
+  "escape_RF": null,
+  "state_dimensionless": [
+    0.41126832249767814,
+    -0.1612236427550904,
+    -0.010997752232235213,
+    0.00828764160899917
+  ],
+  "max_radius_sampled_rho": 0.8721762100692617,
+  "nfev": 960170,
+  "wall_s": 74.09345510000276,
+  "message": ""
+}

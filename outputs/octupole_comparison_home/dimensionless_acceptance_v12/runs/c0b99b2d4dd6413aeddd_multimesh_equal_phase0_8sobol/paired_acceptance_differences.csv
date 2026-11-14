@@ -1,0 +1,7 @@
+mesh_um,scale_factor,model_left,model_right,left_minus_right_retention_fraction,paired_replica_SE,delta_a4_dimensionless,delta_A4_m4_per_s2,paired_ratio_left_over_right_mean,paired_ratio_replica_SE,discordant_pairs,total_pairs,discordant_pair_fraction,complete_replicates
+35,1.0,A_h35_scale1,B_h35_scale1,0.625,,0.0020703506217238424,3.347831457048777,3.5,,5,8,0.625,1
+35,1.0,A_h35_scale1,C_h35_scale1,-0.125,,-0.0004140701243447685,-0.6695662914097553,0.875,,1,8,0.125,1
+35,1.0,B_h35_scale1,C_h35_scale1,-0.75,,-0.0024844207460686107,-4.0173977484585315,0.25,,6,8,0.75,1
+50,1.0,A_h50_scale1,B_h50_scale1,0.625,,0.0020703506217238424,3.347831457048777,3.5,,5,8,0.625,1
+50,1.0,A_h50_scale1,C_h50_scale1,-0.125,,-0.0004140701243447685,-0.6695662914097553,0.875,,1,8,0.125,1
+50,1.0,B_h50_scale1,C_h50_scale1,-0.75,,-0.0024844207460686107,-4.0173977484585315,0.25,,6,8,0.75,1

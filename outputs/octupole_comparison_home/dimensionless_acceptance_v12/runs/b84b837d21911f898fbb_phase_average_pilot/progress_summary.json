@@ -1,0 +1,10 @@
+{
+  "complete_trajectory_records": 24,
+  "planned_trajectories": 24,
+  "full_run": false,
+  "complete_estimates": 3,
+  "estimates_csv": "acceptance_estimates.csv",
+  "paired_comparisons": 3,
+  "paired_differences_csv": "paired_acceptance_differences.csv",
+  "note": "No volume estimate is issued unless every QMC point for that model is complete in every listed scramble."
+}

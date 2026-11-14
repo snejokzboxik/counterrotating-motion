@@ -1,0 +1,14 @@
+{
+  "complete_trajectory_records": 1,
+  "planned_trajectories": 2,
+  "numerical_error_records": 0,
+  "full_run": false,
+  "complete_estimates": 0,
+  "estimates_csv": null,
+  "paired_comparisons": 0,
+  "paired_differences_csv": null,
+  "models_without_complete_estimate": [
+    "A_h50_scale1"
+  ],
+  "note": "Only complete retained/escaped outcomes enter estimates. Numerical errors remain unresolved and prevent an estimate for any incomplete model or paired comparison."
+}
