@@ -1,0 +1,33 @@
+{
+  "config_hash": "e6bf3a33795e4a5354a8",
+  "job_id": "cbdb44da76caedb47e1734ad",
+  "sample_id": "r00_000003",
+  "model": "idealB_h50_scale0.25",
+  "kind": "idealB",
+  "mesh_um": 50,
+  "voltage_V": 62.5,
+  "scale_factor": 0.25,
+  "coupling": 0.002386720717342829,
+  "leading_order": 4,
+  "leading_quadrature_coefficient_norm": 0.5413395699434834,
+  "comparison_radius_m": 0.004,
+  "leading_rms_field_per_volt_V_m": 33.83372312146771,
+  "total_rms_field_per_volt_V_m": 33.83372312146771,
+  "source_sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+  "horizon_RF": 1000,
+  "phase_rad": 0.0,
+  "status": "escaped",
+  "complete": true,
+  "reached_RF": 15.836291415972696,
+  "escape_RF": 15.836291415972696,
+  "state_dimensionless": [
+    -0.9001745356437797,
+    -0.43552933928554755,
+    -0.01685634114648202,
+    0.0032323426714222143
+  ],
+  "max_radius_sampled_rho": 1.0,
+  "nfev": 15299,
+  "wall_s": 1.2762540000112494,
+  "message": ""
+}

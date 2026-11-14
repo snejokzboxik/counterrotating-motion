@@ -1,0 +1,18 @@
+{
+  "config_hash": "e6bf3a33795e4a5354a8",
+  "job_id": "ad9acea6ff2b168e55e200ff",
+  "sample_id": "r00_000010",
+  "model": "idealC_h50_scale1",
+  "status": "retained",
+  "complete": false,
+  "reached_RF": 750.0,
+  "state_dimensionless": [
+    0.061924560400751706,
+    -0.19449757385725086,
+    0.0018552472865472002,
+    -0.013735754464077956
+  ],
+  "escape_RF": null,
+  "max_radius_sampled_rho": 0.8924066950022858,
+  "nfev": 720051
+}

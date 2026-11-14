@@ -1,0 +1,33 @@
+{
+  "config_hash": "e6bf3a33795e4a5354a8",
+  "job_id": "f50ae1634f6dbfdedd53f2aa",
+  "sample_id": "r00_000003",
+  "model": "idealA_h50_scale2",
+  "kind": "idealA",
+  "mesh_um": 50,
+  "voltage_V": 500.0,
+  "scale_factor": 2.0,
+  "coupling": 0.01909376573874263,
+  "leading_order": 4,
+  "leading_quadrature_coefficient_norm": 0.7655697616633043,
+  "comparison_radius_m": 0.004,
+  "leading_rms_field_per_volt_V_m": 47.848110103956515,
+  "total_rms_field_per_volt_V_m": 47.848110103956515,
+  "source_sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+  "horizon_RF": 1000,
+  "phase_rad": 0.0,
+  "status": "retained",
+  "complete": true,
+  "reached_RF": 1000.0,
+  "escape_RF": null,
+  "state_dimensionless": [
+    -0.5556248419024004,
+    -0.4233447087069563,
+    -0.021465385410920048,
+    0.03147152815950525
+  ],
+  "max_radius_sampled_rho": 0.872435838466525,
+  "nfev": 960068,
+  "wall_s": 78.91208979999647,
+  "message": ""
+}
