@@ -103,3 +103,21 @@ def test_matched_voltage_reports_radius_dependent_real_and_ideal_c():
     assert at_2mm["C"] > at_4mm["C"] > at_6mm["C"]
     assert at_6mm["C"] > at_6mm["idealC"]
     assert abs(at_4mm["C"] - 755.6575062984871) < 1e-8
+
+
+def test_same_order_fem_vs_ideal_harmonic_pair_is_summarized(tmp_path):
+    specs = [_spec("A"), _spec("idealA")]
+    records = [
+        _record("A", 0, 0, "retained"), _record("A", 0, 1, "escaped"),
+        _record("A", 1, 0, "retained"), _record("A", 1, 1, "retained"),
+        _record("idealA", 0, 0, "retained"), _record("idealA", 0, 1, "escaped"),
+        _record("idealA", 1, 0, "escaped"), _record("idealA", 1, 1, "retained"),
+    ]
+    summary = MODULE._summarize(tmp_path, specs, 2, 1, 0.1, 2.0, True, records=records)
+
+    assert summary["paired_comparisons"] == 1
+    pair = next(__import__("csv").DictReader(
+        (tmp_path / "paired_acceptance_differences.csv").open(encoding="utf-8")))
+    assert pair["model_left"] == "A_h50_scale1"
+    assert pair["model_right"] == "idealA_h50_scale1"
+    assert int(pair["discordant_pairs"]) == 1
