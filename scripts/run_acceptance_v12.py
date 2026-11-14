@@ -371,7 +371,10 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
         candidates = [s for s in specs if s["mesh_um"] == mesh and s["scale_factor"] == scale]
         kinds_present = {s["kind"] for s in candidates}
         pairs = [("A", "B"), ("A", "C"), ("B", "C"),
-                 ("idealA", "idealB"), ("idealA", "idealC"), ("idealB", "idealC")]
+                 ("idealA", "idealB"), ("idealA", "idealC"), ("idealB", "idealC"),
+                 # Same-order FEM versus one-harmonic ablation isolates the
+                 # net effect of the higher spatial harmonics on these starts.
+                 ("A", "idealA"), ("B", "idealB"), ("C", "idealC")]
         for left, right in pairs:
             if left not in kinds_present or right not in kinds_present:
                 continue
