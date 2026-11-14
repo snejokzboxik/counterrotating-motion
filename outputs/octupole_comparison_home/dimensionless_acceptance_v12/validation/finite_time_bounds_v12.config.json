@@ -1,0 +1,25 @@
+{
+  "orders": [
+    4,
+    6
+  ],
+  "kappas": [
+    0.00516810546680643,
+    0.00645354100387296
+  ],
+  "horizons_RF": [
+    1000,
+    3000,
+    10000,
+    30000,
+    100000
+  ],
+  "aperture_rho": 1.0,
+  "mass_Th": 100000.0,
+  "frequency_Hz": 100000.0,
+  "length_mm": 8.0,
+  "injection_radius_mm": 7.5,
+  "max_energy_eV": 5.0,
+  "volume_conversion": "A4 = R^4 Omega^2 a4",
+  "method": "maximum acceleration bound on disk b; analytic phase-volume subset"
+}
