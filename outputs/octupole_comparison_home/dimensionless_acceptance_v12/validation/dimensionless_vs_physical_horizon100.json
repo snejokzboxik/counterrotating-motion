@@ -1,0 +1,22 @@
+{
+  "study": "V12 dimensionless-to-SI equation verification",
+  "horizon_RF": 100,
+  "meshes_um": [
+    35,
+    50
+  ],
+  "configurations": [
+    "A",
+    "B",
+    "C"
+  ],
+  "new_FEM_solves": 0,
+  "fields": "Saved P4-derived N48 Fourier reconstructions, h35 and h50; C uses the independent alternating-electrode P4 solve.",
+  "solver": "DOP853 both formulations; dimensionless tau=Omega*t, same SI and phase inputs; 64 steps/RF maximum step.",
+  "trajectories": 30,
+  "all_statuses_match": true,
+  "max_exit_time_difference_RF": null,
+  "max_final_state_mismatch_dimensionless": 1.2982638364625202e-12,
+  "wall_seconds": 379.20463840000593,
+  "csv": "dimensionless_vs_physical_horizon100.csv"
+}
