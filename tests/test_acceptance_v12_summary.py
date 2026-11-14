@@ -55,6 +55,9 @@ def test_numerical_error_is_unresolved_and_blocks_incomplete_acceptance(tmp_path
     assert summary["models_without_complete_estimate"] == ["A_h50_scale1"]
     assert summary["paired_comparisons"] == 0
     assert summary["complete_estimates"] == 1
+    estimate = next(__import__("csv").DictReader(
+        (tmp_path / "acceptance_estimates.csv").open(encoding="utf-8")))
+    assert len(__import__("json").loads(estimate["retention_fraction_student_t_95pct_ci"])) == 2
 
 
 def test_paired_ratio_uses_ratio_of_mean_retention_fractions(tmp_path):
@@ -87,3 +90,4 @@ def test_paired_ratio_uses_ratio_of_mean_retention_fractions(tmp_path):
     row = __import__("csv").DictReader((tmp_path / "paired_acceptance_differences.csv").open(encoding="utf-8"))
     pair = next(row)
     assert float(pair["ratio_of_mean_retention_fractions"]) == 2.0
+    assert len(__import__("json").loads(pair["left_minus_right_retention_student_t_95pct_ci"])) == 2

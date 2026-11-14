@@ -39,7 +39,7 @@ os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("NUMEXPR_NUM_THREADS", "1")
 import numpy as np
 import scipy
-from scipy.stats import qmc
+from scipy.stats import qmc, t as student_t
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -328,6 +328,11 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
         if len(fractions) == replicates:
             mean = float(np.mean(fractions))
             se = float(np.std(fractions, ddof=1) / math.sqrt(len(fractions))) if len(fractions) > 1 else None
+            if se is None:
+                retention_ci = None
+            else:
+                half_width = float(student_t.ppf(0.975, df=replicates-1) * se)
+                retention_ci = [max(0.0, mean-half_width), min(1.0, mean+half_width)]
             spec = next(s for s in specs if s["name"] == model)
             estimates.append({
                 "model": model, "kind": spec["kind"], "mesh_um": spec["mesh_um"],
@@ -340,10 +345,17 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 "total_rms_field_at_comparison_radius_V_m": spec["voltage_V"] * spec["total_rms_field_per_volt_V_m"],
                 "samples_per_replicate": n_per_rep, "complete_replicates": len(fractions),
                 "retention_fraction_mean": mean, "retention_fraction_replica_SE": se,
+                "retention_fraction_student_t_95pct_ci": json.dumps(retention_ci),
                 "a4_dimensionless_mean": mean * domain_dimless,
                 "a4_dimensionless_replica_SE": None if se is None else se * domain_dimless,
+                "a4_dimensionless_student_t_95pct_ci": json.dumps(None if retention_ci is None else
+                                                                    [retention_ci[0]*domain_dimless,
+                                                                     retention_ci[1]*domain_dimless]),
                 "A4_m4_per_s2_mean": mean * domain_dimless * physical_factor,
                 "A4_m4_per_s2_replica_SE": None if se is None else se * domain_dimless * physical_factor,
+                "A4_m4_per_s2_student_t_95pct_ci": json.dumps(None if retention_ci is None else
+                                                               [retention_ci[0]*domain_dimless*physical_factor,
+                                                                retention_ci[1]*domain_dimless*physical_factor]),
                 "replicate_fractions": json.dumps(fractions),
                 "complete_counts_by_replicate": json.dumps(n_ok),
             })
@@ -387,6 +399,11 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 continue
             delta_mean = float(np.mean(delta_reps))
             delta_se = float(np.std(delta_reps, ddof=1)/math.sqrt(len(delta_reps))) if len(delta_reps) > 1 else None
+            if delta_se is None:
+                delta_ci = None
+            else:
+                half_width = float(student_t.ppf(0.975, df=replicates-1) * delta_se)
+                delta_ci = [max(-1.0, delta_mean-half_width), min(1.0, delta_mean+half_width)]
             p_left_mean = float(np.mean(left_reps))
             p_right_mean = float(np.mean(right_reps))
             ratio_of_means = None if p_right_mean == 0 else p_left_mean / p_right_mean
@@ -405,8 +422,15 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 "mesh_um": mesh, "scale_factor": scale, "model_left": left_id,
                 "model_right": right_id, "left_minus_right_retention_fraction": delta_mean,
                 "paired_replica_SE": delta_se,
+                "left_minus_right_retention_student_t_95pct_ci": json.dumps(delta_ci),
                 "delta_a4_dimensionless": delta_mean*domain_dimless,
+                "delta_a4_dimensionless_student_t_95pct_ci": json.dumps(None if delta_ci is None else
+                                                                          [delta_ci[0]*domain_dimless,
+                                                                           delta_ci[1]*domain_dimless]),
                 "delta_A4_m4_per_s2": delta_mean*domain_dimless*physical_factor,
+                "delta_A4_m4_per_s2_student_t_95pct_ci": json.dumps(None if delta_ci is None else
+                                                                      [delta_ci[0]*domain_dimless*physical_factor,
+                                                                       delta_ci[1]*domain_dimless*physical_factor]),
                 "ratio_of_mean_retention_fractions": ratio_of_means,
                 "ratio_of_means_bootstrap_95pct": json.dumps(ratio_ci),
                 "discordant_pairs": discordant, "total_pairs": total_pairs,
@@ -425,6 +449,7 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
         "paired_comparisons": len(pair_rows) if full_run else 0,
         "paired_differences_csv": "paired_acceptance_differences.csv" if pair_rows and full_run else None,
         "models_without_complete_estimate": sorted(set(models) - {r["model"] for r in estimates}),
+        "uncertainty_method": "replica-level standard error and 95% Student-t interval across independent scrambled Sobol replicates; paired ratio interval by resampling replicates",
         "note": "Only complete retained/escaped outcomes enter estimates. Numerical errors remain unresolved and prevent an estimate for any incomplete model or paired comparison.",
     }
     _atomic_json(root / "progress_summary.json", summary)
