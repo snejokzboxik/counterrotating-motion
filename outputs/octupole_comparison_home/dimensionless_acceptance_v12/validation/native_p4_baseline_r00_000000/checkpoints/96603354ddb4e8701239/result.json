@@ -1,0 +1,31 @@
+{
+  "job_id": "96603354ddb4e8701239",
+  "model": "A",
+  "x0_m": -0.0009839556198941652,
+  "y0_m": 0.0063654723896194925,
+  "vx0_m_s": 8.43461940694093,
+  "vy0_m_s": -55.67146318030891,
+  "phase_rad": 0.0,
+  "voltage_V": 250.0,
+  "mesh_um": 35,
+  "representation": "P4",
+  "horizon_RF": 1000,
+  "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample",
+  "nfev": 17646,
+  "checked_steps": 1056,
+  "crossings": 902,
+  "max_zero_time_run": 0,
+  "wall_s": 2.4316293000010774,
+  "sampled_max_radius_m": 0.008,
+  "status": "escaped",
+  "escape_RF": 10.873544044384479,
+  "reached_RF": 10.873544044384479,
+  "final_state_SI": [
+    -0.0037685739163292016,
+    -0.007056759216323255,
+    28.560571977677427,
+    -110.03487451590875
+  ],
+  "trajectory_path": "checkpoints/96603354ddb4e8701239",
+  "error": null
+}

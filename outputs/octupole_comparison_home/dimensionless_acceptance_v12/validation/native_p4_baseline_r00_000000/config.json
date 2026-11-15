@@ -1,0 +1,141 @@
+{
+  "representation": "P4",
+  "mesh_um": [
+    35,
+    50
+  ],
+  "horizon_RF": 1000,
+  "segment_RF": 25,
+  "frequency_Hz": 100000.0,
+  "mass_kg": 1.6605390666e-22,
+  "charge_C": 1.602176634e-19,
+  "aperture_m": 0.008,
+  "trajectory_samples_per_RF": 1,
+  "solver": {
+    "method": "DOP853 (audited element crossings)",
+    "steps": 50,
+    "rtol": 2e-09,
+    "atol": [
+      2e-13,
+      2e-13,
+      2e-11,
+      2e-11
+    ]
+  },
+  "cases": [
+    {
+      "job_id": "96603354ddb4e8701239",
+      "model": "A",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 35,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    },
+    {
+      "job_id": "795437912ac28aac551a",
+      "model": "A",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 50,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    },
+    {
+      "job_id": "bf9354ac62951bbca924",
+      "model": "B",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 35,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    },
+    {
+      "job_id": "4c5804a8d9b901068bbb",
+      "model": "B",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 50,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    },
+    {
+      "job_id": "201727b83be6c8ba34b0",
+      "model": "C",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 35,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    },
+    {
+      "job_id": "5c7074889cd6ba1cabbb",
+      "model": "C",
+      "x0_m": -0.0009839556198941652,
+      "y0_m": 0.0063654723896194925,
+      "vx0_m_s": 8.43461940694093,
+      "vy0_m_s": -55.67146318030891,
+      "phase_rad": 0.0,
+      "voltage_V": 250.0,
+      "mesh_um": 50,
+      "representation": "P4",
+      "horizon_RF": 1000,
+      "reason": "predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+    }
+  ],
+  "input_sha256": {
+    "outputs/meshes/gmsh_35um/trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs/octupole_comparison_home/confinement_maps_v11/fields/h35_P4_C/sector_solution.npz": "abbd20a32ff2923d053f892c0c49a68196021f8f4fce1a4ec0670cdda3535254",
+    "outputs/abc_validation/direct_fem_validation/v2/h35_P4/complete.json": "5e4b4ff0358e1eceaa8c74ce2558f55aeaa501df1ca133350bcdcd92c9497796",
+    "outputs/octupole_comparison_home/confinement_maps_v11/fields/h35_P4_C/validation.json": "cbf77ba0512cf53fb6daa86f50b5269d9eb9e337bfab10466b0ab2b8358db8c3",
+    "outputs/octupole_comparison_home/confinement_maps_v11/numerical_checks/native_C_early_exit/h35.json": "4858d9bb24afc80d82a89aa40a080feeac030b6c69ec0da50bd78154d8c2a76f",
+    "outputs/meshes/gmsh_50um/trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs/octupole_comparison_home/confinement_maps_v11/fields/h50_P4_C/sector_solution.npz": "0bc795eb2e2b93c2c299e3df5c9f11650ca150c067017cf3c8cdb48019309d57",
+    "outputs/abc_validation/direct_fem_validation/v2/h50_P4/complete.json": "5f3356d1f0f0e81497e6c8fcdccdfc7bebe3bbf55fe32c727fe819cf8a2061af",
+    "outputs/octupole_comparison_home/confinement_maps_v11/fields/h50_P4_C/validation.json": "95c09726cf84d6a41e2c09aa978f0e82f0f5b0399a31b665b78829b628d265d6",
+    "outputs/octupole_comparison_home/confinement_maps_v11/numerical_checks/native_C_early_exit/h50.json": "ba14c1949109c022428a2097c304597c414b5ddff135d146e91fa7323580da0c"
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-fem": "12.0.2",
+    "meshio": "5.3.5"
+  },
+  "kernel_sha256": {
+    "v11_native_sampling.py": "4dae03e1cc1dc0051b992f2fea98171acdfefe470ab6a1d115a1b190604a2b77",
+    "stability_rf_p4_v2.py": "259d6c5564bfcc8224b92385f6fdf555a1cd31a24f8336ac94ca53b9bd498b5b",
+    "stability_rf_p4.py": "d24101231cb82a562d7f3996a1fecd7ccc1e5c4e9871ca79abbd14dd08c70d7c",
+    "direct_fem.py": "57831511a4a272ce075d1fdb24a4c11e5bf81fbfa0dabfab8171f7cb9a607708",
+    "direct_fem_dynamics.py": "1b03bba3fd6d144770e35db67fa2038a26ea35f486940824f5b859fb955bcc2b",
+    "audited_rf.py": "2b02cc3853c92c7f50e6e0c3d2d4edb148489f393c8248e61a3eedb19757197d",
+    "gmsh_mesh.py": "4e2f106bfba2558fba01a0b564c7f6f55409d661180cd1a06d32db71ae3e675d"
+  }
+}
