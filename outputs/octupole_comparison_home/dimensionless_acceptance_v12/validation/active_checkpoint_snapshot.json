@@ -88,5 +88,7 @@
   "terminal_checkpoint_files": 1493,
   "terminal_checkpoint_bytes": 1473882,
   "temporary_files_excluded": true,
-  "partial_checkpoints_excluded_from_git": true
+  "partial_checkpoints_excluded_from_snapshot_commit_diff": true,
+  "partial_checkpoints_excluded_from_git_tree": false,
+  "legacy_partial_checkpoint_files_already_in_git_tree": 6
 }
