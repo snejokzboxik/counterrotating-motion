@@ -46,6 +46,74 @@ def _init_worker(specs: list[dict], physical: dict[str, float]) -> None:
     _PHYSICAL = physical
 
 
+def _resolve_run_reference(reference: str | Path) -> Path:
+    path = Path(reference)
+    if not path.is_absolute():
+        path = RUNS / path
+    return path.resolve()
+
+
+def _stored_run_reference(path: Path) -> str:
+    """Use a portable path for runs inside V12 and an absolute path otherwise."""
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(RUNS.resolve()).as_posix()
+    except ValueError:
+        return str(resolved)
+
+
+def _has_initial_states(path: Path) -> bool:
+    return any(path.glob("initial_states_r*.csv"))
+
+
+def _resolve_sample_source(source: Path, cfg: dict) -> Path:
+    """Find the original run that owns the sampled physical initial states.
+
+    New continuation configs record ``sample_source_run`` directly. Older
+    continuation folders predate that field, so follow their ``source_run``
+    links until reaching the original run with initial-state CSVs.
+    """
+    source = source.resolve()
+    if _has_initial_states(source):
+        return source
+
+    reference = cfg.get("sample_source_run")
+    if reference:
+        sample_source = _resolve_run_reference(reference)
+        if not _has_initial_states(sample_source):
+            raise FileNotFoundError(
+                f"sample_source_run {reference!r} has no initial_states_r*.csv: {sample_source}"
+            )
+        return sample_source
+
+    current = source
+    current_cfg = cfg
+    visited = {source}
+    while current_cfg.get("source_run"):
+        current = _resolve_run_reference(current_cfg["source_run"])
+        if current in visited:
+            raise ValueError(f"cycle while resolving original sample source from {source}")
+        visited.add(current)
+        if _has_initial_states(current):
+            return current
+        config_path = current / "config.json"
+        if not config_path.is_file():
+            break
+        current_cfg = json.loads(config_path.read_text(encoding="utf-8"))
+        reference = current_cfg.get("sample_source_run")
+        if reference:
+            sample_source = _resolve_run_reference(reference)
+            if not _has_initial_states(sample_source):
+                raise FileNotFoundError(
+                    f"sample_source_run {reference!r} has no initial_states_r*.csv: {sample_source}"
+                )
+            return sample_source
+
+    raise FileNotFoundError(
+        f"could not resolve original sample source for {source}; no initial_states_r*.csv found"
+    )
+
+
 def _worker(job: tuple) -> dict:
     (job_id, model_name, sample_id, state, phase_rad, source_row,
      source_period, horizon, segment, rtol, atol, max_step_rf,
@@ -140,8 +208,9 @@ def _read_source(source: Path) -> tuple[dict, list[dict], dict[str, dict], dict[
                 rows_by_job[row["job_id"]] = row
             except (json.JSONDecodeError, KeyError):
                 continue
+    sample_source = _resolve_sample_source(source, cfg)
     states: dict[str, tuple[np.ndarray, float]] = {}
-    for path in sorted(source.glob("initial_states_r*.csv")):
+    for path in sorted(sample_source.glob("initial_states_r*.csv")):
         with path.open(newline="", encoding="utf-8") as stream:
             for row in csv.DictReader(stream):
                 sample_id = f"r{int(row['replicate']):02d}_{int(row['sample_index']):06d}"
@@ -173,6 +242,7 @@ def main() -> None:
         source = RUNS / source
     source = source.resolve()
     cfg, specs, source_rows, states = _read_source(source)
+    sample_source = _resolve_sample_source(source, cfg)
     source_period = float(cfg["horizon_RF"])
     if args.horizon <= source_period or args.segment < 1 or args.horizon % args.segment:
         parser.error("target horizon must exceed source horizon and be divisible by a positive segment")
@@ -200,6 +270,7 @@ def main() -> None:
     run_config = {
         "study": "V12 sequential trajectory continuation",
         "source_run": source.name, "source_config_hash": cfg["config_hash"],
+        "sample_source_run": _stored_run_reference(sample_source),
         "source_horizon_RF": source_period, "horizon_RF": args.horizon,
         "segment_RF": args.segment, "sample_id_sha256": sample_hash,
         "sample_count": len(ids), "models": model_names,
