@@ -14,6 +14,10 @@ Initial production stage (phase 0, equal peak, 4 independent scrambles)::
         --meshes 50 --scales 0.25,0.5,0.75,1,1.5,2,4 --workers 8 \
         --tag equal_broad_lambda_h50
 
+For a broad scan, the scheduler completes the shared A/B/C, 250 V reference
+condition before spending workers on the remaining voltage scales and controls.
+This changes task order only; it does not change samples, IDs, hashes, or fields.
+
 Each launch point is shared across all models/meshes/scales. Per-trajectory
 atomic JSON checkpoints make interrupted runs resumable without repeating
 completed trajectories. Each worker handles a distinct checkpoint path.
@@ -297,6 +301,27 @@ def _write_samples(path: Path, table: dict[str, np.ndarray]):
         for i in range(len(next(iter(table.values())))):
             writer.writerow({key: float(value[i]) if np.issubdtype(np.asarray(value).dtype, np.floating)
                              else int(value[i]) for key, value in table.items()})
+
+
+def _prioritize_primary_jobs(jobs: list[tuple], specs: list[dict]) -> list[tuple]:
+    """Run the complete A/B/C equal-peak reference ensemble before scan jobs.
+
+    This is an execution-order policy only. It leaves the configuration hash,
+    sample IDs, integration inputs, and checkpoint paths unchanged, so an
+    existing broad run can be resumed without replaying saved trajectories.
+    """
+    primary_order = {
+        "A_h50_scale1": 0,
+        "B_h50_scale1": 1,
+        "C_h50_scale1": 2,
+    }
+    available = {spec["name"] for spec in specs}
+    if not set(primary_order).issubset(available):
+        return jobs
+    primary = [job for job in jobs if job[2] in primary_order]
+    remainder = [job for job in jobs if job[2] not in primary_order]
+    primary.sort(key=lambda job: (job[1], primary_order[job[2]]))
+    return primary + remainder
 
 
 def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int,
@@ -610,6 +635,18 @@ def main():
                 jobs.append((job_id, sample_id, worker_spec_name, state.tolist(), start_period,
                              resume_state, str(ckpt), args.horizon, args.segment, args.rtol,
                              args.atol, args.max_step_rf, args.samples_per_rf, config_hash, phase_rad))
+    jobs = _prioritize_primary_jobs(jobs, specs)
+    primary_model_names = ["A_h50_scale1", "B_h50_scale1", "C_h50_scale1"]
+    primary_jobs = sum(job[2] in primary_model_names for job in jobs)
+    _atomic_json(out_root / "execution_schedule.json", {
+        "config_hash": config_hash,
+        "priority_model_names": primary_model_names if primary_jobs else [],
+        "planned_priority_trajectories": args.replicates * 2**args.sample_power * 3 if primary_jobs else 0,
+        "queued_priority_trajectories_this_invocation": primary_jobs,
+        "ordering": "shared sample_id order, then A/B/C; remaining jobs retain generation order",
+        "purpose": "finish the predeclared 250 V A/B/C baseline before the broader Lambda scan",
+        "physics_or_sampling_changed": False,
+    })
     _atomic_json(out_root / "initial_state_manifest.json", {
         "sampler": "scipy.stats.qmc.Sobol(scramble=True)",
         "software": cfg["software"], "seed": args.seed,
