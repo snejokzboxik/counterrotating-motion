@@ -1,0 +1,42 @@
+{
+  "field": "full native h50 P4 FEM; saved m=4 and m=2 unit solutions on shared mesh",
+  "mu": [
+    1.04
+  ],
+  "eta": -0.05,
+  "models": [
+    [
+      "Q",
+      0.0
+    ],
+    [
+      "SO",
+      -0.05
+    ],
+    [
+      "RO",
+      -0.05
+    ]
+  ],
+  "phases_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "n_initial": 32,
+  "initial_source": "V13.1 common seed131 Sobol N=32",
+  "horizons_rf": [
+    100,
+    300
+  ],
+  "aperture_rho": 1.0,
+  "continuation": "same state and RF phase from 100 to 300",
+  "integrator": "DOP853 rtol=3e-9 atol=3e-11",
+  "max_step_rf_fraction": 0.015625,
+  "mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+  "solution_files": {
+    "m4": "outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz",
+    "m2": "outputs/octupole_comparison_home/mass_filter_v13/v13_1/fem/quadrupole_h50_P4_sector_solution.npz"
+  },
+  "max_voltage_V": "existing V13.1 drive: Q+RO/SO eta=-0.05 has peak 232.8591 V; <=250 V",
+  "interpretation": "full P4 transverse finite-time retention, not finite-length mass-filter transmission"
+}

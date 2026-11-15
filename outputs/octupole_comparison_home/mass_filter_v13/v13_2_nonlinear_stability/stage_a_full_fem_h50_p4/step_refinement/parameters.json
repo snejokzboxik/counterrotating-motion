@@ -1,0 +1,13 @@
+{
+  "source": "selected V13.2 full FEM h50/P4 boundary trajectories",
+  "selection": "up to two largest-radius retained and two latest-exit escaped trajectories per phase/model",
+  "n_selected": 22,
+  "horizons_rf": [
+    100,
+    300
+  ],
+  "baseline_step_rf": 0.015625,
+  "refined_step_rf": 0.0078125,
+  "integrator": "DOP853 rtol=3e-9 atol=3e-11; same initial states, RF phase and FEM bases",
+  "unresolved_policy": "status changes are marked step_sensitive, not counted as lost"
+}
