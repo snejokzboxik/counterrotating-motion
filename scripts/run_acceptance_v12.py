@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
+from concurrent.futures.process import BrokenProcessPool
 import csv
 from dataclasses import replace
 import hashlib
@@ -72,6 +73,42 @@ def _atomic_json(path: Path, value: dict) -> None:
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     os.replace(tmp, path)
+
+
+def _best_checkpoint(path: Path, config_hash: str) -> dict | None:
+    """Choose the newest valid checkpoint after a prior atomic-replace failure.
+
+    This is called before a trajectory is submitted, when no worker for that
+    job can still be writing its temporary file.
+    """
+    candidates = []
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    for candidate in (path, temporary):
+        try:
+            row = json.loads(candidate.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if not isinstance(row, dict) or row.get("config_hash") != config_hash:
+            continue
+        status = row.get("status")
+        complete = row.get("complete") is True and status in {"retained", "escaped"}
+        if not complete:
+            if status != "retained" or row.get("complete") is not False:
+                continue
+            try:
+                state = np.asarray(row.get("state_dimensionless"), dtype=float)
+                reached = float(row.get("reached_RF"))
+            except (TypeError, ValueError):
+                continue
+            if state.shape != (4,) or not np.all(np.isfinite(state)) or not math.isfinite(reached):
+                continue
+        else:
+            try:
+                reached = float(row.get("reached_RF", 0.0))
+            except (TypeError, ValueError):
+                reached = 0.0
+        candidates.append(((int(complete), reached, int(candidate == path)), row))
+    return max(candidates, key=lambda item: item[0])[1] if candidates else None
 
 
 def _load_q(mesh: int, kind: str) -> tuple[HarmonicQuadratures, Path]:
@@ -212,13 +249,8 @@ def _job_worker(job: tuple) -> dict:
      checkpoint_text, horizon, segment, rtol, atol, max_step_rf, samples_per_rf,
      config_hash, phase_rad) = job
     checkpoint = Path(checkpoint_text)
-    existing = None
-    if checkpoint.exists():
-        try:
-            existing = json.loads(checkpoint.read_text(encoding="utf-8"))
-        except Exception:
-            existing = None
-    if existing and existing.get("config_hash") == config_hash:
+    existing = _best_checkpoint(checkpoint, config_hash)
+    if existing:
         if existing.get("complete"):
             return existing
         if existing.get("status") == "retained" and existing.get("reached_RF", 0) < horizon:
@@ -623,10 +655,7 @@ def main():
                 # RF phase is sampled in the initial-state table for a phase-average run.
                 worker_spec_name = model_name
                 ckpt = out_root / "checkpoints" / model_name / f"{sample_id}.json"
-                existing = None
-                if ckpt.exists():
-                    try: existing = json.loads(ckpt.read_text(encoding="utf-8"))
-                    except Exception: pass
+                existing = _best_checkpoint(ckpt, config_hash)
                 resume_state = None
                 start_period = 0.0
                 if existing and existing.get("config_hash") == config_hash and not existing.get("complete"):
@@ -669,9 +698,23 @@ def main():
     progress_every = 500
     with ProcessPoolExecutor(max_workers=args.workers, initializer=_init_worker,
                              initargs=(specs, meta)) as pool, journal.open("a", encoding="utf-8") as stream:
-        futures = [pool.submit(_job_worker, job) for job in jobs]
+        futures = {pool.submit(_job_worker, job): job for job in jobs}
         for future in as_completed(futures):
-            row = future.result()
+            job = futures[future]
+            try:
+                row = future.result()
+            except BrokenProcessPool:
+                raise
+            except Exception as exc:
+                # Record a recoverable per-job failure and keep collecting the
+                # other futures. The last valid JSON/.tmp checkpoint remains
+                # available for the next invocation.
+                row = {
+                    "config_hash": job[13], "job_id": job[0], "sample_id": job[1],
+                    "model": job[2], "status": "numerical_error", "complete": False,
+                    "reached_RF": float(job[4]), "escape_RF": None, "nfev": 0,
+                    "message": f"worker exception {type(exc).__name__}: {exc}",
+                }
             if row["job_id"] not in known:
                 stream.write(json.dumps(row, allow_nan=False) + "\n")
                 done += 1
