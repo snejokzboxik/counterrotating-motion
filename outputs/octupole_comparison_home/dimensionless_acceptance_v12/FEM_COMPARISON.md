@@ -157,4 +157,16 @@ Reusable trajectory checks have different scopes and are not substitutes for the
 - Native P4 C h35/h50 records at `(3.75, −6) mm`, zero velocity, phase 0° already exist. Their exits at `25.5693877230` and `25.5692927133 RF` differ from V12 N48 by about `1.97×10⁻⁵` and `1.93×10⁻⁵ RF`.
 - V10 native P4 A trajectories used `M=10⁻¹⁵ kg`, `q=10⁻¹² C`; they are useful solver-history checks, but their outcomes do not apply to V12's `100000 Th`, `+e` ensemble.
 
-Prepared a genuinely four-dimensional independent verification point from the baseline's already integrated Sobol state `r00_000000`: `(x₀,y₀)=(-0.983955619894, 6.365472389619) mm`, `(vₓ,vᵧ)=(8.43461940694, −55.6714631803) m/s`, `E₀=1.6429723287 eV`, RF phase 0°. The candidate table `validation/native_p4_baseline_r00_000000/candidates.csv` keeps the same state for A/B/C and labels it as validation only, so it cannot enter A₄ twice. A two-worker, h35/h50, 1000-RF dry-run and P4 preflight succeeded, producing six planned controls and frozen input hashes in `preflight_config.json`. The integrations will compare native P4 with both FEM meshes against the corresponding N48 result; they have not yet run.
+### Native-P4 check at the exact baseline Sobol state
+
+The predeclared baseline state `r00_000000` was integrated directly in native P4 fields for A/B/C on both h35 and h50. Its coordinates are `(x₀,y₀)=(-0.983955619894, 6.365472389619) mm`, velocity `(vₓ, vᵧ)=(8.43461940694, −55.6714631803) m/s`, energy `1.6429723287 eV`, phase 0°, and voltage 250 V. This point was already part of the N48 acceptance sample; the P4 trajectories are validation controls and are excluded from A₄ a second time.
+
+| Scheme | Native P4 h35 | Native P4 h50 | N48 h50 | P4 h50 − N48 h50 |
+|---|---:|---:|---:|---:|
+| A | escape at 10.8735440444 RF | escape at 10.8737774714 RF | escape at 10.8737761137 RF | +1.36×10⁻⁶ RF |
+| B | escape at 11.2838570720 RF | escape at 11.2840935168 RF | escape at 11.2840959701 RF | −2.45×10⁻⁶ RF |
+| C | retained through 1000 RF | retained through 1000 RF | retained through 1000 RF | — |
+
+All six P4 runs use the V11 native trajectory solver with DOP853, audited element crossings, 50 steps per RF period, `rtol=2×10⁻⁹`, and checkpoints every 25 RF periods. The h35 and h50 P4 classifications agree for all three schemes, and both match the h50/N48 baseline classifications. The A/B h35-to-h50 escape-time shifts are `−2.33427×10⁻⁴ RF` and `−2.36445×10⁻⁴ RF`, respectively. Thus the tested early exits are spatially stable at these two meshes; C is only established as a finite-time survivor through 1000 RF periods.
+
+The candidate state, solver configuration, input hashes, six segment histories, and terminal results are stored in `validation/native_p4_baseline_r00_000000/`. Recreate the native integrations with `scripts/run_v11_fem_checks.py`; reproduce the matched comparison table with `scripts/analyze_v12_native_p4_baseline.py`. This is a trajectory-level cross-check at one sampled point, not an uncertainty bound for the four-dimensional acceptance.
