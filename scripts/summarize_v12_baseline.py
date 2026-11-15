@@ -74,6 +74,9 @@ def validate_and_collect(run_dir: Path) -> tuple[dict, list[dict], list[dict], l
     for spec in specs:
         if spec["kind"] not in "ABC" or spec["mesh_um"] != 50 or spec["scale_factor"] != 1.0 or spec["voltage_V"] != 250.0:
             raise ValueError(f"Unexpected baseline model specification: {spec['name']}")
+        field_key = f"{spec['kind']}_h50"
+        if spec["source_sha256"] != config.get("field_sha256", {}).get(field_key):
+            raise ValueError(f"FEM field hash mismatch in model specification: {spec['name']}")
 
     initial_by_id: dict[str, dict] = {}
     source_hashes = {}
@@ -88,6 +91,10 @@ def validate_and_collect(run_dir: Path) -> tuple[dict, list[dict], list[dict], l
             sample_id = f"r{int(row['replicate']):02d}_{int(row['sample_index']):06d}"
             if sample_id in initial_by_id:
                 raise ValueError(f"Duplicate Sobol sample ID {sample_id}")
+            if math.hypot(float(row["x0_m"]), float(row["y0_m"])) > 7.5e-3 + 1e-12:
+                raise ValueError(f"Initial position is outside the 7.5 mm disk: {sample_id}")
+            if float(row["E0_eV"]) > 5.0 + 1e-12 or abs(float(row["phase_rad"])) > 1e-12:
+                raise ValueError(f"Initial energy or RF phase is outside the baseline domain: {sample_id}")
             initial_by_id[sample_id] = {**row, "sample_id": sample_id}
     if len(initial_by_id) != REPLICATES * n_per_rep:
         raise ValueError("Sobol sample table does not contain the exact expected state set")
@@ -116,6 +123,10 @@ def validate_and_collect(run_dir: Path) -> tuple[dict, list[dict], list[dict], l
                 raise ValueError(f"Unresolved trajectory {model_name}/{sample_id}: {cp.get('status')}")
             if cp.get("horizon_RF") != HORIZON_RF:
                 raise ValueError(f"Horizon mismatch in {model_name}/{sample_id}")
+            if cp.get("phase_rad") != 0.0 or cp.get("voltage_V") != 250.0:
+                raise ValueError(f"RF phase or voltage mismatch in {model_name}/{sample_id}")
+            if cp.get("source_sha256") != by_name[model_name]["source_sha256"]:
+                raise ValueError(f"FEM field fingerprint mismatch in {model_name}/{sample_id}")
             if cp.get("status") == "retained" and cp.get("reached_RF") != HORIZON_RF:
                 raise ValueError(f"Retained trajectory did not reach the full horizon: {model_name}/{sample_id}")
             if cp.get("status") == "escaped" and cp.get("escape_RF") is None:
@@ -138,7 +149,6 @@ def validate_and_collect(run_dir: Path) -> tuple[dict, list[dict], list[dict], l
                 "nfev": cp["nfev"],
             })
 
-    sample_state = next(iter(initial_by_id.values()))
     injection_radius_m = float(config["domain"]["injection_radius_m"])
     emax_ev = float(config["domain"]["max_energy_eV"])
     mass = float(config["physical"]["mass_kg"])
