@@ -1,0 +1,15 @@
+{
+  "config_hash": "e6bf3a33795e4a5354a8",
+  "job_id": "6d6d20a7e6b61afdbc89514e",
+  "sample_id": "r00_000145",
+  "model": "C_h50_scale1",
+  "kind": "C",
+  "mesh_um": 50,
+  "voltage_V": 250.0,
+  "scale_factor": 1.0,
+  "coupling": 0.009546882869371316,
+  "leading_order": 6,
+  "leading_quadrature_coefficient_norm": 0.6759840978648081,
+  "comparison_radius_m": 0.004,
+  "leading_rms_field_per_volt_V_m": 15.84337729370644,
+  "total_rms_f
