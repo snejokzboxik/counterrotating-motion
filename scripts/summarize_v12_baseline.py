@@ -51,7 +51,7 @@ def csv_write(path: Path, rows: list[dict], columns: list[str] | None = None) ->
         writer.writerows(rows)
 
 
-def validate_and_collect(run_dir: Path) -> tuple[dict, list[dict], list[dict], list[dict]]:
+def validate_and_collect(run_dir: Path) -> None:
     config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
     if config.get("sample_power") != SAMPLE_POWER or config.get("replicates") != REPLICATES:
         raise ValueError("Source run is not the predeclared four x 256 Sobol experiment")
