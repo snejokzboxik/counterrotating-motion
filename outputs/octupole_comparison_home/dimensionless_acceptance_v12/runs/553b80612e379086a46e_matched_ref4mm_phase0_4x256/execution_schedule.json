@@ -1,0 +1,13 @@
+{
+  "config_hash": "553b80612e379086a46e",
+  "priority_model_names": [
+    "A_h50_scale1",
+    "B_h50_scale1",
+    "C_h50_scale1"
+  ],
+  "planned_priority_trajectories": 3072,
+  "queued_priority_trajectories_this_invocation": 3072,
+  "ordering": "shared sample_id order, then A/B/C; remaining jobs retain generation order",
+  "purpose": "finish the predeclared 250 V A/B/C baseline before the broader Lambda scan",
+  "physics_or_sampling_changed": false
+}

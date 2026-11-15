@@ -19,6 +19,8 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 V12 = REPO / "outputs/octupole_comparison_home/dimensionless_acceptance_v12"
 CONFIG_HASH = "e6bf3a33795e4a5354a8"
+MATCHED_CONFIG_HASH = "553b80612e379086a46e"
+MATCHED_RUN_NAME = "553b80612e379086a46e_matched_ref4mm_phase0_4x256"
 
 
 def load_rows(paths: list[Path]):
@@ -36,8 +38,10 @@ def main() -> int:
     args = parser.parse_args()
 
     broad_root = V12 / "runs/e6bf3a33795e4a5354a8_equal_broad_lambda_h50_4x256/checkpoints"
+    matched_root = V12 / "runs" / MATCHED_RUN_NAME / "checkpoints"
     replay_root = V12 / "validation/v11_map_replay_v12/69f9b2c5a9e00ed1"
     broad_paths = sorted(broad_root.rglob("*.json"))
+    matched_paths = sorted(matched_root.rglob("*.json")) if matched_root.exists() else []
     replay_paths = sorted(replay_root.rglob("*.json"))
 
     broad_terminal: list[tuple[Path, dict]] = []
@@ -53,6 +57,20 @@ def main() -> int:
             broad_errors += 1
         else:
             broad_partial[row.get("model", "unknown")] += 1
+
+    matched_terminal: list[tuple[Path, dict]] = []
+    matched_partial: Counter[str] = Counter()
+    matched_errors = 0
+    for path, row in load_rows(matched_paths):
+        if row.get("config_hash") != MATCHED_CONFIG_HASH:
+            continue
+        status = row.get("status")
+        if row.get("complete") is True and status in {"retained", "escaped"}:
+            matched_terminal.append((path, row))
+        elif status == "numerical_error":
+            matched_errors += 1
+        else:
+            matched_partial[row.get("model", "unknown")] += 1
 
     replay_terminal: list[tuple[Path, dict]] = []
     replay_partial = 0
@@ -76,7 +94,7 @@ def main() -> int:
         if isinstance(diff, (int, float)):
             replay_exit_diffs.append(float(diff))
 
-    terminal = broad_terminal + replay_terminal
+    terminal = broad_terminal + matched_terminal + replay_terminal
     relative_paths = sorted(path.relative_to(REPO).as_posix() for path, _ in terminal)
     args.path_list.parent.mkdir(parents=True, exist_ok=True)
     args.path_list.write_bytes(b"\0".join(path.encode("utf-8") for path in relative_paths) + b"\0")
@@ -86,6 +104,13 @@ def main() -> int:
     manifest["snapshot_utc"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     manifest["snapshot_is_final"] = False
     active = manifest["active_runs"]
+    if len(active) < 3:
+        active.append({
+            "path": f"outputs/octupole_comparison_home/dimensionless_acceptance_v12/runs/{MATCHED_RUN_NAME}",
+            "config_hash": MATCHED_CONFIG_HASH,
+            "planned_trajectories": 3072,
+            "note": "Matched A/B/C at r_ref=4 mm uses the same 4x256 Sobol starts as the equal-voltage baseline.",
+        })
     active[0].update({
         "terminal_retained_or_escaped_checkpoints": len(broad_terminal),
         "terminal_by_model_scale": dict(sorted(Counter(row["model"] for _, row in broad_terminal).items())),
@@ -103,6 +128,15 @@ def main() -> int:
         "exit_time_comparison_count": len(replay_exit_diffs),
         "maximum_exit_time_difference_RF": max(replay_exit_diffs, default=None),
     })
+    active[2].update({
+        "terminal_retained_or_escaped_checkpoints": len(matched_terminal),
+        "terminal_by_model": dict(sorted(Counter(row["model"] for _, row in matched_terminal).items())),
+        "partial_or_nonterminal_checkpoints_excluded": sum(matched_partial.values()),
+        "partial_by_model": dict(sorted(matched_partial.items())),
+        "numerical_error_checkpoints": matched_errors,
+        "journal_lines_on_disk": sum(1 for _ in (V12 / "runs" / MATCHED_RUN_NAME / "completed_jobs.jsonl").open(encoding="utf-8")) if (V12 / "runs" / MATCHED_RUN_NAME / "completed_jobs.jsonl").exists() else 0,
+        "note": "Only complete immutable per-trajectory JSON files are included; active journal, run_state, temporary and partial checkpoints are excluded.",
+    })
     manifest["terminal_checkpoint_files"] = len(terminal)
     manifest["terminal_checkpoint_bytes"] = sum(path.stat().st_size for path, _ in terminal)
     manifest["temporary_files_excluded"] = True
@@ -119,6 +153,10 @@ def main() -> int:
         "baseline_A_B_C": base_counts,
         "broad_partial": sum(broad_partial.values()),
         "broad_errors": broad_errors,
+        "matched_terminal": len(matched_terminal),
+        "matched_by_model": dict(sorted(Counter(row["model"] for _, row in matched_terminal).items())),
+        "matched_partial": sum(matched_partial.values()),
+        "matched_errors": matched_errors,
         "replay_terminal": len(replay_terminal),
         "replay_partial": replay_partial,
         "replay_status_mismatches": replay_mismatches,
