@@ -299,5 +299,5 @@
   "status": "source_reconciled",
   "errors": [],
   "requested_coordinate_limit_per_phase": null,
-  "run_requested": false
+  "run_requested": true
 }
