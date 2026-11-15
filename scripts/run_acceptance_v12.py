@@ -477,6 +477,8 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
             p_right_mean = float(np.mean(right_reps))
             ratio_of_means = None if p_right_mean == 0 else p_left_mean / p_right_mean
             ratio_ci = None
+            ratio_bootstrap_zero_denominator_draws = None
+            ratio_bootstrap_valid_fraction = None
             if replicates > 1 and p_right_mean > 0:
                 seed_material = f"{mesh}|{scale:.12g}|{left}|{right}|{sample_power}|{replicates}"
                 bootstrap_seed = int(hashlib.sha256(seed_material.encode()).hexdigest()[:8], 16)
@@ -484,8 +486,15 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                 indices = rng.integers(0, replicates, size=(5000, replicates))
                 b_left = np.mean(np.asarray(left_reps)[indices], axis=1)
                 b_right = np.mean(np.asarray(right_reps)[indices], axis=1)
-                ratios = b_left[b_right > 0] / b_right[b_right > 0]
-                if len(ratios):
+                valid_denominator = b_right > 0
+                ratio_bootstrap_zero_denominator_draws = int(np.count_nonzero(~valid_denominator))
+                ratio_bootstrap_valid_fraction = float(np.mean(valid_denominator))
+                # Do not silently condition the interval on bootstrap draws
+                # whose denominator happens to be nonzero. Such conditioning
+                # would hide an unbounded/undefined part of the ratio
+                # uncertainty when the reference mean is weakly resolved.
+                if np.all(valid_denominator):
+                    ratios = b_left / b_right
                     ratio_ci = [float(np.quantile(ratios, 0.025)), float(np.quantile(ratios, 0.975))]
             pair_rows.append({
                 "mesh_um": mesh, "scale_factor": scale, "model_left": left_id,
@@ -502,6 +511,8 @@ def _summarize(root: Path, specs: list[dict], replicates: int, sample_power: int
                                                                        delta_ci[1]*domain_dimless*physical_factor]),
                 "ratio_of_mean_retention_fractions": ratio_of_means,
                 "ratio_of_means_bootstrap_95pct": json.dumps(ratio_ci),
+                "ratio_bootstrap_zero_denominator_draws": ratio_bootstrap_zero_denominator_draws,
+                "ratio_bootstrap_valid_fraction": ratio_bootstrap_valid_fraction,
                 "discordant_pairs": discordant, "total_pairs": total_pairs,
                 "discordant_pair_fraction": discordant/total_pairs if total_pairs else None,
                 "complete_replicates": len(delta_reps),
