@@ -1,0 +1,36 @@
+{
+  "run_status": "complete",
+  "result_source": "new_v12_dimensionless_integration",
+  "fingerprint": "26d49968effdcef20777b886f510773df02c971efaa5a74d1633cec305d19093",
+  "phase_deg": 0,
+  "model": "A",
+  "x0_m": -0.006,
+  "y0_m": 0.0,
+  "vx0_m_s": 0.0,
+  "vy0_m_s": 0.0,
+  "phase_rad": 0.0,
+  "voltage_V": 250.0,
+  "field_sha256": "a12b953c5fa5375ae09bf964c33e35fefcf5319141559f5f27df612d7a04c4d1",
+  "reference_status_V11": "retained",
+  "dimensionless_status": "retained",
+  "status_match": true,
+  "reference_exit_RF": null,
+  "dimensionless_exit_RF": null,
+  "exit_time_difference_RF": null,
+  "checkpoint_period_RF": 1000.0,
+  "state_dimensionless": [
+    0.6057016847867461,
+    -0.016154794393263634,
+    0.018052727233582845,
+    0.0008289897946577227
+  ],
+  "final_state_dimensionless": [
+    0.6057016847867461,
+    -0.016154794393263634,
+    0.018052727233582845,
+    0.0008289897946577227
+  ],
+  "max_radius_sampled_rho": 0.8753528546113386,
+  "nfev": 750200,
+  "message": ""
+}
