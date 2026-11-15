@@ -61,6 +61,9 @@ def main() -> int:
     replay_by_phase_model: Counter[str] = Counter()
     replay_exit_diffs: list[float] = []
     for path, row in load_rows(replay_paths):
+        if row.get("run_status") == "numerical_error":
+            replay_errors += 1
+            continue
         if row.get("run_status") != "complete":
             replay_partial += 1
             continue
@@ -69,8 +72,6 @@ def main() -> int:
         replay_by_phase_model[key] += 1
         if row.get("status_match") is False:
             replay_mismatches += 1
-        if row.get("run_status") == "numerical_error":
-            replay_errors += 1
         diff = row.get("exit_time_difference_RF")
         if isinstance(diff, (int, float)):
             replay_exit_diffs.append(float(diff))
