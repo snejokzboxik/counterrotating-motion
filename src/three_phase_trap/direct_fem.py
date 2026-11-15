@@ -162,7 +162,7 @@ def permutation_transform(permutation, degree):
     return np.linalg.solve(vandermonde(nodes, degree), vandermonde(old, degree))
 
 
-def global_polynomials(sector, full_points, full_triangles):
+def global_polynomials(sector, full_points, full_triangles, rotation_factor=RHO):
     vertices = full_points[full_triangles]
     centroids = vertices.mean(axis=1)
     sector_vertices = sector.points[sector.triangles]
@@ -188,17 +188,21 @@ def global_polynomials(sector, full_points, full_triangles):
             mask = np.all(permutation == perm, axis=1)
             if mask.any():
                 transform = permutation_transform(perm, sector.degree)
-                coefficients[selected[mask]] = RHO**k*(sector.coefficients[ids[mask]]@transform.T)
+            coefficients[selected[mask]] = rotation_factor**k*(sector.coefficients[ids[mask]]@transform.T)
     return coefficients, largest
 
 
 class DirectFEMRF:
     """Native elementwise gradient, no interelement gradient recovery/fitting."""
-    def __init__(self, sector, trap_mesh, amplitude=250.):
+    def __init__(self, sector, trap_mesh, amplitude=250., rotation_factor=RHO):
         self.points, self.triangles = trap_mesh.points, trap_mesh.triangles
         self.mesh = trap_mesh.mesh
         self.degree = sector.degree
-        coefficients, mismatch = global_polynomials(sector, self.points, self.triangles)
+        self.rotation_factor = complex(rotation_factor)
+        if abs(abs(self.rotation_factor) - 1.) > 1e-12:
+            raise ValueError("Sector rotation factor must have unit modulus")
+        coefficients, mismatch = global_polynomials(sector, self.points, self.triangles,
+                                                     rotation_factor=self.rotation_factor)
         self.potential_coefficients = coefficients*amplitude
         vertices = self.points[self.triangles]
         self.origin = vertices[:, 0]
