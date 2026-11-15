@@ -1,0 +1,47 @@
+{
+  "field": "full native P4 FEM h50 m4+m2",
+  "mesh_sha256": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+  "mu": [
+    1.1
+  ],
+  "etas": [
+    -0.05
+  ],
+  "models": [
+    [
+      "Q",
+      0.0
+    ],
+    [
+      "Qopt",
+      0.0
+    ],
+    [
+      "SO",
+      -0.05
+    ],
+    [
+      "RO",
+      -0.05
+    ]
+  ],
+  "phase_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "n_common_initial": 32,
+  "initial_source": "ideal pilot Sobol seed 131",
+  "aperture_rho": 1.0,
+  "horizons": [
+    100,
+    300
+  ],
+  "continuation": "from 100-cycle final state, unreset phase",
+  "integrator": "DOP853 rtol 3e-9 atol 3e-11",
+  "max_step_rf": 0.015625,
+  "unresolved_policy": "separate; never count as escaped",
+  "Q_C": 1.602176634e-19,
+  "M0_Th": 3200.04652261404,
+  "R_m": 0.008,
+  "Omega_rad_s": 628318.5307179586
+}

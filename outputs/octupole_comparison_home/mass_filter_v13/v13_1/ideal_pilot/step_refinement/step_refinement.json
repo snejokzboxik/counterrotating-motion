@@ -1,0 +1,13 @@
+{
+  "n_selected": 64,
+  "workers": 4,
+  "steps_tau": [
+    0.09817477042468103,
+    0.04908738521234052
+  ],
+  "original_max_step_tau": 0.09817477042468103,
+  "status_disagreements_100": 0,
+  "status_disagreements_300": 0,
+  "max_abs_exit_time_difference_periods": 1.3157119838069775e-10,
+  "note": "Original trajectories used max_step_tau=2\u03c0/64. Corrected audit explicitly tests 2\u03c0/64 versus 2\u03c0/128 using max_step_rf fractions 1/64 and 1/128; cases are stratified by mass, phase, model and outcome regime."
+}

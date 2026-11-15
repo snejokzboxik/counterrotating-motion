@@ -34,8 +34,8 @@ def advance(task):
     def event(t,z): return np.hypot(z[0],z[1])-1.
     event.terminal=True; event.direction=1
     s1=solve_ivp(rhs,(0,2*np.pi*100),y,method="DOP853",rtol=2e-10,atol=2e-12,
-                 max_step=2*np.pi/64,events=event)
-    if not s1.success: return {"mu":mu,"phase_rad":phase,"model":model,"eta":eta,"index":index,"status":"numerical_error","max_rho_100":np.nan,"exit_periods":np.nan,"linear_status":linear_status(alpha,beta)["status"]}
+                 max_step=2*np.pi*hmax,events=event)
+    if not s1.success: return {"mu":mu,"phase_rad":phase,"model":model,"eta":eta,"index":index,"status":"numerical_error","max_rho_100":np.nan,"exit_periods":np.nan,"linear_status":linear_status(alpha,beta)["status"],"max_step_tau":2*np.pi*hmax}
     maxr=max(maxr,float(np.hypot(s1.y[0],s1.y[1]).max()))
     if len(s1.t_events[0]):
         exit_tau=float(s1.t_events[0][0]); maxr=max(maxr,1.); status="escaped"
@@ -44,14 +44,14 @@ def advance(task):
     t300=exit_tau; maxr300=maxr; status300=status
     if exit_tau is None:
         s2=solve_ivp(rhs,(2*np.pi*100,2*np.pi*300),s1.y[:,-1],method="DOP853",
-                     rtol=2e-10,atol=2e-12,max_step=2*np.pi/64,events=event)
+                     rtol=2e-10,atol=2e-12,max_step=2*np.pi*hmax,events=event)
         if not s2.success: status300="numerical_error"
         else:
             maxr300=max(maxr300,float(np.hypot(s2.y[0],s2.y[1]).max()))
             if len(s2.t_events[0]):
                 t300=float(s2.t_events[0][0]); maxr300=max(maxr300,1.); status300="escaped"
     return {"mu":mu,"phase_rad":phase,"phase_deg":phase*180/np.pi,"model":model,"eta":eta,
-            "index":index,"alpha":alpha,"beta":beta,"kappa":kappa,
+            "index":index,"alpha":alpha,"beta":beta,"kappa":kappa,"max_step_tau":2*np.pi*hmax,
             "linear_status":linear_status(alpha,beta)["status"],
             "status_100":"escaped" if (exit_tau is not None and exit_tau<=2*np.pi*100) else ("numerical_error" if not s1.success else "retained"),
             "exit_periods_100":exit_tau/(2*np.pi) if exit_tau is not None and exit_tau<=2*np.pi*100 else None,
@@ -73,7 +73,8 @@ def main():
           "RF_phase_applied_as":"tau+phase at injection; identical initial states across models/phases",
           "Qopt_drive_V":{"U2":190.0,"Vdc":30.0,"peak":220.0,"selection":"coarse Floquet voltage scan; narrowest stable interval with min nominal trace margin >=0.03"},
           "aperture_rho":1.,"horizons_rf_periods":[100,300],"long_horizon":"continued from state at 100 periods without resetting RF phase",
-          "integrator":"DOP853 rtol=2e-10 atol=2e-12 max_step=2pi/64", "not_physical_transmission":True}
+          "integrator":"DOP853 rtol=2e-10 atol=2e-12", "max_step_fraction_rf":1/64,
+          "max_step_tau":"2*pi/64", "not_physical_transmission":True}
     (OUT/"parameters.json").write_text(json.dumps(conf,indent=2)+"\n",encoding="utf-8")
     ck=OUT/"checkpoint.jsonl";done=[]
     if ck.exists(): done=[json.loads(x) for x in ck.read_text(encoding="utf-8").splitlines() if x]
@@ -84,7 +85,7 @@ def main():
        for model,eta in models:
         for i,x in enumerate(initials):
          key=(float(mu),float(phase),model,float(eta),i)
-         if key not in keys: tasks.append((*key[:4],i,x,2*np.pi/64))
+         if key not in keys: tasks.append((*key[:4],i,x,1/64))
     # de-duplicate Q across eta by using one Q task per unique mass/phase/initial
     tasks_by_key={}
     for t in tasks: tasks_by_key[(t[0],t[1],t[2],t[3],t[4])]=t

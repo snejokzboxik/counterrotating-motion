@@ -1,0 +1,12 @@
+{
+  "n_refined": 2,
+  "field": "full h50 P4 FEM",
+  "max_step_tau": [
+    0.09817477042468103,
+    0.04908738521234052,
+    0.02454369260617026,
+    0.01227184630308513
+  ],
+  "protocol": "Only trajectories whose status changed between tau step 2\u03c0/64 and 2\u03c0/128; rerun to 2\u03c0/256 and 2\u03c0/512.",
+  "unresolved_errors": 0
+}

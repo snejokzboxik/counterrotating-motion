@@ -1,0 +1,433 @@
+field,run,mu,phase_deg,horizon_rf,model,eta,n_total,n_resolved,n_unresolved,n_step_sensitive,n_retained,retention,retention_basis,retention_bound_low_all_n,retention_bound_high_all_n,ci95_low,ci95_high
+ideal leading harmonics,ideal pilot,0.85,0.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,0.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.85,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,0.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,SO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,RO,-0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,SO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.9,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,SO,-0.1,32,32,0,0,31,0.96875,resolved cases only,0.96875,0.96875,0.8425539219962727,0.9944622826374491
+ideal leading harmonics,ideal pilot,0.95,0.0,100,RO,-0.1,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,0.95,0.0,100,SO,-0.05,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,0.95,0.0,100,RO,-0.05,32,32,0,0,12,0.375,resolved cases only,0.375,0.375,0.2293366846595921,0.5474589941047487
+ideal leading harmonics,ideal pilot,0.95,0.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,SO,-0.1,32,32,0,0,31,0.96875,resolved cases only,0.96875,0.96875,0.8425539219962727,0.9944622826374491
+ideal leading harmonics,ideal pilot,0.95,0.0,300,RO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,0.95,0.0,300,SO,-0.05,32,32,0,0,19,0.59375,resolved cases only,0.59375,0.59375,0.4225972657298823,0.744805975196862
+ideal leading harmonics,ideal pilot,0.95,0.0,300,RO,-0.05,32,32,0,0,10,0.3125,resolved cases only,0.3125,0.3125,0.17952352116618736,0.4856699969803239
+ideal leading harmonics,ideal pilot,0.95,0.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,0.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,SO,-0.1,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,0.95,90.0,100,RO,-0.1,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.95,90.0,100,SO,-0.05,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,0.95,90.0,100,RO,-0.05,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,0.95,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,SO,-0.1,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,0.95,90.0,300,RO,-0.1,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.95,90.0,300,SO,-0.05,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,0.95,90.0,300,RO,-0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.95,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,0.0,100,Q,0.0,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,0.975,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,0.0,100,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,0.975,0.0,100,RO,-0.1,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,0.975,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,0.975,0.0,100,RO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,0.975,0.0,100,SO,0.05,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.975,0.0,100,RO,0.05,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,0.975,0.0,100,SO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,0.975,0.0,100,RO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,0.975,0.0,300,Q,0.0,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,0.975,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,0.0,300,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,0.975,0.0,300,RO,-0.1,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,0.975,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,0.975,0.0,300,RO,-0.05,32,32,0,0,30,0.9375,resolved cases only,0.9375,0.9375,0.7985253275199642,0.9826897968048427
+ideal leading harmonics,ideal pilot,0.975,0.0,300,SO,0.05,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.975,0.0,300,RO,0.05,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.975,0.0,300,SO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,0.975,0.0,300,RO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,0.975,90.0,100,Q,0.0,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.975,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,100,SO,-0.1,32,32,0,0,12,0.375,resolved cases only,0.375,0.375,0.2293366846595921,0.5474589941047487
+ideal leading harmonics,ideal pilot,0.975,90.0,100,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,0.975,90.0,100,SO,-0.05,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,0.975,90.0,100,RO,-0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,0.975,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,300,Q,0.0,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,0.975,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,300,SO,-0.1,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,0.975,90.0,300,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,0.975,90.0,300,SO,-0.05,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,0.975,90.0,300,RO,-0.05,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,0.975,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,0.975,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,0.0,100,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,100,Qopt,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,100,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,100,RO,-0.1,32,32,0,0,21,0.65625,resolved cases only,0.65625,0.65625,0.4831077350878594,0.7958976664567146
+ideal leading harmonics,ideal pilot,1.0,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,100,RO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,100,SO,0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.0,0.0,100,RO,0.05,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,1.0,0.0,100,SO,0.1,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,1.0,0.0,100,RO,0.1,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,1.0,0.0,300,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,300,Qopt,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,300,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,300,RO,-0.1,32,32,0,0,18,0.5625,resolved cases only,0.5625,0.5625,0.3932530203122613,0.7183491403055682
+ideal leading harmonics,ideal pilot,1.0,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,300,RO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.0,0.0,300,SO,0.05,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,1.0,0.0,300,RO,0.05,32,32,0,0,5,0.15625,resolved cases only,0.15625,0.15625,0.06864319106627216,0.31754492553566527
+ideal leading harmonics,ideal pilot,1.0,0.0,300,SO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.0,0.0,300,RO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.0,90.0,100,Q,0.0,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.0,90.0,100,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.0,90.0,100,SO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.0,90.0,100,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.0,90.0,100,SO,-0.05,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,1.0,90.0,100,RO,-0.05,32,32,0,0,8,0.25,resolved cases only,0.25,0.25,0.1325224398262155,0.42106891770246624
+ideal leading harmonics,ideal pilot,1.0,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,300,Q,0.0,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.0,90.0,300,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.0,90.0,300,SO,-0.1,32,32,0,0,8,0.25,resolved cases only,0.25,0.25,0.1325224398262155,0.42106891770246624
+ideal leading harmonics,ideal pilot,1.0,90.0,300,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.0,90.0,300,SO,-0.05,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,1.0,90.0,300,RO,-0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.0,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.0,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,0.0,100,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.025,0.0,100,Qopt,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.025,0.0,100,SO,-0.1,32,32,0,0,29,0.90625,resolved cases only,0.90625,0.90625,0.7578150066422116,0.9675990373736805
+ideal leading harmonics,ideal pilot,1.025,0.0,100,RO,-0.1,32,32,0,0,12,0.375,resolved cases only,0.375,0.375,0.2293366846595921,0.5474589941047487
+ideal leading harmonics,ideal pilot,1.025,0.0,100,SO,-0.05,32,32,0,0,31,0.96875,resolved cases only,0.96875,0.96875,0.8425539219962727,0.9944622826374491
+ideal leading harmonics,ideal pilot,1.025,0.0,100,RO,-0.05,32,32,0,0,23,0.71875,resolved cases only,0.71875,0.71875,0.546251630618882,0.8443559315435214
+ideal leading harmonics,ideal pilot,1.025,0.0,100,SO,0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.025,0.0,100,RO,0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.025,0.0,100,SO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.025,0.0,100,RO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.025,0.0,300,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.025,0.0,300,Qopt,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.025,0.0,300,SO,-0.1,32,32,0,0,26,0.8125,resolved cases only,0.8125,0.8125,0.6469050424507756,0.9111057606383721
+ideal leading harmonics,ideal pilot,1.025,0.0,300,RO,-0.1,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,1.025,0.0,300,SO,-0.05,32,32,0,0,31,0.96875,resolved cases only,0.96875,0.96875,0.8425539219962727,0.9944622826374491
+ideal leading harmonics,ideal pilot,1.025,0.0,300,RO,-0.05,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,1.025,0.0,300,SO,0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.025,0.0,300,RO,0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.025,0.0,300,SO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.025,0.0,300,RO,0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.025,90.0,100,Q,0.0,32,32,0,0,8,0.25,resolved cases only,0.25,0.25,0.1325224398262155,0.42106891770246624
+ideal leading harmonics,ideal pilot,1.025,90.0,100,Qopt,0.0,32,32,0,0,7,0.21875,resolved cases only,0.21875,0.21875,0.11023696931531854,0.3875533079044484
+ideal leading harmonics,ideal pilot,1.025,90.0,100,SO,-0.1,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,1.025,90.0,100,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.025,90.0,100,SO,-0.05,32,32,0,0,13,0.40625,resolved cases only,0.40625,0.40625,0.255194024803138,0.5774027342701177
+ideal leading harmonics,ideal pilot,1.025,90.0,100,RO,-0.05,32,32,0,0,7,0.21875,resolved cases only,0.21875,0.21875,0.11023696931531854,0.3875533079044484
+ideal leading harmonics,ideal pilot,1.025,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,300,Q,0.0,32,32,0,0,8,0.25,resolved cases only,0.25,0.25,0.1325224398262155,0.42106891770246624
+ideal leading harmonics,ideal pilot,1.025,90.0,300,Qopt,0.0,32,32,0,0,7,0.21875,resolved cases only,0.21875,0.21875,0.11023696931531854,0.3875533079044484
+ideal leading harmonics,ideal pilot,1.025,90.0,300,SO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.025,90.0,300,RO,-0.1,32,32,0,0,2,0.0625,resolved cases only,0.0625,0.0625,0.017310203195157234,0.2014746724800358
+ideal leading harmonics,ideal pilot,1.025,90.0,300,SO,-0.05,32,32,0,0,13,0.40625,resolved cases only,0.40625,0.40625,0.255194024803138,0.5774027342701177
+ideal leading harmonics,ideal pilot,1.025,90.0,300,RO,-0.05,32,32,0,0,7,0.21875,resolved cases only,0.21875,0.21875,0.11023696931531854,0.3875533079044484
+ideal leading harmonics,ideal pilot,1.025,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.025,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,0.0,100,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.05,0.0,100,Qopt,0.0,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,1.05,0.0,100,SO,-0.1,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,1.05,0.0,100,RO,-0.1,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,1.05,0.0,100,SO,-0.05,32,32,0,0,30,0.9375,resolved cases only,0.9375,0.9375,0.7985253275199642,0.9826897968048427
+ideal leading harmonics,ideal pilot,1.05,0.0,100,RO,-0.05,32,32,0,0,27,0.84375,resolved cases only,0.84375,0.84375,0.6824550744643347,0.9313568089337279
+ideal leading harmonics,ideal pilot,1.05,0.0,100,SO,0.05,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.05,0.0,100,RO,0.05,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,1.05,0.0,100,SO,0.1,32,32,0,0,1,0.03125,resolved cases only,0.03125,0.03125,0.005537717362550945,0.15744607800372734
+ideal leading harmonics,ideal pilot,1.05,0.0,100,RO,0.1,32,32,0,0,1,0.03125,resolved cases only,0.03125,0.03125,0.005537717362550945,0.15744607800372734
+ideal leading harmonics,ideal pilot,1.05,0.0,300,Q,0.0,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.05,0.0,300,Qopt,0.0,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,1.05,0.0,300,SO,-0.1,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,1.05,0.0,300,RO,-0.1,32,32,0,0,14,0.4375,resolved cases only,0.4375,0.4375,0.2816508596944317,0.6067469796877387
+ideal leading harmonics,ideal pilot,1.05,0.0,300,SO,-0.05,32,32,0,0,30,0.9375,resolved cases only,0.9375,0.9375,0.7985253275199642,0.9826897968048427
+ideal leading harmonics,ideal pilot,1.05,0.0,300,RO,-0.05,32,32,0,0,24,0.75,resolved cases only,0.75,0.75,0.5789310822975338,0.8674775601737845
+ideal leading harmonics,ideal pilot,1.05,0.0,300,SO,0.05,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.05,0.0,300,RO,0.05,32,32,0,0,3,0.09375,resolved cases only,0.09375,0.09375,0.032400962626319516,0.24218499335778831
+ideal leading harmonics,ideal pilot,1.05,0.0,300,SO,0.1,32,32,0,0,1,0.03125,resolved cases only,0.03125,0.03125,0.005537717362550945,0.15744607800372734
+ideal leading harmonics,ideal pilot,1.05,0.0,300,RO,0.1,32,32,0,0,1,0.03125,resolved cases only,0.03125,0.03125,0.005537717362550945,0.15744607800372734
+ideal leading harmonics,ideal pilot,1.05,90.0,100,Q,0.0,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,1.05,90.0,100,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.05,90.0,100,SO,-0.1,32,32,0,0,12,0.375,resolved cases only,0.375,0.375,0.2293366846595921,0.5474589941047487
+ideal leading harmonics,ideal pilot,1.05,90.0,100,RO,-0.1,32,32,0,0,7,0.21875,resolved cases only,0.21875,0.21875,0.11023696931531854,0.3875533079044484
+ideal leading harmonics,ideal pilot,1.05,90.0,100,SO,-0.05,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,1.05,90.0,100,RO,-0.05,32,32,0,0,10,0.3125,resolved cases only,0.3125,0.3125,0.17952352116618736,0.4856699969803239
+ideal leading harmonics,ideal pilot,1.05,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,300,Q,0.0,32,32,0,0,10,0.3125,resolved cases only,0.3125,0.3125,0.17952352116618736,0.4856699969803239
+ideal leading harmonics,ideal pilot,1.05,90.0,300,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.05,90.0,300,SO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.05,90.0,300,RO,-0.1,32,32,0,0,4,0.125,resolved cases only,0.125,0.125,0.04970053844474301,0.2806864978482796
+ideal leading harmonics,ideal pilot,1.05,90.0,300,SO,-0.05,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,1.05,90.0,300,RO,-0.05,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.05,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.05,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.1,0.0,100,RO,-0.1,32,32,0,0,25,0.78125,resolved cases only,0.78125,0.78125,0.6124466920955516,0.8897630306846815
+ideal leading harmonics,ideal pilot,1.1,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.1,0.0,100,RO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.1,0.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,SO,-0.1,32,32,0,0,31,0.96875,resolved cases only,0.96875,0.96875,0.8425539219962727,0.9944622826374491
+ideal leading harmonics,ideal pilot,1.1,0.0,300,RO,-0.1,32,32,0,0,22,0.6875,resolved cases only,0.6875,0.6875,0.514330003019676,0.8204764788338126
+ideal leading harmonics,ideal pilot,1.1,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.1,0.0,300,RO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.1,0.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,0.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,SO,-0.1,32,32,0,0,14,0.4375,resolved cases only,0.4375,0.4375,0.2816508596944317,0.6067469796877387
+ideal leading harmonics,ideal pilot,1.1,90.0,100,RO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.1,90.0,100,SO,-0.05,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,1.1,90.0,100,RO,-0.05,32,32,0,0,15,0.46875,resolved cases only,0.46875,0.46875,0.30869129901682335,0.6355076206742619
+ideal leading harmonics,ideal pilot,1.1,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,SO,-0.1,32,32,0,0,14,0.4375,resolved cases only,0.4375,0.4375,0.2816508596944317,0.6067469796877387
+ideal leading harmonics,ideal pilot,1.1,90.0,300,RO,-0.1,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.1,90.0,300,SO,-0.05,32,32,0,0,20,0.625,resolved cases only,0.625,0.625,0.45254100589525126,0.7706633153404079
+ideal leading harmonics,ideal pilot,1.1,90.0,300,RO,-0.05,32,32,0,0,12,0.375,resolved cases only,0.375,0.375,0.2293366846595921,0.5474589941047487
+ideal leading harmonics,ideal pilot,1.1,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.1,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.15,0.0,100,RO,-0.1,32,32,0,0,19,0.59375,resolved cases only,0.59375,0.59375,0.4225972657298823,0.744805975196862
+ideal leading harmonics,ideal pilot,1.15,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.15,0.0,100,RO,-0.05,32,32,0,0,30,0.9375,resolved cases only,0.9375,0.9375,0.7985253275199642,0.9826897968048427
+ideal leading harmonics,ideal pilot,1.15,0.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,SO,-0.1,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.15,0.0,300,RO,-0.1,32,32,0,0,16,0.5,resolved cases only,0.5,0.5,0.33630614316859386,0.6636938568314061
+ideal leading harmonics,ideal pilot,1.15,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only,1.0,1.0,0.8928172849426366,1.0
+ideal leading harmonics,ideal pilot,1.15,0.0,300,RO,-0.05,32,32,0,0,28,0.875,resolved cases only,0.875,0.875,0.7193135021517204,0.950299461555257
+ideal leading harmonics,ideal pilot,1.15,0.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,0.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,SO,-0.1,32,32,0,0,21,0.65625,resolved cases only,0.65625,0.65625,0.4831077350878594,0.7958976664567146
+ideal leading harmonics,ideal pilot,1.15,90.0,100,RO,-0.1,32,32,0,0,9,0.28125,resolved cases only,0.28125,0.28125,0.15564406845647866,0.4537483693811179
+ideal leading harmonics,ideal pilot,1.15,90.0,100,SO,-0.05,32,32,0,0,18,0.5625,resolved cases only,0.5625,0.5625,0.3932530203122613,0.7183491403055682
+ideal leading harmonics,ideal pilot,1.15,90.0,100,RO,-0.05,32,32,0,0,11,0.34375,resolved cases only,0.34375,0.34375,0.20410233354328552,0.5168922649121406
+ideal leading harmonics,ideal pilot,1.15,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,100,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,Q,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,SO,-0.1,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,1.15,90.0,300,RO,-0.1,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.15,90.0,300,SO,-0.05,32,32,0,0,17,0.53125,resolved cases only,0.53125,0.53125,0.3644923793257382,0.6913087009831766
+ideal leading harmonics,ideal pilot,1.15,90.0,300,RO,-0.05,32,32,0,0,6,0.1875,resolved cases only,0.1875,0.1875,0.08889423936162782,0.3530949575492244
+ideal leading harmonics,ideal pilot,1.15,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,SO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+ideal leading harmonics,ideal pilot,1.15,90.0,300,RO,0.1,32,32,0,0,0,0.0,resolved cases only,0.0,0.0,0.0,0.1071827150573635
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,Q,0.0,32,32,0,0,26,0.8125,resolved cases only; unresolved excluded,0.8125,0.8125,0.6469084479862404,0.9111045531043405
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,Qopt,0.0,32,32,0,0,23,0.71875,resolved cases only; unresolved excluded,0.71875,0.71875,0.5462549057408342,0.8443541950225723
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,RO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,SO,0.05,32,32,0,0,7,0.21875,resolved cases only; unresolved excluded,0.21875,0.21875,0.11023836252604186,0.3875499364924353
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,100,RO,0.05,32,32,0,0,7,0.21875,resolved cases only; unresolved excluded,0.21875,0.21875,0.11023836252604186,0.3875499364924353
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,Q,0.0,32,32,0,0,26,0.8125,resolved cases only; unresolved excluded,0.8125,0.8125,0.6469084479862404,0.9111045531043405
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,Qopt,0.0,32,32,0,0,23,0.71875,resolved cases only; unresolved excluded,0.71875,0.71875,0.5462549057408342,0.8443541950225723
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,RO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,SO,0.05,32,32,0,0,5,0.15625,resolved cases only; unresolved excluded,0.15625,0.15625,0.0686442028250571,0.3175414959753039
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,0.0,300,RO,0.05,32,32,0,0,6,0.1875,resolved cases only; unresolved excluded,0.1875,0.1875,0.08889544689565954,0.3530915520137596
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,Q,0.0,32,32,0,0,5,0.15625,resolved cases only; unresolved excluded,0.15625,0.15625,0.0686442028250571,0.3175414959753039
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only; unresolved excluded,0.125,0.125,0.04970134387480073,0.2806830548165022
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,SO,-0.05,32,32,0,0,7,0.21875,resolved cases only; unresolved excluded,0.21875,0.21875,0.11023836252604186,0.3875499364924353
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,RO,-0.05,32,32,0,0,4,0.125,resolved cases only; unresolved excluded,0.125,0.125,0.04970134387480073,0.2806830548165022
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,Q,0.0,32,32,0,0,4,0.125,resolved cases only; unresolved excluded,0.125,0.125,0.04970134387480073,0.2806830548165022
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,Qopt,0.0,32,32,0,0,4,0.125,resolved cases only; unresolved excluded,0.125,0.125,0.04970134387480073,0.2806830548165022
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,SO,-0.05,32,32,0,0,5,0.15625,resolved cases only; unresolved excluded,0.15625,0.15625,0.0686442028250571,0.3175414959753039
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,RO,-0.05,32,32,0,0,4,0.125,resolved cases only; unresolved excluded,0.125,0.125,0.04970134387480073,0.2806830548165022
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.0,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,Q,0.0,32,32,0,0,31,0.96875,resolved cases only; unresolved excluded,0.96875,0.96875,0.8425573617998744,0.9944621398359969
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,Qopt,0.0,32,32,0,0,22,0.6875,resolved cases only; unresolved excluded,0.6875,0.6875,0.5143332169904459,0.8204745836639026
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,SO,-0.05,32,32,0,0,28,0.875,resolved cases only; unresolved excluded,0.875,0.875,0.7193169451834978,0.9502986561251991
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,RO,-0.05,32,32,0,0,25,0.78125,resolved cases only; unresolved excluded,0.78125,0.78125,0.6124500635075647,0.8897616374739581
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,SO,0.05,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,100,RO,0.05,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,Q,0.0,32,32,0,0,31,0.96875,resolved cases only; unresolved excluded,0.96875,0.96875,0.8425573617998744,0.9944621398359969
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,Qopt,0.0,32,32,0,0,20,0.625,resolved cases only; unresolved excluded,0.625,0.625,0.4525440735307745,0.7706611269054578
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,SO,-0.05,32,32,0,0,28,0.875,resolved cases only; unresolved excluded,0.875,0.875,0.7193169451834978,0.9502986561251991
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,RO,-0.05,32,32,0,0,22,0.6875,resolved cases only; unresolved excluded,0.6875,0.6875,0.5143332169904459,0.8204745836639026
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,SO,0.05,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,0.0,300,RO,0.05,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,Q,0.0,32,32,0,0,6,0.1875,resolved cases only; unresolved excluded,0.1875,0.1875,0.08889544689565954,0.3530915520137596
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,Qopt,0.0,32,32,0,0,5,0.15625,resolved cases only; unresolved excluded,0.15625,0.15625,0.0686442028250571,0.3175414959753039
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,SO,-0.05,32,32,0,0,9,0.28125,resolved cases only; unresolved excluded,0.28125,0.28125,0.15564580497742764,0.45374509425916565
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,RO,-0.05,32,32,0,0,8,0.25,resolved cases only; unresolved excluded,0.25,0.25,0.1325240091850904,0.4210655899424448
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,SO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,100,RO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,Q,0.0,32,32,0,0,6,0.1875,resolved cases only; unresolved excluded,0.1875,0.1875,0.08889544689565954,0.3530915520137596
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,Qopt,0.0,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,SO,-0.05,32,32,0,0,6,0.1875,resolved cases only; unresolved excluded,0.1875,0.1875,0.08889544689565954,0.3530915520137596
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,RO,-0.05,32,32,0,0,5,0.15625,resolved cases only; unresolved excluded,0.15625,0.15625,0.0686442028250571,0.3175414959753039
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,SO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,"FEM mu 1.00, 1.05",1.05,90.0,300,RO,0.05,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,Q,0.0,32,32,0,0,14,0.4375,resolved cases only; unresolved excluded,0.4375,0.4375,0.2816533111504036,0.6067440886314801
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,Qopt,0.0,32,32,0,0,3,0.09375,resolved cases only; unresolved excluded,0.09375,0.09375,0.032401551298366194,0.24218154728387864
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,SO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,RO,-0.05,32,32,0,0,30,0.9375,resolved cases only; unresolved excluded,0.9375,0.9375,0.7985287685584542,0.982689432968359
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,SO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,100,RO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,Q,0.0,32,32,0,0,10,0.3125,resolved cases only; unresolved excluded,0.3125,0.3125,0.17952541633609734,0.4856667830095541
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,Qopt,0.0,32,31,1,1,0,0.0,resolved cases only; unresolved excluded,0.0,0.03125,0.0,0.11025539546043596
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,SO,-0.05,32,32,0,0,32,1.0,resolved cases only; unresolved excluded,1.0,1.0,0.8928208017449293,1.0
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,RO,-0.05,32,32,0,0,28,0.875,resolved cases only; unresolved excluded,0.875,0.875,0.7193169451834978,0.9502986561251991
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,SO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,0.0,300,RO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,Q,0.0,32,32,0,0,2,0.0625,resolved cases only; unresolved excluded,0.0625,0.0625,0.017310567031640967,0.2014712314415458
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,SO,-0.05,32,32,0,0,12,0.375,resolved cases only; unresolved excluded,0.375,0.375,0.22933887309454212,0.5474559264692255
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,RO,-0.05,32,32,0,0,8,0.25,resolved cases only; unresolved excluded,0.25,0.25,0.1325240091850904,0.4210655899424448
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,SO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,100,RO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,Q,0.0,32,32,0,0,1,0.03125,resolved cases only; unresolved excluded,0.03125,0.03125,0.005537860164003122,0.15744263820012558
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,Qopt,0.0,32,32,0,0,0,0.0,resolved cases only; unresolved excluded,0.0,0.0,0.0,0.1071791982550706
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,SO,-0.05,32,32,0,0,9,0.28125,resolved cases only; unresolved excluded,0.28125,0.28125,0.15564580497742764,0.45374509425916565
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,RO,-0.05,32,32,0,0,6,0.1875,resolved cases only; unresolved excluded,0.1875,0.1875,0.08889544689565954,0.3530915520137596
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,SO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
+full h50 P4 FEM,FEM mu 1.10,1.1,90.0,300,RO,0.05,0,0,0,0,0,nan,resolved cases only; unresolved excluded,nan,nan,nan,nan
