@@ -1,0 +1,4 @@
+model,x0_m,y0_m,vx0_m_s,vy0_m_s,phase_rad,voltage_V,reason
+A,-0.0009839556198941652,0.0063654723896194925,8.43461940694093,-55.67146318030891,0.0,250.0,"predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+B,-0.0009839556198941652,0.0063654723896194925,8.43461940694093,-55.67146318030891,0.0,250.0,"predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"
+C,-0.0009839556198941652,0.0063654723896194925,8.43461940694093,-55.67146318030891,0.0,250.0,"predeclared baseline Sobol r00_000000; native P4 verification only, not an extra A4 sample"

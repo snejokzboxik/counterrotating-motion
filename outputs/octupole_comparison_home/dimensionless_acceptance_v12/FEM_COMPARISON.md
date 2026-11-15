@@ -144,3 +144,17 @@ A new, deduplicated Sobol subset was run on the N48 h35 and h50 fields using the
 Among escaping starts, A had one exit-time comparison with `|Δt|=8.46e-5 RF`; B had six, with maximum `|Δt|=0.01709 RF` and mean signed `t_h50−t_h35=+0.00290 RF`. C had no exits in this subset, so it provides no exit-time comparison. The different status groups and short finite sample prevent conclusions about long-time convergence.
 
 The start set uses seed 121114 and was checked against the 32-start h50 cost pilot and the prior 30-trajectory short SI check; there were no exact duplicate physical starts. Full job data and the comparison are in `runs/c0b99b2d4dd6413aeddd_multimesh_equal_phase0_8sobol/`, especially `mesh_classification_comparison.csv`, `mesh_convergence_summary.json`, and `summarize_mesh_convergence.py`.
+
+## V12 control inventory and exact-launch preparation — 15 November 2026
+
+No new electrostatic solve is needed for the planned FEM checks. Existing, checksummed P4 sector solutions are available at `outputs/abc_validation/direct_fem_validation/v2/h35_P4/` and `h50_P4/` for the ABC field; independent alternating-electrode C fields are at `outputs/octupole_comparison_home/confinement_maps_v11/fields/h35_P4_C/` and `h50_P4_C/`. The V12 N48 reconstructions and V11 native-P4 route both point to these stored fields and the matching meshes.
+
+Reusable trajectory checks have different scopes and are not substitutes for the new 1000-RF acceptance calculation:
+
+- `validation/dimensionless_vs_physical_horizon100.{csv,json}` contains 30 SI-versus-dimensionless trajectories on h35/h50 for A/B/C; all classifications match and the maximum final normalized-state difference is `1.30×10⁻¹²`. The horizon is 100 RF, and B uses 353.553 V, so these are equation/integrator controls only.
+- `validation/dimensionless_vs_physical_horizon20.{csv,json}` contains six 20-RF center-start checks.
+- Existing V12 replay contains nine exact h35/h50 V11 XY comparisons. The separate 36-row replay pilot now covers four 21×21 XY coordinates at each of phases 0°/45°/90°; all 36 statuses agree and 12 exit times differ by at most `4.5744×10⁻¹¹ RF`.
+- Native P4 C h35/h50 records at `(3.75, −6) mm`, zero velocity, phase 0° already exist. Their exits at `25.5693877230` and `25.5692927133 RF` differ from V12 N48 by about `1.97×10⁻⁵` and `1.93×10⁻⁵ RF`.
+- V10 native P4 A trajectories used `M=10⁻¹⁵ kg`, `q=10⁻¹² C`; they are useful solver-history checks, but their outcomes do not apply to V12's `100000 Th`, `+e` ensemble.
+
+Prepared a genuinely four-dimensional independent verification point from the baseline's already integrated Sobol state `r00_000000`: `(x₀,y₀)=(-0.983955619894, 6.365472389619) mm`, `(vₓ,vᵧ)=(8.43461940694, −55.6714631803) m/s`, `E₀=1.6429723287 eV`, RF phase 0°. The candidate table `validation/native_p4_baseline_r00_000000/candidates.csv` keeps the same state for A/B/C and labels it as validation only, so it cannot enter A₄ twice. A two-worker, h35/h50, 1000-RF dry-run and P4 preflight succeeded, producing six planned controls and frozen input hashes in `preflight_config.json`. The integrations will compare native P4 with both FEM meshes against the corresponding N48 result; they have not yet run.
