@@ -404,6 +404,60 @@ def _summarize(prepared: list[dict], replicates: list[int], energy_edges: tuple[
     return replicate_rows, summary_rows
 
 
+def _contrast_subgroups(replicate_rows: list[dict], replicates: list[int]) -> list[dict]:
+    """Paired scramble-level contrasts between predeclared directional/energy strata."""
+    pairs = (
+        ("Lz0_sign", "negative", "positive", "positive_minus_negative"),
+        ("radial_velocity_sign", "negative", "positive", "outward_minus_inward"),
+        ("initial_energy_bin", "[0,0.5) eV", "[3,5] eV", "high_minus_low_energy"),
+    )
+    models = sorted({row["model"] for row in replicate_rows})
+    by_key = {(row["model"], row["replicate"], row["condition"], row["category"]): row
+              for row in replicate_rows}
+    output = []
+    for model in models:
+        for condition, lower_category, upper_category, contrast_name in pairs:
+            differences = []
+            n_lower, n_upper = [], []
+            for replicate in replicates:
+                lower = by_key[(model, replicate, condition, lower_category)]
+                upper = by_key[(model, replicate, condition, upper_category)]
+                if (lower["n_initial"] < 1 or upper["n_initial"] < 1
+                        or lower["n_unresolved"] or upper["n_unresolved"]):
+                    differences = []
+                    break
+                lower_fraction = lower["n_retained"] / lower["n_initial"]
+                upper_fraction = upper["n_retained"] / upper["n_initial"]
+                differences.append(upper_fraction - lower_fraction)
+                n_lower.append(lower["n_initial"])
+                n_upper.append(upper["n_initial"])
+            if len(differences) == len(replicates) and len(differences) > 1:
+                mean = float(np.mean(differences))
+                se = float(np.std(differences, ddof=1) / math.sqrt(len(differences)))
+                half_width = float(student_t.ppf(0.975, df=len(differences)-1) * se)
+                ci_low, ci_high = max(-1.0, mean-half_width), min(1.0, mean+half_width)
+            else:
+                mean = se = ci_low = ci_high = None
+            output.append({
+                "model": model,
+                "contrast": contrast_name,
+                "condition": condition,
+                "lower_category": lower_category,
+                "upper_category": upper_category,
+                "upper_minus_lower_retention_fraction": mean,
+                "paired_replica_SE": se,
+                "paired_student_t_95pct_CI_low": ci_low,
+                "paired_student_t_95pct_CI_high": ci_high,
+                "replicates_expected": len(replicates),
+                "replicates_fully_observed": len(differences),
+                "lower_n_by_replicate_json": json.dumps(dict(zip(replicates, n_lower)), sort_keys=True),
+                "upper_n_by_replicate_json": json.dumps(dict(zip(replicates, n_upper)), sort_keys=True),
+                "replicate_differences_json": json.dumps(differences),
+                "interpretation": "paired contrast of conditional subgroup fractions across independent Sobol scrambles; not an A4 contribution",
+            })
+    return output
+
+
 def _write_csv(path: Path, rows: list[dict]) -> None:
     if not rows:
         raise ValueError(f"refusing to write empty table: {path}")
@@ -514,6 +568,7 @@ def analyze(run_arg: Path, output_arg: Path | None,
     prepared, metadata = _prepare_rows(results_path, run_dir, mass, energy_edges, mesh_um)
     replicates = metadata["replicates"]
     replicate_rows, summary_rows = _summarize(prepared, replicates, energy_edges)
+    contrast_rows = _contrast_subgroups(replicate_rows, replicates)
 
     # For any noncentral state, Lz=M*r*v_tan, so their sign strata must match.
     sign_mismatches = sum(
@@ -527,8 +582,10 @@ def analyze(run_arg: Path, output_arg: Path | None,
     output_dir.mkdir(parents=True, exist_ok=True)
     by_rep_path = output_dir / "conditional_retention_by_replicate_v12.csv"
     summary_path = output_dir / "conditional_retention_summary_v12.csv"
+    contrast_path = output_dir / "conditional_retention_contrasts_v12.csv"
     _write_csv(by_rep_path, replicate_rows)
     _write_csv(summary_path, summary_rows)
+    _write_csv(contrast_path, contrast_rows)
     figure_names = _plot(summary_rows, output_dir, metadata)
 
     run_info = {
@@ -557,6 +614,7 @@ def analyze(run_arg: Path, output_arg: Path | None,
         "files": {
             "replicate_csv": by_rep_path.name,
             "summary_csv": summary_path.name,
+            "contrast_csv": contrast_path.name,
             "figures": figure_names,
         },
         "figures": "One figure saved as PDF, SVG, and 600 dpi PNG.",
@@ -564,7 +622,8 @@ def analyze(run_arg: Path, output_arg: Path | None,
     json_path = output_dir / "conditional_retention_directions_v12.json"
     json_path.write_text(json.dumps(run_info, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     return {"json": str(json_path), "replicate_csv": str(by_rep_path),
-            "summary_csv": str(summary_path), "figures": [str(output_dir / name) for name in figure_names],
+            "summary_csv": str(summary_path), "contrast_csv": str(contrast_path),
+            "figures": [str(output_dir / name) for name in figure_names],
             "analyzed_rows": metadata["analyzed_rows"], "models": metadata["models"],
             "replicates": metadata["replicates"], "output_directory": str(output_dir)}
 

@@ -3,16 +3,31 @@
   "job_id": "56daae972a94aa79bcf0549a",
   "sample_id": "r00_000010",
   "model": "idealC_h50_scale2",
+  "kind": "idealC",
+  "mesh_um": 50,
+  "voltage_V": 500.0,
+  "scale_factor": 2.0,
+  "coupling": 0.01909376573874263,
+  "leading_order": 6,
+  "leading_quadrature_coefficient_norm": 0.6759840978648081,
+  "comparison_radius_m": 0.004,
+  "leading_rms_field_per_volt_V_m": 15.84337729370644,
+  "total_rms_field_per_volt_V_m": 15.84337729370644,
+  "source_sha256": "d545a2771c8a8a8f3b3e354351cd4763c3b13260c15e8b0406a9cfb8106ed1da",
+  "horizon_RF": 1000,
+  "phase_rad": 0.0,
   "status": "retained",
-  "complete": false,
-  "reached_RF": 500.0,
-  "state_dimensionless": [
-    -0.08283620856881828,
-    -0.6046967696510138,
-    -0.0065619097450580356,
-    -0.007723695183172122
-  ],
+  "complete": true,
+  "reached_RF": 1000.0,
   "escape_RF": null,
-  "max_radius_sampled_rho": 0.7794542782346096,
-  "nfev": 480034
+  "state_dimensionless": [
+    -0.41000402610571496,
+    -0.09189173919570755,
+    0.012796541760534073,
+    0.004888082960729143
+  ],
+  "max_radius_sampled_rho": 0.7792659502989979,
+  "nfev": 480034,
+  "wall_s": 44.83880520000821,
+  "message": ""
 }
