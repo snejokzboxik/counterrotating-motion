@@ -73,11 +73,36 @@ def main() -> None:
                     for name in ("retained", "escaped", "numerical_error")}
         coordinates = {(float(row["x0_m"]), float(row["y0_m"])) for row in subset_initial}
         result_coordinates = {(float(row["x0_m"]), float(row["y0_m"])) for row in subset_results}
+        starts_by_model = {
+            name: {
+                tuple(round(float(row[key]), 12) for key in
+                      ("x0_m", "y0_m", "vx0_m_s", "vy0_m_s", "phase_rad"))
+                for row in initial if row["model"] == name
+            }
+            for name in ("A", "B", "C")
+        }
+        shared_start_states = len({frozenset(values) for values in starts_by_model.values()}) == 1
+        zero_velocity_and_phase = all(
+            math.isclose(float(row["vx0_m_s"]), 0.0, rel_tol=0.0, abs_tol=1e-15)
+            and math.isclose(float(row["vy0_m_s"]), 0.0, rel_tol=0.0, abs_tol=1e-15)
+            and math.isclose(float(row["phase_rad"]), math.radians(phase), rel_tol=0.0, abs_tol=1e-12)
+            for row in subset_initial
+        )
+        result_config_matches = all(
+            row["status"] in {"retained", "escaped", "numerical_error"}
+            and math.isclose(float(row["voltage_V"]), 250.0, rel_tol=0.0, abs_tol=1e-12)
+            and math.isclose(float(row["phase_rad"]), math.radians(phase), rel_tol=0.0, abs_tol=1e-12)
+            for row in subset_results
+        )
         xs = sorted({x for x, _ in coordinates})
         ys = sorted({y for _, y in coordinates})
         dx_mm = (xs[1] - xs[0]) * 1e3 if len(xs) > 1 else math.nan
         dy_mm = (ys[1] - ys[0]) * 1e3 if len(ys) > 1 else math.nan
         step_mm = float(area["step_mm"])
+        expected_axis = [-0.0075 + i * (0.015 / (grid - 1)) for i in range(grid)]
+        expected_xy = {(round(x, 12), round(y, 12)) for x in expected_axis for y in expected_axis
+                       if math.hypot(x, y) < 0.0075}
+        coordinate_lattice_match = {(round(x, 12), round(y, 12)) for x, y in coordinates} == expected_xy
         sampled = len(subset_results)
         retained_area = statuses["retained"] * step_mm**2
         upper_area = (statuses["retained"] + statuses["numerical_error"]) * step_mm**2
@@ -95,6 +120,8 @@ def main() -> None:
         pass_row = (
             config_ok and coordinate_match and close(dx_mm, step_mm)
             and close(dy_mm, step_mm) and sampled == int(area["sampled"])
+            and shared_start_states and zero_velocity_and_phase and result_config_matches
+            and coordinate_lattice_match and len(subset_initial) == len(subset_results)
             and statuses["retained"] == int(area["retained"])
             and statuses["escaped"] == int(area["escaped"])
             and statuses["numerical_error"] == int(area["numerical_error"])
@@ -119,6 +146,10 @@ def main() -> None:
             "retained_cell_area_mm2_source": source_area,
             "config_match": config_ok,
             "coordinate_sets_match": coordinate_match,
+            "A_B_C_shared_initial_states": shared_start_states,
+            "zero_velocity_and_phase_match": zero_velocity_and_phase,
+            "result_voltage_phase_status_match": result_config_matches,
+            "strict_disk_lattice_match": coordinate_lattice_match,
             "pass": pass_row,
         })
 
@@ -142,6 +173,9 @@ def main() -> None:
         "checks": [
             "V11 physical configuration and voltage protocol",
             "initial/result coordinate set equality per model",
+            "identical A/B/C initial states and zero-velocity RF phase",
+            "strict circular subset of the configured Cartesian grid",
+            "result voltage, phase, and status labels",
             "saved XY lattice spacing",
             "retained/escaped/numerical-error row counts",
             "retained and upper node-cell area calculations",

@@ -17,6 +17,9 @@
   "checks": [
     "V11 physical configuration and voltage protocol",
     "initial/result coordinate set equality per model",
+    "identical A/B/C initial states and zero-velocity RF phase",
+    "strict circular subset of the configured Cartesian grid",
+    "result voltage, phase, and status labels",
     "saved XY lattice spacing",
     "retained/escaped/numerical-error row counts",
     "retained and upper node-cell area calculations",
