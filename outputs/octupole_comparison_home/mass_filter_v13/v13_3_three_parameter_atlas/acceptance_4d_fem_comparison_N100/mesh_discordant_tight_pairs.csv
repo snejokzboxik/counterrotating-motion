@@ -1,0 +1,11 @@
+pair_key,base_h50_status,base_h35_status,tight_h50_status,tight_h35_status,tight_mesh_status_changed,tight_h50_rho_max,tight_h35_rho_max
+a9_b2_e0|Q|1.0|270.0|0|28,retained,escaped,retained,escaped,True,0.8417885828971763,1.000000000000001
+a9_b2_e0|RO|1.0|0.0|0|22,escaped,retained,escaped,retained,True,1.0000000000000024,0.8666029411334341
+a9_b2_e0|RO|1.0|0.0|0|6,retained,escaped,retained,escaped,True,0.8981454340817742,1.0
+a9_b2_e0|RO|1.0|0.0|2|4,retained,escaped,retained,escaped,True,0.8047819936894391,1.0
+a9_b2_e0|RO|1.0|180.0|1|5,escaped,retained,escaped,retained,True,1.0,0.8495361507788686
+a9_b2_e0|RO|1.0|90.0|3|27,retained,escaped,retained,escaped,True,0.8178474670633292,1.0000000000000098
+ro_gain_negative|Q|1.0|0.0|0|3,retained,escaped,retained,escaped,True,0.9406118570619811,1.0000000000000016
+ro_gain_negative|Q|1.0|0.0|1|5,retained,escaped,retained,escaped,True,0.8453741103366016,1.0
+ro_gain_negative|RO|1.0|0.0|2|6,retained,escaped,retained,escaped,True,0.8487426051329409,1.0000000000000044
+ro_gain_negative|RO|1.0|270.0|1|6,retained,escaped,retained,escaped,True,0.8338042157249784,1.0000000000000024

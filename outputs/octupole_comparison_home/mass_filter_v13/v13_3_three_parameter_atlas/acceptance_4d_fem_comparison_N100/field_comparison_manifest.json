@@ -1,0 +1,21 @@
+{
+  "reference_directory": "acceptance_4d_core_N100",
+  "comparison_directories": [
+    "acceptance_4d_fem_h50_selected_N100",
+    "acceptance_4d_fem_h35_selected_N100"
+  ],
+  "horizon_RF": 100,
+  "common_initial_state_abs_tolerance": 1e-14,
+  "uncertainty": "paired differences are averaged within each of four independent Sobol scrambles; Student-t interval across four replicate means; unresolved statuses widen bounds",
+  "source_manifest_sha256": {
+    "acceptance_4d_core_N100": "66ea1c33a690c39562fbf2616047295a501fe1eafe10440383ff3defb8a4cffd",
+    "acceptance_4d_fem_h50_selected_N100": "7ec4f96070a15c4bb65a7671f2872fdedf7c3e4dea5de5a88baeb6e9939b1758",
+    "acceptance_4d_fem_h35_selected_N100": "549bad57dac55ac4f4df312a6e22538a13b354be8bf148748c7aa1ac687dc842"
+  },
+  "field_modes": {
+    "acceptance_4d_core_N100": "ideal_harmonic",
+    "acceptance_4d_fem_h50_selected_N100": "fem_h50_P4",
+    "acceptance_4d_fem_h35_selected_N100": "fem_h35_P4"
+  },
+  "comparison_script_sha256": "635d41c000e60ad5e2bac70eb2431a662e1694058f6f12e7b47413ecf41c0e84"
+}
