@@ -24,13 +24,31 @@ def estimate(values):
     return m,m-h,m+h
 def crossings(x,y):
     x=np.asarray(x,float);y=np.asarray(y,float)
-    imax=np.flatnonzero(y==np.max(y));left_i=int(imax[0]);right_i=int(imax[-1]);peak=float(np.max(y));half=peak/2
-    li=next((j for j in range(left_i-1,-1,-1) if y[j]<half),None)
-    ri=next((j for j in range(right_i+1,len(y)) if y[j]<half),None)
+    if x.ndim!=1 or y.ndim!=1 or len(x)!=len(y) or len(x)<3:
+        raise ValueError("FWHM requires matching 1D profiles with at least three sampled masses")
+    if np.any(np.diff(x)<=0) or not np.all(np.isfinite(y)):
+        raise ValueError("mass nodes must increase and retention values must be finite")
+    peak=float(np.max(y))
+    if peak<=0:
+        return peak,math.nan,math.nan,math.nan,math.nan,0,False,math.nan
+    imax=np.flatnonzero(y==peak);peak_i=int(imax[0]);half=peak/2
+    above=y>=half
+    edges=np.diff(np.r_[False,above,False].astype(np.int8))
+    starts=np.flatnonzero(edges==1);ends=np.flatnonzero(edges==-1)-1
+    components=list(zip(starts.tolist(),ends.tolist()))
+    selected=next(((a,b) for a,b in components if a<=peak_i<=b),None)
+    if selected is None:
+        raise RuntimeError("sampled maximum was not inside its half-height component")
+    a,b=selected
     def interp(i,j):return float(x[i]+(half-y[i])*(x[j]-x[i])/(y[j]-y[i]))
-    left=interp(li,li+1) if li is not None else math.nan
-    right=interp(ri-1,ri) if ri is not None else math.nan
-    return peak,float(np.mean(x[imax])),left,right,(right-left if math.isfinite(left) and math.isfinite(right) else math.nan)
+    left=interp(a-1,a) if a>0 else math.nan
+    right=interp(b,b+1) if b<len(x)-1 else math.nan
+    width=right-left if math.isfinite(left) and math.isfinite(right) else math.nan
+    spacing=float(np.max(np.diff(x)))
+    # Require at least three grid intervals across a feature before reporting Rm.
+    resolved=math.isfinite(width) and width>=3*spacing and len(components)==1
+    mupeak=float(np.mean(x[imax]))
+    return peak,mupeak,left,right,width,len(components),resolved,spacing
 def main():
     p=argparse.ArgumentParser();p.add_argument("--directory",required=True);args=p.parse_args()
     d=Path(args.directory)
@@ -52,30 +70,35 @@ def main():
             if phase=="phase_average":val=(data[(mu,0.)]+data[(mu,90.)])/2
             else:val=data[(mu,float(phase))]
             profile.append(val)
-        peak,mupeak,left,right,width=crossings(mus,np.asarray(profile,float))
+        peak,mupeak,left,right,width,n_lobes,resolved,spacing=crossings(mus,np.asarray(profile,float))
         per_rep.append({"model":model,"replica":rep,"phase":phase,"peak_P_ret":peak,"peak_mu":mupeak,
-                        "left_half_max_mu":left,"right_half_max_mu":right,"FWHM_mu":width,
-                        "Rm_replica":mupeak/width if width>0 and math.isfinite(width) else math.nan,
+                        "left_half_max_mu":left,"right_half_max_mu":right,
+                        "single_lobe_FWHM_mu":width,"FWHM_mu":width if n_lobes==1 else math.nan,
+                        "Rm_replica":mupeak/width if resolved else math.nan,
                         "bounded_both_sides":math.isfinite(left) and math.isfinite(right),
+                        "halfmax_lobes":n_lobes,"resolved_on_mass_grid":resolved,
+                        "max_mass_grid_step":spacing,
                         "mass_grid_min":min(mus),"mass_grid_max":max(mus),"grid_step_min":min(np.diff(mus)) if len(mus)>1 else math.nan,
-                        "threshold":"half of each independent replicate's own sampled maximum; piecewise linear only between computed mass nodes"})
+                        "threshold":"half of each independent replicate's own sampled maximum; connected above-half component only; piecewise linear only between computed mass nodes; at least three grid intervals required"})
     write(out/"fwhm_per_replica.csv",per_rep)
     summary=[]
     for model in models:
       for phase in phases:
         rr=[r for r in per_rep if r["model"]==model and r["phase"]==phase]
         bounded=[r for r in rr if r["bounded_both_sides"]]
-        if len(bounded)==len(rr):
+        valid=[r for r in rr if r["bounded_both_sides"] and r["halfmax_lobes"]==1 and r["resolved_on_mass_grid"]]
+        if len(valid)==len(rr):
             pmean,plo,phi=estimate([r["peak_P_ret"] for r in rr])
             mmean,mlo,mhi=estimate([r["peak_mu"] for r in rr])
             wmean,wlo,whi=estimate([r["FWHM_mu"] for r in rr])
             rmean,rlo,rhi=estimate([r["Rm_replica"] for r in rr])
             rm_ratio=mmean/wmean if wmean>0 else math.nan
-            status="bounded on both sides for all independent replicates"
+            status="single bounded half-height lobe, resolved by the mass grid, for all independent replicates"
         else:
             pmean=plo=phi=mmean=mlo=mhi=wmean=wlo=whi=rmean=rlo=rhi=rm_ratio=math.nan
-            status="FWHM not estimated: at least one replicate lacks a computed half-height crossing"
+            status="Rm withheld: at least one replicate is unbounded, multi-lobed, or narrower than three mass-grid intervals"
         summary.append({"model":model,"phase":phase,"n_replicates":len(rr),"n_bounded_replicates":len(bounded),
+                        "n_single_lobe_grid_resolved":len(valid),
                         "peak_P_ret_mean":pmean,"peak_P_ret_t95_low":plo,"peak_P_ret_t95_high":phi,
                         "peak_mu_mean":mmean,"peak_mu_t95_low":mlo,"peak_mu_t95_high":mhi,
                         "FWHM_mu_mean":wmean,"FWHM_mu_t95_low":wlo,"FWHM_mu_t95_high":whi,
