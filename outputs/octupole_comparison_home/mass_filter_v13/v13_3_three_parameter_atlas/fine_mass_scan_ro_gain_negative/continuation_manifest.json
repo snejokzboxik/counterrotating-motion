@@ -1,0 +1,36 @@
+{
+  "script_sha256": "6c871c310649aeeccda7b0853a6ec08502773972ce7edb274d260e92ecb7b5f3",
+  "source_directory": "fine_mass_scan_ro_gain_negative",
+  "source_trajectory_results_sha256": "d98f895b171493a3120cd7cf3c5876504b90e257bff7411303367ffc68ee78e6",
+  "selected_mu": [
+    1.0,
+    1.05,
+    1.1
+  ],
+  "state_count_per_replicate": 16,
+  "continued_horizons_RF": [
+    300,
+    1000
+  ],
+  "point": {
+    "candidate_id": "ro_gain_negative",
+    "alpha": 0.0125,
+    "beta": 0.1125,
+    "kappa": -0.005625
+  },
+  "replica_seeds": [
+    731337,
+    913729,
+    20261114,
+    8675309
+  ],
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-10,
+    "atol": 2e-12,
+    "max_step_tau": 0.09817477042468103
+  },
+  "continuation": "exact saved endpoint and absolute RF phase; escaped/unresolved states carried without reintegration",
+  "unresolved_policy": "explicit; never classified as lost",
+  "run_hash": "b7fcdf7b28b4ffc9b9dcb522682fb62755b277b3a5e6e8e09ea89dbf6bb9c4ae"
+}
