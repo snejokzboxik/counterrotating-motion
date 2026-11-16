@@ -1,0 +1,29 @@
+{
+  "candidate_id": "ro_loss_negative",
+  "dimensionless_base": {
+    "alpha": -0.025,
+    "beta": 0.175,
+    "kappa": -0.00875,
+    "eta": -0.05
+  },
+  "physical_constants": {
+    "M0_Th": 3200.04652261404,
+    "Q_C": 1.602176634e-19,
+    "R_m": 0.008,
+    "f_Hz": 100000.0,
+    "c2": 0.7718255558274212,
+    "d2": 0.7718255558274212,
+    "c4": 0.5413395699439091
+  },
+  "fixed_drive_voltages": {
+    "U2_V": 190.0,
+    "VDC_V": -27.142857142857157,
+    "U4_V": -13.544812142811296
+  },
+  "max_electrode_peak_abs_V": 230.6876692856685,
+  "peak_method": "max over 12 electrodes of |VDC Q2| + hypot(U2 Q2 + U4 C4, U4 S4), using saved V13.1 electrode basis projections",
+  "input_hashes": {
+    "scan_manifest_sha256": "085736af72833464bca35773a32f3b9998311b06d895c2b9fc6206e54e3ca177",
+    "electrode_voltage_peaks_sha256": "9827c8e8d09693adc6c40f38d1c792cf1bd6a7d6371b07d31e1ff9006cb03dd6"
+  }
+}
