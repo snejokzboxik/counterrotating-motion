@@ -44,7 +44,8 @@ def crossings(x,y):
     left=interp(a-1,a) if a>0 else math.nan
     right=interp(b,b+1) if b<len(x)-1 else math.nan
     width=right-left if math.isfinite(left) and math.isfinite(right) else math.nan
-    spacing=float(np.max(np.diff(x)))
+    local_lo=max(0,a-1);local_hi=min(len(x)-1,b+1)
+    spacing=float(np.max(np.diff(x[local_lo:local_hi+1])))
     # Require at least three grid intervals across a feature before reporting Rm.
     resolved=math.isfinite(width) and width>=3*spacing and len(components)==1
     mupeak=float(np.mean(x[imax]))
