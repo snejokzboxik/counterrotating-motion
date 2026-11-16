@@ -1,0 +1,15 @@
+{
+  "method": "scipy.griddata linear Delaunay + marching tetrahedra",
+  "computed_nodes_used": 3213,
+  "phase_deg": 0,
+  "levels": [
+    0.5,
+    0.9
+  ],
+  "grid_shape": [
+    25,
+    25,
+    41
+  ],
+  "warning": "Isosurfaces are interpolated visual reconstructions, not additional trajectory results."
+}

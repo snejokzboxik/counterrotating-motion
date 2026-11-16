@@ -1,0 +1,11 @@
+{
+  "source": "adaptive_refinement_summary.csv",
+  "nodes": "directly integrated only; no spatial interpolation",
+  "uncertainty": "Student-t 95% interval across four independent scrambled-Sobol replicate means",
+  "marker_key": "triangles are half-cell points; filled outlines mean difference interval excludes zero",
+  "phases_deg": [
+    0,
+    90
+  ],
+  "long_horizons_included": true
+}

@@ -1,0 +1,40 @@
+alpha_i,beta_i,eta_i,alpha,beta,eta,kappa,P_RO_phase0,P_RO_phase90,P_Q_phase0,P_Q_phase90,mean_RO_minus_Q,RO_phase_sensitivity,neighbor_gradient,floquet_status,nonlinear_retention_outside_Floquet,nonlinear_loss_inside_Floquet,score,selection_reason,long_horizon_selected,parent_alpha_i,parent_beta_i,within_250V
+5,8,0,-0.018750000000000003,0.15000000000000002,-0.2,-0.030000000000000006,0.0,0.125,1.0,0.5,-0.6875,0.125,0.625,strictly_stable,False,True,0.75,Floquet_nonlinear_mismatch,False,,,
+7,0,0,-0.006249999999999999,0.05,-0.2,-0.010000000000000002,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+9,2,0,0.006249999999999999,0.07500000000000001,-0.2,-0.015000000000000003,1.0,0.875,0.0,0.0,0.9375,0.125,1.0,unstable,True,False,1.0,largest_RO_gain,True,,,
+9,9,0,0.006249999999999999,0.1625,-0.2,-0.0325,0.0,0.125,1.0,1.0,-0.9375,0.125,0.75,strictly_stable,False,True,0.9375,largest_RO_loss,False,,,
+6,5,1,-0.012499999999999997,0.1125,-0.1,-0.011250000000000001,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+9,2,1,0.006249999999999999,0.07500000000000001,-0.1,-0.0075000000000000015,1.0,0.625,0.0,0.0,0.8125,0.375,1.0,unstable,True,False,1.0,largest_RO_gain,True,,,
+10,5,1,0.012499999999999997,0.1125,-0.1,-0.011250000000000001,1.0,0.625,0.0,0.0,0.8125,0.375,1.0,unstable,True,False,1.0,Floquet_nonlinear_mismatch,False,,,
+5,7,2,-0.018750000000000003,0.1375,-0.05,-0.006875000000000001,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+10,5,2,0.012499999999999997,0.1125,-0.05,-0.005625000000000001,1.0,0.5,0.0,0.0,0.75,0.5,1.0,unstable,True,False,1.0,largest_RO_gain,False,,,
+11,7,2,0.018750000000000003,0.1375,-0.05,-0.006875000000000001,1.0,0.25,0.0,0.0,0.625,0.75,1.0,unstable,True,False,1.0,Floquet_nonlinear_mismatch,False,,,
+4,9,3,-0.025,0.1625,-0.025,-0.0040625,0.0,0.0,0.25,0.375,-0.3125,0.0,1.0,strictly_stable,False,True,1.0,largest_RO_loss,False,,,
+5,7,3,-0.018750000000000003,0.1375,-0.025,-0.0034375000000000005,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+10,5,3,0.012499999999999997,0.1125,-0.025,-0.0028125000000000003,1.0,0.5,0.0,0.0,0.75,0.5,1.0,unstable,True,False,1.0,largest_RO_gain,False,,,
+5,6,5,-0.018750000000000003,0.125,0.025,0.003125,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+12,9,5,0.02500000000000001,0.1625,0.025,0.0040625,0.0,0.0,0.625,0.125,-0.375,0.0,1.0,strictly_stable,False,True,1.0,Floquet_nonlinear_mismatch,False,,,
+4,8,6,-0.025,0.15000000000000002,0.05,0.0075000000000000015,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+12,9,6,0.02500000000000001,0.1625,0.05,0.008125,0.0,0.0,0.625,0.125,-0.375,0.0,1.0,strictly_stable,False,True,1.0,Floquet_nonlinear_mismatch,False,,,
+5,5,7,-0.018750000000000003,0.1125,0.1,0.011250000000000001,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+6,5,7,-0.012499999999999997,0.1125,0.1,0.011250000000000001,1.0,0.5,0.0,0.0,0.75,0.5,1.0,unstable,True,False,1.0,largest_RO_gain,True,,,
+11,9,7,0.018750000000000003,0.1625,0.1,0.01625,0.875,0.125,1.0,0.625,-0.3125,0.75,0.875,strictly_stable,False,True,0.875,Floquet_nonlinear_mismatch,False,,,
+6,2,8,-0.012499999999999997,0.07500000000000001,0.2,0.015000000000000003,0.0,0.0,0.0,0.0,0.0,0.0,1.0,unstable,False,False,1.0,sharp_local_change,False,,,
+7,2,8,-0.006249999999999999,0.07500000000000001,0.2,0.015000000000000003,1.0,0.75,0.0,0.0,0.875,0.25,1.0,unstable,True,False,1.0,largest_RO_gain,True,,,
+8,9,8,0.0,0.1625,0.2,0.0325,0.125,0.0,1.0,1.0,-0.9375,0.125,0.5,strictly_stable,False,True,0.9375,largest_RO_loss,False,,,
+10,8,8,0.012499999999999997,0.15000000000000002,0.2,0.030000000000000006,0.875,0.125,1.0,1.0,-0.5,0.75,0.875,strictly_stable,False,True,0.875,Floquet_nonlinear_mismatch,False,,,
+3.5,9.0,3,-0.028125,0.1625,-0.025,-0.0040625,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,9,True
+4.5,9.0,3,-0.021875000000000002,0.1625,-0.025,-0.0040625,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,9,True
+4.0,8.5,3,-0.025,0.15625,-0.025,-0.00390625,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,9,True
+4.0,9.5,3,-0.025,0.16875,-0.025,-0.00421875,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,9,True
+6.5,0.0,0,-0.009374999999999998,0.05,-0.2,-0.010000000000000002,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,7,0,True
+7.5,0.0,0,-0.0031249999999999993,0.05,-0.2,-0.010000000000000002,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,7,0,True
+7.0,0.5,0,-0.006249999999999999,0.05625,-0.2,-0.011250000000000001,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,7,0,True
+4.5,6.0,5,-0.021875000000000002,0.125,0.025,0.003125,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,5,6,True
+5.5,6.0,5,-0.015625,0.125,0.025,0.003125,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,5,6,True
+5.0,5.5,5,-0.018750000000000003,0.11875,0.025,0.00296875,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,5,6,True
+5.0,6.5,5,-0.018750000000000003,0.13125,0.025,0.0032812500000000003,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,5,6,True
+3.5,8.0,6,-0.028125,0.15000000000000002,0.05,0.0075000000000000015,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,8,True
+4.5,8.0,6,-0.021875000000000002,0.15000000000000002,0.05,0.0075000000000000015,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,8,True
+4.0,7.5,6,-0.025,0.14375000000000002,0.05,0.007187500000000001,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,8,True
+4.0,8.5,6,-0.025,0.15625,0.05,0.0078125,,,,,,,,,,,0.8,actual half-cell refinement adjacent to coarse candidate,False,4,8,True

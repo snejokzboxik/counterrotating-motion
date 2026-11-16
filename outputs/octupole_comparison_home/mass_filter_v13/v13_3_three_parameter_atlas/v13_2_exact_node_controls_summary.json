@@ -1,0 +1,31 @@
+{
+  "n_controls": 96,
+  "status_mismatches": 0,
+  "max_abs_exit_period_difference": 1.4921397450962104e-13,
+  "max_abs_rho_max_difference": 3.984701457682149e-12,
+  "nodes": [
+    {
+      "alpha": 0.018,
+      "beta": 0.145
+    },
+    {
+      "alpha": 0.026571428571428572,
+      "beta": 0.1572222222222222
+    },
+    {
+      "alpha": 0.026571428571428572,
+      "beta": 0.17555555555555555
+    }
+  ],
+  "models": [
+    "Q",
+    "Q+RO eta=-0.05"
+  ],
+  "phases_deg": [
+    0,
+    90
+  ],
+  "states_per_group": 8,
+  "N_RF": 100,
+  "meaning": "Exact V13.2 parameter nodes; they are external controls, not literal overlaps with the new V13.3 tensor grid."
+}

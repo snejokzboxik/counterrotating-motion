@@ -1,0 +1,22 @@
+{
+  "grid_nodes": 3213,
+  "floquet_alpha_beta_nodes": 357,
+  "physical_points_at_250V": 1699,
+  "physical_fraction_of_atlas_nodes": 0.5287892934951759,
+  "strict_floquet_alpha_beta_nodes": 63,
+  "unstable_floquet_alpha_beta_nodes": 294,
+  "exact_floquet_boundary_roots_in_plot_window": 30,
+  "voltage_limit_V": 250.0,
+  "reference_mass_Th": 3200.04652261404,
+  "frequency_Hz": 100000.0,
+  "R_m": 0.008,
+  "c2": 0.7718255558274212,
+  "d2": 0.7718255558274212,
+  "c4": 0.5413395699439091,
+  "phase_slices_deg": [
+    0,
+    90
+  ],
+  "atlas_interpolated": false,
+  "isosurfaces_interpolated": true
+}
