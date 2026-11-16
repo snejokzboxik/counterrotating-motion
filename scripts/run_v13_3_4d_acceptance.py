@@ -16,9 +16,26 @@ M0_TH=3200.04652261404;FREQ=100_000.;OMEGA=2*math.pi*FREQ;R=.008;RIN=.0075;EMAX_
 C2=D2=.7718255558274212;C4=.5413395699439091
 PHASES=(0.,math.pi/2,math.pi,3*math.pi/2);SEEDS=(513217,883391,20261114,941029)
 RTOL,ATOL=2e-10,2e-12;MAX_STEP=2*math.pi/64;APERTURE=1.
-FEM4=ROOT/"outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz"
-FEM2=ROOT/"outputs/octupole_comparison_home/mass_filter_v13/v13_1/fem/quadrupole_h50_P4_sector_solution.npz"
-FEM_MESH=ROOT/"outputs/meshes/gmsh_50um/trap.msh"
+def fem_mesh_um(field_mode: str) -> int | None:
+    if field_mode == "fem_h50_P4":
+        return 50
+    if field_mode == "fem_h35_P4":
+        return 35
+    if field_mode == "ideal_harmonic":
+        return None
+    raise ValueError(f"unsupported field mode: {field_mode}")
+
+def fem_input_paths(mesh_um: int) -> tuple[Path,Path,Path]:
+    if mesh_um == 50:
+        f4=ROOT/"outputs/abc_validation/direct_fem_validation/v2/h50_P4/sector_solution.npz"
+        f2=ROOT/"outputs/octupole_comparison_home/mass_filter_v13/v13_1/fem/quadrupole_h50_P4_sector_solution.npz"
+    elif mesh_um == 35:
+        f4=ROOT/"outputs/abc_validation/direct_fem_validation/v2/h35_P4/sector_solution.npz"
+        f2=ROOT/"outputs/octupole_comparison_home/mass_filter_v13/v13_3_three_parameter_atlas/fem/quadrupole_h35_P4_sector_solution.npz"
+    else:
+        raise ValueError("Only saved h35/h50 P4 meshes are supported")
+    mesh=ROOT/f"outputs/meshes/gmsh_{mesh_um}um/trap.msh"
+    return f4,f2,mesh
 sys.path.insert(0,str(ROOT/"scripts"))
 from summarize_v13_3_fem_controls import read_csv
 
@@ -32,10 +49,11 @@ def write_csv(path,rows):
 def key(row):return "|".join((row["field_mode"],row["point_id"],row["model"],str(row["mu"]),str(row["phase_i"]),str(row["replica"]),str(row["state_i"]),str(row["horizon"]),str(row["relative_delta_rad"])))
 
 def initialize_worker(field_mode):
-    if field_mode=="fem_h50_P4":
+    mesh_um=fem_mesh_um(field_mode)
+    if mesh_um is not None:
         import run_v13_3_fem_controls as fem
         fem.RTOL,fem.ATOL,fem.MAX_STEP=RTOL,ATOL,MAX_STEP
-        fem.initialize(50)
+        fem.initialize(mesh_um)
 
 def integrate(task):
     from three_phase_trap.mass_filter_v13_3 import acceleration
@@ -92,19 +110,24 @@ def integrate(task):
     row["key"]=key(row);return row
 
 def main():
+    global RTOL,ATOL,MAX_STEP
     p=argparse.ArgumentParser();p.add_argument("--workers",type=int,default=8);p.add_argument("--mu",nargs="+",type=float,default=[.9,1.,1.1])
     p.add_argument("--points",default=str(BASE/"acceptance_points.csv"),help="CSV of selected fixed-voltage parameter rays")
     p.add_argument("--output-name",default="acceptance_4d",help="separate result directory below the V13.3 atlas")
-    p.add_argument("--field-mode",choices=("ideal_harmonic","fem_h50_P4"),default="ideal_harmonic",
-                   help="ideal model for broad QMC; full h50 P4 field for selected validation ensembles")
+    p.add_argument("--field-mode",choices=("ideal_harmonic","fem_h50_P4","fem_h35_P4"),default="ideal_harmonic",
+                   help="ideal model for broad QMC; saved full h50 or h35 P4 fields for validation ensembles")
     p.add_argument("--point-ids",nargs="+",default=None,
                    help="optional subset of already declared points, useful for long-horizon continuation")
     p.add_argument("--delta-rad",type=float,default=0.,help="relative octupole phase; kept distinct from injection phase")
     p.add_argument("--horizons",nargs="+",type=int,default=[100]);p.add_argument("--states-per-replica",type=int,default=64)
+    p.add_argument("--rtol",type=float,default=RTOL);p.add_argument("--atol",type=float,default=ATOL)
+    p.add_argument("--max-step-divisor",type=float,default=64.,help="maximum solver step is 2pi/divisor in RF phase")
     p.add_argument("--replicas",type=int,default=4);args=p.parse_args()
     if not 1<=args.workers<=8:p.error("workers must be 1..8")
     if args.replicas!=4:p.error("the documented acceptance protocol uses four independent scrambles")
     if args.states_per_replica<1 or args.states_per_replica&(args.states_per_replica-1):p.error("states-per-replica must be a power of two")
+    if args.rtol<=0 or args.atol<=0 or args.max_step_divisor<=0:p.error("solver tolerances and max-step divisor must be positive")
+    RTOL,ATOL,MAX_STEP=float(args.rtol),float(args.atol),2*math.pi/float(args.max_step_divisor)
     horizons=sorted(set(args.horizons))
     if horizons[0]!=100 or any(b<=a for a,b in zip(horizons,horizons[1:])):p.error("horizons must start at 100 and increase")
     if Path(args.output_name).name!=args.output_name:p.error("output-name must be one directory name")
@@ -154,8 +177,10 @@ def main():
     write_csv(OUT/"initial_conditions.csv",initial_rows)
     script_hash=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     source_files=[ROOT/"src/three_phase_trap/mass_filter_v13_3.py"]
-    if args.field_mode=="fem_h50_P4":
-        source_files.extend((FEM4,FEM2,FEM_MESH,ROOT/"scripts/run_v13_3_fem_controls.py",
+    mesh_um=fem_mesh_um(args.field_mode)
+    if mesh_um is not None:
+        fem4,fem2,fem_mesh=fem_input_paths(mesh_um)
+        source_files.extend((fem4,fem2,fem_mesh,ROOT/"scripts/run_v13_3_fem_controls.py",
                              ROOT/"src/three_phase_trap/direct_fem.py",
                              ROOT/"src/three_phase_trap/gmsh_mesh.py"))
     source_hashes={str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in source_files}

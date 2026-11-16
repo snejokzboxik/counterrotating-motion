@@ -1,0 +1,49 @@
+{
+  "protocol": "same state_i=0 start from four Sobol scrambles, four RF phases, Q/RO at ro_gain_negative, mu=1, aperture rho=1, N_RF=100",
+  "directories": {
+    "ideal": "acceptance_4d_pilot_ro_gain_negative",
+    "h50": "acceptance_4d_fem_mesh_smoke_h50_v2",
+    "h35": "acceptance_4d_fem_mesh_smoke_h35_v2",
+    "h50_tight": "acceptance_4d_fem_mesh_smoke_h50_tight_v2",
+    "h35_tight": "acceptance_4d_fem_mesh_smoke_h35_tight_v2"
+  },
+  "key_fields": [
+    "point_id",
+    "model",
+    "mu",
+    "phase_i",
+    "replica",
+    "state_i"
+  ],
+  "matched_trajectory_keys": 32,
+  "unresolved_by_mode": {
+    "ideal": 0,
+    "h50": 0,
+    "h35": 0,
+    "h50_tight": 0,
+    "h35_tight": 0
+  },
+  "mismatch_vs_ideal": {
+    "h50": 2,
+    "h35": 2,
+    "h50_tight": 2,
+    "h35_tight": 2
+  },
+  "h50_vs_h35_mismatches": 0,
+  "default_vs_tight_mismatches": {
+    "h50": 0,
+    "h35": 0
+  },
+  "ideal_retained_RO": 2,
+  "h50_retained_RO": 0,
+  "h35_retained_RO": 0,
+  "script_sha256": "540526091837b0628f542f5a2f28470baee62ee1e713e319966e251963d05494",
+  "trajectory_csv_sha256": {
+    "ideal": "f8841ef21a0efb3f97e2237c712df806add87b7f847f0e0b49d8f462d0aeb212",
+    "h50": "d77546ee66cdf4885adad103ccf8061d9ae636db65fb14277993a151158dccbc",
+    "h35": "3dbd70d23f6e3850d7f57385ba1d19402f4efb5168921693cc033d754f4a50a8",
+    "h50_tight": "7e8c04fce49136bd52e518dfb1f73624f6289565450a33b69e7250a0abc16138",
+    "h35_tight": "055cb6cf88e148c954458cb3d3165ad3956177c8dfc82fdbfa2a7da986b71066"
+  },
+  "interpretation": "smoke-size mesh/step cross-check only; 16 RO launches, not a statistical FEM acceptance estimate"
+}
