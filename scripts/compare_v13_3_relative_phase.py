@@ -53,6 +53,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--delta0-directory", required=True)
     parser.add_argument("--comparison-directory", required=True)
+    parser.add_argument("--output-directory", default=None,
+                        help="optional direct child of the V13.3 atlas; defaults to comparison directory")
     parser.add_argument("--point-ids", nargs="+", default=None)
     parser.add_argument("--horizon", type=int, default=100)
     args = parser.parse_args()
@@ -162,7 +164,13 @@ def main() -> None:
         result["note"] = "unresolved outcomes widen lower/upper bounds; phase average over the four sampled injection phases"
         summary_rows.append(result)
 
-    out = d1_dir
+    if args.output_directory:
+        if Path(args.output_directory).name != args.output_directory:
+            parser.error("output directory must be a direct child of the V13.3 atlas")
+        out = BASE / args.output_directory
+        out.mkdir(parents=True, exist_ok=True)
+    else:
+        out = d1_dir
     write_csv(out / "relative_phase_paired_trajectories.csv", paired_rows)
     write_csv(out / "relative_phase_replicate_summary.csv", rep_rows)
     write_csv(out / "relative_phase_comparison_summary.csv", summary_rows)

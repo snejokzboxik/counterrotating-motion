@@ -12,5 +12,5 @@
   "delta0_trajectory_sha256": "f8841ef21a0efb3f97e2237c712df806add87b7f847f0e0b49d8f462d0aeb212",
   "comparison_trajectory_sha256": "bb84cfccdabafc9fc94bb0063f16da7d742ad43c96d27cfa0a7568982e2b1174",
   "summary_uncertainty": "95% Student-t intervals across four independent Sobol-replicate means; paired lower/upper bounds preserve unresolved outcomes",
-  "comparison_script_sha256": "097512e1b1a727920a647fd5360f0c824698dd21c4fbeada344f22fb433482bc"
+  "comparison_script_sha256": "e9e96aea0a395b03f207d4786107a7061f00ebba1ace85539b5e15d135fea734"
 }
