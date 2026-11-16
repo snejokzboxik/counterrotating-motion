@@ -1,0 +1,58 @@
+{
+  "checkpoint": "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_2_nonlinear_stability\\stage_b_checkpoint.jsonl",
+  "completed_unique_tasks": 22800,
+  "expected_total_tasks": 22800,
+  "remaining_tasks": 0,
+  "duplicate_task_keys": 0,
+  "invalid_or_unresolved_statuses": 0,
+  "status_counts": {
+    "escaped": 18334,
+    "retained": 4466
+  },
+  "integrity": "ok",
+  "final_output_checks": {
+    "stage_b_trajectory_results.csv": {
+      "rows": 22800,
+      "expected_rows": 22800,
+      "count_ok": true
+    },
+    "stage_b_nonlinear_map_summary.csv": {
+      "rows": 2850,
+      "expected_rows": 2850,
+      "count_ok": true
+    },
+    "stage_b_floquet_grid.csv": {
+      "rows": 285,
+      "expected_rows": 285,
+      "count_ok": true
+    },
+    "stage_b_floquet_boundaries.csv": {
+      "rows": 90,
+      "expected_rows": 90,
+      "count_ok": true
+    },
+    "stage_b_voltage_feasibility.csv": {
+      "rows": 1425,
+      "expected_rows": 1425,
+      "count_ok": true
+    },
+    "trajectory_csv_keys_match_checkpoint": true,
+    "all_Floquet_boundaries_found": true,
+    "no_unresolved_summary_cells": true,
+    "local_refinement": {
+      "rows": 1728,
+      "summary_rows": 18,
+      "unresolved": 0,
+      "RO_over_SO_groups": 0
+    },
+    "step_halving": {
+      "n": 384,
+      "classification_changes": 0,
+      "max_exit_time_difference_periods": 7.431501671817387e-07
+    },
+    "selected_full_FEM": {
+      "rows": 384,
+      "unresolved": 0
+    }
+  }
+}

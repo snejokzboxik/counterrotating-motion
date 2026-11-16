@@ -254,8 +254,8 @@ def make_maps(summary:list[dict],boundaries:list[dict],phase:float,eta:float)->N
              Line2D([0],[0],color="#111827",ls=":",lw=1.2,label="линия μ при фиксированных напряжениях"),
              Line2D([0],[0],color="#e11d48",marker="x",ls="",label="пик >250 В")]
     fig.legend(handles=handles,loc="lower center",ncol=3,frameon=False,bbox_to_anchor=(.5,-.02),fontsize=8)
-    fig.suptitle(f"Конечновременное удержание: η={eta:+.2f}, τ₀={np.degrees(phase):.0f}°, 100 RF периодов; 15×19 точек, N=8",y=1.02)
-    fig.tight_layout(rect=(0,.05,1,1))
+    fig.suptitle(f"Конечновременное удержание: η={eta:+.2f}, τ₀={np.degrees(phase):.0f}°, 100 RF периодов; 15×19 точек, N=8",y=.985)
+    fig.tight_layout(rect=(0,.07,1,.93))
     name=f"stage_b_map_eta_{eta:+.2f}_phase_{np.degrees(phase):.0f}deg"
     for ext in ("png","pdf","svg"):fig.savefig(OUT/f"{name}.{ext}",dpi=220 if ext=="png" else None)
     plt.close(fig)
