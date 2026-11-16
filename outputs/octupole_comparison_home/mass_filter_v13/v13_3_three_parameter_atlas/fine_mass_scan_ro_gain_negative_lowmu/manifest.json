@@ -1,0 +1,88 @@
+{
+  "script_sha256": "1d6f8c1a22e3cc7d6dec5eb4d5cc8e14c47a237a7705aae63cc2c9af58575911",
+  "point": {
+    "candidate_id": "ro_gain_negative",
+    "alpha": 0.0125,
+    "beta": 0.1125,
+    "kappa": -0.005625
+  },
+  "mu_grid": [
+    0.6,
+    0.61,
+    0.62,
+    0.63,
+    0.64,
+    0.65,
+    0.66,
+    0.67,
+    0.68,
+    0.69,
+    0.7,
+    0.71,
+    0.72,
+    0.73,
+    0.74,
+    0.75,
+    0.76,
+    0.77,
+    0.78,
+    0.79,
+    0.8,
+    0.81,
+    0.82,
+    0.83,
+    0.84,
+    0.85
+  ],
+  "phases_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "physical_constants": {
+    "Q_C": 1.602176634e-19,
+    "M0_Th": 3200.04652261404,
+    "R_m": 0.008,
+    "f_Hz": 100000.0,
+    "c2": 0.7718255558274212,
+    "d2": 0.7718255558274212,
+    "c4": 0.5413395699439091,
+    "max_electrode_peak_abs_V": 230.6876692856685
+  },
+  "replica_seeds": [
+    731337,
+    913729,
+    20261114,
+    8675309
+  ],
+  "states_per_replica": 32,
+  "horizon_RF": 100,
+  "start_box": {
+    "x_rho": [
+      -0.25,
+      0.25
+    ],
+    "y_rho": [
+      -0.25,
+      0.25
+    ],
+    "vx_rho_tau": [
+      -0.04,
+      0.04
+    ],
+    "vy_rho_tau": [
+      -0.04,
+      0.04
+    ]
+  },
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-10,
+    "atol": 2e-12,
+    "max_step_tau": 0.09817477042468103
+  },
+  "mass_scaling": "all of alpha,beta,kappa divide by mu with fixed electrode voltages",
+  "unresolved_policy": "separate; never counted as escaped or retained",
+  "checkpoints": "append-only trajectory JSONL; deterministic unique task key",
+  "entry_script": "scripts/run_v13_3_selected_mass_scan.py",
+  "entry_script_sha256": "3be69d03168457f28f5c52652bb64516977dcb55bfa501381e2e5c08f2297a36"
+}
