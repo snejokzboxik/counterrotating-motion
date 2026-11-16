@@ -159,7 +159,8 @@ def main() -> None:
         runs.append((name, index))
     # Explicit second-grid agreement is measured on common h50/h35 launch keys.
     mesh_rows, mesh_summary = [], []
-    if len(runs) >= 3:
+    comparison_modes = {manifests[name]["field_mode"] for name, _ in runs[1:]}
+    if len(runs) >= 3 and comparison_modes == {"fem_h50_P4", "fem_h35_P4"}:
         a_name, a = runs[1]
         b_name, b = runs[2]
         pairs, summaries = compare(a_name, a, b_name, b, args.horizon)
