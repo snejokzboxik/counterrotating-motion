@@ -1,0 +1,16 @@
+{
+  "delta0_directory": "acceptance_4d_pilot_ro_gain_negative",
+  "comparison_directory": "acceptance_relative_phase_pi2_N100",
+  "horizon_RF": 100,
+  "point_ids": [
+    "ro_gain_negative"
+  ],
+  "matched_keys": 512,
+  "initial_conditions_match_abs_tol": 1e-14,
+  "delta0_manifest_sha256": "18682b5b5e80cb885f0f6ec02458ed39e088a72c07573468de306e3610826dd4",
+  "comparison_manifest_sha256": "adea7a1c4c2e075c06d21bb76ce4b33043f806ea304c721503e348036a38cf54",
+  "delta0_trajectory_sha256": "f8841ef21a0efb3f97e2237c712df806add87b7f847f0e0b49d8f462d0aeb212",
+  "comparison_trajectory_sha256": "bb84cfccdabafc9fc94bb0063f16da7d742ad43c96d27cfa0a7568982e2b1174",
+  "summary_uncertainty": "95% Student-t intervals across four independent Sobol-replicate means; paired lower/upper bounds preserve unresolved outcomes",
+  "comparison_script_sha256": "097512e1b1a727920a647fd5360f0c824698dd21c4fbeada344f22fb433482bc"
+}
