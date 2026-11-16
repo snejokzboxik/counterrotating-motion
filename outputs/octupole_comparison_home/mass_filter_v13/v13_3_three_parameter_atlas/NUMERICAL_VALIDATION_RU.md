@@ -91,3 +91,9 @@ run_manifest.json и adaptive_run_manifest.json фиксируют сетки, �
 ## Закрывающие проверки FEM-масс-срезов
 
 Сводчик и валидатор выполнены для `acceptance_4d_fem_h50_gain_negative_mass_N100`: 2,560 уникальных trajectory keys, 1,280 пар Q/RO с совпадающими стартами, 0 unresolved; равенство `A₄=P_ret·Vol(D)` и перевод в `a₄` проверены. При закрывающем прогоне набора регрессионных тестов V13.3 прошли 12 тестов (`test_v13_3_physical.py`, `test_v13_3_mass_fwhm.py`, `test_v13_3_atlas.py`, `test_v13_3_4d_acceptance.py`).
+
+## Закрытие A9 4D FEM mass-width batch
+
+Набор `acceptance_4d_fem_h50_a9_width_refinement_N100` завершил 8,192/8,192 trajectory rows: 4,096 пар Q/RO, 0 unresolved, все ключи уникальны. Валидатор подтвердил полноту таблиц, парность стартов и проверку `A₄=P_ret·Vol(D)`. Репликатный A₄ FWHM summarizer использует только непосредственно рассчитанные узлы и половинную высоту каждого scrambled-Sobol replicate-профиля; скрипт и outputs: `scripts/summarize_v13_3_fem_a4_fwhm.py`, `acceptance_4d_fem_mass_profile_h50_a9_refined_N100/`.
+
+Условный `R_A4` не агрегирован: из четырёх RO реплик одна только была однолобой, ограниченной с обеих сторон и разрешённой сеткой; остальные три имели multi-lobe half-height профили. У Q низкомассовая половинная ширина открыта. Это корректное withheld, а не отсутствие попытки оценить ширину. Остальные результаты остаются достоверными как массовая зависимость конечновременного удержания в данном ансамбле.

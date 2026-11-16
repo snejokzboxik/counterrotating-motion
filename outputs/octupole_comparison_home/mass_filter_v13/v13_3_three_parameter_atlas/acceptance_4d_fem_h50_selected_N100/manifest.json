@@ -132,11 +132,13 @@
   "unresolved_policy": "separate; report acceptance fraction lower and upper bounds",
   "initial_conditions_sha256": "1ae8a404a9ed65b8f0cd84619fda011bdf62fceda642127eb10a2719e97f3240",
   "horizons": [
-    100
+    100,
+    300,
+    1000
   ],
   "run_hash": "1bc7cd559cc901fe21e933b6fbf609ad056308058001559ca56e723135b87eca",
   "point_ids_with_continuation_requests": [
-    "ro_gain_negative",
-    "a9_b2_e0"
+    "a9_b2_e0",
+    "ro_gain_negative"
   ]
 }

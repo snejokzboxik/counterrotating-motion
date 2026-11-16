@@ -1,0 +1,7 @@
+candidate_id,mu_boundary,alpha_boundary,beta_boundary,transition,note
+ro_gain_negative,0.9906749492744169,0.012617660322545918,0.11355894290291327,strictly_stable -> unstable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
+ro_gain_positive,0.9906749492708794,-0.012617660322590974,0.11355894290331876,strictly_stable -> unstable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
+ro_loss_negative,0.9583048109359785,-0.02608773295793271,0.18261413070552895,unstable -> strictly_stable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
+ro_loss_negative,1.1814165701239856,-0.02116103720923462,0.14812726046464234,strictly_stable -> unstable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
+ro_loss_positive,0.9583048109347944,0.026087732957964946,0.1826141307057546,unstable -> strictly_stable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
+ro_loss_positive,1.181416570128858,0.02116103720914735,0.14812726046403143,strictly_stable -> unstable,"same boundary for Q and Q+RO at the same α,β; κ does not enter the linearization"
