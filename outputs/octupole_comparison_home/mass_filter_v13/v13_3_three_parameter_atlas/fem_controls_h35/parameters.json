@@ -1,0 +1,71 @@
+{
+  "field": "full h35 P4 FEM superposition, m4 and m2 bases on shared full 12-electrode mesh",
+  "script_sha256": "7b47cb907855b903485b5610bc7545ddd132af40fe8468a78f61abfb304722d4",
+  "mesh_um": 35,
+  "hashes": {
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+  },
+  "c2": 0.7718255558274212,
+  "d2": 0.7718255558274212,
+  "c4": 0.5413395699439091,
+  "R_m": 0.008,
+  "f_Hz": 100000.0,
+  "M0_Th": 3200.04652261404,
+  "Umax_V": 250,
+  "delta_rad": 0.0,
+  "mass_ratios": [
+    1.0
+  ],
+  "phases_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "points": [
+    {
+      "candidate_id": "ro_gain_negative",
+      "alpha": 0.0125,
+      "beta": 0.1125,
+      "kappa": -0.005625,
+      "max_electrode_peak_abs_V": 144.4216649489502
+    },
+    {
+      "candidate_id": "ro_gain_positive",
+      "alpha": -0.0125,
+      "beta": 0.1125,
+      "kappa": 0.005625,
+      "max_electrode_peak_abs_V": 144.4216649489502
+    },
+    {
+      "candidate_id": "ro_loss_negative",
+      "alpha": -0.025,
+      "beta": 0.175,
+      "kappa": -0.00875,
+      "max_electrode_peak_abs_V": 230.6876692856685
+    },
+    {
+      "candidate_id": "ro_loss_positive",
+      "alpha": 0.025,
+      "beta": 0.175,
+      "kappa": 0.0175,
+      "max_electrode_peak_abs_V": 244.2324814284798
+    }
+  ],
+  "initial_source": "first common V13.1 seed131 Sobol states",
+  "initial_conditions_sha256": "84eef2cd1bcb1df8f24ce4fa0d10a67d1ead771a64b653936ae68e1fb47cde6c",
+  "n_initial": 8,
+  "aperture_rho": 1,
+  "horizons": [
+    100,
+    300
+  ],
+  "continuation": "300-cycle segment starts from exact 100-cycle endpoint; absolute tau retained",
+  "integrator": {
+    "method": "DOP853",
+    "rtol": 3e-09,
+    "atol": 3e-11,
+    "max_step_tau": 0.09817477042468103
+  },
+  "unresolved_policy": "separate, never classified as lost"
+}

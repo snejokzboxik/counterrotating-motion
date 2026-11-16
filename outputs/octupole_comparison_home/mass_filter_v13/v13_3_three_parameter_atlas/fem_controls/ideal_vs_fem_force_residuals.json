@@ -1,0 +1,24 @@
+{
+  "sample_npz": "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\superposition_points.npz",
+  "sample_sha256": "4740f77dc5aac07df35d32d4bccbce84c567e24af424589eb782a3daade7a405",
+  "points": 600,
+  "radius_normalization_m": 0.008,
+  "time_samples_rad": [
+    0.0,
+    0.37,
+    1.5707963267948966,
+    2.4
+  ],
+  "injection_phases_rad": [
+    0.0,
+    1.5707963267948966
+  ],
+  "relative_phase_delta_rad": 0.0,
+  "coefficient_normalization": {
+    "c2": 0.7718255558274212,
+    "d2": 0.7718255558274212,
+    "c4": 0.5413395699439091
+  },
+  "metric": "relative RMS of vector acceleration difference over sample points and listed phases/times",
+  "limitation": "The points are a fixed V13.1 h50 FEM sample, not a uniform area sample or an error bound along all later trajectories."
+}

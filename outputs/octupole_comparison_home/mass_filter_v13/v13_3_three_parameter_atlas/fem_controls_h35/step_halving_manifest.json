@@ -1,0 +1,19 @@
+{
+  "script_sha256": "2eee8c1baa7f51c5f957bf824d966e6f2fb6f4226092c11dca39495fbfd7c70d",
+  "field_sha256": {
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+  },
+  "selected_task_count": 28,
+  "integrator": {
+    "method": "DOP853",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "max_step_tau": 0.04908738521234052
+  },
+  "horizon_RF": 100,
+  "aperture_rho": 1.0,
+  "tau0": "paired per original control",
+  "selection": "all ideal/FEM status disagreements plus same-status escapes with |delta exit| >= 3 RF cycles"
+}

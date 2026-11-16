@@ -1,0 +1,5 @@
+candidate_id,alpha,beta,kappa,reason
+ro_gain_negative,0.0125,0.1125,-0.005625,coarse eta -0.05 RO gain outside Floquet region
+ro_gain_positive,-0.0125,0.1125,0.005625,coarse eta +0.05 RO gain outside Floquet region
+ro_loss_negative,-0.025,0.175,-0.00875,coarse eta -0.05 RO suppression inside Floquet region
+ro_loss_positive,0.025,0.175,0.0175,coarse eta +0.1 RO suppression inside Floquet region near voltage limit

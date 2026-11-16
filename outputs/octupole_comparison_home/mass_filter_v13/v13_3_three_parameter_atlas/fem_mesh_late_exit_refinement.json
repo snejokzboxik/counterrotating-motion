@@ -1,0 +1,33 @@
+{
+  "candidate_id": "ro_gain_positive",
+  "model": "Q",
+  "tau0_deg": 0,
+  "state_i": 5,
+  "horizon_RF": 300,
+  "common_initial_state_rho_tau": [
+    -0.22687492612749338,
+    -0.016876048874109983,
+    -0.015589709505438806,
+    0.019425346925854684
+  ],
+  "aperture_rho": 1.0,
+  "mesh_um": [
+    35,
+    50
+  ],
+  "field_sha256": {
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_50um\\trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\quadrupole_h50_P4_sector_solution.npz": "2a827e04790312ffa66f85bed8b6fbb126a5640647c40427d3faf01ebfc0f8c8"
+  },
+  "integrator": {
+    "method": "DOP853",
+    "rtol": 1e-10,
+    "atol": 1e-12,
+    "max_step_tau": 0.04908738521234052
+  },
+  "purpose": "resolve the sole h35/h50 status difference at 300 RF cycles; any persistent mesh-dependent status remains unresolved in ensemble bounds"
+}

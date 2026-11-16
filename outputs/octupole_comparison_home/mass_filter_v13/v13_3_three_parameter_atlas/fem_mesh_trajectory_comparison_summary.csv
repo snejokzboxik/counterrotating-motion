@@ -1,0 +1,3 @@
+horizon_RF,matched_pairs,status_agreements,status_disagreements,agreement_fraction,median_abs_exit_difference_RF,max_abs_exit_difference_RF,median_abs_rho_max_difference,max_abs_rho_max_difference,interpretation
+100,128,128,0,1.0,8.399148096671638e-05,57.13162742046936,2.220446049250313e-16,0.05753201869969593,matched full-P4 h35 versus h50 finite-time trajectories; same physical voltages and starts
+300,40,39,1,0.975,51.87476188882933,66.87340228894739,7.596761640571437e-05,0.16147062633794884,matched full-P4 h35 versus h50 finite-time trajectories; same physical voltages and starts
