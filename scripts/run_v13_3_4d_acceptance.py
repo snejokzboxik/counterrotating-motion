@@ -97,6 +97,8 @@ def main():
     p.add_argument("--output-name",default="acceptance_4d",help="separate result directory below the V13.3 atlas")
     p.add_argument("--field-mode",choices=("ideal_harmonic","fem_h50_P4"),default="ideal_harmonic",
                    help="ideal model for broad QMC; full h50 P4 field for selected validation ensembles")
+    p.add_argument("--point-ids",nargs="+",default=None,
+                   help="optional subset of already declared points, useful for long-horizon continuation")
     p.add_argument("--delta-rad",type=float,default=0.,help="relative octupole phase; kept distinct from injection phase")
     p.add_argument("--horizons",nargs="+",type=int,default=[100]);p.add_argument("--states-per-replica",type=int,default=64)
     p.add_argument("--replicas",type=int,default=4);args=p.parse_args()
@@ -124,6 +126,10 @@ def main():
         points[r["candidate_id"]]={**r,"U2_V":u2,"VDC_V":vdc,"U4_setting_V":u4,
                                     "max_electrode_peak_abs_V":peak(1.),
                                     "max_electrode_peak_abs_V_Q":peak(0.)}
+    active_point_ids=args.point_ids or list(points)
+    unknown_points=set(active_point_ids)-set(points)
+    if unknown_points:raise ValueError(f"unknown point id(s): {sorted(unknown_points)}")
+    active_points=[points[point_id] for point_id in active_point_ids]
     muvals=[round(float(x),12) for x in args.mu]
     volume={}; initial={}; initial_rows=[]
     starts_by={}
@@ -171,8 +177,11 @@ def main():
         old=json.loads(manifest_path.read_text(encoding="utf-8"))
         if old.get("run_hash")!=run_hash:raise RuntimeError("acceptance checkpoint protocol/hash mismatch")
         manifest["horizons"]=sorted(set(old.get("horizons",[]))|set(horizons))
+        previous=old.get("point_ids_with_continuation_requests",[])
+        manifest["point_ids_with_continuation_requests"]=sorted(set(previous)|set(active_point_ids))
         manifest_path.write_text(json.dumps(manifest,indent=2)+"\n",encoding="utf-8")
     else:
+        manifest["point_ids_with_continuation_requests"]=active_point_ids
         manifest_path.write_text(json.dumps(manifest,indent=2)+"\n",encoding="utf-8")
     ck=OUT/"checkpoint.jsonl";done={}
     if ck.exists():
@@ -189,7 +198,7 @@ def main():
      with ProcessPoolExecutor(max_workers=args.workers,initializer=initialize_worker,initargs=(args.field_mode,)) as pool,ck.open("a",encoding="utf-8") as stream:
       batch=[]
       for mu in muvals:
-       for point in points.values():
+       for point in active_points:
         for phase_i,phase in enumerate(PHASES):
          for rep,seed in enumerate(SEEDS):
           for i in range(args.states_per_replica):

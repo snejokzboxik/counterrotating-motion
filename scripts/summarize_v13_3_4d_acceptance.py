@@ -36,6 +36,7 @@ def main():
     rows=[r for r in raw if int(r["horizon"])==args.horizon]
     if not rows:raise SystemExit(f"no trajectories at N={args.horizon}")
     manifest=json.loads((OUT/"manifest.json").read_text(encoding="utf-8"))
+    field_mode=manifest.get("field_mode","legacy_ideal_harmonic")
     volumes={float(k):float(v["D_volume_m4_s2"]) for k,v in manifest["domain_volumes"].items()}
     by=defaultdict(list)
     for r in rows:by[(r["point_id"],r["model"],float(r["mu"]),int(r["phase_i"]),int(r["replica"]))].append(r)
@@ -80,7 +81,7 @@ def main():
     mean_rows=[]
     for key,rs in sorted(avg.items()):
         if len(rs)!=4:raise RuntimeError(f"incomplete replicate set at {key}")
-        out={"point_id":key[0],"model":key[1],"mu":key[2],"horizon_RF":args.horizon,"replicates":4,
+        out={"field_mode":field_mode,"point_id":key[0],"model":key[1],"mu":key[2],"horizon_RF":args.horizon,"replicates":4,
              "phase_quadrature_deg":[0,90,180,270],"domain_volume_m4_s2":volumes[key[2]],
              "uncertainty":"95% Student-t interval across independent scrambled Sobol replicate means; phase average within each replicate"}
         for metric in ("phase_average_P_lower","phase_average_P_upper","phase_average_A4_lower_m4_s2","phase_average_A4_upper_m4_s2","phase_average_a4_lower","phase_average_a4_upper"):
@@ -111,7 +112,7 @@ def main():
     paired_out=[]
     for (point,mu),rs in sorted(pair_group.items()):
         if len(rs)!=4:raise RuntimeError(f"incomplete paired replicas at {(point,mu)}")
-        out={"point_id":point,"mu":mu,"horizon_RF":args.horizon,"replicates":4,
+        out={"field_mode":field_mode,"point_id":point,"mu":mu,"horizon_RF":args.horizon,"replicates":4,
              "method":"paired RO−Q on same Sobol starts/phases; unresolved statuses widen per-pair bounds"}
         for metric in ("paired_delta_P_lower","paired_delta_P_upper","paired_delta_A4_lower_m4_s2","paired_delta_A4_upper_m4_s2"):
             m,l,h=t_ci([r[metric] for r in rs]);out[metric+"_mean"]=m;out[metric+"_t95_low"]=l;out[metric+"_t95_high"]=h
@@ -145,7 +146,7 @@ def main():
                 ix=rng.integers(0,4,4);den=float(np.mean(qv[ix]))
                 if den>0:bootstrap.append(float(np.mean(rv[ix])/den))
         ratio_boot_low,ratio_boot_high=(np.quantile(bootstrap,[.025,.975]).tolist() if bootstrap else [math.nan,math.nan])
-        trade.append({"point_id":key[0],"mu":key[1],"horizon_RF":args.horizon,
+        trade.append({"field_mode":field_mode,"point_id":key[0],"mu":key[1],"horizon_RF":args.horizon,
                       "Q_P_ret":float(q["phase_average_P_lower_mean"]),
                       "RO_P_ret":float(ro["phase_average_P_lower_mean"]),
                       "paired_RO_minus_Q_P_ret_lower_mean":float(pair["paired_delta_P_lower_mean"]),
@@ -180,7 +181,7 @@ def main():
         if i%ncols==0:ax.set_ylabel("A₄, m⁴ s⁻² (phase quadrature)")
         if i//ncols==nrows-1:ax.set_xlabel("μ")
     if point_ids:flat_axes[0].legend(frameon=False)
-    fig.suptitle(f"V13.3 4D acceptance, N={args.horizon} RF; replicate-level scrambled-Sobol 95% t intervals")
+    fig.suptitle(f"V13.3 4D acceptance ({field_mode}), N={args.horizon} RF; replicate-level scrambled-Sobol 95% t intervals")
     fig.tight_layout()
     for ext in ("png","pdf","svg"):fig.savefig(OUT/f"four_dimensional_acceptance_N{args.horizon}.{ext}",dpi=190,bbox_inches="tight")
     plt.close(fig)
@@ -198,7 +199,7 @@ def main():
     ax.axvline(0,color="black",lw=.8,alpha=.6);ax.axhline(1,color="black",lw=.8,alpha=.6)
     ax.set(xlabel="paired change in finite-time retention, Q+RO − Q",
            ylabel="4D acceptance ratio, A₄(Q+RO) / A₄(Q)",
-           title=f"V13.3 retention–acceptance tradeoff, N={args.horizon} RF")
+           title=f"V13.3 retention–acceptance tradeoff ({field_mode}), N={args.horizon} RF")
     ax.grid(alpha=.25);fig.tight_layout()
     for ext in ("png","pdf","svg"):fig.savefig(OUT/f"selectivity_acceptance_tradeoff_N{args.horizon}.{ext}",dpi=190,bbox_inches="tight")
     plt.close(fig)
