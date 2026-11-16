@@ -140,11 +140,18 @@ def main() -> None:
     out = BASE / args.output_directory
     out.mkdir(parents=True, exist_ok=True)
     ref_manifest, ref = load_run(args.reference_directory, args.horizon)
+    reference_delta = float(ref_manifest.get("relative_delta_rad", 0.0))
     manifests = {args.reference_directory: ref_manifest}
     all_pairs, all_summaries = [], []
     runs = [(args.reference_directory, ref)]
     for name in args.comparison_directories:
         manifest, index = load_run(name, args.horizon)
+        comparison_delta = float(manifest.get("relative_delta_rad", 0.0))
+        if not math.isclose(reference_delta, comparison_delta, rel_tol=0.0, abs_tol=1e-12):
+            raise ValueError(
+                f"relative octupole phase mismatch: {args.reference_directory} has "
+                f"delta={reference_delta}, {name} has delta={comparison_delta}"
+            )
         manifests[name] = manifest
         pairs, summaries = compare(args.reference_directory, ref, name, index, args.horizon)
         all_pairs.extend(pairs)
@@ -166,6 +173,7 @@ def main() -> None:
     metadata = {"reference_directory": args.reference_directory,
                 "comparison_directories": args.comparison_directories,
                 "horizon_RF": args.horizon,
+                "relative_delta_rad": reference_delta,
                 "common_initial_state_abs_tolerance": 1e-14,
                 "uncertainty": "paired differences are averaged within each of four independent Sobol scrambles; Student-t interval across four replicate means; unresolved statuses widen bounds",
                 "source_manifest_sha256": {name: sha256(BASE / name / "manifest.json") for name in manifests},
