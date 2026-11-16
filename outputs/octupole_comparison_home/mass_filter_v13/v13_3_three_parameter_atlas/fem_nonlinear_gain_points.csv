@@ -1,0 +1,3 @@
+candidate_id,alpha,beta,kappa,reason
+a9_b2_e0,0.006249999999999999,0.07500000000000001,-0.015000000000000003,strong negative-eta finite-time retention outside Floquet
+a7_b2_e8,-0.006249999999999999,0.07500000000000001,0.015000000000000003,strong positive-eta finite-time retention outside Floquet
