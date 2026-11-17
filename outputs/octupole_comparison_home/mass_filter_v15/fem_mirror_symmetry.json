@@ -1,0 +1,48 @@
+{
+  "geometry": "saved 12 electrodes at theta_j=2pi*j/12",
+  "fields": "saved P4 unit m=2 and m=4 bases, no new FEM solve",
+  "sample_seed": 150015,
+  "radius_m": 0.0075,
+  "n_points": 300,
+  "meshes": [
+    {
+      "mesh_um": 50,
+      "n_points": 300,
+      "max_relative_symmetry_error": 2.508361623928802e-07,
+      "rms_relative_symmetry_error": 9.290589291727236e-09,
+      "component_max_relative_errors": {
+        "G2_x_even": 4.431423664119718e-09,
+        "G2_y_odd": 2.508361623928802e-07,
+        "G4c_x_even": 1.2747629501030945e-08,
+        "G4c_y_odd": 1.7170406178835648e-07,
+        "G4s_x_odd": 2.4800714358966915e-07,
+        "G4s_y_even": 1.1253545202478511e-08
+      },
+      "reflection": "(x,y)->(x,-y); G2/G4c even; G4s odd in potential; derivative parity checked"
+    },
+    {
+      "mesh_um": 35,
+      "n_points": 300,
+      "max_relative_symmetry_error": 3.3844033662787435e-07,
+      "rms_relative_symmetry_error": 9.857708680037739e-09,
+      "component_max_relative_errors": {
+        "G2_x_even": 3.981605160385272e-08,
+        "G2_y_odd": 3.3844033662787435e-07,
+        "G4c_x_even": 2.630999145755969e-08,
+        "G4c_y_odd": 2.0444378896483022e-07,
+        "G4s_x_odd": 1.1573104265523165e-07,
+        "G4s_y_even": 1.987194043832621e-08
+      },
+      "reflection": "(x,y)->(x,-y); G2/G4c even; G4s odd in potential; derivative parity checked"
+    }
+  ],
+  "field_hashes": {
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\quadrupole_h50_P4_sector_solution.npz": "2a827e04790312ffa66f85bed8b6fbb126a5640647c40427d3faf01ebfc0f8c8",
+    "outputs\\meshes\\gmsh_50um\\trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+  },
+  "interpretation": "potential/gradient mirror symmetry supports an exact reflected-trajectory identity; this audit does not test trajectory convergence or electrode circuit impedance"
+}

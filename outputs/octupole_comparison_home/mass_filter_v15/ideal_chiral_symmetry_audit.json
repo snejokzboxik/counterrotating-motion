@@ -1,0 +1,12 @@
+{
+  "rows": 26624,
+  "unique_keys": 26624,
+  "protocol_hash": "0fe22fd3899219991b54d4a7bd14ceda3ef1701bc988f2f584a60274a67f2a74",
+  "unresolved": 0,
+  "over_250V": 0,
+  "max_torque_identity_residual": 1.745725383694996e-08,
+  "exact_Q_mirror_status_mismatches": 0,
+  "exact_SO_mirror_status_mismatches": 0,
+  "RO_reflection_pair_status_mismatches": 0,
+  "incomplete_groups": []
+}

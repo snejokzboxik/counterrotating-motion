@@ -1,0 +1,34 @@
+{
+  "protocol": "A9 quadrupole voltages fixed; independently maximize SO and RO octupole amplitude under max_j,t |V_j(t)| <= 250 V",
+  "delta_deg": 0.0,
+  "target_peak_V": 250.0,
+  "M0_Th": 3200.04652261404,
+  "frequency_Hz": 100000.0,
+  "R_m": 0.008,
+  "alpha": 0.00625,
+  "beta": 0.075,
+  "base_kappa": -0.015,
+  "c2_d2": 0.7718255558274212,
+  "c4": 0.5413395699439091,
+  "scale_by_model": {
+    "SO": 6.967612323075895,
+    "RO_PLUS": 6.967612323075895,
+    "RO_MINUS": 6.967612323075895
+  },
+  "kappa_at_cap": {
+    "SO": -0.10451418484613842,
+    "RO_PLUS": -0.10451418484613842,
+    "RO_MINUS": -0.10451418484613842
+  },
+  "U4_at_cap_V": {
+    "SO": -161.78571428571428,
+    "RO_PLUS": -161.78571428571428,
+    "RO_MINUS": -161.78571428571428
+  },
+  "max_voltage_by_model_V": {
+    "SO": 250.0,
+    "RO_PLUS": 250.0,
+    "RO_MINUS": 250.0
+  },
+  "caution": "SO equal-RF-intensity scaling relative to RO may exceed 250 V and is excluded from the saturated equal-peak comparison."
+}

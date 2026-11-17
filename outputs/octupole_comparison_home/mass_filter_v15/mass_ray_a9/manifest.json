@@ -1,0 +1,58 @@
+{
+  "alpha0": 0.00625,
+  "aperture_rho": 1.0,
+  "beta0": 0.075,
+  "candidate": "A9",
+  "delta_rad": 0.0,
+  "field_model_sha256": "7a976a1d7627288450962a6c480bc96a05ccf65cce918f37a0578f3896495393",
+  "horizons_rf": [
+    100,
+    300
+  ],
+  "initial_domain": "same 8 scrambled Sobol replicates x 128 mirrored pairs from A9 confirmation; r area-uniform <=7.5 mm; E_perp area-uniform <=5 eV",
+  "initial_physical_energy": "fixed in eV across masses; dimensionless velocities are multiplied by mu^(-1/2)",
+  "interpretation": "finite-time transverse retention only; not finite-length filter transmission",
+  "kappa0": -0.015,
+  "mass_scaling": "alpha,beta,kappa proportional to 1/mu at fixed electrode voltages",
+  "models": [
+    [
+      "Q",
+      "Q",
+      0.0
+    ],
+    [
+      "SO_equal_harmonic",
+      "SO",
+      1.0
+    ],
+    [
+      "SO_equal_rms",
+      "SO",
+      1.4142135623730951
+    ],
+    [
+      "RO_PLUS",
+      "RO_PLUS",
+      1.0
+    ],
+    [
+      "RO_MINUS",
+      "RO_MINUS",
+      1.0
+    ]
+  ],
+  "mu_grid": [
+    0.75,
+    0.85,
+    0.9,
+    1.0,
+    1.1,
+    1.2,
+    1.3
+  ],
+  "seed_data_sha256": "0190a78fe69293969c0f08e0ee76db6a76677b270832b058edea3f1b6da62eb7",
+  "steps_per_rf": 256,
+  "study": "V15 ideal A9 physical-voltage mass ray",
+  "tau0_rad": 0.0,
+  "voltage_limit_V": 250.0
+}

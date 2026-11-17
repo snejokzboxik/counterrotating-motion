@@ -1,0 +1,12 @@
+{
+  "status": "invalid_for_physical_inference",
+  "reason": "On Windows spawn, child workers imported module-level MU=1.0 instead of inheriting the parent's --mu 1.2 assignment. The manifest was correct, but row values prove that the integrations used mu=1.0.",
+  "manifest_mu": 1.2,
+  "observed_row_mu": 1.0,
+  "observed_row_alpha": 0.00625,
+  "observed_row_beta": 0.075,
+  "checkpoint_rows_preserved": 2048,
+  "completed_groups": "h50 4/5; h35 not started",
+  "action": "Preserved unchanged as an audit trail. Reran in fem_mass_mu1p2_confirmation_fixed after explicitly passing MU in the worker initializer.",
+  "date": "2026-11-17"
+}

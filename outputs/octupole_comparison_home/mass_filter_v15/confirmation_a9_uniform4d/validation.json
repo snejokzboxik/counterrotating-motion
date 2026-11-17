@@ -1,0 +1,18 @@
+{
+  "rows": 122880,
+  "unique_keys": 122880,
+  "horizons": [
+    100,
+    300,
+    1000
+  ],
+  "unresolved": 0,
+  "over_250V": 0,
+  "max_abs_torque_identity_residual": 1.0394278351921749e-07,
+  "SO_mirror_status_mismatches": 0,
+  "ROplus_to_ROminus_mirror_mismatches": 0,
+  "n_scrambled_sobol_replicates": 8,
+  "pairs_per_replicate": 128,
+  "total_pairs_per_condition": 1024,
+  "protocol_hash": "06bb44a5adcbcb60a7e8f336f9de1b8155b7a25cccd67edaac6186f6e9ea9417"
+}

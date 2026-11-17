@@ -1,0 +1,307 @@
+{
+  "rows": 5120,
+  "unique_keys": 5120,
+  "n_scrambled_replicates": 8,
+  "groups_present": 20,
+  "horizons_present": [
+    100,
+    300
+  ],
+  "unresolved_rows": 0,
+  "rows_over_250V": 0,
+  "max_abs_torque_residual": 9.047679272455866e-12,
+  "symmetry_global": {
+    "Q": {
+      "mirror_pairs": 1024,
+      "status_mismatches": 0,
+      "max_exit_rf_difference": 2.2787006116686825e-05,
+      "max_abs_mirror_Delta_ell_sum": 7.766028975939032e-07
+    },
+    "SO_equal_harmonic": {
+      "mirror_pairs": 1024,
+      "status_mismatches": 2,
+      "max_exit_rf_difference": 13.362553257406802,
+      "max_abs_mirror_Delta_ell_sum": 0.15694844949932685
+    },
+    "SO_equal_rms": {
+      "mirror_pairs": 1024,
+      "status_mismatches": 2,
+      "max_exit_rf_difference": 76.06562155324275,
+      "max_abs_mirror_Delta_ell_sum": 0.22676967120437713
+    },
+    "RO_PLUS_to_RO_MINUS_reflection": {
+      "mirror_pairs": 1024,
+      "status_mismatches": 4,
+      "max_exit_rf_difference": 92.8124936148657,
+      "max_abs_mirror_Delta_ell_sum": 0.22681883624700716
+    }
+  },
+  "symmetry_by_mesh_horizon": {
+    "h35_N100_Q": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 1.3807616161543024e-10,
+        "p95": 2.086450479055202e-08,
+        "p99": 2.078152189000093e-06,
+        "max": 3.31072869386162e-06
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 7.26630353109492e-11,
+        "p95": 7.870537888088336e-09,
+        "p99": 1.9445586518090918e-07,
+        "max": 2.5948209764203867e-07
+      }
+    },
+    "h35_N100_SO_equal_harmonic": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 2.791780140398714e-10,
+        "p95": 2.2401251698056512e-07,
+        "p99": 0.00022815774666185007,
+        "max": 13.362553257406802
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 1.1557800549955033e-10,
+        "p95": 8.658869151967341e-07,
+        "p99": 0.015468235416142085,
+        "max": 0.15694844949932685
+      }
+    },
+    "h35_N100_SO_equal_rms": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 5.019176185783181e-10,
+        "p95": 3.107153077408498e-05,
+        "p99": 0.00477080327821966,
+        "max": 0.4347108724167015
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 1.6399628877117323e-10,
+        "p95": 5.595534012858838e-06,
+        "p99": 0.004459588645345999,
+        "max": 0.025744257787521693
+      }
+    },
+    "h35_N100_RO_PLUS_to_RO_MINUS_reflection": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 3.4897729150884516e-10,
+        "p95": 2.0902441832504276e-06,
+        "p99": 5.4854573172633623e-05,
+        "max": 0.0013987683450977784
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 2.173613164457855e-10,
+        "p95": 6.842215129459345e-07,
+        "p99": 1.956017695091926e-05,
+        "max": 0.0006832951788523639
+      }
+    },
+    "h35_N300_Q": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 1.3807616161543024e-10,
+        "p95": 2.086450479055202e-08,
+        "p99": 2.078152189000093e-06,
+        "max": 3.31072869386162e-06
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 7.26630353109492e-11,
+        "p95": 7.870537888088336e-09,
+        "p99": 1.9445586518090918e-07,
+        "max": 2.5948209764203867e-07
+      }
+    },
+    "h35_N300_SO_equal_harmonic": {
+      "mirror_pairs": 256,
+      "status_mismatches": 2,
+      "exit_time_abs_difference_rf": {
+        "median": 3.074716592443849e-10,
+        "p95": 1.5071647467834737e-06,
+        "p99": 2.810203296483209,
+        "max": 13.362553257406802
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 1.1557800549955033e-10,
+        "p95": 2.9151875973548735e-05,
+        "p99": 0.12009799629081158,
+        "max": 0.15694844949932685
+      }
+    },
+    "h35_N300_SO_equal_rms": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 5.262756896939891e-10,
+        "p95": 0.00013671643047530324,
+        "p99": 15.688682823902155,
+        "max": 76.06562155324275
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 1.7408248453865127e-10,
+        "p95": 0.003788575158738733,
+        "p99": 0.025744257787521693,
+        "max": 0.22676967120437713
+      }
+    },
+    "h35_N300_RO_PLUS_to_RO_MINUS_reflection": {
+      "mirror_pairs": 256,
+      "status_mismatches": 2,
+      "exit_time_abs_difference_rf": {
+        "median": 4.022220334576332e-10,
+        "p95": 3.7803681489201284e-06,
+        "p99": 5.329761655378335,
+        "max": 39.40060166215761
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 2.173613164457855e-10,
+        "p95": 8.690237152437011e-06,
+        "p99": 0.04459658907664453,
+        "max": 0.10914118966139405
+      }
+    },
+    "h50_N100_Q": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 5.502704958360027e-10,
+        "p95": 1.4197113795688665e-07,
+        "p99": 2.5338257856333257e-06,
+        "max": 2.2787006116686825e-05
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 2.3453260514227914e-10,
+        "p95": 2.9952401614519175e-08,
+        "p99": 4.4241638962050356e-07,
+        "max": 7.766028975939032e-07
+      }
+    },
+    "h50_N100_SO_equal_harmonic": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 8.539329243717475e-10,
+        "p95": 6.903821798687204e-07,
+        "p99": 0.00022498386290692451,
+        "max": 0.008007924468294902
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 4.3446169578631455e-10,
+        "p95": 5.346589228572007e-07,
+        "p99": 5.565591405426451e-05,
+        "max": 0.004787434661175927
+      }
+    },
+    "h50_N100_SO_equal_rms": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 1.3656062947120517e-09,
+        "p95": 1.314172065054452e-05,
+        "p99": 0.0001475832114294917,
+        "max": 0.0006660274328069704
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 5.086651447272494e-10,
+        "p95": 2.620788781729222e-06,
+        "p99": 3.6731915341682575e-05,
+        "max": 0.0002351190213882859
+      }
+    },
+    "h50_N100_RO_PLUS_to_RO_MINUS_reflection": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 9.672596057441751e-10,
+        "p95": 3.131219911267627e-06,
+        "p99": 6.247400495354338e-05,
+        "max": 0.00814914662392141
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 8.38841281158853e-10,
+        "p95": 2.9181693634548755e-06,
+        "p99": 0.00023446875731109162,
+        "max": 0.007101316938417146
+      }
+    },
+    "h50_N300_Q": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 5.502704958360027e-10,
+        "p95": 1.4197113795688665e-07,
+        "p99": 2.5338257856333257e-06,
+        "max": 2.2787006116686825e-05
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 2.3453260514227914e-10,
+        "p95": 2.9952401614519175e-08,
+        "p99": 4.4241638962050356e-07,
+        "max": 7.766028975939032e-07
+      }
+    },
+    "h50_N300_SO_equal_harmonic": {
+      "mirror_pairs": 256,
+      "status_mismatches": 0,
+      "exit_time_abs_difference_rf": {
+        "median": 9.600861772263158e-10,
+        "p95": 1.6395976523142508e-06,
+        "p99": 0.008007924468294902,
+        "max": 0.06823036934028437
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 4.3446169578631455e-10,
+        "p95": 1.709295711668779e-05,
+        "p99": 0.016862495083390296,
+        "max": 0.04309704775382625
+      }
+    },
+    "h50_N300_SO_equal_rms": {
+      "mirror_pairs": 256,
+      "status_mismatches": 2,
+      "exit_time_abs_difference_rf": {
+        "median": 1.522010961707565e-09,
+        "p95": 5.6271500525895135e-05,
+        "p99": 11.67895536114139,
+        "max": 66.1747588627016
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 5.284903695224052e-10,
+        "p95": 0.0002351190213882859,
+        "p99": 0.08790553268308715,
+        "max": 0.134828207010698
+      }
+    },
+    "h50_N300_RO_PLUS_to_RO_MINUS_reflection": {
+      "mirror_pairs": 256,
+      "status_mismatches": 2,
+      "exit_time_abs_difference_rf": {
+        "median": 1.1645567843387994e-09,
+        "p95": 8.844646324490637e-06,
+        "p99": 0.46001016476930295,
+        "max": 92.8124936148657
+      },
+      "mirror_torque_balance_abs_error": {
+        "median": 8.38841281158853e-10,
+        "p95": 8.345050465782475e-06,
+        "p99": 0.047712870561446775,
+        "max": 0.22681883624700716
+      }
+    }
+  },
+  "field_hashes": {
+    "runner_script": "0421976c2cd4b7a070106bb0a3a9e6dd3a058c8ae8b8d1b98fe82a43f9841e30",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\quadrupole_h50_P4_sector_solution.npz": "2a827e04790312ffa66f85bed8b6fbb126a5640647c40427d3faf01ebfc0f8c8",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_50um\\trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf",
+    "outputs\\octupole_comparison_home\\mass_filter_v15\\confirmation_a9_uniform4d\\checkpoint.jsonl": "0190a78fe69293969c0f08e0ee76db6a76677b270832b058edea3f1b6da62eb7"
+  }
+}
