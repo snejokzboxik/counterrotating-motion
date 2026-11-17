@@ -91,12 +91,13 @@
     "fem_survival_vs_time.png": "76ef62cdaf1253dd38bb2592a0d2246b9cf9694997e6cbe3caa7906049b91154",
     "ro_phase_retention.png": "304f3f75f898497513275294a29d2935fb65d38fa4046a82ffbab9fd823ea462",
     "mass_retention_and_A4.png": "f38a1c0f91ceb47af00166af555c4d4a228ef22b1e15addff5034040f2def51d",
-    "REPORT_RU.md": "be2cec6e8eff87fcff012cd7dde0afa081cec68bdc43b98b4d3fb61242af546d",
+    "REPORT_RU.md": "e60bffc6dc6f66a13be69e0469a3141d471179f6110d02b218bbc58403e406b6",
     "MODEL_COMPARISON_RU.md": "5a646463c0c8a1daa33aa7e126cce2fc0aea1a92e0aed7bb34ad96e157c686da",
     "PERIODIC_ORBITS_RU.md": "bfe06ac28d51dcbedf8fd068281351740e7486231ac2b27494706b55b98959c1",
     "PHASE_SPACE_RU.md": "63058beb9c480e4d608c0bdc433533b583c860c8b96f18c216084f5710b97cee",
     "PHASE_DEPENDENCE_RU.md": "6ea7cf7151c2d1a5cbe62dc211d02e0d8010565f3ddb88c867a96ec0018ab428",
-    "NUMERICAL_VALIDATION_RU.md": "5723c308e9f0cb1dd2d5cd1aac59f59c6140a15d128061ceeea1b9942c465f91"
+    "NUMERICAL_VALIDATION_RU.md": "5723c308e9f0cb1dd2d5cd1aac59f59c6140a15d128061ceeea1b9942c465f91",
+    "REPORT_V14_PR_ONE_COLUMN_RU.pdf": "c9be6c79b421fcff2fe8fd9e3ebd3538860d8b3b32a580c989c6bbfbaf008a30"
   },
   "source_code": {
     "src\\three_phase_trap\\v14_dynamics.py": "b477de3eb0a4df52206ec040b27d4a66356291e16d9c0ae9e82e0dbab2def18f",
@@ -112,8 +113,9 @@
     "scripts\\check_v14_q_harmonics.py": "de9555b7bb7a32e4d930052902f50518d9d184a5eb7d5a48b46f9381ff392c5a",
     "scripts\\validate_v14_fem_q_orbit.py": "d6e364e588763f6de4fa35d3a338ad0d806fd0fe408510fb571ee7e7dfc9f473",
     "scripts\\validate_v14_pilot.py": "933f603b6f95886ff066d8fed95c2dd0c49c76e5f35c91dd69133b2a6776d0e0",
-    "scripts\\validate_v14_dataset.py": "e2c8d2c2b1c7d6bdaf5402dbcdf564e28b475609a92fc66aec8b14db4593a961",
-    "scripts\\plot_v14_results.py": "77273072a5f142148f621bc32605621b7ab00cfbf24bdfe8f6ce7a320ed4429b"
+    "scripts\\validate_v14_dataset.py": "64ec613eda3d6cb682ea6af649989a6cc49e9e90545b50b74f2f6cb7697a96e3",
+    "scripts\\plot_v14_results.py": "77273072a5f142148f621bc32605621b7ab00cfbf24bdfe8f6ce7a320ed4429b",
+    "scripts\\build_v14_pdf.py": "cc4718ab0c7485bc558a2590ca773742605eadf24f07422db5bb302170d362ee"
   },
   "validation": {
     "unit_tests": "8 passed",

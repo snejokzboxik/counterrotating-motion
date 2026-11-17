@@ -160,7 +160,7 @@ def main():
           ('run_v14_ideal_pilot.py','analyze_v14_ideal.py','run_v14_fem_orbits.py','run_v14_fem_so.py',
            'run_v14_fem_long.py','run_v14_fem_phase.py','run_v14_fem_mass_so.py','run_v14_near_orbit_long.py',
            'check_v14_fem_q_orbit.py','check_v14_q_harmonics.py','validate_v14_fem_q_orbit.py','validate_v14_pilot.py',
-           'validate_v14_dataset.py','plot_v14_results.py')]
+           'validate_v14_dataset.py','plot_v14_results.py','build_v14_pdf.py')]
     artifacts=['ideal_pilot_trajectories.csv','ideal_pilot_paired_summary.csv',
                'ideal_periodic_orbits.json','effective_minima.csv','phase_ideal_summary.csv',
                'phase_ideal_orbits.json','fem_periodic_orbits.json','fem_q_orbit_search.json',
@@ -173,7 +173,8 @@ def main():
                'stroboscopic_projections.png','fem_survival_vs_time.png',
                'ro_phase_retention.png','mass_retention_and_A4.png',
                'REPORT_RU.md','MODEL_COMPARISON_RU.md','PERIODIC_ORBITS_RU.md',
-               'PHASE_SPACE_RU.md','PHASE_DEPENDENCE_RU.md','NUMERICAL_VALIDATION_RU.md']
+               'PHASE_SPACE_RU.md','PHASE_DEPENDENCE_RU.md','NUMERICAL_VALIDATION_RU.md',
+               'REPORT_V14_PR_ONE_COLUMN_RU.pdf']
     artifact_hashes={name:sha(OUT/name) for name in artifacts if (OUT/name).exists()}
     manifest=dict(project='V14 nonlinear finite-amplitude retention',
                   dataset_counts=sets,
