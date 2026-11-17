@@ -1,0 +1,10 @@
+{
+  "solver": "DOP853; shooting 2e-10/2e-12; verification 1e-11/1e-13; step 2pi/128",
+  "jacobian": "central finite differences eps 1e-6,5e-7",
+  "note": "hashes below correspond to final mesh; per-mesh sources are V13.3 saved fields",
+  "final_mesh_hashes": {
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+  }
+}

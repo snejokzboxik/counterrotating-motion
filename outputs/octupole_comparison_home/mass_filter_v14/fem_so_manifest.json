@@ -1,0 +1,36 @@
+{
+  "source_hashes": {
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_selected_N100\\trajectory_results.csv": "059e59c9f10307bcc963d16fa633008e94c6a15ecd9a5edabb15bee2fa92d3df",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\quadrupole_h50_P4_sector_solution.npz": "2a827e04790312ffa66f85bed8b6fbb126a5640647c40427d3faf01ebfc0f8c8",
+    "outputs\\meshes\\gmsh_50um\\trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "scripts\\run_v14_fem_so.py": "0edc665834e67a25d65a936fca96df1e1c6dc25231d12ef5e3e045108fb2935b"
+  },
+  "source_rows": 512,
+  "models": [
+    "SO_equal_harmonic",
+    "SO_equal_rms"
+  ],
+  "phases": [
+    0.0,
+    1.5707963267948966,
+    3.141592653589793,
+    4.71238898038469
+  ],
+  "seeds": [
+    513217,
+    883391,
+    20261114,
+    941029
+  ],
+  "states_per_replica": 16,
+  "horizon_rf": 100,
+  "field": "full h50 P4",
+  "solver": {
+    "method": "DOP853",
+    "rtol": 2e-10,
+    "atol": 2e-12,
+    "max_step_tau": 0.09817477042468103
+  },
+  "run_hash": "447b7a14b64687c6f046cdebff56a61a83a9975781702e2824a3507529db5a86"
+}

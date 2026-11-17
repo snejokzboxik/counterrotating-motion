@@ -1,0 +1,178 @@
+{
+  "horizon_rf": 300,
+  "strobes_every_rf": 1,
+  "integrator": "DOP853",
+  "rtol": 2e-10,
+  "atol": 2e-12,
+  "max_step_tau": 0.09817477042468103,
+  "runs": [
+    {
+      "field": "ideal",
+      "model": "Q",
+      "start_id": "orbit_RO_ideal",
+      "status": "escaped",
+      "exit_periods": 8.278124196833275,
+      "n_strobes": 9,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "ideal",
+      "model": "Q",
+      "start_id": "near_RO_ideal",
+      "status": "escaped",
+      "exit_periods": 8.278147972373938,
+      "n_strobes": 9,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "ideal",
+      "model": "SO",
+      "start_id": "orbit_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "ideal",
+      "model": "SO",
+      "start_id": "near_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "ideal",
+      "model": "RO",
+      "start_id": "orbit_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "ideal",
+      "model": "RO",
+      "start_id": "near_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "Q",
+      "start_id": "orbit_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "Q",
+      "start_id": "near_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "SO",
+      "start_id": "orbit_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "SO",
+      "start_id": "near_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "RO",
+      "start_id": "orbit_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        1.0503969318454894e-12,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    },
+    {
+      "field": "fem_h50",
+      "model": "RO",
+      "start_id": "near_RO_ideal",
+      "status": "retained",
+      "exit_periods": null,
+      "n_strobes": 301,
+      "initial": [
+        0.020000000001050396,
+        0.22847564824170233,
+        0.0011108946550334056,
+        9.286131305209946e-14
+      ]
+    }
+  ]
+}

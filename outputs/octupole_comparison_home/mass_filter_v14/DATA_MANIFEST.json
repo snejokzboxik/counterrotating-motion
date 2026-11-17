@@ -1,0 +1,130 @@
+{
+  "project": "V14 nonlinear finite-amplitude retention",
+  "dataset_counts": {
+    "ideal_pilot_checkpoint.jsonl": {
+      "rows": 1024,
+      "unique_keys": 1024,
+      "unresolved": 0,
+      "sha256": "5cf614cf5c45bd6934191ea730865fc02ee86caab02a9765ffe6d3c6252b389b"
+    },
+    "phase_ideal_checkpoint.jsonl": {
+      "rows": 1280,
+      "unique_keys": 1280,
+      "unresolved": 0,
+      "sha256": "69d80ab751a059a9e3a493c9418bda8571f4c6ea1230416f009e815af1b3fe98"
+    },
+    "fem_so_checkpoint.jsonl": {
+      "rows": 512,
+      "unique_keys": 512,
+      "unresolved": 0,
+      "sha256": "776f5afd8d315c7bb8552fb83d0299747fa7d78e0da2f1660d501e1c209dd859"
+    },
+    "phase_fem_checkpoint.jsonl": {
+      "rows": 768,
+      "unique_keys": 768,
+      "unresolved": 0,
+      "sha256": "c970b90ae2ded87904e8c911a45e07f34a56fd21df7b237961622c6e0d99f175"
+    },
+    "fem_long_checkpoint.jsonl": {
+      "rows": 2048,
+      "unique_keys": 2048,
+      "unresolved": 0,
+      "sha256": "8e0712a9d5b649185a385a0a2ce359d4e03aec3375d2e07359fe5fd7b556ca1a"
+    },
+    "near_orbit_long_checkpoint.jsonl": {
+      "rows": 30,
+      "unique_keys": 30,
+      "unresolved": 0,
+      "sha256": "c103335ef671c58ba441a1a6d59beeafee41747a6c6c77c617d73551f5e69237"
+    },
+    "fem_mass_so_checkpoint.jsonl": {
+      "rows": 512,
+      "unique_keys": 512,
+      "unresolved": 0,
+      "sha256": "9fdd19b701a46ebe55bc422a832fae517e964e9ed8ec89e56bc6688ad65f23b9"
+    }
+  },
+  "exact_v13_reused_q_ro_records": {
+    "source": "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_selected_N100\\trajectory_results.csv",
+    "rows": 512,
+    "initial_state_checks": 1024
+  },
+  "V13_3_source_trajectory_hashes": {
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_selected_N100\\trajectory_results.csv": "059e59c9f10307bcc963d16fa633008e94c6a15ecd9a5edabb15bee2fa92d3df",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_delta90_N100\\trajectory_results.csv": "f93ff56866fe1330ef1049ab840257a2c9bf487406d3c8a55a5fb68c4519fff4",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_a9_adaptive_N100\\trajectory_results.csv": "fa856bb4cf0675cbe89912470f317b6a8bc86996470ad58a0a15a486b61fdd1d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\acceptance_4d_fem_h50_a9_mass_edges_N100\\trajectory_results.csv": "33040dcd1d3e0bc45808288947db55873c8ea56e13ccc4a3487340e0817d5edf"
+  },
+  "FEM_fields": {
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h50_P4\\sector_solution.npz": "336882933c476bc7ecd2fd97bdc060991ddda5b6d685a3c0889e5ee36b493872",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_1\\fem\\quadrupole_h50_P4_sector_solution.npz": "2a827e04790312ffa66f85bed8b6fbb126a5640647c40427d3faf01ebfc0f8c8",
+    "outputs\\abc_validation\\direct_fem_validation\\v2\\h35_P4\\sector_solution.npz": "da90df98f9db31b5b7d84397bc9605bc6a4b940d8b30a8f9acb7d19cd8815a3d",
+    "outputs\\octupole_comparison_home\\mass_filter_v13\\v13_3_three_parameter_atlas\\fem\\quadrupole_h35_P4_sector_solution.npz": "f8514c1531a19e608cea448eac982e41ba82fde978e8c0b2d242cd1015a8f6bb",
+    "outputs\\meshes\\gmsh_50um\\trap.msh": "8ea670e6bf5bada2c86756bc98718063fe38cbfd1692c872c4a4e77f59b1a284",
+    "outputs\\meshes\\gmsh_35um\\trap.msh": "4919f8c75b2a60f516d9bc54af7e29cb7261cdf885c2f8557dbfecb6bc975abf"
+  },
+  "final_artifacts": {
+    "ideal_pilot_trajectories.csv": "8553f5ae868696cb9bce19998f545dd8ebd69fd9cdbd708c209fd9d447c6d3ec",
+    "ideal_pilot_paired_summary.csv": "5c8a72a0e6091fb379ec9692428ab21022e54e0bb8919c1c682318d2c4eb1f73",
+    "ideal_periodic_orbits.json": "66f609f2f34f05c59451e1842e36682a877f94155fb2e96e396237fc03f239b2",
+    "effective_minima.csv": "6c0bd9a4e28dae838525ca4b3e2009d8efcc8a66ab8d5ccd21167fa06ec85faa",
+    "phase_ideal_summary.csv": "1980d40caa2de962bcbfb3dcf40c1e9159a741639d472a6c2df08e7dbedd0d0d",
+    "phase_ideal_orbits.json": "c38d791708e1e190c7c44d5ebb1c6520dc014bd685f436984e0b4c3625a6b159",
+    "fem_periodic_orbits.json": "13bd0eef56fc2dab668f41105c9fa30d1d252f18f8d1a4eb53348a4b61f5f87c",
+    "fem_q_orbit_search.json": "c8c2230cc7b7e7620348e692e3dfdd0b33d80f4cbc31ee875ced17733c46187c",
+    "q_m10_harmonic_control.json": "5b08c61c69769173a2979bf052bf0aa29dc9a258362b67d2bf1e5af3d1ae51f1",
+    "fem_q_orbit_monodromy_refinement.csv": "f1aad2b9284cd66cd15e00893145c8b1d654f9bee5a3b4367f564ed0799dd3ee",
+    "fem_phase_orbit_search.json": "539aa2f6e88f40f97d54476fa9a68ba41cd69ef0ae154317c91e8fa24e4dc267",
+    "fem_so_paired_summary.csv": "ffe6336c37c37fab11e912402ee84b90b87faded7d1c0eb110eb9aa2a964a29c",
+    "fem_so_replicates.csv": "f4c6e5dd5a6b14a28d5a34199d2b39f3d5e05477bd8ea212ef8fe464d43060ae",
+    "fem_long_summary.csv": "f894a5f4e81da3401c7d027507150f578fe073f764581ff3e50957c7ee512899",
+    "phase_fem_summary.csv": "3f686b43507dab95640b8deb52a0c3f120ebcab8d62c6efa21555c69ac2ae170",
+    "phase_fem_paired_summary.csv": "e90e90a7f7f88aff7faa64ee66d9b0aba2cb4368eeb68f1c8606ab4ac316fc51",
+    "fem_mass_so_summary.csv": "8273bfec1b67590d2d8d53ac308364683822f318944579ffa42588a97a83749e",
+    "fem_mass_so_paired.csv": "4fa374c9165e5879ec61496129fd5ffaa893610f17b7a80392c5d583401b6821",
+    "stroboscopic_states.csv": "2590889094c25b46a64a350b8ffdc972f14f291aa363fdf3efc64fbf4b9c2975",
+    "stroboscopic_spectra.csv": "5ab0553fba24e8087e487bdd1983d4ef624ba16594ca943c54b552621b01403f",
+    "ideal_pilot_dop853_validation.csv": "85b7a4cfcf8bf67be29d571aa6775d1bfb289ef9cf58db7370ee0bb43cea5c7b",
+    "q_so_ro_ideal_fem_N100.png": "ef777fa88827448443ceceb1f0bfa4b7ef03fb3302698f6b14c067bcd503aef6",
+    "effective_potential_phase.png": "7a5664ede8f8af6660651849855603bdead01379c38f12c44149eaab6eff140d",
+    "stroboscopic_projections.png": "08fdf082e1c9d0998eacf023c63954f3f60308087049534db3cd41efb435aa70",
+    "fem_survival_vs_time.png": "76ef62cdaf1253dd38bb2592a0d2246b9cf9694997e6cbe3caa7906049b91154",
+    "ro_phase_retention.png": "304f3f75f898497513275294a29d2935fb65d38fa4046a82ffbab9fd823ea462",
+    "mass_retention_and_A4.png": "f38a1c0f91ceb47af00166af555c4d4a228ef22b1e15addff5034040f2def51d",
+    "REPORT_RU.md": "be2cec6e8eff87fcff012cd7dde0afa081cec68bdc43b98b4d3fb61242af546d",
+    "MODEL_COMPARISON_RU.md": "5a646463c0c8a1daa33aa7e126cce2fc0aea1a92e0aed7bb34ad96e157c686da",
+    "PERIODIC_ORBITS_RU.md": "bfe06ac28d51dcbedf8fd068281351740e7486231ac2b27494706b55b98959c1",
+    "PHASE_SPACE_RU.md": "63058beb9c480e4d608c0bdc433533b583c860c8b96f18c216084f5710b97cee",
+    "PHASE_DEPENDENCE_RU.md": "6ea7cf7151c2d1a5cbe62dc211d02e0d8010565f3ddb88c867a96ec0018ab428",
+    "NUMERICAL_VALIDATION_RU.md": "5723c308e9f0cb1dd2d5cd1aac59f59c6140a15d128061ceeea1b9942c465f91"
+  },
+  "source_code": {
+    "src\\three_phase_trap\\v14_dynamics.py": "b477de3eb0a4df52206ec040b27d4a66356291e16d9c0ae9e82e0dbab2def18f",
+    "scripts\\run_v14_ideal_pilot.py": "86f333e651b7aed4b209371b0ad035d7617e347dd1e7f55576761fe3064c1492",
+    "scripts\\analyze_v14_ideal.py": "b00686c80e3e4085795d535d4d883a8096f542d0e0d59a6a38a0d7ee28e937e1",
+    "scripts\\run_v14_fem_orbits.py": "a8ddae83b7cb8e852587172b4ba0ae1d10735ecb0fe45029407520ca2f166081",
+    "scripts\\run_v14_fem_so.py": "0edc665834e67a25d65a936fca96df1e1c6dc25231d12ef5e3e045108fb2935b",
+    "scripts\\run_v14_fem_long.py": "c8573522d66a91433f92da60c2552605b998233e2f6ca8b733ed707ea10c38f7",
+    "scripts\\run_v14_fem_phase.py": "e40094f92da1488c3c623f2d421a1a740088df8fb31e114383ec6d384703cadb",
+    "scripts\\run_v14_fem_mass_so.py": "dd8742e851c721926070b378aaddbfa3799ad1a98af63003e9d3bc97e67ec625",
+    "scripts\\run_v14_near_orbit_long.py": "ca27e6e35f25d7aead7e8d5d9fc1a744d9306fe634f3cefece48c27e518174d2",
+    "scripts\\check_v14_fem_q_orbit.py": "95dffc0fbe6e52b8f930bf0d519694290e07249eab9bbc04a1285d108f6349cb",
+    "scripts\\check_v14_q_harmonics.py": "de9555b7bb7a32e4d930052902f50518d9d184a5eb7d5a48b46f9381ff392c5a",
+    "scripts\\validate_v14_fem_q_orbit.py": "d6e364e588763f6de4fa35d3a338ad0d806fd0fe408510fb571ee7e7dfc9f473",
+    "scripts\\validate_v14_pilot.py": "933f603b6f95886ff066d8fed95c2dd0c49c76e5f35c91dd69133b2a6776d0e0",
+    "scripts\\validate_v14_dataset.py": "e2c8d2c2b1c7d6bdaf5402dbcdf564e28b475609a92fc66aec8b14db4593a961",
+    "scripts\\plot_v14_results.py": "77273072a5f142148f621bc32605621b7ab00cfbf24bdfe8f6ce7a320ed4429b"
+  },
+  "validation": {
+    "unit_tests": "8 passed",
+    "pilot_DOP853": "42/42 classifications matched; max exit-time difference 0.0004809 RF",
+    "fem_meshes": [
+      "h50 P4",
+      "h35 P4"
+    ],
+    "unresolved_fem_ensembles": 0,
+    "h50_qro_trajectories_reused_without_reintegration": true,
+    "raw_count_reconstruction": "SO, delta phase, mass-control, and 100/300/1000 RF summaries reconstructed from trajectory rows",
+    "electrode_voltage_limit": "all rows <=250 V"
+  }
+}
