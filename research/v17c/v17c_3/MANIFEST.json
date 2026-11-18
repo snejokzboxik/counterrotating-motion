@@ -1,0 +1,467 @@
+{
+  "study": "V17C.3 RF-DC localization and counter-rotation",
+  "repository": "https://github.com/snejokzboxik/three-phase-12-electrode-trap",
+  "branch": "research/v17c",
+  "base_commit": "3a6b12d1a56c563bd5f644a67dddd9a7951c8d11",
+  "scope": "research/v17c/v17c_3",
+  "model": "full available transverse RF spectra, ideal harmonic 3D DC quadrupole, 3D point Coulomb force, linear dimensionless drag",
+  "result": "No stable two-particle counter-rotating regime confirmed; one long RF-supported positive single-particle G0 orbit confirmed.",
+  "file_count_excluding_manifest_and_archive": 91,
+  "files": [
+    {
+      "path": "boundary_shell_scan.py",
+      "size_bytes": 1100,
+      "sha256": "b487b2e1c4da13e1d0c89bee85583b64206ef7fcdce16b5650c0ac5d2078f732"
+    },
+    {
+      "path": "confirm_boundary_shell.py",
+      "size_bytes": 1726,
+      "sha256": "6df1b8d2bf5122e2f8bc3f60a21bc99f62b13aab97cfc284da2d64aa4062cee0"
+    },
+    {
+      "path": "confirm_g0.py",
+      "size_bytes": 6241,
+      "sha256": "7f57ceb3859101cc0d4a22923c0fe0eea71fa8dde5104841046730ac3276bbed"
+    },
+    {
+      "path": "continuation_scan.py",
+      "size_bytes": 4453,
+      "sha256": "a07ae8e7f9c5b9eff4a76f3c743d9dead5a47aae31bfe4bfafcff372ea6aa2ed"
+    },
+    {
+      "path": "COULOMB_COUPLING_RU.md",
+      "size_bytes": 2937,
+      "sha256": "8dcc0da1f62f0146f18fd86365a65154c598706de45099f0a423a24dc97714d9"
+    },
+    {
+      "path": "DC_CONFINEMENT_THEORY_RU.md",
+      "size_bytes": 4837,
+      "sha256": "97f714d2ff66e4afa16760f4eb17a8507e844e7af3ec82cb40ff795b1bc518b0"
+    },
+    {
+      "path": "DIRECTION_SWITCHING_RU.md",
+      "size_bytes": 2572,
+      "sha256": "136ce61a6310e6263999e858bc2a18be88a2e38359b1eaaa37e09aebfb21b403"
+    },
+    {
+      "path": "dop853_validate.py",
+      "size_bytes": 4397,
+      "sha256": "470ae2bb456cc1fcfee38d2efc728922016d4a6dcee10a943ce1b65259c7d7a2"
+    },
+    {
+      "path": "ENERGY_AND_ANGULAR_MOMENTUM_RU.md",
+      "size_bytes": 2756,
+      "sha256": "5b4920d5ec052c41438cc243d48723c73a243b6f023af823328367ff1091ef49"
+    },
+    {
+      "path": "FEM_VALIDATION_RU.md",
+      "size_bytes": 2810,
+      "sha256": "ab05074f56cb24d7eda56a6146288def88a111d87433f78ce15b1088e0f18598"
+    },
+    {
+      "path": "input/harmonics.json",
+      "size_bytes": 41871,
+      "sha256": "4f309f489d236cda73f7a9dab3128f22963f4ca78b6d8618b3c4a4d10a3c3f05"
+    },
+    {
+      "path": "input/native_p4_h50_h35_coefficients.json",
+      "size_bytes": 867,
+      "sha256": "420653458c1266852c57c129827f260981a111c38a000e3ee6ab91b67fd6767a"
+    },
+    {
+      "path": "long_step_validation.py",
+      "size_bytes": 1495,
+      "sha256": "13b2545460486094ca93648a6c32c6ba0e2379a4f03e4a644979aa49c46a71dd"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "size_bytes": 2616,
+      "sha256": "02d6349c485f3718f078113582e076e888c7bdbc9b0401e0ee5a1f27bd99e15f"
+    },
+    {
+      "path": "package_release.py",
+      "size_bytes": 2411,
+      "sha256": "2fc459f7a1d2a9378d3bce066c8ae1905c5ffe33e298b91bc8da50398e12c9ec"
+    },
+    {
+      "path": "PHYSICAL_REALIZABILITY_RU.md",
+      "size_bytes": 4946,
+      "sha256": "137c5e5cb7b4b4c7f9ff34eede98a4eaa72af806978e500e2c6729065fccce4d"
+    },
+    {
+      "path": "plot_summary.py",
+      "size_bytes": 6935,
+      "sha256": "fd891603d58f2baa924b2d3a7915a534f3d069cfd64f6a17fe85029035fd8e2c"
+    },
+    {
+      "path": "pseudopotential_stationary_scan.py",
+      "size_bytes": 2697,
+      "sha256": "c3c6f2b1e4d65752df1599ce1450a1bb1b1fdda5f87e9116c9e7c2eec93f6e9e"
+    },
+    {
+      "path": "RADIAL_EQUILIBRIA_RU.md",
+      "size_bytes": 3729,
+      "sha256": "9518577bf90f90eae574f3be91dbd5c2515ef13147823b4d11e4ed510c150923"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "size_bytes": 7271,
+      "sha256": "92617fbc5722c8b6b61dd15181ea356c225ec88a522a370e279a467aa228bdcb"
+    },
+    {
+      "path": "REPRODUCING_RU.md",
+      "size_bytes": 2334,
+      "sha256": "0933ecd5f4f6fc315cb698a7030444174577df413160a4e6611bd7834fd0091a"
+    },
+    {
+      "path": "results/averaged_torque_sign_roots.png",
+      "size_bytes": 120776,
+      "sha256": "62528b957a6e20f4dd6826f076720521f42a143763ce024690b90b40f0977324"
+    },
+    {
+      "path": "results/dop853_G0_2400RF.npz",
+      "size_bytes": 178579,
+      "sha256": "783d5aeba6ad67658702d0d3da1b58cf7825a420a8d64c60cb79e6987252d350"
+    },
+    {
+      "path": "results/dop853_G0_validation.json",
+      "size_bytes": 877,
+      "sha256": "b96632f8464b1012bac90cd03997ed7f67813132970bb0b7363800f69405b011"
+    },
+    {
+      "path": "results/G0_alpha_beta_map.csv",
+      "size_bytes": 2701,
+      "sha256": "a6f939d2ff0f4a783b0fb9cdd2b131c282e878d5df2692e1b28d31ab1221cca2"
+    },
+    {
+      "path": "results/G0_boundary_negative_shell_scan.json",
+      "size_bytes": 7562,
+      "sha256": "0edb57ae39906f5e30dfe6368fed541bc40d5e63bde209243a1a033f6457908e"
+    },
+    {
+      "path": "results/G0_h35_positive_12000RF.npz",
+      "size_bytes": 926718,
+      "sha256": "cafe7741bd31f5dc01e4b88bba42b658a14a27305893d399692098006267b202"
+    },
+    {
+      "path": "results/G0_h50_dc_switch_scan.json",
+      "size_bytes": 1699,
+      "sha256": "f9bd057b9e3a12b8d17578b3f2f288d92f16b9ff3ee6d10b53ebbd77efc965cd"
+    },
+    {
+      "path": "results/G0_h50_drag_continuation.json",
+      "size_bytes": 2203,
+      "sha256": "61046bbadc10b2efbd44e7c6a70a6fdb311a33926568fec1dcb43b198b7c1245"
+    },
+    {
+      "path": "results/G0_h50_h35_dynamic_comparison.json",
+      "size_bytes": 425,
+      "sha256": "d93274c98ba2dab3ce32fbb296b9d9edf3e0f3cb55b078826f23741743c0695d"
+    },
+    {
+      "path": "results/G0_h50_lambda0.0005_12000RF.npz",
+      "size_bytes": 926745,
+      "sha256": "f91569bc285657c321190a1dee7dac7deaf885c9459978d45b34e7e1978c281e"
+    },
+    {
+      "path": "results/G0_h50_lambda0_12000RF.npz",
+      "size_bytes": 762059,
+      "sha256": "993a9f8c940459597932273e586763c82d1282ceaca2655d19641f69c35a55d9"
+    },
+    {
+      "path": "results/G0_h50_long_step_validation.json",
+      "size_bytes": 306,
+      "sha256": "edeaa529f1958cae9d28dbe42706e7b7ec69aa49001b59e2ff40a532545bbac3"
+    },
+    {
+      "path": "results/G0_h50_long_summary.json",
+      "size_bytes": 1168,
+      "sha256": "40fc0f97d7760032153ad4194c6abd44a9fe7dc3ef50fc71397c0d55d4db8dcd"
+    },
+    {
+      "path": "results/G0_h50_perturbations.json",
+      "size_bytes": 2570,
+      "sha256": "9bc6a828577cd164d1ec91e83574aaa369a8d2f043a92bb5d7258e18e07778e2"
+    },
+    {
+      "path": "results/G0_h50_positive_12000RF.npz",
+      "size_bytes": 926745,
+      "sha256": "f91569bc285657c321190a1dee7dac7deaf885c9459978d45b34e7e1978c281e"
+    },
+    {
+      "path": "results/G0_h50_positive_12000RF_steps128.npz",
+      "size_bytes": 926589,
+      "sha256": "088cc9ee49ff93314adedf523beb5566cce50d224d7302c28514a27b092f1904"
+    },
+    {
+      "path": "results/G0_h50_positive_50000RF.npz",
+      "size_bytes": 3791012,
+      "sha256": "29df7a286891e6642019914eedc1dbb420d6b1a9e1361f6d6402ccccec9a3d36"
+    },
+    {
+      "path": "results/G0_h50_positive_50000RF.png",
+      "size_bytes": 201101,
+      "sha256": "8bafedfd43230e8c49a06e789f30cee21e57b16b088516731af9fffa457456a6"
+    },
+    {
+      "path": "results/G0_h50_step_convergence.json",
+      "size_bytes": 516,
+      "sha256": "03fcc4683ee61d5cdb09824c960dc2547d0b3f366cc5906aa1edb07c1b668150"
+    },
+    {
+      "path": "results/G0_h50_thin_negative_shell_100000RF.npz",
+      "size_bytes": 6207397,
+      "sha256": "057f1113db6e71a812b6f47671b5282b12c8f277c92193c8ad20d484ed2b3fb6"
+    },
+    {
+      "path": "results/G0_h50_thin_negative_shell_summary.json",
+      "size_bytes": 1064,
+      "sha256": "452f34af9c83f832a10176f31d2c9403e1c49cfe407dc2336894595ba42eb301"
+    },
+    {
+      "path": "results/G0_positive_trajectory_projections.png",
+      "size_bytes": 282882,
+      "sha256": "e1e12be10b95fd248bc00b04a8d5a887583f2ed8ff8096f5f337b282de8db3cd"
+    },
+    {
+      "path": "results/G0_qm_vdc_map.csv",
+      "size_bytes": 3924,
+      "sha256": "8df6011c944efca05405107baf6d17265ee98b491d6c1acfe1c6c3cb9c7ab777"
+    },
+    {
+      "path": "results/G0_vdc_friction_map.csv",
+      "size_bytes": 2868,
+      "sha256": "e9c45009281f2b45750a88b4c940bc60e874ec8634ce3b7c49070c349850976f"
+    },
+    {
+      "path": "results/G1_inner_dynamics_summary.json",
+      "size_bytes": 1959,
+      "sha256": "461b2c2f18786de2bd56d52ac8d2d8ba7c78eebd56398a25baee22cdc897f35f"
+    },
+    {
+      "path": "results/G1_inner_pseudopotential_min_12000RF.npz",
+      "size_bytes": 829249,
+      "sha256": "71fcc2620b26fd865e5c2a359362df114c2aa54c76eccc7a84a97d5463c4297b"
+    },
+    {
+      "path": "results/G1_pair_coulomb_scan_diagnostic.png",
+      "size_bytes": 110172,
+      "sha256": "a21482092bf0719a887cebb9190d0238e1f4b51d32b2b13ee3329ec009faf510"
+    },
+    {
+      "path": "results/model_audit.json",
+      "size_bytes": 933,
+      "sha256": "7ad2ffcc0a62cb7ec47ab36ecad74ecf0dbdd58a07f8261294aa220c758403d0"
+    },
+    {
+      "path": "results/pair_coulomb_coupling_scan.csv",
+      "size_bytes": 10457,
+      "sha256": "cb848f414326aeabe09ac36c09646b107f20f277771da2fad58773dca1101b6c"
+    },
+    {
+      "path": "results/pair_G1_chi0.001_2400RF.npz",
+      "size_bytes": 3038,
+      "sha256": "782e43322ea9ec74059f17a8b6693c979ced850061ef7840e14612dcc09987b4"
+    },
+    {
+      "path": "results/pair_G1_chi0_2400RF.npz",
+      "size_bytes": 4197,
+      "sha256": "2320b3490384925c87f02d2c9aa25859a7e51d726b8970f24711586a116bc0e9"
+    },
+    {
+      "path": "results/pair_G3_chi0.001_2400RF.npz",
+      "size_bytes": 1174,
+      "sha256": "cfc29eda1b1bd645c1dc5bfa5786b37eacb4af09c1e49ab465daf90f840db6ee"
+    },
+    {
+      "path": "results/pair_G3_chi0_2400RF.npz",
+      "size_bytes": 1299,
+      "sha256": "d719eac2f36a989ef0945ee5222bb413a28a61fc42acfebeeadb20c451b774bb"
+    },
+    {
+      "path": "results/pair_G5_chi0.001_2400RF.npz",
+      "size_bytes": 1386,
+      "sha256": "20e846af26bec1aa2355320454d07f6e10387b2afaa6bc08d1d8e9ef4737bb57"
+    },
+    {
+      "path": "results/pair_G5_chi0_2400RF.npz",
+      "size_bytes": 1497,
+      "sha256": "6a214dfc2b9aca78242d813cffb2e2a3a838cc1ad287c8a4e1b4033dc66fff9d"
+    },
+    {
+      "path": "results/pseudopotential_stationary_points.json",
+      "size_bytes": 18820,
+      "sha256": "bf8a88b841cf1c306062c143806e4ff8b5a22e604c054a98611c8e3de0ff3722"
+    },
+    {
+      "path": "results/radial_torque_dc_maps.csv",
+      "size_bytes": 438971,
+      "sha256": "d2fcdbfeeecd6f95e0bd72d7a69598c7f18ea0c3f363f5de004448475b8da788"
+    },
+    {
+      "path": "results/rf_dc_control_maps.png",
+      "size_bytes": 226356,
+      "sha256": "20fa80f4c504dc09b3908f4599432a1c83a1681b7b26c0b08795f1164d115df1"
+    },
+    {
+      "path": "results/scan_summary.json",
+      "size_bytes": 119,
+      "sha256": "9f61acbb5fb0cef5e95aeccc99f3fb471704778936bbae0caa56fe280a667fbe"
+    },
+    {
+      "path": "results/single_G3_inner_1400RF.npz",
+      "size_bytes": 914,
+      "sha256": "29af9d9623579df2e56a477d02b65b7d601798063fb31e6fed73854b7801088d"
+    },
+    {
+      "path": "results/single_G3_outer_1400RF.npz",
+      "size_bytes": 836,
+      "sha256": "46fdb4be7257c0db9d066389ae9089716d2dd86eea021612612fec0cd9dcb24c"
+    },
+    {
+      "path": "results/single_G5_inner_1400RF.npz",
+      "size_bytes": 1003,
+      "sha256": "011f8b6873af978ff5c9f49636ed5b979450afb0bb05795556e527591bd35d8d"
+    },
+    {
+      "path": "results/single_G5_outer_1400RF.npz",
+      "size_bytes": 836,
+      "sha256": "08a75226b07966e729276d7365578641bbe5add83883aa70c7fe1454607a507a"
+    },
+    {
+      "path": "results/single_particle_rf_dc_scan.csv",
+      "size_bytes": 13584,
+      "sha256": "a265ff5c61d05cbaf1e32b61844d52e13d4f9940d44118c80a1a6559c4144bbf"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_opposite_chi0.001.npz",
+      "size_bytes": 3064,
+      "sha256": "5abbd12c8e263ec219b5f22bd7013bf69be9bd88ad20f9d95c7de217007e7525"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_opposite_chi0.1.npz",
+      "size_bytes": 966,
+      "sha256": "e5d1eea763f993ae564f18faab0d917530b04b8105f5e2abca97da499a208ada"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_opposite_chi0.npz",
+      "size_bytes": 4219,
+      "sha256": "5cea3b19eb937f80c426f0e3483e540bf50c73f3eaf5c49d2206423b2cfd83ae"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_rest_chi0.001.npz",
+      "size_bytes": 3051,
+      "sha256": "b767bb95a8660d9961e09fc14643b673f1dcfdb153b77256165869f43e69e192"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_rest_chi0.1.npz",
+      "size_bytes": 953,
+      "sha256": "1fc290ffce04040e682125f5333e5cddac8d64e0fb8aefc880defbb91f75a215"
+    },
+    {
+      "path": "results/targeted_G1_full_spectrum_matched_rest_chi0.npz",
+      "size_bytes": 4026,
+      "sha256": "3abc489e31764fd20bcea1cee0f0ece157edaa29b2be4dba04f485484b3aff1b"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_opposite_chi0.001.npz",
+      "size_bytes": 1630,
+      "sha256": "8e2c75499ac1679c40c3e351c3ae4d6d1f314a72e8d72611f8ffac34c0a89faa"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_opposite_chi0.1.npz",
+      "size_bytes": 964,
+      "sha256": "676619deaf0b7a4be456ba54b8f381214545b6cf70c5470430d377d61fd0908a"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_opposite_chi0.npz",
+      "size_bytes": 2430,
+      "sha256": "de6211371bf304f6ef499bcd25df6b82de595af67d8f6a732684cdaf79845013"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_rest_chi0.001.npz",
+      "size_bytes": 1611,
+      "sha256": "1bb4931039b4961cb8503b533e532419fdb98c45ea6627fb97ddb0eecfde44ce"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_rest_chi0.1.npz",
+      "size_bytes": 948,
+      "sha256": "d4c93d452e531b524725c313f88066c4e2e7230a834dd415291e79e4be694e51"
+    },
+    {
+      "path": "results/targeted_G1_local_minimum_control_mu2p7_rest_chi0.npz",
+      "size_bytes": 4930,
+      "sha256": "0b5a92723b4cdfcee72348b3b614d5800dc49d09c79cd2714879500c68249d7f"
+    },
+    {
+      "path": "results/targeted_G1_pair_scan.csv",
+      "size_bytes": 38331,
+      "sha256": "3883b0fe30562ecf37cab2b46c852ffe04928b3d4b90204461a2741a794d4e9a"
+    },
+    {
+      "path": "results/targeted_G1_pair_scan.json",
+      "size_bytes": 77605,
+      "sha256": "8a60e9475932aca53591702d86a30c4217bc324163ff62a7cc52c8e84cf0523f"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_opposite_chi0.001.npz",
+      "size_bytes": 2863,
+      "sha256": "5fd5df902c1c4aee67a0875aa3f19f016650c47da7c67eb2d5cab26ea5997961"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_opposite_chi0.1.npz",
+      "size_bytes": 960,
+      "sha256": "1d41ce1a403547ebd25b5bb0debe5d7360cfce8320e816d9db003262ae699aa1"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_opposite_chi0.npz",
+      "size_bytes": 8004,
+      "sha256": "14589ea7b4c31e01a82e4c1faf8971f7d89b1c3fdbc99fb650d496078695c799"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_rest_chi0.001.npz",
+      "size_bytes": 2840,
+      "sha256": "73cf710c11a8cfcec4dd817ad71a15a11e5a36f54cf9ad53fe65dafda694c696"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_rest_chi0.1.npz",
+      "size_bytes": 948,
+      "sha256": "ecc513dbb6caa2c668ab52f89cec534051a899fdf41d95d620d4725ad223d5b5"
+    },
+    {
+      "path": "results/targeted_G1_V17C3_canonical_mu2p7_rest_chi0.npz",
+      "size_bytes": 8715,
+      "sha256": "3ce52c16ae8d2a6f8040067bae27da80a5ad6a1871909894a3dfba394bff738c"
+    },
+    {
+      "path": "results/torque_sign_roots.json",
+      "size_bytes": 323,
+      "sha256": "963d4af1b58d40dce01d98c2ca327e0b9020d3ab4839a365a82b5d8491e0ecd2"
+    },
+    {
+      "path": "rf_dc_core.py",
+      "size_bytes": 14571,
+      "sha256": "a01c08c62bc6d0257065f57e8230c9d993c5939a0a295c9a6762320314631c99"
+    },
+    {
+      "path": "run_experiments.py",
+      "size_bytes": 9757,
+      "sha256": "31992263b32a2c15ad092dd755e4261864c2b41546a4f7f0d07938010b01b2df"
+    },
+    {
+      "path": "SINGLE_PARTICLE_DYNAMICS_RU.md",
+      "size_bytes": 4986,
+      "sha256": "4771a6f8c242084bfa645794c4f0211a4c2037607c2dcee40c357b71867e05d2"
+    },
+    {
+      "path": "targeted_pair_scan.py",
+      "size_bytes": 4546,
+      "sha256": "e3e00e493e4fe27b58bcf86b1c8ae30ba5b9639dfd6fa3cc25a8694c4ee633ed"
+    },
+    {
+      "path": "TWO_PARTICLE_COUNTER_ROTATION_RU.md",
+      "size_bytes": 3719,
+      "sha256": "56cb59be39ba7469e0a088af5587c67d4d67742bd741244270efcb76b003ed48"
+    }
+  ]
+}

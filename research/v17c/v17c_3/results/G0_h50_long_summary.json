@@ -1,0 +1,38 @@
+{
+  "geometry": "native P4 FEM h50; two harmonics A4 and A-8 only",
+  "periods": 50000.0,
+  "escaped": false,
+  "turns": 137.39812720080704,
+  "mean_omega": 0.002747962544016141,
+  "late_window_turns": [
+    27.47842216266016,
+    20.599669793532453,
+    20.61538856226426
+  ],
+  "radius_mean": 0.5486676754700307,
+  "radius_std": 0.011929137967888234,
+  "radius_min": 0.5311456797774038,
+  "radius_max": 0.5675458524613101,
+  "initial_angular_momentum": 0.00399322669653438,
+  "final_angular_momentum": 0.0017063707253469952,
+  "torque_impulse_sum": -0.0022843436580766707,
+  "angular_momentum_balance_residual": -2.5123131107145265e-06,
+  "energy": {
+    "K_initial": 0.00013234818503713832,
+    "K_final": 0.00015206581793334183,
+    "W_RF": 0.04380775869051343,
+    "W_DC": -1.0577851525349785e-05,
+    "W_Coulomb": 0.0,
+    "W_drag": -0.04377823390147897,
+    "kinetic_work_residual": 7.706953870853517e-07,
+    "RF_plus_drag": 2.952478903446576e-05
+  },
+  "parameters": {
+    "alpha": 0.025,
+    "beta": 0.002768474536710942,
+    "lambda": 0.0005,
+    "r0": 0.55,
+    "theta0": 0.371,
+    "omega0": 0.002721899782814115
+  }
+}

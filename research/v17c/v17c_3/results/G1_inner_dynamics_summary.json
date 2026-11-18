@@ -1,0 +1,61 @@
+{
+  "geometry": "G1 six-electrode ABC, full MFS spectrum",
+  "alpha1": 0.025,
+  "beta1": 0.002940919768475096,
+  "lambda": 0.0005,
+  "runs": [
+    {
+      "case": "average_start_rest",
+      "initial_r": 0.4,
+      "initial_theta": 0.371,
+      "initial_omega": 0.0,
+      "duration_RF_periods": 12000.0,
+      "escaped": false,
+      "turns": 0.022380189261272363,
+      "late_window_turns": [7.32127849518476e-07, 3.2603536233831793e-09, -9.074021965347983e-10],
+      "radius_mean": 0.48927736759797946,
+      "radius_min": 0.405907779712392,
+      "radius_max": 0.5688923660450143,
+      "work_rf": 0.023132501477485506,
+      "work_drag": -0.02311910399089664
+    },
+    {
+      "case": "pseudopotential_minimum_rest",
+      "initial_r": 0.478,
+      "initial_theta": 0.5235987755982988,
+      "initial_omega": 0.0,
+      "duration_RF_periods": 12000.0,
+      "escaped": false,
+      "turns": -2.7266656012294927e-06,
+      "late_window_turns": [5.2115872451316195e-08, -6.379807578853134e-10, 4.105981240405903e-12],
+      "radius_mean": 0.48923584961018474,
+      "radius_min": 0.4638920839016639,
+      "radius_max": 0.5165861896038247,
+      "work_rf": 0.023084453329107645,
+      "work_drag": -0.023094920743768284
+    },
+    {
+      "case": "pseudopotential_minimum_plus_spin",
+      "initial_r": 0.478,
+      "initial_theta": 0.5235987755982988,
+      "initial_omega": 0.01,
+      "duration_RF_periods": 100.46875,
+      "escaped": true,
+      "turns": 0.01301136926344981,
+      "radius_mean": 0.4477274259627835,
+      "radius_min": 0.3348870726126005,
+      "radius_max": 1.0004758975290906
+    },
+    {
+      "case": "pseudopotential_minimum_minus_spin",
+      "initial_r": 0.478,
+      "initial_theta": 0.5235987755982988,
+      "initial_omega": -0.01,
+      "duration_RF_periods": 260.59375,
+      "escaped": true,
+      "turns": 0.1751076808816331,
+      "radius_mean": 0.4329958932594949,
+      "radius_min": 0.324361158235201
+    }
+  ]
+}

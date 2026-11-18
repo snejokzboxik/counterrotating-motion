@@ -1,0 +1,18 @@
+[
+  {
+    "steps_per_period": 32,
+    "reference_steps": 128,
+    "max_abs_state_difference": 0.028372503615824864,
+    "max_abs_position_difference": 0.028372503615824864,
+    "turns": 5.5134988425734885,
+    "reference_turns": 5.5045211220511
+  },
+  {
+    "steps_per_period": 64,
+    "reference_steps": 128,
+    "max_abs_state_difference": 0.0008588485283835823,
+    "max_abs_position_difference": 0.0008588485283835823,
+    "turns": 5.504788714063667,
+    "reference_turns": 5.5045211220511
+  }
+]

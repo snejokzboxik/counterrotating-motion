@@ -1,0 +1,31 @@
+{
+  "geometry": "native P4 FEM h50 two-harmonic normalized field",
+  "periods": 2400,
+  "steps_per_period_RK4": 64,
+  "DOP853": {
+    "success": true,
+    "nfev": 1515185,
+    "rtol": 2e-11,
+    "atol": 2e-13,
+    "max_step": 0.12
+  },
+  "max_state_abs_difference": 0.0010806566861366884,
+  "max_position_abs_difference": 0.0010806566861366884,
+  "turns_RK4": 6.612209353808437,
+  "turns_DOP853": 6.611837349455666,
+  "kinetic_work_residual_DOP853": 1.7611536144365725e-14,
+  "rf_plus_drag_work_DOP853": 3.027177557444376e-05,
+  "angular_momentum_balance_residual_DOP853": 1.6819878823071122e-14,
+  "radius_range_DOP853": [
+    0.5311456573881514,
+    0.5675458430352583
+  ],
+  "parameters": {
+    "r0": 0.55,
+    "theta0": 0.371,
+    "omega0": 0.002721899782814115,
+    "alpha": 0.025,
+    "beta": 0.002768474536710942,
+    "lambda": 0.0005
+  }
+}

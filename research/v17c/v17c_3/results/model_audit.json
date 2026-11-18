@@ -1,0 +1,41 @@
+{
+  "DC_laplace_and_force": {
+    "analytic_laplacian": 0.0,
+    "force_over_mass": "beta*(x,y,-2z)",
+    "max_centered_gradient_error": 4.103141437727942e-14,
+    "max_analytic_trace_error": 0.0,
+    "azimuthal_torque_identity": "x*a_y-y*a_x = 0"
+  },
+  "model": "full signed transverse RF harmonics + 3D harmonic DC + 3D Coulomb + linear drag",
+  "scaling": {
+    "tau": "Omega*t",
+    "u": "r/R",
+    "alpha": "kappa*|A_m|",
+    "beta": "q*V_DC/(m*R^2*Omega^2)",
+    "chi": "q_ref^2/(4*pi*eps0*m_ref*Omega^2*R^3)"
+  },
+  "torque_sign_roots": {
+    "G0_h50": [
+      0.998377793473038
+    ],
+    "G0_h35": [
+      0.998369194297317
+    ],
+    "G1": [
+      0.62771536278064
+    ],
+    "G2": [
+      0.5674096415519847,
+      0.9777981883086799
+    ],
+    "G3": [
+      0.7915101967606368
+    ],
+    "G3thin": [
+      0.7183579364794421
+    ],
+    "G5": [
+      0.8714918309717588
+    ]
+  }
+}
