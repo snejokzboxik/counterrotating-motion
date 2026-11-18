@@ -77,8 +77,8 @@
       "sha256": "75a9e0e3e06cf5d698c962773f5ee63291730b246e6c5b966e3a25e5ef1b58ca"
     },
     "REPORT_RU.md": {
-      "bytes": 10026,
-      "sha256": "2f38e593e9fdec07fda68555c34f52d3d628d3fc98e2d33b4532387888a2ae07"
+      "bytes": 10013,
+      "sha256": "c028dd98b7e14536ad085e26ada11f27010c049c7e00ea64202f58ad75c9262b"
     },
     "rk/reproduce.py": {
       "bytes": 7936,
