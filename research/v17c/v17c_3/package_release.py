@@ -37,7 +37,7 @@ manifest = {
     "base_commit": "3a6b12d1a56c563bd5f644a67dddd9a7951c8d11",
     "scope": "research/v17c/v17c_3",
     "model": "full available transverse RF spectra, ideal harmonic 3D DC quadrupole, 3D point Coulomb force, linear dimensionless drag",
-    "result": "No stable two-particle counter-rotating regime confirmed; one long RF-supported positive single-particle G0 orbit confirmed.",
+    "result": "No stable G1/G2 counter-rotating pair confirmed in the completed 2D-FEM, translation-spectrum, broad-pair, and barrier-targeted follow-up. V17C.3 remains open to further work.",
     "file_count_excluding_manifest_and_archive": len(files),
     "files": files,
 }

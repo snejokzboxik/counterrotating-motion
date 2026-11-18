@@ -1,0 +1,226 @@
+{
+  "purpose": "retain full trajectories for all broad-screen horizon survivors and top barrier-targeted failures",
+  "trajectory_count": 11,
+  "trajectories": [
+    {
+      "dataset": "barrier",
+      "run_id": "G1_00295",
+      "geometry": "G1",
+      "source_duration_rf_periods": 184.0,
+      "requested_horizon_rf_periods": 600,
+      "replayed_duration_rf_periods": 184.0,
+      "source_turns": [
+        0.5130214407386471,
+        0.3572828703736303
+      ],
+      "replayed_turns": [
+        0.5130214407386471,
+        0.3572828703736303
+      ],
+      "escaped": true,
+      "collided": false,
+      "steps_per_period": 48,
+      "trajectory_file": "barrier_G1_00295.npz"
+    },
+    {
+      "dataset": "barrier",
+      "run_id": "G1_00540",
+      "geometry": "G1",
+      "source_duration_rf_periods": 46.166666666666664,
+      "requested_horizon_rf_periods": 600,
+      "replayed_duration_rf_periods": 46.166666666666664,
+      "source_turns": [
+        0.49903054070143266,
+        0.5434262448357491
+      ],
+      "replayed_turns": [
+        0.49903054070143266,
+        0.5434262448357491
+      ],
+      "escaped": true,
+      "collided": false,
+      "steps_per_period": 48,
+      "trajectory_file": "barrier_G1_00540.npz"
+    },
+    {
+      "dataset": "barrier",
+      "run_id": "G2_00008",
+      "geometry": "G2",
+      "source_duration_rf_periods": 28.8125,
+      "requested_horizon_rf_periods": 600,
+      "replayed_duration_rf_periods": 28.8125,
+      "source_turns": [
+        -0.44425704697757834,
+        0.5205024333579458
+      ],
+      "replayed_turns": [
+        -0.44425704697757834,
+        0.5205024333579458
+      ],
+      "escaped": true,
+      "collided": false,
+      "steps_per_period": 48,
+      "trajectory_file": "barrier_G2_00008.npz"
+    },
+    {
+      "dataset": "barrier",
+      "run_id": "G2_00501",
+      "geometry": "G2",
+      "source_duration_rf_periods": 155.97916666666666,
+      "requested_horizon_rf_periods": 600,
+      "replayed_duration_rf_periods": 155.97916666666666,
+      "source_turns": [
+        0.19961368345823557,
+        0.15864458505471637
+      ],
+      "replayed_turns": [
+        0.19961368345823557,
+        0.15864458505471637
+      ],
+      "escaped": true,
+      "collided": false,
+      "steps_per_period": 48,
+      "trajectory_file": "barrier_G2_00501.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G1_00233",
+      "geometry": "G1",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        0.684434572473273,
+        0.9568718463389276
+      ],
+      "replayed_turns": [
+        0.684434572473273,
+        0.9568718463389276
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G1_00233.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G1_00889",
+      "geometry": "G1",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        -0.4936561824048702,
+        -0.21882313154043814
+      ],
+      "replayed_turns": [
+        -0.4936561824048702,
+        -0.21882313154043814
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G1_00889.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G2_00282",
+      "geometry": "G2",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        0.524197070154852,
+        -0.025265896635486503
+      ],
+      "replayed_turns": [
+        0.524197070154852,
+        -0.025265896635486503
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G2_00282.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G2_00341",
+      "geometry": "G2",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        0.5019686066141619,
+        0.022943226508115946
+      ],
+      "replayed_turns": [
+        0.5019686066141619,
+        0.022943226508115946
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G2_00341.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G2_00445",
+      "geometry": "G2",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        2.5440103339592772,
+        0.14106323717246058
+      ],
+      "replayed_turns": [
+        2.5440103339592772,
+        0.14106323717246058
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G2_00445.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G2_00448",
+      "geometry": "G2",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        -0.13145755962135883,
+        -0.369010173595268
+      ],
+      "replayed_turns": [
+        -0.13145755962135883,
+        -0.369010173595268
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G2_00448.npz"
+    },
+    {
+      "dataset": "broad",
+      "run_id": "G2_00494",
+      "geometry": "G2",
+      "source_duration_rf_periods": 320.0,
+      "requested_horizon_rf_periods": 320,
+      "replayed_duration_rf_periods": 320.0,
+      "source_turns": [
+        2.355590359592629,
+        1.1890927631583337
+      ],
+      "replayed_turns": [
+        2.355590359592629,
+        1.1890927631583337
+      ],
+      "escaped": false,
+      "collided": false,
+      "steps_per_period": 32,
+      "trajectory_file": "broad_G2_00494.npz"
+    }
+  ]
+}

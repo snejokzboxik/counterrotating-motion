@@ -1,0 +1,70 @@
+{
+  "broad_screen": {
+    "dataset": "900 per geometry, 320 RF periods, 32 RK4 steps/period",
+    "criteria": {
+      "late_opposite_sign_only": "survived; each particle has same nonzero sign in each of its final two windows; the signs differ between particles",
+      "ten_turn_screen_candidate": "late_opposite_sign_only, at least 10 total turns for each particle, and at least 1 turn by each particle in its final window",
+      "scope": "screen only; a candidate would still require perturbation, parameter robustness, and independent integrator validation"
+    },
+    "per_geometry": {
+      "G1": {
+        "runs": 900,
+        "full_horizon_survivors": 2,
+        "late_opposite_sign_only": 0,
+        "ten_turn_screen_candidates": 0,
+        "max_minimum_total_turns": 0.684434572473273,
+        "max_duration_rf_periods": 320.0
+      },
+      "G2": {
+        "runs": 900,
+        "full_horizon_survivors": 5,
+        "late_opposite_sign_only": 1,
+        "ten_turn_screen_candidates": 0,
+        "max_minimum_total_turns": 1.1890927631583337,
+        "max_duration_rf_periods": 320.0
+      }
+    }
+  },
+  "barrier_targeted": {
+    "dataset": "600 per geometry, up to 600 RF periods, 48 RK4 steps/period",
+    "criteria": {
+      "late_opposite_sign_only": "survived; each particle has same nonzero sign in each of its final two windows; the signs differ between particles",
+      "ten_turn_screen_candidate": "late_opposite_sign_only, at least 10 total turns for each particle, and at least 1 turn by each particle in its final window",
+      "scope": "screen only; a candidate would still require perturbation, parameter robustness, and independent integrator validation"
+    },
+    "per_geometry": {
+      "G1": {
+        "runs": 600,
+        "full_horizon_survivors": 0,
+        "late_opposite_sign_only": 0,
+        "ten_turn_screen_candidates": 0,
+        "max_minimum_total_turns": 0.49903054070143266,
+        "max_duration_rf_periods": 184.0
+      },
+      "G2": {
+        "runs": 600,
+        "full_horizon_survivors": 0,
+        "late_opposite_sign_only": 0,
+        "ten_turn_screen_candidates": 0,
+        "max_minimum_total_turns": 0.44425704697757834,
+        "max_duration_rf_periods": 155.97916666666666
+      }
+    }
+  },
+  "legacy_false_positive_diagnostics": [
+    {
+      "run_id": "G2_00445",
+      "geometry": "G2",
+      "turns1": "2.5440103339592772",
+      "turns2": "0.14106323717246058",
+      "late_windows1": "[0.4757035782602333, 0.07618406492352045, 0.4979747717158932]",
+      "late_windows2": "[0.002739731998460593, -0.006888931985821753, -0.01113983613447168]",
+      "r1_mean": "0.1938040103073425",
+      "r2_mean": "0.5681029390730286",
+      "z1_rms": "0.01303532807991077",
+      "z2_rms": "0.29554084217566245",
+      "chi": "2.0946016025519072e-07",
+      "coulomb_force_rf_ratio": "0.00022933321950369893"
+    }
+  ]
+}

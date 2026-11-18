@@ -1,0 +1,190 @@
+{
+  "G1": {
+    "geometry": "G1",
+    "method": "independent solve_ivp DOP853, full fine-mesh P1-FEM spectrum",
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "max_step_over_RF_period": 0.00390625,
+    "alpha": 0.01,
+    "beta": 0.00043676776046829425,
+    "lambda": 1e-05,
+    "modes": [
+      -82,
+      -76,
+      -70,
+      -64,
+      -58,
+      -52,
+      -46,
+      -40,
+      -34,
+      -28,
+      -22,
+      -16,
+      -10,
+      -4,
+      2,
+      8,
+      14,
+      20,
+      26,
+      32,
+      38,
+      44,
+      50,
+      56,
+      62,
+      68,
+      74,
+      80
+    ],
+    "poincare_root_success": true,
+    "poincare_residual_norm": 2.78550627385362e-16,
+    "guiding_center_xy": [
+      -1.796678282638914e-05,
+      0.37139766252967515
+    ],
+    "pseudopotential_hessian": [
+      [
+        0.6850107980849174,
+        -0.00025750235277399725
+      ],
+      [
+        -0.00025729418595688003,
+        1.1514699610470913
+      ]
+    ],
+    "pseudopotential_frequencies_omega_tau": [
+      0.00827653705461453,
+      0.010730657496015495
+    ],
+    "DOP853_Floquet_multipliers_abs": [
+      0.9999685845644068,
+      0.9999685845644068,
+      0.999968584577678,
+      0.999968584577678
+    ],
+    "DOP853_Floquet_frequencies_omega_tau": [
+      0.008267451841649159,
+      0.010764972836644062
+    ],
+    "pseudo_to_DOP853_matches": [
+      {
+        "pseudopotential_omega_tau": 0.00827653705461453,
+        "DOP853_Floquet_omega_tau": 0.008267451841649159,
+        "relative_error": -0.0010977070368224015
+      },
+      {
+        "pseudopotential_omega_tau": 0.010730657496015495,
+        "DOP853_Floquet_omega_tau": 0.010764972836644062,
+        "relative_error": 0.003197878661331705
+      }
+    ],
+    "DOP853_to_RK4_full_spectrum_frequency_relative_delta": [
+      -4.0102268566584823e-07,
+      -1.3311081355066958e-07
+    ],
+    "orbit_samples": 257
+  },
+  "G2": {
+    "geometry": "G2",
+    "method": "independent solve_ivp DOP853, full fine-mesh P1-FEM spectrum",
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "max_step_over_RF_period": 0.00390625,
+    "alpha": 0.01,
+    "beta": 0.00043330188362844616,
+    "lambda": 1e-05,
+    "modes": [
+      -124,
+      -118,
+      -112,
+      -106,
+      -100,
+      -94,
+      -88,
+      -82,
+      -76,
+      -70,
+      -64,
+      -58,
+      -52,
+      -46,
+      -40,
+      -34,
+      -28,
+      -22,
+      -16,
+      -10,
+      -4,
+      2,
+      8,
+      14,
+      20,
+      26,
+      32,
+      38,
+      44,
+      50,
+      56,
+      62,
+      68,
+      74,
+      80,
+      86,
+      92,
+      98,
+      104,
+      110,
+      116,
+      122
+    ],
+    "poincare_root_success": true,
+    "poincare_residual_norm": 5.70681840311587e-17,
+    "guiding_center_xy": [
+      0.28131954928551833,
+      0.16241355338469973
+    ],
+    "pseudopotential_hessian": [
+      [
+        0.9479066143125436,
+        0.23053472325562652
+      ],
+      [
+        0.23053337017131525,
+        0.6815292080686319
+      ]
+    ],
+    "pseudopotential_frequencies_omega_tau": [
+      0.007405915157370561,
+      0.010396922762045823
+    ],
+    "DOP853_Floquet_multipliers_abs": [
+      0.9999685845700129,
+      0.9999685845700129,
+      0.9999685845863931,
+      0.9999685845863931
+    ],
+    "DOP853_Floquet_frequencies_omega_tau": [
+      0.007391656199612874,
+      0.010427714423552014
+    ],
+    "pseudo_to_DOP853_matches": [
+      {
+        "pseudopotential_omega_tau": 0.007405915157370561,
+        "DOP853_Floquet_omega_tau": 0.007391656199612874,
+        "relative_error": -0.0019253471657039087
+      },
+      {
+        "pseudopotential_omega_tau": 0.010396922762045823,
+        "DOP853_Floquet_omega_tau": 0.010427714423552014,
+        "relative_error": 0.0029616129898161966
+      }
+    ],
+    "DOP853_to_RK4_full_spectrum_frequency_relative_delta": [
+      -4.1438325834236616e-07,
+      -1.5798748195692853e-07
+    ],
+    "orbit_samples": 257
+  }
+}

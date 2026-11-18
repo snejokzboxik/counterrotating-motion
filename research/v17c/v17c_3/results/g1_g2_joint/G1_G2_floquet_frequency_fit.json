@@ -1,0 +1,178 @@
+[
+  {
+    "geometry": "G1",
+    "alpha": 0.01,
+    "beta": 0.00043676776046829425,
+    "lambda": 1e-05,
+    "B": 4.367677604682942,
+    "pseudopotential_minimum_xy": -5.890592062315789e-11,
+    "pseudopotential_minimum_y": 0.3709618954145589,
+    "exact_rf_stroboscopic_fixed_point_xyvxvy": [
+      -1.809697990997657e-05,
+      0.3655460085903756,
+      0.008906106487892711,
+      -5.098833333274715e-07
+    ],
+    "poincare_residual_norm": 2.2708665004569025e-16,
+    "root_success": true,
+    "root_message": "The solution converged.",
+    "guiding_center_xy_period_average": [
+      -1.8061406055272074e-05,
+      0.3713759719743958
+    ],
+    "guiding_center_radius": 0.37137597241359277,
+    "pseudopotential_hessian_at_rf_orbit_mean": [
+      [
+        0.6847718919678059,
+        -0.00025729418595688003
+      ],
+      [
+        -0.0002573635748959191,
+        1.1512026748539128
+      ]
+    ],
+    "pseudopotential_frequencies_omega_tau": [
+      0.008275093654828102,
+      0.010729411991623564
+    ],
+    "floquet_multipliers_real_imag": [
+      [
+        0.9976821369415132,
+        0.06758345777770114
+      ],
+      [
+        0.9976821369415132,
+        -0.06758345777770114
+      ],
+      [
+        0.9986195753172178,
+        0.0519241168529398
+      ],
+      [
+        0.9986195753172178,
+        -0.0519241168529398
+      ]
+    ],
+    "floquet_multipliers_abs": [
+      0.9999685845752229,
+      0.9999685845752229,
+      0.9999685845653843,
+      0.9999685845653843
+    ],
+    "floquet_frequencies_omega_tau": [
+      0.010764785180709065,
+      0.010764785180709065,
+      0.008267957789299896,
+      0.008267957789299896
+    ],
+    "floquet_damping_per_tau": [
+      -4.999998681565417e-06,
+      -4.999998681565417e-06,
+      -5.000000247472359e-06,
+      -5.000000247472359e-06
+    ],
+    "matched_transverse_frequencies": [
+      {
+        "pseudopotential_omega_tau": 0.008275093654828102,
+        "full_rf_floquet_omega_tau": 0.008267957789299896,
+        "relative_error": -0.0008623304854130691
+      },
+      {
+        "pseudopotential_omega_tau": 0.010729411991623564,
+        "full_rf_floquet_omega_tau": 0.010764785180709065,
+        "relative_error": 0.0032968432112697814
+      }
+    ],
+    "axial_dc_omega_tau": 0.029555633911939504,
+    "axial_damped_exact_multiplier_abs": 0.9999685845669392,
+    "interpretation": "This is a numerical single-particle translation spectrum around an RF-periodic orbit; no experimental frequency data were supplied."
+  },
+  {
+    "geometry": "G2",
+    "alpha": 0.01,
+    "beta": 0.00043330188362844616,
+    "lambda": 1e-05,
+    "B": 4.333018836284461,
+    "pseudopotential_minimum_xy": 0.2809237584781045,
+    "pseudopotential_minimum_y": 0.1621914075591697,
+    "exact_rf_stroboscopic_fixed_point_xyvxvy": [
+      0.286916618558299,
+      0.1579276651876439,
+      0.0019394802123058965,
+      0.0055701654784182705
+    ],
+    "poincare_residual_norm": 5.60275569180905e-17,
+    "root_success": true,
+    "root_message": "The solution converged.",
+    "guiding_center_xy_period_average": [
+      0.28134116310075835,
+      0.16239578854996417
+    ],
+    "guiding_center_radius": 0.32484649019752726,
+    "pseudopotential_hessian_at_rf_orbit_mean": [
+      [
+        0.9483323154535483,
+        0.2303460894248488
+      ],
+      [
+        0.2303448404239461,
+        0.6813627786983467
+      ]
+    ],
+    "pseudopotential_frequencies_omega_tau": [
+      0.007406890941256603,
+      0.010397474501027659
+    ],
+    "floquet_multipliers_real_imag": [
+      [
+        0.9988903130498115,
+        0.04642534481652876
+      ],
+      [
+        0.9988903130498115,
+        -0.04642534481652876
+      ],
+      [
+        0.9978230395144754,
+        0.06547023599285919
+      ],
+      [
+        0.9978230395144754,
+        -0.06547023599285919
+      ]
+    ],
+    "floquet_multipliers_abs": [
+      0.9999685845795777,
+      0.9999685845795777,
+      0.9999685844999667,
+      0.9999685844999667
+    ],
+    "floquet_frequencies_omega_tau": [
+      0.0073917122747144785,
+      0.0073917122747144785,
+      0.010427698040719099,
+      0.010427698040719099
+    ],
+    "floquet_damping_per_tau": [
+      -4.999997988447768e-06,
+      -4.999997988447768e-06,
+      -5.000010659327532e-06,
+      -5.000010659327532e-06
+    ],
+    "matched_transverse_frequencies": [
+      {
+        "pseudopotential_omega_tau": 0.007406890941256603,
+        "full_rf_floquet_omega_tau": 0.0073917122747144785,
+        "relative_error": -0.0020492628637987717
+      },
+      {
+        "pseudopotential_omega_tau": 0.010397474501027659,
+        "full_rf_floquet_omega_tau": 0.010427698040719099,
+        "relative_error": 0.0029068154664339874
+      }
+    ],
+    "axial_dc_omega_tau": 0.029438134150399076,
+    "axial_damped_exact_multiplier_abs": 0.9999685845669392,
+    "interpretation": "This is a numerical single-particle translation spectrum around an RF-periodic orbit; no experimental frequency data were supplied."
+  }
+]

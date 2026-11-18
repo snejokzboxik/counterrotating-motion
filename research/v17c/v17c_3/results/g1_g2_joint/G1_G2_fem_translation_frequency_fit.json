@@ -1,0 +1,198 @@
+[
+  {
+    "geometry": "G1",
+    "FEM_source": "6_ABC_moderate",
+    "mesh_triangles": 30708,
+    "leading_FEM": [
+      0.2970341124294215,
+      -1.6595962505727616e-05
+    ],
+    "counter_FEM": [
+      0.22476661086254823,
+      6.413672817701459e-05
+    ],
+    "counter_to_leading_amplitude": 0.7567030528043285,
+    "counter_to_leading_phase_rad": 0.0003412203490968965,
+    "modes_used": [
+      2,
+      -4
+    ],
+    "retained_harmonics": 2,
+    "alpha": 0.01,
+    "beta": 0.00043676776046829425,
+    "B": 4.367677604682942,
+    "lambda": 1e-05,
+    "pseudopotential_stationary_root_success": true,
+    "pseudopotential_minimum_xy": [
+      -4.6030228215566905e-05,
+      0.34008990285838286
+    ],
+    "hessian_at_initial_min": [
+      [
+        2.42861286636753e-07,
+        -0.00019907686610309838
+      ],
+      [
+        -0.00019904217163357885,
+        1.4707115386647374
+      ]
+    ],
+    "pseudopotential_frequencies_initial": [
+      4.646756360938854e-06,
+      0.012127289745044345
+    ],
+    "rf_periodic_fixed_point_success": false,
+    "rf_periodic_center_xy": [
+      -0.008403610883885144,
+      0.3403473950964767
+    ],
+    "poincare_residual_norm": 3.6503425866828248e-09,
+    "hessian_at_rf_center": [
+      [
+        0.0024647645036068866,
+        -0.036446019813229924
+      ],
+      [
+        -0.036446054507699444,
+        1.4776347159739522
+      ]
+    ],
+    "pseudopotential_frequencies_at_rf_center": [
+      0.0003955837148099135,
+      0.01215950087677669
+    ],
+    "floquet_multipliers": [
+      [
+        0.9970428610568093,
+        0.07643757719207243
+      ],
+      [
+        0.9970428610568093,
+        -0.07643757719207243
+      ],
+      [
+        0.9999667440236493,
+        0.0019185640208821736
+      ],
+      [
+        0.9999667440236493,
+        -0.0019185640208821736
+      ]
+    ],
+    "floquet_frequencies_omega_tau": [
+      0.00030535872788845186,
+      0.012177679308012742
+    ],
+    "matched_frequency_errors": [
+      {
+        "pseudo_omega_tau": 0.0003955837148099135,
+        "full_rf_floquet_omega_tau": 0.00030535872788845186,
+        "relative_error": -0.22808064018716412
+      },
+      {
+        "pseudo_omega_tau": 0.01215950087677669,
+        "full_rf_floquet_omega_tau": 0.012177679308012742,
+        "relative_error": 0.0014949981434494175
+      }
+    ],
+    "scope": "FEM harmonic coefficients are independent 2D P1 results, truncated here to the leading and counter-rotating modes; not a finite-electrode 3D FEM."
+  },
+  {
+    "geometry": "G2",
+    "FEM_source": "6_ABC_thin",
+    "mesh_triangles": 29189,
+    "leading_FEM": [
+      0.09051792263892576,
+      7.4409321071274606e-06
+    ],
+    "counter_FEM": [
+      0.08374981879110782,
+      -2.010644907338893e-05
+    ],
+    "counter_to_leading_amplitude": 0.9252291533000385,
+    "counter_to_leading_phase_rad": -0.00032228148310396314,
+    "modes_used": [
+      2,
+      -4
+    ],
+    "retained_harmonics": 2,
+    "alpha": 0.01,
+    "beta": 0.00043330188362844616,
+    "B": 4.333018836284461,
+    "lambda": 1e-05,
+    "pseudopotential_stationary_root_success": true,
+    "pseudopotential_minimum_xy": [
+      0.25979311782895836,
+      0.15010934056685138
+    ],
+    "hessian_at_initial_min": [
+      [
+        0.9986657334426496,
+        0.577031929183125
+      ],
+      [
+        0.577031929183125,
+        0.3334114581643455
+      ]
+    ],
+    "pseudopotential_frequencies_initial": [
+      7.509082952735177e-06,
+      0.011541562406120443
+    ],
+    "rf_periodic_fixed_point_success": false,
+    "rf_periodic_center_xy": [
+      0.2566501484414119,
+      0.1561899768700461
+    ],
+    "poincare_residual_norm": 5.5900568286090364e-09,
+    "hessian_at_rf_center": [
+      [
+        0.9790123225994485,
+        0.5947195513833492
+      ],
+      [
+        0.5947195513833492,
+        0.36370281786268777
+      ]
+    ],
+    "pseudopotential_frequencies_at_rf_center": [
+      0.00042113259486123276,
+      0.011579903340864253
+    ],
+    "floquet_multipliers": [
+      [
+        0.9973165986719489,
+        0.0727789260504861
+      ],
+      [
+        0.9973165986719489,
+        -0.0727789260504861
+      ],
+      [
+        0.9999670582624729,
+        0.001747174704238886
+      ],
+      [
+        0.9999670582624729,
+        -0.001747174704238886
+      ]
+    ],
+    "floquet_frequencies_omega_tau": [
+      0.00027808036810829904,
+      0.011593740681894841
+    ],
+    "matched_frequency_errors": [
+      {
+        "pseudo_omega_tau": 0.00042113259486123276,
+        "full_rf_floquet_omega_tau": 0.00027808036810829904,
+        "relative_error": -0.33968452809992256
+      },
+      {
+        "pseudo_omega_tau": 0.011579903340864253,
+        "full_rf_floquet_omega_tau": 0.011593740681894841,
+        "relative_error": 0.0011949444328915818
+      }
+    ],
+    "scope": "FEM harmonic coefficients are independent 2D P1 results, truncated here to the leading and counter-rotating modes; not a finite-electrode 3D FEM."
+  }
+]

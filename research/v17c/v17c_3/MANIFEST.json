@@ -5,13 +5,18 @@
   "base_commit": "3a6b12d1a56c563bd5f644a67dddd9a7951c8d11",
   "scope": "research/v17c/v17c_3",
   "model": "full available transverse RF spectra, ideal harmonic 3D DC quadrupole, 3D point Coulomb force, linear dimensionless drag",
-  "result": "No stable two-particle counter-rotating regime confirmed; one long RF-supported positive single-particle G0 orbit confirmed.",
-  "file_count_excluding_manifest_and_archive": 91,
+  "result": "No stable G1/G2 counter-rotating pair confirmed in the completed 2D-FEM, translation-spectrum, broad-pair, and barrier-targeted follow-up. V17C.3 remains open to further work.",
+  "file_count_excluding_manifest_and_archive": 157,
   "files": [
     {
       "path": "boundary_shell_scan.py",
       "size_bytes": 1100,
       "sha256": "b487b2e1c4da13e1d0c89bee85583b64206ef7fcdce16b5650c0ac5d2078f732"
+    },
+    {
+      "path": "classify_g1_g2_pair_runs.py",
+      "size_bytes": 4927,
+      "sha256": "5bab44a739ed982d8e54ca0fbcb01351f4a3df8c0bca3ff04ac9b83c128fb097"
     },
     {
       "path": "confirm_boundary_shell.py",
@@ -54,9 +59,49 @@
       "sha256": "5b4920d5ec052c41438cc243d48723c73a243b6f023af823328367ff1091ef49"
     },
     {
+      "path": "fem_spectral_translation_fit.py",
+      "size_bytes": 4403,
+      "sha256": "6d88a10d9a9537262a7b8bfe2bcb54544b93e182ed961e27c86534c20414a296"
+    },
+    {
       "path": "FEM_VALIDATION_RU.md",
       "size_bytes": 2810,
       "sha256": "ab05074f56cb24d7eda56a6146288def88a111d87433f78ce15b1088e0f18598"
+    },
+    {
+      "path": "g1_g2_barrier_pair_search.py",
+      "size_bytes": 9190,
+      "sha256": "5926eb752fe270e59b19959cc22476b7175c100f6e1c3f02386dcd49aa0d0e6e"
+    },
+    {
+      "path": "G1_G2_DEEP_DIVE_RU.md",
+      "size_bytes": 16823,
+      "sha256": "17f4f18ede4def111e4de6a62a2ad95b4a27d8e243668a21b43ff54d4a286a30"
+    },
+    {
+      "path": "g1_g2_dop853_frequency_validation.py",
+      "size_bytes": 4909,
+      "sha256": "0e23f575f760c06ba3453dd57e1766afa7d8743b081293fae9d128d927df4112"
+    },
+    {
+      "path": "g1_g2_fem_full_spectrum.py",
+      "size_bytes": 12492,
+      "sha256": "cff0041eb65d0a7cc5c557b8c0378d86c26f80d5fda5705494365215e49b7396"
+    },
+    {
+      "path": "g1_g2_floquet_frequency_fit.py",
+      "size_bytes": 4922,
+      "sha256": "5e624ca3b7ef6459f16e329f4e5ef9e41c5cc789fa84a2210329b29c62a0c6eb"
+    },
+    {
+      "path": "g1_g2_joint_search.py",
+      "size_bytes": 10596,
+      "sha256": "1ce6ca5296d62150c2599880b64821c06a5239a6f17f0dd0f84a08ca53fe6885"
+    },
+    {
+      "path": "g1_g2_translation_spectrum.py",
+      "size_bytes": 8451,
+      "sha256": "fc2eb1832963a70060403e030d8691d65d6549d46cd470bffaae51373c2c512a"
     },
     {
       "path": "input/harmonics.json",
@@ -80,13 +125,18 @@
     },
     {
       "path": "package_release.py",
-      "size_bytes": 2411,
-      "sha256": "2fc459f7a1d2a9378d3bce066c8ae1905c5ffe33e298b91bc8da50398e12c9ec"
+      "size_bytes": 2462,
+      "sha256": "ec5931e56b7c701b703d96cb0c6fc9f928007a4163bbd9d27ecf73af9bdad5bb"
     },
     {
       "path": "PHYSICAL_REALIZABILITY_RU.md",
       "size_bytes": 4946,
       "sha256": "137c5e5cb7b4b4c7f9ff34eede98a4eaa72af806978e500e2c6729065fccce4d"
+    },
+    {
+      "path": "plot_g1_g2_deep_dive.py",
+      "size_bytes": 3012,
+      "sha256": "17b9ebb4f9459d82f84aa30a38ac56351a034ba011092e4fc7280db10d2475a7"
     },
     {
       "path": "plot_summary.py",
@@ -104,14 +154,19 @@
       "sha256": "9518577bf90f90eae574f3be91dbd5c2515ef13147823b4d11e4ed510c150923"
     },
     {
+      "path": "replay_g1_g2_diagnostics.py",
+      "size_bytes": 4140,
+      "sha256": "182cf0df684412fb491b2e4c8bbaa629ef9f8e466f39630e5ac9925f3dfb3508"
+    },
+    {
       "path": "REPORT_RU.md",
-      "size_bytes": 7271,
-      "sha256": "92617fbc5722c8b6b61dd15181ea356c225ec88a522a370e279a467aa228bdcb"
+      "size_bytes": 8419,
+      "sha256": "ad4a5e1d95baffe9cf6912182f5001734455bd8071ebdd709eb81393d015f2a9"
     },
     {
       "path": "REPRODUCING_RU.md",
-      "size_bytes": 2334,
-      "sha256": "0933ecd5f4f6fc315cb698a7030444174577df413160a4e6611bd7834fd0091a"
+      "size_bytes": 4211,
+      "sha256": "27adb6559ed8b60143b8cdb209aeccb5211dc96b9e81a79a1f64ef679ea6f885"
     },
     {
       "path": "results/averaged_torque_sign_roots.png",
@@ -232,6 +287,281 @@
       "path": "results/G0_vdc_friction_map.csv",
       "size_bytes": 2868,
       "sha256": "e9c45009281f2b45750a88b4c940bc60e874ec8634ce3b7c49070c349850976f"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_30RF_n10_seed17032027/G1_checkpoint.csv",
+      "size_bytes": 11203,
+      "sha256": "31d3ec84665fb8cb5bf868fb868ae016aed52bee14979f43ee065df037d0ac8f"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_30RF_n10_seed17032027/G1_G2_barrier_targeted_all.csv",
+      "size_bytes": 22206,
+      "sha256": "fe55a66621dfd5f3ad453bbac8f7c86abfcc370f8e0e72819caa8c0bff9709b9"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_30RF_n10_seed17032027/G1_G2_barrier_targeted_summary.json",
+      "size_bytes": 45354,
+      "sha256": "7ad092ea88390f5d619db7dc5fdd8aa93789c71897ef7bc968601041ae0cb0ae"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_30RF_n10_seed17032027/G2_checkpoint.csv",
+      "size_bytes": 11558,
+      "sha256": "04adebf94f1fade382751983f7754e241940b0220de6e52140f1bbe5f0f14da5"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_600RF_n600_seed17032027/G1_checkpoint.csv",
+      "size_bytes": 657885,
+      "sha256": "d616d0b22d67bb1b50fc117b4567a2c348c94a1165bac5f19cc36ca6793b86e5"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_600RF_n600_seed17032027/G1_G2_barrier_targeted_all.csv",
+      "size_bytes": 1316821,
+      "sha256": "ebc3762fc546c22f1e1366b1c197902b0dc24d7b7f6e4270553a01579fbc78e8"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_600RF_n600_seed17032027/G1_G2_barrier_targeted_summary.json",
+      "size_bytes": 90450,
+      "sha256": "69848dafb2a2a23a18d2799b20f5baac074a8aa4bc677c7b3ec08642d3be0b2e"
+    },
+    {
+      "path": "results/g1_g2_joint/barrier_targeted_600RF_n600_seed17032027/G2_checkpoint.csv",
+      "size_bytes": 659491,
+      "sha256": "41da70a6d37e0bbd10693845fc30dfb0af07e1c670973dddc3b67386ef6b97ca"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_00003_screen.npz",
+      "size_bytes": 4982,
+      "sha256": "a02ffdb44d48d2b33bb5f657ed3cdbb6df2ee8078798ef6ced1ce49e4cdef4d3"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_00008_screen.npz",
+      "size_bytes": 4982,
+      "sha256": "be0b7d480581141cb4dac436f713f3120158aaa7323cbdbd34d78be5343269b4"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_DOP853_translation_orbit_monodromy.npz",
+      "size_bytes": 10595,
+      "sha256": "57c53cd1b78c55b62e315677ae916146620b944a949b3eae314db1e7248d7b17"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_deep_dive_summary.png",
+      "size_bytes": 118106,
+      "sha256": "6dc87ff962ddc3d5cf6c2339bc9e0c6bd6e5119e8f6cdba8dd31900befa20144"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_DOP853_translation_frequency_validation.json",
+      "size_bytes": 4093,
+      "sha256": "468d0e1f4d09bb13c5d358d7132b74430354daed1771d276dec8dc6556f0e496"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_fem_translation_frequency_fit.json",
+      "size_bytes": 5149,
+      "sha256": "e0abeaa5d9971a43f4d05d38d52a43c9cb3f3ca3e6c794f4c60f463e560914eb"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_floquet_frequency_fit.json",
+      "size_bytes": 5141,
+      "sha256": "a731f0bb26ed8dd7537a803f0287b9e955a74fb6d0f2aae9ae05625c512b188d"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_screening_all.csv",
+      "size_bytes": 22870,
+      "sha256": "8e4e27468083ab8ff60b347411cb99b7d1b5f46c6038dc2924ba317bb549c5bb"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_screening_summary.json",
+      "size_bytes": 46915,
+      "sha256": "b743305c7dcc88f890aea533ca50a4a45289378496e2fa9a291cd89217ab121a"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_G2_translation_spectrum_fit.json",
+      "size_bytes": 117441,
+      "sha256": "f3f21284387a0b1cc5f3d96517d34d4033d1c137e0e190f7dc12117c33e2066f"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_rf_periodic_orbit_monodromy.npz",
+      "size_bytes": 11453,
+      "sha256": "f782ebc23d7d50df4d3b2c075ae106b90169741275fbcb676096ccf1b3dfb6f7"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_screening_checkpoint.csv",
+      "size_bytes": 11683,
+      "sha256": "2870c3075e3f7c1d52ea85bc50fa272113a4d0d9a7a82472a989137f09943ab2"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_translation_axial_ringdown.npz",
+      "size_bytes": 460347,
+      "sha256": "97e0413a25b4c5aaa3e7ec18df9dd39b6fe1fff5ef3595cd129dbf5a10c67df1"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_translation_mode0_ringdown.npz",
+      "size_bytes": 421821,
+      "sha256": "534b69f9ba5271a56f9e66be7d9bfa29d73a893089642a3a89057a5c93d6ea6a"
+    },
+    {
+      "path": "results/g1_g2_joint/G1_translation_mode1_ringdown.npz",
+      "size_bytes": 421700,
+      "sha256": "5211373f5ee58bfffeb9a808fb3c67b4be07f31112324f27c4ccb629ff31305d"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_00002_screen.npz",
+      "size_bytes": 4963,
+      "sha256": "1201f81b22c56d56f7528601dc6d7a19c456a7d9768ac5322d53191509e427b5"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_00004_screen.npz",
+      "size_bytes": 4437,
+      "sha256": "ec6cb7296bea410c4d7ae1df6f7748da90413291110def8bae8695068ed0d866"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_00005_screen.npz",
+      "size_bytes": 4979,
+      "sha256": "e8e0f8efe677877489a814ef11cf8d20d2caa19201307983e65b7d8d99d75681"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_00007_screen.npz",
+      "size_bytes": 4984,
+      "sha256": "6aa7729b7f66f34a23c1202503c2ae4ec78e62c15c53a05270583d9b6628259c"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_DOP853_translation_orbit_monodromy.npz",
+      "size_bytes": 10585,
+      "sha256": "d6d9a40bfa408615452135f54bf2d1841786393476b4cf0dea83600f77c21250"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_rf_periodic_orbit_monodromy.npz",
+      "size_bytes": 11453,
+      "sha256": "353db586b7fe928c8648e7d0235c582a35f0b0ab0c82ab09d3779c32c80236a6"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_screening_checkpoint.csv",
+      "size_bytes": 11767,
+      "sha256": "7794645b6d14c40ada554a92cbfca2293940766b9f5886194db8401cba09cb4a"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_translation_axial_ringdown.npz",
+      "size_bytes": 460607,
+      "sha256": "cb7b3e2993fb084cec0131e8d148cae72a3fc33b7d2fba0d55a4c994627af3bc"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_translation_mode0_ringdown.npz",
+      "size_bytes": 421147,
+      "sha256": "ac263c94ef442350ef28f5b72af5de662ae7434431067b3ae170b98bf9deba93"
+    },
+    {
+      "path": "results/g1_g2_joint/G2_translation_mode1_ringdown.npz",
+      "size_bytes": 422192,
+      "sha256": "75dbfd50fd085069a4d84fb859e61005b8d116df78f8a5f69a41e6cfb17e3ff5"
+    },
+    {
+      "path": "results/g1_g2_joint/independent_fem_spectrum/G1_G2_fem_spectrum_convergence.png",
+      "size_bytes": 155562,
+      "sha256": "654e66d0916d2a189c2844a7bc6656a9035c4918f97a989fc7eabf934a7ba37a"
+    },
+    {
+      "path": "results/g1_g2_joint/independent_fem_spectrum/G1_G2_full_P1_FEM_spectrum.json",
+      "size_bytes": 23886,
+      "sha256": "94c0fd6ff85bc2e2a0856f44a0b07f2cf1004513e5c3a69b94e9bee4223c78de"
+    },
+    {
+      "path": "results/g1_g2_joint/screen_320RF_n900_seed17032026/G1_G2_screening_all.csv",
+      "size_bytes": 2018923,
+      "sha256": "dc982fa4e8bf8f3689f44e95ef2f963ddbfcb1ba4a79238e7be2e29d5415d542"
+    },
+    {
+      "path": "results/g1_g2_joint/screen_320RF_n900_seed17032026/G1_G2_screening_summary.json",
+      "size_bytes": 70133,
+      "sha256": "348673f49280b32e9e13e3c06bc17666b831c531f2832bd9255e2cce49b0f6ec"
+    },
+    {
+      "path": "results/g1_g2_joint/screen_320RF_n900_seed17032026/G1_screening_checkpoint.csv",
+      "size_bytes": 1009856,
+      "sha256": "508c8c27bd8890ae30bb5024397ac547c9db828342e2f7be9c1497ea1f8b3ad8"
+    },
+    {
+      "path": "results/g1_g2_joint/screen_320RF_n900_seed17032026/G2_00445_screen.npz",
+      "size_bytes": 67214,
+      "sha256": "713921887e88623561e9370af4fbfec4a4faa36659ce0faecbe9ddf7420da6b3"
+    },
+    {
+      "path": "results/g1_g2_joint/screen_320RF_n900_seed17032026/G2_screening_checkpoint.csv",
+      "size_bytes": 1009647,
+      "sha256": "1822a7ab75d70020b6264711c81dbf49d0e856ac00a9afc3ef6686c58308acfe"
+    },
+    {
+      "path": "results/g1_g2_joint/strict_classification/barrier_targeted_600RF_strict_reclassification.csv",
+      "size_bytes": 1331295,
+      "sha256": "d6e33cfe61117b5de450172a4c681c9b3f33559211a5635458ee0be9dd2931ee"
+    },
+    {
+      "path": "results/g1_g2_joint/strict_classification/broad_320RF_strict_reclassification.csv",
+      "size_bytes": 2040596,
+      "sha256": "274a9352be1a559a8a6809c2a7726b35ceadc24eae5808904ab02a84384fbe38"
+    },
+    {
+      "path": "results/g1_g2_joint/strict_classification/strict_reclassification_summary.json",
+      "size_bytes": 2938,
+      "sha256": "62ca019741cc9902b79c3d7186fbababbc844f0702b8e372c5df295a9508eaf5"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/barrier_G1_00295.npz",
+      "size_bytes": 40752,
+      "sha256": "1fecd984b72e861a1bfb798299745413d4356037b597601f2252ce69c55c9a33"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/barrier_G1_00540.npz",
+      "size_bytes": 12355,
+      "sha256": "63264fc10b84a24f7c4a447204a4ef46b3984d216d970a839b5c9b191057477b"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/barrier_G2_00008.npz",
+      "size_bytes": 8606,
+      "sha256": "7bc2f967ad0efb1f290fdf063e06ad51ec68fc60d12eac30a3240073ceb153d4"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/barrier_G2_00501.npz",
+      "size_bytes": 30575,
+      "sha256": "c976ce75b468a1cf7fec011dc9fb70b08d9ad4a812e3f66d9d93389d18107b0e"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G1_00233.npz",
+      "size_bytes": 67560,
+      "sha256": "18e88035b7aa770bbd7d363b553b17f96a2f631eba4cd514427c916176c50887"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G1_00889.npz",
+      "size_bytes": 59680,
+      "sha256": "900fc6c3535451e410291b43797a042d87c895c20cdefa3611e8bbb32757fa15"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G2_00282.npz",
+      "size_bytes": 69022,
+      "sha256": "36b0eab3d4dd127cca9926fea7c390a7ebf150f909bd58ed174ce3c7bdd23df5"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G2_00341.npz",
+      "size_bytes": 68954,
+      "sha256": "997a20c991382a62b99b7493ce40a2ec6fedab6315b07cc315bf4372b25442da"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G2_00445.npz",
+      "size_bytes": 69040,
+      "sha256": "b138a2489822bff836c75c9abaf4ed7e0409847ede351901b2b7fa6e11f03069"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G2_00448.npz",
+      "size_bytes": 68877,
+      "sha256": "5274f85627486c9cccb0d1ba327ba58f7e84498e0828f84df0507b734e6afea6"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/broad_G2_00494.npz",
+      "size_bytes": 60100,
+      "sha256": "89d282a147adddf671f56b697e1d07a1610bb6c8f2d028aefeb1347822611660"
+    },
+    {
+      "path": "results/g1_g2_joint/trajectories/trajectory_replay_manifest.json",
+      "size_bytes": 6260,
+      "sha256": "4749c3c14447996b427648e3b12ada8e4e0bbbd0f531c13e4bb154d8ca02398d"
     },
     {
       "path": "results/G1_inner_dynamics_summary.json",
@@ -440,8 +770,8 @@
     },
     {
       "path": "rf_dc_core.py",
-      "size_bytes": 14571,
-      "sha256": "a01c08c62bc6d0257065f57e8230c9d993c5939a0a295c9a6762320314631c99"
+      "size_bytes": 14670,
+      "sha256": "97e41585eeb3750cd56b8d5f4fc8af9deec0039f66226fb27815ada1ef3b871a"
     },
     {
       "path": "run_experiments.py",

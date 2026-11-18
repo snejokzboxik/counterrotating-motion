@@ -273,9 +273,13 @@ def summarize_run(t, data, mass, charge, chi, escaped=False, collided=False):
         radius = np.hypot(p[:, 0], p[:, 1])
         duration = max(t[-1]-t[0], 1e-30)
         win = []
-        for a, c in ((.5,.7),(.7,.85),(.85,1.0)):
-            ia, ic = int(a*(len(t)-1)), max(int(c*(len(t)-1)), int(a*(len(t)-1))+1)
-            win.append(float((theta[ic]-theta[ia])/(2*np.pi)))
+        if len(t) < 2:
+            win = [0.0, 0.0, 0.0]
+        else:
+            for a, c in ((.5,.7),(.7,.85),(.85,1.0)):
+                ia = int(a*(len(t)-1))
+                ic = min(len(t)-1, max(int(c*(len(t)-1)), ia+1))
+                win.append(float((theta[ic]-theta[ia])/(2*np.pi)))
         specific = data[:, b+6:b+13]
         particles.append({
             "turns": float((theta[-1]-theta[0])/(2*np.pi)),
