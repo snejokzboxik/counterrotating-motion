@@ -1,0 +1,138 @@
+[
+  {
+    "case": "positive_inner",
+    "variant": "nominal",
+    "r0": 0.34,
+    "omega0": 0.12470596599090433,
+    "amp": 0.8259793368539603,
+    "lambda_": 0.0005,
+    "max_radius": 0.39019313816804513,
+    "turns_total": 1453.6189950927694,
+    "turns_windows": [
+      290.6631983781426,
+      290.69237697191977,
+      290.97121661874644
+    ],
+    "min_radius": 0.05138336416738358,
+    "state": "positive"
+  },
+  {
+    "case": "positive_inner",
+    "variant": "position_plus_1pct",
+    "r0": 0.34340000000000004,
+    "omega0": 0.12470596599090433,
+    "amp": 0.8259793368539603,
+    "lambda_": 0.0005,
+    "max_radius": 0.39250660049584696,
+    "turns_total": 1423.1701881905335,
+    "turns_windows": [
+      284.4940906774509,
+      284.3572665467228,
+      284.3870609368571
+    ],
+    "min_radius": 4.910042237128666e-07,
+    "state": "uncertain"
+  },
+  {
+    "case": "positive_inner",
+    "variant": "speed_plus_1pct",
+    "r0": 0.34,
+    "omega0": 0.12595302565081337,
+    "amp": 0.8259793368539603,
+    "lambda_": 0.0005,
+    "max_radius": 0.3914314664758806,
+    "turns_total": 1453.6146675743234,
+    "turns_windows": [
+      290.669623784143,
+      290.6873644494117,
+      290.97749118138563
+    ],
+    "min_radius": 0.05105668317599355,
+    "state": "positive"
+  },
+  {
+    "case": "positive_inner",
+    "variant": "amplitude_plus_5pct",
+    "r0": 0.34,
+    "omega0": 0.12470596599090433,
+    "amp": 0.8672783036966584,
+    "lambda_": 0.0005,
+    "max_radius": 0.3997648864091677,
+    "turns_total": 1514.9620058211488,
+    "turns_windows": [
+      302.8551028017963,
+      302.7940256994117,
+      302.89318353934686
+    ],
+    "min_radius": 5.613541235206959e-07,
+    "state": "uncertain"
+  },
+  {
+    "case": "negative_outer",
+    "variant": "nominal",
+    "r0": 0.61,
+    "omega0": -0.005445940846130374,
+    "amp": 0.023599409624398868,
+    "lambda_": 0.0005,
+    "max_radius": 0.6131904903193985,
+    "turns_total": -33.653217512288215,
+    "turns_windows": [
+      -6.689170426895643,
+      -6.62235917618538,
+      -6.615005100953862
+    ],
+    "min_radius": 2.1792636120035704e-06,
+    "state": "uncertain"
+  },
+  {
+    "case": "negative_outer",
+    "variant": "position_plus_1pct",
+    "r0": 0.6161,
+    "omega0": -0.005445940846130374,
+    "amp": 0.023599409624398868,
+    "lambda_": 0.0005,
+    "max_radius": 0.619248011644652,
+    "turns_total": -33.6685570604475,
+    "turns_windows": [
+      -6.684753470999109,
+      -6.61493670956952,
+      -6.627671422368913
+    ],
+    "min_radius": 2.1182315377410978e-06,
+    "state": "uncertain"
+  },
+  {
+    "case": "negative_outer",
+    "variant": "speed_plus_1pct",
+    "r0": 0.61,
+    "omega0": -0.0055004002545916775,
+    "amp": 0.023599409624398868,
+    "lambda_": 0.0005,
+    "max_radius": 0.6133089685180908,
+    "turns_total": -33.660519678293305,
+    "turns_windows": [
+      -6.692015333293716,
+      -6.621091161832734,
+      -6.6133824371048995
+    ],
+    "min_radius": 2.1785024056087695e-06,
+    "state": "uncertain"
+  },
+  {
+    "case": "negative_outer",
+    "variant": "amplitude_plus_5pct",
+    "r0": 0.61,
+    "omega0": -0.005445940846130374,
+    "amp": 0.024779380105618812,
+    "lambda_": 0.0005,
+    "max_radius": 0.6129695017774064,
+    "turns_total": -35.34161692148004,
+    "turns_windows": [
+      -6.97474395801602,
+      -6.9746189956515,
+      -6.974503962453152
+    ],
+    "min_radius": 1.992776181475841e-06,
+    "state": "uncertain"
+  }
+]

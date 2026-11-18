@@ -1,0 +1,122 @@
+[
+  {
+    "name": "6_ABC_moderate",
+    "p": 24,
+    "boundary_error": 6.11659373333277e-06,
+    "max_coefficient_delta": 1.7242560063079893e-07,
+    "field_vs_fd_max_abs": 2.2462476323426017e-11,
+    "harmonic_field_vs_fmm_max_abs": 1.6653345369377348e-16,
+    "potential_abs": 0.08101043467383372,
+    "surface_Emax_corrected_U0_over_R": 25.176104202520687
+  },
+  {
+    "name": "6_ABC_moderate",
+    "p": 40,
+    "boundary_error": 3.773047501667515e-09,
+    "max_coefficient_delta": 1.0556139296014082e-10,
+    "field_vs_fd_max_abs": 2.550643030119204e-11,
+    "harmonic_field_vs_fmm_max_abs": 2.7755575615628914e-16,
+    "potential_abs": 0.08101048206170322,
+    "surface_Emax_corrected_U0_over_R": 25.174859189787284
+  },
+  {
+    "name": "6_ABC_moderate",
+    "p": 64,
+    "boundary_error": 7.81219418645102e-14,
+    "max_coefficient_delta": 2.8410442480008505e-17,
+    "field_vs_fd_max_abs": 2.976247026609258e-11,
+    "harmonic_field_vs_fmm_max_abs": 2.7755575615628914e-16,
+    "potential_abs": 0.08101048209073303,
+    "surface_Emax_corrected_U0_over_R": 25.174857859532114
+  },
+  {
+    "name": "6_ABC_thin",
+    "p": 24,
+    "boundary_error": 2.905761564038677e-06,
+    "max_coefficient_delta": 4.983754196830059e-08,
+    "field_vs_fd_max_abs": 6.388140016966304e-12,
+    "harmonic_field_vs_fmm_max_abs": 9.71445146547012e-17,
+    "potential_abs": 0.0236631765362046,
+    "surface_Emax_corrected_U0_over_R": 79.66963298522525
+  },
+  {
+    "name": "6_ABC_thin",
+    "p": 40,
+    "boundary_error": 1.7704345196364942e-09,
+    "max_coefficient_delta": 3.044225982407066e-11,
+    "field_vs_fd_max_abs": 1.94819299581539e-11,
+    "harmonic_field_vs_fmm_max_abs": 1.249000902703301e-16,
+    "potential_abs": 0.023663189863005474,
+    "surface_Emax_corrected_U0_over_R": 79.66639390896655
+  },
+  {
+    "name": "6_ABC_thin",
+    "p": 64,
+    "boundary_error": 4.507507305734408e-14,
+    "max_coefficient_delta": 1.5856089525750156e-17,
+    "field_vs_fd_max_abs": 1.0500350589026652e-11,
+    "harmonic_field_vs_fmm_max_abs": 2.7755575615628914e-17,
+    "potential_abs": 0.023663189871150844,
+    "surface_Emax_corrected_U0_over_R": 79.66639053957417
+  },
+  {
+    "name": "9_ABC_moderate",
+    "p": 24,
+    "boundary_error": 6.108305012472254e-06,
+    "max_coefficient_delta": 2.3626669054532812e-07,
+    "field_vs_fd_max_abs": 9.251710508806354e-12,
+    "harmonic_field_vs_fmm_max_abs": 4.440892098500626e-16,
+    "potential_abs": 0.0314047322675387,
+    "surface_Emax_corrected_U0_over_R": 25.181763225101168
+  },
+  {
+    "name": "9_ABC_moderate",
+    "p": 40,
+    "boundary_error": 3.7680484798323945e-09,
+    "max_coefficient_delta": 1.4460244113223553e-10,
+    "field_vs_fd_max_abs": 3.9644121319071246e-11,
+    "harmonic_field_vs_fmm_max_abs": 4.440892098500626e-16,
+    "potential_abs": 0.03140475112914253,
+    "surface_Emax_corrected_U0_over_R": 25.180520123063268
+  },
+  {
+    "name": "9_ABC_moderate",
+    "p": 64,
+    "boundary_error": 8.090243248828816e-14,
+    "max_coefficient_delta": 1.5367507003797957e-17,
+    "field_vs_fd_max_abs": 9.008738199867139e-12,
+    "harmonic_field_vs_fmm_max_abs": 3.885780586188048e-16,
+    "potential_abs": 0.03140475114069726,
+    "surface_Emax_corrected_U0_over_R": 25.18051879474204
+  },
+  {
+    "name": "12_ABC_moderate",
+    "p": 24,
+    "boundary_error": 6.096107811594318e-06,
+    "max_coefficient_delta": 2.902236813095982e-07,
+    "field_vs_fd_max_abs": 1.677352701179302e-11,
+    "harmonic_field_vs_fmm_max_abs": 3.608224830031759e-16,
+    "potential_abs": 0.0006503967446845484,
+    "surface_Emax_corrected_U0_over_R": 25.191154323358273
+  },
+  {
+    "name": "12_ABC_moderate",
+    "p": 40,
+    "boundary_error": 3.7607004737235766e-09,
+    "max_coefficient_delta": 1.775996016917253e-10,
+    "field_vs_fd_max_abs": 1.5233037053974385e-11,
+    "harmonic_field_vs_fmm_max_abs": 1.942890293094024e-16,
+    "potential_abs": 0.0006503968898217128,
+    "surface_Emax_corrected_U0_over_R": 25.18991405268824
+  },
+  {
+    "name": "12_ABC_moderate",
+    "p": 64,
+    "boundary_error": 7.816545684956709e-14,
+    "max_coefficient_delta": 5.587198464878316e-17,
+    "field_vs_fd_max_abs": 1.405842109392097e-11,
+    "harmonic_field_vs_fmm_max_abs": 8.326672684688674e-17,
+    "potential_abs": 0.0006503968899167935,
+    "surface_Emax_corrected_U0_over_R": 25.18991272722147
+  }
+]

@@ -1,0 +1,454 @@
+{
+  "study": "V17C.2",
+  "status": "interim negative: no robust, externally supported two-particle counter-rotation confirmed; one fragile long-lived positive single-particle orbit found",
+  "branch": "research/v17c",
+  "release_zip": "V17C2_results.zip",
+  "model_scope": "2D transverse electrostatics for infinitely long cylindrical electrodes; full RF trajectories for one point particle; no Coulomb pair or 3D finite-end FEM",
+  "source_geometry_archive": {
+    "path": "V17C_geometry_scan.zip",
+    "sha256": "9b830175b9fe08592e586f44fcc52770ea9d59b7535ddb87b976106d69c9d17a",
+    "included_inside_release_zip": false,
+    "extracted_sources_included": true
+  },
+  "dynamics_summary": {
+    "negative_damping_scan_runs": 10240,
+    "outer_phase_scan_runs": 5488,
+    "synchronous_resonance_runs": 2592,
+    "G2_nominal_positive_horizon_RF": 50000,
+    "G2_nominal_positive_turns": 9086.5117,
+    "two_particle_runs": 0
+  },
+  "hash_scope": "SHA-256 for every file included in the ZIP except this manifest itself and the ZIP archive (the latter has a companion .sha256 file).",
+  "files": [
+    {
+      "path": "REPORT_RU.md",
+      "bytes": 7761,
+      "sha256": "b5bef1568137ca8d8a7e650393ac0e99f270dd8e7f81ef109c7a018502858caf"
+    },
+    {
+      "path": "GEOMETRY_OPTIMIZATION_RU.md",
+      "bytes": 6500,
+      "sha256": "7818464595f4b476f4f10563c3476b72596cfbdcba426d6db2ecf4ceca2910e8"
+    },
+    {
+      "path": "HARMONIC_ANALYSIS_RU.md",
+      "bytes": 2768,
+      "sha256": "f0bf42781a4448711c7725c2fec0ff3ad863fc5c2d698d3c03ba87a0639c1396"
+    },
+    {
+      "path": "AVERAGED_TORQUE_THEORY_RU.md",
+      "bytes": 3916,
+      "sha256": "e9504179c4d304b1250e11e96206197cec0eda1360c8918887e6448d2af6ac0d"
+    },
+    {
+      "path": "SINGLE_PARTICLE_DIRECTION_MAPS_RU.md",
+      "bytes": 5867,
+      "sha256": "32fb5f1c003229653599f14160aa66a009ea9ed41c359dd441405639f9d3f95d"
+    },
+    {
+      "path": "TWO_PARTICLE_COUNTER_ROTATION_RU.md",
+      "bytes": 2284,
+      "sha256": "900ca6276ff41b1b6172dd4ebeabf9e2e0ea0114e73c8ea37d993f70e1dadbfc"
+    },
+    {
+      "path": "COULOMB_COUPLING_RU.md",
+      "bytes": 1972,
+      "sha256": "75b72c79b6ed53a50a1de7937e811fce14309259c13ade2005784cf8a10c0196"
+    },
+    {
+      "path": "FEM_VALIDATION_RU.md",
+      "bytes": 2454,
+      "sha256": "4cce7dab52799238a98d334d79704eee65b864ad2bc6f5b57b1b9f98f86b7deb"
+    },
+    {
+      "path": "ELECTRICAL_BREAKDOWN_RU.md",
+      "bytes": 2762,
+      "sha256": "f005f1b4c93b368ec2b91eca6c5d17fb4ffd81c44dfdc18e72c15c38b94d0cbe"
+    },
+    {
+      "path": "PHYSICAL_REALIZABILITY_RU.md",
+      "bytes": 1896,
+      "sha256": "5eada0df21ec48235063a09d5b5b12e33d9fb8493bb335d4d9d05e63460ae67d"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "bytes": 3774,
+      "sha256": "976d5a9d6314ef6a64aaba9b9bdc0b13880267c7bfd0385fdc4b724c52b3f462"
+    },
+    {
+      "path": "REPRODUCING_RU.md",
+      "bytes": 1628,
+      "sha256": "0c117ffa75acba87eb997820495bbec59b54916588f3e23450314fe9093f0194"
+    },
+    {
+      "path": "averaged_orbit_equilibria.py",
+      "bytes": 3368,
+      "sha256": "0883e7ee6075c1ad382fb4a9495daa751e2316939ef78ab866be375c84448fd8"
+    },
+    {
+      "path": "averaged_torque.py",
+      "bytes": 3180,
+      "sha256": "6333bda55f5966bf0c37776303fb35ead41f3edbf9c348783fbcc9f3584ec88b"
+    },
+    {
+      "path": "compare_long_energy.py",
+      "bytes": 2800,
+      "sha256": "08c060dcad38882ae67af0075d91d52b74b432d9f673e2d28f37e51ab25f25e4"
+    },
+    {
+      "path": "confirm_single.py",
+      "bytes": 1545,
+      "sha256": "9b7f0c9e99ee22d17b1669472365ddd44c3dce0f790d71dbc0b912ce5d90e169"
+    },
+    {
+      "path": "dop853_validate.py",
+      "bytes": 3388,
+      "sha256": "bf1cd2be1877808e46e131b545bccd46c1b87eb015f5724d3b731f867a0f9582"
+    },
+    {
+      "path": "full_rf_balances.py",
+      "bytes": 3969,
+      "sha256": "4f804c511be7fa6d04d5dcb425d3f6cbfac4248f8245d1bde3530e7dcb791d61"
+    },
+    {
+      "path": "guided_search.py",
+      "bytes": 3694,
+      "sha256": "4d234767876825ac6181a8c3450435b5f7372ab4224bc78c13e0aea69ffd5c76"
+    },
+    {
+      "path": "independent_fem_audit.py",
+      "bytes": 4742,
+      "sha256": "9e76141a3d1a93f1d3c924979587c06ca6c8545a89a15b64a9b41a4805f18703"
+    },
+    {
+      "path": "long_candidate_validation.py",
+      "bytes": 2416,
+      "sha256": "5d6a1550c7ab267b903e5bc2d08573aaadcc5cf91bb1e45904778cea209f96a0"
+    },
+    {
+      "path": "negative_damping_long.py",
+      "bytes": 2232,
+      "sha256": "34e1e51e695f7719fbecb8fab7c6d7f7d05141cca133829dda6b5d3c160e6988"
+    },
+    {
+      "path": "negative_damping_scan.py",
+      "bytes": 2095,
+      "sha256": "da5ac8dc9d9b183ee500dc6d12aebd1fdc178714be13b2be869e04d5bcdb384a"
+    },
+    {
+      "path": "optimize_outer_orbit.py",
+      "bytes": 2990,
+      "sha256": "f6e818ac4638564d44850a21a3800dc10310d714f306c73374fea604728b9c95"
+    },
+    {
+      "path": "orbit_equilibrium_scan.py",
+      "bytes": 2050,
+      "sha256": "9d9b58a0d2a398595bb2e13e78796e553ce3b435a228901d9f1d226263ce63c9"
+    },
+    {
+      "path": "outer_branch_search.py",
+      "bytes": 1620,
+      "sha256": "1f8546c69da657a19292bc830716f7e709b316ab5b330bd747de9705b89753a9"
+    },
+    {
+      "path": "outer_phase_search.py",
+      "bytes": 2308,
+      "sha256": "060fca73f13d0038f6e492783ba61b6082db9910593d65e22f38aee0e60999f7"
+    },
+    {
+      "path": "package_release.py",
+      "bytes": 4211,
+      "sha256": "161898743bfa980bcb29a00a88c29eb070682c42c5612548a3beffb81f93a0c9"
+    },
+    {
+      "path": "plot_results.py",
+      "bytes": 4817,
+      "sha256": "7c511efd4aea10a7a7878fae16c8419681ec0335fb6898b90866b106a3730a68"
+    },
+    {
+      "path": "positive_candidate_robustness.py",
+      "bytes": 1698,
+      "sha256": "b13a601ec8fd8d46cd98c509d01ba0edd19f8dde1f4d53222f758422f63967a7"
+    },
+    {
+      "path": "positive_long_balance.py",
+      "bytes": 1975,
+      "sha256": "43595e4950418073496d7aca399d84a8dc675637bf533dceea128bdf2e367f3b"
+    },
+    {
+      "path": "positive_very_long.py",
+      "bytes": 1977,
+      "sha256": "ae2788d526ec0a733ede964786ed90bfe381c6e1a771971cd778e36cb4a7c4bf"
+    },
+    {
+      "path": "rk4_step_convergence.py",
+      "bytes": 1588,
+      "sha256": "f222be707c554fd815dbae7a2e8420dd88bdd78f8c004cdc5a19426575d57fb8"
+    },
+    {
+      "path": "save_positive_perturbations.py",
+      "bytes": 1233,
+      "sha256": "1eb8576b5c00f981f83b7171f3041bbc81f81c8c65e4b9299e2fbc528fc95072"
+    },
+    {
+      "path": "single_particle.py",
+      "bytes": 5503,
+      "sha256": "b4c666defd54dba1d37d621934837b16841b64fa15c40b88afc26fb09d5992c3"
+    },
+    {
+      "path": "single_particle_maps.py",
+      "bytes": 3243,
+      "sha256": "26a9213a28d349d30324ead0d7af18586af670f807b5b14afc92e085f867082e"
+    },
+    {
+      "path": "summarize_results.py",
+      "bytes": 2635,
+      "sha256": "2e2a511bbfad8330b9d7a3bb1c0d745a476454b436a837cb239cebd3a1193716"
+    },
+    {
+      "path": "synchronous_resonance_scan.py",
+      "bytes": 2098,
+      "sha256": "65f9d3d88d7075109f0291de3d6637a8d7caebadf46b53549bc13596a8880cb4"
+    },
+    {
+      "path": "input/candidates.csv",
+      "bytes": 4199,
+      "sha256": "5c0b20968a353ae9e6ceb6f46c42674f7750487700509b15d6c592c6d34750c1"
+    },
+    {
+      "path": "input/candidates.py",
+      "bytes": 2691,
+      "sha256": "0beddac4661934c6e18b63c15557bb47fde5f94fe26340c8ceb8e2abf481c2a3"
+    },
+    {
+      "path": "input/convergence.csv",
+      "bytes": 15574,
+      "sha256": "6624f139a061b041d092aa3003c3d1779af5c17004520006bbeb2b36a175b45a"
+    },
+    {
+      "path": "input/harmonics.json",
+      "bytes": 41871,
+      "sha256": "4f309f489d236cda73f7a9dab3128f22963f4ca78b6d8618b3c4a4d10a3c3f05"
+    },
+    {
+      "path": "input/independent_audit.json",
+      "bytes": 4448,
+      "sha256": "57efd9ee370374236f6295ea6bdcefa01187d20251260fc59c7334f3d35b7019"
+    },
+    {
+      "path": "input/independent_audit.py",
+      "bytes": 4555,
+      "sha256": "8d7b3992b38560300d3bc7f32465e6b975886af053a94f4448636604d435f296"
+    },
+    {
+      "path": "input/independent_fem_audit.json",
+      "bytes": 8382,
+      "sha256": "48bd090e8bdd5748242eebd79582853bbca10535ecfd8f86163a249587dcd9cc"
+    },
+    {
+      "path": "input/MANIFEST.json",
+      "bytes": 603,
+      "sha256": "c67b8df99e47319f1b2321912f1e027c5f223f5cc60ca1ffc5d351ab9bedf8c4"
+    },
+    {
+      "path": "input/README_RU.md",
+      "bytes": 8039,
+      "sha256": "10baa791132898970a09e72528ac75c41846c7aa37eead6945e3e8c64bbaf6c0"
+    },
+    {
+      "path": "input/scan.csv",
+      "bytes": 111033,
+      "sha256": "3b25522a8202c5d3bc759fcc6b46a5c37ff5556750df056a0d70d106d03913f6"
+    },
+    {
+      "path": "input/scan.py",
+      "bytes": 2324,
+      "sha256": "1c25691f8c5df8a6c96c9e39ad1fb080d1f7824230bcf1e3278676197a59fc08"
+    },
+    {
+      "path": "results/averaged_torque_map.csv",
+      "bytes": 153216,
+      "sha256": "0b609432dda043ab71876f3d185acd7eac4d863a112c94335766c766954821ca"
+    },
+    {
+      "path": "results/averaging_micro_check.json",
+      "bytes": 1860,
+      "sha256": "d4a5c7046aa3dd3af184a33b528146a27f86b233d3701395f3280828bed6f3ff"
+    },
+    {
+      "path": "results/averaged_orbit_equilibria_summary.json",
+      "bytes": 15546,
+      "sha256": "2a97f661a0f11f60b00215d36b4dffd27cc6b15de0c81e8c629e94e653f03fe1"
+    },
+    {
+      "path": "results/single_particle_maps.csv",
+      "bytes": 31657,
+      "sha256": "b9a191c228e195df0d1fe11325262e3dd6a894aa7d14b067fa2bd89cdb20e278"
+    },
+    {
+      "path": "results/single_particle_maps.json",
+      "bytes": 74573,
+      "sha256": "4d9dc9951e0ce7d6d828d9a0ea4e66d00bc8227473c36eb48a1e0328c7c43f7d"
+    },
+    {
+      "path": "results/single_particle_maps.png",
+      "bytes": 88456,
+      "sha256": "e62f1a67d6e0e21d4117208ec3e9682215b676d95b6ce168dc042768d0c5d280"
+    },
+    {
+      "path": "results/negative_damping_scan.csv",
+      "bytes": 1564121,
+      "sha256": "8d44ba5bc2176683a9ae8dd27b2ab39063d4ac1bfcc3fb97ba92a18cf42028a8"
+    },
+    {
+      "path": "results/negative_damping_long.json",
+      "bytes": 5278,
+      "sha256": "70d78c8c550518fc6ce5dfd4ccd111c567171efbdcf490ed0318d328847c82ba"
+    },
+    {
+      "path": "results/outer_phase_search.csv",
+      "bytes": 874990,
+      "sha256": "da05f867111527d99e3de9edf3e769f4c0c03eb6a02a2abaabb11fcc03c5e556"
+    },
+    {
+      "path": "results/synchronous_resonance_scan.csv",
+      "bytes": 412694,
+      "sha256": "618c237110fe6755c5bf0fcf24563cf367aeca257b3e3b13a9498b0a5a84d5f0"
+    },
+    {
+      "path": "results/search_summary.json",
+      "bytes": 1040,
+      "sha256": "3b6377845c79f9a7aee8f40a90a668bfa66a0933df8e6fe3cb3de8b50df1a841"
+    },
+    {
+      "path": "results/G2_positive_50000RF.json",
+      "bytes": 4601,
+      "sha256": "f239562767760342036be56c9964d5a8ecee41691b17b708e619b130f932176c"
+    },
+    {
+      "path": "results/G2_positive_50000RF.npz",
+      "bytes": 3651488,
+      "sha256": "65970cae6a3ae1af33504a84fd525dc465d1c8ca667300cd64c051b08933fab8"
+    },
+    {
+      "path": "results/G1_inner_positive_8000RF.npz",
+      "bytes": 318499,
+      "sha256": "26a4229180d6474bfc0469489692b72024403fd268e3dd7c60062c420d0a0db1"
+    },
+    {
+      "path": "results/G1_outer_negative_8000RF.npz",
+      "bytes": 317614,
+      "sha256": "6b9504eb60b7dc2f982f46ce83bcba3783b230ab63a8c27b0ffd3fa9be69d99c"
+    },
+    {
+      "path": "results/G2_radius_plus_1pct_8000RF.npz",
+      "bytes": 317560,
+      "sha256": "0d26b07699936c58d81b520a6ae9b380d7a906ef112667192a85da505e69510b"
+    },
+    {
+      "path": "results/G2_alpha_plus_0p5pct_8000RF.npz",
+      "bytes": 317998,
+      "sha256": "3e3f0268f70d6fb62876d5d45e0c4f47d17235194f76ec28ccbb7273f7f717f0"
+    },
+    {
+      "path": "results/positive_candidate_robustness.json",
+      "bytes": 13442,
+      "sha256": "7cdc91a05f9e503f5890a4b64ca265e4847b33ff2c3b219e2db77186e37a80ef"
+    },
+    {
+      "path": "results/positive_perturbation_tracks.json",
+      "bytes": 909,
+      "sha256": "cb5c1bbb743106f98a118d1f4935f61ac30e007332a290c52965eb5e255d1653"
+    },
+    {
+      "path": "results/negative_long_0_6_ABC_moderate_lambda0.0001.npz",
+      "bytes": 599607,
+      "sha256": "5ccfbca174232ba23ab99f3b4b2de8671a6b1e495be0b42fd53b91c0981288ec"
+    },
+    {
+      "path": "results/negative_long_1_6_ABC_moderate_lambda0.0005.npz",
+      "bytes": 122849,
+      "sha256": "cc9c80f365af90e4d5ee84f0b3053e53c7072a9bf61fa79ca8aa484bc190c5d5"
+    },
+    {
+      "path": "results/negative_long_2_6_ABC_moderate_lambda0.002.npz",
+      "bytes": 32454,
+      "sha256": "fae4ffcd541769d61b3babcb0c118b4959c54c7469ad061f6503de0cb94233ec"
+    },
+    {
+      "path": "results/negative_long_3_6_ABC_thin_lambda0.0001.npz",
+      "bytes": 593048,
+      "sha256": "909b7b43c3ab430ddebd0da211a5ed9ee5a22955b0cfe3f989df06b561a6a7ba"
+    },
+    {
+      "path": "results/negative_long_4_6_ABC_thin_lambda0.0005.npz",
+      "bytes": 122750,
+      "sha256": "08b1fc1771545fd78b8dc347ad43d6286966f4b2594f42a4bb32c1bb93018ce2"
+    },
+    {
+      "path": "results/negative_long_5_6_ABC_thin_lambda0.002.npz",
+      "bytes": 32465,
+      "sha256": "6795ddb7c18f70ffe7766df5c9194898b92965fcd7e44bd0cbf4e89c5196535b"
+    },
+    {
+      "path": "results/long_candidate_validation.json",
+      "bytes": 13896,
+      "sha256": "51ec3f3132c629b4da6c356d44d66d2798769d5d9f73fc48af6e5fe569d1750b"
+    },
+    {
+      "path": "results/single_long_validation.json",
+      "bytes": 3581,
+      "sha256": "467e5278d970647c47cf19d46290961cf3a25cead871bbf24ba89edef2134a88"
+    },
+    {
+      "path": "results/long_energy_comparison.json",
+      "bytes": 3189,
+      "sha256": "5cb9b7239c878a088b3a57dae70eb853475740d033ebe241a33c32493781c02a"
+    },
+    {
+      "path": "results/full_rf_balance_summary.json",
+      "bytes": 1626,
+      "sha256": "05a18347270b4b6bee100f33bafb921c13794145b6b13d84def1facbb4173537"
+    },
+    {
+      "path": "results/dop853_validation.json",
+      "bytes": 1593,
+      "sha256": "9566c658299aa89fd0e5264057f8996cc2880a361e526551858d416ffa4675ee"
+    },
+    {
+      "path": "results/dop853_6_ABC_moderate_neg_800RF.npz",
+      "bytes": 66368,
+      "sha256": "4378ad6ce59fabe8cc57e90c6694ad9cd90a9d23bdda8e5d14b6a0a1f6c5c22b"
+    },
+    {
+      "path": "results/dop853_6_ABC_thin_pos_1200RF.npz",
+      "bytes": 99354,
+      "sha256": "a78fa65058e3210087d4a5a49248c3c2ffa1a2a95e94b1ba73845835020c628c"
+    },
+    {
+      "path": "results/rk4_step_convergence.json",
+      "bytes": 2277,
+      "sha256": "825773dc47c707a0c77461a5b91fe545257d02c04e9cd118140d032966053d11"
+    },
+    {
+      "path": "results/fem_coefficient_convergence.png",
+      "bytes": 88996,
+      "sha256": "705b91b8810665f3c0474eb78eac50529359681f053d77c954c68a425b3052d9"
+    },
+    {
+      "path": "results/averaged_torque_sign_map.png",
+      "bytes": 114918,
+      "sha256": "336b923dd17c174466bf255914dcc33f86790375ab5a52c95db84466cd2e8a06"
+    },
+    {
+      "path": "results/rejected_counterrotation_candidates.png",
+      "bytes": 512849,
+      "sha256": "404d990b9d31856fdf651480376a7266bc2579d370c8869421df304880dfe26d"
+    },
+    {
+      "path": "results/G2_positive_robustness.png",
+      "bytes": 607690,
+      "sha256": "68b40bf93dc53e8871af514fde4ac29d12cceba2f0cfb36c0d4abd9fb4d9ad7e"
+    }
+  ]
+}

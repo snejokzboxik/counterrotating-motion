@@ -1,0 +1,68 @@
+[
+  {
+    "name": "6_ABC_moderate",
+    "periods": 800,
+    "steps": {
+      "64": {
+        "max_state_diff_vs_256": 0.00033163765031561654,
+        "final_state_diff": 7.239363147498734e-05,
+        "turns": -77.45862039755741,
+        "rf_work": -0.008616121813651591,
+        "drag_loss": 0.003483633432633238,
+        "energy_residual": 3.823809229322461e-08,
+        "angular_residual": -1.2215912670657247e-07
+      },
+      "128": {
+        "max_state_diff_vs_256": 2.262887600630592e-05,
+        "final_state_diff": 4.9844074208049705e-06,
+        "turns": -77.45855410618705,
+        "rf_work": -0.008616024850897209,
+        "drag_loss": 0.0034835044993662533,
+        "energy_residual": 1.2967633633564901e-09,
+        "angular_residual": -3.586954587520008e-09
+      },
+      "256": {
+        "max_state_diff_vs_256": 0.0,
+        "final_state_diff": 0.0,
+        "turns": -77.45854931696438,
+        "rf_work": -0.008616019062115923,
+        "drag_loss": 0.00348349509096653,
+        "energy_residual": 4.6882620181876167e-11,
+        "angular_residual": -9.76015050030421e-11
+      }
+    }
+  },
+  {
+    "name": "6_ABC_thin",
+    "periods": 1200,
+    "steps": {
+      "64": {
+        "max_state_diff_vs_256": 3.601024269511699e-05,
+        "final_state_diff": 1.1880468203856465e-05,
+        "turns": 217.68189418825722,
+        "rf_work": 0.010422591140572557,
+        "drag_loss": 0.013238122056734402,
+        "energy_residual": 6.039958784682942e-08,
+        "angular_residual": -1.5539072953374422e-07
+      },
+      "128": {
+        "max_state_diff_vs_256": 1.4890770887454607e-06,
+        "final_state_diff": 5.54668766340749e-07,
+        "turns": 217.68191312952206,
+        "rf_work": 0.010422666012066277,
+        "drag_loss": 0.013238023210322178,
+        "energy_residual": 1.840199754729599e-09,
+        "angular_residual": -4.085965399358571e-09
+      },
+      "256": {
+        "max_state_diff_vs_256": 0.0,
+        "final_state_diff": 0.0,
+        "turns": 217.68191401084067,
+        "rf_work": 0.01042266803903694,
+        "drag_loss": 0.013238017944574436,
+        "energy_residual": 5.4569841700935484e-11,
+        "angular_residual": -7.962227405178268e-11
+      }
+    }
+  }
+]

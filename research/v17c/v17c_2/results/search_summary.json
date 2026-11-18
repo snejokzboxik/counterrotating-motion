@@ -1,0 +1,42 @@
+{
+  "negative_damping_runs": 10240,
+  "negative_damping_states": {
+    "escape": 8818,
+    "uncertain": 699,
+    "transient": 103,
+    "negative": 432,
+    "positive": 188
+  },
+  "negative_damping_by_geometry": {
+    "6_ABC_moderate": {
+      "escape": 4406,
+      "uncertain": 353,
+      "transient": 53,
+      "negative": 218,
+      "positive": 90
+    },
+    "6_ABC_thin": {
+      "escape": 4412,
+      "negative": 214,
+      "uncertain": 346,
+      "transient": 50,
+      "positive": 98
+    }
+  },
+  "outer_phase_runs": 5488,
+  "outer_phase_negative_counts": {
+    "12_ABC_moderate": 0,
+    "6_ABC_moderate": 18,
+    "6_ABC_thin": 18,
+    "9_ABC_moderate": 4
+  },
+  "synchronous_runs": 2592,
+  "synchronous_state_counts": {
+    "1:escape": 1288,
+    "1:positive": 8,
+    "-1:escape": 1296
+  },
+  "averaged_fixedpoint_rows": 18464,
+  "stable_fixedpoint_summary_rows": 52,
+  "note": "Long-horizon and balance checks are listed in separate JSON summaries; short scan states are not confirmations."
+}
