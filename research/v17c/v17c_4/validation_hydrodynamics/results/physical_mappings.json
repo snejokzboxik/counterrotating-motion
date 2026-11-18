@@ -1,0 +1,71 @@
+{
+  "physical_assumptions": {
+    "trap_radius_m": 0.0002,
+    "omega_rf_rad_s": 20000.0,
+    "U0_reference_V": null,
+    "fluid_name": "air, 293 K, approximately 1 atm",
+    "fluid_density_kg_m3": 1.204,
+    "dynamic_viscosity_Pa_s": 1.81e-05,
+    "mean_free_path_m": 6.8e-08,
+    "particle1_material_density_kg_m3": 2000.0,
+    "hydrodynamic_wall_corrections": "omitted; unbounded-fluid two-sphere tensors"
+  },
+  "cases": {
+    "ADCFEB_000151": {
+      "trap_radius_m": 0.0002,
+      "omega_rf_rad_s": 20000.0,
+      "fluid_mu_Pa_s": 1.81e-05,
+      "fluid_density_kg_m3": 1.204,
+      "particle_density1_kg_m3": 2000.0,
+      "density2_kg_m3": 1921.631495043694,
+      "radii_m": [
+        1.1201511065184057e-05,
+        1.5725106706998207e-05
+      ],
+      "mass_kg": [
+        1.1774661793666662e-11,
+        3.12996528579705e-11
+      ],
+      "lambda_physical": [
+        0.0162284810553926,
+        0.0085704530983024
+      ],
+      "charge_C": [
+        2.2670613027056708e-14,
+        2.2898014216124112e-14
+      ],
+      "U0_V": 533.8920527724586,
+      "Vdc_V": 10.99883017195142,
+      "qom2_over_qom1_physical": 0.3799648981786045,
+      "alpha2_predicted": 0.02441134864525005,
+      "alpha2_checkpoint": 0.02441134864525,
+      "alpha2_relative_error": 2.220446049250313e-15,
+      "alpha1_recovered": 0.06424632581132629,
+      "alpha1_checkpoint": 0.0642463258113263,
+      "chi_recovered": 0.000122594084241,
+      "chi_checkpoint": 0.000122594084241,
+      "beta2_recovered": 0.0005029036799164214,
+      "beta2_checkpoint": 0.0005029036799164,
+      "charge2_ratio_checkpoint": 1.0100306590208217,
+      "re_prefactor_per_dimensionless_speed": [
+        5.960936717118941,
+        8.368189381315288
+      ],
+      "knudsen": [
+        0.006070609545827616,
+        0.004324294980442816
+      ],
+      "kinematic_viscosity_m2_s": 1.5033222591362126e-05,
+      "womersley_a_sqrt_Omega_over_nu": [
+        0.40856914529755467,
+        0.5735648850948605
+      ],
+      "womersley_quasi_steady_strict_lt_0p1": false,
+      "womersley_borderline_0p1_to_0p3": false,
+      "womersley_unsteady_corrections_required_ge_0p3": true,
+      "sphere_relation_lambda": "lambda=9*mu/(2*rho_particle*a^2*Omega)",
+      "derived_sphere_relation_Wo_squared": "Wo^2=9*rho_fluid/(2*rho_particle*lambda)",
+      "mean_free_path_m": 6.8e-08
+    }
+  }
+}

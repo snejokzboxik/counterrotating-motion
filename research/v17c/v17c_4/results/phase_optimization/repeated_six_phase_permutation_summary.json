@@ -1,0 +1,153 @@
+{
+  "permutations": 120,
+  "strict_root_status_numerically_zero": 36,
+  "moderate_inner_positive_band_negative_count": 8,
+  "strong_chi03_gt_0p3_chi075_lt_minus0p3_count": 2,
+  "top_12": [
+    {
+      "sequence": "AFCBEDAFCBED",
+      "chi_03": 0.6676016389612784,
+      "chi_055": -0.35920630453461155,
+      "chi_075": -0.38232879483400556,
+      "torque_roots": "0.44959305285123485;0.8845283151258745",
+      "negative_band_width": 0.43493526227463963,
+      "angular_corrugation_r03": "0.009448337542360902",
+      "angular_corrugation_r055": "0.2432883246986779",
+      "surface_Emax_U0_over_D": "26.508179427324798",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ADCFEBADCFEB",
+      "chi_03": 0.6676016389612788,
+      "chi_055": -0.359206304534611,
+      "chi_075": -0.38232879483400517,
+      "torque_roots": "0.449593052851235;0.8845283151258744",
+      "negative_band_width": 0.43493526227463936,
+      "angular_corrugation_r03": "0.009448337542361688",
+      "angular_corrugation_r055": "0.24328832469867792",
+      "surface_Emax_U0_over_D": "26.508179427324755",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ADEBFCADEBFC",
+      "chi_03": 0.39787620674539226,
+      "chi_055": -0.16434072026321173,
+      "chi_075": -0.11154665946238772,
+      "torque_roots": "0.44959305285123474;0.8845283151258746",
+      "negative_band_width": 0.43493526227463986,
+      "angular_corrugation_r03": "0.750458502229796",
+      "angular_corrugation_r055": "1.006665322351904",
+      "surface_Emax_U0_over_D": "26.522144635946066",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "AEBFCDAEBFCD",
+      "chi_03": 0.39787620674539187,
+      "chi_055": -0.1643407202632117,
+      "chi_075": -0.11154665946238755,
+      "torque_roots": "0.4495930528512347;0.8845283151258743",
+      "negative_band_width": 0.4349352622746396,
+      "angular_corrugation_r03": "0.7504585022297965",
+      "angular_corrugation_r055": "1.0066653223519033",
+      "surface_Emax_U0_over_D": "26.52214463594608",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "AEBCFDAEBCFD",
+      "chi_03": 0.3978762067453935,
+      "chi_055": -0.16434072026321145,
+      "chi_075": -0.11154665946238777,
+      "torque_roots": "0.44959305285123513;0.8845283151258746",
+      "negative_band_width": 0.43493526227463947,
+      "angular_corrugation_r03": "0.7504585022297944",
+      "angular_corrugation_r055": "1.0066653223519024",
+      "surface_Emax_U0_over_D": "26.521068784433954",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ADBEFCADBEFC",
+      "chi_03": 0.3978762067453928,
+      "chi_055": -0.16434072026321137,
+      "chi_075": -0.11154665946238763,
+      "torque_roots": "0.44959305285123496;0.8845283151258746",
+      "negative_band_width": 0.43493526227463963,
+      "angular_corrugation_r03": "0.7504585022297954",
+      "angular_corrugation_r055": "1.0066653223519038",
+      "surface_Emax_U0_over_D": "26.521068784433943",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ADBECFADBECF",
+      "chi_03": 0.3978762067453936,
+      "chi_055": -0.1643407202632113,
+      "chi_075": -0.11154665946238769,
+      "torque_roots": "0.44959305285123513;0.8845283151258747",
+      "negative_band_width": 0.4349352622746396,
+      "angular_corrugation_r03": "0.7504585022297967",
+      "angular_corrugation_r055": "1.006665322351902",
+      "surface_Emax_U0_over_D": "26.521068784434004",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ABECFDABECFD",
+      "chi_03": 0.3978762067453931,
+      "chi_055": -0.16434072026321114,
+      "chi_075": -0.11154665946238732,
+      "torque_roots": "0.4495930528512351;0.8845283151258743",
+      "negative_band_width": 0.4349352622746392,
+      "angular_corrugation_r03": "0.750458502229796",
+      "angular_corrugation_r055": "1.0066653223519042",
+      "surface_Emax_U0_over_D": "26.521068784434014",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "AEBDFCAEBDFC",
+      "chi_03": 3.200988574927978e-16,
+      "chi_055": -2.397193349525778e-16,
+      "chi_075": -2.3731849050989514e-16,
+      "torque_roots": "",
+      "negative_band_width": 0.0,
+      "angular_corrugation_r03": "0.20507089056330954",
+      "angular_corrugation_r055": "0.5126424516934373",
+      "surface_Emax_U0_over_D": "26.519224484638038",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ACEBFDACEBFD",
+      "chi_03": 7.317504005337131e-17,
+      "chi_055": -4.1680386603714616e-17,
+      "chi_075": 3.68378663310139e-17,
+      "torque_roots": "",
+      "negative_band_width": 0.0,
+      "angular_corrugation_r03": "0.20507089056330635",
+      "angular_corrugation_r055": "0.5126424516934348",
+      "surface_Emax_U0_over_D": "26.522144635946066",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "ADCBEFADCBEF",
+      "chi_03": -2.0175500138737642e-18,
+      "chi_055": -3.8044749616122373e-17,
+      "chi_075": -8.383607387781917e-17,
+      "torque_roots": "",
+      "negative_band_width": 0.0,
+      "angular_corrugation_r03": "0.0009646131943697333",
+      "angular_corrugation_r055": "0.10025376947750692",
+      "surface_Emax_U0_over_D": "26.508179427324798",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    },
+    {
+      "sequence": "AFCDBEAFCDBE",
+      "chi_03": 5.244380659844896e-17,
+      "chi_055": 8.376144570596753e-18,
+      "chi_075": -5.0861533748897884e-17,
+      "torque_roots": "",
+      "negative_band_width": 0.0,
+      "angular_corrugation_r03": "0.28982378923841917",
+      "angular_corrugation_r055": "0.7739764666076165",
+      "surface_Emax_U0_over_D": "26.51819978540851",
+      "max_adjacent_voltage_difference_U0": "2.0"
+    }
+  ],
+  "criteria": "radially averaged torque from the complete p=64, K=72 MFS spectrum; roots suppressed when normalized chirality is numerically zero"
+}

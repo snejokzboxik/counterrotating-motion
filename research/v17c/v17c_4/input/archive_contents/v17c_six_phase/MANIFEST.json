@@ -1,0 +1,11 @@
+{
+  "README_RU.md": "e53e03143e4b779c8362c235ef274279f71fd9c17df8afeb0b911e2f85471e4c",
+  "convergence.csv": "7851fd7ebe25fb926944a12e54180850cde2bdad6d735114470d9a71c73a4c2a",
+  "geometries.csv": "ccc9b69da56e9aa0273ec5da8d701f761caed0ce911bf1218d3e61bab5e7a514",
+  "geometry_spectra.csv": "a49d5737ff2e04871642aab086ebc16616d6d0033c2acedcce7ac7a3390e7a4b",
+  "permutation_spectra.csv": "765fd464d1e39642b3ce390b77a1fe9b8255dadbd70c5a8443cc30b09e9b2033",
+  "permutations.csv": "dbccb461c00e9f3888818d7fb21d84bd87b7acbcac9bf0a681db7d76cb6cfb3f",
+  "radial_diagnostics.csv": "d4de489d5245f13638334eaaab5a2f842415bc33b82fd359b61683399e90fa28",
+  "requirements.txt": "c04c4808f8800b4a6026d03b58317e4d894e1187ddf5d6973a53aa261fa70422",
+  "scan.py": "2d1fac3456e19eeb55a2fc0321e52dac07954dd4824e8c8e47e1d6378f6cbd7a"
+}

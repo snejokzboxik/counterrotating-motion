@@ -1,0 +1,9 @@
+{
+  "mode": "phase_equal_amplitude",
+  "chunk": 1,
+  "seed": 20262220,
+  "nfev": 16,
+  "best_score": 5.150421097850781,
+  "success": false,
+  "message": "Maximum number of iterations has been exceeded."
+}

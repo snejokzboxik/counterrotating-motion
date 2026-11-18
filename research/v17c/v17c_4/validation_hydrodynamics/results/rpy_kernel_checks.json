@@ -1,0 +1,144 @@
+{
+  "model": "generalized translational RPY, unequal radii, regularized overlap branches",
+  "source": "Zuk et al., J. Fluid Mech. 741 (2014), Eq. 3.1, DOI 10.1017/jfm.2013.668",
+  "cases": [
+    {
+      "radii_m": [
+        1e-05,
+        1e-05
+      ],
+      "distances": [
+        {
+          "r_m": 0.0,
+          "r_over_sum_radii": 0.0,
+          "mu_perp": 293103025.9519251,
+          "mu_parallel": 293103025.9519251,
+          "mobility_min_eigenvalue": 0.0,
+          "mobility_min_eigenvalue_relative_to_max": 0.0
+        },
+        {
+          "r_m": 1.0000000000000001e-11,
+          "r_over_sum_radii": 5e-07,
+          "mu_perp": 293102943.5166991,
+          "mu_parallel": 293102970.99510777,
+          "mobility_min_eigenvalue": 54.9568173289299,
+          "mobility_min_eigenvalue_relative_to_max": 9.375000872584995e-08
+        },
+        {
+          "r_m": 1e-09,
+          "r_over_sum_radii": 5e-05,
+          "mu_perp": 293094782.4293202,
+          "mu_parallel": 293097530.2701885,
+          "mobility_min_eigenvalue": 5495.681736576317,
+          "mobility_min_eigenvalue_relative_to_max": 9.37508789141098e-06
+        },
+        {
+          "r_m": 1.9999999980000002e-05,
+          "r_over_sum_radii": 0.999999999,
+          "mu_perp": 128232574.01883769,
+          "mu_parallel": 183189391.32986683,
+          "mobility_min_eigenvalue": 109913634.62205827,
+          "mobility_min_eigenvalue_relative_to_max": 0.2307692304852071
+        },
+        {
+          "r_m": 2e-05,
+          "r_over_sum_radii": 1.0,
+          "mu_perp": 128232573.85396726,
+          "mu_parallel": 183189391.2199532,
+          "mobility_min_eigenvalue": 109913634.73197186,
+          "mobility_min_eigenvalue_relative_to_max": 0.2307692307692307
+        },
+        {
+          "r_m": 2.000000002e-05,
+          "r_over_sum_radii": 1.000000001,
+          "mu_perp": 128232573.68909678,
+          "mu_parallel": 183189391.11003953,
+          "mobility_min_eigenvalue": 109913634.84188557,
+          "mobility_min_eigenvalue_relative_to_max": 0.23076923105325448
+        },
+        {
+          "r_m": 6.000000000000001e-05,
+          "r_over_sum_radii": 3.0,
+          "mu_perp": 37316357.470731206,
+          "mu_parallel": 71918798.03450014,
+          "mobility_min_eigenvalue": 221184227.91742498,
+          "mobility_min_eigenvalue_relative_to_max": 0.6059479553903346
+        }
+      ],
+      "relative_mobility_jump_at_contact": 2.571426538776251e-10
+    },
+    {
+      "radii_m": [
+        1e-05,
+        1.5e-05
+      ],
+      "distances": [
+        {
+          "r_m": 0.0,
+          "r_over_sum_radii": 0.0,
+          "mu_perp": 195402017.30128342,
+          "mu_parallel": 195402017.30128342,
+          "mobility_min_eigenvalue": 42836732.428613976,
+          "mobility_min_eigenvalue_relative_to_max": 0.09611796797792427
+        },
+        {
+          "r_m": 1.5e-11,
+          "r_over_sum_radii": 6e-07,
+          "mu_perp": 195402017.30128342,
+          "mu_parallel": 195402017.30128342,
+          "mobility_min_eigenvalue": 42836732.428613976,
+          "mobility_min_eigenvalue_relative_to_max": 0.09611796797792427
+        },
+        {
+          "r_m": 2.4999999999999998e-06,
+          "r_over_sum_radii": 0.09999999999999999,
+          "mu_perp": 195402017.30128342,
+          "mu_parallel": 195402017.30128342,
+          "mobility_min_eigenvalue": 42836732.428613976,
+          "mobility_min_eigenvalue_relative_to_max": 0.09611796797792427
+        },
+        {
+          "r_m": 5.05e-06,
+          "r_over_sum_radii": 0.20199999999999999,
+          "mu_perp": 195398401.73094144,
+          "mu_parallel": 195401993.41657248,
+          "mobility_min_eigenvalue": 42836755.60018709,
+          "mobility_min_eigenvalue_relative_to_max": 0.09611802496824272
+        },
+        {
+          "r_m": 2.4999999975e-05,
+          "r_over_sum_radii": 0.9999999989999999,
+          "mu_perp": 103172265.26873264,
+          "mu_parallel": 145379100.95656854,
+          "mobility_min_eigenvalue": 90885462.68701863,
+          "mobility_min_eigenvalue_relative_to_max": 0.2285739111680627
+        },
+        {
+          "r_m": 2.5e-05,
+          "r_over_sum_radii": 1.0,
+          "mu_perp": 103172265.13507766,
+          "mu_parallel": 145379100.87215486,
+          "mobility_min_eigenvalue": 90885462.7670357,
+          "mobility_min_eigenvalue_relative_to_max": 0.22857391141530123
+        },
+        {
+          "r_m": 2.5000000025000002e-05,
+          "r_over_sum_radii": 1.000000001,
+          "mu_perp": 103172265.00142264,
+          "mu_parallel": 145379100.78774118,
+          "mobility_min_eigenvalue": 90885462.84705274,
+          "mobility_min_eigenvalue_relative_to_max": 0.22857391166253968
+        },
+        {
+          "r_m": 7.500000000000001e-05,
+          "r_over_sum_radii": 3.0,
+          "mu_perp": 29874797.311840665,
+          "mu_parallel": 57491615.75708871,
+          "mobility_min_eigenvalue": 168809446.03182936,
+          "mobility_min_eigenvalue_relative_to_max": 0.5280318136972468
+        }
+      ],
+      "relative_mobility_jump_at_contact": 2.5909123078121463e-10
+    }
+  ]
+}

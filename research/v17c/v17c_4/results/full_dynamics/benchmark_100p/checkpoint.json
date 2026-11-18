@@ -1,0 +1,13 @@
+{
+  "next_index": 4,
+  "completed_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seed": 20261118,
+  "samples": 4,
+  "periods": 100,
+  "steps": 32
+}

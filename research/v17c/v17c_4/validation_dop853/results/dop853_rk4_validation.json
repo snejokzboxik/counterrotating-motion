@@ -1,0 +1,126 @@
+{
+  "scope": "10 RF periods, two 3D particles, ADCFEB full saved MFS spectrum",
+  "spectrum_modes_count": 144,
+  "spectrum_nonzero_modes_count": 24,
+  "parameters": {
+    "alpha": [
+      0.11,
+      0.072
+    ],
+    "beta": [
+      0.00341,
+      0.0022319999999999996
+    ],
+    "common_Vdc_over_U0_dimensionless": 0.031,
+    "lambda": [
+      0.007,
+      0.011
+    ],
+    "mass": [
+      1.0,
+      1.75
+    ],
+    "charge": [
+      1.0,
+      1.05
+    ],
+    "chi": 8e-05,
+    "phase0": 0.37,
+    "periods": 10,
+    "initial_radii": [
+      0.29,
+      0.54
+    ],
+    "initial_azimuths": [
+      0.31,
+      2.2
+    ],
+    "initial_omega": [
+      0.028,
+      -0.022
+    ],
+    "initial_z": [
+      -0.012,
+      0.019
+    ],
+    "initial_radial_velocity": [
+      0.002,
+      -0.001
+    ],
+    "initial_axial_velocity": [
+      0.003,
+      -0.002
+    ]
+  },
+  "dc_analytic_checks": {
+    "laplacian_hessian_trace_over_beta": 0.0,
+    "force_per_mass": "beta*(x,y,-2z)",
+    "max_absolute_dc_azimuthal_torque": 0.0,
+    "analytic_dc_gradient": "beta*(-x,-y,2z)",
+    "max_centered_finite_difference_gradient_error": 4.103141437727942e-14
+  },
+  "rf_analytic_checks": {
+    "potential_convention": "Re(sum Ak*z^k*exp(-i*tau)); negative k uses conjugate(z)^|k|",
+    "max_component_error_vs_existing_core_rf_accel": 6.071532165918825e-18,
+    "max_component_error_vs_negative_finite_difference_potential_gradient": 5.777670009088354e-13
+  },
+  "integrators": {
+    "DOP853": {
+      "success": true,
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step_over_RF_period": 0.0078125,
+      "nfev": 19217
+    },
+    "RK4_64": {
+      "steps_per_period": 64
+    },
+    "RK4_128": {
+      "steps_per_period": 128
+    }
+  },
+  "max_cartesian_state_error_vs_DOP853": {
+    "RK4_64": 7.120648239655747e-07,
+    "RK4_128": 4.395795930034474e-08,
+    "RK4_64_over_128_error_ratio": 16.19876889871888,
+    "normalized_by_max_1_or_state": {
+      "RK4_64": 7.120648239655747e-07,
+      "RK4_128": 4.395795930034474e-08
+    }
+  },
+  "energy_balance": {
+    "initial_total_K_plus_DC_plus_Coulomb": 0.00010619036124299915,
+    "final_total_K_plus_DC_plus_Coulomb": 0.0003690778712567485,
+    "integrated_RF_work": 0.0011738958374132023,
+    "integrated_drag_work": -0.0009110083273994492,
+    "residual_after_RF_and_drag": -3.686287386450715e-18,
+    "relative_residual": 9.987830952580613e-15,
+    "RK4_energy_residual_by_steps_per_period": {
+      "64": {
+        "residual_after_RF_and_drag": 1.805035137200997e-09,
+        "relative_residual": 4.890691985550879e-06
+      },
+      "128": {
+        "residual_after_RF_and_drag": 9.516056118010624e-11,
+        "relative_residual": 2.578333853078435e-07
+      }
+    }
+  },
+  "angular_momentum": {
+    "final_Lz": [
+      0.0028772364992367522,
+      -0.011003458062540784
+    ],
+    "integrated_coulomb_torque_per_particle": [
+      -0.009302622543053439,
+      0.009302622543053446
+    ],
+    "sum_internal_coulomb_torque_integrals": 6.938893903907228e-18,
+    "final_separation": 0.6632794877474412
+  },
+  "notes": [
+    "Independent RHS re-derives the field gradient and does not import _rf_accel/_rhs_aug.",
+    "Potential and fields are z-translation invariant RF plus the separate Laplace DC quadrupole.",
+    "This is an integration/model consistency check, not a physical realization or candidate search."
+  ]
+}

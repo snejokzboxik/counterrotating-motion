@@ -1,0 +1,105 @@
+{
+  "scope": "single matched initial condition, four hydrodynamic closures, postprocessed from saved NPZ",
+  "models": [
+    "stokes",
+    "oseen_self",
+    "oseen_pair",
+    "rpy_pair"
+  ],
+  "same_initial_cartesian_state_exact": true,
+  "records": [
+    {
+      "checkpoint": "ADCFEB_000151",
+      "model": "stokes",
+      "horizon_periods": 798.9999999999999,
+      "state_points": 6393,
+      "delta_total_energy": 0.0002836233209662853,
+      "work": {
+        "RF": 0.046742080744720145,
+        "DC": 0.0002967608284932239,
+        "Coulomb": 3.7988512835572154e-05,
+        "drag": -0.046458457423751744
+      },
+      "corrected_total_energy_residual": -2.1163626406917047e-15,
+      "corrected_total_energy_relative_residual": 9.076719658474335e-12,
+      "corrected_residual_from_old_plus_dc_and_coulomb": -2.1039010919716994e-15,
+      "correction_identity_error": -1.2461548720005267e-17,
+      "angular_momentum_balance_residual_by_particle": [
+        -2.5847379792054426e-16,
+        1.4328815911568427e-15
+      ],
+      "summed_coulomb_torque_impulse": -3.382710778154774e-17,
+      "summed_hydrodynamic_or_stokes_drag_torque_impulse": 0.011972303557277434
+    },
+    {
+      "checkpoint": "ADCFEB_000151",
+      "model": "oseen_self",
+      "horizon_periods": 798.9999999999999,
+      "state_points": 6393,
+      "delta_total_energy": 0.0002836302614651309,
+      "work": {
+        "RF": 0.04797584203890868,
+        "DC": 0.0002967608012396714,
+        "Coulomb": 3.798797568517032e-05,
+        "drag": -0.0476922117774419
+      },
+      "corrected_total_energy_residual": -1.6445178552260131e-15,
+      "corrected_total_energy_relative_residual": 7.0528476312486314e-12,
+      "corrected_residual_from_old_plus_dc_and_coulomb": -1.5582627961412132e-15,
+      "correction_identity_error": -8.625505908479991e-17,
+      "angular_momentum_balance_residual_by_particle": [
+        -4.2674197509029455e-16,
+        7.73686670285656e-16
+      ],
+      "summed_coulomb_torque_impulse": 7.37257477290143e-17,
+      "summed_hydrodynamic_or_stokes_drag_torque_impulse": 0.013640891438156316
+    },
+    {
+      "checkpoint": "ADCFEB_000151",
+      "model": "oseen_pair",
+      "horizon_periods": 798.9999999999999,
+      "state_points": 6393,
+      "delta_total_energy": 0.0002836232970391373,
+      "work": {
+        "RF": 0.04674213238658394,
+        "DC": 0.00029676082999969465,
+        "Coulomb": 3.798851466903103e-05,
+        "drag": -0.046458509089542493
+      },
+      "corrected_total_energy_residual": -2.3037127760972e-15,
+      "corrected_total_energy_relative_residual": 9.880233560178044e-12,
+      "corrected_residual_from_old_plus_dc_and_coulomb": -2.2743037921685305e-15,
+      "correction_identity_error": -2.940898392866931e-17,
+      "angular_momentum_balance_residual_by_particle": [
+        -1.5612511283791264e-16,
+        -1.1449174941446927e-15
+      ],
+      "summed_coulomb_torque_impulse": 4.2500725161431774e-17,
+      "summed_hydrodynamic_or_stokes_drag_torque_impulse": 0.011972563799486975
+    },
+    {
+      "checkpoint": "ADCFEB_000151",
+      "model": "rpy_pair",
+      "horizon_periods": 798.9999999999999,
+      "state_points": 6393,
+      "delta_total_energy": 0.00028362329703915433,
+      "work": {
+        "RF": 0.0467421323865841,
+        "DC": 0.0002967608299997018,
+        "Coulomb": 3.7988514669032655e-05,
+        "drag": -0.046458509089542445
+      },
+      "corrected_total_energy_residual": -2.4980018054066022e-15,
+      "corrected_total_energy_relative_residual": 1.0713506270071795e-11,
+      "corrected_residual_from_old_plus_dc_and_coulomb": -2.4655570553949735e-15,
+      "correction_identity_error": -3.244475001162872e-17,
+      "angular_momentum_balance_residual_by_particle": [
+        -3.0357660829594124e-16,
+        -5.967448757360216e-16
+      ],
+      "summed_coulomb_torque_impulse": 3.642919299551295e-17,
+      "summed_hydrodynamic_or_stokes_drag_torque_impulse": 0.011972563799487064
+    }
+  ],
+  "warning": "Energy residual was corrected after the integrator run: endpoint energy already contains DC and Coulomb potentials, so subtracting integrated DC/Coulomb work again double-counts these conservative channels. No integration was rerun."
+}

@@ -1,0 +1,355 @@
+{
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "__pycache__/global_phase_amplitude_search.cpython-312.pyc",
+      "bytes": 42205,
+      "sha256": "ef06d2b38881f1240611959344ebf61d03f9340870e09a7887608795de5d5083"
+    },
+    {
+      "path": "baseline_validation.json",
+      "bytes": 562,
+      "sha256": "ffbeaf726843e0bde6d663ef8b53557c94311467d94ddcf0c36b36056788d56a"
+    },
+    {
+      "path": "global_phase_amplitude_search.py",
+      "bytes": 23275,
+      "sha256": "cf78e309eae95b62009169cb3b9b7d2592230751841202046f7a5baf08ad48e5"
+    },
+    {
+      "path": "GLOBAL_SUMMARY.json",
+      "bytes": 61429,
+      "sha256": "a4e66957c37c44b38a93e2097ce31686f6f3b1d6160d5a3a1d91ef4a0af6e0cb"
+    },
+    {
+      "path": "initial_unconstrained/GLOBAL_SUMMARY.json",
+      "bytes": 61153,
+      "sha256": "445de37c8e85b92a142fbeb4708f49283c4eb6cfe0f48ccfbb145abba64d6de0"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/checkpoint_phase_and_amplitude_01.npz",
+      "bytes": 33573,
+      "sha256": "700ac2cfb9094ba2b314c458e778a044f05aaa729a04693924235bc50f135221"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/checkpoint_phase_and_amplitude_02.npz",
+      "bytes": 34533,
+      "sha256": "422558367d1a879b527efe42e611dd25f87835662cbc6dbfbc2703f3e19ca070"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/checkpoint_phase_and_amplitude_03.npz",
+      "bytes": 35117,
+      "sha256": "fc7a28e4f84e0c02cd4cdf322cd4bb47e7abbd1e380007178d978d1fb3601faa"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/chunk_01_summary.json",
+      "bytes": 210,
+      "sha256": "9245110bf30f6c700ca6a5b6b097f25f285fb563913684e90889f14026e5fe50"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/chunk_02_summary.json",
+      "bytes": 210,
+      "sha256": "5474b8c01e87715a7d92e89b9d301eb1ec5bc3dbbbd79bf0224ca3ca2735d2f3"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/chunk_03_summary.json",
+      "bytes": 210,
+      "sha256": "e525b0621978a59ff0ae010bc316272f3c3ccd23b609aa085268e9d85ec345cc"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 2268886,
+      "sha256": "43a92c8811e04150afe283a6913511710e119d4eca4c618c2ebf2ecc9b80fd36"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/sobol_top250.csv",
+      "bytes": 248327,
+      "sha256": "511b97339ccbbe7beeb49edd7b6f7ca3d7201db65fa1d92681ae2270a8af8e45"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/top_candidates.csv",
+      "bytes": 32706,
+      "sha256": "ee7218beffef571c0d95bc083b7785b4656f3633b5e22962c859d35feae7541a"
+    },
+    {
+      "path": "initial_unconstrained/phase_and_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 1383049,
+      "sha256": "dd487a5e5609080ce5222c5d54731892cbc10f578a88548c9c525490e3fba79c"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/checkpoint_phase_equal_amplitude_01.npz",
+      "bytes": 9666,
+      "sha256": "29865a207e4f693c7a1874d7dcb25012d20b249b28f581859afc07ffb4a1834e"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/checkpoint_phase_equal_amplitude_02.npz",
+      "bytes": 9662,
+      "sha256": "06bfe056d1a66f9867de4dee816eea991caefe3e69e536566274b8066a469440"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/checkpoint_phase_equal_amplitude_03.npz",
+      "bytes": 9672,
+      "sha256": "056ab41eec34e983c6b322d4c8fe63b95b67c1173fe21cf729dcd50125a68f05"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/chunk_01_summary.json",
+      "bytes": 212,
+      "sha256": "e8b7a111fd7f95eab3decf2d72932daeb4274cb84639a5911cd6967b7569f235"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/chunk_02_summary.json",
+      "bytes": 212,
+      "sha256": "a437f0aaf3de63eb795cc521122ad66bee4a666918ae288112ba01592d2d7ef2"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/chunk_03_summary.json",
+      "bytes": 212,
+      "sha256": "98904f6af7a65c6dcd86bf498054a9e43fe90c9b89a79623900c1786bd8769d0"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 610720,
+      "sha256": "59b29eb1313d5fb471b3148826fff76971268bd9f33f17ee0eb01e57a988e304"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/sobol_top250.csv",
+      "bytes": 184278,
+      "sha256": "2852fc3e50e61f34b37ea48cbce87ffa7bc53b041263a6417fe4e40a134f5847"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/top_candidates.csv",
+      "bytes": 26750,
+      "sha256": "b9d4fad448683f248f0f393ad1043b2ffa9d19bcab12dfb99aaf199dcd3ec114"
+    },
+    {
+      "path": "initial_unconstrained/phase_equal_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 1374618,
+      "sha256": "53188ab807aa0cf62dbb29d53a47dab51e7da0d2edf645e035f9f27404904f69"
+    },
+    {
+      "path": "make_manifest.py",
+      "bytes": 806,
+      "sha256": "61d72fb0fd2e27eb3c57b193c6ab68903f375f1166b4204ca8c1f373fc2d4ae3"
+    },
+    {
+      "path": "phase_and_amplitude/checkpoint_phase_and_amplitude_01.npz",
+      "bytes": 32456,
+      "sha256": "06fa7f7f198b651e146bea595f6fd9eaafcfdbbf9608d388c1288f5bb9019672"
+    },
+    {
+      "path": "phase_and_amplitude/checkpoint_phase_and_amplitude_02.npz",
+      "bytes": 33233,
+      "sha256": "4d07c1c9ee261e3193b860b6a99e68c6e5b775a1ad2b25cc34cdc652211ec5d2"
+    },
+    {
+      "path": "phase_and_amplitude/checkpoint_phase_and_amplitude_03.npz",
+      "bytes": 34541,
+      "sha256": "e836254e92d3251eb80899ad4e4c0df79c07238d3015c18352d23709b33677b4"
+    },
+    {
+      "path": "phase_and_amplitude/chunk_01_summary.json",
+      "bytes": 324,
+      "sha256": "823ceaf0a1406a896e8ded1cc22911b266eccdc151abf92256b33cecef5a1a3d"
+    },
+    {
+      "path": "phase_and_amplitude/chunk_02_summary.json",
+      "bytes": 324,
+      "sha256": "f74054fef55e2f5c640bd03f6d46942e016e7111c8783febd0c479c2efc7d797"
+    },
+    {
+      "path": "phase_and_amplitude/chunk_03_summary.json",
+      "bytes": 324,
+      "sha256": "13b9edb3ad0b3ea6f4e1533f96c6f8104912e1dfdf1a1dd4097a2dcfaa226b8c"
+    },
+    {
+      "path": "phase_and_amplitude/rejected_top20.json",
+      "bytes": 8081,
+      "sha256": "5eaf0d1cb019a296e33154c83793153104175a13a6dd32b81b72f8970d6a6fa8"
+    },
+    {
+      "path": "phase_and_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 2268246,
+      "sha256": "8366a838328c3db1b35af663c03978f3bd619f5e7e7dbf359bf3725eb61cb55d"
+    },
+    {
+      "path": "phase_and_amplitude/sobol_top250.csv",
+      "bytes": 246505,
+      "sha256": "57f3a2d43e232dcaeba7b25b12027cdb358adcc6cf73920eeea93e2f7239aeb0"
+    },
+    {
+      "path": "phase_and_amplitude/top_candidates.csv",
+      "bytes": 41153,
+      "sha256": "3a9a3cb833b6fb56fcf8c4956b68176080ae67615a47c1cabc4d3b1bee071596"
+    },
+    {
+      "path": "phase_and_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 2935414,
+      "sha256": "0fc5ac8239091ffccbebe40b4933102f1f303488dbef0a312851e363c23d3b5a"
+    },
+    {
+      "path": "phase_equal_amplitude/checkpoint_phase_equal_amplitude_01.npz",
+      "bytes": 9174,
+      "sha256": "13f23e0d3eb137f22818b8b6ce1df42b1eb8948d51de694c75cba0fea0617d00"
+    },
+    {
+      "path": "phase_equal_amplitude/checkpoint_phase_equal_amplitude_02.npz",
+      "bytes": 9329,
+      "sha256": "103b5cf48003c6760163858e8ffa554e9d8079bba73f23c438da2e413cf7b390"
+    },
+    {
+      "path": "phase_equal_amplitude/checkpoint_phase_equal_amplitude_03.npz",
+      "bytes": 9404,
+      "sha256": "b9dc3c838531022e2c229d6fe7fbbdc77d69ec40825443847cf6360250eed7cb"
+    },
+    {
+      "path": "phase_equal_amplitude/chunk_01_summary.json",
+      "bytes": 325,
+      "sha256": "73f7ef426a4817642fd50244eccd808dd2bd3810e53de126da7a5536e762ae75"
+    },
+    {
+      "path": "phase_equal_amplitude/chunk_02_summary.json",
+      "bytes": 325,
+      "sha256": "6f21de74a4632fd35c071b8a35ef293a702bae42b2163bc1384982f887f4faa1"
+    },
+    {
+      "path": "phase_equal_amplitude/chunk_03_summary.json",
+      "bytes": 325,
+      "sha256": "9c3cde53c561525b25f40a21ba8b30dfeef0e5ac64a452ddb27515f9d2a70051"
+    },
+    {
+      "path": "phase_equal_amplitude/rejected_top20.json",
+      "bytes": 7981,
+      "sha256": "eddc2a79f016b264495c490dbe28eb2052565c45ea50ae27e18339d3379cc248"
+    },
+    {
+      "path": "phase_equal_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 610695,
+      "sha256": "0d91c403070f3d476964bace533b6645e245139c58bf6849a69164631e2e72f5"
+    },
+    {
+      "path": "phase_equal_amplitude/sobol_top250.csv",
+      "bytes": 184334,
+      "sha256": "3efa49b98bf0d18a6da3c4d7875cf5ad867619950c91301b29d5890040def4d8"
+    },
+    {
+      "path": "phase_equal_amplitude/top_candidates.csv",
+      "bytes": 34997,
+      "sha256": "da11e6645823abbbf41293ad20466748f79af9766529c213b374636ad6ac7672"
+    },
+    {
+      "path": "phase_equal_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 3088727,
+      "sha256": "beac895fe7442709c7d710baa4c031ac2c48558a9129296cc8bd9d2c4c6a4467"
+    },
+    {
+      "path": "pre_feasibility_filter/GLOBAL_SUMMARY.json",
+      "bytes": 61071,
+      "sha256": "3895eb886113c67ecbf15ddd2151b423aeaed24dc6c560b75d3d7350568582b0"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/checkpoint_phase_and_amplitude_01.npz",
+      "bytes": 32753,
+      "sha256": "223e032b3a78d2104925fde9c58f04392b1621a75818c7b6a728540b04118edf"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/checkpoint_phase_and_amplitude_02.npz",
+      "bytes": 33623,
+      "sha256": "3e35784758e4bfebcfefd4c1da293aa32f22e1949f26e0405b1be3dc7eb4b4e5"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/checkpoint_phase_and_amplitude_03.npz",
+      "bytes": 34621,
+      "sha256": "ccd9adf0082d69ba89f081e9582f5b243c22d5ec64d332d1adb52c0ccb03b889"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/chunk_01_summary.json",
+      "bytes": 210,
+      "sha256": "9cefb26cfbe8d83949556e5144b616f3ff16c23a5bd3d63120125a554e4fe305"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/chunk_02_summary.json",
+      "bytes": 210,
+      "sha256": "63399579b2e550a75a98e9e55a7bc249030abf20f7604dcd065d2c9a964a9850"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/chunk_03_summary.json",
+      "bytes": 210,
+      "sha256": "3458612c1b16f82a4585daedf621a9f215e461ab958779a9bdd19b5a005ffd83"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 2268236,
+      "sha256": "f3777dbf6c2992bdf0a1aae4c140aa615b6e93b6894e4788bd57664b164366d9"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/sobol_top250.csv",
+      "bytes": 246505,
+      "sha256": "57f3a2d43e232dcaeba7b25b12027cdb358adcc6cf73920eeea93e2f7239aeb0"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/top_candidates.csv",
+      "bytes": 33593,
+      "sha256": "70666c70853aeaf8525158e5b224e64fcdddff0ce1c731a3b93c4f7b2c73e4b3"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_and_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 1385509,
+      "sha256": "0582743030434ff8bf37c4d518e4ee29b7c49706e65dbb37cc3d211baabab6dc"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/checkpoint_phase_equal_amplitude_01.npz",
+      "bytes": 9214,
+      "sha256": "c34e12ff18e74864a30e8c4f37a412b8aef51c733a6dcd144c1fd0a3be80b666"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/checkpoint_phase_equal_amplitude_02.npz",
+      "bytes": 9313,
+      "sha256": "f542f2f9f5f98f22f73cbb647fd166c51f8f004baa2eba3686d84ed0f4987b2e"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/checkpoint_phase_equal_amplitude_03.npz",
+      "bytes": 9486,
+      "sha256": "828e3785c0bcc3d657ceff88cc5bff650d360415fdf58d80f1603314db1b327e"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/chunk_01_summary.json",
+      "bytes": 212,
+      "sha256": "dd1f7c108bbd9409a9d60e0a2ea31e8c6031c8c7f734dd803b8a17747f9c0b57"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/chunk_02_summary.json",
+      "bytes": 212,
+      "sha256": "f471642d1c424b4c93b857740fcd72afa7da35cbac6cc67d5aa8405caaf8ba9e"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/chunk_03_summary.json",
+      "bytes": 212,
+      "sha256": "a90016b7bf3df258fe74de6c6c6dc04be0ea6ae9fe4578c5e4a85b55122ca5e0"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/sobol_initial_checkpoint.npz",
+      "bytes": 610694,
+      "sha256": "fb230bd356703d0f2d5afd319391577d255ae7daf6b5b4ead516f8779e00653d"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/sobol_top250.csv",
+      "bytes": 184334,
+      "sha256": "3efa49b98bf0d18a6da3c4d7875cf5ad867619950c91301b29d5890040def4d8"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/top_candidates.csv",
+      "bytes": 27321,
+      "sha256": "9e1829dc481de545dec9d3d954d21912f3ab6abbb7c736ae22601ca816c6c610"
+    },
+    {
+      "path": "pre_feasibility_filter/phase_equal_amplitude/top_candidates_full_spectrum.json",
+      "bytes": 1378302,
+      "sha256": "c3bc7b16e4b95538a70d4bdff86d9c11778d8ff2e4ba574ad0066c6c5783401b"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "bytes": 10393,
+      "sha256": "465ce855a44dcdbd1b0d58044e3b726d7a424ff5912f14f8a5ecda5e225935ac"
+    }
+  ]
+}

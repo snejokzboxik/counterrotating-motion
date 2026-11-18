@@ -1,0 +1,27 @@
+{
+  "method": "independent SciPy DOP853 full-spectrum RHS",
+  "status": "stopped at nearest saved case checkpoint; no next case was started",
+  "planned_matched_cases": 2,
+  "completed_cases": 1,
+  "comparisons": [
+    {
+      "source": "ADCFEB_chi_0.npz",
+      "periods": 1200.0,
+      "rtol": 1e-10,
+      "atol": 1e-12,
+      "max_step_RF_period_fraction": 0.010416666666666666,
+      "nfev": 1411217,
+      "max_state_error_vs_RK4_192": 0.6827156820885879,
+      "turns_after_5_drag_times": [7.119566115732481, 0.0023464052333232593],
+      "lambda": [0.014006650543716902, 0.0033229552023468145],
+      "chi": 0.0,
+      "energy_balance_residual": 1.479372180313021e-14,
+      "relative_energy_balance_residual": 2.0536140889524675e-11,
+      "integrated_coulomb_torque": [0.0, 0.0],
+      "sum_coulomb_torque": 0.0,
+      "minimum_separation": 0.10198886192586006,
+      "final_separation": 0.5350192580353766,
+      "interpretation": "No counter-rotation: the outer particle remains nearly pinned; the inner particle rotates in one direction. The long-horizon Cartesian discrepancy from RK4 is large, so quantitative orbit-by-orbit agreement is not claimed."
+    }
+  ]
+}
