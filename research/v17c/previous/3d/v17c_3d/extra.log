@@ -1,0 +1,8 @@
+/mnt/data/v17c_3d/run.py:17: RuntimeWarning: divide by zero encountered in divide
+  dd=x[:,None]-x[None,:];s=(dd**2).sum(2)+np.eye(n);ip=1/np.sqrt(s);np.fill_diagonal(ip,0);return E+c/2*(q[:,None]*q[None,:]*ip).sum()
+/opt/pyvenv/lib/python3.13/site-packages/scipy/optimize/_numdiff.py:686: RuntimeWarning: invalid value encountered in subtract
+  df = [f_eval - f0 for f_eval in f_evals]
+0 8 []
+8 6 []
+16 6 []
+24 6 []
