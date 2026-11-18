@@ -1,0 +1,66 @@
+[
+  {
+    "h_over_D": 0.035,
+    "boundary_edges_per_rod": 40,
+    "nodes": 7010,
+    "triangles": 12722,
+    "bases": [
+      {
+        "k": 2,
+        "coefficient": [
+          0.8762175525572874,
+          -8.358923495799177e-06
+        ],
+        "relative_complex_error": 0.0067799020777661615,
+        "relative_RMS_gradient_errors": {
+          "0.304": 0.04809645354493514,
+          "0.58": 0.024904368131988132
+        }
+      },
+      {
+        "k": -4,
+        "coefficient": [
+          0.8052720968381585,
+          1.3684614189109055e-05
+        ],
+        "relative_complex_error": 0.008838246107742661,
+        "relative_RMS_gradient_errors": {
+          "0.304": 0.1443952667292853,
+          "0.58": 0.07257391498583074
+        }
+      }
+    ]
+  },
+  {
+    "h_over_D": 0.018,
+    "boundary_edges_per_rod": 80,
+    "nodes": 21416,
+    "triangles": 40574,
+    "bases": [
+      {
+        "k": 2,
+        "coefficient": [
+          0.872417398503257,
+          2.940012318305841e-06
+        ],
+        "relative_complex_error": 0.002413494923849583,
+        "relative_RMS_gradient_errors": {
+          "0.304": 0.024165375325557327,
+          "0.58": 0.012909087588473058
+        }
+      },
+      {
+        "k": -4,
+        "coefficient": [
+          0.8007138616478037,
+          -7.060932869716108e-06
+        ],
+        "relative_complex_error": 0.003127722604541031,
+        "relative_RMS_gradient_errors": {
+          "0.304": 0.0723443587423465,
+          "0.58": 0.038182760960317634
+        }
+      }
+    ]
+  }
+]

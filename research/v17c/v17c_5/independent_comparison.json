@@ -1,0 +1,48 @@
+{
+  "basis": "all three integrations sample at integer primary RF periods",
+  "transient_periods_discarded": 2000,
+  "comparisons": {
+    "RK4_64_vs_RK4_128": {
+      "max_cartesian_state_abs_all_periods": 0.005362369844015079,
+      "max_cartesian_state_abs_after_transient": 0.005362369844015079,
+      "final_cartesian_state_abs_max": 0.002933108028497944,
+      "mean_radius_stroboscopic_left": [
+        0.30361899307173446,
+        0.5795473286961405
+      ],
+      "mean_radius_stroboscopic_right": [
+        0.30361882706524934,
+        0.5795469906215599
+      ]
+    },
+    "DOP853_vs_RK4_128": {
+      "max_cartesian_state_abs_all_periods": 0.00023081481065004295,
+      "max_cartesian_state_abs_after_transient": 0.00023081481065004295,
+      "final_cartesian_state_abs_max": 9.483785014663404e-05,
+      "mean_radius_stroboscopic_left": [
+        0.30361880873141484,
+        0.5795469680794697
+      ],
+      "mean_radius_stroboscopic_right": [
+        0.30361882706524934,
+        0.5795469906215599
+      ]
+    }
+  },
+  "nominal_turns_DOP853": [
+    220.22719041446882,
+    -35.6790603488329
+  ],
+  "nominal_turns_RK4_128": [
+    220.22714191011266,
+    -35.67908758135671
+  ],
+  "nominal_frequency_Hz_DOP853": [
+    1694.0553108805295,
+    -274.45431037563765
+  ],
+  "nominal_frequency_Hz_RK4_128": [
+    1694.0549377700972,
+    -274.4545198565901
+  ]
+}

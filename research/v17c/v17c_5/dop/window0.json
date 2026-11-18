@@ -1,0 +1,86 @@
+{
+  "absolute_RF_interval": [
+    0.0,
+    150.0
+  ],
+  "discard_initial_periods": 0,
+  "frequency_Hz": [
+    1363.4595898180871,
+    127.23941470522624
+  ],
+  "turns_after_transient": [
+    2.0451893847271307,
+    0.19085912205783936
+  ],
+  "turns_by_omega_integral": [
+    2.0451893847263327,
+    0.19085912205782796
+  ],
+  "max_abs_turn_difference_integral_vs_unwrap": 8.888445535149003e-13,
+  "turns_three_windows": [
+    [
+      0.4131335715322422,
+      0.4372447765479419
+    ],
+    [
+      0.7903986754771094,
+      -0.12079793132293287
+    ],
+    [
+      0.8416571377177792,
+      -0.12558772316716968
+    ]
+  ],
+  "radius_mean_stroboscopic": [
+    0.3035348969175145,
+    0.5743658369280886
+  ],
+  "radius_min_stroboscopic": [
+    0.22826864440935263,
+    0.29738178993830333
+  ],
+  "radius_max_stroboscopic": [
+    0.3816011529278953,
+    0.7416917334793969
+  ],
+  "max_abs_z_at_samples": 0.02,
+  "work_after_transient_rf_dc_coulomb_drag": [
+    [
+      0.026721080097990086,
+      0.00029048364615845976,
+      2.2709243876162743e-05,
+      -0.0257094210786945
+    ],
+    [
+      0.05545284057525076,
+      -0.0002357251140586578,
+      -1.719024914883952e-05,
+      -0.05475445447376174
+    ]
+  ],
+  "energy_change_late": 0.001710045102991476,
+  "max_abs_total_energy_residual": 1.779313588828879e-11,
+  "residual_normalized_integrated_rf": 2.1653020499097296e-10,
+  "last_state": [
+    0.31694348518955745,
+    0.09248971278392068,
+    -1.1245978274802276e-05,
+    -0.0011158694281851503,
+    0.051735301241451814,
+    -1.6648138844454408e-05,
+    -0.41651971159116274,
+    0.38214878950058656,
+    -6.444052900647204e-05,
+    -0.008638825325690484,
+    -0.012226319718186478,
+    3.735988258137946e-06
+  ],
+  "wall_s": 4.288743400000385,
+  "scipy": "1.18.0",
+  "rtol": 2e-11,
+  "atol": 2e-13,
+  "max_step_tau": 0.2617993877991494,
+  "solver": "scipy.integrate.ode dop853; continuous initial-value solution sampled once per primary period",
+  "restart_state_source": "nominal initial condition",
+  "max_abs_cartesian_difference_vs_archive_RK128": 1.8870667458995016e-06
+}

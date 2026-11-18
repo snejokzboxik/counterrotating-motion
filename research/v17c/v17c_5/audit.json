@@ -1,0 +1,144 @@
+{
+  "role": "archive audit; values labelled archive are provenance checks, not independent trajectory reproduction",
+  "sha256": {
+    "archive_filenames_checked": 31,
+    "mismatches": [],
+    "unlisted_except_manifest": []
+  },
+  "geometry": {
+    "type": "transverse harmonic expansion for infinite cylinders inside grounded circular shield, plus independent ideal three-dimensional DC quadrupole",
+    "a_D": 0.05,
+    "B_D": 1.1,
+    "R_D": 0.95,
+    "rf_mode_indices": [
+      [
+        -46,
+        -22,
+        2,
+        26
+      ],
+      [
+        -28,
+        -4,
+        20,
+        44
+      ]
+    ],
+    "spectral_cutoff_abs_k": 48,
+    "source": "verification_coeffs.npz (N=24; p=48). mfs_coefficients.csv contains coarser p=32 and also N=36. geometry_spectra.csv belongs to earlier 12-electrode screening.",
+    "p48_leading_unit_voltage_phasors_re_im": [
+      [
+        0.8703168951521896,
+        -2.3335848298530805e-16
+      ],
+      [
+        0.7982172694357996,
+        3.745550400654463e-16
+      ]
+    ],
+    "p32_p48_max_abs_normalized_mode_difference": 4.807072434553916e-09,
+    "p48_boundary_residual_by_family_as_logged": [
+      1.0224568823884551e-10,
+      1.0091009901727445e-10
+    ],
+    "aperture_archive": "accept r<=1 and abs(z)<=2; radial cutoff is the inscribed free cylinder. Axial cutoff is a numerical exit criterion."
+  },
+  "normalization": {
+    "p": [
+      0.075,
+      0.1875,
+      1.4142135623730951,
+      0.02933064342691967,
+      0.24862203964463545,
+      1e-05,
+      0.012,
+      0.012
+    ],
+    "initial_state": [
+      0.3,
+      0.0,
+      0.02,
+      0.0,
+      0.005299342645001941,
+      0.0,
+      0.2101674975964707,
+      0.5405826698609912,
+      -0.02,
+      0.0015041762082567774,
+      -0.0005847929784999693,
+      0.0
+    ],
+    "mass_ratio_m2_over_m1": 4.022169560789287,
+    "kappa1_kappa2_for_particle_1": [
+      0.08617550735572585,
+      0.23489845080967717
+    ],
+    "U2_over_U1": 2.7258145384631676,
+    "Vdc_over_U1": 0.3403593936017694,
+    "force": "a_i=(m1/m_i)*[-grad(P_RF)+beta*(x,y,-2z)+C*(u_i-u_j)/|u_i-u_j|^3]-lambda_i*v_i. P_RF sums the real parts of both carriers. grad(DC) supplies zero direct z torque.",
+    "voltage_phase": "V_j=Re[exp(ik0 theta_j-i Omega t)], k0=(+2,-4), leading phases negligible. Positive growing azimuth is counterclockwise when viewed from +z.",
+    "full_potential_gradient_fd_checks": {
+      "centered_difference_step": 1e-06,
+      "at_sample_numbers": [
+        0,
+        1,
+        123,
+        1999,
+        12411,
+        14999
+      ],
+      "time_offset_tau": 0.156,
+      "maximum_abs_error_against_mass_times_archive_acceleration_excluding_drag": 2.4194840575475496e-11
+    }
+  },
+  "archive_rotation_accounting": {
+    "initial_angular_velocity_scaled_by_Omega1": [
+      0.017664475483339805,
+      -0.002782509118621155
+    ],
+    "initial_orbital_frequency_at_100kHz_Hz": [
+      1766.4475483339804,
+      -278.25091186211546
+    ],
+    "initial_kinetic_energy_m1_R2_Omega1_2": [
+      1.4041516234568085e-05,
+      5.2379284171897035e-06
+    ],
+    "relaxation_periods_discarded": 2000,
+    "discarded_in_stokes_velocity_decay_times": 150.79644737231007,
+    "late_RF_work_per_particle": [
+      2.223733633270415,
+      4.454137081046481
+    ],
+    "late_drag_signed_work_per_particle": [
+      -2.2230872192295115,
+      -4.4501645713697195
+    ],
+    "late_dissipation_divided_by_initial_kinetic_energy": [
+      158322.44766819465,
+      849603.9305854734
+    ],
+    "energy_identity": "Delta(K+U_DC+U_C)=W_RF+W_drag. Archive work columns 14,16 (zero-based) store positive heat, requiring negative sign for drag work.",
+    "source": "archived base128.npz; q1=q2. Positive time-averaged RF power in each particle replenishes sustained losses."
+  },
+  "oseen": {
+    "closure": "F_drag=-lambda_i v_i(1+b|v_i|), b=0.5, corresponds to Re_D=(16/3)*b*|v_i| if identified with the leading diameter-based Oseen correction.",
+    "max_stroboscopic_speed_archive": [
+      0.07186031323808563,
+      0.09021498497032733
+    ],
+    "max_stroboscopic_implied_ReD_archive": [
+      0.19162750196822834,
+      0.2405732932542062
+    ],
+    "max_archive_stroboscopic_self_drag_multiplier": [
+      1.0359301566190429,
+      1.0451074924851638
+    ],
+    "physical_scope": "Illustrative perturbation of drag. Equal lambda and equal b for unequal masses cannot both follow from no-slip Stokes-Oseen drag on two spheres in one fluid: lambda_i proportional to a_i/m_i, b_i proportional to a_i. Archive specifies no physical radii or fluid to establish Re/Kn."
+  },
+  "archive_checks_limited": {
+    "independent_py": "Late DOP853 segment 14000-14200 periods restarts from archived RK4 state and imports the same archived RHS. Independent RHS must be implemented separately in this verification.",
+    "retained": "In the source the radial/axial aperture is tested after every whole RK step, while the published archive trajectory stores one state per primary RF period; archived mean radii refer to those stroboscopic samples."
+  }
+}
