@@ -1,0 +1,42 @@
+{
+  "all_checks_pass": true,
+  "branch_head": "cc41be9082c62e9b907eb459f453ac51001d4267",
+  "category_counts": {
+    "axis_ambiguous": 2,
+    "finite_particle_wall_contact": 122,
+    "inconclusive": 639,
+    "localized_or_slow": 86
+  },
+  "checks": {
+    "all_ids_in_range": true,
+    "charge_ratios_exact": true,
+    "checkpoint_shape_matches_handoff": true,
+    "classifier_exact": true,
+    "config_parameters_exact": true,
+    "metadata_exact": true,
+    "recorded_starts_match": true,
+    "rest_initials_exact": true,
+    "rest_phases_exact": true,
+    "row_count_849": true,
+    "run_config_ids_match": true,
+    "runs_sha256_matches_manifest": true,
+    "unique_task_keys": true,
+    "weak_initials_exact": true,
+    "weak_phases_exact": true,
+    "wide_initials_exact": true,
+    "wide_phases_exact": true
+  },
+  "config17_rows": {
+    "rest": 16,
+    "weak": 16,
+    "wide": 1
+  },
+  "config_rows_0_16": true,
+  "model_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "numba": "0.68.1",
+  "numpy": "2.5.5",
+  "python": "3.12.10",
+  "rows": 849,
+  "scipy": "1.18.1",
+  "sha256_runs": "dd2f3295915a4137e07b496f868b5cebf3856d4befd91980e91965193c0f3b3c"
+}

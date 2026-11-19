@@ -1,0 +1,40 @@
+{
+  "study": "V17C.10 counter-rotation basin optimization",
+  "created": "2026-11-19",
+  "status": "P0 preflight complete; Sobol screening pending",
+  "branch": "research/v17c",
+  "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
+  "files": [
+    {
+      "path": "build_manifest.py",
+      "size_bytes": 1280,
+      "sha256": "1ddbb043dc36918a9e3a0d05be4a71e7183cacbcd29b8ba8db6b8046a41362e8"
+    },
+    {
+      "path": "checkpoint_preflight.json",
+      "size_bytes": 1240,
+      "sha256": "2524f3a243d5ba52afbbb245e845d2912d270434514c9b8f420daab54aefab15"
+    },
+    {
+      "path": "PREFLIGHT_RU.md",
+      "size_bytes": 7621,
+      "sha256": "b2dba312aac256199970106cb6054be0c3136119fa6c9dd7517f260c6067d8d2"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 58,
+      "sha256": "11a120193e325b0c1b5f7b8c66ce9d048c946a79b9d696cc7edddb938910c0d9"
+    },
+    {
+      "path": "resume_preflight.py",
+      "size_bytes": 6060,
+      "sha256": "a923295080bcf8958df95ca70d07837c360331d70b46f326b6ffd7744b7ef978"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "size_bytes": 4190,
+      "sha256": "8b9eee94c2347e68c0abf8270c0363e8e646d0815473c4164ff417f3802c3a49"
+    }
+  ],
+  "manifest_note": "MANIFEST.json is intentionally excluded from its own file list."
+}
