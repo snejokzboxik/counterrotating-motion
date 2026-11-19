@@ -1,0 +1,58 @@
+{
+  "n_configs": 65,
+  "N_per_ensemble": 16,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide"
+  ],
+  "periods": 1800,
+  "steps": 48,
+  "transient_cycles": 400,
+  "config_seed": 20261138,
+  "start_seeds": {
+    "rest": 20261139,
+    "weak": 20261140,
+    "wide": 20261141
+  },
+  "finite_spheres_a_over_R": [
+    0.0002,
+    0.00189
+  ],
+  "objective": "maximize minimum CR proxy across rest/weak/wide while retaining all trials in denominators",
+  "parameter_ranges": {
+    "rf_scale_vs_candidate48": [
+      0.72,
+      1.17
+    ],
+    "B_over_A": [
+      2.4,
+      4.0
+    ],
+    "nu": [
+      2.3,
+      3.3
+    ],
+    "dc_scale_vs_rf_squared": [
+      0.55,
+      1.65
+    ],
+    "mass_ratio": [
+      5.0,
+      13.0
+    ],
+    "charge_ratio": [
+      2.2,
+      5.5
+    ],
+    "lambda1_lambda2": [
+      0.05,
+      0.2
+    ],
+    "C_eff": [
+      8e-06,
+      4e-05
+    ]
+  },
+  "note": "Short screen only. Keep an untouched new-seed holdout for final selection."
+}

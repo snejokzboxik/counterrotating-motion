@@ -14,7 +14,7 @@ def main():
     ap.add_argument("--count",type=int,default=128); ap.add_argument("--seed",type=int,default=20261124)
     ap.add_argument("--periods",type=int,default=5000); ap.add_argument("--steps",type=int,default=64)
     ap.add_argument("--threads",type=int,default=6); ap.add_argument("--search-starts",action="store_true")
-    ap.add_argument("--candidate-source",choices=["stage1","stage2_local","stage2_speed"],default="stage1")
+    ap.add_argument("--candidate-source",choices=["stage1","stage2_local","stage2_speed","stage4_candidate48"],default="stage1")
     ap.add_argument("--initials-from",type=Path,default=None,
                     help="reuse exact initial/phase arrays from a saved holdout NPZ")
     ap.add_argument("--oseen-Re-per-speed",type=float,default=0.0,
@@ -58,7 +58,13 @@ def main():
     if a.run_tag:
         label += f"_{a.run_tag}"
     _,family,k,coeff=load_model()
-    dest=HERE/("stage2" if a.candidate_source=="stage1" else "stage3")/"runs"; dest.mkdir(parents=True,exist_ok=True)
+    if a.candidate_source=="stage1":
+        dest=HERE/"stage2"/"runs"
+    elif a.candidate_source=="stage4_candidate48":
+        dest=HERE/"stage4_candidate48"/"holdout_runs"
+    else:
+        dest=HERE/"stage3"/"runs"
+    dest.mkdir(parents=True,exist_ok=True)
     stem=f"cfg{a.config_id}_{a.ensemble}_{label}_{len(init)}_{a.periods}p_{a.steps}s"
     result=dest/f"{stem}.jsonl"; meta=result.with_suffix(".meta.json")
     np.savez_compressed(dest/f"{stem}_initials.npz",initial=init,phases=phases,seed=seed,p=p,qratio=qratio)

@@ -1,0 +1,41 @@
+{
+  "study": "V17C.9 finite-sphere fresh-start Sobol refinement around candidate48",
+  "created_utc": "2026-11-19",
+  "files": [
+    {
+      "path": "optimization/refine_candidate48_screen.py",
+      "size_bytes": 8604,
+      "sha256": "e62013d4c6915547ff9e3e8e7af85ffe5c821934960cf7d2d49d0cddb9b5c90e"
+    },
+    {
+      "path": "optimization/validate_candidate.py",
+      "size_bytes": 7214,
+      "sha256": "a1b73b1372086656bf924d53ab43cefdb2f9f7f3c87b06ec20ef54832a0bba97"
+    },
+    {
+      "path": "optimization/stage4_candidate48/SCREEN_RU.md",
+      "size_bytes": 4364,
+      "sha256": "4bdecdc5b7862ade485bfa603b8e611b30236d4a1defd25a39315d36c23c9616"
+    },
+    {
+      "path": "optimization/stage4_candidate48/meta.json",
+      "size_bytes": 1034,
+      "sha256": "3278a778432a089152b297bff621c3408980676fe5fc355ef7878d5c24fe4394"
+    },
+    {
+      "path": "optimization/stage4_candidate48/configurations.npz",
+      "size_bytes": 10526,
+      "sha256": "73c7208b458f0099d8cdb96d682dfc887eb41b1e09e0cf64a97cc9e667508bef"
+    },
+    {
+      "path": "optimization/stage4_candidate48/ranked.json",
+      "size_bytes": 57759,
+      "sha256": "d0812fe71027022226f0aede7ae2280b95b25a1bbbad8c93026c2a8cea5a6d5b"
+    },
+    {
+      "path": "optimization/stage4_candidate48/runs.jsonl",
+      "size_bytes": 3381409,
+      "sha256": "96f601151f11b83a6e717108f4b816fc02185b34902b6714863da6086e90b52b"
+    }
+  ]
+}
