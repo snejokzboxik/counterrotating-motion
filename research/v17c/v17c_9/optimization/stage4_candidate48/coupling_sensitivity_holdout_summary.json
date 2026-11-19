@@ -1,0 +1,293 @@
+{
+  "study": "paired candidate52 Coulomb sensitivity N=128",
+  "parameters": {
+    "config_id": 52,
+    "scales": [
+      0,
+      1,
+      2
+    ],
+    "periods": 15000,
+    "steps": 64,
+    "sphere_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "matched_holdout_seed_tag": "pairedholdout20261150"
+  },
+  "ensembles": {
+    "rest": {
+      "C=0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "N_CR": 112,
+        "P_CR": 0.875,
+        "Wilson95_CR": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "N_retained": 112,
+        "P_retained": 0.875,
+        "Wilson95_retained": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          277.4592552832072,
+          -85.523399123097
+        ]
+      },
+      "C=C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "N_CR": 112,
+        "P_CR": 0.875,
+        "Wilson95_CR": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "N_retained": 112,
+        "P_retained": 0.875,
+        "Wilson95_retained": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          272.9007465152953,
+          -85.09815386620298
+        ]
+      },
+      "C=2C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "N_CR": 112,
+        "P_CR": 0.875,
+        "Wilson95_CR": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "N_retained": 112,
+        "P_retained": 0.875,
+        "Wilson95_retained": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          253.7852169029255,
+          -83.12610863665785
+        ]
+      },
+      "paired_vs_nominal": {
+        "C=0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 112,
+          "neither_CR": 16,
+          "exact_McNemar_p_two_sided": 1.0
+        },
+        "C=2C0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 112,
+          "neither_CR": 16,
+          "exact_McNemar_p_two_sided": 1.0
+        }
+      }
+    },
+    "weak": {
+      "C=0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "N_CR": 113,
+        "P_CR": 0.8828125,
+        "Wilson95_CR": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "N_retained": 113,
+        "P_retained": 0.8828125,
+        "Wilson95_retained": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          277.4501245965869,
+          -85.51624332518026
+        ]
+      },
+      "C=C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "N_CR": 113,
+        "P_CR": 0.8828125,
+        "Wilson95_CR": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "N_retained": 113,
+        "P_retained": 0.8828125,
+        "Wilson95_retained": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          272.9135493710732,
+          -85.1050609187995
+        ]
+      },
+      "C=2C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "N_CR": 113,
+        "P_CR": 0.8828125,
+        "Wilson95_CR": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "N_retained": 113,
+        "P_retained": 0.8828125,
+        "Wilson95_retained": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          253.78846122204254,
+          -83.11250921360805
+        ]
+      },
+      "paired_vs_nominal": {
+        "C=0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 113,
+          "neither_CR": 15,
+          "exact_McNemar_p_two_sided": 1.0
+        },
+        "C=2C0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 113,
+          "neither_CR": 15,
+          "exact_McNemar_p_two_sided": 1.0
+        }
+      }
+    },
+    "wide": {
+      "C=0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 104,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 23
+        },
+        "N_CR": 104,
+        "P_CR": 0.8125,
+        "Wilson95_CR": [
+          0.7361508192928257,
+          0.8706385830362315
+        ],
+        "N_retained": 105,
+        "P_retained": 0.8203125,
+        "Wilson95_retained": [
+          0.7447837371324442,
+          0.8771754002548395
+        ],
+        "P_CR_given_retention": 0.9904761904761905,
+        "median_frequency_Hz_CR": [
+          277.4565322263011,
+          -85.52627779846318
+        ]
+      },
+      "C=C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 104,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 23
+        },
+        "N_CR": 104,
+        "P_CR": 0.8125,
+        "Wilson95_CR": [
+          0.7361508192928257,
+          0.8706385830362315
+        ],
+        "N_retained": 105,
+        "P_retained": 0.8203125,
+        "Wilson95_retained": [
+          0.7447837371324442,
+          0.8771754002548395
+        ],
+        "P_CR_given_retention": 0.9904761904761905,
+        "median_frequency_Hz_CR": [
+          272.8882366642255,
+          -85.10455585010115
+        ]
+      },
+      "C=2C0": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 104,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 23
+        },
+        "N_CR": 104,
+        "P_CR": 0.8125,
+        "Wilson95_CR": [
+          0.7361508192928257,
+          0.8706385830362315
+        ],
+        "N_retained": 105,
+        "P_retained": 0.8203125,
+        "Wilson95_retained": [
+          0.7447837371324442,
+          0.8771754002548395
+        ],
+        "P_CR_given_retention": 0.9904761904761905,
+        "median_frequency_Hz_CR": [
+          253.81588200768692,
+          -83.1551236281015
+        ]
+      },
+      "paired_vs_nominal": {
+        "C=0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 104,
+          "neither_CR": 24,
+          "exact_McNemar_p_two_sided": 1.0
+        },
+        "C=2C0": {
+          "control_only_CR": 0,
+          "nominal_only_CR": 0,
+          "both_CR": 104,
+          "neither_CR": 24,
+          "exact_McNemar_p_two_sided": 1.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "config_id": 52,
+  "parameters": [
+    0.03956095746691348,
+    0.15032976498886072,
+    2.8996277751401065,
+    0.015917322789905167,
+    0.11307613545330587,
+    0.0,
+    0.1868668374144136,
+    0.10359181855828002
+  ],
+  "qratio": 3.5274259874597194,
+  "ensemble": "weak",
+  "n": 128,
+  "seed": null,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "matched to research\\v17c\\v17c_9\\optimization\\stage4_candidate48\\holdout_starts\\weak_N128_seed20261151.npz",
+  "candidate_source": "stage4_candidate48",
+  "coupling_scale": 0.0,
+  "run_tag": "pairedCscale0_20261150",
+  "oseen_Re_per_speed": 0.0,
+  "hydro_mode": "none",
+  "oseen_Re2_per_speed": 0.0,
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189
+}
