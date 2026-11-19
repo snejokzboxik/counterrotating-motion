@@ -107,18 +107,24 @@ def evaluate(times, state, p, qratio, skip):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--config-id", type=int, required=True)
-    ap.add_argument("--candidate-source", choices=("stage2_local","stage2_speed"), default="stage2_local")
+    ap.add_argument("--candidate-source", choices=("stage1","stage2_local","stage2_speed"), default="stage2_local")
     ap.add_argument("--ensemble", choices=("rest","weak","wide"), default="rest")
     ap.add_argument("--count", type=int, default=128)
     ap.add_argument("--keys", nargs="+", required=True)
     ap.add_argument("--periods", type=int, default=15000)
     a=ap.parse_args()
     npz=np.load(HERE/a.candidate_source/"configurations.npz")
-    p=np.asarray(npz["p"][a.config_id],float)
-    qr=float(npz["qratio"][a.config_id])
-    source=HERE/"stage3"/"runs"/f"cfg{a.config_id}_{a.ensemble}_holdout_{a.count}_{a.periods}p_64s.jsonl"
+    if a.candidate_source=="stage1":
+        p=np.asarray(npz["parameters"][a.config_id],float)
+        qr=float(npz["charge_ratio"][a.config_id])
+        result_root=HERE/"stage2"/"runs"
+    else:
+        p=np.asarray(npz["p"][a.config_id],float)
+        qr=float(npz["qratio"][a.config_id])
+        result_root=HERE/"stage3"/"runs"
+    source=result_root/f"cfg{a.config_id}_{a.ensemble}_holdout_{a.count}_{a.periods}p_64s.jsonl"
     data={int(r["index"]):r for r in (json.loads(x) for x in source.read_text(encoding="utf-8").splitlines() if x.strip())}
-    outdir=HERE/"stage3"/"runs"; results=[]
+    outdir=result_root; results=[]
     for token in a.keys:
         ix=int(token); r=data[ix]; tic=time.perf_counter()
         times=np.arange(a.periods+1,dtype=float)*T
