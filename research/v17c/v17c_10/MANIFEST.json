@@ -1,14 +1,19 @@
 {
   "study": "V17C.10 counter-rotation basin optimization",
   "created": "2026-11-19",
-  "status": "P0 Sobol screening complete; P1 failure analysis pending",
+  "status": "P0 screening and P1 candidate52 failure analysis complete; strict config17 holdout pending",
   "branch": "research/v17c",
   "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
   "files": [
     {
+      "path": "analyze_candidate52_failures.py",
+      "size_bytes": 20917,
+      "sha256": "e1d9074acc82ceb829dae2f20f11c0c695190811195208a82bcaac615a3754ad"
+    },
+    {
       "path": "build_manifest.py",
-      "size_bytes": 1290,
-      "sha256": "053c529f5533288b761c15c3ea8f8bd1cf73b5eb8f7e6053d0fe19c250eb4a03"
+      "size_bytes": 1324,
+      "sha256": "583f96a412a6e2fb43901b119e636c42a523ff57d482135bf903448a83732a51"
     },
     {
       "path": "checkpoint_preflight.json",
@@ -19,6 +24,66 @@
       "path": "COMPLETION_SCREEN_RU.md",
       "size_bytes": 7438,
       "sha256": "d24143afa4e66d271661a0f69d331f9484b4de4d89964de6204948666ed17bf0"
+    },
+    {
+      "path": "failure_analysis_candidate52.json",
+      "size_bytes": 60661,
+      "sha256": "c91179e9ebfee8991beb66a33a00fefa7af2feed70b22ac8f5c615137628c909"
+    },
+    {
+      "path": "FAILURE_ANALYSIS_RU.md",
+      "size_bytes": 8309,
+      "sha256": "a4b6e9d1a8007eb7947668b380898a65bf1b8c235ee366c30b4f2de78795712b"
+    },
+    {
+      "path": "failure_map_rest_phase1_by_phase2.csv",
+      "size_bytes": 1701,
+      "sha256": "919335dd54870c0e32a40f706d602bc21fb46eb73710874d417ba61a1b459445"
+    },
+    {
+      "path": "failure_map_rest_r1_by_r2.csv",
+      "size_bytes": 1492,
+      "sha256": "4595193bf46132ec20660f5a00c1488f00b9d5642d7e40a6240067b755a7f00b"
+    },
+    {
+      "path": "failure_map_rest_z1_by_z2.csv",
+      "size_bytes": 1121,
+      "sha256": "dbe05c1cb1f4627a372e4e19f1a215fdc94ccee0a621d0ffe050e48067ffd44d"
+    },
+    {
+      "path": "failure_map_weak_phase1_by_phase2.csv",
+      "size_bytes": 1700,
+      "sha256": "0508dfd0c5750305824fb66e6f81427e6be42005e96ed138d042b5fd79e682ae"
+    },
+    {
+      "path": "failure_map_weak_r1_by_r2.csv",
+      "size_bytes": 1498,
+      "sha256": "caf05970752506447cdf57c7b43e650f46bb4c92fea436117386fc938db7f7e7"
+    },
+    {
+      "path": "failure_map_weak_z1_by_z2.csv",
+      "size_bytes": 1105,
+      "sha256": "706e2deefde7417528f72f5109f05f653ad962f7536a887864defbbb4fcf7884"
+    },
+    {
+      "path": "failure_map_wide_phase1_by_phase2.csv",
+      "size_bytes": 1704,
+      "sha256": "33eb29bbc2719386eaba440875288b362a40aef0eec100be680fe15cd2b577ce"
+    },
+    {
+      "path": "failure_map_wide_r1_by_r2.csv",
+      "size_bytes": 1505,
+      "sha256": "c581b5e6cd1c5f3caf1e59a824f17b053af10a453bddb6051aaf205da3b589fe"
+    },
+    {
+      "path": "failure_map_wide_z1_by_z2.csv",
+      "size_bytes": 1070,
+      "sha256": "7adff9182a6314f275837ca1cd03230636950941d87b455d66f84f5e0ae60d0f"
+    },
+    {
+      "path": "failure_maps_candidate52.png",
+      "size_bytes": 496649,
+      "sha256": "7e1baf6af7e232651c580edde6af533ae1a2b0b477fa13f4a7248f2c440a65c4"
     },
     {
       "path": "PREFLIGHT_RU.md",
@@ -32,8 +97,8 @@
     },
     {
       "path": "requirements.txt",
-      "size_bytes": 58,
-      "sha256": "11a120193e325b0c1b5f7b8c66ce9d048c946a79b9d696cc7edddb938910c0d9"
+      "size_bytes": 77,
+      "sha256": "28d04aad60849fdcb0c2391e1ebafa097775350a4982dfbee0c1ad1f85140d13"
     },
     {
       "path": "resume_preflight.py",
@@ -52,8 +117,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 4239,
-      "sha256": "7f237d157652f83cef5a3fa709f7cc4d59968d74581a884967135929e68278f8"
+      "size_bytes": 6389,
+      "sha256": "17bf7bf534b5647108394d631d07d24c2e1c378d1f627cc47392109d88cf91e6"
     },
     {
       "path": "sobol_leader_config17.json",
