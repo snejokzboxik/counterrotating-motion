@@ -1,0 +1,196 @@
+{
+  "study": "fresh paired N=128 finite-sphere holdout",
+  "parameters": {
+    "refined_config": 52,
+    "baseline_config": 48,
+    "periods": 15000,
+    "steps_per_period": 64,
+    "sphere_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "shared_holdout_seed_tag": "pairedholdout20261150"
+  },
+  "ensembles": {
+    "rest": {
+      "candidate48": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 103,
+          "finite_particle_wall_contact": 25
+        },
+        "N_CR": 103,
+        "P_CR": 0.8046875,
+        "Wilson95_CR": [
+          0.7275592800992087,
+          0.864060387171622
+        ],
+        "N_retained": 103,
+        "P_retained": 0.8046875,
+        "Wilson95_retained": [
+          0.7275592800992087,
+          0.864060387171622
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          503.74530455457,
+          -92.19677322472383
+        ],
+        "median_minimum_separation_R_CR": 0.17870331046312027
+      },
+      "config52": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "N_CR": 112,
+        "P_CR": 0.875,
+        "Wilson95_CR": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "N_retained": 112,
+        "P_retained": 0.875,
+        "Wilson95_retained": [
+          0.8065737291824854,
+          0.9215735536123834
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          272.9007465152953,
+          -85.09815386620298
+        ],
+        "median_minimum_separation_R_CR": 0.17738163014710306
+      },
+      "paired_CR_change": {
+        "config52_only_CR": 10,
+        "candidate48_only_CR": 1,
+        "same_CR": 102,
+        "neither_CR": 15,
+        "exact_McNemar_p_two_sided": 0.01171875
+      }
+    },
+    "weak": {
+      "candidate48": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 102,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 25
+        },
+        "N_CR": 102,
+        "P_CR": 0.796875,
+        "Wilson95_CR": [
+          0.7190073141485271,
+          0.8574426180640773
+        ],
+        "N_retained": 103,
+        "P_retained": 0.8046875,
+        "Wilson95_retained": [
+          0.7275592800992087,
+          0.864060387171622
+        ],
+        "P_CR_given_retention": 0.9902912621359223,
+        "median_frequency_Hz_CR": [
+          503.76701571504924,
+          -92.19321418800705
+        ],
+        "median_minimum_separation_R_CR": 0.17869164128478038
+      },
+      "config52": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "N_CR": 113,
+        "P_CR": 0.8828125,
+        "Wilson95_CR": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "N_retained": 113,
+        "P_retained": 0.8828125,
+        "Wilson95_retained": [
+          0.8156338413466524,
+          0.9276831765064426
+        ],
+        "P_CR_given_retention": 1.0,
+        "median_frequency_Hz_CR": [
+          272.9135493710732,
+          -85.1050609187995
+        ],
+        "median_minimum_separation_R_CR": 0.177351781130038
+      },
+      "paired_CR_change": {
+        "config52_only_CR": 11,
+        "candidate48_only_CR": 0,
+        "same_CR": 102,
+        "neither_CR": 15,
+        "exact_McNemar_p_two_sided": 0.0009765625
+      }
+    },
+    "wide": {
+      "candidate48": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 84,
+          "axis_ambiguous": 3,
+          "finite_particle_wall_contact": 41
+        },
+        "N_CR": 84,
+        "P_CR": 0.65625,
+        "Wilson95_CR": [
+          0.5704962778456513,
+          0.7328984233188773
+        ],
+        "N_retained": 87,
+        "P_retained": 0.6796875,
+        "Wilson95_retained": [
+          0.5946341124452171,
+          0.7542697938939907
+        ],
+        "P_CR_given_retention": 0.9655172413793104,
+        "median_frequency_Hz_CR": [
+          503.76725191514305,
+          -92.20155851191711
+        ],
+        "median_minimum_separation_R_CR": 0.17869415657533266
+      },
+      "config52": {
+        "N_total": 128,
+        "category_counts": {
+          "CR_screen": 104,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 23
+        },
+        "N_CR": 104,
+        "P_CR": 0.8125,
+        "Wilson95_CR": [
+          0.7361508192928257,
+          0.8706385830362315
+        ],
+        "N_retained": 105,
+        "P_retained": 0.8203125,
+        "Wilson95_retained": [
+          0.7447837371324442,
+          0.8771754002548395
+        ],
+        "P_CR_given_retention": 0.9904761904761905,
+        "median_frequency_Hz_CR": [
+          272.8882366642255,
+          -85.10455585010115
+        ],
+        "median_minimum_separation_R_CR": 0.17736947305041673
+      },
+      "paired_CR_change": {
+        "config52_only_CR": 23,
+        "candidate48_only_CR": 3,
+        "same_CR": 81,
+        "neither_CR": 21,
+        "exact_McNemar_p_two_sided": 8.797645568847656e-05
+      }
+    }
+  }
+}

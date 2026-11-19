@@ -1,0 +1,153 @@
+{
+  "study": "V17C.9 candidate52 versus candidate48 paired finite-sphere holdout",
+  "created_utc": "2026-11-19",
+  "ensemble_sizes": {
+    "rest": 128,
+    "weak": 128,
+    "wide": 128
+  },
+  "periods": 15000,
+  "steps_per_period": 64,
+  "files": [
+    {
+      "path": "optimization/paired_stage4_holdout_summary.py",
+      "size_bytes": 3638,
+      "sha256": "f93bce46ef8e6713ccb953bc4c8272be6274c9ffbb60a03730e89fc0a500c063"
+    },
+    {
+      "path": "optimization/prepare_stage4_paired_holdout.py",
+      "size_bytes": 1660,
+      "sha256": "d7667679aba46a20e9466bb6b73aea45bebb2794a9279ebdfabe7039cd2af441"
+    },
+    {
+      "path": "optimization/stage4_candidate48/PAIRED_HOLDOUT_RU.md",
+      "size_bytes": 5407,
+      "sha256": "240bb01b493dd82b970f63de4ee54166f464f21c1171b74061b27010c94b07d4"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_starts/meta.json",
+      "size_bytes": 974,
+      "sha256": "4e0e771f123fe621fe34e79f9bc40bb2fdcc891e86cb1909fc5bdc5088f4bcb3"
+    },
+    {
+      "path": "optimization/stage4_candidate48/paired_holdout_summary.json",
+      "size_bytes": 5363,
+      "sha256": "ecbbd8b93cb2809cff9f33df616d0c5577892f9f3f54b789b24e3388bc2f8955"
+    },
+    {
+      "path": "optimization/verify_dop853_local.py",
+      "size_bytes": 8012,
+      "sha256": "bff32d959f0222238e96393c50262f1c4324d732c772e648cd99fc6aa0bb076a"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 144849,
+      "sha256": "d64c900e4e41a69f38ad3445642606bed6ffb85db13d7f1f4ec02f034f2c3461"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 768,
+      "sha256": "5364918fd1dc4dc0eaed4ae362c17b2c8eb816d494fae04d0902bafff94d0d44"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 8845,
+      "sha256": "66f5134e646016a3011e38316548fbc01b2366b5b1456e0e302a3f9af640ab7e"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 158309,
+      "sha256": "db89655130a6d829b956a2574d1532b94d015c97952ba8320f1f467c78a55134"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 768,
+      "sha256": "7d6e37fe9e860b6e79e26df5f671f0499c5995373166c116405cb10dd5d34cae"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 14491,
+      "sha256": "1d8f664ca46587c60493b74acf2e8fa5a49f4b879138b3112515ef0c13be4e11"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 155598,
+      "sha256": "cb405900f69405a0505bd27e9d08ae56cf7864beefd206fc8a6297813cf226b6"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 768,
+      "sha256": "48e08219f153f5e57e051d687aa74c66b289e0e128a99324c386fb7138cc84cd"
+    },
+    {
+      "path": "optimization/stage3/runs/cfg48_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 14550,
+      "sha256": "830e0c2aed62876023ddf0870be0cee728153f374e8af1f40ed8ee473913283b"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 146083,
+      "sha256": "82a072d411da6bb127cb2734f48d0a846d6badab6e23c2ba56a1953fa7e2477a"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 775,
+      "sha256": "365f38b7e537f760b39bd89ea0248abbd63856eb98713aaf44fc600b33bc35ab"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 8845,
+      "sha256": "aa3181375e27aa9b36df2e912b250596a1bd9aaf51f5f766b67cdd7a06224a47"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 159741,
+      "sha256": "279cde620577e2ad4f5231b3cb2ef558129e1514a57e0c6f9fc29aaa93330524"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 775,
+      "sha256": "d9eba4da73168fa15d7e6e0e25e6b0c7d5209f8081836fe9c3b478395e245589"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 14491,
+      "sha256": "ce95a1f3c2534472af6955c8abb50c4d8ddaf1ee9124335e29cd238708d7d78a"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 157954,
+      "sha256": "4eca2b9105704ff32d50bbac8bae7211f054849ed9f84aa7d19e94146bf4036d"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 775,
+      "sha256": "ecb1f35650230929dea70aedc3963e6c8b2712ef1baa10742aeb9fc55895f8ab"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s_initials.npz",
+      "size_bytes": 14550,
+      "sha256": "ec40f116b00390bc6dcb1d31a887e0c6794629c43010f69d8d5cf92865740878"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_starts/meta.json",
+      "size_bytes": 974,
+      "sha256": "4e0e771f123fe621fe34e79f9bc40bb2fdcc891e86cb1909fc5bdc5088f4bcb3"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_starts/rest_N128_seed20261150.npz",
+      "size_bytes": 9288,
+      "sha256": "83d8582227dbc88a1d5cc10a416f495960ae477c36448ce62657e99e53499721"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_starts/weak_N128_seed20261151.npz",
+      "size_bytes": 14934,
+      "sha256": "c5c76fc822e87f7b683289dd853b79e92a13d2a36c9aa1a54f96258e2b20457d"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_starts/wide_N128_seed20261152.npz",
+      "size_bytes": 14993,
+      "sha256": "ac7b3d0d5230c00a3a5b380f9b7938741c2c81e9a146aafaf25cc20370cacfb5"
+    }
+  ]
+}

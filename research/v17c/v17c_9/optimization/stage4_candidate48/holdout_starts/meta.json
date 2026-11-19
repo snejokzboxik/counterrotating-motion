@@ -1,0 +1,33 @@
+{
+  "purpose": "paired holdout for stage4 config52 vs stage2_speed candidate48",
+  "seeds": [
+    {
+      "ensemble": "rest",
+      "seed": 20261150,
+      "count": 128,
+      "file": "rest_N128_seed20261150.npz",
+      "initial_velocity_rule": "zero for rest; Gaussian dimensionless sigma 0.01 weak / 0.05 wide"
+    },
+    {
+      "ensemble": "weak",
+      "seed": 20261151,
+      "count": 128,
+      "file": "weak_N128_seed20261151.npz",
+      "initial_velocity_rule": "zero for rest; Gaussian dimensionless sigma 0.01 weak / 0.05 wide"
+    },
+    {
+      "ensemble": "wide",
+      "seed": 20261152,
+      "count": 128,
+      "file": "wide_N128_seed20261152.npz",
+      "initial_velocity_rule": "zero for rest; Gaussian dimensionless sigma 0.01 weak / 0.05 wide"
+    }
+  ],
+  "shared_starts_and_RF_phases": true,
+  "validation_horizon_periods": 15000,
+  "steps_per_period": 64,
+  "finite_spheres_a_over_R": [
+    0.0002,
+    0.00189
+  ]
+}
