@@ -1,0 +1,27 @@
+{
+  "config_id": 48,
+  "parameters": [
+    0.04880976385123572,
+    0.1444701664174033,
+    2.6519539955072107,
+    0.020872352432266747,
+    0.10392098910434167,
+    1.711728242963149e-05,
+    0.10852233544443492,
+    0.10657837930086715
+  ],
+  "qratio": 4.178242558147758,
+  "ensemble": "weak",
+  "n": 64,
+  "seed": null,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "matched to research\\v17c\\v17c_9\\optimization\\stage3\\runs\\cfg48_weak_holdout_128_15000p_64s_initials.npz",
+  "candidate_source": "stage2_speed",
+  "oseen_Re_per_speed": 0.0,
+  "hydro_mode": "rpy",
+  "oseen_Re2_per_speed": 0.0,
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189
+}
