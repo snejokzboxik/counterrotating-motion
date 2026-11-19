@@ -1,0 +1,85 @@
+{
+  "candidate": 48,
+  "N_per_ensemble": 64,
+  "periods": 15000,
+  "radii_over_R": [
+    0.0002,
+    0.00189
+  ],
+  "models": "hard spherical exclusion and radial/axial domain-contact classification; same Stokes drag as point control",
+  "ensemble_results": {
+    "rest": {
+      "N_total": 64,
+      "category_counts": {
+        "axis_ambiguous": 2,
+        "CR_screen": 50,
+        "finite_particle_wall_contact": 12
+      },
+      "strict_CR_N": 50,
+      "P_CR": 0.78125,
+      "Wilson95": [
+        0.6656721604337418,
+        0.8649768059328052
+      ],
+      "matched_status_changes_vs_point": {
+        "new_CR": 0,
+        "lost_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        503.7532912028414,
+        -92.20633965538926
+      ],
+      "maximum_abs_frequency_change_vs_point_CR_Hz": 0.0,
+      "minimum_center_separation_CR_over_R": 0.05064591807777953,
+      "minimum_surface_gap_CR_over_R": 0.04855591807777953
+    },
+    "weak": {
+      "N_total": 64,
+      "category_counts": {
+        "finite_particle_wall_contact": 17,
+        "CR_screen": 47
+      },
+      "strict_CR_N": 47,
+      "P_CR": 0.734375,
+      "Wilson95": [
+        0.6151712627143486,
+        0.8270362092577739
+      ],
+      "matched_status_changes_vs_point": {
+        "new_CR": 0,
+        "lost_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        503.7524072892843,
+        -92.19779944611025
+      ],
+      "maximum_abs_frequency_change_vs_point_CR_Hz": 0.0,
+      "minimum_center_separation_CR_over_R": 0.044949476595729385,
+      "minimum_surface_gap_CR_over_R": 0.04285947659572938
+    },
+    "wide": {
+      "N_total": 64,
+      "category_counts": {
+        "CR_screen": 43,
+        "finite_particle_wall_contact": 21
+      },
+      "strict_CR_N": 43,
+      "P_CR": 0.671875,
+      "Wilson95": [
+        0.549991058490915,
+        0.7742944209553081
+      ],
+      "matched_status_changes_vs_point": {
+        "new_CR": 0,
+        "lost_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        503.76484308659315,
+        -92.19006022075529
+      ],
+      "maximum_abs_frequency_change_vs_point_CR_Hz": 0.0,
+      "minimum_center_separation_CR_over_R": 0.0759800947979703,
+      "minimum_surface_gap_CR_over_R": 0.07389009479797029
+    }
+  }
+}
