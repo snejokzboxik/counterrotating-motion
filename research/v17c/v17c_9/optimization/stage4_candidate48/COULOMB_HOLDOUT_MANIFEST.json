@@ -16,8 +16,8 @@
   "files": [
     {
       "path": "README_RU.md",
-      "size_bytes": 4407,
-      "sha256": "23fbe5f719e6b993d2b76268fc8b420965c5a2ab5ec4ccb000a17cc7af624dd5"
+      "size_bytes": 5525,
+      "sha256": "962b7f578875427837891b58035aa0cc057209e5dd0963fdfcd415e2ae3675cb"
     },
     {
       "path": "optimization/stage4_candidate48/COULOMB_BASIN_SENSITIVITY_RU.md",

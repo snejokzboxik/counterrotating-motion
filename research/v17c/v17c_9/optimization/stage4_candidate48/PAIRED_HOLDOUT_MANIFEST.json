@@ -36,8 +36,8 @@
     },
     {
       "path": "optimization/verify_dop853_local.py",
-      "size_bytes": 8012,
-      "sha256": "bff32d959f0222238e96393c50262f1c4324d732c772e648cd99fc6aa0bb076a"
+      "size_bytes": 8056,
+      "sha256": "45d5d8ad57be9fe4d5bd0764eeffb209b68268992fd5c94db4e17b5d78332b75"
     },
     {
       "path": "optimization/stage3/runs/cfg48_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",

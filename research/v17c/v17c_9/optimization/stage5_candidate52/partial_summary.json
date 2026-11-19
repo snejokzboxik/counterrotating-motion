@@ -1,0 +1,359 @@
+{
+  "study": "V17C.9 candidate52 local Sobol screen, interrupted by explicit stop instruction",
+  "status": "INTERRUPTED_BY_USER_AFTER_849_COMPLETED_TRIALS; DO_NOT_RESUME_WITHOUT_NEW_AUTHORIZATION",
+  "planned_trials": 3120,
+  "valid_completed_trials": 849,
+  "valid_jsonl_rows": 849,
+  "unique_task_keys": 849,
+  "duplicate_task_keys": 0,
+  "complete_config_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "complete_config_count": 17,
+  "partial_config_rows": {
+    "17": {
+      "rest": 16,
+      "weak": 16,
+      "wide": 1
+    }
+  },
+  "category_counts": {
+    "finite_particle_wall_contact": 122,
+    "inconclusive": 639,
+    "axis_ambiguous": 2,
+    "localized_or_slow": 86
+  },
+  "top_complete_configs": [
+    {
+      "config_id": 12,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8958333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 12,
+        "qratio": 2.8767215669155117,
+        "rf_scale_vs_candidate52": 1.025422411505133,
+        "harmonic_potential_ratio_B_over_A": 3.412315630167723,
+        "nu": 2.5252472303807734,
+        "dc_scale_vs_rf_squared": 1.0108653228729965,
+        "mass_ratio": 10.352793641388416,
+        "charge_ratio": 2.8767215669155117,
+        "lambda1": 0.14874078214027117,
+        "lambda2": 0.135586068768021,
+        "C_eff": 1.1494120721441484e-05
+      }
+    },
+    {
+      "config_id": 11,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8541666666666666,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 11,
+        "qratio": 3.488246041536331,
+        "rf_scale_vs_candidate52": 1.070524431951344,
+        "harmonic_potential_ratio_B_over_A": 3.926317224279046,
+        "nu": 2.877138417214155,
+        "dc_scale_vs_rf_squared": 1.0944327538833023,
+        "mass_ratio": 9.009966932237148,
+        "charge_ratio": 3.488246041536331,
+        "lambda1": 0.22720936212788487,
+        "lambda2": 0.08030185384064228,
+        "C_eff": 9.92385923877875e-06
+      }
+    },
+    {
+      "config_id": 0,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.75,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.75,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "balanced_min_CR_proxy": 0.75,
+      "balanced_mean_CR_proxy": 0.8541666666666666,
+      "balanced_min_retention": 0.75,
+      "parameters": {
+        "config_id": 0,
+        "qratio": 3.594820925593376,
+        "rf_scale_vs_candidate52": 1.0850351056084038,
+        "harmonic_potential_ratio_B_over_A": 3.305022955685854,
+        "nu": 2.7784522719681264,
+        "dc_scale_vs_rf_squared": 1.1651162520051002,
+        "mass_ratio": 7.002155749127269,
+        "charge_ratio": 3.594820925593376,
+        "lambda1": 0.1562621857769014,
+        "lambda2": 0.14296886303001047,
+        "C_eff": 1.2065381089681292e-05
+      }
+    },
+    {
+      "config_id": 16,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.75,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.75,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "balanced_min_CR_proxy": 0.75,
+      "balanced_mean_CR_proxy": 0.8541666666666666,
+      "balanced_min_retention": 0.75,
+      "parameters": {
+        "config_id": 16,
+        "qratio": 3.937180422246456,
+        "rf_scale_vs_candidate52": 1.101871518790722,
+        "harmonic_potential_ratio_B_over_A": 3.518705473095179,
+        "nu": 2.688175563514233,
+        "dc_scale_vs_rf_squared": 1.0423010120168328,
+        "mass_ratio": 8.085670117288828,
+        "charge_ratio": 3.937180422246456,
+        "lambda1": 0.2505857074853219,
+        "lambda2": 0.09672776885553114,
+        "C_eff": 1.8148535423819444e-05
+      }
+    },
+    {
+      "config_id": 7,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.75
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.75
+      },
+      "balanced_min_CR_proxy": 0.75,
+      "balanced_mean_CR_proxy": 0.8125,
+      "balanced_min_retention": 0.75,
+      "parameters": {
+        "config_id": 7,
+        "qratio": 2.9840774863958357,
+        "rf_scale_vs_candidate52": 1.1137446095235646,
+        "harmonic_potential_ratio_B_over_A": 3.9587614703923464,
+        "nu": 2.6300980783998966,
+        "dc_scale_vs_rf_squared": 1.2492639722302556,
+        "mass_ratio": 6.447414709255099,
+        "charge_ratio": 2.9840774863958357,
+        "lambda1": 0.21634959763878006,
+        "lambda2": 0.08472138615267397,
+        "C_eff": 1.1085734358705854e-05
+      }
+    },
+    {
+      "config_id": 13,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.5625,
+        "weak": 0.6875,
+        "wide": 0.6875
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.5625,
+      "balanced_mean_CR_proxy": 0.6458333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 13,
+        "qratio": 3.9795039579272267,
+        "rf_scale_vs_candidate52": 0.9053050091490149,
+        "harmonic_potential_ratio_B_over_A": 4.038369785994291,
+        "nu": 3.057094316929579,
+        "dc_scale_vs_rf_squared": 1.125977899506688,
+        "mass_ratio": 8.84012902714312,
+        "charge_ratio": 3.9795039579272267,
+        "lambda1": 0.24556979548366825,
+        "lambda2": 0.07116101163990686,
+        "C_eff": 9.709158540024938e-06
+      }
+    },
+    {
+      "config_id": 6,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.0,
+        "weak": 0.0,
+        "wide": 0.0
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.875,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.0,
+      "balanced_mean_CR_proxy": 0.0,
+      "balanced_min_retention": 0.875,
+      "parameters": {
+        "config_id": 6,
+        "qratio": 3.8846962705254553,
+        "rf_scale_vs_candidate52": 0.957299511320889,
+        "harmonic_potential_ratio_B_over_A": 3.4920731592923406,
+        "nu": 2.9623142309486865,
+        "dc_scale_vs_rf_squared": 1.0560820231214165,
+        "mass_ratio": 10.957318548113108,
+        "charge_ratio": 3.8846962705254553,
+        "lambda1": 0.16486154493387045,
+        "lambda2": 0.1532864351975639,
+        "C_eff": 1.3176703995820483e-05
+      }
+    },
+    {
+      "config_id": 5,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.0,
+        "weak": 0.0,
+        "wide": 0.0
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.0,
+      "balanced_mean_CR_proxy": 0.0,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 5,
+        "qratio": 4.210013577342034,
+        "rf_scale_vs_candidate52": 0.8778426474891603,
+        "harmonic_potential_ratio_B_over_A": 4.127020863071084,
+        "nu": 2.8197157233953476,
+        "dc_scale_vs_rf_squared": 1.2712213622406126,
+        "mass_ratio": 10.077602617442608,
+        "charge_ratio": 4.210013577342034,
+        "lambda1": 0.19364958160311643,
+        "lambda2": 0.11440395890194623,
+        "C_eff": 1.702767303724567e-05
+      }
+    },
+    {
+      "config_id": 9,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.0,
+        "weak": 0.0,
+        "wide": 0.0
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.0,
+      "balanced_mean_CR_proxy": 0.0,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 9,
+        "qratio": 3.7185418546199798,
+        "rf_scale_vs_candidate52": 0.9377624187618494,
+        "harmonic_potential_ratio_B_over_A": 4.395007513836026,
+        "nu": 2.6726754710078238,
+        "dc_scale_vs_rf_squared": 0.8263444384559989,
+        "mass_ratio": 7.464878423139453,
+        "charge_ratio": 3.7185418546199798,
+        "lambda1": 0.18428511303610456,
+        "lambda2": 0.10912761334643507,
+        "C_eff": 1.8862176231719224e-05
+      }
+    },
+    {
+      "config_id": 10,
+      "source": "fresh Sobol around candidate52",
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.0,
+        "weak": 0.0,
+        "wide": 0.0
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 1.0
+      },
+      "balanced_min_CR_proxy": 0.0,
+      "balanced_mean_CR_proxy": 0.0,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 10,
+        "qratio": 4.19298003166914,
+        "rf_scale_vs_candidate52": 0.8578289051540195,
+        "harmonic_potential_ratio_B_over_A": 3.2252675745636226,
+        "nu": 3.1093539975583555,
+        "dc_scale_vs_rf_squared": 1.2112050993368029,
+        "mass_ratio": 7.522799843922257,
+        "charge_ratio": 4.19298003166914,
+        "lambda1": 0.17310824083422544,
+        "lambda2": 0.14576655881369296,
+        "C_eff": 1.3771938776671869e-05
+      }
+    }
+  ],
+  "candidate52_prior_independent_holdout_CR": {
+    "rest": [
+      112,
+      128
+    ],
+    "weak": [
+      113,
+      128
+    ],
+    "wide": [
+      104,
+      128
+    ]
+  },
+  "note": "Sobol proxy results use 1800 periods and are training-only. They cannot replace the untouched N=128+ holdout. No new integrations are authorized."
+}
