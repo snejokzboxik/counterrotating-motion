@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "all_3120_rows": true,
+    "all_task_keys_unique": true,
+    "all_65_configs_present": true,
+    "all_16_starts_per_group": true,
+    "configuration_parameters_unchanged": true,
+    "charge_ratios_unchanged": true,
+    "original_849_rows_preserved": true,
+    "rest_frozen_initials_exact": true,
+    "rest_frozen_phases_exact": true,
+    "weak_frozen_initials_exact": true,
+    "weak_frozen_phases_exact": true,
+    "wide_frozen_initials_exact": true,
+    "wide_frozen_phases_exact": true,
+    "all_run_inputs_and_seeds_exact": true,
+    "all_proxy_labels_reproduce": true,
+    "horizon_step_skip_and_sphere_metadata": true,
+    "saved_ranking_reproduces": true
+  },
+  "all_checks_pass": true
+}

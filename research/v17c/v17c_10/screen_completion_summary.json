@@ -1,0 +1,395 @@
+{
+  "study": "V17C.9 Sobol screen continuation",
+  "remote_base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
+  "status": "complete; training proxy only; no independent candidate validation",
+  "planned_trials": 3120,
+  "saved_rows": 3120,
+  "unique_task_keys": 3120,
+  "new_trials_completed": 2271,
+  "continuation_wall_seconds": 739.2,
+  "continuation_throughput_trials_per_second": 3.0722,
+  "prior_849_prefix_sha256": "dd2f3295915a4137e07b496f868b5cebf3856d4befd91980e91965193c0f3b3c",
+  "complete_runs_sha256": "597cb77ecc50647b18c8f6761aa19bc4bf7e9f713c9cffc982ac9db93f150545",
+  "all_checks_pass": true,
+  "checks": {
+    "all_3120_rows": true,
+    "all_task_keys_unique": true,
+    "all_65_configs_present": true,
+    "all_16_starts_per_group": true,
+    "configuration_parameters_unchanged": true,
+    "charge_ratios_unchanged": true,
+    "original_849_rows_preserved": true,
+    "rest_frozen_initials_exact": true,
+    "rest_frozen_phases_exact": true,
+    "weak_frozen_initials_exact": true,
+    "weak_frozen_phases_exact": true,
+    "wide_frozen_initials_exact": true,
+    "wide_frozen_phases_exact": true,
+    "all_run_inputs_and_seeds_exact": true,
+    "all_proxy_labels_reproduce": true,
+    "horizon_step_skip_and_sphere_metadata": true,
+    "saved_ranking_reproduces": true
+  },
+  "category_counts_all_ensembles": {
+    "finite_particle_wall_contact": 444,
+    "inconclusive": 2434,
+    "axis_ambiguous": 5,
+    "localized_or_slow": 237
+  },
+  "by_ensemble": {
+    "rest": {
+      "n": 1040,
+      "cr_proxy": 262,
+      "retained": 836,
+      "categories": {
+        "finite_particle_wall_contact": 204,
+        "inconclusive": 765,
+        "localized_or_slow": 71
+      }
+    },
+    "weak": {
+      "n": 1040,
+      "cr_proxy": 306,
+      "retained": 947,
+      "categories": {
+        "finite_particle_wall_contact": 93,
+        "inconclusive": 860,
+        "axis_ambiguous": 4,
+        "localized_or_slow": 83
+      }
+    },
+    "wide": {
+      "n": 1040,
+      "cr_proxy": 287,
+      "retained": 893,
+      "categories": {
+        "finite_particle_wall_contact": 147,
+        "inconclusive": 809,
+        "localized_or_slow": 83,
+        "axis_ambiguous": 1
+      }
+    }
+  },
+  "ranked_top_10": [
+    {
+      "config_id": 17,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.875,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.875,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.875,
+      "balanced_mean_CR_proxy": 0.9166666666666666,
+      "balanced_min_retention": 0.875,
+      "parameters": {
+        "config_id": 17,
+        "qratio": 2.831544530391693,
+        "rf_scale_vs_candidate52": 0.9770666169933975,
+        "harmonic_potential_ratio_B_over_A": 4.233245418220759,
+        "nu": 2.919998063147068,
+        "dc_scale_vs_rf_squared": 1.2255083622410894,
+        "mass_ratio": 9.57209057919681,
+        "charge_ratio": 2.831544530391693,
+        "lambda1": 0.15737671536869924,
+        "lambda2": 0.12258651829918216,
+        "C_eff": 7.519028585347006e-06
+      }
+    },
+    {
+      "config_id": 12,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8958333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 12,
+        "qratio": 2.8767215669155117,
+        "rf_scale_vs_candidate52": 1.025422411505133,
+        "harmonic_potential_ratio_B_over_A": 3.412315630167723,
+        "nu": 2.5252472303807734,
+        "dc_scale_vs_rf_squared": 1.0108653228729965,
+        "mass_ratio": 10.352793641388416,
+        "charge_ratio": 2.8767215669155117,
+        "lambda1": 0.14874078214027117,
+        "lambda2": 0.135586068768021,
+        "C_eff": 1.1494120721441484e-05
+      }
+    },
+    {
+      "config_id": 28,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8958333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 28,
+        "qratio": 4.041399236023426,
+        "rf_scale_vs_candidate52": 1.0138405519537628,
+        "harmonic_potential_ratio_B_over_A": 3.7663353107869626,
+        "nu": 2.841331109404564,
+        "dc_scale_vs_rf_squared": 1.1874675137922168,
+        "mass_ratio": 10.770195001736283,
+        "charge_ratio": 4.041399236023426,
+        "lambda1": 0.23869877333490921,
+        "lambda2": 0.10237622544973084,
+        "C_eff": 1.766424880220334e-05
+      }
+    },
+    {
+      "config_id": 49,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8958333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 49,
+        "qratio": 4.174863402545452,
+        "rf_scale_vs_candidate52": 0.9671945204026997,
+        "harmonic_potential_ratio_B_over_A": 4.082334735617041,
+        "nu": 2.5767362155020237,
+        "dc_scale_vs_rf_squared": 1.0447441574186087,
+        "mass_ratio": 9.889664433896542,
+        "charge_ratio": 4.174863402545452,
+        "lambda1": 0.19914773596727645,
+        "lambda2": 0.08786674567627951,
+        "C_eff": 1.2263594934009639e-05
+      }
+    },
+    {
+      "config_id": 64,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8958333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 64,
+        "qratio": 3.5274259874597194,
+        "rf_scale_vs_candidate52": 1.0,
+        "harmonic_potential_ratio_B_over_A": 3.7999526455998422,
+        "nu": 2.8996277751401065,
+        "dc_scale_vs_rf_squared": 1.0,
+        "mass_ratio": 8.843599013984203,
+        "charge_ratio": 3.5274259874597194,
+        "lambda1": 0.1868668374144136,
+        "lambda2": 0.10359181855828002,
+        "C_eff": 9.281679945656495e-06
+      }
+    },
+    {
+      "config_id": 33,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.9375
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.9375
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.875,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 33,
+        "qratio": 2.9071123272180555,
+        "rf_scale_vs_candidate52": 0.9935528113506734,
+        "harmonic_potential_ratio_B_over_A": 4.295136326178908,
+        "nu": 2.892622561752796,
+        "dc_scale_vs_rf_squared": 1.1486810056492687,
+        "mass_ratio": 11.057613680139184,
+        "charge_ratio": 2.9071123272180555,
+        "lambda1": 0.12111852859778945,
+        "lambda2": 0.15969047349191576,
+        "C_eff": 1.7848091858254363e-05
+      }
+    },
+    {
+      "config_id": 59,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.875
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.875,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 59,
+        "qratio": 3.5637158006429672,
+        "rf_scale_vs_candidate52": 1.0495116343721747,
+        "harmonic_potential_ratio_B_over_A": 4.021473547816277,
+        "nu": 2.9106775276362895,
+        "dc_scale_vs_rf_squared": 1.0175884926691652,
+        "mass_ratio": 10.87048976495862,
+        "charge_ratio": 3.5637158006429672,
+        "lambda1": 0.18179810613687133,
+        "lambda2": 0.10326407207937183,
+        "C_eff": 1.4003765263316692e-05
+      }
+    },
+    {
+      "config_id": 11,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8541666666666666,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 11,
+        "qratio": 3.488246041536331,
+        "rf_scale_vs_candidate52": 1.070524431951344,
+        "harmonic_potential_ratio_B_over_A": 3.926317224279046,
+        "nu": 2.877138417214155,
+        "dc_scale_vs_rf_squared": 1.0944327538833023,
+        "mass_ratio": 9.009966932237148,
+        "charge_ratio": 3.488246041536331,
+        "lambda1": 0.22720936212788487,
+        "lambda2": 0.08030185384064228,
+        "C_eff": 9.92385923877875e-06
+      }
+    },
+    {
+      "config_id": 44,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.9375,
+        "wide": 0.8125
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8541666666666666,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 44,
+        "qratio": 4.116820167005062,
+        "rf_scale_vs_candidate52": 1.0350015505217016,
+        "harmonic_potential_ratio_B_over_A": 3.561459914967418,
+        "nu": 2.9718295127153396,
+        "dc_scale_vs_rf_squared": 1.1095978485420346,
+        "mass_ratio": 9.097171096131206,
+        "charge_ratio": 4.116820167005062,
+        "lambda1": 0.21007160705348893,
+        "lambda2": 0.07948698199576046,
+        "C_eff": 8.40299139138059e-06
+      }
+    },
+    {
+      "config_id": 27,
+      "P_CR_proxy_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.8125
+      },
+      "P_retained_by_ensemble": {
+        "rest": 0.8125,
+        "weak": 0.875,
+        "wide": 0.8125
+      },
+      "balanced_min_CR_proxy": 0.8125,
+      "balanced_mean_CR_proxy": 0.8333333333333334,
+      "balanced_min_retention": 0.8125,
+      "parameters": {
+        "config_id": 27,
+        "qratio": 3.8298762634396555,
+        "rf_scale_vs_candidate52": 1.0402114551514388,
+        "harmonic_potential_ratio_B_over_A": 4.17222916521132,
+        "nu": 2.592220550775528,
+        "dc_scale_vs_rf_squared": 1.102840342000127,
+        "mass_ratio": 11.679565200582147,
+        "charge_ratio": 3.8298762634396555,
+        "lambda1": 0.17240410802743278,
+        "lambda2": 0.11271909547424876,
+        "C_eff": 6.5663771880312515e-06
+      }
+    }
+  ],
+  "anchor_candidate52": {
+    "config_id": 64,
+    "P_CR_proxy_by_ensemble": {
+      "rest": 0.8125,
+      "weak": 0.9375,
+      "wide": 0.9375
+    },
+    "P_retained_by_ensemble": {
+      "rest": 0.8125,
+      "weak": 0.9375,
+      "wide": 0.9375
+    },
+    "balanced_min_CR_proxy": 0.8125,
+    "balanced_mean_CR_proxy": 0.8958333333333334,
+    "balanced_min_retention": 0.8125,
+    "parameters": {
+      "config_id": 64,
+      "qratio": 3.5274259874597194,
+      "rf_scale_vs_candidate52": 1.0,
+      "harmonic_potential_ratio_B_over_A": 3.7999526455998422,
+      "nu": 2.8996277751401065,
+      "dc_scale_vs_rf_squared": 1.0,
+      "mass_ratio": 8.843599013984203,
+      "charge_ratio": 3.5274259874597194,
+      "lambda1": 0.1868668374144136,
+      "lambda2": 0.10359181855828002,
+      "C_eff": 9.281679945656495e-06
+    }
+  },
+  "interpretation": "The 16-start short-horizon Sobol score is a training proxy, not a strict P_CR estimate or holdout result."
+}

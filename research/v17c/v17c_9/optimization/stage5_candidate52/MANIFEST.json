@@ -1,8 +1,8 @@
 {
   "study": "V17C.9 candidate52 local Sobol screen",
   "created_utc": "2026-11-19",
-  "status": "stopped by user after 849/3120 trials; do not resume absent new authorization",
-  "completed_trials": 849,
+  "status": "completed after explicit V17C.10 authorization; 3,120/3,120 trials valid",
+  "completed_trials": 3120,
   "planned_trials": 3120,
   "complete_config_ids": [
     0,
@@ -21,9 +21,57 @@
     13,
     14,
     15,
-    16
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
   ],
-  "partial_config_id": 17,
+  "partial_config_id": null,
   "files": [
     {
       "path": "optimization/long_horizon_candidate48.py",
@@ -62,13 +110,13 @@
     },
     {
       "path": "optimization/stage5_candidate52/ranked.json",
-      "size_bytes": 15218,
-      "sha256": "bff8ede5ac279e24479d3c0919eb68d881b85c6701f82b1e3d1a63647bf36880"
+      "size_bytes": 58149,
+      "sha256": "27c14cd6f6ad7bf505844b734dd7264d400d5368ea841eb2362fb4996487d031"
     },
     {
       "path": "optimization/stage5_candidate52/runs.jsonl",
-      "size_bytes": 941319,
-      "sha256": "dd2f3295915a4137e07b496f868b5cebf3856d4befd91980e91965193c0f3b3c"
+      "size_bytes": 3463662,
+      "sha256": "597cb77ecc50647b18c8f6761aa19bc4bf7e9f713c9cffc982ac9db93f150545"
     },
     {
       "path": "optimization/validate_candidate.py",
@@ -80,5 +128,13 @@
       "size_bytes": 8056,
       "sha256": "45d5d8ad57be9fe4d5bd0764eeffb209b68268992fd5c94db4e17b5d78332b75"
     }
-  ]
+  ],
+  "resumption": {
+    "authorized_in": "research/v17c/v17c_10",
+    "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
+    "prior_completed_rows": 849,
+    "prior_runs_prefix_sha256": "dd2f3295915a4137e07b496f868b5cebf3856d4befd91980e91965193c0f3b3c",
+    "new_rows": 2271,
+    "anchor_config_id": 64
+  }
 }

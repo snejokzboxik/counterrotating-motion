@@ -25,7 +25,7 @@ def main():
     manifest = {
         "study": "V17C.10 counter-rotation basin optimization",
         "created": "2026-11-19",
-        "status": "P0 preflight complete; Sobol screening pending",
+        "status": "P0 Sobol screening complete; P1 failure analysis pending",
         "branch": "research/v17c",
         "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
         "files": files,
