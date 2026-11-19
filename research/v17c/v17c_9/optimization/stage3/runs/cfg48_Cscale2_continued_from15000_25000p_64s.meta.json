@@ -1,0 +1,15 @@
+{
+  "candidate_id": 48,
+  "coupling_scale": 2.0,
+  "prefix_periods": 15000,
+  "extension_periods": 25000,
+  "steps": 64,
+  "n_tasks": 140,
+  "source_files": {
+    "rest": "E:\\Games\\gegege\\12electrode\\worktrees\\v17c-publish\\research\\v17c\\v17c_9\\optimization\\stage3\\runs\\cfg48_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_Cscale2_64_15000p_64s.jsonl",
+    "weak": "E:\\Games\\gegege\\12electrode\\worktrees\\v17c-publish\\research\\v17c\\v17c_9\\optimization\\stage3\\runs\\cfg48_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_Cscale2_64_15000p_64s.jsonl",
+    "wide": "E:\\Games\\gegege\\12electrode\\worktrees\\v17c-publish\\research\\v17c\\v17c_9\\optimization\\stage3\\runs\\cfg48_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_Cscale2_64_15000p_64s.jsonl"
+  },
+  "phase_continuation": "phase_new = phase_original + [1, nu]*2pi*prefix_periods modulo 2pi",
+  "note": "Starts from saved final_state after the 15k-cycle run; no prefix replay."
+}
