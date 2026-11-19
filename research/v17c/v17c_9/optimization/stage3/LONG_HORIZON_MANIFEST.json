@@ -1,0 +1,76 @@
+{
+  "study": "V17C.9 candidate 48 long-horizon validation",
+  "created_utc": "2026-11-19",
+  "files": [
+    {
+      "path": "optimization/validate_candidate.py",
+      "size_bytes": 7048,
+      "sha256": "a5b0abe0693251e802e002264a3152f6e94d24a4b556ca008736913f42e05486"
+    },
+    {
+      "path": "optimization/long_horizon_candidate48.py",
+      "size_bytes": 10487,
+      "sha256": "25eed3a7db6fcb7641ec10a176019c8d3fd42ef0f7554a0e4b8ab38202c8d315"
+    },
+    {
+      "path": "optimization/verify_dop853_long_candidate48.py",
+      "size_bytes": 2450,
+      "sha256": "afa73bf40fe1d3cd0eab1f1b62faab4f11c04620dfe7592fead0c88362a5283d"
+    },
+    {
+      "path": "optimization/verify_dop853_local.py",
+      "size_bytes": 7568,
+      "sha256": "b76cfe4fc07e7b57b1e797a8064954e1271b4f073fa8d7fc3d34f754877ef940"
+    },
+    {
+      "path": "optimization/stage3/LONG_HORIZON_CANDIDATE48_RU.md",
+      "size_bytes": 9182,
+      "sha256": "614c58b5964decfaebd3b68154d194431fa89a2d6bbbcd38e347c388e42e7992"
+    },
+    {
+      "path": "optimization/stage3/long_candidate48_120000cycles_64s_diagnostics.json",
+      "size_bytes": 2921,
+      "sha256": "ccb3b99efa8647dd5a3bece6aaa5a0abe3b142a4b5bcc9a536b2614f8509e5de"
+    },
+    {
+      "path": "optimization/stage3/long_candidate48_120000cycles_128s_diagnostics.json",
+      "size_bytes": 2933,
+      "sha256": "d473ede6dd0e869eea308f2fd7ee65010819740d133999eb790bd0e6aa28ed61"
+    },
+    {
+      "path": "optimization/stage3/dop853_long_candidate48.json",
+      "size_bytes": 2820,
+      "sha256": "eeca42b819db5b40a8628e0e4b35cbc599529951531bd51fe779115220633d41"
+    },
+    {
+      "path": "optimization/stage3/long_candidate48_120000cycles_128s.png",
+      "size_bytes": 140874,
+      "sha256": "cc098532ca6a0f002245203e3896ec0f1ce181b137123ddf26dcfea6f9ff02b1"
+    },
+    {
+      "path": "optimization/stage3/runs/long_cfg48_rest0_120000p_64s.npz",
+      "size_bytes": 26364404,
+      "sha256": "94d018b2b7b7aad6214d9fc811d52508cf4bf482a3f5e7bbb9c99825f82fe22c"
+    },
+    {
+      "path": "optimization/stage3/runs/long_cfg48_rest0_120000p_128s.npz",
+      "size_bytes": 26362113,
+      "sha256": "8a41b32f607c7a227e4882ae11d701f62a7aa3912bc1ea2cc9d33f4c4f6dce33"
+    },
+    {
+      "path": "optimization/stage3/runs/dop_long_cfg48_rest0_120000p.npz",
+      "size_bytes": 26958192,
+      "sha256": "0e3d56d8c464c79654e243053453e4a1cca0d4faba9dba8c21ee02b39e008dda"
+    },
+    {
+      "path": "optimization/stage3/dop853_c2_continuation.json",
+      "size_bytes": 3149,
+      "sha256": "570e222c42ffacacc2d6dbd897da54983880990ef7b9f8205f92f1e93e803c73"
+    },
+    {
+      "path": "optimization/stage3/coulomb_diagnostics_dop853.json",
+      "size_bytes": 5394,
+      "sha256": "93eebd6afea6a13499cfcb39b9f49ce0251105823ec612440baff1933ae82c35"
+    }
+  ]
+}
