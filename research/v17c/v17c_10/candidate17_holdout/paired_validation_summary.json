@@ -1,0 +1,162 @@
+{
+  "study": "V17C.10 P2 strict matched holdout: training config17 vs candidate52",
+  "status": "complete; descriptive paired finite-horizon comparison",
+  "holdout": {
+    "ensembles": {
+      "rest": 128,
+      "weak": 128,
+      "wide": 128
+    },
+    "periods": 15000,
+    "steps_per_period": 64,
+    "transient_periods": 200,
+    "finite_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "hydrodynamics": "none",
+    "same_frozen_starts_and_phases": true,
+    "candidate17_parameters": [
+      0.038653690877216845,
+      0.16363055980329974,
+      2.919998063147068,
+      0.018622357207329094,
+      0.1044703862470041,
+      7.519028585347006e-06,
+      0.15737671536869924,
+      0.12258651829918216
+    ],
+    "candidate17_qratio": 2.831544530391693
+  },
+  "all_checks_pass": true,
+  "checks": {
+    "source_start_hashes_match_manifest": true,
+    "candidate17_rows_match_frozen_starts": true,
+    "candidate52_rows_match_frozen_starts": true,
+    "candidate17_strict_labels_reproduce": true,
+    "candidate52_strict_labels_reproduce": true,
+    "candidate17_metadata_matches_training_leader": true,
+    "candidate52_metadata_matches_original_holdout": true
+  },
+  "by_ensemble": {
+    "rest": {
+      "n": 128,
+      "candidate52_strict_cr": 112,
+      "candidate52_fraction": 0.875,
+      "config17_strict_cr": 115,
+      "config17_fraction": 0.8984375,
+      "difference_config17_minus_candidate52_percentage_points": 2.34375,
+      "category_counts_candidate52": {
+        "CR_screen": 112,
+        "finite_particle_wall_contact": 16
+      },
+      "category_counts_config17": {
+        "CR_screen": 115,
+        "finite_particle_wall_contact": 13
+      },
+      "paired_success_transitions": {
+        "both_success": 111,
+        "candidate52_only": 1,
+        "config17_only": 4,
+        "neither": 12
+      },
+      "category_transition_counts": {
+        "CR_screen -> CR_screen": 111,
+        "finite_particle_wall_contact -> finite_particle_wall_contact": 12,
+        "finite_particle_wall_contact -> CR_screen": 4,
+        "CR_screen -> finite_particle_wall_contact": 1
+      },
+      "config17_completed_periods_by_failure_category": {
+        "finite_particle_wall_contact": {
+          "n": 13,
+          "median": 0.0,
+          "q90": 0.0,
+          "max": 0
+        }
+      }
+    },
+    "weak": {
+      "n": 128,
+      "candidate52_strict_cr": 113,
+      "candidate52_fraction": 0.8828125,
+      "config17_strict_cr": 112,
+      "config17_fraction": 0.875,
+      "difference_config17_minus_candidate52_percentage_points": -0.78125,
+      "category_counts_candidate52": {
+        "CR_screen": 113,
+        "finite_particle_wall_contact": 15
+      },
+      "category_counts_config17": {
+        "CR_screen": 112,
+        "finite_particle_wall_contact": 16
+      },
+      "paired_success_transitions": {
+        "both_success": 110,
+        "candidate52_only": 3,
+        "config17_only": 2,
+        "neither": 13
+      },
+      "category_transition_counts": {
+        "CR_screen -> CR_screen": 110,
+        "finite_particle_wall_contact -> finite_particle_wall_contact": 13,
+        "finite_particle_wall_contact -> CR_screen": 2,
+        "CR_screen -> finite_particle_wall_contact": 3
+      },
+      "config17_completed_periods_by_failure_category": {
+        "finite_particle_wall_contact": {
+          "n": 16,
+          "median": 0.0,
+          "q90": 0.5,
+          "max": 1
+        }
+      }
+    },
+    "wide": {
+      "n": 128,
+      "candidate52_strict_cr": 104,
+      "candidate52_fraction": 0.8125,
+      "config17_strict_cr": 105,
+      "config17_fraction": 0.8203125,
+      "difference_config17_minus_candidate52_percentage_points": 0.78125,
+      "category_counts_candidate52": {
+        "finite_particle_wall_contact": 23,
+        "CR_screen": 104,
+        "axis_ambiguous": 1
+      },
+      "category_counts_config17": {
+        "finite_particle_wall_contact": 21,
+        "CR_screen": 105,
+        "axis_ambiguous": 2
+      },
+      "paired_success_transitions": {
+        "both_success": 101,
+        "candidate52_only": 3,
+        "config17_only": 4,
+        "neither": 20
+      },
+      "category_transition_counts": {
+        "CR_screen -> CR_screen": 101,
+        "finite_particle_wall_contact -> finite_particle_wall_contact": 19,
+        "finite_particle_wall_contact -> CR_screen": 4,
+        "CR_screen -> finite_particle_wall_contact": 2,
+        "CR_screen -> axis_ambiguous": 1,
+        "axis_ambiguous -> axis_ambiguous": 1
+      },
+      "config17_completed_periods_by_failure_category": {
+        "finite_particle_wall_contact": {
+          "n": 21,
+          "median": 0.0,
+          "q90": 0.0,
+          "max": 1
+        },
+        "axis_ambiguous": {
+          "n": 2,
+          "median": 15000.0,
+          "q90": 15000.0,
+          "max": 15000
+        }
+      }
+    }
+  },
+  "interpretation_note": "Paired counts are descriptive for these randomized Sobol holdout starts. Ensembles have different input distributions; do not collapse their rates into one universal basin probability or treat the training-selected config17 comparison as an untouched confirmatory test."
+}

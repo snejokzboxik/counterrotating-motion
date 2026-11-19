@@ -1,0 +1,33 @@
+{
+  "config_id": 17,
+  "parameters": [
+    0.038653690877216845,
+    0.16363055980329974,
+    2.919998063147068,
+    0.018622357207329094,
+    0.1044703862470041,
+    7.519028585347006e-06,
+    0.15737671536869924,
+    0.12258651829918216
+  ],
+  "qratio": 2.831544530391693,
+  "ensemble": "rest",
+  "n": 128,
+  "seed": null,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_9\\optimization\\stage4_candidate48\\holdout_starts\\rest_N128_seed20261150.npz",
+  "candidate_source": "V17C.10 short-screen config 17",
+  "candidate_training_status": "screen leader only; no independent validation; not a confirmed optimum",
+  "coupling_scale": 1.0,
+  "run_tag": "pairedholdout20261150",
+  "oseen_Re_per_speed": 0.0,
+  "hydro_mode": "none",
+  "oseen_Re2_per_speed": 0.0,
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "frozen_start_sha256": "83d8582227dbc88a1d5cc10a416f495960ae477c36448ce62657e99e53499721",
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "bde226beb244dc551c25a4c057a46ac570a12d0cc4759b406790d01550198e7d"
+}

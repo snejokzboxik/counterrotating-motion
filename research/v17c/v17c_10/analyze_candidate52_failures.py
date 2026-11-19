@@ -6,6 +6,7 @@ import hashlib
 import importlib.util
 import json
 import math
+import os
 import sys
 from collections import Counter
 from pathlib import Path
@@ -125,15 +126,18 @@ def load_scan_module():
     bundled_site = HERE.parents[2] / ".venv" / "Lib" / "site-packages"
     if bundled_site.exists() and str(bundled_site) not in sys.path:
         sys.path.insert(0, str(bundled_site))
+    cache_dir = HERE.parents[2] / ".venv" / "codex_numba_cache_v17c10"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    os.environ["NUMBA_CACHE_DIR"] = str(cache_dir)
     source = V17C9 / "baseline" / "basin_scan.py"
-    spec = importlib.util.spec_from_file_location("v17c10_basin_scan", source)
+    spec = importlib.util.spec_from_file_location("basin_scan", source)
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
 
 
-def replay_first_boundary_contact(module, initial, phase, model):
+def replay_first_boundary_contact(module, initial, phase, model, qratio=QRATIO):
     """Replay one saved failure with the source RK4 stages and locate first boundary."""
     p, family, k, coeff = model
     dt = 2.0 * math.pi / STEPS
@@ -176,7 +180,7 @@ def replay_first_boundary_contact(module, initial, phase, model):
     max_abs_z = np.array([abs(y[2]), abs(y[8])])
     for step in range(15000 * STEPS):
         t = step * dt
-        module._rhs(t, y, p, phase, family, k, coeff, QRATIO, y1,
+        module._rhs(t, y, p, phase, family, k, coeff, qratio, y1,
                     0.0, 0, a1, a2, -1.0)
         for j in range(12):
             tmp[j] = y[j] + 0.5*dt*y1[j]
@@ -184,7 +188,7 @@ def replay_first_boundary_contact(module, initial, phase, model):
         if event:
             return event
 
-        module._rhs(t+0.5*dt, tmp, p, phase, family, k, coeff, QRATIO, y2,
+        module._rhs(t+0.5*dt, tmp, p, phase, family, k, coeff, qratio, y2,
                     0.0, 0, a1, a2, -1.0)
         for j in range(12):
             tmp[j] = y[j] + 0.5*dt*y2[j]
@@ -192,7 +196,7 @@ def replay_first_boundary_contact(module, initial, phase, model):
         if event:
             return event
 
-        module._rhs(t+0.5*dt, tmp, p, phase, family, k, coeff, QRATIO, y3,
+        module._rhs(t+0.5*dt, tmp, p, phase, family, k, coeff, qratio, y3,
                     0.0, 0, a1, a2, -1.0)
         for j in range(12):
             tmp[j] = y[j] + dt*y3[j]
@@ -200,7 +204,7 @@ def replay_first_boundary_contact(module, initial, phase, model):
         if event:
             return event
 
-        module._rhs(t+dt, tmp, p, phase, family, k, coeff, QRATIO, y4,
+        module._rhs(t+dt, tmp, p, phase, family, k, coeff, qratio, y4,
                     0.0, 0, a1, a2, -1.0)
         for j in range(12):
             yn[j] = y[j] + dt*(y1[j]+2*y2[j]+2*y3[j]+y4[j])/6.0

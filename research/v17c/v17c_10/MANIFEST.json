@@ -1,19 +1,114 @@
 {
   "study": "V17C.10 counter-rotation basin optimization",
   "created": "2026-11-19",
-  "status": "P0 screening and P1 candidate52 failure analysis complete; strict config17 holdout pending",
+  "status": "P0-P2 complete: candidate52 analysis and config17 strict matched holdout; focused follow-up search pending",
   "branch": "research/v17c",
   "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
   "files": [
     {
       "path": "analyze_candidate52_failures.py",
-      "size_bytes": 20917,
-      "sha256": "e1d9074acc82ceb829dae2f20f11c0c695190811195208a82bcaac615a3754ad"
+      "size_bytes": 21106,
+      "sha256": "d3a2e8a9cb73bd8e0f5a3a0ad33625250f9180cbf133334aa501b3f151dc9255"
+    },
+    {
+      "path": "analyze_config17_failures.py",
+      "size_bytes": 10088,
+      "sha256": "986aec8baf4e88d29a4c463940235e47c42c0e4d5cdb78170831f711fbc25e92"
     },
     {
       "path": "build_manifest.py",
-      "size_bytes": 1324,
-      "sha256": "583f96a412a6e2fb43901b119e636c42a523ff57d482135bf903448a83732a51"
+      "size_bytes": 1340,
+      "sha256": "86be77fdaa6f89f29bdff3c3f0039357b7c10a70d9b358702b514a3a9d5669ec"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 146355,
+      "sha256": "28552193de17a085e643f077105781bac709c182e994400dae76536365bba0cc"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 1163,
+      "sha256": "cb688de0259de26d05e04581b9365e63f49ef77d1cfdcde099e87b5018e0c2ac"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 159430,
+      "sha256": "029c4e6aebe002f8b6acce9d6d1b584f17ecba4387358167fb148326bf69ad32"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_weak_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 1163,
+      "sha256": "53d97f4e157a89209281e63d1255fb7b5a4b9bc3cf18b8ba2377e6be45420762"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 158062,
+      "sha256": "32af96362b9295be24d884f3e87b07df57f45b154bff6cc1625d343d6f4a6dc2"
+    },
+    {
+      "path": "candidate17_holdout/cfg17_wide_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 1163,
+      "sha256": "0558b560ffc23530126895442cfb324bff75377811362a2313c9763f894ae294"
+    },
+    {
+      "path": "candidate17_holdout/failure_analysis_config17.json",
+      "size_bytes": 39670,
+      "sha256": "790925b852c9c352463a45f9246cbb4b21e8a83ce34c34a932ca50049f9fbc3a"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_rest_phase1_by_phase2.csv",
+      "size_bytes": 1692,
+      "sha256": "c3c324e3e41e489cda2d44c9b9ef0196c2b7449b2f6844cf3d25da030f3d1d25"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_rest_r1_by_r2.csv",
+      "size_bytes": 1490,
+      "sha256": "eda8a66e5cce2bf6d44f482c226c6f0347a0c117554901fddd5c22e6c83e0aa4"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_rest_z1_by_z2.csv",
+      "size_bytes": 1103,
+      "sha256": "42075e376df11d9b1779d46f37db44bff0d9595e0708e988a07473547396ca82"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_weak_phase1_by_phase2.csv",
+      "size_bytes": 1705,
+      "sha256": "503e97138bd989e28294a20c043310bf5a469d05188d48b0a51c3d9b1c8654f1"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_weak_r1_by_r2.csv",
+      "size_bytes": 1493,
+      "sha256": "94516cb8b30b9ea9e45b2fa7c721ba514217d3eb683df28f9dbb8be19101c96a"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_weak_z1_by_z2.csv",
+      "size_bytes": 1103,
+      "sha256": "034e5f48619474dafb20cd41d6a180446e7e58690cc9e7f7008d661f4f58aa75"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_wide_phase1_by_phase2.csv",
+      "size_bytes": 1703,
+      "sha256": "2f90da616cda99dd21e86a90c3f45f01b2a97d721876340fe751bae413a5e866"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_wide_r1_by_r2.csv",
+      "size_bytes": 1500,
+      "sha256": "553b025d070f5176f4576c1d06af314d9162a76ce4083eb3e6fd97c10a3fa483"
+    },
+    {
+      "path": "candidate17_holdout/failure_map_config17_wide_z1_by_z2.csv",
+      "size_bytes": 1068,
+      "sha256": "999fe7018a8cea049f2fd8ef920ec66f005f9aebbe5a6ec968bce91c27b8909a"
+    },
+    {
+      "path": "candidate17_holdout/failure_maps_config17.png",
+      "size_bytes": 498367,
+      "sha256": "de60b07c5192a2bafe23a0e6872b5ef4102d9069b5b1d1b19dde7dc83414ad99"
+    },
+    {
+      "path": "candidate17_holdout/paired_validation_summary.json",
+      "size_bytes": 5304,
+      "sha256": "6b7b86b75d5e3de5a4b3f5c7a7301e01ecbff579a3a2c9620b025a85e89e3d3d"
     },
     {
       "path": "checkpoint_preflight.json",
@@ -22,8 +117,13 @@
     },
     {
       "path": "COMPLETION_SCREEN_RU.md",
-      "size_bytes": 7438,
-      "sha256": "d24143afa4e66d271661a0f69d331f9484b4de4d89964de6204948666ed17bf0"
+      "size_bytes": 8342,
+      "sha256": "13a72e06466b33b14e7a8e4839907be039d826d137f59891aee63c21b0f14283"
+    },
+    {
+      "path": "CONFIG17_HOLDOUT_RU.md",
+      "size_bytes": 7781,
+      "sha256": "3cef2059389bae3cd3148c742cdf85090ef1a22a7b2aeb9f10dda7ee78b7fb76"
     },
     {
       "path": "failure_analysis_candidate52.json",
@@ -106,6 +206,11 @@
       "sha256": "a923295080bcf8958df95ca70d07837c360331d70b46f326b6ffd7744b7ef978"
     },
     {
+      "path": "run_config17_matched_holdout.py",
+      "size_bytes": 8940,
+      "sha256": "bde226beb244dc551c25a4c057a46ac570a12d0cc4759b406790d01550198e7d"
+    },
+    {
       "path": "screen_completion_summary.json",
       "size_bytes": 12499,
       "sha256": "a8b3091870ab8acd25c083e1ee0bd80df1304bd723762432d5251f33e63da3cf"
@@ -117,13 +222,18 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 6389,
-      "sha256": "17bf7bf534b5647108394d631d07d24c2e1c378d1f627cc47392109d88cf91e6"
+      "size_bytes": 8253,
+      "sha256": "98b8343b2b15c99891e3fbd82f27afb389828f3cc39139f453666274473e8371"
     },
     {
       "path": "sobol_leader_config17.json",
       "size_bytes": 1364,
       "sha256": "f92cb0a3174430a6103a77d72336f48497bfe634cb90f93e8360decc0fad95be"
+    },
+    {
+      "path": "validate_config17_matched_holdout.py",
+      "size_bytes": 10322,
+      "sha256": "46564256bb9c4b87b14a81054965a2f8089879a24b9d75b68f1b2da0a48ed6fb"
     },
     {
       "path": "validate_screen.py",
