@@ -1,0 +1,10 @@
+{
+  "seed": 20261123,
+  "configs": 132,
+  "starts_per_config": 32,
+  "periods": 1800,
+  "steps": 48,
+  "skip": 400,
+  "common_start_set": "32 evenly spaced indices from frozen V17C.5 rest ensemble seed 20261119",
+  "note": "amplitude-ratio variable is normalized leading-potential B/A; actual electrode-voltage ratio reconstructed from archived unit-voltage MFS coefficients. qratio, lambda, and C are varied independently here; physical feasibility is a later gate"
+}

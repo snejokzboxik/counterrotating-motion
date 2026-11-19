@@ -1,0 +1,92 @@
+{
+  "config_id": 53,
+  "N_total_is_denominator": true,
+  "ensembles": {
+    "rest": {
+      "N_total": 64,
+      "category_counts": {
+        "CR_screen": 36,
+        "lost_retention": 26,
+        "axis_ambiguous": 2
+      },
+      "strict_counter_rotation_N": 36,
+      "strict_counter_rotation_fraction": 0.5625,
+      "strict_counter_rotation_Wilson95": [
+        0.4408620895699301,
+        0.6770599029559693
+      ],
+      "retained_N": 38,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 36,
+      "median_frequency_Hz_all": [
+        653.7678179637924,
+        -137.465187980964
+      ],
+      "median_frequency_Hz_qualitative": [
+        654.0150245076172,
+        -137.58280454016221
+      ],
+      "median_turns_qualitative": [
+        96.79422362712737,
+        -20.36225507194401
+      ],
+      "minimum_particle_separation_qualitative": 0.04395073586503855
+    },
+    "weak": {
+      "N_total": 64,
+      "category_counts": {
+        "CR_screen": 39,
+        "lost_retention": 24,
+        "axis_ambiguous": 1
+      },
+      "strict_counter_rotation_N": 39,
+      "strict_counter_rotation_fraction": 0.609375,
+      "strict_counter_rotation_Wilson95": [
+        0.4869191788027247,
+        0.7194443081175993
+      ],
+      "retained_N": 40,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 39,
+      "median_frequency_Hz_all": [
+        653.8633961205496,
+        -137.4758778812269
+      ],
+      "median_frequency_Hz_qualitative": [
+        654.0594534624835,
+        -137.52892441908034
+      ],
+      "median_turns_qualitative": [
+        96.80079911244756,
+        -20.354280814023888
+      ],
+      "minimum_particle_separation_qualitative": 0.031411371607773166
+    },
+    "wide": {
+      "N_total": 64,
+      "category_counts": {
+        "lost_retention": 40,
+        "CR_screen": 24
+      },
+      "strict_counter_rotation_N": 24,
+      "strict_counter_rotation_fraction": 0.375,
+      "strict_counter_rotation_Wilson95": [
+        0.2666598017882464,
+        0.497496213159955
+      ],
+      "retained_N": 24,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 24,
+      "median_frequency_Hz_all": [
+        0.0,
+        0.0
+      ],
+      "median_frequency_Hz_qualitative": [
+        653.9067792095484,
+        -137.53334657196757
+      ],
+      "median_turns_qualitative": [
+        96.77820332301316,
+        -20.3549352926512
+      ],
+      "minimum_particle_separation_qualitative": 0.14275605271192485
+    }
+  }
+}

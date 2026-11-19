@@ -1,0 +1,10 @@
+{
+  "n_configs": 64,
+  "n_per_ensemble": 16,
+  "periods": 1800,
+  "steps": 48,
+  "transient_cycles": 400,
+  "seed": 20261134,
+  "criterion": "retained, min radius >=0.02, opposite signs in every late window, >=1.05 turns per particle during the 1400-cycle post-transient screen",
+  "limitation": "short-horizon screening proxy only; independent long holdout is required"
+}

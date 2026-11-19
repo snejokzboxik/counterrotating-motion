@@ -1,0 +1,92 @@
+{
+  "config_id": 48,
+  "N_total_is_denominator": true,
+  "ensembles": {
+    "rest": {
+      "N_total": 128,
+      "category_counts": {
+        "CR_screen": 98,
+        "axis_ambiguous": 2,
+        "lost_retention": 28
+      },
+      "strict_counter_rotation_N": 98,
+      "strict_counter_rotation_fraction": 0.765625,
+      "strict_counter_rotation_Wilson95": [
+        0.6851645688917714,
+        0.8306064230879273
+      ],
+      "retained_N": 100,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 98,
+      "median_frequency_Hz_all": [
+        503.73349811713456,
+        -92.17957233642406
+      ],
+      "median_frequency_Hz_qualitative": [
+        503.77381503628925,
+        -92.20572369058058
+      ],
+      "median_turns_qualitative": [
+        74.55852462537081,
+        -13.646447106205926
+      ],
+      "minimum_particle_separation_qualitative": 0.01205227310962603
+    },
+    "weak": {
+      "N_total": 128,
+      "category_counts": {
+        "lost_retention": 30,
+        "CR_screen": 98
+      },
+      "strict_counter_rotation_N": 98,
+      "strict_counter_rotation_fraction": 0.765625,
+      "strict_counter_rotation_Wilson95": [
+        0.6851645688917714,
+        0.8306064230879273
+      ],
+      "retained_N": 98,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 98,
+      "median_frequency_Hz_all": [
+        503.675963550457,
+        -92.17310781573934
+      ],
+      "median_frequency_Hz_qualitative": [
+        503.7578976820377,
+        -92.19879220362898
+      ],
+      "median_turns_qualitative": [
+        74.55616885694158,
+        -13.64542124613709
+      ],
+      "minimum_particle_separation_qualitative": 0.031231561700970474
+    },
+    "wide": {
+      "N_total": 128,
+      "category_counts": {
+        "CR_screen": 83,
+        "lost_retention": 44,
+        "axis_ambiguous": 1
+      },
+      "strict_counter_rotation_N": 83,
+      "strict_counter_rotation_fraction": 0.6484375,
+      "strict_counter_rotation_Wilson95": [
+        0.5624978389203745,
+        0.7257271271859276
+      ],
+      "retained_N": 84,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 83,
+      "median_frequency_Hz_all": [
+        503.5743809261102,
+        -92.15203256474561
+      ],
+      "median_frequency_Hz_qualitative": [
+        503.77028123093277,
+        -92.19613009208223
+      ],
+      "median_turns_qualitative": [
+        74.55800162217805,
+        -13.64502725362817
+      ],
+      "minimum_particle_separation_qualitative": 0.04389374971168469
+    }
+  }
+}

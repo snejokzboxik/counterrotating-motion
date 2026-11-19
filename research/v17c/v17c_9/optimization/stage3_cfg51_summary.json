@@ -1,0 +1,92 @@
+{
+  "config_id": 51,
+  "N_total_is_denominator": true,
+  "ensembles": {
+    "rest": {
+      "N_total": 128,
+      "category_counts": {
+        "inconclusive": 107,
+        "lost_retention": 21
+      },
+      "strict_counter_rotation_N": 0,
+      "strict_counter_rotation_fraction": 0.0,
+      "strict_counter_rotation_Wilson95": [
+        0.0,
+        0.029136956273508416
+      ],
+      "retained_N": 107,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 107,
+      "median_frequency_Hz_all": [
+        405.9028270138633,
+        -47.13114828172401
+      ],
+      "median_frequency_Hz_qualitative": [
+        405.92292428096647,
+        -47.139364968540825
+      ],
+      "median_turns_qualitative": [
+        60.07659279358304,
+        -6.976626015344042
+      ],
+      "minimum_particle_separation_qualitative": 0.016426239305653408
+    },
+    "weak": {
+      "N_total": 128,
+      "category_counts": {
+        "lost_retention": 30,
+        "inconclusive": 94,
+        "axis_ambiguous": 4
+      },
+      "strict_counter_rotation_N": 0,
+      "strict_counter_rotation_fraction": 0.0,
+      "strict_counter_rotation_Wilson95": [
+        0.0,
+        0.029136956273508416
+      ],
+      "retained_N": 98,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 94,
+      "median_frequency_Hz_all": [
+        405.89763640435297,
+        -47.12454001703334
+      ],
+      "median_frequency_Hz_qualitative": [
+        405.94120368328777,
+        -47.13904405076772
+      ],
+      "median_turns_qualitative": [
+        60.07929814512659,
+        -6.976578519513623
+      ],
+      "minimum_particle_separation_qualitative": 0.053289733259740533
+    },
+    "wide": {
+      "N_total": 128,
+      "category_counts": {
+        "inconclusive": 61,
+        "lost_retention": 65,
+        "axis_ambiguous": 2
+      },
+      "strict_counter_rotation_N": 0,
+      "strict_counter_rotation_fraction": 0.0,
+      "strict_counter_rotation_Wilson95": [
+        0.0,
+        0.029136956273508416
+      ],
+      "retained_N": 63,
+      "qualitative_opposite_sign_N_without_10_turn_cutoff": 61,
+      "median_frequency_Hz_all": [
+        0.0,
+        0.0
+      ],
+      "median_frequency_Hz_qualitative": [
+        405.8852428739561,
+        -47.139462798314305
+      ],
+      "median_turns_qualitative": [
+        60.0710159453455,
+        -6.976640494150518
+      ],
+      "minimum_particle_separation_qualitative": 0.08837701718052766
+    }
+  }
+}

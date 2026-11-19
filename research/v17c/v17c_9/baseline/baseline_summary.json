@@ -1,0 +1,143 @@
+{
+  "parameter_source": "../v17c_5/input/config.json",
+  "ensembles": {
+    "rest": {
+      "N_total": 512,
+      "counts": {
+        "lost_retention": 465,
+        "CR_screen": 44,
+        "axis_ambiguous": 3
+      },
+      "N_CR_screen": 44,
+      "N_retained": 47,
+      "P_CR_lower_bound": 0.0859375,
+      "P_CR_Wilson95": [
+        0.06463895595699304,
+        0.11340307081351925
+      ],
+      "P_retention": 0.091796875,
+      "P_retention_Wilson95": [
+        0.06973502506867789,
+        0.11993848245508186
+      ],
+      "P_CR_given_retention": 0.9361702127659575,
+      "P_CR_given_retention_Wilson95": [
+        0.8283738581687556,
+        0.9780546147945668
+      ],
+      "screen_horizon_periods": 5000,
+      "initial_steps_per_primary_RF_period": 32,
+      "refinement_steps_per_primary_RF_period": 64,
+      "classification_mismatches_vs_32step": 1,
+      "mismatch_examples": [
+        {
+          "index": 9,
+          "32step": "lost_retention",
+          "64step": "CR_screen"
+        }
+      ],
+      "transient_discard_periods": 200,
+      "uncertain_count": 3
+    },
+    "weak": {
+      "N_total": 512,
+      "counts": {
+        "lost_retention": 468,
+        "CR_screen": 41,
+        "axis_ambiguous": 3
+      },
+      "N_CR_screen": 41,
+      "N_retained": 44,
+      "P_CR_lower_bound": 0.080078125,
+      "P_CR_Wilson95": [
+        0.05957552205350922,
+        0.10683502396375558
+      ],
+      "P_retention": 0.0859375,
+      "P_retention_Wilson95": [
+        0.06463895595699304,
+        0.11340307081351925
+      ],
+      "P_CR_given_retention": 0.9318181818181818,
+      "P_CR_given_retention_Wilson95": [
+        0.8177495562977846,
+        0.9765406040926183
+      ],
+      "screen_horizon_periods": 5000,
+      "initial_steps_per_primary_RF_period": 32,
+      "refinement_steps_per_primary_RF_period": 64,
+      "classification_mismatches_vs_32step": 2,
+      "mismatch_examples": [
+        {
+          "index": 117,
+          "32step": "axis_ambiguous",
+          "64step": "CR_screen"
+        },
+        {
+          "index": 274,
+          "32step": "axis_ambiguous",
+          "64step": "lost_retention"
+        }
+      ],
+      "transient_discard_periods": 200,
+      "uncertain_count": 3
+    },
+    "wide": {
+      "N_total": 1024,
+      "counts": {
+        "lost_retention": 998,
+        "CR_screen": 21,
+        "axis_ambiguous": 4,
+        "inconclusive": 1
+      },
+      "N_CR_screen": 21,
+      "N_retained": 26,
+      "P_CR_lower_bound": 0.0205078125,
+      "P_CR_Wilson95": [
+        0.013451953263233687,
+        0.031147783814205146
+      ],
+      "P_retention": 0.025390625,
+      "P_retention_Wilson95": [
+        0.01738527192268663,
+        0.03694359206842391
+      ],
+      "P_CR_given_retention": 0.8076923076923077,
+      "P_CR_given_retention_Wilson95": [
+        0.6212374288068301,
+        0.9149293885105758
+      ],
+      "screen_horizon_periods": 5000,
+      "initial_steps_per_primary_RF_period": 32,
+      "refinement_steps_per_primary_RF_period": 64,
+      "classification_mismatches_vs_32step": 4,
+      "mismatch_examples": [
+        {
+          "index": 424,
+          "32step": "lost_retention",
+          "64step": "axis_ambiguous"
+        },
+        {
+          "index": 584,
+          "32step": "axis_ambiguous",
+          "64step": "lost_retention"
+        },
+        {
+          "index": 896,
+          "32step": "CR_screen",
+          "64step": "axis_ambiguous"
+        },
+        {
+          "index": 1008,
+          "32step": "CR_screen",
+          "64step": "axis_ambiguous"
+        }
+      ],
+      "transient_discard_periods": 200,
+      "uncertain_count": 5
+    }
+  },
+  "classification": "Only CR_screen counts as a confirmed screen success; escaped, slow, axis ambiguous, singular and inconclusive outcomes remain failures in the unconditional denominator.",
+  "sampling": "independent scrambled Sobol designs; separate seeds and start distributions; both RF phases uniform and independent. The 64-step rerun reuses exactly the frozen 32-step initial conditions.",
+  "caveat": "P0 includes full ensemble scans at 32 and 64 RK4 steps/cycle over 5000 cycles. Any CR_screen remains a screening result requiring independent high-accuracy verification. Finite-size/contact physics is not yet applied."
+}

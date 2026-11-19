@@ -1,0 +1,5 @@
+# Large source archives are kept in the local input directory and identified by
+# SHA-256 in input/SOURCES.json; don't add these multi-megabyte duplicates to git.
+input/*.zip
+__pycache__/
+*.pyc

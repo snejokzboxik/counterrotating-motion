@@ -1,0 +1,19 @@
+{
+  "ensemble": "rest",
+  "count": 16,
+  "seed": 20261119,
+  "periods": 500,
+  "steps": 32,
+  "skip": 100,
+  "parameters": [
+    0.075,
+    0.1875,
+    1.4142135623730951,
+    0.02933064342691967,
+    0.24862203964463545,
+    1e-05,
+    0.012,
+    0.012
+  ],
+  "phase_sampling": "independent Sobol uniform [0,2pi)"
+}

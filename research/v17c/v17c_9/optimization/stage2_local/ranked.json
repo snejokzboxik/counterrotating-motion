@@ -1,0 +1,2407 @@
+[
+  {
+    "config_id": 51,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.8125,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.9375,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.75,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.75,
+    "balanced_mean_proxy": 0.8333333333333334,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 2.567833725363016,
+      "rf1_scale": 0.5340464991796762,
+      "harmonic_potential_ratio_B_over_A": 2.8191861824132505,
+      "drive_U2_U1_physical": 3.0738314730626053,
+      "nu": 2.3796812858432532,
+      "dc_relative_to_rf_squared": 1.3858986884355544,
+      "mass_ratio": 6.424224905669689,
+      "charge_ratio": 2.567833725363016,
+      "lambda1": 0.06381069174094926,
+      "lambda2": 0.051334107371085805,
+      "C_eff": 6.999360894665785e-06
+    }
+  },
+  {
+    "config_id": 22,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.9375,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.875,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.6875,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.6875,
+    "balanced_mean_proxy": 0.8333333333333334,
+    "balanced_min_retention": 0.6875,
+    "parameters": {
+      "qratio": 2.3872712552547455,
+      "rf1_scale": 0.6723995489347726,
+      "harmonic_potential_ratio_B_over_A": 3.409902488719672,
+      "drive_U2_U1_physical": 3.7179047113975274,
+      "nu": 3.0645571261644364,
+      "dc_relative_to_rf_squared": 1.6120439380407334,
+      "mass_ratio": 7.256387636065483,
+      "charge_ratio": 2.3872712552547455,
+      "lambda1": 0.07715865219583214,
+      "lambda2": 0.1226478995314676,
+      "C_eff": 1.1876310235490661e-05
+    }
+  },
+  {
+    "config_id": 64,
+    "source": "anchor_config81",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.8125,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.875,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.625,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.625,
+    "balanced_mean_proxy": 0.7708333333333334,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 2.949699336995206,
+      "rf1_scale": 0.5719781984575093,
+      "harmonic_potential_ratio_B_over_A": 3.2464565248228614,
+      "drive_U2_U1_physical": 3.5396953575403063,
+      "nu": 2.6203008126467466,
+      "dc_relative_to_rf_squared": 1.7705837506800888,
+      "mass_ratio": 6.8825529385358095,
+      "charge_ratio": 2.949699336995206,
+      "lambda1": 0.041356202523255156,
+      "lambda2": 0.09651990108816413,
+      "C_eff": 5.408377644222588e-06
+    }
+  },
+  {
+    "config_id": 8,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.9375,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.8125,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.5,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.5,
+    "balanced_mean_proxy": 0.75,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 2.601941641420126,
+      "rf1_scale": 0.48170947398059066,
+      "harmonic_potential_ratio_B_over_A": 3.3777474040165547,
+      "drive_U2_U1_physical": 3.6828451924498187,
+      "nu": 2.758550280146301,
+      "dc_relative_to_rf_squared": 1.8589002903550864,
+      "mass_ratio": 8.461852636188269,
+      "charge_ratio": 2.601941641420126,
+      "lambda1": 0.03956466056123461,
+      "lambda2": 0.1257142660532149,
+      "C_eff": 5.633576402699266e-06
+    }
+  },
+  {
+    "config_id": 34,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.75,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.875,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.5,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.5,
+    "balanced_mean_proxy": 0.7083333333333334,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 2.0215571597218513,
+      "rf1_scale": 0.7173684324417262,
+      "harmonic_potential_ratio_B_over_A": 3.701253395713866,
+      "drive_U2_U1_physical": 4.035572126629209,
+      "nu": 2.778807405754924,
+      "dc_relative_to_rf_squared": 1.1919007308781147,
+      "mass_ratio": 7.460537638515234,
+      "charge_ratio": 2.0215571597218513,
+      "lambda1": 0.06457567424803341,
+      "lambda2": 0.07610469388432099,
+      "C_eff": 1.828769798050219e-05
+    }
+  },
+  {
+    "config_id": 53,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.5,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.5,
+    "balanced_mean_proxy": 0.625,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.736498387530446,
+      "rf1_scale": 0.7291080596670507,
+      "harmonic_potential_ratio_B_over_A": 2.9459279860369865,
+      "drive_U2_U1_physical": 3.2120213334420544,
+      "nu": 2.78787429202348,
+      "dc_relative_to_rf_squared": 1.7975458588451148,
+      "mass_ratio": 8.010036654770374,
+      "charge_ratio": 3.736498387530446,
+      "lambda1": 0.07352544763059272,
+      "lambda2": 0.06250270063337365,
+      "C_eff": 5.11407341631372e-06
+    }
+  },
+  {
+    "config_id": 37,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.4375,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.4375,
+    "balanced_mean_proxy": 0.6041666666666666,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.7412589341402054,
+      "rf1_scale": 0.7519799210410565,
+      "harmonic_potential_ratio_B_over_A": 3.186763526685536,
+      "drive_U2_U1_physical": 3.474610540673436,
+      "nu": 3.080519506148994,
+      "dc_relative_to_rf_squared": 1.3396111603826286,
+      "mass_ratio": 7.737435255199671,
+      "charge_ratio": 2.7412589341402054,
+      "lambda1": 0.02724363252832234,
+      "lambda2": 0.14644471681012172,
+      "C_eff": 9.088952590681832e-06
+    }
+  },
+  {
+    "config_id": 18,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.5625,
+        "p_retained": 0.5625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.4375,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.4375,
+    "balanced_mean_proxy": 0.5625,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.19209791906178,
+      "rf1_scale": 0.6858058717381208,
+      "harmonic_potential_ratio_B_over_A": 3.999405559804291,
+      "drive_U2_U1_physical": 4.3606551280499835,
+      "nu": 2.5647534880787135,
+      "dc_relative_to_rf_squared": 1.3576583422720434,
+      "mass_ratio": 8.065264124423265,
+      "charge_ratio": 2.19209791906178,
+      "lambda1": 0.04229565072057509,
+      "lambda2": 0.06540562877003091,
+      "C_eff": 7.822461356050831e-06
+    }
+  },
+  {
+    "config_id": 38,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.75,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.75,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.375,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.375,
+    "balanced_mean_proxy": 0.625,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.342005068436265,
+      "rf1_scale": 0.6434887511935085,
+      "harmonic_potential_ratio_B_over_A": 3.598880541883409,
+      "drive_U2_U1_physical": 3.9239523613031992,
+      "nu": 2.27897704616189,
+      "dc_relative_to_rf_squared": 1.4389826357364655,
+      "mass_ratio": 8.144324533641338,
+      "charge_ratio": 2.342005068436265,
+      "lambda1": 0.05060570484224892,
+      "lambda2": 0.1044225024293217,
+      "C_eff": 6.014803980961841e-06
+    }
+  },
+  {
+    "config_id": 17,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.75,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.375,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.375,
+    "balanced_mean_proxy": 0.6041666666666666,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 2.856992118060589,
+      "rf1_scale": 0.6220746444817632,
+      "harmonic_potential_ratio_B_over_A": 2.7874875861220065,
+      "drive_U2_U1_physical": 3.0392696752147863,
+      "nu": 2.725613612122834,
+      "dc_relative_to_rf_squared": 1.4643543247133493,
+      "mass_ratio": 7.533445067703724,
+      "charge_ratio": 2.856992118060589,
+      "lambda1": 0.0228008082985348,
+      "lambda2": 0.08529656951220195,
+      "C_eff": 5.910624177038582e-06
+    }
+  },
+  {
+    "config_id": 21,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.6875,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.375,
+        "p_retained": 0.375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.3125,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.3125,
+    "balanced_mean_proxy": 0.4583333333333333,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 2.5367844197899103,
+      "rf1_scale": 0.7388652137760072,
+      "harmonic_potential_ratio_B_over_A": 3.2132806546054784,
+      "drive_U2_U1_physical": 3.5035228497944226,
+      "nu": 2.2259625172242523,
+      "dc_relative_to_rf_squared": 1.2052011873573065,
+      "mass_ratio": 8.849981527775526,
+      "charge_ratio": 2.5367844197899103,
+      "lambda1": 0.03573632659989581,
+      "lambda2": 0.09442127101517368,
+      "C_eff": 1.5718127189195246e-05
+    }
+  },
+  {
+    "config_id": 7,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.8125,
+    "parameters": {
+      "qratio": 2.9687117151916027,
+      "rf1_scale": 0.4889947976265102,
+      "harmonic_potential_ratio_B_over_A": 3.15498556047678,
+      "drive_U2_U1_physical": 3.4399622037555884,
+      "nu": 2.212096093595028,
+      "dc_relative_to_rf_squared": 1.4110330410301686,
+      "mass_ratio": 6.34712727740407,
+      "charge_ratio": 2.9687117151916027,
+      "lambda1": 0.0762445847846114,
+      "lambda2": 0.10192787955355352,
+      "C_eff": 7.65508850889966e-06
+    }
+  },
+  {
+    "config_id": 28,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.8125,
+    "parameters": {
+      "qratio": 3.7865250669419765,
+      "rf1_scale": 0.5171748976968229,
+      "harmonic_potential_ratio_B_over_A": 3.5069462693296374,
+      "drive_U2_U1_physical": 3.8237140506191567,
+      "nu": 2.489071865938604,
+      "dc_relative_to_rf_squared": 1.540612531080842,
+      "mass_ratio": 8.599442262202501,
+      "charge_ratio": 3.7865250669419765,
+      "lambda1": 0.05895234231833287,
+      "lambda2": 0.14418165780323985,
+      "C_eff": 1.3045715626605186e-05
+    }
+  },
+  {
+    "config_id": 11,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 2.4388175811618567,
+      "rf1_scale": 0.590237780129537,
+      "harmonic_potential_ratio_B_over_A": 3.24682490658015,
+      "drive_U2_U1_physical": 3.5400970136801955,
+      "nu": 2.5932386465370656,
+      "dc_relative_to_rf_squared": 0.9250081777572632,
+      "mass_ratio": 7.929702997207642,
+      "charge_ratio": 2.4388175811618567,
+      "lambda1": 0.07317340872403802,
+      "lambda2": 0.091284887799809,
+      "C_eff": 8.153169568264942e-06
+    }
+  },
+  {
+    "config_id": 16,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 3.308388715609908,
+      "rf1_scale": 0.4335070851072669,
+      "harmonic_potential_ratio_B_over_A": 3.5778496966697277,
+      "drive_U2_U1_physical": 3.901021887847351,
+      "nu": 2.1055619208142162,
+      "dc_relative_to_rf_squared": 0.8237077023833991,
+      "mass_ratio": 5.186178028583527,
+      "charge_ratio": 3.308388715609908,
+      "lambda1": 0.06691849213716584,
+      "lambda2": 0.1499055837281755,
+      "C_eff": 1.2281954261227014e-05
+    }
+  },
+  {
+    "config_id": 23,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 3.9637060444802046,
+      "rf1_scale": 0.467424388770014,
+      "harmonic_potential_ratio_B_over_A": 2.975166884902865,
+      "drive_U2_U1_physical": 3.2439012596889607,
+      "nu": 2.442430142685771,
+      "dc_relative_to_rf_squared": 0.9759316124022007,
+      "mass_ratio": 5.900453142821789,
+      "charge_ratio": 3.9637060444802046,
+      "lambda1": 0.02804040485221559,
+      "lambda2": 0.06728504295536014,
+      "C_eff": 6.103266958639278e-06
+    }
+  },
+  {
+    "config_id": 24,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 3.606702161952853,
+      "rf1_scale": 0.5046170106902719,
+      "harmonic_potential_ratio_B_over_A": 3.8921268033795062,
+      "drive_U2_U1_physical": 4.243686330477613,
+      "nu": 2.988871450908482,
+      "dc_relative_to_rf_squared": 1.1290891792625188,
+      "mass_ratio": 7.782756134867668,
+      "charge_ratio": 3.606702161952853,
+      "lambda1": 0.053156572308315296,
+      "lambda2": 0.05562531567118798,
+      "C_eff": 9.811907647255045e-06
+    }
+  },
+  {
+    "config_id": 40,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.75,
+    "parameters": {
+      "qratio": 3.6873972602188587,
+      "rf1_scale": 0.47203774953261013,
+      "harmonic_potential_ratio_B_over_A": 3.7564218712970616,
+      "drive_U2_U1_physical": 4.095723739753019,
+      "nu": 2.321455783583224,
+      "dc_relative_to_rf_squared": 1.2656782504171133,
+      "mass_ratio": 8.676549546420574,
+      "charge_ratio": 3.6873972602188587,
+      "lambda1": 0.06977507112238679,
+      "lambda2": 0.08321728064412602,
+      "C_eff": 1.4267283528104175e-05
+    }
+  },
+  {
+    "config_id": 1,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.6875,
+    "parameters": {
+      "qratio": 3.8522315118461847,
+      "rf1_scale": 0.5991624341160059,
+      "harmonic_potential_ratio_B_over_A": 3.342648127116263,
+      "drive_U2_U1_physical": 3.644575544744075,
+      "nu": 3.0187604589387775,
+      "dc_relative_to_rf_squared": 0.9987816963344813,
+      "mass_ratio": 8.214211855083704,
+      "charge_ratio": 3.8522315118461847,
+      "lambda1": 0.062120918947767396,
+      "lambda2": 0.10731236087322928,
+      "C_eff": 9.400203128730148e-06
+    }
+  },
+  {
+    "config_id": 20,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.6875,
+    "parameters": {
+      "qratio": 3.1132193692028522,
+      "rf1_scale": 0.5773473441414535,
+      "harmonic_potential_ratio_B_over_A": 3.801788788009435,
+      "drive_U2_U1_physical": 4.145188460208953,
+      "nu": 2.6057928198948503,
+      "dc_relative_to_rf_squared": 1.844236195459962,
+      "mass_ratio": 6.495100352913141,
+      "charge_ratio": 3.1132193692028522,
+      "lambda1": 0.050791492037275746,
+      "lambda2": 0.05371825223950697,
+      "C_eff": 8.8084845400618e-06
+    }
+  },
+  {
+    "config_id": 46,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.6875,
+    "parameters": {
+      "qratio": 2.5085431206971407,
+      "rf1_scale": 0.6270556288119405,
+      "harmonic_potential_ratio_B_over_A": 3.954873782768846,
+      "drive_U2_U1_physical": 4.3121009819432565,
+      "nu": 2.90933983810246,
+      "dc_relative_to_rf_squared": 1.7535138070583343,
+      "mass_ratio": 6.7625976875424385,
+      "charge_ratio": 2.5085431206971407,
+      "lambda1": 0.05684930138737089,
+      "lambda2": 0.06834720382361122,
+      "C_eff": 1.9527109410261366e-05
+    }
+  },
+  {
+    "config_id": 48,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 1.0,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.6875,
+    "parameters": {
+      "qratio": 2.4807594250887632,
+      "rf1_scale": 0.42382470884360374,
+      "harmonic_potential_ratio_B_over_A": 3.9676275935955347,
+      "drive_U2_U1_physical": 4.326006791132136,
+      "nu": 2.6675517478957773,
+      "dc_relative_to_rf_squared": 1.4360522832721472,
+      "mass_ratio": 5.955581519752741,
+      "charge_ratio": 2.4807594250887632,
+      "lambda1": 0.028944481054497106,
+      "lambda2": 0.07041498740253967,
+      "C_eff": 9.288277505158357e-06
+    }
+  },
+  {
+    "config_id": 0,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 2.3114412911236286,
+      "rf1_scale": 0.4543925859313458,
+      "harmonic_potential_ratio_B_over_A": 3.6923270113766193,
+      "drive_U2_U1_physical": 4.0258394593482585,
+      "nu": 2.3908833967521788,
+      "dc_relative_to_rf_squared": 1.5634120877832176,
+      "mass_ratio": 6.57006935402751,
+      "charge_ratio": 2.3114412911236286,
+      "lambda1": 0.022590819550930407,
+      "lambda2": 0.06112057469521796,
+      "C_eff": 1.5381526666785155e-05
+    }
+  },
+  {
+    "config_id": 4,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 2.1160275992006063,
+      "rf1_scale": 0.5564644933957607,
+      "harmonic_potential_ratio_B_over_A": 3.630579138174653,
+      "drive_U2_U1_physical": 3.9585141591510182,
+      "nu": 2.890534465573728,
+      "dc_relative_to_rf_squared": 1.3676180157810451,
+      "mass_ratio": 5.75353480130434,
+      "charge_ratio": 2.1160275992006063,
+      "lambda1": 0.034631305364739184,
+      "lambda2": 0.13001306051501627,
+      "C_eff": 5.078897540790166e-06
+    }
+  },
+  {
+    "config_id": 13,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 3.365249440073967,
+      "rf1_scale": 0.7016076734103263,
+      "harmonic_potential_ratio_B_over_A": 3.0896478269249203,
+      "drive_U2_U1_physical": 3.368722786145232,
+      "nu": 2.638167334161699,
+      "dc_relative_to_rf_squared": 1.6371892150491476,
+      "mass_ratio": 5.500164493918419,
+      "charge_ratio": 3.365249440073967,
+      "lambda1": 0.05965842978618344,
+      "lambda2": 0.11157235014595958,
+      "C_eff": 8.43174873223031e-06
+    }
+  },
+  {
+    "config_id": 32,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 1.0,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 3.4779511354863644,
+      "rf1_scale": 0.4446671323664486,
+      "harmonic_potential_ratio_B_over_A": 3.4621770944446326,
+      "drive_U2_U1_physical": 3.7749010635085383,
+      "nu": 2.952795026265085,
+      "dc_relative_to_rf_squared": 0.9518004652112723,
+      "mass_ratio": 6.292872436344624,
+      "charge_ratio": 3.4779511354863644,
+      "lambda1": 0.04297134532557009,
+      "lambda2": 0.09918291220319982,
+      "C_eff": 5.699223026975209e-06
+    }
+  },
+  {
+    "config_id": 39,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 1.0,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 3.7582531608641148,
+      "rf1_scale": 0.49842083666473624,
+      "harmonic_potential_ratio_B_over_A": 2.7655143532902002,
+      "drive_U2_U1_physical": 3.0153116922107968,
+      "nu": 2.649160460010171,
+      "dc_relative_to_rf_squared": 0.804186523705721,
+      "mass_ratio": 6.5149682611227036,
+      "charge_ratio": 3.7582531608641148,
+      "lambda1": 0.03596325081383666,
+      "lambda2": 0.05947463413478956,
+      "C_eff": 1.1453358154341681e-05
+    }
+  },
+  {
+    "config_id": 44,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 3.9919456001371145,
+      "rf1_scale": 0.5471077364683151,
+      "harmonic_potential_ratio_B_over_A": 3.5334758507087827,
+      "drive_U2_U1_physical": 3.852639938068203,
+      "nu": 2.8212897194549442,
+      "dc_relative_to_rf_squared": 1.6652056906372308,
+      "mass_ratio": 7.984953012317419,
+      "charge_ratio": 3.9919456001371145,
+      "lambda1": 0.04497235709478904,
+      "lambda2": 0.09553124926745125,
+      "C_eff": 5.358303510028119e-06
+    }
+  },
+  {
+    "config_id": 56,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 2.682392692193389,
+      "rf1_scale": 0.49490228847600515,
+      "harmonic_potential_ratio_B_over_A": 3.67372499993071,
+      "drive_U2_U1_physical": 4.005557206050691,
+      "nu": 2.55182082708925,
+      "dc_relative_to_rf_squared": 1.7212865080684423,
+      "mass_ratio": 7.0758526511490345,
+      "charge_ratio": 2.682392692193389,
+      "lambda1": 0.025905486277140902,
+      "lambda2": 0.10999170854408945,
+      "C_eff": 1.2679497901739554e-05
+    }
+  },
+  {
+    "config_id": 62,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.625,
+    "parameters": {
+      "qratio": 3.5133044719696045,
+      "rf1_scale": 0.6055355981737375,
+      "harmonic_potential_ratio_B_over_A": 3.4752476681955162,
+      "drive_U2_U1_physical": 3.7891522474910238,
+      "nu": 2.616284067183733,
+      "dc_relative_to_rf_squared": 1.3096221715211869,
+      "mass_ratio": 5.489758942276239,
+      "charge_ratio": 3.5133044719696045,
+      "lambda1": 0.021064567198844402,
+      "lambda2": 0.10034561605348734,
+      "C_eff": 1.1017004664090765e-05
+    }
+  },
+  {
+    "config_id": 3,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 2.648256091400981,
+      "rf1_scale": 0.5191278441157192,
+      "harmonic_potential_ratio_B_over_A": 2.9320271130651236,
+      "drive_U2_U1_physical": 3.196864852784441,
+      "nu": 2.7118997652083636,
+      "dc_relative_to_rf_squared": 1.2198508620262145,
+      "mass_ratio": 5.03825269639492,
+      "charge_ratio": 2.648256091400981,
+      "lambda1": 0.040878720290061836,
+      "lambda2": 0.07827236055759684,
+      "C_eff": 1.0205349135137343e-05
+    }
+  },
+  {
+    "config_id": 36,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 3.157506985589862,
+      "rf1_scale": 0.5635408744961024,
+      "harmonic_potential_ratio_B_over_A": 3.848901121318341,
+      "drive_U2_U1_physical": 4.196556253438688,
+      "nu": 2.4526595057919622,
+      "dc_relative_to_rf_squared": 1.979669413343072,
+      "mass_ratio": 5.1091008596122265,
+      "charge_ratio": 3.157506985589862,
+      "lambda1": 0.07920386849071445,
+      "lambda2": 0.08043278938697762,
+      "C_eff": 1.5871048972409418e-05
+    }
+  },
+  {
+    "config_id": 57,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 3.230957768857479,
+      "rf1_scale": 0.6563824396394193,
+      "harmonic_potential_ratio_B_over_A": 2.7119743642397225,
+      "drive_U2_U1_physical": 2.9569356599936163,
+      "nu": 2.92394699100405,
+      "dc_relative_to_rf_squared": 1.1574011269956828,
+      "mass_ratio": 5.704308655112982,
+      "charge_ratio": 3.230957768857479,
+      "lambda1": 0.07061085413587197,
+      "lambda2": 0.060411463465563316,
+      "C_eff": 5.475473782670379e-06
+    }
+  },
+  {
+    "config_id": 59,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 2.2695279233157635,
+      "rf1_scale": 0.5614171059150248,
+      "harmonic_potential_ratio_B_over_A": 3.113386346679181,
+      "drive_U2_U1_physical": 3.3946055070523355,
+      "nu": 2.7463721096515656,
+      "dc_relative_to_rf_squared": 1.0989660888910293,
+      "mass_ratio": 8.544218607246876,
+      "charge_ratio": 2.2695279233157635,
+      "lambda1": 0.055877748235542375,
+      "lambda2": 0.14029893159508608,
+      "C_eff": 1.7522987101716676e-05
+    }
+  },
+  {
+    "config_id": 60,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 2.9871850199997425,
+      "rf1_scale": 0.5242405487503856,
+      "harmonic_potential_ratio_B_over_A": 3.733842557203025,
+      "drive_U2_U1_physical": 4.071104930702599,
+      "nu": 3.052112522907555,
+      "dc_relative_to_rf_squared": 0.9465117994695902,
+      "mass_ratio": 8.259714886546135,
+      "charge_ratio": 2.9871850199997425,
+      "lambda1": 0.03306769315356013,
+      "lambda2": 0.07320120815213749,
+      "C_eff": 8.719373518040329e-06
+    }
+  },
+  {
+    "config_id": 63,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5625,
+    "parameters": {
+      "qratio": 2.0897012930363417,
+      "rf1_scale": 0.46046033578924833,
+      "harmonic_potential_ratio_B_over_A": 2.889439768251032,
+      "drive_U2_U1_physical": 3.150430771324923,
+      "nu": 2.2462329868227244,
+      "dc_relative_to_rf_squared": 1.8689778424799441,
+      "mass_ratio": 7.852635484188795,
+      "charge_ratio": 2.0897012930363417,
+      "lambda1": 0.061240418607241665,
+      "lambda2": 0.05716071727949927,
+      "C_eff": 6.309137859032841e-06
+    }
+  },
+  {
+    "config_id": 6,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.3844638038426638,
+      "rf1_scale": 0.6501695345900953,
+      "harmonic_potential_ratio_B_over_A": 3.8602872418239715,
+      "drive_U2_U1_physical": 4.208970834563065,
+      "nu": 2.8420484628528357,
+      "dc_relative_to_rf_squared": 0.8512482166290284,
+      "mass_ratio": 8.999936308711767,
+      "charge_ratio": 3.3844638038426638,
+      "lambda1": 0.025960815295344362,
+      "lambda2": 0.05599047236004159,
+      "C_eff": 1.891661955376178e-05
+    }
+  },
+  {
+    "config_id": 9,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.0606935638934374,
+      "rf1_scale": 0.6702723544836044,
+      "harmonic_potential_ratio_B_over_A": 2.987287322431803,
+      "drive_U2_U1_physical": 3.2571164856205264,
+      "nu": 2.138367715664208,
+      "dc_relative_to_rf_squared": 1.2936941180378199,
+      "mass_ratio": 6.8168563432991505,
+      "charge_ratio": 3.0606935638934374,
+      "lambda1": 0.0549996939415615,
+      "lambda2": 0.07152149981356412,
+      "C_eff": 1.276609214533116e-05
+    }
+  },
+  {
+    "config_id": 26,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 2.8928080443292856,
+      "rf1_scale": 0.7569158025365322,
+      "harmonic_potential_ratio_B_over_A": 3.6444860962219536,
+      "drive_U2_U1_physical": 3.97367727452347,
+      "nu": 2.678544642776251,
+      "dc_relative_to_rf_squared": 1.052209273725748,
+      "mass_ratio": 6.966778729110956,
+      "charge_ratio": 2.8928080443292856,
+      "lambda1": 0.06792663769030065,
+      "lambda2": 0.13694723078323845,
+      "C_eff": 1.0623949098962743e-05
+    }
+  },
+  {
+    "config_id": 31,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.1370728816837072,
+      "rf1_scale": 0.45104501115158196,
+      "harmonic_potential_ratio_B_over_A": 3.2697118426673115,
+      "drive_U2_U1_physical": 3.5650512309311,
+      "nu": 2.8081311717629434,
+      "dc_relative_to_rf_squared": 1.2813911236822606,
+      "mass_ratio": 7.005126066505909,
+      "charge_ratio": 3.1370728816837072,
+      "lambda1": 0.03184296868893136,
+      "lambda2": 0.10703732586893656,
+      "C_eff": 1.971542743876933e-05
+    }
+  },
+  {
+    "config_id": 42,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 2.8130874633789062,
+      "rf1_scale": 0.7447390339616686,
+      "harmonic_potential_ratio_B_over_A": 3.366281957179308,
+      "drive_U2_U1_physical": 3.670344119778241,
+      "nu": 2.409200741350651,
+      "dc_relative_to_rf_squared": 0.8779554970562459,
+      "mass_ratio": 5.571016471832991,
+      "charge_ratio": 2.8130874633789062,
+      "lambda1": 0.0529985368730946,
+      "lambda2": 0.11676256712839046,
+      "C_eff": 6.732942023699408e-06
+    }
+  },
+  {
+    "config_id": 47,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 1.0,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.092752706259489,
+      "rf1_scale": 0.4382807883247733,
+      "harmonic_potential_ratio_B_over_A": 3.0807214474305513,
+      "drive_U2_U1_physical": 3.3589901241445954,
+      "nu": 2.5314624331891538,
+      "dc_relative_to_rf_squared": 1.1181419141590596,
+      "mass_ratio": 8.391099691390991,
+      "charge_ratio": 3.092752706259489,
+      "lambda1": 0.020870796468325712,
+      "lambda2": 0.12013476516135091,
+      "C_eff": 7.090888231062379e-06
+    }
+  },
+  {
+    "config_id": 49,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.931675508618355,
+      "rf1_scale": 0.6290118276886641,
+      "harmonic_potential_ratio_B_over_A": 3.0466631530784074,
+      "drive_U2_U1_physical": 3.3218554865844627,
+      "nu": 2.2877387454733253,
+      "dc_relative_to_rf_squared": 0.870398646965623,
+      "mass_ratio": 7.326270800083876,
+      "charge_ratio": 3.931675508618355,
+      "lambda1": 0.04075675732058816,
+      "lambda2": 0.1283531961909672,
+      "C_eff": 1.4872733573907025e-05
+    }
+  },
+  {
+    "config_id": 54,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 3.33895356208086,
+      "rf1_scale": 0.665675641298294,
+      "harmonic_potential_ratio_B_over_A": 3.830948326643557,
+      "drive_U2_U1_physical": 4.17698185794646,
+      "nu": 2.501529582217336,
+      "dc_relative_to_rf_squared": 1.022697725892067,
+      "mass_ratio": 7.604175467044115,
+      "charge_ratio": 3.33895356208086,
+      "lambda1": 0.034019054757371846,
+      "lambda2": 0.08926446730649115,
+      "C_eff": 7.40069494970973e-06
+    }
+  },
+  {
+    "config_id": 55,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.9375,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.5,
+    "parameters": {
+      "qratio": 2.763014605268836,
+      "rf1_scale": 0.4768934633862227,
+      "harmonic_potential_ratio_B_over_A": 3.2043542702682317,
+      "drive_U2_U1_physical": 3.4937901825134716,
+      "nu": 2.879511671513319,
+      "dc_relative_to_rf_squared": 1.583803055435419,
+      "mass_ratio": 5.240443732589483,
+      "charge_ratio": 2.763014605268836,
+      "lambda1": 0.048910333209407776,
+      "lambda2": 0.1568790191828622,
+      "C_eff": 1.8688414341258062e-05
+    }
+  },
+  {
+    "config_id": 14,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 3.717994535341859,
+      "rf1_scale": 0.6337901621870696,
+      "harmonic_potential_ratio_B_over_A": 3.524628792703152,
+      "drive_U2_U1_physical": 3.8429937623344532,
+      "nu": 2.4714517652988435,
+      "dc_relative_to_rf_squared": 1.1460830330848695,
+      "mass_ratio": 6.09448591992259,
+      "charge_ratio": 3.717994535341859,
+      "lambda1": 0.03285938747226578,
+      "lambda2": 0.15871202361537326,
+      "C_eff": 6.353369579622293e-06
+    }
+  },
+  {
+    "config_id": 19,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 3.6434947066009045,
+      "rf1_scale": 0.5406955611705779,
+      "harmonic_potential_ratio_B_over_A": 3.0352770325727763,
+      "drive_U2_U1_physical": 3.3094409054600855,
+      "nu": 2.9427526094019414,
+      "dc_relative_to_rf_squared": 1.9918666571378707,
+      "mass_ratio": 6.717096354812384,
+      "charge_ratio": 3.6434947066009045,
+      "lambda1": 0.03042619858539322,
+      "lambda2": 0.119205174286348,
+      "C_eff": 1.772619367545528e-05
+    }
+  },
+  {
+    "config_id": 25,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.0576410740613937,
+      "rf1_scale": 0.6493915273156017,
+      "harmonic_potential_ratio_B_over_A": 3.142545880470425,
+      "drive_U2_U1_physical": 3.426398899509528,
+      "nu": 2.3608892573043705,
+      "dc_relative_to_rf_squared": 1.7679861430078745,
+      "mass_ratio": 5.434634380042553,
+      "charge_ratio": 2.0576410740613937,
+      "lambda1": 0.03742615290798131,
+      "lambda2": 0.09765021936297578,
+      "C_eff": 1.4722973200159482e-05
+    }
+  },
+  {
+    "config_id": 27,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 3.441869053989649,
+      "rf1_scale": 0.5680124596506357,
+      "harmonic_potential_ratio_B_over_A": 2.7208214222453537,
+      "drive_U2_U1_physical": 2.966581835727367,
+      "nu": 2.3084841299802066,
+      "dc_relative_to_rf_squared": 1.6881649583578109,
+      "mass_ratio": 8.313847165554762,
+      "charge_ratio": 3.441869053989649,
+      "lambda1": 0.024702394606287672,
+      "lambda2": 0.07522711098243005,
+      "C_eff": 6.4926852681760635e-06
+    }
+  },
+  {
+    "config_id": 29,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.362441124394536,
+      "rf1_scale": 0.7224858518037944,
+      "harmonic_potential_ratio_B_over_A": 2.8779743214137854,
+      "drive_U2_U1_physical": 3.137929698653346,
+      "nu": 2.861207670904696,
+      "dc_relative_to_rf_squared": 0.8998115565627813,
+      "mass_ratio": 6.243462231010199,
+      "charge_ratio": 2.362441124394536,
+      "lambda1": 0.020072690338198973,
+      "lambda2": 0.08211976184698959,
+      "C_eff": 5.2792996968359616e-06
+    }
+  },
+  {
+    "config_id": 52,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 2.1605595014989376,
+      "rf1_scale": 0.5843806075211614,
+      "harmonic_potential_ratio_B_over_A": 3.4187495418824256,
+      "drive_U2_U1_physical": 3.7275508818509633,
+      "nu": 2.16781295966357,
+      "dc_relative_to_rf_squared": 1.2335038367658853,
+      "mass_ratio": 6.647327721118927,
+      "charge_ratio": 2.1605595014989376,
+      "lambda1": 0.02699275385744969,
+      "lambda2": 0.11391443590311524,
+      "C_eff": 1.4083313670267132e-05
+    }
+  },
+  {
+    "config_id": 61,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.4375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.4375,
+    "parameters": {
+      "qratio": 3.410788396373391,
+      "rf1_scale": 0.7126749268546699,
+      "harmonic_potential_ratio_B_over_A": 3.3014898040331904,
+      "drive_U2_U1_physical": 3.599699562568633,
+      "nu": 2.4241130290552975,
+      "dc_relative_to_rf_squared": 1.5123011913150548,
+      "mass_ratio": 6.89590709656477,
+      "charge_ratio": 3.410788396373391,
+      "lambda1": 0.046531687188231696,
+      "lambda2": 0.13325917585643662,
+      "C_eff": 1.660345111685018e-05
+    }
+  },
+  {
+    "config_id": 12,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 2.781520439311862,
+      "rf1_scale": 0.5400851262081414,
+      "harmonic_potential_ratio_B_over_A": 3.925714248977602,
+      "drive_U2_U1_physical": 4.280307589486064,
+      "nu": 2.2582318926230074,
+      "dc_relative_to_rf_squared": 1.072715750709176,
+      "mass_ratio": 7.153019063174725,
+      "charge_ratio": 2.781520439311862,
+      "lambda1": 0.02168085541345062,
+      "lambda2": 0.06348488676564902,
+      "C_eff": 1.640731051750499e-05
+    }
+  },
+  {
+    "config_id": 33,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 2.9366801101714373,
+      "rf1_scale": 0.6061426163930446,
+      "harmonic_potential_ratio_B_over_A": 2.92318005990237,
+      "drive_U2_U1_physical": 3.187218682331005,
+      "nu": 2.580780684389174,
+      "dc_relative_to_rf_squared": 1.5914195511490106,
+      "mass_ratio": 8.929187178611755,
+      "charge_ratio": 2.9366801101714373,
+      "lambda1": 0.029868055289941797,
+      "lambda2": 0.05448262183670155,
+      "C_eff": 1.2102009826017455e-05
+    }
+  },
+  {
+    "config_id": 35,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 3.562828114256263,
+      "rf1_scale": 0.512521774675697,
+      "harmonic_potential_ratio_B_over_A": 3.3134885884821417,
+      "drive_U2_U1_physical": 3.6127821470065684,
+      "nu": 2.14887230694294,
+      "dc_relative_to_rf_squared": 1.8274295508861542,
+      "mass_ratio": 5.823292572051287,
+      "charge_ratio": 3.562828114256263,
+      "lambda1": 0.023691086885626295,
+      "lambda2": 0.13360175526503185,
+      "C_eff": 7.897311391819686e-06
+    }
+  },
+  {
+    "config_id": 41,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 2.228149512782693,
+      "rf1_scale": 0.6772201908100396,
+      "harmonic_potential_ratio_B_over_A": 3.2582110222429037,
+      "drive_U2_U1_physical": 3.5525115895242583,
+      "nu": 2.7014082869514824,
+      "dc_relative_to_rf_squared": 1.905891141667962,
+      "mass_ratio": 6.0393810123205185,
+      "charge_ratio": 2.228149512782693,
+      "lambda1": 0.023983984781038498,
+      "lambda2": 0.15166783512347867,
+      "C_eff": 9.716435108174857e-06
+    }
+  },
+  {
+    "config_id": 43,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.75,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.375,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.375,
+    "parameters": {
+      "qratio": 3.272335408255458,
+      "rf1_scale": 0.5835993438772857,
+      "harmonic_potential_ratio_B_over_A": 3.0189859235659244,
+      "drive_U2_U1_physical": 3.2916782887486598,
+      "nu": 3.0312048312276603,
+      "dc_relative_to_rf_squared": 1.5128882229328156,
+      "mass_ratio": 7.207163129001856,
+      "charge_ratio": 3.272335408255458,
+      "lambda1": 0.037637934772583086,
+      "lambda2": 0.06643813058499601,
+      "C_eff": 1.0780993102956473e-05
+    }
+  },
+  {
+    "config_id": 10,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.3125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.3125,
+    "parameters": {
+      "qratio": 3.897569455206394,
+      "rf1_scale": 0.735355428121984,
+      "harmonic_potential_ratio_B_over_A": 3.78819983266294,
+      "drive_U2_U1_physical": 4.130372071390552,
+      "nu": 2.971098781004548,
+      "dc_relative_to_rf_squared": 1.4849476404488087,
+      "mass_ratio": 5.285759098827839,
+      "charge_ratio": 3.897569455206394,
+      "lambda1": 0.024931730158280225,
+      "lambda2": 0.05007919260377531,
+      "C_eff": 1.6941908314193577e-05
+    }
+  },
+  {
+    "config_id": 15,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.8125,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.875,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.3125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.3125,
+    "parameters": {
+      "qratio": 2.1342654563486576,
+      "rf1_scale": 0.4288223407510668,
+      "harmonic_potential_ratio_B_over_A": 2.860108347423375,
+      "drive_U2_U1_physical": 3.1184499659945994,
+      "nu": 3.0934655260294677,
+      "dc_relative_to_rf_squared": 1.70646166279912,
+      "mass_ratio": 8.746440682560205,
+      "charge_ratio": 2.1342654563486576,
+      "lambda1": 0.0467020269913382,
+      "lambda2": 0.08708229458071333,
+      "C_eff": 1.1337160518891765e-05
+    }
+  },
+  {
+    "config_id": 30,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.3125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.3125,
+    "parameters": {
+      "qratio": 2.712988890707493,
+      "rf1_scale": 0.6122270972747356,
+      "harmonic_potential_ratio_B_over_A": 3.745228672865778,
+      "drive_U2_U1_physical": 4.0835195065466605,
+      "nu": 2.1783177968114615,
+      "dc_relative_to_rf_squared": 1.9157351940870284,
+      "mass_ratio": 5.650046765804291,
+      "charge_ratio": 2.712988890707493,
+      "lambda1": 0.044295655570093406,
+      "lambda2": 0.0587888082178719,
+      "C_eff": 7.3160500555544245e-06
+    }
+  },
+  {
+    "config_id": 45,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.3125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.3125,
+    "parameters": {
+      "qratio": 2.4077358469367027,
+      "rf1_scale": 0.6918398674856872,
+      "harmonic_potential_ratio_B_over_A": 2.8308694437146187,
+      "drive_U2_U1_physical": 3.0865700344673788,
+      "nu": 2.2011165576055647,
+      "dc_relative_to_rf_squared": 1.025725507363677,
+      "mass_ratio": 5.355520684272051,
+      "charge_ratio": 2.4077358469367027,
+      "lambda1": 0.03128034196430163,
+      "lambda2": 0.052408760947712345,
+      "C_eff": 1.3530900064405418e-05
+    }
+  },
+  {
+    "config_id": 2,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.625,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5625,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.25,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.25,
+    "parameters": {
+      "qratio": 3.18904647231102,
+      "rf1_scale": 0.7080385348573326,
+      "harmonic_potential_ratio_B_over_A": 3.432938195578754,
+      "drive_U2_U1_physical": 3.743021137261632,
+      "nu": 2.3417260222136975,
+      "dc_relative_to_rf_squared": 1.7803683944046498,
+      "mass_ratio": 7.683295004069805,
+      "charge_ratio": 3.18904647231102,
+      "lambda1": 0.028781309788624372,
+      "lambda2": 0.14251120393120112,
+      "C_eff": 6.80119494047229e-06
+    }
+  },
+  {
+    "config_id": 5,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.25,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.25,
+    "parameters": {
+      "qratio": 3.5317798778414726,
+      "rf1_scale": 0.7617801146395504,
+      "harmonic_potential_ratio_B_over_A": 2.7540489112958313,
+      "drive_U2_U1_physical": 3.002810624819534,
+      "nu": 2.5185295263305307,
+      "dc_relative_to_rf_squared": 1.9326875742524863,
+      "mass_ratio": 7.405291438102722,
+      "charge_ratio": 3.5317798778414726,
+      "lambda1": 0.04817386672670407,
+      "lambda2": 0.07406043592871756,
+      "C_eff": 1.3686761616293138e-05
+    }
+  },
+  {
+    "config_id": 50,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.6875,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.5,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.125,
+    "parameters": {
+      "qratio": 3.0187497679144144,
+      "rf1_scale": 0.6951788505353034,
+      "harmonic_potential_ratio_B_over_A": 3.566384254675359,
+      "drive_U2_U1_physical": 3.888520820456088,
+      "nu": 3.0018177017569543,
+      "dc_relative_to_rf_squared": 1.9451000072062015,
+      "mass_ratio": 8.795845434069633,
+      "charge_ratio": 3.0187497679144144,
+      "lambda1": 0.021934053387321312,
+      "lambda2": 0.09023062796780186,
+      "C_eff": 1.0277664736382461e-05
+    }
+  },
+  {
+    "config_id": 58,
+    "source": "sobol_local",
+    "p_proxy_by_ensemble": {
+      "rest": {
+        "p_proxy": 0.0,
+        "p_retained": 0.25,
+        "n": 16
+      },
+      "weak": {
+        "p_proxy": 0.0,
+        "p_retained": 0.3125,
+        "n": 16
+      },
+      "wide": {
+        "p_proxy": 0.0,
+        "p_retained": 0.125,
+        "n": 16
+      }
+    },
+    "balanced_min_proxy": 0.0,
+    "balanced_mean_proxy": 0.0,
+    "balanced_min_retention": 0.125,
+    "parameters": {
+      "qratio": 3.818093167617917,
+      "rf1_scale": 0.7662564145214855,
+      "harmonic_potential_ratio_B_over_A": 3.9010531828738753,
+      "drive_U2_U1_physical": 4.253418992478249,
+      "nu": 2.1165417026728393,
+      "dc_relative_to_rf_squared": 1.6599333740770819,
+      "mass_ratio": 6.173697412014008,
+      "charge_ratio": 3.818093167617917,
+      "lambda1": 0.03883928936640854,
+      "lambda2": 0.07990832537615127,
+      "C_eff": 8.252123489838867e-06
+    }
+  }
+]

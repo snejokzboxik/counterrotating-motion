@@ -1,0 +1,15 @@
+{
+  "n_configs": 65,
+  "initials_per_ensemble": 16,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide"
+  ],
+  "periods": 1800,
+  "steps": 48,
+  "skip": 400,
+  "seed": 20261127,
+  "objective": "maximize worst and mean short-horizon CR proxy across the three explicit distributions",
+  "note": "screening only; new candidate needs fresh holdout and long/independent verification"
+}
