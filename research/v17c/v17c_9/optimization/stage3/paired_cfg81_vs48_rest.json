@@ -1,0 +1,19 @@
+{
+  "ensemble": "rest",
+  "N_total": 128,
+  "candidate81_strict_CR": 89,
+  "P_CR_candidate81": 0.6953125,
+  "Wilson95_candidate81": [
+    0.6108489916080531,
+    0.7683943848476078
+  ],
+  "candidate48_strict_CR": 98,
+  "P_CR_candidate48": 0.765625,
+  "Wilson95_candidate48": [
+    0.6851645688917714,
+    0.8306064230879273
+  ],
+  "candidate81_only_success": 3,
+  "candidate48_only_success": 12,
+  "two_sided_exact_McNemar_p": 0.03515625
+}

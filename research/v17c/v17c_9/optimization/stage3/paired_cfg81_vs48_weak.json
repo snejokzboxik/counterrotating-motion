@@ -1,0 +1,19 @@
+{
+  "ensemble": "weak",
+  "N_total": 128,
+  "candidate81_strict_CR": 84,
+  "P_CR_candidate81": 0.65625,
+  "Wilson95_candidate81": [
+    0.5704962778456513,
+    0.7328984233188773
+  ],
+  "candidate48_strict_CR": 98,
+  "P_CR_candidate48": 0.765625,
+  "Wilson95_candidate48": [
+    0.6851645688917714,
+    0.8306064230879273
+  ],
+  "candidate81_only_success": 1,
+  "candidate48_only_success": 15,
+  "two_sided_exact_McNemar_p": 0.000518798828125
+}
