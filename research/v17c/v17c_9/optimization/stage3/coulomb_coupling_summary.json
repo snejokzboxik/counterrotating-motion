@@ -1,0 +1,304 @@
+{
+  "candidate_id": 48,
+  "N_per_ensemble": 64,
+  "periods": 15000,
+  "radii_over_R": [
+    0.0002,
+    0.00189
+  ],
+  "C_scale_definition": "scale applied to fitted Coulomb coefficient C; external RF/DC, q/m ratios and drag held fixed",
+  "ensembles": {
+    "rest": {
+      "C_scale_0": {
+        "N_total": 64,
+        "category_counts": {
+          "CR_screen": 51,
+          "finite_particle_wall_contact": 12,
+          "axis_ambiguous": 1
+        },
+        "N_CR": 51,
+        "P_CR": 0.796875,
+        "Wilson95": [
+          0.6828636426898583,
+          0.8772658218081634
+        ],
+        "median_frequency_Hz_CR": [
+          535.164050608854,
+          -93.71409245094576
+        ],
+        "minimum_center_separation_CR_over_R": 0.049982802270813115,
+        "minimum_surface_gap_CR_over_R": 0.04789280227081311,
+        "matched_changes_vs_C1": {
+          "new_CR": 1,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          31.40485808463646,
+          -1.5132368478115765
+        ]
+      },
+      "C_scale_0.5": {
+        "N_total": 64,
+        "category_counts": {
+          "CR_screen": 51,
+          "finite_particle_wall_contact": 12,
+          "axis_ambiguous": 1
+        },
+        "N_CR": 51,
+        "P_CR": 0.796875,
+        "Wilson95": [
+          0.6828636426898583,
+          0.8772658218081634
+        ],
+        "median_frequency_Hz_CR": [
+          528.7804076470418,
+          -93.44506541574783
+        ],
+        "minimum_center_separation_CR_over_R": 0.04823811233623734,
+        "minimum_surface_gap_CR_over_R": 0.04614811233623734,
+        "matched_changes_vs_C1": {
+          "new_CR": 1,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          25.042100486999146,
+          -1.2541581931862211
+        ]
+      },
+      "C_scale_1": {
+        "N_total": 64,
+        "category_counts": {
+          "axis_ambiguous": 2,
+          "CR_screen": 50,
+          "finite_particle_wall_contact": 12
+        },
+        "N_CR": 50,
+        "P_CR": 0.78125,
+        "Wilson95": [
+          0.6656721604337418,
+          0.8649768059328052
+        ],
+        "median_frequency_Hz_CR": [
+          503.7532912028414,
+          -92.20633965538926
+        ],
+        "minimum_center_separation_CR_over_R": 0.05064591807777953,
+        "minimum_surface_gap_CR_over_R": 0.04855591807777953
+      },
+      "C_scale_2": {
+        "N_total": 64,
+        "category_counts": {
+          "axis_ambiguous": 2,
+          "inconclusive": 50,
+          "finite_particle_wall_contact": 12
+        },
+        "N_CR": 0,
+        "P_CR": 0.0,
+        "Wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "median_frequency_Hz_CR": null,
+        "minimum_center_separation_CR_over_R": null,
+        "minimum_surface_gap_CR_over_R": null,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 50
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": null
+      }
+    },
+    "weak": {
+      "C_scale_0": {
+        "N_total": 64,
+        "category_counts": {
+          "finite_particle_wall_contact": 17,
+          "CR_screen": 47
+        },
+        "N_CR": 47,
+        "P_CR": 0.734375,
+        "Wilson95": [
+          0.6151712627143486,
+          0.8270362092577739
+        ],
+        "median_frequency_Hz_CR": [
+          535.1511740171338,
+          -93.72518074581701
+        ],
+        "minimum_center_separation_CR_over_R": 0.04362693746496846,
+        "minimum_surface_gap_CR_over_R": 0.041536937464968456,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          31.44376302759531,
+          -1.5115003803657032
+        ]
+      },
+      "C_scale_0.5": {
+        "N_total": 64,
+        "category_counts": {
+          "finite_particle_wall_contact": 17,
+          "CR_screen": 47
+        },
+        "N_CR": 47,
+        "P_CR": 0.734375,
+        "Wilson95": [
+          0.6151712627143486,
+          0.8270362092577739
+        ],
+        "median_frequency_Hz_CR": [
+          528.7589179367286,
+          -93.4526431470302
+        ],
+        "minimum_center_separation_CR_over_R": 0.04427115206464705,
+        "minimum_surface_gap_CR_over_R": 0.04218115206464705,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          25.076377329812715,
+          -1.2457618124534235
+        ]
+      },
+      "C_scale_1": {
+        "N_total": 64,
+        "category_counts": {
+          "finite_particle_wall_contact": 17,
+          "CR_screen": 47
+        },
+        "N_CR": 47,
+        "P_CR": 0.734375,
+        "Wilson95": [
+          0.6151712627143486,
+          0.8270362092577739
+        ],
+        "median_frequency_Hz_CR": [
+          503.7524072892843,
+          -92.19779944611025
+        ],
+        "minimum_center_separation_CR_over_R": 0.044949476595729385,
+        "minimum_surface_gap_CR_over_R": 0.04285947659572938
+      },
+      "C_scale_2": {
+        "N_total": 64,
+        "category_counts": {
+          "finite_particle_wall_contact": 17,
+          "inconclusive": 47
+        },
+        "N_CR": 0,
+        "P_CR": 0.0,
+        "Wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "median_frequency_Hz_CR": null,
+        "minimum_center_separation_CR_over_R": null,
+        "minimum_surface_gap_CR_over_R": null,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 47
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": null
+      }
+    },
+    "wide": {
+      "C_scale_0": {
+        "N_total": 64,
+        "category_counts": {
+          "CR_screen": 43,
+          "finite_particle_wall_contact": 21
+        },
+        "N_CR": 43,
+        "P_CR": 0.671875,
+        "Wilson95": [
+          0.549991058490915,
+          0.7742944209553081
+        ],
+        "median_frequency_Hz_CR": [
+          535.1960342590255,
+          -93.73352070713905
+        ],
+        "minimum_center_separation_CR_over_R": 0.07799510454186626,
+        "minimum_surface_gap_CR_over_R": 0.07590510454186625,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          31.472500115517164,
+          -1.553547603784466
+        ]
+      },
+      "C_scale_0.5": {
+        "N_total": 64,
+        "category_counts": {
+          "CR_screen": 43,
+          "finite_particle_wall_contact": 21
+        },
+        "N_CR": 43,
+        "P_CR": 0.671875,
+        "Wilson95": [
+          0.549991058490915,
+          0.7742944209553081
+        ],
+        "median_frequency_Hz_CR": [
+          528.7726977077817,
+          -93.4635608803319
+        ],
+        "minimum_center_separation_CR_over_R": 0.07700469871489812,
+        "minimum_surface_gap_CR_over_R": 0.07491469871489811,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 0
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": [
+          25.04710096232685,
+          -1.2928543612752463
+        ]
+      },
+      "C_scale_1": {
+        "N_total": 64,
+        "category_counts": {
+          "CR_screen": 43,
+          "finite_particle_wall_contact": 21
+        },
+        "N_CR": 43,
+        "P_CR": 0.671875,
+        "Wilson95": [
+          0.549991058490915,
+          0.7742944209553081
+        ],
+        "median_frequency_Hz_CR": [
+          503.76484308659315,
+          -92.19006022075529
+        ],
+        "minimum_center_separation_CR_over_R": 0.0759800947979703,
+        "minimum_surface_gap_CR_over_R": 0.07389009479797029
+      },
+      "C_scale_2": {
+        "N_total": 64,
+        "category_counts": {
+          "inconclusive": 43,
+          "finite_particle_wall_contact": 21
+        },
+        "N_CR": 0,
+        "P_CR": 0.0,
+        "Wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "median_frequency_Hz_CR": null,
+        "minimum_center_separation_CR_over_R": null,
+        "minimum_surface_gap_CR_over_R": null,
+        "matched_changes_vs_C1": {
+          "new_CR": 0,
+          "lost_C1_CR": 43
+        },
+        "median_frequency_change_vs_C1_Hz_for_both_CR": null
+      }
+    }
+  }
+}
