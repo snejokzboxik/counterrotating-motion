@@ -23,12 +23,15 @@ def main():
                     help="particle-2 chi; defaults to particle-1 chi")
     ap.add_argument("--hydro-mode",choices=["none","oseen","rpy"],default="none")
     ap.add_argument("--a1-over-R",type=float,default=0.0); ap.add_argument("--a2-over-R",type=float,default=0.0)
+    ap.add_argument("--coupling-scale",type=float,default=1.0,
+                    help="multiply the fitted dimensionless Coulomb coefficient for a matched-start sensitivity scan")
     a=ap.parse_args()
     source_npz=np.load(HERE/a.candidate_source/"configurations.npz")
     if a.candidate_source=="stage1":
         p=source_npz["parameters"][a.config_id].copy(); qratio=float(source_npz["charge_ratio"][a.config_id])
     else:
         p=source_npz["p"][a.config_id].copy(); qratio=float(source_npz["qratio"][a.config_id])
+    p[5]*=a.coupling_scale
     if a.search_starts:
         if a.candidate_source=="stage1":
             init=source_npz["initial"].copy(); phases=source_npz["phases"].copy(); seed=20261123
@@ -48,6 +51,8 @@ def main():
     chi2=a.oseen_Re_per_speed if a.oseen_Re2_per_speed is None else a.oseen_Re2_per_speed
     if a.oseen_Re_per_speed or chi2 or hydro_mode or a.a1_over_R or a.a2_over_R:
         label += f"_{a.hydro_mode}_chi{a.oseen_Re_per_speed:g}-{chi2:g}_a{a.a1_over_R:g}-{a.a2_over_R:g}"
+    if a.coupling_scale != 1.0:
+        label += f"_Cscale{a.coupling_scale:g}"
     _,family,k,coeff=load_model()
     dest=HERE/("stage2" if a.candidate_source=="stage1" else "stage3")/"runs"; dest.mkdir(parents=True,exist_ok=True)
     stem=f"cfg{a.config_id}_{a.ensemble}_{label}_{len(init)}_{a.periods}p_{a.steps}s"
@@ -57,7 +62,7 @@ def main():
       "n":len(init),"seed":seed,"periods":a.periods,"steps":a.steps,"transient":200,
       "starts":(f"matched to {a.initials_from}" if a.initials_from is not None else
                 ("search subset" if a.search_starts else "fresh scrambled Sobol ensemble")),
-      "candidate_source":a.candidate_source}
+      "candidate_source":a.candidate_source,"coupling_scale":a.coupling_scale}
     if a.oseen_Re_per_speed or chi2 or hydro_mode or a.a1_over_R or a.a2_over_R:
         metadata.update(oseen_Re_per_speed=a.oseen_Re_per_speed,hydro_mode=a.hydro_mode,
                        oseen_Re2_per_speed=chi2,a1_over_R=a.a1_over_R,a2_over_R=a.a2_over_R)

@@ -37,7 +37,9 @@ def _rhs(t, y, p, phase, family, k, coeff, qratio, out,
     ph2 = B * complex(math.cos(nu * t + phase[1]), -math.sin(nu * t + phase[1]))
     dx, dy, dz = y[0]-y[6], y[1]-y[7], y[2]-y[8]
     d2 = dx*dx + dy*dy + dz*dz
-    invd3 = 1.0 / (d2 * math.sqrt(d2))
+    invd3 = 0.0
+    if coupling != 0.0 and d2 > 1e-28:
+        invd3 = 1.0 / (d2 * math.sqrt(d2))
     for i in range(2):
         j = 6*i
         x, yy, z, vx, vy, vz = y[j:j+6]
