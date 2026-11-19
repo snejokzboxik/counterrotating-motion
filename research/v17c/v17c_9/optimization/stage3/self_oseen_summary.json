@@ -1,0 +1,95 @@
+{
+  "config_id": 48,
+  "N_per_ensemble": 64,
+  "periods": 15000,
+  "steps_per_RF_period": 64,
+  "radii_over_R": [
+    0.0002,
+    0.00189
+  ],
+  "Re_per_dimensionless_speed": [
+    0.2,
+    1.89
+  ],
+  "ensembles": {
+    "rest": {
+      "N_total": 64,
+      "category_counts": {
+        "CR_screen": 51,
+        "finite_particle_wall_contact": 12,
+        "axis_ambiguous": 1
+      },
+      "N_CR": 51,
+      "P_CR": 0.796875,
+      "Wilson95": [
+        0.6828636426898583,
+        0.8772658218081634
+      ],
+      "matched_changes_vs_point": {
+        "new_CR": 1,
+        "lost_point_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        502.3881672285154,
+        -95.07461066118329
+      ],
+      "median_frequency_change_vs_point_CR_Hz": [
+        -1.471553443340838,
+        -2.8766363297473703
+      ],
+      "minimum_surface_gap_CR_over_R": 0.04744968861294837
+    },
+    "weak": {
+      "N_total": 64,
+      "category_counts": {
+        "finite_particle_wall_contact": 17,
+        "CR_screen": 47
+      },
+      "N_CR": 47,
+      "P_CR": 0.734375,
+      "Wilson95": [
+        0.6151712627143486,
+        0.8270362092577739
+      ],
+      "matched_changes_vs_point": {
+        "new_CR": 0,
+        "lost_point_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        502.2556857222174,
+        -95.07526025128928
+      ],
+      "median_frequency_change_vs_point_CR_Hz": [
+        -1.4192731572210278,
+        -2.879573597258826
+      ],
+      "minimum_surface_gap_CR_over_R": 0.042869103712231404
+    },
+    "wide": {
+      "N_total": 64,
+      "category_counts": {
+        "CR_screen": 44,
+        "finite_particle_wall_contact": 20
+      },
+      "N_CR": 44,
+      "P_CR": 0.6875,
+      "Wilson95": [
+        0.5660766429725185,
+        0.7876893346051795
+      ],
+      "matched_changes_vs_point": {
+        "new_CR": 1,
+        "lost_point_CR": 0
+      },
+      "median_frequency_Hz_CR": [
+        502.28701011998635,
+        -95.06920113973337
+      ],
+      "median_frequency_change_vs_point_CR_Hz": [
+        -1.412805658989356,
+        -2.875510721010933
+      ],
+      "minimum_surface_gap_CR_over_R": 0.06003442410094108
+    }
+  }
+}
