@@ -107,7 +107,7 @@ def evaluate(times, state, p, qratio, skip):
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--config-id", type=int, required=True)
-    ap.add_argument("--candidate-source", choices=("stage1","stage2_local","stage2_speed","stage4_candidate48"), default="stage2_local")
+    ap.add_argument("--candidate-source", choices=("stage1","stage2_local","stage2_speed","stage4_candidate48","stage5_candidate52"), default="stage2_local")
     ap.add_argument("--ensemble", choices=("rest","weak","wide"), default="rest")
     ap.add_argument("--count", type=int, default=128)
     ap.add_argument("--keys", nargs="+", required=True)
@@ -120,10 +120,10 @@ def main():
         p=np.asarray(npz["parameters"][a.config_id],float)
         qr=float(npz["charge_ratio"][a.config_id])
         result_root=HERE/"stage2"/"runs"
-    elif a.candidate_source=="stage4_candidate48":
+    elif a.candidate_source in ("stage4_candidate48","stage5_candidate52"):
         p=np.asarray(npz["p"][a.config_id],float)
         qr=float(npz["qratio"][a.config_id])
-        result_root=HERE/"stage4_candidate48"/"holdout_runs"
+        result_root=HERE/a.candidate_source/"holdout_runs"
     else:
         p=np.asarray(npz["p"][a.config_id],float)
         qr=float(npz["qratio"][a.config_id])

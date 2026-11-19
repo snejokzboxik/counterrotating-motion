@@ -82,7 +82,7 @@ def atomic_json(path, obj):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config-id", type=int, default=48)
-    ap.add_argument("--candidate-source", choices=("stage2_speed", "stage4_candidate48"), default="stage2_speed")
+    ap.add_argument("--candidate-source", choices=("stage2_speed", "stage4_candidate48", "stage5_candidate52"), default="stage2_speed")
     ap.add_argument("--ensemble", choices=("rest", "weak", "wide"), default="rest")
     ap.add_argument("--index", type=int, default=0)
     ap.add_argument("--source-jsonl", type=Path, default=None,
@@ -100,9 +100,9 @@ def main():
     p = np.asarray(z["p"][a.config_id], dtype=float)
     p[5] *= a.coupling_scale
     qratio = float(z["qratio"][a.config_id])
-    if a.candidate_source == "stage4_candidate48":
-        output_dir = HERE / "stage4_candidate48" / "long_runs"
-        default_source = HERE / "stage4_candidate48" / "holdout_runs" / (
+    if a.candidate_source in ("stage4_candidate48", "stage5_candidate52"):
+        output_dir = HERE / a.candidate_source / "long_runs"
+        default_source = HERE / a.candidate_source / "holdout_runs" / (
             f"cfg{a.config_id}_{a.ensemble}_matched_holdout_none_chi0-0_a0.0002-0.00189_"
             f"pairedholdout20261150_128_15000p_64s.jsonl")
     else:

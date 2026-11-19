@@ -1,0 +1,32 @@
+{
+  "study": "V17C.9 candidate52 adaptive local Sobol screen protocol",
+  "created_utc": "2026-11-19",
+  "status": "protocol published before calculation",
+  "files": [
+    {
+      "path": "optimization/refine_candidate52_screen.py",
+      "size_bytes": 8734,
+      "sha256": "ebcd445b879a09e9edb5812f07f1e1f20dcc9a688aa68eb300bff34b363b57f4"
+    },
+    {
+      "path": "optimization/validate_candidate.py",
+      "size_bytes": 7340,
+      "sha256": "cb39dfb2107f9718c38ee5dfefdc873134bf253bf3d109cd3803193bd8ffeaee"
+    },
+    {
+      "path": "optimization/verify_dop853_local.py",
+      "size_bytes": 8056,
+      "sha256": "45d5d8ad57be9fe4d5bd0764eeffb209b68268992fd5c94db4e17b5d78332b75"
+    },
+    {
+      "path": "optimization/long_horizon_candidate48.py",
+      "size_bytes": 12106,
+      "sha256": "033dc137bdd58848fa375b71f7b17d020c5a2f9ab62cd9cbcbb1a2973c24aece"
+    },
+    {
+      "path": "optimization/stage5_candidate52/PLAN_RU.md",
+      "size_bytes": 3335,
+      "sha256": "497ccc5acd858a21abc85b86ae39c4781649875b7105ead8d357925fb5b5b509"
+    }
+  ]
+}
