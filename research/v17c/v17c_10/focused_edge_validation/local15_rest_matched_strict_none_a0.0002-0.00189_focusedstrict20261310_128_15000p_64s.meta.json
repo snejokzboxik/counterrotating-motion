@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 15,
+  "candidate_label": "local_sobol_15",
+  "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+  "parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "qratio": 3.1179673274978996,
+  "ensemble": "rest",
+  "n": 128,
+  "seed": 20261310,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\focused_edge_validation\\holdout_starts\\rest_N128_seed20261310.npz",
+  "frozen_start_sha256": "a60bd93a494e953f6bce9e41a744503189281f41204f4907051af9d8d0c57ce3",
+  "candidate_source": "V17C.10 P3 focused screen",
+  "run_tag": "focusedstrict20261310",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "98dd410f793383aab7077d47253226343680bdefdc6bd17b6e0ba4bafdc28a01"
+}

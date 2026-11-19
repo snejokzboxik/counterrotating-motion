@@ -1,0 +1,582 @@
+{
+  "study": "V17C.10 P3 fresh strict matched holdout",
+  "status": "complete; descriptive paired finite-horizon comparison",
+  "protocol": {
+    "candidates": {
+      "local31": 31,
+      "local06": 6,
+      "local15": 15,
+      "config17": 33,
+      "candidate52": 36
+    },
+    "ensembles": {
+      "rest": 128,
+      "weak": 128,
+      "wide": 128,
+      "edge": 128
+    },
+    "periods": 15000,
+    "steps_per_period": 64,
+    "transient_periods": 200,
+    "finite_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "hydrodynamics": "none",
+    "strict_axis_rmin_threshold_over_R": 0.02,
+    "strict_turn_threshold": 10.0,
+    "window_sign_deadband_turns": 0.05,
+    "same_frozen_starts_and_phases_for_all_candidates": true,
+    "edge_ensemble_note": "Separately targeted starts with at least one particle initialized at 0.70-0.90R; not pooled with rest/weak/wide."
+  },
+  "all_checks_pass": true,
+  "checks": {
+    "all_20_candidate_group_files_complete": true,
+    "fresh_frozen_starts_reproduce_from_seeds": true,
+    "frozen_start_hashes_match_metadata": true,
+    "candidate_parameters_match_saved_screen": true,
+    "holdout_metadata_matches_protocol": true,
+    "all_rows_match_frozen_starts_and_phases": true,
+    "all_strict_cr_labels_reproduce": true,
+    "all_2560_candidate_group_index_keys_unique": true
+  },
+  "category_counts_all_candidate_runs": {
+    "finite_particle_wall_contact": 470,
+    "inconclusive": 421,
+    "CR_screen": 1647,
+    "axis_ambiguous": 22
+  },
+  "by_candidate_and_ensemble": {
+    "local31": {
+      "rest": {
+        "n": 128,
+        "strict_cr": 0,
+        "strict_fraction": 0.0,
+        "retained": 114,
+        "category_counts": {
+          "finite_particle_wall_contact": 14,
+          "inconclusive": 114
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr": 0,
+        "strict_fraction": 0.0,
+        "retained": 119,
+        "category_counts": {
+          "inconclusive": 119,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr": 0,
+        "strict_fraction": 0.0,
+        "retained": 103,
+        "category_counts": {
+          "inconclusive": 103,
+          "finite_particle_wall_contact": 25
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr": 0,
+        "strict_fraction": 0.0,
+        "retained": 89,
+        "category_counts": {
+          "inconclusive": 85,
+          "finite_particle_wall_contact": 39,
+          "axis_ambiguous": 4
+        }
+      }
+    },
+    "local06": {
+      "rest": {
+        "n": 128,
+        "strict_cr": 112,
+        "strict_fraction": 0.875,
+        "retained": 112,
+        "category_counts": {
+          "finite_particle_wall_contact": 16,
+          "CR_screen": 112
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr": 116,
+        "strict_fraction": 0.90625,
+        "retained": 117,
+        "category_counts": {
+          "CR_screen": 116,
+          "finite_particle_wall_contact": 11,
+          "axis_ambiguous": 1
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr": 103,
+        "strict_fraction": 0.8046875,
+        "retained": 103,
+        "category_counts": {
+          "CR_screen": 103,
+          "finite_particle_wall_contact": 25
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr": 79,
+        "strict_fraction": 0.6171875,
+        "retained": 83,
+        "category_counts": {
+          "CR_screen": 79,
+          "finite_particle_wall_contact": 45,
+          "axis_ambiguous": 4
+        }
+      }
+    },
+    "local15": {
+      "rest": {
+        "n": 128,
+        "strict_cr": 116,
+        "strict_fraction": 0.90625,
+        "retained": 116,
+        "category_counts": {
+          "finite_particle_wall_contact": 12,
+          "CR_screen": 116
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr": 119,
+        "strict_fraction": 0.9296875,
+        "retained": 119,
+        "category_counts": {
+          "CR_screen": 119,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr": 106,
+        "strict_fraction": 0.828125,
+        "retained": 107,
+        "category_counts": {
+          "CR_screen": 106,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 21
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr": 84,
+        "strict_fraction": 0.65625,
+        "retained": 88,
+        "category_counts": {
+          "CR_screen": 84,
+          "finite_particle_wall_contact": 40,
+          "axis_ambiguous": 4
+        }
+      }
+    },
+    "config17": {
+      "rest": {
+        "n": 128,
+        "strict_cr": 115,
+        "strict_fraction": 0.8984375,
+        "retained": 115,
+        "category_counts": {
+          "finite_particle_wall_contact": 13,
+          "CR_screen": 115
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr": 116,
+        "strict_fraction": 0.90625,
+        "retained": 116,
+        "category_counts": {
+          "finite_particle_wall_contact": 12,
+          "CR_screen": 116
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr": 99,
+        "strict_fraction": 0.7734375,
+        "retained": 100,
+        "category_counts": {
+          "CR_screen": 99,
+          "axis_ambiguous": 1,
+          "finite_particle_wall_contact": 28
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr": 80,
+        "strict_fraction": 0.625,
+        "retained": 83,
+        "category_counts": {
+          "finite_particle_wall_contact": 45,
+          "CR_screen": 80,
+          "axis_ambiguous": 3
+        }
+      }
+    },
+    "candidate52": {
+      "rest": {
+        "n": 128,
+        "strict_cr": 111,
+        "strict_fraction": 0.8671875,
+        "retained": 111,
+        "category_counts": {
+          "finite_particle_wall_contact": 17,
+          "CR_screen": 111
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr": 116,
+        "strict_fraction": 0.90625,
+        "retained": 116,
+        "category_counts": {
+          "finite_particle_wall_contact": 12,
+          "CR_screen": 116
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr": 97,
+        "strict_fraction": 0.7578125,
+        "retained": 98,
+        "category_counts": {
+          "CR_screen": 97,
+          "finite_particle_wall_contact": 30,
+          "axis_ambiguous": 1
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr": 78,
+        "strict_fraction": 0.609375,
+        "retained": 81,
+        "category_counts": {
+          "finite_particle_wall_contact": 47,
+          "CR_screen": 78,
+          "axis_ambiguous": 3
+        }
+      }
+    }
+  },
+  "paired_against_candidate52_by_ensemble": {
+    "rest": {
+      "local31": {
+        "candidate_strict_cr": 0,
+        "anchor_candidate52_strict_cr": 111,
+        "difference_vs_candidate52": -111,
+        "difference_percentage_points": -86.71875,
+        "paired_success_transitions": {
+          "both_success": 0,
+          "candidate_only": 0,
+          "candidate52_only": 111,
+          "neither": 17
+        },
+        "category_transition_counts": {
+          "CR_screen -> inconclusive": 110,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 13,
+          "finite_particle_wall_contact -> inconclusive": 4,
+          "CR_screen -> finite_particle_wall_contact": 1
+        }
+      },
+      "local06": {
+        "candidate_strict_cr": 112,
+        "anchor_candidate52_strict_cr": 111,
+        "difference_vs_candidate52": 1,
+        "difference_percentage_points": 0.78125,
+        "paired_success_transitions": {
+          "both_success": 110,
+          "candidate_only": 2,
+          "candidate52_only": 1,
+          "neither": 15
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 110,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 15,
+          "CR_screen -> finite_particle_wall_contact": 1,
+          "finite_particle_wall_contact -> CR_screen": 2
+        }
+      },
+      "local15": {
+        "candidate_strict_cr": 116,
+        "anchor_candidate52_strict_cr": 111,
+        "difference_vs_candidate52": 5,
+        "difference_percentage_points": 3.90625,
+        "paired_success_transitions": {
+          "both_success": 110,
+          "candidate_only": 6,
+          "candidate52_only": 1,
+          "neither": 11
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 110,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 11,
+          "finite_particle_wall_contact -> CR_screen": 6,
+          "CR_screen -> finite_particle_wall_contact": 1
+        }
+      },
+      "config17": {
+        "candidate_strict_cr": 115,
+        "anchor_candidate52_strict_cr": 111,
+        "difference_vs_candidate52": 4,
+        "difference_percentage_points": 3.125,
+        "paired_success_transitions": {
+          "both_success": 111,
+          "candidate_only": 4,
+          "candidate52_only": 0,
+          "neither": 13
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 111,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 13,
+          "finite_particle_wall_contact -> CR_screen": 4
+        }
+      }
+    },
+    "weak": {
+      "local31": {
+        "candidate_strict_cr": 0,
+        "anchor_candidate52_strict_cr": 116,
+        "difference_vs_candidate52": -116,
+        "difference_percentage_points": -90.625,
+        "paired_success_transitions": {
+          "both_success": 0,
+          "candidate_only": 0,
+          "candidate52_only": 116,
+          "neither": 12
+        },
+        "category_transition_counts": {
+          "CR_screen -> inconclusive": 116,
+          "finite_particle_wall_contact -> inconclusive": 3,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 9
+        }
+      },
+      "local06": {
+        "candidate_strict_cr": 116,
+        "anchor_candidate52_strict_cr": 116,
+        "difference_vs_candidate52": 0,
+        "difference_percentage_points": 0.0,
+        "paired_success_transitions": {
+          "both_success": 113,
+          "candidate_only": 3,
+          "candidate52_only": 3,
+          "neither": 9
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 113,
+          "finite_particle_wall_contact -> CR_screen": 3,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 9,
+          "CR_screen -> axis_ambiguous": 1,
+          "CR_screen -> finite_particle_wall_contact": 2
+        }
+      },
+      "local15": {
+        "candidate_strict_cr": 119,
+        "anchor_candidate52_strict_cr": 116,
+        "difference_vs_candidate52": 3,
+        "difference_percentage_points": 2.34375,
+        "paired_success_transitions": {
+          "both_success": 116,
+          "candidate_only": 3,
+          "candidate52_only": 0,
+          "neither": 9
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 116,
+          "finite_particle_wall_contact -> CR_screen": 3,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 9
+        }
+      },
+      "config17": {
+        "candidate_strict_cr": 116,
+        "anchor_candidate52_strict_cr": 116,
+        "difference_vs_candidate52": 0,
+        "difference_percentage_points": 0.0,
+        "paired_success_transitions": {
+          "both_success": 114,
+          "candidate_only": 2,
+          "candidate52_only": 2,
+          "neither": 10
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 114,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 10,
+          "CR_screen -> finite_particle_wall_contact": 2,
+          "finite_particle_wall_contact -> CR_screen": 2
+        }
+      }
+    },
+    "wide": {
+      "local31": {
+        "candidate_strict_cr": 0,
+        "anchor_candidate52_strict_cr": 97,
+        "difference_vs_candidate52": -97,
+        "difference_percentage_points": -75.78125,
+        "paired_success_transitions": {
+          "both_success": 0,
+          "candidate_only": 0,
+          "candidate52_only": 97,
+          "neither": 31
+        },
+        "category_transition_counts": {
+          "CR_screen -> inconclusive": 96,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 24,
+          "finite_particle_wall_contact -> inconclusive": 6,
+          "axis_ambiguous -> inconclusive": 1,
+          "CR_screen -> finite_particle_wall_contact": 1
+        }
+      },
+      "local06": {
+        "candidate_strict_cr": 103,
+        "anchor_candidate52_strict_cr": 97,
+        "difference_vs_candidate52": 6,
+        "difference_percentage_points": 4.6875,
+        "paired_success_transitions": {
+          "both_success": 96,
+          "candidate_only": 7,
+          "candidate52_only": 1,
+          "neither": 24
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 96,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 24,
+          "CR_screen -> finite_particle_wall_contact": 1,
+          "finite_particle_wall_contact -> CR_screen": 6,
+          "axis_ambiguous -> CR_screen": 1
+        }
+      },
+      "local15": {
+        "candidate_strict_cr": 106,
+        "anchor_candidate52_strict_cr": 97,
+        "difference_vs_candidate52": 9,
+        "difference_percentage_points": 7.03125,
+        "paired_success_transitions": {
+          "both_success": 95,
+          "candidate_only": 11,
+          "candidate52_only": 2,
+          "neither": 20
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 95,
+          "CR_screen -> axis_ambiguous": 1,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 20,
+          "CR_screen -> finite_particle_wall_contact": 1,
+          "finite_particle_wall_contact -> CR_screen": 10,
+          "axis_ambiguous -> CR_screen": 1
+        }
+      },
+      "config17": {
+        "candidate_strict_cr": 99,
+        "anchor_candidate52_strict_cr": 97,
+        "difference_vs_candidate52": 2,
+        "difference_percentage_points": 1.5625,
+        "paired_success_transitions": {
+          "both_success": 93,
+          "candidate_only": 6,
+          "candidate52_only": 4,
+          "neither": 25
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 93,
+          "CR_screen -> axis_ambiguous": 1,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 25,
+          "CR_screen -> finite_particle_wall_contact": 3,
+          "finite_particle_wall_contact -> CR_screen": 5,
+          "axis_ambiguous -> CR_screen": 1
+        }
+      }
+    },
+    "edge": {
+      "local31": {
+        "candidate_strict_cr": 0,
+        "anchor_candidate52_strict_cr": 78,
+        "difference_vs_candidate52": -78,
+        "difference_percentage_points": -60.9375,
+        "paired_success_transitions": {
+          "both_success": 0,
+          "candidate_only": 0,
+          "candidate52_only": 78,
+          "neither": 50
+        },
+        "category_transition_counts": {
+          "CR_screen -> inconclusive": 77,
+          "finite_particle_wall_contact -> inconclusive": 8,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 38,
+          "CR_screen -> finite_particle_wall_contact": 1,
+          "axis_ambiguous -> axis_ambiguous": 3,
+          "finite_particle_wall_contact -> axis_ambiguous": 1
+        }
+      },
+      "local06": {
+        "candidate_strict_cr": 79,
+        "anchor_candidate52_strict_cr": 78,
+        "difference_vs_candidate52": 1,
+        "difference_percentage_points": 0.78125,
+        "paired_success_transitions": {
+          "both_success": 74,
+          "candidate_only": 5,
+          "candidate52_only": 4,
+          "neither": 45
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 74,
+          "finite_particle_wall_contact -> CR_screen": 5,
+          "CR_screen -> finite_particle_wall_contact": 3,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 42,
+          "axis_ambiguous -> axis_ambiguous": 3,
+          "CR_screen -> axis_ambiguous": 1
+        }
+      },
+      "local15": {
+        "candidate_strict_cr": 84,
+        "anchor_candidate52_strict_cr": 78,
+        "difference_vs_candidate52": 6,
+        "difference_percentage_points": 4.6875,
+        "paired_success_transitions": {
+          "both_success": 73,
+          "candidate_only": 11,
+          "candidate52_only": 5,
+          "neither": 39
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 73,
+          "finite_particle_wall_contact -> CR_screen": 11,
+          "CR_screen -> finite_particle_wall_contact": 5,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 35,
+          "axis_ambiguous -> axis_ambiguous": 3,
+          "finite_particle_wall_contact -> axis_ambiguous": 1
+        }
+      },
+      "config17": {
+        "candidate_strict_cr": 80,
+        "anchor_candidate52_strict_cr": 78,
+        "difference_vs_candidate52": 2,
+        "difference_percentage_points": 1.5625,
+        "paired_success_transitions": {
+          "both_success": 71,
+          "candidate_only": 9,
+          "candidate52_only": 7,
+          "neither": 41
+        },
+        "category_transition_counts": {
+          "CR_screen -> CR_screen": 71,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 39,
+          "CR_screen -> finite_particle_wall_contact": 6,
+          "axis_ambiguous -> axis_ambiguous": 2,
+          "finite_particle_wall_contact -> CR_screen": 8,
+          "CR_screen -> axis_ambiguous": 1,
+          "axis_ambiguous -> CR_screen": 1
+        }
+      }
+    }
+  },
+  "interpretation_note": "Differences are descriptive for one fresh matched Sobol holdout per group. Candidates were selected from a preceding screen, so this holdout is an independent-start comparison but not a fully untouched preregistered confirmatory test. Keep rest, weak, wide, and the targeted edge ensemble separate; do not interpret a pooled rate as a universal basin probability."
+}

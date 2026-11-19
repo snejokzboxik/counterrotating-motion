@@ -25,7 +25,7 @@ def main():
     manifest = {
         "study": "V17C.10 counter-rotation basin optimization",
         "created": "2026-11-19",
-        "status": "P0-P2 complete: candidate52 analysis and config17 strict matched holdout; focused follow-up search pending",
+        "status": "P0-P3 complete through fresh N=128 strict matched holdout; independent N=256 replication underway",
         "branch": "research/v17c",
         "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
         "files": files,

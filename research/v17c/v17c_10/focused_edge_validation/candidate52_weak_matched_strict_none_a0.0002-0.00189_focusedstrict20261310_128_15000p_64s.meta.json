@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 36,
+  "candidate_label": "candidate52_anchor",
+  "source": "P0 training anchor config 64",
+  "parameters": [
+    0.03956095746691348,
+    0.15032976498886072,
+    2.8996277751401065,
+    0.015917322789905167,
+    0.11307613545330587,
+    9.281679945656495e-06,
+    0.1868668374144136,
+    0.10359181855828002
+  ],
+  "qratio": 3.5274259874597194,
+  "ensemble": "weak",
+  "n": 128,
+  "seed": 20261311,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\focused_edge_validation\\holdout_starts\\weak_N128_seed20261311.npz",
+  "frozen_start_sha256": "441a74edc9bb99c409759f525efd667012dd8b57436eeeec51e8b533b61331fd",
+  "candidate_source": "V17C.10 P3 focused screen",
+  "run_tag": "focusedstrict20261310",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "98dd410f793383aab7077d47253226343680bdefdc6bd17b6e0ba4bafdc28a01"
+}

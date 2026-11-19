@@ -1,0 +1,1149 @@
+{
+  "study": "V17C.10 focused Sobol screen for early radial retention",
+  "config_count": 37,
+  "sobol_config_count": 32,
+  "anchor_config_count": 5,
+  "N_per_group": 32,
+  "groups": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "periods": 2400,
+  "steps": 48,
+  "transient_periods": 500,
+  "config_seed": 20261200,
+  "start_seeds": {
+    "rest": 20261210,
+    "weak": 20261211,
+    "wide": 20261212,
+    "edge": 20261213
+  },
+  "finite_radii_over_R": [
+    0.0002,
+    0.00189
+  ],
+  "objective_order": [
+    "maximize minimum CR proxy across rest, weak, wide, and edge",
+    "maximize edge retention",
+    "maximize mean CR proxy across the standard three ensembles",
+    "maximize minimum retention across all four groups"
+  ],
+  "edge_ensemble": {
+    "n": 32,
+    "definition": "wide starts with one particle radius sampled area-uniformly in [0.70R,0.90R], alternating particle identity",
+    "minimum_initial_max_radius_over_R": 0.7
+  },
+  "parameter_ranges": {
+    "rf_scale_vs_candidate52": [
+      0.92,
+      1.08
+    ],
+    "B_over_A": [
+      3.55,
+      4.5
+    ],
+    "nu": [
+      2.75,
+      3.15
+    ],
+    "dc_scale_vs_rf_squared": [
+      0.85,
+      1.35
+    ],
+    "mass_ratio": [
+      8.0,
+      10.5
+    ],
+    "charge_ratio": [
+      2.5,
+      3.9
+    ],
+    "lambda1": [
+      0.14,
+      0.23
+    ],
+    "lambda2": [
+      0.085,
+      0.145
+    ],
+    "C_eff": [
+      6.5e-06,
+      1.2e-05
+    ]
+  },
+  "configurations": [
+    {
+      "config_id": 0,
+      "label": "local_sobol_00",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03660397720841041,
+        0.1336771864431378,
+        2.785941371694207,
+        0.016355522032131184,
+        0.10224657409989243,
+        1.0393786339892428e-05,
+        0.148741916704368,
+        0.138002660838619
+      ],
+      "qratio": 2.9340300649404525,
+      "search_coordinates": {
+        "config_id": 0,
+        "label": "local_sobol_00",
+        "qratio": 2.9340300649404525,
+        "rf_scale_vs_candidate52": 0.9252550886571408,
+        "harmonic_potential_ratio_B_over_A": 3.6519852933473884,
+        "nu": 2.785941371694207,
+        "dc_scale_vs_rf_squared": 1.200249192211777,
+        "mass_ratio": 9.780278789810836,
+        "charge_ratio": 2.9340300649404525,
+        "lambda1": 0.148741916704368,
+        "lambda2": 0.138002660838619,
+        "C_eff": 1.0393786339892428e-05
+      }
+    },
+    {
+      "config_id": 1,
+      "label": "local_sobol_01",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.040606498044108943,
+        0.16466263376725784,
+        3.1298967223614453,
+        0.017758047703140663,
+        0.114381906064161,
+        7.443874884140629e-06,
+        0.19985599433191806,
+        0.10808350589562664
+      ],
+      "qratio": 3.8923322794958946,
+      "search_coordinates": {
+        "config_id": 1,
+        "label": "local_sobol_01",
+        "qratio": 3.8923322794958946,
+        "rf_scale_vs_candidate52": 1.0264285963773727,
+        "harmonic_potential_ratio_B_over_A": 4.055080878641456,
+        "nu": 3.1298967223614453,
+        "dc_scale_vs_rf_squared": 1.0589311131276191,
+        "mass_ratio": 8.7426415104419,
+        "charge_ratio": 3.8923322794958946,
+        "lambda1": 0.19985599433191806,
+        "lambda2": 0.10808350589562664,
+        "C_eff": 7.443874884140629e-06
+      }
+    },
+    {
+      "config_id": 2,
+      "label": "local_sobol_02",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.0412418351037049,
+        0.1639637223025119,
+        2.918761957809329,
+        0.02175274713832671,
+        0.1172891472509755,
+        8.734182302158175e-06,
+        0.1726413651081364,
+        0.09637036213549063
+      ],
+      "qratio": 3.2201907809823753,
+      "search_coordinates": {
+        "config_id": 2,
+        "label": "local_sobol_02",
+        "qratio": 3.2201907809823753,
+        "rf_scale_vs_candidate52": 1.0424882951378822,
+        "harmonic_potential_ratio_B_over_A": 3.9756650471594184,
+        "nu": 2.918761957809329,
+        "dc_scale_vs_rf_squared": 1.2574818142689765,
+        "mass_ratio": 8.525938021019101,
+        "charge_ratio": 3.2201907809823753,
+        "lambda1": 0.1726413651081364,
+        "lambda2": 0.09637036213549063,
+        "C_eff": 8.734182302158175e-06
+      }
+    },
+    {
+      "config_id": 3,
+      "label": "local_sobol_03",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.038815558693169744,
+        0.1703244283191275,
+        2.9627140168100596,
+        0.013295396595437643,
+        0.09972632615025032,
+        8.836947855196177e-06,
+        0.20498689540128004,
+        0.12050680449494784
+      ],
+      "qratio": 2.7759510481730105,
+      "search_coordinates": {
+        "config_id": 3,
+        "label": "local_sobol_03",
+        "qratio": 2.7759510481730105,
+        "rf_scale_vs_candidate52": 0.9811582221090794,
+        "harmonic_potential_ratio_B_over_A": 4.388045259518549,
+        "nu": 2.9627140168100596,
+        "dc_scale_vs_rf_squared": 0.8676671952940523,
+        "mass_ratio": 10.027442487888038,
+        "charge_ratio": 2.7759510481730105,
+        "lambda1": 0.20498689540128004,
+        "lambda2": 0.12050680449494784,
+        "C_eff": 8.836947855196177e-06
+      }
+    },
+    {
+      "config_id": 4,
+      "label": "local_sobol_04",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03800232371349504,
+        0.14756168355888408,
+        3.0903250336647035,
+        0.013668134446288893,
+        0.09782453333840166,
+        8.116464801436356e-06,
+        0.16249902363235288,
+        0.08691940150396864
+      ],
+      "qratio": 3.031176335923374,
+      "search_coordinates": {
+        "config_id": 4,
+        "label": "local_sobol_04",
+        "qratio": 3.031176335923374,
+        "rf_scale_vs_candidate52": 0.9606017181277275,
+        "harmonic_potential_ratio_B_over_A": 3.8829647542443126,
+        "nu": 3.0903250336647035,
+        "dc_scale_vs_rf_squared": 0.9305773986503482,
+        "mass_ratio": 10.222384568303823,
+        "charge_ratio": 3.031176335923374,
+        "lambda1": 0.16249902363235288,
+        "lambda2": 0.08691940150396864,
+        "C_eff": 8.116464801436356e-06
+      }
+    },
+    {
+      "config_id": 5,
+      "label": "local_sobol_05",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04200484776788654,
+        0.18073714108500719,
+        2.8467544443905353,
+        0.023696785448428164,
+        0.12117860206383146,
+        9.716151716812314e-06,
+        0.2180216384463076,
+        0.11522687656873797
+      ],
+      "qratio": 3.6424052253365513,
+      "search_coordinates": {
+        "config_id": 5,
+        "label": "local_sobol_05",
+        "qratio": 3.6424052253365513,
+        "rf_scale_vs_candidate52": 1.0617753072082996,
+        "harmonic_potential_ratio_B_over_A": 4.302768625272438,
+        "nu": 2.8467544443905353,
+        "dc_scale_vs_rf_squared": 1.3205479359254242,
+        "mass_ratio": 8.252282028086483,
+        "charge_ratio": 3.6424052253365513,
+        "lambda1": 0.2180216384463076,
+        "lambda2": 0.11522687656873797,
+        "C_eff": 9.716151716812314e-06
+      }
+    },
+    {
+      "config_id": 6,
+      "label": "local_sobol_06",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03984271592366975,
+        0.14860695652817305,
+        3.004391799122095,
+        0.016078721302213113,
+        0.11188540230192068,
+        1.122423560837766e-05,
+        0.1584895574104277,
+        0.13530402818414985
+      ],
+      "qratio": 3.450486878491938,
+      "search_coordinates": {
+        "config_id": 6,
+        "label": "local_sobol_06",
+        "qratio": 3.450486878491938,
+        "rf_scale_vs_candidate52": 1.0071221344172956,
+        "harmonic_potential_ratio_B_over_A": 3.729840024281293,
+        "nu": 3.004391799122095,
+        "dc_scale_vs_rf_squared": 0.9959033703431487,
+        "mass_ratio": 8.937716444022954,
+        "charge_ratio": 3.450486878491938,
+        "lambda1": 0.1584895574104277,
+        "lambda2": 0.13530402818414985,
+        "C_eff": 1.122423560837766e-05
+      }
+    },
+    {
+      "config_id": 7,
+      "label": "local_sobol_07",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03741643629444162,
+        0.1554728911412952,
+        2.860824021697044,
+        0.016193337528682877,
+        0.10519171835940873,
+        7.00900115427154e-06,
+        0.18772661390923995,
+        0.09830246590535144
+      ],
+      "qratio": 2.653320549055934,
+      "search_coordinates": {
+        "config_id": 7,
+        "label": "local_sobol_07",
+        "qratio": 2.653320549055934,
+        "rf_scale_vs_candidate52": 0.9457919800281525,
+        "harmonic_potential_ratio_B_over_A": 4.155203074868768,
+        "nu": 2.860824021697044,
+        "dc_scale_vs_rf_squared": 1.1373001350089909,
+        "mass_ratio": 9.506451796740294,
+        "charge_ratio": 2.653320549055934,
+        "lambda1": 0.18772661390923995,
+        "lambda2": 0.09830246590535144,
+        "C_eff": 7.00900115427154e-06
+      }
+    },
+    {
+      "config_id": 8,
+      "label": "local_sobol_08",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03797442352293282,
+        0.14938622688440564,
+        3.0349609714001415,
+        0.01894692273779907,
+        0.11282315134765496,
+        7.582484415505033e-06,
+        0.1660575459576481,
+        0.0880101338033142
+      ],
+      "qratio": 2.695066619105637,
+      "search_coordinates": {
+        "config_id": 8,
+        "label": "local_sobol_08",
+        "qratio": 2.695066619105637,
+        "rf_scale_vs_candidate52": 0.9598964725434781,
+        "harmonic_potential_ratio_B_over_A": 3.9338642440270633,
+        "nu": 3.0349609714001415,
+        "dc_scale_vs_rf_squared": 1.291873141564429,
+        "mass_ratio": 8.863429075106978,
+        "charge_ratio": 2.695066619105637,
+        "lambda1": 0.1660575459576481,
+        "lambda2": 0.0880101338033142,
+        "C_eff": 7.582484415505033e-06
+      }
+    },
+    {
+      "config_id": 9,
+      "label": "local_sobol_09",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04030164056662121,
+        0.17957241601046134,
+        2.878533277288079,
+        0.015963783820784887,
+        0.10434318273909068,
+        1.017704418475148e-05,
+        0.22328263302736778,
+        0.11378446638896245
+      ],
+      "qratio": 3.3008268836885692,
+      "search_coordinates": {
+        "config_id": 9,
+        "label": "local_sobol_09",
+        "qratio": 3.3008268836885692,
+        "rf_scale_vs_candidate52": 1.0187225776910782,
+        "harmonic_potential_ratio_B_over_A": 4.455709829321131,
+        "nu": 2.878533277288079,
+        "dc_scale_vs_rf_squared": 0.9663933919742703,
+        "mass_ratio": 9.583759798668325,
+        "charge_ratio": 3.3008268836885692,
+        "lambda1": 0.22328263302736778,
+        "lambda2": 0.11378446638896245,
+        "C_eff": 1.017704418475148e-05
+      }
+    },
+    {
+      "config_id": 10,
+      "label": "local_sobol_10",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04243596891665039,
+        0.15296993849333063,
+        3.0709066037088633,
+        0.020211175877339976,
+        0.09853823839256161,
+        1.1798974704397526e-05,
+        0.15222525817878643,
+        0.12814956093104865
+      ],
+      "qratio": 3.8085667764768,
+      "search_coordinates": {
+        "config_id": 10,
+        "label": "local_sobol_10",
+        "qratio": 3.8085667764768,
+        "rf_scale_vs_candidate52": 1.0726729491353035,
+        "harmonic_potential_ratio_B_over_A": 3.6047235964797437,
+        "nu": 3.0709066037088633,
+        "dc_scale_vs_rf_squared": 1.1035370038822294,
+        "mass_ratio": 10.148344605229795,
+        "charge_ratio": 3.8085667764768,
+        "lambda1": 0.15222525817878643,
+        "lambda2": 0.12814956093104865,
+        "C_eff": 1.1798974704397526e-05
+      }
+    },
+    {
+      "config_id": 11,
+      "label": "local_sobol_11",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03853248325454609,
+        0.1593647176323346,
+        2.814475716277957,
+        0.015442457400721539,
+        0.1200569396088194,
+        6.555726503250584e-06,
+        0.18070051850893706,
+        0.10377664306490075
+      ],
+      "qratio": 3.0168689884245397,
+      "search_coordinates": {
+        "config_id": 11,
+        "label": "local_sobol_11",
+        "qratio": 3.0168689884245397,
+        "rf_scale_vs_candidate52": 0.9740027977526189,
+        "harmonic_potential_ratio_B_over_A": 4.135853808838874,
+        "nu": 2.814475716277957,
+        "dc_scale_vs_rf_squared": 1.022647544182837,
+        "mass_ratio": 8.329381069168448,
+        "charge_ratio": 3.0168689884245397,
+        "lambda1": 0.18070051850893706,
+        "lambda2": 0.10377664306490075,
+        "C_eff": 6.555726503250584e-06
+      }
+    },
+    {
+      "config_id": 12,
+      "label": "local_sobol_12",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.039345727159314434,
+        0.14518130426200382,
+        2.938564909249544,
+        0.01707876881997909,
+        0.1229430086155188,
+        1.1090361697657404e-05,
+        0.14326163076667023,
+        0.1409186000250876
+      ],
+      "qratio": 2.5757045108824967,
+      "search_coordinates": {
+        "config_id": 12,
+        "label": "local_sobol_12",
+        "qratio": 2.5757045108824967,
+        "rf_scale_vs_candidate52": 0.9945595273375512,
+        "harmonic_potential_ratio_B_over_A": 3.6898874348960815,
+        "nu": 2.938564909249544,
+        "dc_scale_vs_rf_squared": 1.0847382945008577,
+        "mass_ratio": 8.13385007623583,
+        "charge_ratio": 2.5757045108824967,
+        "lambda1": 0.14326163076667023,
+        "lambda2": 0.1409186000250876,
+        "C_eff": 1.1090361697657404e-05
+      }
+    },
+    {
+      "config_id": 13,
+      "label": "local_sobol_13",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04167294742169578,
+        0.17621161221750611,
+        2.994608223438263,
+        0.02058476645377471,
+        0.09595628981603298,
+        7.093177960834299e-06,
+        0.19216609145969463,
+        0.10586037354819991
+      ],
+      "qratio": 3.528538184054196,
+      "search_coordinates": {
+        "config_id": 13,
+        "label": "local_sobol_13",
+        "qratio": 3.528538184054196,
+        "rf_scale_vs_candidate52": 1.0533857138454914,
+        "harmonic_potential_ratio_B_over_A": 4.228441305924207,
+        "nu": 2.994608223438263,
+        "dc_scale_vs_rf_squared": 1.1654699285514654,
+        "mass_ratio": 10.42141168564558,
+        "charge_ratio": 3.528538184054196,
+        "lambda1": 0.19216609145969463,
+        "lambda2": 0.10586037354819991,
+        "C_eff": 7.093177960834299e-06
+      }
+    },
+    {
+      "config_id": 14,
+      "label": "local_sobol_14",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.041065437955219296,
+        0.1574389282103852,
+        2.7557567209005356,
+        0.015511739892101131,
+        0.10651830449997163,
+        8.332667925444126e-06,
+        0.17695746261822862,
+        0.09205484399785238
+      ],
+      "qratio": 3.556738435477018,
+      "search_coordinates": {
+        "config_id": 14,
+        "label": "local_sobol_14",
+        "qratio": 3.556738435477018,
+        "rf_scale_vs_candidate52": 1.0380294255912303,
+        "harmonic_potential_ratio_B_over_A": 3.833854843629524,
+        "nu": 2.7557567209005356,
+        "dc_scale_vs_rf_squared": 0.904422088433057,
+        "mass_ratio": 9.388057805597782,
+        "charge_ratio": 3.556738435477018,
+        "lambda1": 0.17695746261822862,
+        "lambda2": 0.09205484399785238,
+        "C_eff": 8.332667925444126e-06
+      }
+    },
+    {
+      "config_id": 15,
+      "label": "local_sobol_15",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03716194907442204,
+        0.1626938199343468,
+        3.1118029452860356,
+        0.017273303124515367,
+        0.10944955727644175,
+        9.463121589050818e-06,
+        0.20975541409005094,
+        0.12617311138613094
+      ],
+      "qratio": 3.1179673274978996,
+      "search_coordinates": {
+        "config_id": 15,
+        "label": "local_sobol_15",
+        "qratio": 3.1179673274978996,
+        "rf_scale_vs_candidate52": 0.9393591928482056,
+        "harmonic_potential_ratio_B_over_A": 4.377967894216999,
+        "nu": 3.1118029452860356,
+        "dc_scale_vs_rf_squared": 1.2298212450928987,
+        "mass_ratio": 9.136629008688033,
+        "charge_ratio": 3.1179673274978996,
+        "lambda1": 0.20975541409005094,
+        "lambda2": 0.12617311138613094,
+        "C_eff": 9.463121589050818e-06
+      }
+    },
+    {
+      "config_id": 16,
+      "label": "local_sobol_16",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03687443540012599,
+        0.139886891451614,
+        2.8913158159703016,
+        0.013506216764293802,
+        0.10050189961937843,
+        9.920287621415185e-06,
+        0.2010016158593626,
+        0.09377276285567296
+      ],
+      "qratio": 3.496198381111026,
+      "search_coordinates": {
+        "config_id": 16,
+        "label": "local_sobol_16",
+        "qratio": 3.496198381111026,
+        "rf_scale_vs_candidate52": 0.9320915812253953,
+        "harmonic_potential_ratio_B_over_A": 3.793600903544575,
+        "nu": 2.8913158159703016,
+        "dc_scale_vs_rf_squared": 0.9766670166514814,
+        "mass_ratio": 9.950060683302581,
+        "charge_ratio": 3.496198381111026,
+        "lambda1": 0.2010016158593626,
+        "lambda2": 0.09377276285567296,
+        "C_eff": 9.920287621415185e-06
+      }
+    },
+    {
+      "config_id": 17,
+      "label": "local_sobol_17",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04078428715350168,
+        0.1766834745291049,
+        3.0473864529281856,
+        0.019449213332526232,
+        0.11621715701053527,
+        7.795671725353823e-06,
+        0.14502978777603664,
+        0.12385914527939998
+      ],
+      "qratio": 2.5433649191632868,
+      "search_coordinates": {
+        "config_id": 17,
+        "label": "local_sobol_17",
+        "qratio": 2.5433649191632868,
+        "rf_scale_vs_candidate52": 1.030922651141882,
+        "harmonic_potential_ratio_B_over_A": 4.3321457075886425,
+        "nu": 3.0473864529281856,
+        "dc_scale_vs_rf_squared": 1.1496876141987742,
+        "mass_ratio": 8.604581506922841,
+        "charge_ratio": 2.5433649191632868,
+        "lambda1": 0.14502978777603664,
+        "lambda2": 0.12385914527939998,
+        "C_eff": 7.795671725353823e-06
+      }
+    },
+    {
+      "config_id": 18,
+      "label": "local_sobol_18",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04175651084522935,
+        0.15449874854968346,
+        2.802248978987336,
+        0.016290890946536886,
+        0.11539059700922176,
+        6.627993182888945e-06,
+        0.20700677700626713,
+        0.14363084432011045
+      ],
+      "qratio": 3.17141203135252,
+      "search_coordinates": {
+        "config_id": 18,
+        "label": "local_sobol_18",
+        "qratio": 3.17141203135252,
+        "rf_scale_vs_candidate52": 1.0554979838430882,
+        "harmonic_potential_ratio_B_over_A": 3.699991819774732,
+        "nu": 2.802248978987336,
+        "dc_scale_vs_rf_squared": 0.9186709783039987,
+        "mass_ratio": 8.666217403486371,
+        "charge_ratio": 3.17141203135252,
+        "lambda1": 0.20700677700626713,
+        "lambda2": 0.14363084432011045,
+        "C_eff": 6.627993182888945e-06
+      }
+    },
+    {
+      "config_id": 19,
+      "label": "local_sobol_19",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03943526711795116,
+        0.167367623886344,
+        3.058316708728671,
+        0.02118240652328957,
+        0.10141649028218086,
+        1.1639852106697907e-05,
+        0.1690123591191183,
+        0.10386343209511349
+      ],
+      "qratio": 3.6101830167695876,
+      "search_coordinates": {
+        "config_id": 19,
+        "label": "local_sobol_19",
+        "qratio": 3.6101830167695876,
+        "rf_scale_vs_candidate52": 0.9968228688836098,
+        "harmonic_potential_ratio_B_over_A": 4.244110313383862,
+        "nu": 3.058316708728671,
+        "dc_scale_vs_rf_squared": 1.339273542072624,
+        "mass_ratio": 9.860329392366111,
+        "charge_ratio": 3.6101830167695876,
+        "lambda1": 0.1690123591191183,
+        "lambda2": 0.10386343209511349,
+        "C_eff": 1.1639852106697907e-05
+      }
+    },
+    {
+      "config_id": 20,
+      "label": "local_sobol_20",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.038665304753335995,
+        0.13774948439701976,
+        2.9824178226292135,
+        0.01942123266525232,
+        0.10604344980788945,
+        7.287765316798227e-06,
+        0.2201351425124906,
+        0.13061377371818253
+      ],
+      "qratio": 3.333086400665343,
+      "search_coordinates": {
+        "config_id": 20,
+        "label": "local_sobol_20",
+        "qratio": 3.333086400665343,
+        "rf_scale_vs_candidate52": 0.9773601861298085,
+        "harmonic_potential_ratio_B_over_A": 3.5626121473964303,
+        "nu": 2.9824178226292135,
+        "dc_scale_vs_rf_squared": 1.2773134358227254,
+        "mass_ratio": 9.430096831172705,
+        "charge_ratio": 3.333086400665343,
+        "lambda1": 0.2201351425124906,
+        "lambda2": 0.13061377371818253,
+        "C_eff": 7.287765316798227e-06
+      }
+    },
+    {
+      "config_id": 21,
+      "label": "local_sobol_21",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.042575153288018724,
+        0.17389680009596747,
+        2.925962519645691,
+        0.01579176602910399,
+        0.11089310590056112,
+        1.081612806482727e-05,
+        0.15906528625727298,
+        0.10181745079884881
+      ],
+      "qratio": 2.7273262586444615,
+      "search_coordinates": {
+        "config_id": 21,
+        "label": "local_sobol_21",
+        "qratio": 2.7273262586444615,
+        "rf_scale_vs_candidate52": 1.0761911746859552,
+        "harmonic_potential_ratio_B_over_A": 4.084466799674556,
+        "nu": 2.925962519645691,
+        "dc_scale_vs_rf_squared": 0.8566074058413505,
+        "mass_ratio": 9.017693136818707,
+        "charge_ratio": 2.7273262586444615,
+        "lambda1": 0.15906528625727298,
+        "lambda2": 0.10181745079884881,
+        "C_eff": 1.081612806482727e-05
+      }
+    },
+    {
+      "config_id": 22,
+      "label": "local_sobol_22",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.039964868817068816,
+        0.15769427914511575,
+        3.1245972126722337,
+        0.019684072817181982,
+        0.12232675797882656,
+        9.34030443562778e-06,
+        0.1888297099421457,
+        0.08965394976723447
+      ],
+      "qratio": 2.96333365123719,
+      "search_coordinates": {
+        "config_id": 22,
+        "label": "local_sobol_22",
+        "qratio": 2.96333365123719,
+        "rf_scale_vs_candidate52": 1.010209847688675,
+        "harmonic_potential_ratio_B_over_A": 3.945822513941675,
+        "nu": 3.1245972126722337,
+        "dc_scale_vs_rf_squared": 1.211774317920208,
+        "mass_ratio": 8.174826313741505,
+        "charge_ratio": 2.96333365123719,
+        "lambda1": 0.1888297099421457,
+        "lambda2": 0.08965394976723447,
+        "C_eff": 9.34030443562778e-06
+      }
+    },
+    {
+      "config_id": 23,
+      "label": "local_sobol_23",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.037643628308483584,
+        0.1685285394884357,
+        2.768145105987787,
+        0.014968186105851374,
+        0.09707703762154342,
+        8.418929304312503e-06,
+        0.15454455269677012,
+        0.11169964748514082
+      ],
+      "qratio": 3.7550312280654907,
+      "search_coordinates": {
+        "config_id": 23,
+        "label": "local_sobol_23",
+        "qratio": 3.7550312280654907,
+        "rf_scale_vs_candidate52": 0.9515348140895367,
+        "harmonic_potential_ratio_B_over_A": 4.47694728327915,
+        "nu": 2.768145105987787,
+        "dc_scale_vs_rf_squared": 1.0386035092175008,
+        "mass_ratio": 10.301097195595503,
+        "charge_ratio": 3.7550312280654907,
+        "lambda1": 0.15454455269677012,
+        "lambda2": 0.11169964748514082,
+        "C_eff": 8.418929304312503e-06
+      }
+    },
+    {
+      "config_id": 24,
+      "label": "local_sobol_24",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03730835251427498,
+        0.14098487958330144,
+        3.142294642701745,
+        0.012522356379920318,
+        0.11896800754370097,
+        7.347299435212399e-06,
+        0.22898579958952445,
+        0.13337358983509984
+      ],
+      "qratio": 3.69696612264961,
+      "search_coordinates": {
+        "config_id": 24,
+        "label": "local_sobol_24",
+        "qratio": 3.69696612264961,
+        "rf_scale_vs_candidate52": 0.943059898018837,
+        "harmonic_potential_ratio_B_over_A": 3.7789092812221496,
+        "nu": 3.142294642701745,
+        "dc_scale_vs_rf_squared": 0.8845807429403066,
+        "mass_ratio": 8.405621146783233,
+        "charge_ratio": 3.69696612264961,
+        "lambda1": 0.22898579958952445,
+        "lambda2": 0.13337358983509984,
+        "C_eff": 7.347299435212399e-06
+      }
+    },
+    {
+      "config_id": 25,
+      "label": "local_sobol_25",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03972824512483247,
+        0.1668071451060918,
+        2.7987512808293102,
+        0.01991849897247055,
+        0.09932057965283621,
+        1.0501236681666304e-05,
+        0.16510000893124796,
+        0.09972320198347784
+      ],
+      "qratio": 3.085737105458975,
+      "search_coordinates": {
+        "config_id": 25,
+        "label": "local_sobol_25",
+        "qratio": 3.085737105458975,
+        "rf_scale_vs_candidate52": 1.0042286048829556,
+        "harmonic_potential_ratio_B_over_A": 4.198704085266217,
+        "nu": 2.7987512808293102,
+        "dc_scale_vs_rf_squared": 1.2408560667186976,
+        "mass_ratio": 10.068406804464757,
+        "charge_ratio": 3.085737105458975,
+        "lambda1": 0.16510000893124796,
+        "lambda2": 0.09972320198347784,
+        "C_eff": 1.0501236681666304e-05
+      }
+    },
+    {
+      "config_id": 26,
+      "label": "local_sobol_26",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.042316905944907876,
+        0.1634753255605293,
+        2.9501028548926116,
+        0.019545270299388153,
+        0.1035054073097399,
+        9.079245356089376e-06,
+        0.18459292070491592,
+        0.0856391956100469
+      ],
+      "qratio": 2.621402664668858,
+      "search_coordinates": {
+        "config_id": 26,
+        "label": "local_sobol_26",
+        "qratio": 2.621402664668858,
+        "rf_scale_vs_candidate52": 1.0696633411943912,
+        "harmonic_potential_ratio_B_over_A": 3.863120942097157,
+        "nu": 2.9501028548926116,
+        "dc_scale_vs_rf_squared": 1.0731920156627894,
+        "mass_ratio": 9.661330997012556,
+        "charge_ratio": 2.621402664668858,
+        "lambda1": 0.18459292070491592,
+        "lambda2": 0.0856391956100469,
+        "C_eff": 9.079245356089376e-06
+      }
+    },
+    {
+      "config_id": 27,
+      "label": "local_sobol_27",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.038308381209321014,
+        0.16428508811518241,
+        2.906556678190827,
+        0.017698335129146738,
+        0.11383456316968942,
+        8.518249619629695e-06,
+        0.15074778234923258,
+        0.11695183716109107
+      ],
+      "qratio": 3.418569200113416,
+      "search_coordinates": {
+        "config_id": 27,
+        "label": "local_sobol_27",
+        "qratio": 3.418569200113416,
+        "rf_scale_vs_candidate52": 0.9683380702137947,
+        "harmonic_potential_ratio_B_over_A": 4.288489435706287,
+        "nu": 2.906556678190827,
+        "dc_scale_vs_rf_squared": 1.1857916232198478,
+        "mass_ratio": 8.78467815183103,
+        "charge_ratio": 3.418569200113416,
+        "lambda1": 0.15074778234923258,
+        "lambda2": 0.11695183716109107,
+        "C_eff": 8.518249619629695e-06
+      }
+    },
+    {
+      "config_id": 28,
+      "label": "local_sobol_28",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.039078358889255406,
+        0.1572074410068623,
+        2.834179425239563,
+        0.017437859383921048,
+        0.10852721221735305,
+        9.823303832206341e-06,
+        0.19632499244615667,
+        0.09494949722287396
+      ],
+      "qratio": 3.8378623493015764,
+      "search_coordinates": {
+        "config_id": 28,
+        "label": "local_sobol_28",
+        "qratio": 3.8378623493015764,
+        "rf_scale_vs_candidate52": 0.9878011400997639,
+        "harmonic_potential_ratio_B_over_A": 4.0228772516362366,
+        "nu": 2.834179425239563,
+        "dc_scale_vs_rf_squared": 1.1227526831440628,
+        "mass_ratio": 9.214278885163367,
+        "charge_ratio": 3.8378623493015764,
+        "lambda1": 0.19632499244615667,
+        "lambda2": 0.09494949722287396,
+        "C_eff": 9.823303832206341e-06
+      }
+    },
+    {
+      "config_id": 29,
+      "label": "local_sobol_29",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04149824828111994,
+        0.18367049593638216,
+        3.0781070716679095,
+        0.017694032325514204,
+        0.10742034573499382,
+        8.006892093906371e-06,
+        0.1418960123495839,
+        0.12230867537611212
+      ],
+      "qratio": 2.8795599287375806,
+      "search_coordinates": {
+        "config_id": 29,
+        "label": "local_sobol_29",
+        "qratio": 2.8795599287375806,
+        "rf_scale_vs_candidate52": 1.0489697656035424,
+        "harmonic_potential_ratio_B_over_A": 4.425981903914362,
+        "nu": 3.0781070716679095,
+        "dc_scale_vs_rf_squared": 1.0102546344511212,
+        "mass_ratio": 9.309223435819149,
+        "charge_ratio": 2.8795599287375806,
+        "lambda1": 0.1418960123495839,
+        "lambda2": 0.12230867537611212,
+        "C_eff": 8.006892093906371e-06
+      }
+    },
+    {
+      "config_id": 30,
+      "label": "local_sobol_30",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.04054767224487797,
+        0.1473500345381463,
+        2.8732338644564153,
+        0.021800646825385336,
+        0.09526015643105279,
+        6.832075747474471e-06,
+        0.21509492904639363,
+        0.13603607916419083
+      ],
+      "qratio": 2.8079488847404717,
+      "search_coordinates": {
+        "config_id": 30,
+        "label": "local_sobol_30",
+        "qratio": 2.8079488847404717,
+        "rf_scale_vs_candidate52": 1.0249416303634644,
+        "harmonic_potential_ratio_B_over_A": 3.633994909701869,
+        "nu": 2.8732338644564153,
+        "dc_scale_vs_rf_squared": 1.3037703166715802,
+        "mass_ratio": 10.497568316757679,
+        "charge_ratio": 2.8079488847404717,
+        "lambda1": 0.21509492904639363,
+        "lambda2": 0.13603607916419083,
+        "C_eff": 6.832075747474471e-06
+      }
+    },
+    {
+      "config_id": 31,
+      "label": "local_sobol_31",
+      "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+      "p": [
+        0.03653915072798406,
+        0.1478509116035631,
+        3.017164799571037,
+        0.012867620035604137,
+        0.12416204658794422,
+        1.153986665521603e-05,
+        0.1759142461015591,
+        0.10964728408938422
+      ],
+      "qratio": 3.252188745327294,
+      "search_coordinates": {
+        "config_id": 31,
+        "label": "local_sobol_31",
+        "qratio": 3.252188745327294,
+        "rf_scale_vs_candidate52": 0.9236164407432079,
+        "harmonic_potential_ratio_B_over_A": 4.046369679039344,
+        "nu": 3.017164799571037,
+        "dc_scale_vs_rf_squared": 0.9476432966999709,
+        "mass_ratio": 8.053990953601897,
+        "charge_ratio": 3.252188745327294,
+        "lambda1": 0.1759142461015591,
+        "lambda2": 0.10964728408938422,
+        "C_eff": 1.153986665521603e-05
+      }
+    },
+    {
+      "config_id": 32,
+      "label": "screen_rank2",
+      "source": "P0 training anchor config 12",
+      "p": [
+        0.040566692407174414,
+        0.13842635856520755,
+        2.5252472303807734,
+        0.01691877567867738,
+        0.0965922855838832,
+        1.1494120721441484e-05,
+        0.14874078214027117,
+        0.135586068768021
+      ],
+      "qratio": 2.8767215669155117,
+      "search_coordinates": {
+        "config_id": 32,
+        "label": "screen_rank2",
+        "qratio": 2.8767215669155117,
+        "P0_config_id": 12
+      }
+    },
+    {
+      "config_id": 33,
+      "label": "config17_validated",
+      "source": "P0 training anchor config 17",
+      "p": [
+        0.038653690877216845,
+        0.16363055980329974,
+        2.919998063147068,
+        0.018622357207329094,
+        0.1044703862470041,
+        7.519028585347006e-06,
+        0.15737671536869924,
+        0.12258651829918216
+      ],
+      "qratio": 2.831544530391693,
+      "search_coordinates": {
+        "config_id": 33,
+        "label": "config17_validated",
+        "qratio": 2.831544530391693,
+        "P0_config_id": 17
+      }
+    },
+    {
+      "config_id": 34,
+      "label": "screen_rank3",
+      "source": "P0 training anchor config 28",
+      "p": [
+        0.04010850295407489,
+        0.15106207093873547,
+        2.841331109404564,
+        0.01942813342214877,
+        0.09284882955589831,
+        1.766424880220334e-05,
+        0.23869877333490921,
+        0.10237622544973084
+      ],
+      "qratio": 4.041399236023426,
+      "search_coordinates": {
+        "config_id": 34,
+        "label": "screen_rank3",
+        "qratio": 4.041399236023426,
+        "P0_config_id": 28
+      }
+    },
+    {
+      "config_id": 35,
+      "label": "screen_rank4",
+      "source": "P0 training anchor config 49",
+      "p": [
+        0.03826314128388299,
+        0.15620295075701796,
+        2.5767362155020237,
+        0.015556347264847052,
+        0.10111566541858878,
+        1.2263594934009639e-05,
+        0.19914773596727645,
+        0.08786674567627951
+      ],
+      "qratio": 4.174863402545452,
+      "search_coordinates": {
+        "config_id": 35,
+        "label": "screen_rank4",
+        "qratio": 4.174863402545452,
+        "P0_config_id": 49
+      }
+    },
+    {
+      "config_id": 36,
+      "label": "candidate52_anchor",
+      "source": "P0 training anchor config 64",
+      "p": [
+        0.03956095746691348,
+        0.15032976498886072,
+        2.8996277751401065,
+        0.015917322789905167,
+        0.11307613545330587,
+        9.281679945656495e-06,
+        0.1868668374144136,
+        0.10359181855828002
+      ],
+      "qratio": 3.5274259874597194,
+      "search_coordinates": {
+        "config_id": 36,
+        "label": "candidate52_anchor",
+        "qratio": 3.5274259874597194,
+        "P0_config_id": 64
+      }
+    }
+  ],
+  "note": "Exploratory training screen only. The edge group is an additional targeted distribution, not a replacement for rest/weak/wide or an estimate of their natural weights. Keep all trials in denominators; reserve fresh starts for strict validation."
+}

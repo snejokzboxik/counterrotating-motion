@@ -1,0 +1,810 @@
+{
+  "study": "V17C.10 focused edge screen validation",
+  "all_checks_pass": true,
+  "checks": {
+    "37_configurations_and_four_groups": true,
+    "configurations_match_saved_training_npz": true,
+    "sobol_and_anchor_definitions_reproduce": true,
+    "fresh_start_arrays_reproduce_from_seeds": true,
+    "edge_group_all_rmax_ge_0_70": true,
+    "all_4736_trial_keys_unique": true,
+    "all_trial_parameters_and_qratios_match": true,
+    "all_trial_inputs_and_phases_match": true,
+    "all_proxy_labels_reproduce": true,
+    "saved_ranking_reproduces": true
+  },
+  "n_configs": 37,
+  "n_groups": 4,
+  "n_per_config_group": 32,
+  "total_trials": 4736,
+  "category_counts_all_trials": {
+    "inconclusive": 3875,
+    "finite_particle_wall_contact": 811,
+    "axis_ambiguous": 50
+  },
+  "ranked_top_10": [
+    {
+      "config_id": 31,
+      "label": "local_sobol_31",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.78125
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.8125,
+        "edge": 0.78125
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "inconclusive": 25,
+          "finite_particle_wall_contact": 6,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 25,
+          "finite_particle_wall_contact": 7
+        }
+      },
+      "objective_tuple": [
+        0.78125,
+        0.78125,
+        0.8958333333333334,
+        0.78125
+      ],
+      "p": [
+        0.03653915072798406,
+        0.1478509116035631,
+        3.017164799571037,
+        0.012867620035604137,
+        0.12416204658794422,
+        1.153986665521603e-05,
+        0.1759142461015591,
+        0.10964728408938422
+      ],
+      "qratio": 3.252188745327294
+    },
+    {
+      "config_id": 6,
+      "label": "local_sobol_06",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.78125
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.78125
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7,
+          "inconclusive": 24,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 25,
+          "finite_particle_wall_contact": 7
+        }
+      },
+      "objective_tuple": [
+        0.75,
+        0.78125,
+        0.8958333333333334,
+        0.78125
+      ],
+      "p": [
+        0.03984271592366975,
+        0.14860695652817305,
+        3.004391799122095,
+        0.016078721302213113,
+        0.11188540230192068,
+        1.122423560837766e-05,
+        0.1584895574104277,
+        0.13530402818414985
+      ],
+      "qratio": 3.450486878491938
+    },
+    {
+      "config_id": 15,
+      "label": "local_sobol_15",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.78125
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.78125
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "inconclusive": 24,
+          "finite_particle_wall_contact": 7,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 25,
+          "finite_particle_wall_contact": 7
+        }
+      },
+      "objective_tuple": [
+        0.75,
+        0.78125,
+        0.8854166666666666,
+        0.78125
+      ],
+      "p": [
+        0.03716194907442204,
+        0.1626938199343468,
+        3.1118029452860356,
+        0.017273303124515367,
+        0.10944955727644175,
+        9.463121589050818e-06,
+        0.20975541409005094,
+        0.12617311138613094
+      ],
+      "qratio": 3.1179673274978996
+    },
+    {
+      "config_id": 16,
+      "label": "local_sobol_16",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.75
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.75
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7,
+          "inconclusive": 24,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 24,
+          "finite_particle_wall_contact": 8
+        }
+      },
+      "objective_tuple": [
+        0.75,
+        0.75,
+        0.8958333333333334,
+        0.75
+      ],
+      "p": [
+        0.03687443540012599,
+        0.139886891451614,
+        2.8913158159703016,
+        0.013506216764293802,
+        0.10050189961937843,
+        9.920287621415185e-06,
+        0.2010016158593626,
+        0.09377276285567296
+      ],
+      "qratio": 3.496198381111026
+    },
+    {
+      "config_id": 18,
+      "label": "local_sobol_18",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.75
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.75
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 24,
+          "finite_particle_wall_contact": 8
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.75,
+        0.8854166666666666,
+        0.75
+      ],
+      "p": [
+        0.04175651084522935,
+        0.15449874854968346,
+        2.802248978987336,
+        0.016290890946536886,
+        0.11539059700922176,
+        6.627993182888945e-06,
+        0.20700677700626713,
+        0.14363084432011045
+      ],
+      "qratio": 3.17141203135252
+    },
+    {
+      "config_id": 10,
+      "label": "local_sobol_10",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.75
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.75
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 24,
+          "finite_particle_wall_contact": 8
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.75,
+        0.875,
+        0.75
+      ],
+      "p": [
+        0.04243596891665039,
+        0.15296993849333063,
+        3.0709066037088633,
+        0.020211175877339976,
+        0.09853823839256161,
+        1.1798974704397526e-05,
+        0.15222525817878643,
+        0.12814956093104865
+      ],
+      "qratio": 3.8085667764768
+    },
+    {
+      "config_id": 9,
+      "label": "local_sobol_09",
+      "proxy_by_group": {
+        "rest": 0.875,
+        "weak": 0.9375,
+        "wide": 0.71875,
+        "edge": 0.75
+      },
+      "retention_by_group": {
+        "rest": 0.875,
+        "weak": 0.9375,
+        "wide": 0.75,
+        "edge": 0.75
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 28,
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 24,
+          "finite_particle_wall_contact": 8
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.75,
+        0.84375,
+        0.75
+      ],
+      "p": [
+        0.04030164056662121,
+        0.17957241601046134,
+        2.878533277288079,
+        0.015963783820784887,
+        0.10434318273909068,
+        1.017704418475148e-05,
+        0.22328263302736778,
+        0.11378446638896245
+      ],
+      "qratio": 3.3008268836885692
+    },
+    {
+      "config_id": 33,
+      "label": "config17_validated",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.71875
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7,
+          "inconclusive": 23,
+          "axis_ambiguous": 2
+        },
+        "edge": {
+          "inconclusive": 23,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.71875,
+        0.8854166666666666,
+        0.71875
+      ],
+      "p": [
+        0.038653690877216845,
+        0.16363055980329974,
+        2.919998063147068,
+        0.018622357207329094,
+        0.1044703862470041,
+        7.519028585347006e-06,
+        0.15737671536869924,
+        0.12258651829918216
+      ],
+      "qratio": 2.831544530391693
+    },
+    {
+      "config_id": 1,
+      "label": "local_sobol_01",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.71875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 23,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.71875,
+        0.875,
+        0.71875
+      ],
+      "p": [
+        0.040606498044108943,
+        0.16466263376725784,
+        3.1298967223614453,
+        0.017758047703140663,
+        0.114381906064161,
+        7.443874884140629e-06,
+        0.19985599433191806,
+        0.10808350589562664
+      ],
+      "qratio": 3.8923322794958946
+    },
+    {
+      "config_id": 29,
+      "label": "local_sobol_29",
+      "proxy_by_group": {
+        "rest": 0.90625,
+        "weak": 0.9375,
+        "wide": 0.75,
+        "edge": 0.71875
+      },
+      "retention_by_group": {
+        "rest": 0.90625,
+        "weak": 0.9375,
+        "wide": 0.78125,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 29,
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7,
+          "inconclusive": 24,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 23,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.71875,
+        0.8645833333333334,
+        0.71875
+      ],
+      "p": [
+        0.04149824828111994,
+        0.18367049593638216,
+        3.0781070716679095,
+        0.017694032325514204,
+        0.10742034573499382,
+        8.006892093906371e-06,
+        0.1418960123495839,
+        0.12230867537611212
+      ],
+      "qratio": 2.8795599287375806
+    }
+  ],
+  "anchor_results": [
+    {
+      "config_id": 33,
+      "label": "config17_validated",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.71875
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.78125,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7,
+          "inconclusive": 23,
+          "axis_ambiguous": 2
+        },
+        "edge": {
+          "inconclusive": 23,
+          "finite_particle_wall_contact": 9
+        }
+      },
+      "objective_tuple": [
+        0.71875,
+        0.71875,
+        0.8854166666666666,
+        0.71875
+      ],
+      "p": [
+        0.038653690877216845,
+        0.16363055980329974,
+        2.919998063147068,
+        0.018622357207329094,
+        0.1044703862470041,
+        7.519028585347006e-06,
+        0.15737671536869924,
+        0.12258651829918216
+      ],
+      "qratio": 2.831544530391693
+    },
+    {
+      "config_id": 36,
+      "label": "candidate52_anchor",
+      "proxy_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.65625
+      },
+      "retention_by_group": {
+        "rest": 0.96875,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.65625
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 21,
+          "finite_particle_wall_contact": 11
+        }
+      },
+      "objective_tuple": [
+        0.65625,
+        0.65625,
+        0.8854166666666666,
+        0.65625
+      ],
+      "p": [
+        0.03956095746691348,
+        0.15032976498886072,
+        2.8996277751401065,
+        0.015917322789905167,
+        0.11307613545330587,
+        9.281679945656495e-06,
+        0.1868668374144136,
+        0.10359181855828002
+      ],
+      "qratio": 3.5274259874597194
+    },
+    {
+      "config_id": 34,
+      "label": "screen_rank3",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.71875,
+        "edge": 0.65625
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.96875,
+        "wide": 0.75,
+        "edge": 0.65625
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 30,
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "inconclusive": 31,
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8,
+          "inconclusive": 23,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "inconclusive": 21,
+          "finite_particle_wall_contact": 11
+        }
+      },
+      "objective_tuple": [
+        0.65625,
+        0.65625,
+        0.875,
+        0.65625
+      ],
+      "p": [
+        0.04010850295407489,
+        0.15106207093873547,
+        2.841331109404564,
+        0.01942813342214877,
+        0.09284882955589831,
+        1.766424880220334e-05,
+        0.23869877333490921,
+        0.10237622544973084
+      ],
+      "qratio": 4.041399236023426
+    },
+    {
+      "config_id": 35,
+      "label": "screen_rank4",
+      "proxy_by_group": {
+        "rest": 0.8125,
+        "weak": 0.90625,
+        "wide": 0.65625,
+        "edge": 0.65625
+      },
+      "retention_by_group": {
+        "rest": 0.8125,
+        "weak": 0.90625,
+        "wide": 0.6875,
+        "edge": 0.65625
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 26,
+          "finite_particle_wall_contact": 6
+        },
+        "weak": {
+          "inconclusive": 29,
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 21,
+          "axis_ambiguous": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11,
+          "inconclusive": 21
+        }
+      },
+      "objective_tuple": [
+        0.65625,
+        0.65625,
+        0.7916666666666666,
+        0.65625
+      ],
+      "p": [
+        0.03826314128388299,
+        0.15620295075701796,
+        2.5767362155020237,
+        0.015556347264847052,
+        0.10111566541858878,
+        1.2263594934009639e-05,
+        0.19914773596727645,
+        0.08786674567627951
+      ],
+      "qratio": 4.174863402545452
+    },
+    {
+      "config_id": 32,
+      "label": "screen_rank2",
+      "proxy_by_group": {
+        "rest": 0.8125,
+        "weak": 0.90625,
+        "wide": 0.59375,
+        "edge": 0.65625
+      },
+      "retention_by_group": {
+        "rest": 0.8125,
+        "weak": 0.90625,
+        "wide": 0.65625,
+        "edge": 0.65625
+      },
+      "categories_by_group": {
+        "rest": {
+          "inconclusive": 26,
+          "finite_particle_wall_contact": 6
+        },
+        "weak": {
+          "inconclusive": 29,
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 11,
+          "inconclusive": 19,
+          "axis_ambiguous": 2
+        },
+        "edge": {
+          "inconclusive": 21,
+          "finite_particle_wall_contact": 11
+        }
+      },
+      "objective_tuple": [
+        0.59375,
+        0.65625,
+        0.7708333333333334,
+        0.65625
+      ],
+      "p": [
+        0.040566692407174414,
+        0.13842635856520755,
+        2.5252472303807734,
+        0.01691877567867738,
+        0.0965922855838832,
+        1.1494120721441484e-05,
+        0.14874078214027117,
+        0.135586068768021
+      ],
+      "qratio": 2.8767215669155117
+    }
+  ],
+  "objective_note": "Training proxy on fresh scrambled Sobol sets. The edge group is an additional targeted distribution and is not a reweighted estimate of rest/weak/wide."
+}
