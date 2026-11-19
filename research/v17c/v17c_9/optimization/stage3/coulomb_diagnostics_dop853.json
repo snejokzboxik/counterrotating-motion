@@ -1,0 +1,169 @@
+{
+  "candidate_id": 48,
+  "source": "saved independent DOP853 trajectories; stroboscopic samples",
+  "window_start_cycle": 200,
+  "trajectories": [
+    {
+      "key": "48:rest:0",
+      "frequency_Hz": [
+        503.774515378368,
+        -92.11670849909466
+      ],
+      "turns_after_transient": [
+        74.55862827599846,
+        -13.63327285786601
+      ],
+      "mean_radius_R": [
+        0.5303795377459344,
+        0.7215180741851874
+      ],
+      "separation_R_mean_min_max_after_transient": [
+        0.7957459970120114,
+        0.17976052170129672,
+        1.3627659293973147
+      ],
+      "Coulomb_potential_C_over_d_mean_min_max": [
+        3.0368746135829375e-05,
+        1.2560691502759857e-05,
+        9.522270111162017e-05
+      ],
+      "Coulomb_to_RF_force_ratio_median_p95_max_each": [
+        [
+          0.00031514413242916,
+          0.004651752690528402,
+          0.01889247641805763
+        ],
+        [
+          2.6989546263297277e-05,
+          0.0003936302731515416,
+          0.0007671087391014446
+        ]
+      ],
+      "Coulomb_torque_z_mean_each": [
+        -9.830151126577457e-06,
+        9.830151126577457e-06
+      ],
+      "Coulomb_torque_z_integral_each_stroboscopic": [
+        -0.914182177184464,
+        0.914182177184464
+      ],
+      "Coulomb_work_each_over_late_window": [
+        -0.00021280186296813373,
+        0.00021359462205481345
+      ],
+      "Coulomb_work_sum_abs": 7.927590866797188e-07,
+      "RF_work_sum_late_window": 246.72738338518405,
+      "Coulomb_work_sum_over_RF_work": 3.2130972890110255e-09,
+      "stroboscopic_force_ratio_caveat": "RF-force ratios sampled once per primary cycle; RF micro-motion extrema are not resolved.",
+      "torque_integral_caveat": "stroboscopic quadrature; equal/opposite exchange is exact instantaneously and approximate here."
+    },
+    {
+      "key": "48:weak:1",
+      "frequency_Hz": [
+        503.8938187603345,
+        -92.24039108213398
+      ],
+      "turns_after_transient": [
+        74.57628517652951,
+        -13.651577880155829
+      ],
+      "mean_radius_R": [
+        0.5302668301865132,
+        0.7210850279639895
+      ],
+      "separation_R_mean_min_max_after_transient": [
+        0.7954494840970511,
+        0.17895534304356522,
+        1.3627526257931815
+      ],
+      "Coulomb_potential_C_over_d_mean_min_max": [
+        3.034783235297316e-05,
+        1.2560814124036991e-05,
+        9.565113920887194e-05
+      ],
+      "Coulomb_to_RF_force_ratio_median_p95_max_each": [
+        [
+          0.00031388730430082336,
+          0.004602052159695744,
+          0.020205424996542775
+        ],
+        [
+          2.684219909101568e-05,
+          0.00039370359945052987,
+          0.0007899541086574765
+        ]
+      ],
+      "Coulomb_torque_z_mean_each": [
+        -9.813697288843149e-06,
+        9.813697288843149e-06
+      ],
+      "Coulomb_torque_z_integral_each_stroboscopic": [
+        -0.9126157792626934,
+        0.9126157792626934
+      ],
+      "Coulomb_work_each_over_late_window": [
+        -0.0002196615022318297,
+        0.00021496201259388703
+      ],
+      "Coulomb_work_sum_abs": 4.699489637942676e-06,
+      "RF_work_sum_late_window": 246.7366975493195,
+      "Coulomb_work_sum_over_RF_work": 1.9046577524218132e-08,
+      "stroboscopic_force_ratio_caveat": "RF-force ratios sampled once per primary cycle; RF micro-motion extrema are not resolved.",
+      "torque_integral_caveat": "stroboscopic quadrature; equal/opposite exchange is exact instantaneously and approximate here."
+    },
+    {
+      "key": "48:wide:2",
+      "frequency_Hz": [
+        504.0321763723991,
+        -92.14107054595685
+      ],
+      "turns_after_transient": [
+        74.59676210311507,
+        -13.636878440801613
+      ],
+      "mean_radius_R": [
+        0.5302982753137231,
+        0.7213529083162927
+      ],
+      "separation_R_mean_min_max_after_transient": [
+        0.7946311970492127,
+        0.17986675402248803,
+        1.3636883801350077
+      ],
+      "Coulomb_potential_C_over_d_mean_min_max": [
+        3.0386666372970486e-05,
+        1.2552194972825717e-05,
+        9.516646098751181e-05
+      ],
+      "Coulomb_to_RF_force_ratio_median_p95_max_each": [
+        [
+          0.0003181523324338998,
+          0.00467415422635731,
+          0.02056872016421835
+        ],
+        [
+          2.7087830255480885e-05,
+          0.0003926262924772659,
+          0.0007837032811242436
+        ]
+      ],
+      "Coulomb_torque_z_mean_each": [
+        -9.822948547379186e-06,
+        9.822948547379186e-06
+      ],
+      "Coulomb_torque_z_integral_each_stroboscopic": [
+        -0.913635294270284,
+        0.913635294270284
+      ],
+      "Coulomb_work_each_over_late_window": [
+        -0.00019126587081795592,
+        0.00021251953071826314
+      ],
+      "Coulomb_work_sum_abs": 2.1253659900307217e-05,
+      "RF_work_sum_late_window": 246.75421115204716,
+      "Coulomb_work_sum_over_RF_work": 8.613291664234638e-08,
+      "stroboscopic_force_ratio_caveat": "RF-force ratios sampled once per primary cycle; RF micro-motion extrema are not resolved.",
+      "torque_integral_caveat": "stroboscopic quadrature; equal/opposite exchange is exact instantaneously and approximate here."
+    }
+  ]
+}
