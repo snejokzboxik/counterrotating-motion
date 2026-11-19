@@ -15,6 +15,8 @@ def main():
     ap.add_argument("--periods",type=int,default=5000); ap.add_argument("--steps",type=int,default=64)
     ap.add_argument("--threads",type=int,default=6); ap.add_argument("--search-starts",action="store_true")
     ap.add_argument("--candidate-source",choices=["stage1","stage2_local","stage2_speed"],default="stage1")
+    ap.add_argument("--initials-from",type=Path,default=None,
+                    help="reuse exact initial/phase arrays from a saved holdout NPZ")
     ap.add_argument("--oseen-Re-per-speed",type=float,default=0.0,
                     help="dimensionless Re=chi*|v| for first-order Oseen drag")
     ap.add_argument("--oseen-Re2-per-speed",type=float,default=None,
@@ -33,6 +35,13 @@ def main():
         else:
             init=source_npz[f"initial_{a.ensemble}"].copy(); phases=source_npz[f"phase_{a.ensemble}"].copy(); seed=20261127
         label="search_starts_reused"
+    elif a.initials_from is not None:
+        saved=np.load(a.initials_from)
+        init=np.asarray(saved["initial"][:a.count],float).copy()
+        phases=np.asarray(saved["phases"][:a.count],float).copy()
+        if init.shape[0] != min(a.count,len(saved["initial"])) or phases.shape[0] != init.shape[0]:
+            raise ValueError("initial conditions and phases have inconsistent lengths")
+        seed=None;label="matched_holdout"
     else:
         init,phases=make_initials(a.ensemble,a.count,a.seed); seed=a.seed; label="holdout"
     hydro_mode={"none":0,"oseen":1,"rpy":2}[a.hydro_mode]
@@ -46,7 +55,8 @@ def main():
     np.savez_compressed(dest/f"{stem}_initials.npz",initial=init,phases=phases,seed=seed,p=p,qratio=qratio)
     metadata={"config_id":a.config_id,"parameters":p.tolist(),"qratio":qratio,"ensemble":a.ensemble,
       "n":len(init),"seed":seed,"periods":a.periods,"steps":a.steps,"transient":200,
-      "starts":"search subset" if a.search_starts else "fresh scrambled Sobol ensemble",
+      "starts":(f"matched to {a.initials_from}" if a.initials_from is not None else
+                ("search subset" if a.search_starts else "fresh scrambled Sobol ensemble")),
       "candidate_source":a.candidate_source}
     if a.oseen_Re_per_speed or chi2 or hydro_mode or a.a1_over_R or a.a2_over_R:
         metadata.update(oseen_Re_per_speed=a.oseen_Re_per_speed,hydro_mode=a.hydro_mode,

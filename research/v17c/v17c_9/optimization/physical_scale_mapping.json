@@ -1,0 +1,114 @@
+{
+  "model": "illustrative candidate-48 dimensional mapping; not an engineering design",
+  "reference_dimensionless_parameters": {
+    "A": 0.04880976385123572,
+    "B": 0.1444701664174033,
+    "nu": 2.6519539955072107,
+    "beta": 0.020872352432266747,
+    "mass_ratio_m2_m1": 9.622695170808583,
+    "charge_ratio_q2_q1": 4.178242558147758,
+    "C": 1.711728242963149e-05,
+    "lambda1": 0.10852233544443492,
+    "lambda2": 0.10657837930086715,
+    "electrode_voltage_ratio_U2_U1": 3.22721397
+  },
+  "particles": {
+    "a1_m": 0.001,
+    "a2_m": 0.009450324226906894,
+    "rho1_kg_m3": 19300.0,
+    "rho2_kg_m3": 220.04621922860701,
+    "m1_kg": 8.084365095237735e-05,
+    "m2_kg": 0.0007779338096099764,
+    "q1_C": 8.346271248978644e-11,
+    "q2_C": 3.4872745734327615e-10,
+    "q1_e": 520933277.3841117,
+    "q2_e": 2176585589.5216866,
+    "isolated_surface_field1_V_m": 750125.4512245589,
+    "isolated_surface_field2_V_m": 35094.1018204716
+  },
+  "trap": {
+    "R_m": 5.0,
+    "D_m": 5.2631578947368425,
+    "electrode_radius_m": 0.26315789473684215,
+    "screen_inner_radius_m": 5.789473684210527,
+    "adjacent_rod_surface_gap_m": 0.8476441286321219,
+    "f1_Hz": 0.0061892037484959535,
+    "f2_Hz": 0.01641348360983205,
+    "U1_peak_V": 1787.4316143645808,
+    "U2_peak_V": 5768.424276297028,
+    "ideal_quadrupole_Vdc_V": 764.3532699175006,
+    "upper_bound_adjacent_RF_difference_V": 6693.666963528823,
+    "gap_average_RF_field_bound_V_m": 7896.78915647144
+  },
+  "fluid": {
+    "description": "air-like ideal gas at 293.15 K; viscosity fixed to 1.81e-5 Pa s",
+    "density_kg_m3": 0.009308804773678197,
+    "ideal_pressure_Pa": 783.3238900748502,
+    "mean_free_path_estimate_m": 8.795978377911618e-06,
+    "Kn_a1": 0.008795978377911618,
+    "Kn_a2": 0.0009307594286413765,
+    "chi1_Re_per_dimensionless_speed": 0.2,
+    "chi2_Re_per_dimensionless_speed": 1.8900648453813789,
+    "dimensionless_speed_samples": {
+      "rest": {
+        "mean_dimensionless_speed": [
+          0.056834004397167924,
+          0.04246665149368566
+        ],
+        "max_dimensionless_speed": [
+          0.10089880300642216,
+          0.09417185306812259
+        ],
+        "max_Re_Oseen": [
+          0.020179760601284433,
+          0.17799090890847905
+        ]
+      },
+      "weak": {
+        "mean_dimensionless_speed": [
+          0.05682231395737644,
+          0.04244421575202049
+        ],
+        "max_dimensionless_speed": [
+          0.10014357581846889,
+          0.06917569689346166
+        ],
+        "max_Re_Oseen": [
+          0.02002871516369378,
+          0.13074655285308975
+        ]
+      },
+      "wide": {
+        "mean_dimensionless_speed": [
+          0.05683336649274516,
+          0.042450774955951315
+        ],
+        "max_dimensionless_speed": [
+          0.09387568692782443,
+          0.07189357291048003
+        ],
+        "max_Re_Oseen": [
+          0.018775137385564886,
+          0.1358835147669613
+        ]
+      }
+    }
+  },
+  "DOP853_rotation": {
+    "reference_frequency_Hz_at_f1_100kHz": [
+      503.774515378368,
+      -92.11670849909466
+    ],
+    "physical_frequency_Hz_at_mapped_f1": [
+      3.117963118976528e-05,
+      -5.701290775417057e-06
+    ]
+  },
+  "caveats": [
+    "Stokes damping solves this scale; Oseen is then a small correction, not an independently chosen lambda.",
+    "a1/R=0.0002 and a2/R\u22480.00189; both particle and trap scales are large for a conventional RF trap.",
+    "Knudsen values are small for this illustrative pressure, but slip corrections and charge retention need measurement.",
+    "Surface fields are isolated-sphere estimates; no finite 3-D electrode edge field or breakdown threshold is asserted.",
+    "The ideal DC quadrupole voltage is not a derived endcap design."
+  ]
+}

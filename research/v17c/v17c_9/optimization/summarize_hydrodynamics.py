@@ -24,13 +24,14 @@ def main():
     for model,suffix in models.items():
         out["models"][model]={}
         for g in groups:
+            basefile=RUNS/f"cfg48_{g}_holdout_128_{a.periods}p_64s.jsonl"
+            base_rows=[json.loads(s) for s in basefile.read_text(encoding="utf-8").splitlines() if s.strip()]
+            base={int(r["index"]):r for r in base_rows[:a.count]}
             if suffix is None:
-                f=RUNS/f"cfg48_{g}_holdout_{a.count}_{a.periods}p_64s.jsonl"
+                rows=base_rows[:a.count]
             else:
-                f=RUNS/f"cfg48_{g}_holdout_{suffix}_{a.count}_{a.periods}p_64s.jsonl"
-            rows=[json.loads(s) for s in f.read_text(encoding="utf-8").splitlines() if s.strip()]
-            basefile=RUNS/f"cfg48_{g}_holdout_{a.count}_{a.periods}p_64s.jsonl"
-            base={int(r["index"]):r for r in (json.loads(s) for s in basefile.read_text(encoding="utf-8").splitlines() if s.strip())}
+                f=RUNS/f"cfg48_{g}_matched_holdout_{suffix}_{a.count}_{a.periods}p_64s.jsonl"
+                rows=[json.loads(s) for s in f.read_text(encoding="utf-8").splitlines() if s.strip()]
             cr=[r for r in rows if r["category"]=="CR_screen"]
             n=len(rows);k=len(cr)
             b=sum(r["category"]=="CR_screen" and base[int(r["index"])]["category"]!="CR_screen" for r in rows)
