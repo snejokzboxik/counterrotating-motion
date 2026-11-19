@@ -1,0 +1,39 @@
+{
+  "study": "V17C.9 candidate52 short independent DOP853 holdout",
+  "created_utc": "2026-11-19",
+  "periods": 15000,
+  "rtol": 2e-10,
+  "atol": 2e-12,
+  "files": [
+    {
+      "path": "optimization/stage4_candidate48/DOP853_CANDIDATE52_RU.md",
+      "size_bytes": 2828,
+      "sha256": "a391940e8c85659d6873ea0d0e13cc1a6c1cc2eb846d279bf96d25c2e7d0bc01"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/dop_cfg52_rest_0.npz",
+      "size_bytes": 3544528,
+      "sha256": "9caca81718eb904d33798460cb639fa6f9ee0a78689ddff750e179324ed39e3c"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/dop_cfg52_rest_results.json",
+      "size_bytes": 3039,
+      "sha256": "a9bbc52b75d5791558efaa860fb4375587a79f45bbeadef4fa03eb9a1af1dedb"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+      "size_bytes": 146083,
+      "sha256": "82a072d411da6bb127cb2734f48d0a846d6badab6e23c2ba56a1953fa7e2477a"
+    },
+    {
+      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
+      "size_bytes": 775,
+      "sha256": "365f38b7e537f760b39bd89ea0248abbd63856eb98713aaf44fc600b33bc35ab"
+    },
+    {
+      "path": "optimization/verify_dop853_local.py",
+      "size_bytes": 8012,
+      "sha256": "bff32d959f0222238e96393c50262f1c4324d732c772e648cd99fc6aa0bb076a"
+    }
+  ]
+}
