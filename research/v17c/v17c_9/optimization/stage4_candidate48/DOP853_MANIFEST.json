@@ -1,10 +1,25 @@
 {
-  "study": "V17C.9 candidate52 short independent DOP853 holdout",
+  "study": "V17C.9 candidate52 independent DOP853 validation",
   "created_utc": "2026-11-19",
-  "periods": 15000,
-  "rtol": 2e-10,
-  "atol": 2e-12,
+  "full_horizon_cycles": 120000,
+  "dense_windows": [
+    {
+      "start_cycle": 0,
+      "span_cycles": 1000,
+      "samples_per_period": 24
+    },
+    {
+      "start_cycle": 100000,
+      "span_cycles": 1000,
+      "samples_per_period": 24
+    }
+  ],
   "files": [
+    {
+      "path": "optimization/dop853_dense_window.py",
+      "size_bytes": 5083,
+      "sha256": "08368227e97451b0a438974e7e3a24741450a0c5f6d457e3a7ca405f59b56c95"
+    },
     {
       "path": "optimization/stage4_candidate48/DOP853_CANDIDATE52_RU.md",
       "size_bytes": 2828,
@@ -12,23 +27,33 @@
     },
     {
       "path": "optimization/stage4_candidate48/holdout_runs/dop_cfg52_rest_0.npz",
-      "size_bytes": 3544528,
-      "sha256": "9caca81718eb904d33798460cb639fa6f9ee0a78689ddff750e179324ed39e3c"
+      "size_bytes": 26547815,
+      "sha256": "fd05ecdcd354f57a7e25bb76673505f7e5b54c7c412afdf1bb9c698fcc097487"
     },
     {
       "path": "optimization/stage4_candidate48/holdout_runs/dop_cfg52_rest_results.json",
       "size_bytes": 3039,
-      "sha256": "a9bbc52b75d5791558efaa860fb4375587a79f45bbeadef4fa03eb9a1af1dedb"
+      "sha256": "8eae4790e834b9f6ed4d216f80fb4207cd7a49b9252777e0f996bacca7bd3c08"
     },
     {
-      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
-      "size_bytes": 146083,
-      "sha256": "82a072d411da6bb127cb2734f48d0a846d6badab6e23c2ba56a1953fa7e2477a"
+      "path": "optimization/stage4_candidate48/long_runs/dop_cfg52_rest0_dense_0_1000p_24s.npz",
+      "size_bytes": 6255506,
+      "sha256": "4bf621e9138fcc470246445270adf0c3ab1d87f2e214c2b8095dc7fb9c856707"
     },
     {
-      "path": "optimization/stage4_candidate48/holdout_runs/cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.meta.json",
-      "size_bytes": 775,
-      "sha256": "365f38b7e537f760b39bd89ea0248abbd63856eb98713aaf44fc600b33bc35ab"
+      "path": "optimization/stage4_candidate48/long_runs/dop_cfg52_rest0_dense_0_1000p_24s_diagnostics.json",
+      "size_bytes": 1508,
+      "sha256": "386ad119c03724cb26929c85fb9842af114082c3d27b1e1b6d24071ecffcfc0b"
+    },
+    {
+      "path": "optimization/stage4_candidate48/long_runs/dop_cfg52_rest0_dense_tail_1000p_24s.npz",
+      "size_bytes": 5109454,
+      "sha256": "7d53c01fb0d4571d9857d9722583f7dd5abe9ce7d06cd62d5f8faafce9296d48"
+    },
+    {
+      "path": "optimization/stage4_candidate48/long_runs/dop_cfg52_rest0_dense_tail_1000p_24s_diagnostics.json",
+      "size_bytes": 1481,
+      "sha256": "8df4708d4036adc1a7556304749c5fe296c6064386b6510bfe6a6f0fd863241d"
     },
     {
       "path": "optimization/verify_dop853_local.py",

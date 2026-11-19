@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "candidate": 52,
+    "candidate_source": "stage4_candidate48",
+    "ensemble": "rest",
+    "index": 0,
+    "cycles": 120000,
+    "steps_per_RF_period": 128,
+    "checkpoint_cycles": 2500,
+    "p": [
+      0.03956095746691348,
+      0.15032976498886072,
+      2.8996277751401065,
+      0.015917322789905167,
+      0.11307613545330587,
+      9.281679945656495e-06,
+      0.1868668374144136,
+      0.10359181855828002
+    ],
+    "qratio": 3.5274259874597194,
+    "phase": [
+      1.2799902909962375,
+      0.15432283611984743
+    ],
+    "source": "research\\v17c\\v17c_9\\optimization\\stage4_candidate48\\holdout_runs\\cfg52_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
+    "solver": "RK4 full RF RHS from independent DOP853 formulation"
+  },
+  "completed_cycles": 120000,
+  "extrema": [
+    0.1772598050231962,
+    0.1779183175799912,
+    0.6269244932053706,
+    0.9581146257349342,
+    0.7644910836595938,
+    0.07708321698009968,
+    0.01496504619717598
+  ]
+}

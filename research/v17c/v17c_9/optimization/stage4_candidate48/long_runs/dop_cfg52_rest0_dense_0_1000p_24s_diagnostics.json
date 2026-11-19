@@ -1,0 +1,64 @@
+{
+  "candidate_id": 52,
+  "solver": "SciPy DOP853 independent RHS",
+  "source_long_run": "dop_cfg52_rest_0.npz",
+  "start_cycle": 0,
+  "span_cycles": 1000,
+  "samples_per_primary_period": 24,
+  "rtol": 2e-10,
+  "atol": 2e-12,
+  "max_step_tau": 0.2617993877991494,
+  "frequency_Hz": [
+    248.20958438997704,
+    -84.87522574686089
+  ],
+  "turns": [
+    2.4820958438997707,
+    -0.8487522574686088
+  ],
+  "turns_by_omega_integral": [
+    2.4820958438989393,
+    -0.8487522574686952
+  ],
+  "max_angle_integral_difference_turns": 9.516831767086842e-13,
+  "radius_min_R": [
+    0.17792877791486014,
+    0.6269597776063914
+  ],
+  "radius_max_R": [
+    0.9556104735067428,
+    0.7641002221733464
+  ],
+  "max_abs_z_R": [
+    0.07708321698009968,
+    0.01496504619717598
+  ],
+  "minimum_center_distance_R": 0.17847625593080202,
+  "minimum_surface_gap_R": 0.176386255930802,
+  "wall_clearance_R": [
+    0.04418952649325723,
+    0.2340097778266536
+  ],
+  "energy_residual": -1.6137526237178235e-09,
+  "energy_residual_over_RF_work": 1.4370884831460248e-10,
+  "angular_momentum_change": [
+    0.006842893188871995,
+    -0.05561769826944138
+  ],
+  "angular_momentum_balance_residual": [
+    2.2519586716229778e-10,
+    1.7060386714451425e-09
+  ],
+  "late_window_turns": [
+    [
+      4.288982388836354,
+      5.616168375738832,
+      5.690317372827367
+    ],
+    [
+      -1.7832029656282633,
+      -1.779429397429256,
+      -1.7702353505047483
+    ]
+  ]
+}

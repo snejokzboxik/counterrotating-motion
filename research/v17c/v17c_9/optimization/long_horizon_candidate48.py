@@ -81,29 +81,52 @@ def atomic_json(path, obj):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--config-id", type=int, default=48)
+    ap.add_argument("--candidate-source", choices=("stage2_speed", "stage4_candidate48"), default="stage2_speed")
+    ap.add_argument("--ensemble", choices=("rest", "weak", "wide"), default="rest")
+    ap.add_argument("--index", type=int, default=0)
+    ap.add_argument("--source-jsonl", type=Path, default=None,
+                    help="explicit source row file; required for tagged candidate52 holdout")
     ap.add_argument("--cycles", type=int, default=120000)
     ap.add_argument("--checkpoint-cycles", type=int, default=5000)
     ap.add_argument("--steps", type=int, choices=(64, 128), default=64)
+    ap.add_argument("--a1-over-R", type=float, default=0.0002)
+    ap.add_argument("--a2-over-R", type=float, default=0.00189)
+    ap.add_argument("--coupling-scale", type=float, default=1.0)
     ap.add_argument("--resume", action="store_true")
     a = ap.parse_args()
     dop = load_dependencies()
-    z = np.load(HERE / "stage2_speed" / "configurations.npz")
-    p = np.asarray(z["p"][48], dtype=float)
-    qratio = float(z["qratio"][48])
-    source = RUNS / "cfg48_rest_holdout_128_15000p_64s.jsonl"
+    z = np.load(HERE / a.candidate_source / "configurations.npz")
+    p = np.asarray(z["p"][a.config_id], dtype=float)
+    p[5] *= a.coupling_scale
+    qratio = float(z["qratio"][a.config_id])
+    if a.candidate_source == "stage4_candidate48":
+        output_dir = HERE / "stage4_candidate48" / "long_runs"
+        default_source = HERE / "stage4_candidate48" / "holdout_runs" / (
+            f"cfg{a.config_id}_{a.ensemble}_matched_holdout_none_chi0-0_a0.0002-0.00189_"
+            f"pairedholdout20261150_128_15000p_64s.jsonl")
+    else:
+        output_dir = RUNS
+        default_source = RUNS / f"cfg{a.config_id}_{a.ensemble}_holdout_128_15000p_64s.jsonl"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    source = a.source_jsonl if a.source_jsonl is not None else default_source
     row = next(json.loads(s) for s in source.read_text(encoding="utf-8").splitlines()
-               if s.strip() and json.loads(s)["index"] == 0)
+               if s.strip() and json.loads(s)["index"] == a.index)
     phase = np.asarray(row["phase"], dtype=float)
     y0 = np.zeros(34)
     y0[:12] = np.asarray(row["initial"], dtype=float)
 
-    tag = f"long_cfg48_rest0_{a.cycles}p_{a.steps}s"
-    mem_path = RUNS / f"{tag}_checkpoint.npy"
-    checkpoint = RUNS / f"{tag}_checkpoint.json"
-    metadata = {"candidate": 48, "ensemble": "rest", "index": 0, "cycles": a.cycles,
+    tag = f"long_cfg{a.config_id}_{a.ensemble}{a.index}_{a.cycles}p_{a.steps}s"
+    if a.coupling_scale != 1.0:
+        tag += f"_Cscale{a.coupling_scale:g}"
+    mem_path = output_dir / f"{tag}_checkpoint.npy"
+    checkpoint = output_dir / f"{tag}_checkpoint.json"
+    metadata = {"candidate": a.config_id, "candidate_source": a.candidate_source,
+                "ensemble": a.ensemble, "index": a.index, "cycles": a.cycles,
                 "steps_per_RF_period": a.steps, "checkpoint_cycles": a.checkpoint_cycles,
                 "p": p.tolist(), "qratio": qratio, "phase": phase.tolist(),
-                "source": str(source), "solver": "RK4 full RF RHS from independent DOP853 formulation"}
+                "source": str(source), "coupling_scale": a.coupling_scale,
+                "solver": "RK4 full RF RHS from independent DOP853 formulation"}
     if a.resume:
         if not mem_path.exists() or not checkpoint.exists():
             raise FileNotFoundError("checkpoint files are absent")
@@ -158,7 +181,8 @@ def main():
     lz = (pos[:, :, 0]*state[:, [4, 10]] - pos[:, :, 1]*state[:, [3, 9]])
     lz[:, 1] /= p[4]
     diagnostics = {
-        "candidate_id": 48, "start": "rest:0 from N=128 holdout", "cycles": a.cycles,
+        "candidate_id": a.config_id, "candidate_source": a.candidate_source,
+        "start": f"{a.ensemble}:{a.index} from N=128 holdout", "cycles": a.cycles,
         "steps_per_period": a.steps, "solver": f"RK4, {a.steps} uniform substeps per primary RF cycle",
         "initial_state": row["initial"], "rf_phase": phase.tolist(), "parameters": p.tolist(),
         "frequency_Hz_after_200_cycle_transient": freq.tolist(), "turns_after_transient": turns.tolist(),
@@ -166,7 +190,8 @@ def main():
         "r_min_R_substep_extrema": extrema[1:3].tolist(), "r_max_R_substep_extrema": extrema[3:5].tolist(),
         "max_abs_z_R_substep_extrema": extrema[5:7].tolist(),
         "minimum_center_distance_R_substep_extrema": float(extrema[0]),
-        "minimum_surface_gap_R": float(extrema[0]-0.0002-0.00189),
+        "sphere_radii_over_R": [a.a1_over_R, a.a2_over_R],
+        "minimum_surface_gap_R": float(extrema[0]-a.a1_over_R-a.a2_over_R),
         "work_RF1_RF2_DC_Coulomb_drag_per_particle": work_delta.tolist(),
         "torque_RF1_RF2_DC_Coulomb_drag_per_particle": torque_delta.tolist(),
         "angular_momentum_change": (lz[-1]-lz[skip]).tolist(),
@@ -177,16 +202,16 @@ def main():
         "average_RF_power_plus_drag_power_per_tau": ext_work/(TAU*(a.cycles-skip)),
         "classification": "CR_long_horizon" if (
             turns[0]*turns[1] < 0 and np.all(windows[:,0]*windows[:,1] < 0)
-            and np.all(np.abs(turns)>=10) and extrema[3] + 0.0002 <= 1.0
-            and extrema[4] + 0.00189 <= 1.0 and extrema[5] + 0.0002 <= 2.0
-            and extrema[6] + 0.00189 <= 2.0 and np.all(extrema[1:3] > 0.02)
-            and extrema[0] >= 0.0002+0.00189
+            and np.all(np.abs(turns)>=10) and extrema[3] + a.a1_over_R <= 1.0
+            and extrema[4] + a.a2_over_R <= 1.0 and extrema[5] + a.a1_over_R <= 2.0
+            and extrema[6] + a.a2_over_R <= 2.0 and np.all(extrema[1:3] > 0.02)
+            and extrema[0] >= a.a1_over_R+a.a2_over_R
         ) else "review_required",
         "checkpoint_file": mem_path.name,
     }
-    np.savez_compressed(RUNS / f"{tag}.npz", tau=times, state=state[:, :12],
+    np.savez_compressed(output_dir / f"{tag}.npz", tau=times, state=state[:, :12],
                         work=work, torque=torque, angles_integral=state[:, 22:24])
-    diagnostics_path = HERE / "stage3" / f"long_candidate48_{a.cycles}cycles_{a.steps}s_diagnostics.json"
+    diagnostics_path = output_dir / f"{tag}_diagnostics.json"
     diagnostics_path.write_text(
         json.dumps(diagnostics, indent=2)+"\n", encoding="utf-8")
     try:
@@ -203,7 +228,7 @@ def main():
         fig.legend(*ax[2].get_legend_handles_labels(), loc="upper center", ncol=2,
                    bbox_to_anchor=(.5, 1.02), frameon=False)
         fig.tight_layout(rect=(0, 0, 1, .95))
-        fig.savefig(HERE / "stage3" / f"long_candidate48_{a.cycles}cycles_{a.steps}s.png", dpi=170)
+        fig.savefig(output_dir / f"{tag}.png", dpi=170)
         plt.close(fig)
     except Exception as exc:
         diagnostics["plot_error"] = repr(exc)
