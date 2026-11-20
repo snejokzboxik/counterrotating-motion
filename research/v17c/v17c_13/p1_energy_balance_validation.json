@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "case": "N=6 ordered rings from rest, constant local15, fixed field after skip",
+  "initial_radii_R": [
+    0.45,
+    0.63
+  ],
+  "initial_z_centers_R": [
+    0.0,
+    0.1
+  ],
+  "periods": 600,
+  "post_load_skip_periods": 200,
+  "all_particles_unconstrained": true,
+  "energy_definition": "sum_i 0.5*(m_i/m1)*|v_i|^2 + full RF + DC + all-pair Coulomb potential, normalized by m1*R^2*Omega1^2",
+  "work_definition": "RK4 quadrature of explicit RF partial-time derivative and drag power; DC and pair potential are static after skip",
+  "records": [
+    {
+      "steps_per_primary_period": 64,
+      "completed_periods": 600,
+      "energy_change": 0.015189639583343541,
+      "integrated_rf_explicit_work": 16.655196994173675,
+      "integrated_drag_work": -16.640448481770036,
+      "final_balance_residual": 0.0004411271797053473,
+      "max_abs_balance_residual": 0.0004411271797053473
+    },
+    {
+      "steps_per_primary_period": 96,
+      "completed_periods": 600,
+      "energy_change": 0.01537373609194901,
+      "integrated_rf_explicit_work": 16.653590199872752,
+      "integrated_drag_work": -16.638460032626845,
+      "final_balance_residual": 0.00024356884604159745,
+      "max_abs_balance_residual": 0.00024356884604159745
+    },
+    {
+      "steps_per_primary_period": 128,
+      "completed_periods": 600,
+      "energy_change": 0.015389364783251914,
+      "integrated_rf_explicit_work": 16.65341557472324,
+      "integrated_drag_work": -16.63812798091496,
+      "final_balance_residual": 0.00010177097497177101,
+      "max_abs_balance_residual": 0.00010177097497177101
+    },
+    {
+      "steps_per_primary_period": 192,
+      "completed_periods": 600,
+      "energy_change": 0.015391746894203244,
+      "integrated_rf_explicit_work": 16.653372087264593,
+      "integrated_drag_work": -16.63800531098933,
+      "final_balance_residual": 2.4970618941466682e-05,
+      "max_abs_balance_residual": 2.4970618941466682e-05
+    }
+  ],
+  "residual_decreases_with_step_refinement": true,
+  "relative_residual_at_96_steps": 1.4625605837440297e-05,
+  "relative_residual_at_192_steps": 1.4994331965093469e-06
+}

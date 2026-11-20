@@ -2,12 +2,12 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 validated; P1 16-run ordered pilot complete; no strict 3+3 crystal confirmation yet",
+  "status": "P0 validated; P1 16-run ordered pilot and energy-balance step-refinement complete; long verification pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1807,
-      "sha256": "51f15a3d7091f94f9352f048ba8ae57970bf54521fa4798dcd8a2a19740eab26"
+      "size_bytes": 1829,
+      "sha256": "4ce2afd3080c975328c661422055c7e9529c5a71f781cd8dc0f006625c1193bf"
     },
     {
       "path": "research/v17c/v17c_13/local15_n6_parameters.json",
@@ -16,18 +16,23 @@
     },
     {
       "path": "research/v17c/v17c_13/N_BODY_MODEL_VALIDATION_RU.md",
-      "size_bytes": 5142,
-      "sha256": "9237009843dc509b3d3dc3c139103cebdad743e33429d4b9f6eacd50a38bfc2a"
+      "size_bytes": 7067,
+      "sha256": "d5c278ed503dceb739e91f97d5efd95b42f088fe6be0b11602aa482985554c25"
     },
     {
       "path": "research/v17c/v17c_13/nbody_dynamics.py",
-      "size_bytes": 16527,
-      "sha256": "dc05339e83e0a2c5238d548c6a43ce820722f2fb9d21c9a95208925d4290c2b7"
+      "size_bytes": 21033,
+      "sha256": "86dea5423c19bdbae195776f3d0fbfccc56d08950ace3749c13a4a7809df39c3"
     },
     {
       "path": "research/v17c/v17c_13/p0_nbody_validation.json",
       "size_bytes": 1961,
       "sha256": "7823ed87831197b1576187b6ebfed2388966fb579c250530664965ef54747b50"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_energy_balance_validation.json",
+      "size_bytes": 2199,
+      "sha256": "48af93cc7fac5393075998a2cbc85a37e05096687983dffae982b77a381c82f2"
     },
     {
       "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle0_phase0_trajectory.npz",
@@ -130,14 +135,24 @@
       "sha256": "63edc926197825c25c089d5ce70c9d483f8810860db600968f5fd4f0ebe53e61"
     },
     {
+      "path": "research/v17c/v17c_13/run_p1_long_candidates.py",
+      "size_bytes": 11128,
+      "sha256": "b4923a459d50b09d467fa84388a2277ea61fa7ace4f95fe5c062698e0af80a7b"
+    },
+    {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 8388,
-      "sha256": "51a7969babedb15a6f46d22d56f3468eb5b930cc6368c9e8c4612c88504c08cc"
+      "size_bytes": 10811,
+      "sha256": "af011c484f47254bf00d982b405185b14bbcd996e57fa1c2901594cc5251a761"
     },
     {
       "path": "research/v17c/v17c_13/THREE_PLUS_THREE_REPRODUCTION_RU.md",
       "size_bytes": 5366,
       "sha256": "9893481c3abf0efe439832deccc6f48a911134fb450ac296d450aa1b078e8fc2"
+    },
+    {
+      "path": "research/v17c/v17c_13/validate_energy_balance_p1.py",
+      "size_bytes": 2741,
+      "sha256": "6aff773a332ed1fa12cfd13d23f24527074b8b3c379dd53cda390d84847bc522"
     },
     {
       "path": "research/v17c/v17c_13/validate_nbody_p0.py",

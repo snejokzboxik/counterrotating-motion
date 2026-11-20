@@ -193,7 +193,8 @@ def _pair_distance_update(y, n, min_pair_distances):
 
 @njit(cache=True, nogil=True)
 def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
-              qratio, radii, periods, steps, skip, log_every_period=False):
+              qratio, radii, periods, steps, skip, log_every_period=False,
+              energy_balance=False):
     """Adaptive-free RK4, checking all pair and wall contacts at RK stages."""
     initial = np.asarray(initial, dtype=np.float64)
     y = initial.copy()
@@ -220,6 +221,13 @@ def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
     steps_done = 0
     log_count = 0
     logs = np.empty((0, n, 8), dtype=np.float64)
+    work_log = np.empty((0, 5), dtype=np.float64)
+    work_count = 0
+    work_rf = 0.0
+    work_drag = 0.0
+    energy_start = 0.0
+    if energy_balance:
+        work_log = np.empty((max(1, periods - skip + 1), 5), dtype=np.float64)
     if log_every_period:
         logs = np.empty((periods + 1, n, 8), dtype=np.float64)
         log_count = 1
@@ -235,6 +243,18 @@ def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
             steps_done = step
             break
         t = step * dt
+        cycle = step // steps
+        if energy_balance and cycle == skip and step % steps == 0:
+            energy_start = _system_energy(t, y, p, protocol, phase, groups,
+                                          family, modes, coeff, qratio)
+            work_rf = 0.0
+            work_drag = 0.0
+            work_log[0, 0] = t
+            work_log[0, 1] = energy_start
+            work_log[0, 2] = 0.0
+            work_log[0, 3] = 0.0
+            work_log[0, 4] = 0.0
+            work_count = 1
         _rhs_nbody(t, y, p, protocol, phase, groups, family, modes, coeff,
                    qratio, radii, y1, parts1)
         for q in range(6 * n):
@@ -264,6 +284,24 @@ def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
             break
         _rhs_nbody(t + dt, tmp, p, protocol, phase, groups, family, modes, coeff,
                    qratio, radii, y4, parts4)
+
+        if energy_balance and cycle >= skip:
+            prf1, pdrag1 = _explicit_rf_and_drag_power(
+                t, y, p, protocol, phase, groups, family, modes, coeff, qratio)
+            for q in range(6 * n):
+                tmp[q] = y[q] + 0.5 * dt * y1[q]
+            prf2, pdrag2 = _explicit_rf_and_drag_power(
+                t + 0.5 * dt, tmp, p, protocol, phase, groups, family, modes, coeff, qratio)
+            for q in range(6 * n):
+                tmp[q] = y[q] + 0.5 * dt * y2[q]
+            prf3, pdrag3 = _explicit_rf_and_drag_power(
+                t + 0.5 * dt, tmp, p, protocol, phase, groups, family, modes, coeff, qratio)
+            for q in range(6 * n):
+                tmp[q] = y[q] + dt * y3[q]
+            prf4, pdrag4 = _explicit_rf_and_drag_power(
+                t + dt, tmp, p, protocol, phase, groups, family, modes, coeff, qratio)
+            work_rf += dt * (prf1 + 2.0 * prf2 + 2.0 * prf3 + prf4) / 6.0
+            work_drag += dt * (pdrag1 + 2.0 * pdrag2 + 2.0 * pdrag3 + pdrag4) / 6.0
         for q in range(6 * n):
             yn[q] = y[q] + dt * (y1[q] + 2.0 * y2[q] + 2.0 * y3[q] + y4[q]) / 6.0
         _pair_distance_update(yn, n, pair_min)
@@ -315,6 +353,15 @@ def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
                     logs[log_count, i, 1 + q] = y[b + q]
                 logs[log_count, i, 7] = theta_unwrapped[i]
             log_count += 1
+        if energy_balance and (step + 1) % steps == 0 and cycle >= skip:
+            energy_now = _system_energy(t + dt, y, p, protocol, phase, groups,
+                                        family, modes, coeff, qratio)
+            work_log[work_count, 0] = t + dt
+            work_log[work_count, 1] = energy_now
+            work_log[work_count, 2] = work_rf
+            work_log[work_count, 3] = work_drag
+            work_log[work_count, 4] = energy_now - energy_start - work_rf - work_drag
+            work_count += 1
 
     completed = steps_done // steps
     retained = status == 0 and completed >= periods
@@ -363,8 +410,11 @@ def integrate(initial, phase, p, protocol, groups, family, modes, coeff,
 
     if log_every_period:
         logs = logs[:log_count].copy()
+    if energy_balance:
+        work_log = work_log[:work_count].copy()
     return (y, turns, windows, frequencies, min_radius, max_radius, max_abs_z,
-            max_abs_dtheta, pair_min, completed, retained, category, status, logs)
+            max_abs_dtheta, pair_min, completed, retained, category, status, logs,
+            work_log)
 
 
 @njit(cache=True, nogil=True)
@@ -404,6 +454,57 @@ def external_potential(t, y, p, protocol, phase, groups, family, modes, coeff,
             if d > 1.0e-14:
                 energy += p[5] * (qi * qj / qratio) / d
     return energy
+
+
+@njit(cache=True, nogil=True)
+def _system_energy(t, y, p, protocol, phase, groups, family, modes, coeff,
+                   qratio):
+    """Dimensionless kinetic plus RF, DC and all-pair Coulomb potential."""
+    kinetic = 0.0
+    for i in range(groups.size):
+        b = 6 * i
+        mass = 1.0 if groups[i] == 0 else 1.0 / p[4]
+        kinetic += 0.5 * mass * (y[b + 3] ** 2 + y[b + 4] ** 2 + y[b + 5] ** 2)
+    return kinetic + external_potential(t, y, p, protocol, phase, groups,
+                                        family, modes, coeff, qratio)
+
+
+@njit(cache=True, nogil=True)
+def _explicit_rf_and_drag_power(t, y, p, protocol, phase, groups, family,
+                                modes, coeff, qratio):
+    """Return dU/dtau from RF carriers and drag power after envelopes settle.
+
+    The diagnostic is only accumulated after ``skip`` in ``integrate``, and
+    callers set skip beyond the loading schedule. DC and Coulomb potentials
+    are then static, so their explicit time derivative is exactly zero.
+    """
+    ga, gb, _ = ld._envelopes(t, protocol)
+    amp1 = p[0] * ga
+    amp2 = p[1] * gb
+    nu = p[2]
+    rf_partial = 0.0
+    drag = 0.0
+    for i in range(groups.size):
+        b = 6 * i
+        x, yy = y[b], y[b + 1]
+        vx, vy, vz = y[b + 3], y[b + 4], y[b + 5]
+        base_group = 1.0 if groups[i] == 0 else qratio
+        lam = p[6] if groups[i] == 0 else p[7]
+        mass = 1.0 if groups[i] == 0 else 1.0 / p[4]
+        drag -= mass * lam * (vx * vx + vy * vy + vz * vz)
+        u = complex(x, yy)
+        for h in range(modes.size):
+            mode = modes[h]
+            degree = abs(mode)
+            base = u if mode > 0 else u.conjugate()
+            if family[h] == 0:
+                omega = 1.0
+                carrier = amp1 * complex(math.cos(t + phase[0]), -math.sin(t + phase[0]))
+            else:
+                omega = nu
+                carrier = amp2 * complex(math.cos(nu * t + phase[1]), -math.sin(nu * t + phase[1]))
+            rf_partial += base_group * omega * (carrier * coeff[h] * base ** degree).imag
+    return rf_partial, drag
 
 
 def group_masses(groups: np.ndarray, p: np.ndarray) -> np.ndarray:
