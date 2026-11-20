@@ -2,7 +2,7 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 validated; finite-horizon ordered 3+3 crystal candidate; C continuation and 8 perturbation tests complete; full-horizon RK4/64-256 refinement and independent late-segment DOP853 passed; basin statistics and physical feasibility remain open",
+  "status": "P0 validated; finite-horizon ordered 3+3 crystal candidate; C continuation, 8 perturbation tests, full-horizon RK4 refinement and late DOP853 passed; five frozen N=16 formation ensembles audited, integrations pending; basin statistics and physical feasibility remain open",
   "outputs": [
     {
       "path": "research/v17c/v17c_13/analyze_p1_coulomb_work.py",
@@ -13,6 +13,11 @@
       "path": "research/v17c/v17c_13/audit_p1_coulomb_scan.py",
       "size_bytes": 3701,
       "sha256": "7d395158ea845370ba375878a28b6fa3bc7d1a5543662a282cd5ddc23f78a75f"
+    },
+    {
+      "path": "research/v17c/v17c_13/audit_p1_formation_starts.py",
+      "size_bytes": 3528,
+      "sha256": "e00d3937fb44f877240dc9a5196f2a3c07880d0125431826ff5ed1c047bc0a96"
     },
     {
       "path": "research/v17c/v17c_13/audit_p1_long.py",
@@ -31,8 +36,8 @@
     },
     {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1963,
-      "sha256": "46bba4907ff046956920f999ed004a880c9609d8cdb7e085cbda000d3d5cfd4c"
+      "size_bytes": 1992,
+      "sha256": "19a4ae5bd4fd0113a1bb61d98452f17e05de4e18acf1f836cf729fdaa3d2bc51"
     },
     {
       "path": "research/v17c/v17c_13/COLLECTIVE_STABILITY_RU.md",
@@ -188,6 +193,66 @@
       "path": "research/v17c/v17c_13/p1_energy_balance_validation.json",
       "size_bytes": 2199,
       "sha256": "48af93cc7fac5393075998a2cbc85a37e05096687983dffae982b77a381c82f2"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ensemble_manifest.json",
+      "size_bytes": 6850,
+      "sha256": "8a49ac8fe1be38024de24d3b904bcf0f7ec3a830bf43793a8c38fad75a159a0d"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/formation_start_audit.json",
+      "size_bytes": 4653,
+      "sha256": "a2bd34d32e6c8fdfc13403738e008593dc885ea9a1d52241c962eda367da9b99"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_initials.npz",
+      "size_bytes": 3040,
+      "sha256": "700b9a29bfed4a57e923216c0e86f7a3fb805435ce63493814b21742fc3c0d27"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_metadata.json",
+      "size_bytes": 1064,
+      "sha256": "b8209f8131f810e653061c08e45b12216fa805a28b60b392df8454fe6cd07a35"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_initials.npz",
+      "size_bytes": 3586,
+      "sha256": "df95a1ebd20dad63f797624fa721f0c14503527388a7876cdc190259c75fe997"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_metadata.json",
+      "size_bytes": 1059,
+      "sha256": "b02491d1e9562644e5697bfad02f5cffbf8930c05185ce51cc882e1f5bd68989"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_initials.npz",
+      "size_bytes": 3044,
+      "sha256": "52ad031241796ae5bdcdd6b9d2cc8f3e93eb2c2e000369f1c33b3c407a516f92"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_metadata.json",
+      "size_bytes": 1058,
+      "sha256": "03564a38988a6cd8d2b3a18bc87aeeecd76fc2b942057833204f35e401122d98"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_initials.npz",
+      "size_bytes": 5637,
+      "sha256": "5f4a64f4454c6ff291b95a9b3fcd6879006650d306fce7d18d5381442b6d0092"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_metadata.json",
+      "size_bytes": 1076,
+      "sha256": "79649475304500495c7b9a8dfb35d2f81f72166ac0a9bfe2bd4de080c07fa3ba"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_initials.npz",
+      "size_bytes": 3528,
+      "sha256": "569e891eea794fad1b917f2100f60ae78393a3decf0e219f96e788d399a07fb3"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_metadata.json",
+      "size_bytes": 1042,
+      "sha256": "19935b0825b44904c847c17a28abfb95b3cca06263f05b083c405e79f50577ab"
     },
     {
       "path": "research/v17c/v17c_13/p1_long_candidates/constant_angle0_phase0_long_trajectory.npz",
@@ -440,6 +505,11 @@
       "sha256": "d3e9a256ac39f68865f68356b28d532c6916deed92a0f8627709ffbac92505f9"
     },
     {
+      "path": "research/v17c/v17c_13/prepare_p1_crystal_ensembles.py",
+      "size_bytes": 7569,
+      "sha256": "d6ae2873bfdb9d1a21cd890b3afa4e0a08400700bfccad70768a199f80ff15e5"
+    },
+    {
       "path": "research/v17c/v17c_13/REPORT_RU.md",
       "size_bytes": 14272,
       "sha256": "b21226b2e268fb6e77ee0f70ae94eec24526a732ad24fdc391376fe32d5551ff"
@@ -465,6 +535,11 @@
       "sha256": "f76d4bd32cfe67943a618e09f42c37205d22fb27e595b688f460899844ea4a3a"
     },
     {
+      "path": "research/v17c/v17c_13/run_p1_formation_ensembles.py",
+      "size_bytes": 10979,
+      "sha256": "8f3fb0a105b9d984e0f6f2a54daf8c81e6a3cd624063c6ee70c00c8f4a9e170a"
+    },
+    {
       "path": "research/v17c/v17c_13/run_p1_long_candidates.py",
       "size_bytes": 11128,
       "sha256": "b4923a459d50b09d467fa84388a2277ea61fa7ace4f95fe5c062698e0af80a7b"
@@ -481,8 +556,8 @@
     },
     {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 16222,
-      "sha256": "ab88636f17acefe42276244085c04d7fa9bed887f970c94909d674d20dcc14f7"
+      "size_bytes": 17123,
+      "sha256": "ec9ff89b5e9d58365967e9a89a40cfe3b8d992240ac7afc3498a53cc390ac311"
     },
     {
       "path": "research/v17c/v17c_13/SPATIAL_SEPARATION_RU.md",

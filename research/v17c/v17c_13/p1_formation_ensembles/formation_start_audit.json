@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "n_per_ensemble": 16,
+  "protocol": "P2_505",
+  "overlap_filter_applied_before_dynamics": true,
+  "failures_retained_in_later_outcome_denominator": true,
+  "errors": [],
+  "ensembles": {
+    "ordered": {
+      "count": 16,
+      "seed": 202613130,
+      "start_sha256": "0799c54e53d5bfa33a7460ab2856760dc2a2304fc5f703c90fce5d492bedf144",
+      "accepted_sobol_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minimum_center_separation_R": 0.20321393120686265,
+      "initial_velocity_component_rms": 0.0,
+      "phase_range_rad": [
+        [
+          0.07207303495405736,
+          5.909165916296391
+        ],
+        [
+          0.2607973727888213,
+          5.891665881658277
+        ]
+      ],
+      "definition": "Exact regular triangles at r/R=0.45 and 0.63, zero velocities; independent global/relative orientation, z-centers sampled from {0, ±0.1, ±0.25}R."
+    },
+    "perturbed": {
+      "count": 16,
+      "seed": 202613131,
+      "start_sha256": "025331b9ed9b2258b12df1255754a74d3564f43a2c9d2cfc6c084a244660dbdc",
+      "accepted_sobol_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minimum_center_separation_R": 0.2370834719726514,
+      "initial_velocity_component_rms": 0.0,
+      "phase_range_rad": [
+        [
+          0.10212043603463408,
+          6.1276700640883455
+        ],
+        [
+          0.13661122841743675,
+          6.138404570743635
+        ]
+      ],
+      "definition": "Same triangle scaffold with independent radial offsets ±0.025R, Gaussian angular offsets σ=5 degrees, z offsets ±0.025R, zero velocities."
+    },
+    "random_azimuth": {
+      "count": 16,
+      "seed": 202613132,
+      "start_sha256": "854c14a2d5e83ddbce8e9193929ae2ca000e6b14aef2d41ee3936bfe78874fd7",
+      "accepted_sobol_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minimum_center_separation_R": 0.022015313015648113,
+      "initial_velocity_component_rms": 0.0,
+      "phase_range_rad": [
+        [
+          0.3348866541047755,
+          6.216587055883672
+        ],
+        [
+          0.0164343631857641,
+          6.222493025868171
+        ]
+      ],
+      "definition": "Three particles per group on r/R=0.45 and 0.63 with independent uniform azimuths, z-centers from {0, ±0.1, ±0.25}R, zero velocities."
+    },
+    "random_position_rest": {
+      "count": 16,
+      "seed": 202613133,
+      "start_sha256": "4cc55d0b955d9d56e6a92ec6b1aa116639c2e177552ec7b1dc1d467fc755c2c9",
+      "accepted_sobol_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minimum_center_separation_R": 0.12372410803166035,
+      "initial_velocity_component_rms": 0.0,
+      "phase_range_rad": [
+        [
+          0.043324529577700346,
+          6.105389915367863
+        ],
+        [
+          0.19547571647392653,
+          6.228729094539748
+        ]
+      ],
+      "definition": "All six independently uniform in area over 0.03≤r/R≤0.90 and uniform in −0.5≤z/R≤0.5; zero velocities."
+    },
+    "random_position_moving": {
+      "count": 16,
+      "seed": 202613134,
+      "start_sha256": "3402e9ec81cc9728d61e53be1f827d85f3c4261c49773cc83ed729de2c44aec3",
+      "accepted_sobol_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "minimum_center_separation_R": 0.1022589742167699,
+      "initial_velocity_component_rms": 0.049624722042272924,
+      "phase_range_rad": [
+        [
+          0.27994457711245074,
+          6.217630122325862
+        ],
+        [
+          0.37349395752250036,
+          6.0457887836900674
+        ]
+      ],
+      "definition": "Same positions as random_position_rest; independent Gaussian Cartesian velocity components σ=0.05 in dimensionless units, matching V17C.9 wide."
+    }
+  }
+}

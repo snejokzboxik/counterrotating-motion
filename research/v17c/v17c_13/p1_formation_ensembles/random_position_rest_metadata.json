@@ -1,0 +1,33 @@
+{
+  "ensemble": "random_position_rest",
+  "count": 16,
+  "seed": 202613133,
+  "generator": "SciPy scrambled Sobol, d=42, first 16 valid non-overlapping starts",
+  "sobol_base2_power": 9,
+  "overlap_rejections_before_16_accepts": 0,
+  "accepted_sobol_candidate_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "definition": "All six independently uniform in area over 0.03≤r/R≤0.90 and uniform in −0.5≤z/R≤0.5; zero velocities.",
+  "phase_sampling": "two independent uniform phases in [0,2π), fixed per run",
+  "physical_overlap_filter": "reject only if any center distance <= sum of the prescribed finite radii; rejected candidates are counted in metadata before dynamics",
+  "protocol": "P2_505, identical for every initial condition; continuous carriers",
+  "steps_per_period": 96,
+  "post_load_periods": 15000,
+  "start_and_phase_sha256": "4cc55d0b955d9d56e6a92ec6b1aa116639c2e177552ec7b1dc1d467fc755c2c9"
+}
