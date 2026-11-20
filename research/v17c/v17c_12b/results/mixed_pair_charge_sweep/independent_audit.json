@@ -1,0 +1,118 @@
+{
+  "audit": "mixed_pair_charge_frequency_sweep",
+  "integrity_pass": true,
+  "checks": {
+    "expected_row_count": true,
+    "unique_complete_config_ensemble_start_keys": true,
+    "starts_exactly_reused_from_parent": true,
+    "retained_full_horizons_and_early_exits_consistent": true,
+    "summary_matches_rows": true,
+    "summary_total_matches": true,
+    "trajectory_sha_matches_summary": true,
+    "runner_sha_matches_archived_copy": true,
+    "integrator_sha_matches_archived_copy": true,
+    "field_model_sha_matches": true,
+    "parent_start_sha_matches": true,
+    "all_dimensional_reconstructions_pass": true,
+    "parent_and_child_start_arrays_match": true,
+    "all_observed_losses_are_radial": true,
+    "only_provisional_co_minus_minus_or_wall_losses": true
+  },
+  "rows": 1024,
+  "unique_keys": 1024,
+  "by_configuration": {
+    "q150k_f75hz": {
+      "rows": 512,
+      "outcomes": {
+        "PROVISIONAL_CO_MINUS_MINUS": 476,
+        "WALL_OR_AXIAL_ESCAPE": 36
+      },
+      "retained_by_ensemble": {
+        "rest": 123,
+        "weak": 126,
+        "wide": 115,
+        "edge": 112
+      }
+    },
+    "q220k_f110hz": {
+      "rows": 512,
+      "outcomes": {
+        "PROVISIONAL_CO_MINUS_MINUS": 466,
+        "WALL_OR_AXIAL_ESCAPE": 46
+      },
+      "retained_by_ensemble": {
+        "rest": 122,
+        "weak": 126,
+        "wide": 112,
+        "edge": 106
+      }
+    }
+  },
+  "loss_mechanisms": {
+    "q150k_f75hz": {
+      "radial": 36,
+      "axial": 0,
+      "both": 0
+    },
+    "q220k_f110hz": {
+      "radial": 46,
+      "axial": 0,
+      "both": 0
+    }
+  },
+  "reconstructed_values": {
+    "q150k_f75hz": {
+      "mass_ratio": 0.10963763906505944,
+      "charge_ratio": 3.4490536225028334,
+      "C": 1.1585299233961682e-05,
+      "lambda1": 0.7896071486737608,
+      "lambda2": 0.570312783546414,
+      "q1_e": 150000.0,
+      "q2_e": 517358.0433754249,
+      "f1_Hz": 75.0,
+      "f2_Hz": 241.47580228513107,
+      "U1_V": 258.03817914020505,
+      "U2_V": 1259.2731340674302,
+      "Re1_dimless_speed": 4.651538926967738,
+      "Re2_dimless_speed": 30.643546021617574,
+      "checks": {
+        "mass_ratio": true,
+        "charge_ratio": true,
+        "C": true,
+        "lambda1": true,
+        "lambda2": true,
+        "f1_scale_matches_charge": true,
+        "f2_nu_relation": true,
+        "charges_in_declared_range": true
+      }
+    },
+    "q220k_f110hz": {
+      "mass_ratio": 0.10963763906505944,
+      "charge_ratio": 3.4490536225028334,
+      "C": 1.1585299233961679e-05,
+      "lambda1": 0.5383685104593824,
+      "lambda2": 0.3888496251452823,
+      "q1_e": 220000.00000000003,
+      "q2_e": 758791.7969506233,
+      "f1_Hz": 110.00000000000001,
+      "f2_Hz": 354.1645100181923,
+      "U1_V": 378.45599607230076,
+      "U2_V": 1846.9339299655644,
+      "Re1_dimless_speed": 6.822257092886016,
+      "Re2_dimless_speed": 44.94386749837245,
+      "checks": {
+        "mass_ratio": true,
+        "charge_ratio": true,
+        "C": true,
+        "lambda1": true,
+        "lambda2": true,
+        "f1_scale_matches_charge": true,
+        "f2_nu_relation": true,
+        "charges_in_declared_range": true
+      }
+    }
+  },
+  "interpretation": "Paired screening with shared frozen starts; no IID basin-probability inference.",
+  "trajectory_sha256": "2d8265a670756ec219f3cd768af4184927133bb93c886ed363e19603a3b95603",
+  "audit_script_sha256": "08482a04180e9ef5b373a8c53ccf2667d9926c64800728998faa6165746b5977"
+}

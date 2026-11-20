@@ -1,0 +1,240 @@
+{
+  "study": "paired common-charge/common-frequency screen for literature-constrained Al2O3 / K1 pair",
+  "interpretation": "Two paired discovery points reuse identical frozen starts and phases. Not an IID basin-probability study and not an independently measured joint particle pair.",
+  "parent_campaign": "results/mixed_alumina_k1_candidate",
+  "parent_starts_sha256": "085fdc5ffb4a9d595b2da0bb4cfe354d8a542bc4796b7a69c77133999e5ab087",
+  "configurations": {
+    "q150k_f75hz": {
+      "p": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        1.158529923396168e-05,
+        0.7896071486737607,
+        0.570312783546414
+      ],
+      "qratio": 3.4490536225028334,
+      "physical": {
+        "scenario": "Al2O3 + 3M K1-like hollow borosilicate sphere; literature-constrained, not a measured paired record",
+        "medium": "air, 300 K, 1 bar; Stokes lambda with Schiller-Naumann drag correction",
+        "trap_radius_m": 0.01,
+        "frequency_f1_Hz": 75.0,
+        "frequency_f2_Hz": 241.47580228513107,
+        "omega1_rad_s": 471.23889803846896,
+        "particle1": {
+          "material": "Al2O3",
+          "radius_m": 7.589753032639071e-06,
+          "diameter_um": 15.179506065278142,
+          "density_kg_m3": 3800.0,
+          "mass_kg": 6.959133038321857e-12,
+          "charge_C": 2.4032649509999997e-14,
+          "charge_e": 150000.0,
+          "specific_charge_C_kg": 0.0034533970507043634,
+          "surface_charge_field_V_m": 3749624.4305350976,
+          "Kn": 0.008577354193218556,
+          "Cunningham": 1.0107817342208758,
+          "lambda_Stokes": 0.7896071486737607,
+          "Re_per_dimensionless_speed": 4.651538926967738
+        },
+        "particle2": {
+          "material": "hollow soda-lime-borosilicate glass, 3M K1 density branch",
+          "radius_m": 5e-05,
+          "diameter_um": 100.0,
+          "density_kg_m3": 121.22629769790653,
+          "density_spec_typical_kg_m3": 125.0,
+          "density_spec_range_kg_m3": [
+            100.0,
+            140.0
+          ],
+          "mass_kg": 6.347394104493875e-11,
+          "charge_C": 8.288989685080644e-14,
+          "charge_e": 517358.0433754249,
+          "specific_charge_C_kg": 0.0013058886132833855,
+          "surface_charge_field_V_m": 297990.89640072355,
+          "Kn": 0.0013019999999999998,
+          "Cunningham": 1.001636614,
+          "lambda_Stokes": 0.570312783546414,
+          "Re_per_dimensionless_speed": 30.643546021617574,
+          "manufacturer_size_d10_d50_d90_um": [
+            30.0,
+            65.0,
+            115.0
+          ],
+          "manufacturer_effective_top_size_um": 120.0
+        },
+        "dimensionless_parameters": [
+          0.03492413282400757,
+          0.15631667332941065,
+          3.2196773638017477,
+          0.015388559140477825,
+          0.10963763906505944,
+          1.158529923396168e-05,
+          0.7896071486737607,
+          0.570312783546414
+        ],
+        "mass_ratio_m1_over_m2": 0.10963763906505944,
+        "charge_ratio_q2_over_q1": 3.4490536225028334,
+        "lambda_ratio_lambda2_over_lambda1": 0.7222740884556609,
+        "U1_peak_electrode_V": 258.03817914020505,
+        "U2_peak_electrode_V": 1259.2731340674302,
+        "U1_plus_U2_peak_bound_V": 1517.311313207635,
+        "V2_ideal_DC_coefficient_V_not_endcap": 98.95408051144567,
+        "MFS_triangle_surface_field_bound_V_m": 3809656.351440438,
+        "a1_over_R": 0.0007589753032639071,
+        "a2_over_R": 0.005,
+        "gravity_z_dimensionless": -0.004416095046960585,
+        "Cunningham_factors_applied": "mean of two particle-specific Cc values in the current scalar-drag integrator",
+        "Cunningham_mean": 1.0062091741104378,
+        "maximum_relative_Cunningham_approximation": 0.0045650888221602385,
+        "boundary_field_note": "MFS triangle sum of separate basis maxima; not a phase-torus maximum or breakdown verdict.",
+        "charge_frequency_scaling": {
+          "common_charge_scale": 1.5,
+          "common_frequency_scale": 1.5,
+          "C_preserved": true,
+          "A_B_beta_and_geometry_preserved": true,
+          "lambda_scaled_by_inverse_frequency": true,
+          "Re_per_dimensionless_speed_scaled_with_frequency": true
+        }
+      }
+    },
+    "q220k_f110hz": {
+      "p": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        1.158529923396168e-05,
+        0.5383685104593823,
+        0.38884962514528226
+      ],
+      "qratio": 3.4490536225028334,
+      "physical": {
+        "scenario": "Al2O3 + 3M K1-like hollow borosilicate sphere; literature-constrained, not a measured paired record",
+        "medium": "air, 300 K, 1 bar; Stokes lambda with Schiller-Naumann drag correction",
+        "trap_radius_m": 0.01,
+        "frequency_f1_Hz": 110.00000000000001,
+        "frequency_f2_Hz": 354.1645100181923,
+        "omega1_rad_s": 691.1503837897545,
+        "particle1": {
+          "material": "Al2O3",
+          "radius_m": 7.589753032639071e-06,
+          "diameter_um": 15.179506065278142,
+          "density_kg_m3": 3800.0,
+          "mass_kg": 6.959133038321857e-12,
+          "charge_C": 3.5247885947999996e-14,
+          "charge_e": 220000.00000000003,
+          "specific_charge_C_kg": 0.005064982341033066,
+          "surface_charge_field_V_m": 5499449.16478481,
+          "Kn": 0.008577354193218556,
+          "Cunningham": 1.0107817342208758,
+          "lambda_Stokes": 0.5383685104593823,
+          "Re_per_dimensionless_speed": 6.822257092886016
+        },
+        "particle2": {
+          "material": "hollow soda-lime-borosilicate glass, 3M K1 density branch",
+          "radius_m": 5e-05,
+          "diameter_um": 100.0,
+          "density_kg_m3": 121.22629769790653,
+          "density_spec_typical_kg_m3": 125.0,
+          "density_spec_range_kg_m3": [
+            100.0,
+            140.0
+          ],
+          "mass_kg": 6.347394104493875e-11,
+          "charge_C": 1.215718487145161e-13,
+          "charge_e": 758791.7969506233,
+          "specific_charge_C_kg": 0.001915303299482299,
+          "surface_charge_field_V_m": 437053.31472106127,
+          "Kn": 0.0013019999999999998,
+          "Cunningham": 1.001636614,
+          "lambda_Stokes": 0.38884962514528226,
+          "Re_per_dimensionless_speed": 44.94386749837245,
+          "manufacturer_size_d10_d50_d90_um": [
+            30.0,
+            65.0,
+            115.0
+          ],
+          "manufacturer_effective_top_size_um": 120.0
+        },
+        "dimensionless_parameters": [
+          0.03492413282400757,
+          0.15631667332941065,
+          3.2196773638017477,
+          0.015388559140477825,
+          0.10963763906505944,
+          1.158529923396168e-05,
+          0.5383685104593823,
+          0.38884962514528226
+        ],
+        "mass_ratio_m1_over_m2": 0.10963763906505944,
+        "charge_ratio_q2_over_q1": 3.4490536225028334,
+        "lambda_ratio_lambda2_over_lambda1": 0.7222740884556609,
+        "U1_peak_electrode_V": 378.45599607230076,
+        "U2_peak_electrode_V": 1846.9339299655644,
+        "U1_plus_U2_peak_bound_V": 2225.389926037865,
+        "V2_ideal_DC_coefficient_V_not_endcap": 145.13265141678698,
+        "MFS_triangle_surface_field_bound_V_m": 5587495.982112643,
+        "a1_over_R": 0.0007589753032639071,
+        "a2_over_R": 0.005,
+        "gravity_z_dimensionless": -0.0020529367470374614,
+        "Cunningham_factors_applied": "mean of two particle-specific Cc values in the current scalar-drag integrator",
+        "Cunningham_mean": 1.0062091741104378,
+        "maximum_relative_Cunningham_approximation": 0.0045650888221602385,
+        "boundary_field_note": "MFS triangle sum of separate basis maxima; not a phase-torus maximum or breakdown verdict.",
+        "charge_frequency_scaling": {
+          "common_charge_scale": 2.2,
+          "common_frequency_scale": 2.2,
+          "C_preserved": true,
+          "A_B_beta_and_geometry_preserved": true,
+          "lambda_scaled_by_inverse_frequency": true,
+          "Re_per_dimensionless_speed_scaled_with_frequency": true
+        }
+      }
+    }
+  },
+  "ensemble_counts": {
+    "rest": 128,
+    "weak": 128,
+    "wide": 128,
+    "edge": 128
+  },
+  "seed_records": [
+    {
+      "ensemble": "rest",
+      "seed": 20261230,
+      "n": 128
+    },
+    {
+      "ensemble": "weak",
+      "seed": 20261231,
+      "n": 128
+    },
+    {
+      "ensemble": "wide",
+      "seed": 20261232,
+      "n": 128
+    },
+    {
+      "ensemble": "edge",
+      "seed": 20261233,
+      "n": 128
+    }
+  ],
+  "total_trajectories": 1024,
+  "periods": 15000,
+  "steps_per_rf_period": 64,
+  "skip_periods": 100,
+  "workers": 11,
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "model_options": {
+    "drag_mode": "Schiller-Naumann",
+    "hydro_mode": 2,
+    "gravity": true,
+    "finite_particle_contacts": true,
+    "Cunningham": "same particle-specific mean as parent campaign"
+  }
+}

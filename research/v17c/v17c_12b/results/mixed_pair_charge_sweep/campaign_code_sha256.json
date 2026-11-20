@@ -1,0 +1,10 @@
+{
+  "runner_sha256": "69e2c3f787926045a080fcb7c12b08382c67a694712c858d9da182f2d7a9b8b4",
+  "saved_runner_sha256": "69e2c3f787926045a080fcb7c12b08382c67a694712c858d9da182f2d7a9b8b4",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "saved_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "parent_starts_sha256": "085fdc5ffb4a9d595b2da0bb4cfe354d8a542bc4796b7a69c77133999e5ab087",
+  "workers": 11,
+  "total_trajectories": 1024
+}

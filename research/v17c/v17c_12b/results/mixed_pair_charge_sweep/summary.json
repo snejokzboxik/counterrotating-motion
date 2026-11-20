@@ -1,0 +1,83 @@
+{
+  "study": "paired common-charge/common-frequency screen for literature-constrained Al2O3 / K1 pair",
+  "rows": 1024,
+  "expected_rows": 1024,
+  "outcome_counts": {
+    "PROVISIONAL_CO_MINUS_MINUS": 942,
+    "WALL_OR_AXIAL_ESCAPE": 82
+  },
+  "by_configuration": {
+    "q150k_f75hz": {
+      "rows": 512,
+      "outcomes": {
+        "PROVISIONAL_CO_MINUS_MINUS": 476,
+        "WALL_OR_AXIAL_ESCAPE": 36
+      },
+      "retained_by_ensemble": {
+        "rest": 123,
+        "weak": 126,
+        "wide": 115,
+        "edge": 112
+      }
+    },
+    "q220k_f110hz": {
+      "rows": 512,
+      "outcomes": {
+        "PROVISIONAL_CO_MINUS_MINUS": 466,
+        "WALL_OR_AXIAL_ESCAPE": 46
+      },
+      "retained_by_ensemble": {
+        "rest": 122,
+        "weak": 126,
+        "wide": 112,
+        "edge": 106
+      }
+    }
+  },
+  "outcomes_by_ensemble_and_configuration": {
+    "rest": {
+      "q150k_f75hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 123,
+        "WALL_OR_AXIAL_ESCAPE": 5
+      },
+      "q220k_f110hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 122,
+        "WALL_OR_AXIAL_ESCAPE": 6
+      }
+    },
+    "weak": {
+      "q150k_f75hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 126,
+        "WALL_OR_AXIAL_ESCAPE": 2
+      },
+      "q220k_f110hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 126,
+        "WALL_OR_AXIAL_ESCAPE": 2
+      }
+    },
+    "wide": {
+      "q150k_f75hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 115,
+        "WALL_OR_AXIAL_ESCAPE": 13
+      },
+      "q220k_f110hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 112,
+        "WALL_OR_AXIAL_ESCAPE": 16
+      }
+    },
+    "edge": {
+      "q150k_f75hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 112,
+        "WALL_OR_AXIAL_ESCAPE": 16
+      },
+      "q220k_f110hz": {
+        "PROVISIONAL_CO_MINUS_MINUS": 106,
+        "WALL_OR_AXIAL_ESCAPE": 22
+      }
+    }
+  },
+  "classification": "Provisional long-horizon labels for a paired parameter screen; not IID basin probabilities.",
+  "trajectory_sha256": "2d8265a670756ec219f3cd768af4184927133bb93c886ed363e19603a3b95603",
+  "meta_sha256": "13912c7e7a8951826364400a088674902fec3baf32403032e74f020a933b12c2",
+  "wall_seconds_this_invocation": 1054.673024000018
+}

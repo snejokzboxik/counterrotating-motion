@@ -50,5 +50,43 @@
     },
     "interpretation": "One literature-constrained dimensional scenario assembled from separately reported ranges, not a measured joint pair; four distinct start ensembles and provisional late-window labels are not IID basin probabilities. The observed high retention does not meet the scientific objective."
   },
+  "additional_paired_screens": [
+    {
+      "configuration": "q150k_f75hz",
+      "shared_parameters": {"A": 0.03492413282400757, "B": 0.15631667332941065, "nu": 3.2196773638017477, "beta": 0.015388559140477825, "mass_ratio_m1_over_m2": 0.10963763906505944, "charge_ratio_q2_over_q1": 3.4490536225028334},
+      "q1_e": 150000.0,
+      "q2_e": 517358.0433754249,
+      "f1_Hz": 75.0,
+      "f2_Hz": 241.47580228513107,
+      "C": 1.158529923396168e-05,
+      "lambda1": 0.7896071486737607,
+      "lambda2": 0.570312783546414,
+      "U1_peak_electrode_V": 258.03817914020505,
+      "U2_peak_electrode_V": 1259.2731340674302,
+      "retained_by_ensemble": {"rest": "123/128", "weak": "126/128", "wide": "115/128", "edge": "112/128"},
+      "retained_total": "476/512",
+      "provisional_outcomes": {"CO_MINUS_MINUS": 476, "radial_loss": 36, "CR": 0, "CO_PLUS_PLUS": 0},
+      "MFS_triangle_surface_field_bound_V_m": 3809656.351440438,
+      "audit_pass": true
+    },
+    {
+      "configuration": "q220k_f110hz",
+      "shared_parameters": {"A": 0.03492413282400757, "B": 0.15631667332941065, "nu": 3.2196773638017477, "beta": 0.015388559140477825, "mass_ratio_m1_over_m2": 0.10963763906505944, "charge_ratio_q2_over_q1": 3.4490536225028334},
+      "q1_e": 220000.00000000003,
+      "q2_e": 758791.7969506233,
+      "f1_Hz": 110.00000000000001,
+      "f2_Hz": 354.1645100181923,
+      "C": 1.158529923396168e-05,
+      "lambda1": 0.5383685104593824,
+      "lambda2": 0.3888496251452823,
+      "U1_peak_electrode_V": 378.45599607230076,
+      "U2_peak_electrode_V": 1846.9339299655644,
+      "retained_by_ensemble": {"rest": "122/128", "weak": "126/128", "wide": "112/128", "edge": "106/128"},
+      "retained_total": "466/512",
+      "provisional_outcomes": {"CO_MINUS_MINUS": 466, "radial_loss": 46, "CR": 0, "CO_PLUS_PLUS": 0},
+      "MFS_triangle_surface_field_bound_V_m": 5587495.98211264,
+      "audit_pass": true
+    }
+  ],
   "active_screen": null
 }
