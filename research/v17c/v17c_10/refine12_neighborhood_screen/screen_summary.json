@@ -1,0 +1,543 @@
+{
+  "study": "V17C.10 refine12 neighborhood screen summary",
+  "total_rows": 9472,
+  "expected_rows": 9472,
+  "scaled_turn_min": 1.4864864864864864,
+  "category_counts": {
+    "finite_particle_wall_contact": 1388,
+    "inconclusive": 8008,
+    "axis_ambiguous": 76
+  },
+  "top_10": [
+    {
+      "config_id": 17,
+      "label": "refine12_sobol_17",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.9375,
+        "wide": 0.859375,
+        "edge": 0.71875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.9375,
+        "wide": 0.859375,
+        "edge": 0.75
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9,
+          "inconclusive": 55
+        },
+        "edge": {
+          "finite_particle_wall_contact": 16,
+          "inconclusive": 46,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.71875,
+        0.75,
+        0.9114583333333334,
+        0.75
+      ],
+      "p": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24575362874758605,
+        0.17750147818833362
+      ],
+      "qratio": 3.4490536225028334
+    },
+    {
+      "config_id": 10,
+      "label": "refine12_sobol_10",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.703125
+      },
+      "retention_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.734375
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 5,
+          "inconclusive": 59
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 54
+        },
+        "edge": {
+          "finite_particle_wall_contact": 17,
+          "inconclusive": 45,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.703125,
+        0.734375,
+        0.9010416666666666,
+        0.734375
+      ],
+      "p": [
+        0.03648223429455271,
+        0.1764141521413259,
+        3.334956375584006,
+        0.017018854356505325,
+        0.14116944445490154,
+        1.4170571790656469e-05,
+        0.23402958140373686,
+        0.13620797904560308
+      ],
+      "qratio": 2.892991953995079
+    },
+    {
+      "config_id": 23,
+      "label": "refine12_sobol_23",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.703125
+      },
+      "retention_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.734375
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 5,
+          "inconclusive": 59
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 54
+        },
+        "edge": {
+          "finite_particle_wall_contact": 17,
+          "inconclusive": 45,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.703125,
+        0.734375,
+        0.9010416666666666,
+        0.734375
+      ],
+      "p": [
+        0.03755686151947286,
+        0.16314387115571624,
+        3.130174391660839,
+        0.015120059576349128,
+        0.13266446593312786,
+        1.1100807790875403e-05,
+        0.24453068211220458,
+        0.15642077673595706
+      ],
+      "qratio": 2.922910237405449
+    },
+    {
+      "config_id": 32,
+      "label": "refine12_anchor",
+      "source": "P4 refinement anchor 12",
+      "proxy_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.703125
+      },
+      "retention_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.734375
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 5,
+          "inconclusive": 59
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 54
+        },
+        "edge": {
+          "finite_particle_wall_contact": 17,
+          "inconclusive": 45,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.703125,
+        0.734375,
+        0.9010416666666666,
+        0.734375
+      ],
+      "p": [
+        0.036536559669839035,
+        0.17246401028140085,
+        3.2239347513765098,
+        0.014742040731828608,
+        0.12340655648341282,
+        1.2076805896660412e-05,
+        0.20865112927753002,
+        0.13669668777275765
+      ],
+      "qratio": 2.852663503959775
+    },
+    {
+      "config_id": 34,
+      "label": "refine00_anchor",
+      "source": "P4 refinement anchor 0",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.953125,
+        "wide": 0.84375,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.953125,
+        "wide": 0.84375,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3,
+          "inconclusive": 61
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 54
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.9114583333333334,
+        0.71875
+      ],
+      "p": [
+        0.03553843295705246,
+        0.17036917443095137,
+        3.2964669629000127,
+        0.0175421931077421,
+        0.10389694603844826,
+        1.1731830393965951e-05,
+        0.21385533825317193,
+        0.14441787862907604
+      ],
+      "qratio": 3.005330676585436
+    },
+    {
+      "config_id": 5,
+      "label": "refine12_sobol_05",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.953125,
+        "wide": 0.828125,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.953125,
+        "wide": 0.828125,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3,
+          "inconclusive": 61
+        },
+        "wide": {
+          "finite_particle_wall_contact": 11,
+          "inconclusive": 53
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.90625,
+        0.71875
+      ],
+      "p": [
+        0.036016691061678485,
+        0.1594057318636887,
+        3.1653598911501466,
+        0.015874006941790003,
+        0.11235395234222775,
+        1.763776102812537e-05,
+        0.17793549224576036,
+        0.16500806623378594
+      ],
+      "qratio": 2.7113073697313665
+    },
+    {
+      "config_id": 0,
+      "label": "refine12_sobol_00",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.90625,
+        "weak": 0.9375,
+        "wide": 0.859375,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.90625,
+        "weak": 0.9375,
+        "wide": 0.859375,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 6,
+          "inconclusive": 58
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9,
+          "inconclusive": 55
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.9010416666666666,
+        0.71875
+      ],
+      "p": [
+        0.03664773702916738,
+        0.17833841512136378,
+        3.1360660842619836,
+        0.017855950178711135,
+        0.12761183008901156,
+        1.231779696547218e-05,
+        0.25004799559561586,
+        0.14945932813609608
+      ],
+      "qratio": 3.0994398407638073
+    },
+    {
+      "config_id": 13,
+      "label": "refine12_sobol_13",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.90625,
+        "wide": 0.859375,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.90625,
+        "wide": 0.859375,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "weak": {
+          "finite_particle_wall_contact": 6,
+          "inconclusive": 58
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9,
+          "inconclusive": 55
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.9010416666666666,
+        0.71875
+      ],
+      "p": [
+        0.035332080061057404,
+        0.16305605408975066,
+        3.3100990631617604,
+        0.016806816604949117,
+        0.1357070155499616,
+        8.76834884284734e-06,
+        0.1858143992367547,
+        0.13354328810453903
+      ],
+      "qratio": 2.6611173369921746
+    },
+    {
+      "config_id": 19,
+      "label": "refine12_sobol_19",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.921875,
+        "weak": 0.9375,
+        "wide": 0.84375,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 5,
+          "inconclusive": 59
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10,
+          "inconclusive": 54
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.9010416666666666,
+        0.71875
+      ],
+      "p": [
+        0.03897020869259758,
+        0.18055480652680414,
+        3.319779052399099,
+        0.0187738230064389,
+        0.1264153682659933,
+        1.3692518130310797e-05,
+        0.22659014230881744,
+        0.13161309886310307
+      ],
+      "qratio": 2.7477737420238553
+    },
+    {
+      "config_id": 22,
+      "label": "refine12_sobol_22",
+      "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+      "proxy_by_group": {
+        "rest": 0.9375,
+        "weak": 0.9375,
+        "wide": 0.828125,
+        "edge": 0.6875
+      },
+      "retention_by_group": {
+        "rest": 0.9375,
+        "weak": 0.9375,
+        "wide": 0.828125,
+        "edge": 0.71875
+      },
+      "categories_by_group": {
+        "rest": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4,
+          "inconclusive": 60
+        },
+        "wide": {
+          "finite_particle_wall_contact": 11,
+          "inconclusive": 53
+        },
+        "edge": {
+          "finite_particle_wall_contact": 18,
+          "inconclusive": 44,
+          "axis_ambiguous": 2
+        }
+      },
+      "objective": [
+        0.6875,
+        0.71875,
+        0.9010416666666666,
+        0.71875
+      ],
+      "p": [
+        0.034497329865753726,
+        0.17506284578842157,
+        3.401624516844749,
+        0.01572230917665322,
+        0.11317754453849908,
+        1.5867138395850575e-05,
+        0.1934417413452116,
+        0.1005816614152921
+      ],
+      "qratio": 3.200758744310588
+    }
+  ]
+}

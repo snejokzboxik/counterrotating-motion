@@ -1,0 +1,16 @@
+{
+  "study": "V17C.10 refine12-neighborhood strict matched holdout",
+  "started_at_utc": "2026-11-20T07:43:36.327830+00:00",
+  "worker_count": 11,
+  "logical_processors_reported": 12,
+  "trajectory_parallelism": "ThreadPoolExecutor over independent Numba nogil trajectories",
+  "runner_sha256": "221034982bce5b0db5d2dd3670ee905a54be60bb01eeb2236d407537e3f50980",
+  "sample_size_per_candidate_and_ensemble": 128,
+  "fresh_start_seeds": {
+    "rest": 20261810,
+    "weak": 20261811,
+    "wide": 20261812,
+    "edge": 20261813
+  },
+  "same_frozen_starts_and_phases_within_ensemble": true
+}

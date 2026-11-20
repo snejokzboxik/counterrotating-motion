@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 35,
+  "candidate_label": "candidate52_anchor",
+  "source": "P3 focused anchor 36",
+  "parameters": [
+    0.03956095746691348,
+    0.15032976498886072,
+    2.8996277751401065,
+    0.015917322789905167,
+    0.11307613545330587,
+    9.281679945656495e-06,
+    0.1868668374144136,
+    0.10359181855828002
+  ],
+  "qratio": 3.5274259874597194,
+  "ensemble": "rest",
+  "n": 256,
+  "seed": 20261610,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\local15_refinement_confirmation_N256\\holdout_starts\\rest_N256_seed20261610.npz",
+  "frozen_start_sha256": "ddc5acfe7486e176cbb7c5f640cdbc1acd1f4d751aca2099e30d1801bc655890",
+  "candidate_source": "V17C.10 strict holdout for P4 refinement screen",
+  "run_tag": "refineconfirm20261610",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "3926e2a58bde5f054fa98f5ff1cfc33993c79a73387548db035bc76cb6216443"
+}

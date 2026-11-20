@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 18,
+  "candidate_label": "refine_sobol_18",
+  "source": "fresh Sobol refinement around P3 local15",
+  "parameters": [
+    0.0381507933353716,
+    0.18076420690379869,
+    3.2385242329444734,
+    0.015234197995867668,
+    0.11123313401418923,
+    7.972656417167186e-06,
+    0.16668231428333288,
+    0.13570342499259724
+  ],
+  "qratio": 3.01289874650538,
+  "ensemble": "edge",
+  "n": 256,
+  "seed": 20261613,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\local15_refinement_confirmation_N256\\holdout_starts\\edge_N256_seed20261613.npz",
+  "frozen_start_sha256": "6ab943fb663b7ec95d60de2724506aac0c77aa23acd3fa70f561a9faa90f45ac",
+  "candidate_source": "V17C.10 strict holdout for P4 refinement screen",
+  "run_tag": "refineconfirm20261610",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "3926e2a58bde5f054fa98f5ff1cfc33993c79a73387548db035bc76cb6216443"
+}

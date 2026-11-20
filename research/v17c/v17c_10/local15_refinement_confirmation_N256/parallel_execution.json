@@ -1,0 +1,19 @@
+{
+  "study": "V17C.10 local15 refinement independent N=256 confirmation",
+  "started_at_utc": "2026-11-20T05:45:33.875846+00:00",
+  "worker_count": 11,
+  "logical_processors_reported": 12,
+  "trajectory_parallelism": "ThreadPoolExecutor over independent Numba nogil trajectories",
+  "confirmation_runner": "research\\v17c\\v17c_10\\run_local15_refinement_confirmation.py",
+  "confirmation_runner_sha256": "3926e2a58bde5f054fa98f5ff1cfc33993c79a73387548db035bc76cb6216443",
+  "scientific_integrator_runner_sha256": "3ce6e8652f57eca3d740eab8ead39a91f5d76ca41f59686dc39ad0e396affa49",
+  "sample_size_per_candidate_and_ensemble": 256,
+  "fresh_start_seeds": {
+    "rest": 20261610,
+    "weak": 20261611,
+    "wide": 20261612,
+    "edge": 20261613
+  },
+  "same_frozen_starts_and_phases_within_ensemble": true,
+  "resume_policy": "continue from complete JSONL rows; frozen starts and phases must match exactly"
+}

@@ -1,0 +1,12 @@
+{
+  "study": "V17C.10 local15 refinement strict matched holdout",
+  "resumed_at_utc": "2026-11-20T05:20:09.745262+00:00",
+  "resumed_worker_count": 11,
+  "logical_processors_reported": 12,
+  "trajectory_parallelism": "ThreadPoolExecutor over independent Numba nogil trajectories",
+  "scientific_runner": "research\\v17c\\v17c_10\\run_local15_refinement_holdout.py",
+  "scientific_runner_sha256": "3ce6e8652f57eca3d740eab8ead39a91f5d76ca41f59686dc39ad0e396affa49",
+  "parallel_launcher_sha256": "95482b22af3b51f9389de33ea8031000ab5fe4e8f04ee3e141e4052b2823fd95",
+  "previous_worker_count": 4,
+  "resume_policy": "continue from validated complete JSONL rows; frozen starts and phases unchanged"
+}

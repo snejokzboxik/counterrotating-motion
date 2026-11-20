@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 17,
+  "candidate_label": "refine12_sobol_17",
+  "source": "fresh Sobol neighborhood around N=256-confirmed refine12",
+  "parameters": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    0.10963763906505944,
+    9.747265456858355e-06,
+    0.24575362874758605,
+    0.17750147818833362
+  ],
+  "qratio": 3.4490536225028334,
+  "ensemble": "wide",
+  "n": 128,
+  "seed": 20261812,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\refine12_neighborhood_validation\\holdout_starts\\wide_N128_seed20261812.npz",
+  "frozen_start_sha256": "5ad8c31eae94c0791d83c91d4bf5a40dc1fc044b09e97cab94270de418448411",
+  "candidate_source": "V17C.10 strict holdout for refine12-neighborhood screen",
+  "run_tag": "refine12holdout20261810",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "221034982bce5b0db5d2dd3670ee905a54be60bb01eeb2236d407537e3f50980"
+}
