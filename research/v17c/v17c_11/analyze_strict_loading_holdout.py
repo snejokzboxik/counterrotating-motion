@@ -1,6 +1,7 @@
 """Score the independent strict-loading holdout with unconditional denominators."""
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 from collections import Counter, defaultdict
@@ -24,6 +25,12 @@ def wilson(k: int, n: int, z: float = 1.959963984540054):
 
 
 def main():
+    global OUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", default="strict_loading_holdout",
+                        help="holdout output directory under v17c_11")
+    args = parser.parse_args()
+    OUT = HERE / args.output
     protocols = json.loads((OUT / "holdout_protocols.json").read_text(encoding="utf-8"))
     metadata = json.loads((OUT / "holdout_metadata.json").read_text(encoding="utf-8"))
     n = int(metadata["N_per_ensemble"])

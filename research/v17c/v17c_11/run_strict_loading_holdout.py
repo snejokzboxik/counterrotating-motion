@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import argparse
 import hashlib
 import json
 import math
@@ -139,9 +140,34 @@ def load_checkpoint_keys(path):
 
 
 def main():
+    global OUT, SEEDS, N, WORKERS, BATCH
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--n", type=int, default=64, help="power-of-two starts per ensemble")
+    parser.add_argument("--seed-base", type=int, default=20261201,
+                        help="first of four consecutive ensemble seeds")
+    parser.add_argument("--output", default="strict_loading_holdout",
+                        help="output directory under v17c_11")
+    parser.add_argument("--protocol-ids", default="0,1,2,3,4",
+                        help="comma-separated fixed protocol IDs from holdout_protocols")
+    parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--batch-size", type=int, default=4)
+    args = parser.parse_args()
+    if args.n < 1 or (args.n & (args.n - 1)):
+        raise ValueError("--n must be a positive power of two")
+    N = args.n
+    SEEDS = {g: args.seed_base + i for i, g in enumerate(GROUPS)}
+    OUT = HERE / args.output
+    WORKERS = args.workers
+    BATCH = args.batch_size
+    protocol_ids = {int(x.strip()) for x in args.protocol_ids.split(",") if x.strip()}
+    if not protocol_ids:
+        raise ValueError("at least one protocol ID is required")
     OUT.mkdir(parents=True, exist_ok=True)
     starts, start_meta = starts_frozen()
-    protocols = load_protocols()
+    protocols = [d for d in load_protocols() if d["id"] in protocol_ids]
+    found = {d["id"] for d in protocols}
+    if found != protocol_ids:
+        raise ValueError(f"unknown protocol IDs: {sorted(protocol_ids-found)}")
     (OUT / "holdout_protocols.json").write_text(json.dumps(protocols, indent=2) + "\n", encoding="utf-8")
     fixed = json.loads((HERE / "local15_parameters.json").read_text(encoding="utf-8"))
     p = np.asarray(fixed["candidate"]["p"], dtype=np.float64)

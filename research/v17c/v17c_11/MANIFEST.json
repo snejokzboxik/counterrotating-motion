@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P5 validated; P6/P7 early screens, P8 N=64 strict holdout, and P9 DOP853/energy/step checks complete; P10 larger holdout, robustness, and transferability pending",
+  "status": "P0-P5 validated; P6/P7 early screens, P8 N=64 strict holdout, and P9 DOP853/energy/step checks complete; P10 N=256 holdout prepared but not yet run; robustness and transferability pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/adaptive_loading/adaptive_early_retention_top16.png",
@@ -136,8 +136,8 @@
     },
     {
       "path": "research/v17c/v17c_11/analyze_strict_loading_holdout.py",
-      "size_bytes": 5739,
-      "sha256": "f9fe93f43974e908575a5a06617265b0354393cdaafbf4d397e24a0dd577d7f8"
+      "size_bytes": 6029,
+      "sha256": "0080bc549e9dacf413e6ae87e26737a0d74eb0b05c2fdfc5dcd8750e196079a3"
     },
     {
       "path": "research/v17c/v17c_11/best_loading_protocol.json",
@@ -146,8 +146,8 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2260,
-      "sha256": "132054fad31cd3bec4eb296468612a3fb1d7dae872e52fe29a7ec99f6663b2d1"
+      "size_bytes": 2283,
+      "sha256": "9ab21006e39886999ce6ad906565bbb5da96fa400d8c4c80b9e4444281564d8b"
     },
     {
       "path": "research/v17c/v17c_11/DOP853_ENERGY_VALIDATION_RU.md",
@@ -366,8 +366,8 @@
     },
     {
       "path": "research/v17c/v17c_11/run_strict_loading_holdout.py",
-      "size_bytes": 8914,
-      "sha256": "41eb66e9c88d63dce597c0d5ee6147b5e8bd1d76e60f9866261de6500e9f0293"
+      "size_bytes": 10342,
+      "sha256": "4b5ccdae653bbf93af4073c7f7b89cb938ee755139186c622d9920974798503c"
     },
     {
       "path": "research/v17c/v17c_11/run_strict_loading_validation.py",
@@ -381,8 +381,8 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 19770,
-      "sha256": "09c1aeb67bdb2d713308bea1b111ba9fb4af815418110b1d119e3f2f979f0b08"
+      "size_bytes": 20423,
+      "sha256": "5689472147fa04832b1c0373f5a34906ce14bc3fa29ffb85eb72a4d1d8b4b567"
     },
     {
       "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_P2_353_edge_1.npz",
