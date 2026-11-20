@@ -1,0 +1,138 @@
+{
+  "study": "V17C.11 P1 early-time radial loss diagnostics",
+  "protocol": {
+    "n_early_periods": 10,
+    "steps_per_primary_period": 128,
+    "sample_cycles": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "workers": 4,
+    "all_starts": "all 256 published starts in each of four groups for each of two candidates",
+    "same_initial_conditions": "published V17C.10 independent replication starts"
+  },
+  "source_sha256": {
+    "local15/rest": {
+      "runs_sha256": "6f322bc6a3522494471432bc7b68a61a5b832f83389cb1263a293c80b0b37093",
+      "starts_sha256": "6ef145d443c316c624f7bc9f5fa431fa3f9a8ddeeeb88ef2a6d95d379e8109ca"
+    },
+    "candidate52/rest": {
+      "runs_sha256": "f217c42f881945428d11e19af08e9fae5b54293c1f20df865e9c85a71d9c8a10",
+      "starts_sha256": "6ef145d443c316c624f7bc9f5fa431fa3f9a8ddeeeb88ef2a6d95d379e8109ca"
+    },
+    "local15/weak": {
+      "runs_sha256": "95f54466fa68754d7cc4ce46c3eb5bdc657bda1826ee514f600a91cba6417a80",
+      "starts_sha256": "53fa0e53fef421a9fa85191c0563458f91c5590d9adb83eacee79b14a76e4ed5"
+    },
+    "candidate52/weak": {
+      "runs_sha256": "5be0f546240f7fc157feffb6685156a2652da38906cfd5175c7a717f5beeb9ac",
+      "starts_sha256": "53fa0e53fef421a9fa85191c0563458f91c5590d9adb83eacee79b14a76e4ed5"
+    },
+    "local15/wide": {
+      "runs_sha256": "893c5324ee100de6c541ca8b68f7d8c7b76f04263eb12cbbdd63151302b150f5",
+      "starts_sha256": "32ee8f6155416e79ba5994fbc7e2d1707a2e22faefa61c83db46e86b0d17d7d7"
+    },
+    "candidate52/wide": {
+      "runs_sha256": "2d31f71a54baa84c8f066e48b0eeb700345526770edb7ccd43a27079e7c70786",
+      "starts_sha256": "32ee8f6155416e79ba5994fbc7e2d1707a2e22faefa61c83db46e86b0d17d7d7"
+    },
+    "local15/edge": {
+      "runs_sha256": "d7e3107f40e8c7b6bd0a9bdc762eb17453fccf574ce328a014b6ac5170b616b6",
+      "starts_sha256": "021f87b4d5c62ac5775b29e72c77a06832b733359d10b26da60644b5065a6c1d"
+    },
+    "candidate52/edge": {
+      "runs_sha256": "30b254c57a7529c0394535966422ba8cdf6075a036da9017876592a9c74faaf7",
+      "starts_sha256": "021f87b4d5c62ac5775b29e72c77a06832b733359d10b26da60644b5065a6c1d"
+    }
+  },
+  "published_N256_categories": {
+    "local15": {
+      "rest": {
+        "n": 256,
+        "categories": {
+          "CR_screen": 225,
+          "finite_particle_wall_contact": 31
+        }
+      },
+      "weak": {
+        "n": 256,
+        "categories": {
+          "CR_screen": 225,
+          "finite_particle_wall_contact": 31
+        }
+      },
+      "wide": {
+        "n": 256,
+        "categories": {
+          "finite_particle_wall_contact": 52,
+          "CR_screen": 199,
+          "axis_ambiguous": 5
+        }
+      },
+      "edge": {
+        "n": 256,
+        "categories": {
+          "finite_particle_wall_contact": 73,
+          "CR_screen": 180,
+          "axis_ambiguous": 3
+        }
+      }
+    },
+    "candidate52": {
+      "rest": {
+        "n": 256,
+        "categories": {
+          "CR_screen": 220,
+          "finite_particle_wall_contact": 35,
+          "axis_ambiguous": 1
+        }
+      },
+      "weak": {
+        "n": 256,
+        "categories": {
+          "CR_screen": 222,
+          "finite_particle_wall_contact": 34
+        }
+      },
+      "wide": {
+        "n": 256,
+        "categories": {
+          "finite_particle_wall_contact": 64,
+          "CR_screen": 188,
+          "axis_ambiguous": 4
+        }
+      },
+      "edge": {
+        "n": 256,
+        "categories": {
+          "CR_screen": 166,
+          "finite_particle_wall_contact": 88,
+          "axis_ambiguous": 2
+        }
+      }
+    }
+  },
+  "force_decomposition_RHS_checks": [
+    {
+      "candidate": "local15",
+      "max_abs_acceleration_difference": 1.1102230246251565e-16
+    },
+    {
+      "candidate": "candidate52",
+      "max_abs_acceleration_difference": 5.551115123125783e-17
+    }
+  ],
+  "analyzed_trajectories": 2048,
+  "wall_seconds": 14.06403830000636,
+  "early_trajectories_per_second": 145.6196261922206,
+  "outputs": [
+    "p1_early_diagnostics/early_cases.jsonl",
+    "p1_early_diagnostics/early_samples.npz"
+  ]
+}

@@ -338,4 +338,3 @@ def integrate(initial, phase, p, protocol, family, k, coeff, periods, steps, ski
             "retained","escaped","singular_unresolved","category","frequency_Hz",
             "log_tau","log_state")
     return dict(zip(keys, result))
-

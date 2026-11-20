@@ -2,17 +2,27 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0 complete; P1 and protocol search pending",
+  "status": "P0-P1 complete; protocol screening and optimization pending",
   "outputs": [
     {
+      "path": "research/v17c/v17c_11/analyze_initial_capture.py",
+      "size_bytes": 13709,
+      "sha256": "54e058b0396326922bc93e5f08b98d262f653151016a69cec6051288d00acfce"
+    },
+    {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2139,
-      "sha256": "c83d95ab3bd283dcabb679bfc663da078f47a3955faa713ea5f035a97402defe"
+      "size_bytes": 2155,
+      "sha256": "0eb97810a38b80f2c468fb7551b9fd9f32ad3cea9b88704c323b9d3ecec89a80"
+    },
+    {
+      "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
+      "size_bytes": 9871,
+      "sha256": "898b7ad9b803107a7a439eb7f39cc0c6078553f643a4a4dc534b538e19da10c2"
     },
     {
       "path": "research/v17c/v17c_11/loading_dynamics.py",
-      "size_bytes": 15579,
-      "sha256": "e6e021bd0e182ddcf052e4aab290eec29254273126035c14ccf009c75ba5337a"
+      "size_bytes": 15918,
+      "sha256": "c2c0315ea292d6840348d3edee02bda14bdf214cd9e17c75d8d7ac3e68b7c730"
     },
     {
       "path": "research/v17c/v17c_11/local15_parameters.json",
@@ -30,9 +40,54 @@
       "sha256": "cf4c50c4a4e8371b8d854cb0214d98eccc8a3ed9d66f9fb526416dd3eb929e72"
     },
     {
+      "path": "research/v17c/v17c_11/p1_analysis_summary.json",
+      "size_bytes": 21075,
+      "sha256": "9705dc6de0ede8c0873630a6320889bd95977a123314f92fd3965bb4cc80d683"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/early_cases.jsonl",
+      "size_bytes": 3106342,
+      "sha256": "3d7386c50793814548e9ed7d09354b99ce0394440725b5dbeca479bbfa500abf"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/early_samples.npz",
+      "size_bytes": 8050927,
+      "sha256": "bd19460eea906d3cdc4fca63579d1ea5eaac0955487d2cb9368c725a730cb47f"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/initial_phase_wall_rates.csv",
+      "size_bytes": 8818,
+      "sha256": "bc98a9fb7c0b81f671c91bd4549a18643f84eb372bf72e69e848bcf7967f218b"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/initial_radius_wall_rates.csv",
+      "size_bytes": 2668,
+      "sha256": "3d5016de3f217a99526b8de078f7d1306ee4a1cdb367dea112aa56e1d52dda0f"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/initial_radius_wall_risk.png",
+      "size_bytes": 213852,
+      "sha256": "482b0146252c4ee97df3fdca344a2bce77d666b07a8b8cd72e13166445951680"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_diagnostics/rf_phase_wall_risk.png",
+      "size_bytes": 280027,
+      "sha256": "e6692127a3500ff0770143bdd9021ae04154ccc5981334758b80bd247b411885"
+    },
+    {
+      "path": "research/v17c/v17c_11/p1_early_summary.json",
+      "size_bytes": 4242,
+      "sha256": "e922ddef28e52f7a25e4d45b7e8d220a7d3befea98ed1fbad7bfbaa98f66f189"
+    },
+    {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 4876,
-      "sha256": "ef0424192722167254ff23e9482c666f017c2f72ec444523d8ce8451a805f655"
+      "size_bytes": 6468,
+      "sha256": "4fb6859e65d2a74c1137d418e32ae591ceed9fef9d0b4d2061c2a933d914c265"
+    },
+    {
+      "path": "research/v17c/v17c_11/summarize_initial_capture.py",
+      "size_bytes": 8850,
+      "sha256": "1a78579662d7bfa6df433d6a92fcada8cc1b141aae110cf08e89b54fb87e949a"
     },
     {
       "path": "research/v17c/v17c_11/validate_constant_protocol.py",
