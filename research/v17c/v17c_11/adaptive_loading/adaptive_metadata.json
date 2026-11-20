@@ -1,0 +1,51 @@
+{
+  "status": "complete",
+  "protocols": 128,
+  "N_per_ensemble": 32,
+  "periods": 48,
+  "steps_per_period": 96,
+  "workers": 4,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "seeds": {
+    "rest": 20261161,
+    "weak": 20261162,
+    "wide": 20261163,
+    "edge": 20261164
+  },
+  "start_hashes": {
+    "rest": {
+      "initial_sha256": "8da9cb5759bf3e82523bcda29a9f74129a4c764fc58e613c189de029d0ea6ac5",
+      "phase_sha256": "19ad0722a112a4856865f795dd339d02fe953742c5f59b24602170ae1a54e4b3"
+    },
+    "weak": {
+      "initial_sha256": "a4770dee44b7438c26ef28496e64585e9f9bbe6ca8d1b4a163054425b266b191",
+      "phase_sha256": "a050248f06538a01d70d9e39629bc326530897a46f42da3739e69b2353db89ff"
+    },
+    "wide": {
+      "initial_sha256": "620648847d05ea13b1b7c915c68bddba04123da7c0e3c90292c417b39c30853a",
+      "phase_sha256": "7d314ca1c4dc216f312faabdf5c8bd58cd19bc50c11e48dec3c52a611cedad22"
+    },
+    "edge": {
+      "initial_sha256": "76b604e63e81712faf6150497badd60eb9b59e06e5590a4cecf50a47500aa4f6",
+      "phase_sha256": "bc67d9d6b620835d3dbcb5db2f04d35cc9d816b1cdb4523506c6b944bb2dd3be"
+    }
+  },
+  "terminal_parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "q2_over_q1": 3.1179673274978996,
+  "screen_semantics": "early retention only; never interpret as strict P_CR",
+  "elapsed_seconds": 209.67556047439575
+}

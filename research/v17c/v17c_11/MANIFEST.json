@@ -2,8 +2,68 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P5 complete; adaptive envelope optimization, larger holdout, robustness, and transferability pending",
+  "status": "P0-P5 validated; P6 adaptive 128-protocol early-retention screen complete; 1024-protocol screen, strict holdout, robustness, and transferability pending",
   "outputs": [
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_early_retention_top16.png",
+      "size_bytes": 242864,
+      "sha256": "9b2760c9cf35357864b2c16256b027caa6eb95cbf175fefea49e197662d26aa1"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_metadata.json",
+      "size_bytes": 1574,
+      "sha256": "0960f4e484579c092ed0b6125a1515a5bf5b79ecfb9f1fe5a8ba5bdcd2f9d841"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_protocols.json",
+      "size_bytes": 60209,
+      "sha256": "36051ca583126bb5e518988f9ced03821b51563d6485a4667b9aa2f6d33c04c0"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_runs.jsonl",
+      "size_bytes": 8035011,
+      "sha256": "562b45576f6e0a14db930646338eaaefc0e680fb3b070fc9007c036b550e4dd2"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_summary.csv",
+      "size_bytes": 13219,
+      "sha256": "5ee860582a847230f867afcbf7a14d561ce505ffcb935271deaa1067ba142952"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/adaptive_summary.json",
+      "size_bytes": 120123,
+      "sha256": "63f006dd2c7d2102b90c7329ec99c6f8f54a7f41a7ad225cc92aeba917d684b0"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/ranked_robust_early.json",
+      "size_bytes": 111170,
+      "sha256": "19bafa0933533e5d803775e5b2122c87b4b1a8180c4495e6ece3f8d639043598"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/ranked_standard_early.json",
+      "size_bytes": 111170,
+      "sha256": "efa6613942039da280a6b258a246a39c8359c4630f09e8284ca6cf4888dd8860"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/training_starts.json",
+      "size_bytes": 1116,
+      "sha256": "157c0e75e45467017f430be3d9c3dfe867af81b0391d8dc0104c2c831153d8c3"
+    },
+    {
+      "path": "research/v17c/v17c_11/adaptive_loading/training_starts.npz",
+      "size_bytes": 13923,
+      "sha256": "3591fab392f907558276b569775cc10ab76a62a82b17c4ae79204c9675748674"
+    },
+    {
+      "path": "research/v17c/v17c_11/ADAPTIVE_LOADING_SCREEN_RU.md",
+      "size_bytes": 5465,
+      "sha256": "9e4cac35bcc30bbb1d9b93396b644e8d4c8ccf4405aca2626cef3cf179834955"
+    },
+    {
+      "path": "research/v17c/v17c_11/analyze_adaptive_loading_screen.py",
+      "size_bytes": 5854,
+      "sha256": "f537c2b31ab7a19586f133e9e49d7c9b374fb5c7b5db17cddfd075ebf53767ec"
+    },
     {
       "path": "research/v17c/v17c_11/analyze_initial_capture.py",
       "size_bytes": 13709,
@@ -15,9 +75,14 @@
       "sha256": "2d7d300eaa8d5944ae3975e09262c8f50eba12dc30955ca6aa9af41ce36a2fd8"
     },
     {
+      "path": "research/v17c/v17c_11/best_loading_protocol.json",
+      "size_bytes": 1532,
+      "sha256": "3550fd69cf0e780e9655347c9b19cf07825278c4b4033d35866f254ed9f32235"
+    },
+    {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2199,
-      "sha256": "2eedd5aa6d8a86c76d57cfc314142cc69b95c2df751ce0f5a60847aa8b7f978a"
+      "size_bytes": 2248,
+      "sha256": "e47f80da33ac1eb7a31d0ca12863c56d66dc0686815b4656025f78dd791c7079"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -205,6 +270,11 @@
       "sha256": "2aede0f129a168ee7ad189f09593d1d615ff892b662ddb85ae905547eaaac450"
     },
     {
+      "path": "research/v17c/v17c_11/run_adaptive_loading_screen.py",
+      "size_bytes": 8566,
+      "sha256": "6f2e6f289a4bec69d0c43259e6089454b2bab2e5c68df3f78cd560f3bd93b98b"
+    },
+    {
       "path": "research/v17c/v17c_11/run_coupling_controls.py",
       "size_bytes": 2742,
       "sha256": "a885d0d12c5ed9194e29f3acf8201f15524c20543be4df699560f1801faa92f8"
@@ -226,8 +296,8 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 13165,
-      "sha256": "ad74bdb1250478d4f50cde72b4a31dad31113c7c41607441561ca44af15b9a6c"
+      "size_bytes": 15100,
+      "sha256": "450f526a2faee2b75f6382b571fab99c6398a45283542df99c73c55a87c3172e"
     },
     {
       "path": "research/v17c/v17c_11/strict_long_validation/coupling_controls.json",

@@ -1,0 +1,4361 @@
+{
+  "protocols": 128,
+  "unique_runs": 16384,
+  "N_per_ensemble": 32,
+  "all_transitions_complete": true,
+  "metric_scope": "retention through 48 primary RF cycles only; not long-term counter-rotation probability",
+  "protocols_summary": [
+    {
+      "protocol_id": 0,
+      "family": "anchor_0",
+      "transition_cycles": 0.0,
+      "transition_complete_by_48": true,
+      "rest_retained": 27,
+      "weak_retained": 26,
+      "wide_retained": 30,
+      "edge_retained": 21,
+      "P_early_rest": 0.84375,
+      "P_early_weak": 0.8125,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.8125,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 84,
+        "inconclusive": 19,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 5
+        },
+        "weak": {
+          "finite_particle_wall_contact": 6
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 1,
+      "family": "anchor_505",
+      "transition_cycles": 3.0,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 119,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 8
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 2,
+      "family": "anchor_353",
+      "transition_cycles": 10.0,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 31,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.96875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 9,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 3,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 0.8443296904889632,
+      "transition_complete_by_48": true,
+      "rest_retained": 26,
+      "weak_retained": 25,
+      "wide_retained": 25,
+      "edge_retained": 21,
+      "P_early_rest": 0.8125,
+      "P_early_weak": 0.78125,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 94,
+        "finite_particle_wall_contact": 31,
+        "inconclusive": 2,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 6
+        },
+        "weak": {
+          "finite_particle_wall_contact": 7
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 4,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 3.3263359956616005,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 22,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 111,
+        "finite_particle_wall_contact": 16,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 5,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 5.488572889002765,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 6,
+      "family": "adaptive_capture",
+      "transition_cycles": 6.854391075275415,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 7,
+      "family": "adaptive_capture",
+      "transition_cycles": 10.689534924307491,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 25,
+      "edge_retained": 20,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.625,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.625,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 20,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 12
+        }
+      }
+    },
+    {
+      "protocol_id": 8,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 9.622106654535806,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 31,
+      "edge_retained": 25,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 9,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 4.3695356032785275,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 10,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 2.2478219350549087,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 24,
+      "edge_retained": 22,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 21,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 11,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.9962064951048424,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 25,
+      "edge_retained": 23,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 22,
+        "inconclusive": 2,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 12,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 17.37780235976244,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 31,
+      "edge_retained": 25,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 13,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 4.771619685597814,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 22,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 14,
+      "family": "adaptive_capture",
+      "transition_cycles": 7.835321810732378,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 27,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 119,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 8
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 15,
+      "family": "adaptive_capture",
+      "transition_cycles": 1.9606279606299544,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 116,
+        "inconclusive": 2,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 9
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 16,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 9.049782305616732,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 21,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 110,
+        "finite_particle_wall_contact": 17,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 17,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.5251604952661094,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 24,
+      "P_early_rest": 1.0,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 111,
+        "inconclusive": 3,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 18,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 15.945277256033355,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 28,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 110,
+        "finite_particle_wall_contact": 17,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 19,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 3.356584518434355,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 24,
+      "edge_retained": 19,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 20,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.1708625731906178,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 28,
+      "edge_retained": 23,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 105,
+        "finite_particle_wall_contact": 19,
+        "inconclusive": 3,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 21,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 17.788826125544112,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 118,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 9
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 22,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 7.452725847330498,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 27,
+      "wide_retained": 25,
+      "edge_retained": 21,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.84375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 100,
+        "finite_particle_wall_contact": 27,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 5
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 23,
+      "family": "adaptive_capture",
+      "transition_cycles": 6.515612832207354,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 30,
+      "wide_retained": 23,
+      "edge_retained": 20,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.625,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.625,
+      "categories": {
+        "localized_or_slow": 102,
+        "finite_particle_wall_contact": 25,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 12
+        }
+      }
+    },
+    {
+      "protocol_id": 24,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 3.786802379663774,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 24,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 14,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 25,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 11.087932936152558,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 30,
+      "edge_retained": 27,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 114,
+        "finite_particle_wall_contact": 12,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 26,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.2233389087696539,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 22,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 109,
+        "finite_particle_wall_contact": 16,
+        "inconclusive": 2,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 27,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 10.236507506282672,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 24,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 109,
+        "finite_particle_wall_contact": 18,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 28,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 6.90509940428724,
+      "transition_complete_by_48": true,
+      "rest_retained": 27,
+      "weak_retained": 29,
+      "wide_retained": 24,
+      "edge_retained": 16,
+      "P_early_rest": 0.84375,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.5,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.5,
+      "categories": {
+        "finite_particle_wall_contact": 32,
+        "localized_or_slow": 95,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 5
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 16
+        }
+      }
+    },
+    {
+      "protocol_id": 29,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 4.952818262625877,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 27,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 119,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 8
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 30,
+      "family": "adaptive_capture",
+      "transition_cycles": 5.51056227849214,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 114,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 31,
+      "family": "adaptive_capture",
+      "transition_cycles": 5.308558014250312,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 30,
+      "wide_retained": 26,
+      "edge_retained": 22,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.8125,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.8125,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 20,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 6
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 32,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 5.322087175130777,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 31,
+      "edge_retained": 26,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.96875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 120,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 7
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 33,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 10.43718138280751,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 25,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 21,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 34,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 5.411691464398697,
+      "transition_complete_by_48": true,
+      "rest_retained": 19,
+      "weak_retained": 20,
+      "wide_retained": 17,
+      "edge_retained": 10,
+      "P_early_rest": 0.59375,
+      "P_early_weak": 0.625,
+      "P_early_wide": 0.53125,
+      "P_early_edge": 0.3125,
+      "J_standard_early": 0.53125,
+      "J_robust_early": 0.3125,
+      "categories": {
+        "finite_particle_wall_contact": 62,
+        "localized_or_slow": 65,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 13
+        },
+        "weak": {
+          "finite_particle_wall_contact": 12
+        },
+        "wide": {
+          "finite_particle_wall_contact": 15
+        },
+        "edge": {
+          "finite_particle_wall_contact": 22
+        }
+      }
+    },
+    {
+      "protocol_id": 35,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 18.242898982549484,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 23,
+      "edge_retained": 19,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 102,
+        "finite_particle_wall_contact": 25,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 36,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.46640153679859003,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 16,
+        "inconclusive": 3,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 37,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 7.015470021968562,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 115,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 38,
+      "family": "adaptive_capture",
+      "transition_cycles": 6.3057258055840775,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 29,
+      "wide_retained": 24,
+      "edge_retained": 21,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 102,
+        "finite_particle_wall_contact": 25,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 39,
+      "family": "adaptive_capture",
+      "transition_cycles": 2.7500718822535584,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 24,
+      "edge_retained": 21,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 40,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 1.7013632455191554,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 31,
+      "edge_retained": 27,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.96875,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 121,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 6
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 41,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 16.56763452302147,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 32,
+      "wide_retained": 25,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 42,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 1.1343037289962337,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 22,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 43,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 2.3100881441026404,
+      "transition_complete_by_48": true,
+      "rest_retained": 11,
+      "weak_retained": 11,
+      "wide_retained": 10,
+      "edge_retained": 6,
+      "P_early_rest": 0.34375,
+      "P_early_weak": 0.34375,
+      "P_early_wide": 0.3125,
+      "P_early_edge": 0.1875,
+      "J_standard_early": 0.3125,
+      "J_robust_early": 0.1875,
+      "categories": {
+        "finite_particle_wall_contact": 90,
+        "localized_or_slow": 36,
+        "axis_ambiguous": 1,
+        "inconclusive": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 21
+        },
+        "weak": {
+          "finite_particle_wall_contact": 21
+        },
+        "wide": {
+          "finite_particle_wall_contact": 22
+        },
+        "edge": {
+          "finite_particle_wall_contact": 26
+        }
+      }
+    },
+    {
+      "protocol_id": 44,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 4.736290961506038,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 26,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 45,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 18.43747388121915,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 46,
+      "family": "adaptive_capture",
+      "transition_cycles": 3.279396080388487,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 115,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 47,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 13.681181708745473,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 23,
+      "edge_retained": 20,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.625,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.625,
+      "categories": {
+        "localized_or_slow": 100,
+        "finite_particle_wall_contact": 27,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 12
+        }
+      }
+    },
+    {
+      "protocol_id": 48,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 3.040687959713885,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 118,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 9
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 49,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 4.071140458860665,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 28,
+      "wide_retained": 27,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.875,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 20,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 50,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 6.002785556053347,
+      "transition_complete_by_48": true,
+      "rest_retained": 24,
+      "weak_retained": 25,
+      "wide_retained": 22,
+      "edge_retained": 12,
+      "P_early_rest": 0.75,
+      "P_early_weak": 0.78125,
+      "P_early_wide": 0.6875,
+      "P_early_edge": 0.375,
+      "J_standard_early": 0.6875,
+      "J_robust_early": 0.375,
+      "categories": {
+        "finite_particle_wall_contact": 45,
+        "localized_or_slow": 82,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 8
+        },
+        "weak": {
+          "finite_particle_wall_contact": 7
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10
+        },
+        "edge": {
+          "finite_particle_wall_contact": 20
+        }
+      }
+    },
+    {
+      "protocol_id": 51,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 1.7266456537882557,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 29,
+      "wide_retained": 25,
+      "edge_retained": 22,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 52,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 23.953558694776852,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 113,
+        "finite_particle_wall_contact": 14,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 53,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 3.0937486525374247,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 24,
+      "edge_retained": 22,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 21,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 54,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 6.814311062035776,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 24,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 115,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 12
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 55,
+      "family": "adaptive_capture",
+      "transition_cycles": 4.988001651286182,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 56,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 10.135052390171706,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 31,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 114,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 57,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 8.580571147223964,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 32,
+      "edge_retained": 26,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 1.0,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 118,
+        "finite_particle_wall_contact": 9,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {},
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 58,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 6.009188423703629,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 32,
+      "wide_retained": 24,
+      "edge_retained": 22,
+      "P_early_rest": 0.875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 105,
+        "finite_particle_wall_contact": 22,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 59,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.3504378982114061,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 28,
+      "wide_retained": 30,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 18,
+        "inconclusive": 1,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 60,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 9.221174594657008,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 61,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 5.323539146438616,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 118,
+        "finite_particle_wall_contact": 9,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 62,
+      "family": "adaptive_capture",
+      "transition_cycles": 5.505178215791691,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 25,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 113,
+        "finite_particle_wall_contact": 14,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 63,
+      "family": "adaptive_capture",
+      "transition_cycles": 3.201778792566543,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 29,
+      "wide_retained": 28,
+      "edge_retained": 21,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 20,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 64,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 16.531375399522222,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 118,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 9
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 65,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.1078587524200662,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 30,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 19,
+        "inconclusive": 2,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 66,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 8.636575193549081,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 25,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 21,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 67,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 3.04112850194708,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 30,
+      "wide_retained": 23,
+      "edge_retained": 19,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 101,
+        "finite_particle_wall_contact": 26,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 68,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.21659142857925834,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 27,
+      "wide_retained": 30,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.84375,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 19,
+        "inconclusive": 2,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 5
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 69,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 10.543203164060882,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 24,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 116,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 11
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 70,
+      "family": "adaptive_capture",
+      "transition_cycles": 6.728727240646763,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 27,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 9,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 71,
+      "family": "adaptive_capture",
+      "transition_cycles": 7.639706332349146,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 24,
+      "edge_retained": 20,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.625,
+      "categories": {
+        "localized_or_slow": 104,
+        "finite_particle_wall_contact": 23,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 12
+        }
+      }
+    },
+    {
+      "protocol_id": 72,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 2.75171956841809,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 73,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 11.418955818035222,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 26,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 74,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.17271714556913392,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 110,
+        "finite_particle_wall_contact": 16,
+        "inconclusive": 1,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 75,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 10.99362036377946,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 76,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 6.221846063572043,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 31,
+      "edge_retained": 26,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 77,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 13.327303662102352,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 31,
+      "edge_retained": 26,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 78,
+      "family": "adaptive_capture",
+      "transition_cycles": 4.593824775808002,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 30,
+      "wide_retained": 26,
+      "edge_retained": 23,
+      "P_early_rest": 1.0,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.8125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.8125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 109,
+        "finite_particle_wall_contact": 17,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 6
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 79,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 4.785114383404313,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 29,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 111,
+        "finite_particle_wall_contact": 16,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 80,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 2.467558745183551,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 81,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 18.577897221394515,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 25,
+      "edge_retained": 23,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 105,
+        "finite_particle_wall_contact": 22,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 82,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 13.278653256834888,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 31,
+      "wide_retained": 25,
+      "edge_retained": 19,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 105,
+        "finite_particle_wall_contact": 22,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 83,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 5.396358034221877,
+      "transition_complete_by_48": true,
+      "rest_retained": 26,
+      "weak_retained": 26,
+      "wide_retained": 24,
+      "edge_retained": 18,
+      "P_early_rest": 0.8125,
+      "P_early_weak": 0.8125,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.5625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.5625,
+      "categories": {
+        "finite_particle_wall_contact": 34,
+        "localized_or_slow": 93,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 6
+        },
+        "weak": {
+          "finite_particle_wall_contact": 6
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 14
+        }
+      }
+    },
+    {
+      "protocol_id": 84,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 2.2251130893782918,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 113,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 14
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 85,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 4.167526541316652,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 86,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 6.705288507146669,
+      "transition_complete_by_48": true,
+      "rest_retained": 16,
+      "weak_retained": 15,
+      "wide_retained": 7,
+      "edge_retained": 7,
+      "P_early_rest": 0.5,
+      "P_early_weak": 0.46875,
+      "P_early_wide": 0.21875,
+      "P_early_edge": 0.21875,
+      "J_standard_early": 0.21875,
+      "J_robust_early": 0.21875,
+      "categories": {
+        "localized_or_slow": 44,
+        "finite_particle_wall_contact": 83,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 16
+        },
+        "weak": {
+          "finite_particle_wall_contact": 17
+        },
+        "wide": {
+          "finite_particle_wall_contact": 25
+        },
+        "edge": {
+          "finite_particle_wall_contact": 25
+        }
+      }
+    },
+    {
+      "protocol_id": 87,
+      "family": "adaptive_capture",
+      "transition_cycles": 2.125007109190528,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 31,
+      "wide_retained": 26,
+      "edge_retained": 23,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.8125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.8125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 6
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 88,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 24.54861796867973,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 24,
+      "edge_retained": 22,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 89,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 7.200300151717567,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 114,
+        "finite_particle_wall_contact": 12,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 90,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 3.9832705067144993,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 28,
+      "wide_retained": 28,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 91,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.5648240496725881,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 27,
+      "edge_retained": 25,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 17,
+        "inconclusive": 3,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 92,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 20.602176202390996,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 31,
+      "wide_retained": 30,
+      "edge_retained": 27,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 93,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 7.059645334096391,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 25,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 117,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 10
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 94,
+      "family": "adaptive_capture",
+      "transition_cycles": 3.745140574132027,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 24,
+      "edge_retained": 21,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 20,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 95,
+      "family": "adaptive_capture",
+      "transition_cycles": 7.295916020796277,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 96,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 4.500302389367285,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 31,
+      "edge_retained": 25,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 116,
+        "finite_particle_wall_contact": 11,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 97,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.9464004673793688,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 15,
+        "inconclusive": 4,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 98,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 10.454047459407185,
+      "transition_complete_by_48": true,
+      "rest_retained": 27,
+      "weak_retained": 31,
+      "wide_retained": 22,
+      "edge_retained": 19,
+      "P_early_rest": 0.84375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.6875,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.6875,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 98,
+        "finite_particle_wall_contact": 29,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 5
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 10
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 99,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 9.375587415019709,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 28,
+      "wide_retained": 27,
+      "edge_retained": 21,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.875,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 103,
+        "finite_particle_wall_contact": 24,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 4
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 100,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 6.0699374871755865,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 25,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 110,
+        "finite_particle_wall_contact": 17,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 101,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 4.187605559435676,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 31,
+      "wide_retained": 29,
+      "edge_retained": 25,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 3
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 102,
+      "family": "adaptive_capture",
+      "transition_cycles": 4.062671618349044,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 27,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 103,
+      "family": "adaptive_capture",
+      "transition_cycles": 2.57824695045474,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 30,
+      "wide_retained": 29,
+      "edge_retained": 20,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.625,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.625,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 12
+        }
+      }
+    },
+    {
+      "protocol_id": 104,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 7.687040727004025,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 26,
+      "P_early_rest": 1.0,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 119,
+        "axis_ambiguous": 1,
+        "finite_particle_wall_contact": 8
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 105,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 5.196910907846911,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 113,
+        "finite_particle_wall_contact": 14,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 106,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 17.420155522416426,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 25,
+      "edge_retained": 23,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.78125,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.78125,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 105,
+        "finite_particle_wall_contact": 22,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 7
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 107,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 4.733410751575185,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 30,
+      "wide_retained": 28,
+      "edge_retained": 22,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 108,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 108,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 14.134939137988376,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 27,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.84375,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.84375,
+      "categories": {
+        "localized_or_slow": 118,
+        "finite_particle_wall_contact": 9,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 5
+        }
+      }
+    },
+    {
+      "protocol_id": 109,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 5.3324458419799985,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 26,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 115,
+        "finite_particle_wall_contact": 12,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 110,
+      "family": "adaptive_capture",
+      "transition_cycles": 12.088309415253125,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 31,
+      "wide_retained": 23,
+      "edge_retained": 16,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.5,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.5,
+      "categories": {
+        "localized_or_slow": 97,
+        "finite_particle_wall_contact": 30,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 16
+        }
+      }
+    },
+    {
+      "protocol_id": 111,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 7.175204372041654,
+      "transition_complete_by_48": true,
+      "rest_retained": 18,
+      "weak_retained": 17,
+      "wide_retained": 14,
+      "edge_retained": 11,
+      "P_early_rest": 0.5625,
+      "P_early_weak": 0.53125,
+      "P_early_wide": 0.4375,
+      "P_early_edge": 0.34375,
+      "J_standard_early": 0.4375,
+      "J_robust_early": 0.34375,
+      "categories": {
+        "localized_or_slow": 60,
+        "finite_particle_wall_contact": 68
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 14
+        },
+        "weak": {
+          "finite_particle_wall_contact": 15
+        },
+        "wide": {
+          "finite_particle_wall_contact": 18
+        },
+        "edge": {
+          "finite_particle_wall_contact": 21
+        }
+      }
+    },
+    {
+      "protocol_id": 112,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 11.818942568132773,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 32,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 1.0,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.96875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 120,
+        "finite_particle_wall_contact": 7,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {},
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 113,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.36891550611425805,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 31,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 1.0,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "inconclusive": 5,
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 114,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 4.40887552840178,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 23,
+      "edge_retained": 19,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.59375,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.59375,
+      "categories": {
+        "localized_or_slow": 99,
+        "finite_particle_wall_contact": 28,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 13
+        }
+      }
+    },
+    {
+      "protocol_id": 115,
+      "family": "adaptive_independent_rates",
+      "transition_cycles": 8.473727896062812,
+      "transition_complete_by_48": true,
+      "rest_retained": 9,
+      "weak_retained": 11,
+      "wide_retained": 8,
+      "edge_retained": 4,
+      "P_early_rest": 0.28125,
+      "P_early_weak": 0.34375,
+      "P_early_wide": 0.25,
+      "P_early_edge": 0.125,
+      "J_standard_early": 0.25,
+      "J_robust_early": 0.125,
+      "categories": {
+        "finite_particle_wall_contact": 96,
+        "localized_or_slow": 31,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 23
+        },
+        "weak": {
+          "finite_particle_wall_contact": 21
+        },
+        "wide": {
+          "finite_particle_wall_contact": 24
+        },
+        "edge": {
+          "finite_particle_wall_contact": 28
+        }
+      }
+    },
+    {
+      "protocol_id": 116,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 8.026348016112252,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 30,
+      "wide_retained": 26,
+      "edge_retained": 22,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.8125,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.8125,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 106,
+        "finite_particle_wall_contact": 21,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 6
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 117,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 6.119449326591894,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 118,
+      "family": "adaptive_capture",
+      "transition_cycles": 2.2445451826889977,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 29,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.90625,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.90625,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 114,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 3
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 119,
+      "family": "adaptive_capture",
+      "transition_cycles": 8.549485147920468,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 29,
+      "wide_retained": 24,
+      "edge_retained": 18,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 0.90625,
+      "P_early_wide": 0.75,
+      "P_early_edge": 0.5625,
+      "J_standard_early": 0.75,
+      "J_robust_early": 0.5625,
+      "categories": {
+        "localized_or_slow": 99,
+        "finite_particle_wall_contact": 28,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {
+          "finite_particle_wall_contact": 3
+        },
+        "wide": {
+          "finite_particle_wall_contact": 8
+        },
+        "edge": {
+          "finite_particle_wall_contact": 14
+        }
+      }
+    },
+    {
+      "protocol_id": 120,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 3.877230331272337,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 30,
+      "edge_retained": 25,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.78125,
+      "J_standard_early": 0.9375,
+      "J_robust_early": 0.78125,
+      "categories": {
+        "localized_or_slow": 117,
+        "finite_particle_wall_contact": 10,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 7
+        }
+      }
+    },
+    {
+      "protocol_id": 121,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 22.4295064213912,
+      "transition_complete_by_48": true,
+      "rest_retained": 30,
+      "weak_retained": 32,
+      "wide_retained": 28,
+      "edge_retained": 22,
+      "P_early_rest": 0.9375,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.6875,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.6875,
+      "categories": {
+        "localized_or_slow": 111,
+        "finite_particle_wall_contact": 16,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 2
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 10
+        }
+      }
+    },
+    {
+      "protocol_id": 122,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 0.46143283420683046,
+      "transition_complete_by_48": true,
+      "rest_retained": 32,
+      "weak_retained": 31,
+      "wide_retained": 28,
+      "edge_retained": 24,
+      "P_early_rest": 1.0,
+      "P_early_weak": 0.96875,
+      "P_early_wide": 0.875,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 110,
+        "inconclusive": 4,
+        "finite_particle_wall_contact": 13,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {},
+        "weak": {
+          "finite_particle_wall_contact": 1
+        },
+        "wide": {
+          "finite_particle_wall_contact": 4
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 123,
+      "family": "adaptive_dc_rf_squared",
+      "transition_cycles": 3.8647512871655287,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 27,
+      "edge_retained": 23,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.71875,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.71875,
+      "categories": {
+        "localized_or_slow": 112,
+        "finite_particle_wall_contact": 15,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 9
+        }
+      }
+    },
+    {
+      "protocol_id": 124,
+      "family": "adaptive_soft_start",
+      "transition_cycles": 3.302349692675027,
+      "transition_complete_by_48": true,
+      "rest_retained": 28,
+      "weak_retained": 30,
+      "wide_retained": 30,
+      "edge_retained": 24,
+      "P_early_rest": 0.875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.9375,
+      "P_early_edge": 0.75,
+      "J_standard_early": 0.875,
+      "J_robust_early": 0.75,
+      "categories": {
+        "localized_or_slow": 110,
+        "finite_particle_wall_contact": 16,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 4
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 2
+        },
+        "edge": {
+          "finite_particle_wall_contact": 8
+        }
+      }
+    },
+    {
+      "protocol_id": 125,
+      "family": "adaptive_delayed_dc",
+      "transition_cycles": 15.020980836586185,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 32,
+      "wide_retained": 31,
+      "edge_retained": 26,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.96875,
+      "P_early_edge": 0.8125,
+      "J_standard_early": 0.96875,
+      "J_robust_early": 0.8125,
+      "categories": {
+        "localized_or_slow": 119,
+        "finite_particle_wall_contact": 8,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 1
+        },
+        "edge": {
+          "finite_particle_wall_contact": 6
+        }
+      }
+    },
+    {
+      "protocol_id": 126,
+      "family": "adaptive_capture",
+      "transition_cycles": 4.906987548341866,
+      "transition_complete_by_48": true,
+      "rest_retained": 31,
+      "weak_retained": 30,
+      "wide_retained": 27,
+      "edge_retained": 21,
+      "P_early_rest": 0.96875,
+      "P_early_weak": 0.9375,
+      "P_early_wide": 0.84375,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.84375,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 107,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 2
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 1
+        },
+        "weak": {
+          "finite_particle_wall_contact": 2
+        },
+        "wide": {
+          "finite_particle_wall_contact": 5
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    },
+    {
+      "protocol_id": 127,
+      "family": "adaptive_capture",
+      "transition_cycles": 4.226751247623908,
+      "transition_complete_by_48": true,
+      "rest_retained": 29,
+      "weak_retained": 32,
+      "wide_retained": 23,
+      "edge_retained": 21,
+      "P_early_rest": 0.90625,
+      "P_early_weak": 1.0,
+      "P_early_wide": 0.71875,
+      "P_early_edge": 0.65625,
+      "J_standard_early": 0.71875,
+      "J_robust_early": 0.65625,
+      "categories": {
+        "localized_or_slow": 104,
+        "finite_particle_wall_contact": 23,
+        "axis_ambiguous": 1
+      },
+      "nonretained_categories": {
+        "rest": {
+          "finite_particle_wall_contact": 3
+        },
+        "weak": {},
+        "wide": {
+          "finite_particle_wall_contact": 9
+        },
+        "edge": {
+          "finite_particle_wall_contact": 11
+        }
+      }
+    }
+  ]
+}

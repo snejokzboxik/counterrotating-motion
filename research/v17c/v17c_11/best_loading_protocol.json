@@ -1,0 +1,58 @@
+{
+  "status": "provisional_early_retention_leader_not_long_term_validated",
+  "protocol_id": 40,
+  "family": "adaptive_delayed_dc",
+  "terminal_configuration": "local15",
+  "screen": {
+    "N_per_ensemble": 32,
+    "periods_after_start": 48,
+    "steps_per_primary_RF_period": 96,
+    "retained": {
+      "rest": "32/32",
+      "weak": "32/32",
+      "wide": "31/32",
+      "edge": "27/32"
+    },
+    "J_standard_early": 0.96875,
+    "J_robust_early": 0.84375,
+    "metric": "early retention only; not P_CR"
+  },
+  "units": "duration and delay are periods of the primary RF frequency; carrier phases remain continuous",
+  "envelope": {
+    "shape": "half-cosine",
+    "shape_id": 1,
+    "power_parameter_unused_by_half_cosine": 4.0,
+    "gA_start": 0.08645146442577244,
+    "gB_start": 0.531632397742942,
+    "gDC_start": 0.1364382192492485,
+    "duration_A_cycles": 1.4939666914447995,
+    "duration_B_cycles": 0.5143617522567785,
+    "duration_DC_cycles": 0.841960231336111,
+    "delay_B_cycles": 0.0,
+    "delay_DC_cycles": 0.859403014183044,
+    "DC_mode": "independent envelope"
+  },
+  "protocol_vector_19": [
+    1.0,
+    1.4939666914447995,
+    0.5143617522567785,
+    0.841960231336111,
+    0.0,
+    0.859403014183044,
+    0.08645146442577244,
+    0.531632397742942,
+    0.1364382192492485,
+    1.0,
+    4.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "source": "adaptive_loading/adaptive_protocols.json; protocol id 40",
+  "frozen_start_hashes": "adaptive_loading/training_starts.json"
+}
