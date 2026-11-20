@@ -1,0 +1,37 @@
+{
+  "study": "four-ensemble discovery for a literature-constrained Al2O3 / hollow K1 glass pair",
+  "rows": 512,
+  "expected_rows": 512,
+  "outcome_counts": {
+    "PROVISIONAL_CO_MINUS_MINUS": 485,
+    "WALL_OR_AXIAL_ESCAPE": 27
+  },
+  "outcomes_by_ensemble": {
+    "edge": {
+      "PROVISIONAL_CO_MINUS_MINUS": 113,
+      "WALL_OR_AXIAL_ESCAPE": 15
+    },
+    "rest": {
+      "PROVISIONAL_CO_MINUS_MINUS": 126,
+      "WALL_OR_AXIAL_ESCAPE": 2
+    },
+    "weak": {
+      "PROVISIONAL_CO_MINUS_MINUS": 127,
+      "WALL_OR_AXIAL_ESCAPE": 1
+    },
+    "wide": {
+      "PROVISIONAL_CO_MINUS_MINUS": 119,
+      "WALL_OR_AXIAL_ESCAPE": 9
+    }
+  },
+  "pair_retained_by_ensemble": {
+    "rest": 126,
+    "weak": 127,
+    "wide": 119,
+    "edge": 113
+  },
+  "classification": "Provisional long-horizon labels for one fixed literature-constrained scenario; not final basin probabilities.",
+  "trajectory_sha256": "53b483abaa2711dd4e0594ae482965a23e2a1507c3c866db2317c902b820ab90",
+  "meta_sha256": "8ed45bff831074c51078859e520e305c5730b668298072aa2e0f03e8a9ae386c",
+  "wall_seconds": 538.6540122000733
+}

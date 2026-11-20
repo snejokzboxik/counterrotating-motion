@@ -1,0 +1,73 @@
+{
+  "audit": "physical_mixed_pair_search",
+  "integrity_pass": true,
+  "checks": {
+    "expected_row_count": true,
+    "unique_complete_ensemble_start_keys": true,
+    "frozen_starts_phases_and_ensemble_labels_match": true,
+    "all_retained_trajectories_reached_full_horizon": true,
+    "early_exit_categories_have_short_horizons": true,
+    "retention_flags_consistent_with_terminal_categories": true,
+    "runner_hash_matches_saved_copy_and_campaign": true,
+    "integrator_hash_matches_archived_campaign_source": true,
+    "field_hash_matches_campaign": true,
+    "summary_outcomes_match_rows": true,
+    "summary_trajectory_hash_matches": true,
+    "summary_per_ensemble_counts_match": true,
+    "mass_ratio_matches_dimensionless_parameter": true,
+    "charge_ratio_matches_integrator": true,
+    "C_matches_dimensional_equation": true,
+    "lambda1_matches_stokes": true,
+    "lambda2_matches_stokes": true,
+    "U1_reconstructs_A": true,
+    "U2_reconstructs_B": true,
+    "DC_coefficient_reconstructs_beta": true,
+    "derived_K1_density_within_spec": true,
+    "both_charges_within_2013_range": true
+  },
+  "reconstructed_dimensionless_values": {
+    "mass_ratio": 0.10963763906505944,
+    "charge_ratio": 3.4490536225028334,
+    "coupling": 1.158529923396168e-05,
+    "lambda1": 1.184410723010641,
+    "lambda2": 0.8554691753196211
+  },
+  "rows": 512,
+  "unique_keys": 512,
+  "rows_per_ensemble": {
+    "edge": 128,
+    "rest": 128,
+    "weak": 128,
+    "wide": 128
+  },
+  "loss_mechanisms": {
+    "radial": 27,
+    "axial": 0,
+    "both": 0
+  },
+  "outcome_counts": {
+    "PROVISIONAL_CO_MINUS_MINUS": 485,
+    "WALL_OR_AXIAL_ESCAPE": 27
+  },
+  "outcomes_by_ensemble": {
+    "edge": {
+      "PROVISIONAL_CO_MINUS_MINUS": 113,
+      "WALL_OR_AXIAL_ESCAPE": 15
+    },
+    "rest": {
+      "PROVISIONAL_CO_MINUS_MINUS": 126,
+      "WALL_OR_AXIAL_ESCAPE": 2
+    },
+    "weak": {
+      "PROVISIONAL_CO_MINUS_MINUS": 127,
+      "WALL_OR_AXIAL_ESCAPE": 1
+    },
+    "wide": {
+      "PROVISIONAL_CO_MINUS_MINUS": 119,
+      "WALL_OR_AXIAL_ESCAPE": 9
+    }
+  },
+  "interpretation": "Literature-constrained fixed-pair scenario; not a directly measured joint particle record and not a final basin-probability study.",
+  "trajectory_sha256": "53b483abaa2711dd4e0594ae482965a23e2a1507c3c866db2317c902b820ab90",
+  "audit_script_sha256": "9129f60a3298e781da78cda2b3ee19d9f2f8c1efe1970f3f0f0e6eb909e5caa3"
+}

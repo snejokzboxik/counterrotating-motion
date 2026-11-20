@@ -2,34 +2,53 @@
   "study": "V17C.12B",
   "status": "no_confirmed_bistable_physical_configuration",
   "best_physical_configuration": null,
-  "best_discovery_candidate": null,
-  "reason": "No physical configuration has produced both counterrotating late-window labels (+-) and (-+) under one fixed parameter set. The 50 Hz identical-Al2O3 screen and a 15,000-period directed-start follow-up found no counterrotation.",
-  "do_not_use_as_leader": [
-    "Any short-horizon class from screens with 8 starts per configuration",
-    "The directed counterrotation search as a basin-probability estimate"
-  ],
-  "last_completed_audited_screens": [
-    {
-      "directory": "results/alumina_experimental_50hz_screen",
-      "configurations": 384,
-      "starts_per_configuration": 16,
-      "trajectory_rows": 6144,
-      "counterrotation_labels": 0,
+  "best_discovery_candidate": {
+    "status": "highest_retention_screen_only; fails counterrotation objective",
+    "campaign": "results/mixed_alumina_k1_candidate",
+    "configuration": {
+      "trap_radius_m": 0.01,
+      "medium": "air, 300 K, 1 bar, eta=1.81e-5 Pa s",
+      "f1_Hz": 50.0,
+      "f2_Hz": 160.98386819008738,
+      "A": 0.03492413282400757,
+      "B": 0.15631667332941065,
+      "nu": 3.2196773638017477,
+      "beta": 0.015388559140477825,
+      "mass_ratio_m1_over_m2": 0.10963763906505944,
+      "charge_ratio_q2_over_q1": 3.4490536225028334,
+      "C": 1.158529923396168e-05,
+      "lambda1": 1.184410723010641,
+      "lambda2": 0.8554691753196211,
+      "particle1": {
+        "material": "Al2O3",
+        "radius_m": 7.589753032639071e-06,
+        "density_kg_m3": 3800.0,
+        "mass_kg": 6.959133038321857e-12,
+        "charge_C": 1.6021766339999998e-14,
+        "charge_e": 100000.0
+      },
+      "particle2": {
+        "material": "3M K1-like hollow glass sphere; manufacturer-density branch",
+        "radius_m": 5.0e-05,
+        "density_kg_m3": 121.22629769790653,
+        "mass_kg": 6.347394104493875e-11,
+        "charge_C": 5.525993123387096e-14,
+        "charge_e": 344905.3622502833
+      },
+      "U1_peak_electrode_V": 172.0254527601367,
+      "U2_peak_electrode_V": 839.5154227116201,
+      "V2_ideal_DC_coefficient_V_not_endcap": 65.96938700763044,
+      "MFS_triangle_surface_field_bound_V_m": 2539770.900960292
+    },
+    "screen_outcomes": {
+      "rest": {"retained": 126, "total": 128, "provisional_CO_minus_minus": 126, "radial_loss": 2},
+      "weak": {"retained": 127, "total": 128, "provisional_CO_minus_minus": 127, "radial_loss": 1},
+      "wide": {"retained": 119, "total": 128, "provisional_CO_minus_minus": 119, "radial_loss": 9},
+      "edge": {"retained": 113, "total": 128, "provisional_CO_minus_minus": 113, "radial_loss": 15},
+      "total": {"retained": 485, "trajectories": 512, "counterrotation": 0, "co_plus_plus": 0, "provisional_co_minus_minus": 485, "radial_loss": 27},
       "audit_pass": true
     },
-    {
-      "directory": "results/directed_counterrotation_search",
-      "configurations": 8,
-      "starts_per_configuration": 16,
-      "trajectory_rows": 128,
-      "directed_counterrotation_labels": 0,
-      "outcomes": {
-        "PROVISIONAL_CO_PLUS_PLUS": 64,
-        "PROVISIONAL_CO_MINUS_MINUS": 64
-      },
-      "audit_pass": true,
-      "classification_note": "Directed initial-condition search, not a probability estimate or proof of global attractor stability."
-    }
-  ],
+    "interpretation": "One literature-constrained dimensional scenario assembled from separately reported ranges, not a measured joint pair; four distinct start ensembles and provisional late-window labels are not IID basin probabilities. The observed high retention does not meet the scientific objective."
+  },
   "active_screen": null
 }

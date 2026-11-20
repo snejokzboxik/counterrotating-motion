@@ -3,20 +3,20 @@
   "branch": "research/v17c",
   "base_commit": "a9a92bb8ca46528215729780d689f4f72bc02892",
   "status": "in_progress",
-  "generated_utc": "2026-11-20T14:17:29+00:00",
+  "generated_utc": "2026-11-20T14:43:09+00:00",
   "excluded_paths": [],
-  "file_count": 124,
-  "total_bytes": 29375398,
+  "file_count": 134,
+  "total_bytes": 30107864,
   "files": [
     {
       "path": "best_physical_configuration.json",
-      "bytes": 1372,
-      "sha256": "36fd816cad2bdaa7aaf32e1c373b1eba2e73b091d3076e34cbe8fcaf2593d4d5"
+      "bytes": 2536,
+      "sha256": "4e2af627878219ccec4df63882639dc8b803de7fecceedeff5f0ea30df4c0420"
     },
     {
       "path": "BISTABILITY_ANALYSIS_RU.md",
-      "bytes": 19893,
-      "sha256": "81a6f2bed0706614cd882783f671d2383666ed1d09fd33d9a1521b48d416c148"
+      "bytes": 24154,
+      "sha256": "1f4f267a63640dcdae2cd99ff3ba84cd9a87155f45fd2e81026cb209cab0c8a8"
     },
     {
       "path": "BREAKDOWN_ANALYSIS_RU.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "CO_ROTATION_SUPPRESSION_RU.md",
-      "bytes": 7216,
-      "sha256": "7d5855be225eb58c7da99ea31c66735fcea16af6d8f9ccde35158e50d25d1c53"
+      "bytes": 8009,
+      "sha256": "e834820f582f040df7f0aba6eebf76109c2bec0f16b9ea7b5f860f844fc1b66f"
     },
     {
       "path": "directed_counterrotation_search.py",
@@ -72,6 +72,11 @@
       "path": "model/audit_legacy_candidate_results.py",
       "bytes": 2394,
       "sha256": "095f7e2d39ef48d2768049f94d8433fea65dbfc4eba3f748018d087a8ea46979"
+    },
+    {
+      "path": "model/audit_mixed_pair_search.py",
+      "bytes": 7023,
+      "sha256": "9129f60a3298e781da78cda2b3ee19d9f2f8c1efe1970f3f0f0e6eb909e5caa3"
     },
     {
       "path": "model/audit_multiradius_screen.py",
@@ -179,9 +184,14 @@
       "sha256": "da5ad8f321ac98b6e8ad540f067ee29bb181f255be65a348390cb7cf8b897fd4"
     },
     {
+      "path": "physical_mixed_pair_search.py",
+      "bytes": 16536,
+      "sha256": "807446d9d3069a254aafd6949c61b2c7502fbe9b48e6896b468d7447ed8b0808"
+    },
+    {
       "path": "PHYSICAL_OPTIMIZATION_RU.md",
-      "bytes": 11290,
-      "sha256": "aebe079e1e242a4052014462a7ef34442d863f31ee7819b3c98c167a3b5df78f"
+      "bytes": 13545,
+      "sha256": "935219d04fd4d4ecf879465bdd4fb7fab08215e451d5c77aefe4599d38d5a4f8"
     },
     {
       "path": "PHYSICAL_PARAMETERIZATION_RU.md",
@@ -190,13 +200,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6226,
-      "sha256": "09a44a8cb09b991b0bfe365ef6d4f24b3d75640c5fe9e5a482c3c33174035a12"
+      "bytes": 7092,
+      "sha256": "c1733c8e60b0d6a7c5b751d6d19d7e04562c52e5bbc4c1dcbd9a7157fd579196"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 7794,
-      "sha256": "c75c89bd092770fd615138f5a347f57cfe18117d2e19b8872f99a2ef9ba29627"
+      "bytes": 10464,
+      "sha256": "79bf772fbf7296f66292f8eb72f413225745d332d62e62745f79f32f59aa8d43"
     },
     {
       "path": "requirements.txt",
@@ -464,6 +474,46 @@
       "sha256": "b6d61adf779ef178c34ef2c0eca07a10ee6092a49a669c800608dc2507ad712d"
     },
     {
+      "path": "results/mixed_alumina_k1_candidate/campaign_code_sha256.json",
+      "bytes": 952,
+      "sha256": "38b42341e3ff718c8657030e54d06c06e2ad10ec79372e6f3546579e656a3948"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/campaign_integrator_source.py",
+      "bytes": 17920,
+      "sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/campaign_meta.json",
+      "bytes": 5380,
+      "sha256": "8ed45bff831074c51078859e520e305c5730b668298072aa2e0f03e8a9ae386c"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/campaign_runner_source.py",
+      "bytes": 16536,
+      "sha256": "807446d9d3069a254aafd6949c61b2c7502fbe9b48e6896b468d7447ed8b0808"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/frozen_starts.npz",
+      "bytes": 48961,
+      "sha256": "085fdc5ffb4a9d595b2da0bb4cfe354d8a542bc4796b7a69c77133999e5ab087"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/independent_audit.json",
+      "bytes": 2475,
+      "sha256": "507c271020a57c1aead25b2fa9d5653a7efb1aecf27491aea65b235ed0751430"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/summary.json",
+      "bytes": 1132,
+      "sha256": "633ae2d20226e12304ab518fb863773e7956880ddbc0626cc9d98a4f38f1f7f1"
+    },
+    {
+      "path": "results/mixed_alumina_k1_candidate/trajectories.jsonl",
+      "bytes": 601229,
+      "sha256": "53b483abaa2711dd4e0594ae482965a23e2a1507c3c866db2317c902b820ab90"
+    },
+    {
       "path": "results/physical_seed.json",
       "bytes": 2798,
       "sha256": "33decdce2deecaba361b90e395c7d7ed21edbd4eab4f2c981f27154921198daf"
@@ -600,8 +650,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 8587,
-      "sha256": "c88d49006a15c78992d3f5a283cf4a57acbab2f0e0de44c1c5291c0b3eb46037"
+      "bytes": 10015,
+      "sha256": "02f120c59143ffb1856efaf0770dd4e291a3bbc7b47878a050d4d7afd3d9ef30"
     },
     {
       "path": "sobol_alumina_experimental_50hz_search.py",
@@ -620,8 +670,8 @@
     },
     {
       "path": "STATISTICAL_VALIDATION_RU.md",
-      "bytes": 5740,
-      "sha256": "e956e02c98302efa2f1cb414f209d0bb427abcdf0ec9d4c703a5f3b304b2fd85"
+      "bytes": 6625,
+      "sha256": "12ad9a1f1e23cf21068fda810be9446598faf22aa5bdabedc55da77f76abdbfb"
     },
     {
       "path": "V17C7_V17C8_REPRODUCTION_RU.md",

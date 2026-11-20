@@ -1,0 +1,34 @@
+{
+  "runner_sha256": "807446d9d3069a254aafd6949c61b2c7502fbe9b48e6896b468d7447ed8b0808",
+  "saved_runner_sha256": "807446d9d3069a254aafd6949c61b2c7502fbe9b48e6896b468d7447ed8b0808",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "saved_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "campaign": "mixed_alumina_k1_candidate",
+  "workers": 11,
+  "seed_records": [
+    {
+      "ensemble": "rest",
+      "seed": 20261230,
+      "n": 128
+    },
+    {
+      "ensemble": "weak",
+      "seed": 20261231,
+      "n": 128
+    },
+    {
+      "ensemble": "wide",
+      "seed": 20261232,
+      "n": 128
+    },
+    {
+      "ensemble": "edge",
+      "seed": 20261233,
+      "n": 128
+    }
+  ],
+  "trajectories": 512,
+  "periods": 15000,
+  "steps": 64
+}
