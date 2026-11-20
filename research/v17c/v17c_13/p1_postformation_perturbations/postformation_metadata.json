@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "source": "P2_505_angle0_phase0_long_trajectory.npz",
+  "source_start_period_after_load": 10000,
+  "absolute_source_tau": 64107.33968915331,
+  "phase_continuity": "effective local phases include Omega_i*t0 modulo 2pi; no RF phase reset",
+  "position_perturbations_deg": [
+    10.0,
+    20.0
+  ],
+  "C_multipliers": [
+    0.0,
+    1.0
+  ],
+  "post_perturbation_periods": 15000,
+  "steps_per_period": 96,
+  "skip_for_metrics_and_energy": 200,
+  "workers": 4,
+  "definition": "rotate one particle in each ring in opposite azimuthal directions while keeping all velocities fixed"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "source_start": "P2_505_angle0_phase0",
+  "angle_perturbations_deg": [
+    10.0,
+    20.0
+  ],
+  "C_multipliers": [
+    0.0,
+    1.0
+  ],
+  "steps_per_period": 96,
+  "post_load_periods": 15000,
+  "initial_states_sha256": "51858e2f77279e698841d8d07919218bb5ea4590bb370c18ac6e2272541e9bda",
+  "protocol": "fixed P2_505 with continuous RF phases; same for all cases",
+  "workers": 4
+}

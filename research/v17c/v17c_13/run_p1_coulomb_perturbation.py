@@ -129,7 +129,9 @@ def main() -> None:
             print(task_id := row["task_id"], row["category"], "retained", row["retained"],
                   "turns", np.round(row["turns_each_after_load"], 2).tolist(),
                   "Psi", [round(g["mean_Psi3"], 3) for g in metric["groups"]],
-                  "phase ranges", [g["late_relative_phase_range_deg"] for g in metric["groups"]],
+                  "phase residual ranges", [[round(x["detrended_range_deg"], 2)
+                                               for x in g["relative_phase_late_diagnostics"]]
+                                              for g in metric["groups"]],
                   f"{row['elapsed_seconds']:.1f}s", flush=True)
     meta["status"] = "complete"
     (OUT / "perturbation_metadata.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")

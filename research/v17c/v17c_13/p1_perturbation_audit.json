@@ -1,0 +1,302 @@
+{
+  "status": "passed",
+  "initial_state_perturbations": {
+    "meaning": "one particle in each ring rotated before loading; zero velocities retained",
+    "results": [
+      {
+        "task_id": "angle10_C1",
+        "angle_deg": 10.0,
+        "C_multiplier": 1.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.971594965190583,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          150.01302229341113,
+          -99.93778151869083
+        ],
+        "frequency_spread_percent_by_group": [
+          0.03464475897134684,
+          0.09321825344919148
+        ],
+        "mean_Psi3_by_group": [
+          0.9860588585024448,
+          0.9934697684454993
+        ],
+        "p05_Psi3_by_group": [
+          0.9711139491234158,
+          0.9725553357646057
+        ],
+        "late_gap_max_error_deg_by_group": [
+          9.73178100031808,
+          6.13479252940364
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.04827570674658085,
+          0.12908783762902065
+        ],
+        "min_particle_distance_R": 0.14985873004585756
+      },
+      {
+        "task_id": "angle20_C0",
+        "angle_deg": 20.0,
+        "C_multiplier": 0.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 15.065099138576652,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          157.29676919375933,
+          -100.47093250662847
+        ],
+        "frequency_spread_percent_by_group": [
+          0.051850371189508,
+          0.029607704857886344
+        ],
+        "mean_Psi3_by_group": [
+          0.8517565477206541,
+          0.8737725795649601
+        ],
+        "p05_Psi3_by_group": [
+          0.7862632175333585,
+          0.8414969248983297
+        ],
+        "late_gap_max_error_deg_by_group": [
+          30.88652564022601,
+          26.81750923876359
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.021914298702715315,
+          0.04524087039638611
+        ],
+        "min_particle_distance_R": 0.13310932178700752
+      },
+      {
+        "task_id": "angle20_C1",
+        "angle_deg": 20.0,
+        "C_multiplier": 1.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.961882579494699,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          150.05164501592228,
+          -99.94960815203403
+        ],
+        "frequency_spread_percent_by_group": [
+          0.06828300947284442,
+          0.1460722759786298
+        ],
+        "mean_Psi3_by_group": [
+          0.9829904739920824,
+          0.9845744220487668
+        ],
+        "p05_Psi3_by_group": [
+          0.9510728874690035,
+          0.9273762522462354
+        ],
+        "late_gap_max_error_deg_by_group": [
+          10.409186075461221,
+          7.729350034695798
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.08001645642269488,
+          0.18702407742023336
+        ],
+        "min_particle_distance_R": 0.14985616755150216
+      },
+      {
+        "task_id": "angle10_C0",
+        "angle_deg": 10.0,
+        "C_multiplier": 0.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 15.062351934381827,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          157.30186710311477,
+          -100.46482760841941
+        ],
+        "frequency_spread_percent_by_group": [
+          0.055548407543785525,
+          0.03738206614063132
+        ],
+        "mean_Psi3_by_group": [
+          0.9449895694624576,
+          0.9569092796760453
+        ],
+        "p05_Psi3_by_group": [
+          0.9001487699728762,
+          0.9374785949095775
+        ],
+        "late_gap_max_error_deg_by_group": [
+          21.846912245189287,
+          17.288752062730936
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.021914298702715315,
+          0.041700187576278046
+        ],
+        "min_particle_distance_R": 0.13310932178700752
+      }
+    ]
+  },
+  "postformation_perturbations": {
+    "meaning": "formed candidate perturbed at 10,000 post-load cycles; RF phases propagated continuously; 15,000-cycle recovery window",
+    "results": [
+      {
+        "task_id": "angle20_C1",
+        "angle_deg": 20.0,
+        "C_multiplier": 1.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.78902509636754,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          150.20380066381463,
+          -99.94924128246696
+        ],
+        "frequency_spread_percent_by_group": [
+          0.22465119992558805,
+          0.019532743027819145
+        ],
+        "mean_Psi3_by_group": [
+          0.9702659528258876,
+          0.9952420106446755
+        ],
+        "p05_Psi3_by_group": [
+          0.8686160799640541,
+          0.981331934465083
+        ],
+        "late_gap_max_error_deg_by_group": [
+          10.56473184217566,
+          5.198528800465141
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.1442405745310095,
+          0.08311172089297064
+        ],
+        "min_particle_distance_R": 0.19670860410882676
+      },
+      {
+        "task_id": "angle20_C0",
+        "angle_deg": 20.0,
+        "C_multiplier": 0.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.864933259935473,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          157.3334437306455,
+          -100.45975460715836
+        ],
+        "frequency_spread_percent_by_group": [
+          0.07075930631363947,
+          0.028745734720472794
+        ],
+        "mean_Psi3_by_group": [
+          0.8055933207191018,
+          0.9714123207693937
+        ],
+        "p05_Psi3_by_group": [
+          0.722656497629513,
+          0.9524298516982592
+        ],
+        "late_gap_max_error_deg_by_group": [
+          33.529414375390644,
+          14.28451792602732
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.03790652146002213,
+          0.03932601491421163
+        ],
+        "min_particle_distance_R": 0.19117715610526637
+      },
+      {
+        "task_id": "angle10_C1",
+        "angle_deg": 10.0,
+        "C_multiplier": 1.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.789195856427137,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          150.16410166897637,
+          -99.95473507403022
+        ],
+        "frequency_spread_percent_by_group": [
+          0.1339120610004085,
+          0.029793064058118972
+        ],
+        "mean_Psi3_by_group": [
+          0.98537923968847,
+          0.9977732690579478
+        ],
+        "p05_Psi3_by_group": [
+          0.9667237540129204,
+          0.9944582495682959
+        ],
+        "late_gap_max_error_deg_by_group": [
+          9.560922968581679,
+          4.3493978838871215
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.05330798966391051,
+          0.04285768037301803
+        ],
+        "min_particle_distance_R": 0.19671034177959307
+      },
+      {
+        "task_id": "angle10_C0",
+        "angle_deg": 10.0,
+        "C_multiplier": 0.0,
+        "retained": true,
+        "failure_status": 0,
+        "category": "COUNTERROTATING_UNORDERED",
+        "min_abs_turns": 14.864933259935473,
+        "opposite_group_frequencies": true,
+        "directions_stable_in_windows": true,
+        "mean_frequency_Hz_by_group": [
+          157.3156417796387,
+          -100.46820829610078
+        ],
+        "frequency_spread_percent_by_group": [
+          0.06562088496843864,
+          0.040641713343336855
+        ],
+        "mean_Psi3_by_group": [
+          0.9590918357061762,
+          0.994518631790825
+        ],
+        "p05_Psi3_by_group": [
+          0.9163577929558654,
+          0.9868832042351958
+        ],
+        "late_gap_max_error_deg_by_group": [
+          18.792890682105835,
+          8.245121383423879
+        ],
+        "max_abs_relative_phase_drift_deg_per_1000_periods": [
+          0.03790652146002213,
+          0.038977547454507884
+        ],
+        "min_particle_distance_R": 0.19115080913053947
+      }
+    ]
+  },
+  "interpretation": "C=C0 more strongly restores the triangular geometry after the specified coordinate perturbations than C=0; the 20-degree perturbation still leaves residual inner-ring distortion and is not a strict full-recovery pass."
+}

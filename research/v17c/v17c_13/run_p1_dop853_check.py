@@ -104,6 +104,16 @@ def main() -> None:
     t_ref = logs[start_idx:stop_idx + 1, 0, 0]
     y0 = logs[start_idx, :, 1:7].ravel().copy()
     reference = logs[start_idx:stop_idx + 1, :, 1:7].reshape((len(t_ref), 36))
+    protocols = nb.load_protocols()
+    particle_radii = np.asarray([0.0002] * 3 + [0.00189] * 3, dtype=np.float64)
+    rhs_reference = np.empty(36, dtype=np.float64)
+    rhs_parts = np.empty((6, 4, 3), dtype=np.float64)
+    nb._rhs_nbody(float(t_ref[0]), y0, p, protocols["P2_505"], phases,
+                  GROUPS, family, modes, coeff, qratio, particle_radii,
+                  rhs_reference, rhs_parts)
+    rhs_independent = independent_rhs(float(t_ref[0]), y0, p, phases,
+                                      family, modes, coeff, qratio)
+    rhs_error = float(np.max(np.abs(rhs_reference - rhs_independent)))
     tic = time.perf_counter()
     solution = solve_ivp(
         independent_rhs, (float(t_ref[0]), float(t_ref[-1])), y0,
@@ -117,7 +127,7 @@ def main() -> None:
     rk_metrics = angles_and_metrics(t_ref, reference)
     dop_metrics = angles_and_metrics(solution.t, result_states)
     summary = {
-        "status": "passed" if solution.success and len(solution.t) == len(t_ref) else "failed",
+        "status": "passed" if solution.success and len(solution.t) == len(t_ref) and rhs_error < 1e-11 else "failed",
         "independent_integrator": "scipy.solve_ivp(method='DOP853')",
         "rhs": "separately implemented Python/Numpy modal gradient, DC, drag, and all 15 Coulomb pairs",
         "source_trajectory": SOURCE.name,
@@ -125,6 +135,7 @@ def main() -> None:
         "segment_primary_periods": segment_cycles,
         "rtol": 1e-11, "atol": 1e-12, "max_step_tau": TAU / 96.0,
         "nfev": int(solution.nfev), "elapsed_seconds": elapsed,
+        "independent_rhs_max_abs_difference_at_start": rhs_error,
         "solver_message": solution.message,
         "max_abs_state_difference_at_end": float(np.max(errors[-1])),
         "max_abs_state_difference_over_sampled_segment": float(np.max(errors)),
