@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "protocol_ids": [
+    0,
+    505,
+    353,
+    192,
+    405,
+    331,
+    203,
+    62,
+    467
+  ],
+  "N_per_ensemble": 64,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "periods": 3000,
+  "steps_per_period": 96,
+  "workers": 4,
+  "chunk_size": 8,
+  "seeds": {
+    "rest": 20261141,
+    "weak": 20261142,
+    "wide": 20261143,
+    "edge": 20261144
+  },
+  "training_start_hashes": {
+    "rest": {
+      "initial_sha256": "7ba2c53963341090ba6b4ac47d756584aa6587cc9adf4fb23be44df96853bb09",
+      "phase_sha256": "4d4825b34ee92cf8d77d6ac5195941e3697cd39451b97d6a677ccbdd2df9d837"
+    },
+    "weak": {
+      "initial_sha256": "575a68d99cdfe7a0a60809382f1fc06ab7114677298b20b955b3c0c29373fe36",
+      "phase_sha256": "1a401386533fdac5b311e46a2cd2b5d45078ca15a49a790b9a7e4adb9e2db043"
+    },
+    "wide": {
+      "initial_sha256": "071d1712bf538b4bf4a0992c72f34b3e5ad5e0567096d2b67ca3720c59f92bb7",
+      "phase_sha256": "a02d4e1fc98c7a8b45231cc1c555372c8ffa77f358f1d9c0bc83a299a0094a9b"
+    },
+    "edge": {
+      "initial_sha256": "c61b00af0eb1a63f449b651838f2d60d32d407de3d2cfe13e2dab7df813758de",
+      "phase_sha256": "4527074fca065a65126201a01352759ae656d3cff2fb7e939a5e616bc8ae697b"
+    }
+  },
+  "terminal_parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "q2_over_q1": 3.1179673274978996,
+  "strict_category_note": "CR_screen requires retention, no axis ambiguity, opposite directions in three late windows, and at least ten turns per particle after the transition. Other outcomes are not CR success.",
+  "elapsed_seconds": 2018.6137835979462
+}

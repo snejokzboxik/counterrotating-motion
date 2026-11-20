@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P2 complete; independent validation and strict long-horizon protocol checks pending",
+  "status": "P0-P3 complete; strict ten-turn long-horizon protocol validation pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/analyze_initial_capture.py",
@@ -16,8 +16,8 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2182,
-      "sha256": "56251f68909011205a62057b0324181fa609e6f856c1750d2eb9a7aac448aec7"
+      "size_bytes": 2168,
+      "sha256": "cd0270ac6b782723988960a61439ad33f68b6d80cba689574352d86326b69654"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -90,6 +90,46 @@
       "sha256": "2e1c145d5e84d982c9d17f95355b21e23095c0b8a56cb1003a73ae105874d383"
     },
     {
+      "path": "research/v17c/v17c_11/loading_validation/validation_frequencies.png",
+      "size_bytes": 62533,
+      "sha256": "537308df29c852969652f969324503b93734feb2bded4cc148385fff35031296"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_metadata.json",
+      "size_bytes": 1833,
+      "sha256": "965221f9644d6aa694eb5c68356a0b629ff465cb10a67159b3a9fcca96c71d16"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_retention.png",
+      "size_bytes": 76932,
+      "sha256": "57acac08a62edded7dd79650ffda75e6b4999b1a2f09d0fa7136454a8c4f62f9"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_runs.jsonl",
+      "size_bytes": 1487504,
+      "sha256": "cb0c699df6a755e2094b91752ebdf5d9fffeac32a8d2fa92a3a47b43d0ee5121"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_starts.json",
+      "size_bytes": 1099,
+      "sha256": "65db33c384a66d0b6ed84c31863e18792a2c3b4624ec173d3ece816da752da43"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_starts.npz",
+      "size_bytes": 25834,
+      "sha256": "11446245c87cdbbe49db9d248617bd603b9597bbe76e779d75d068a7fa70bde1"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_summary.csv",
+      "size_bytes": 6755,
+      "sha256": "bf313d8633599c43f5efa5d08f7b25aa2dca4730104d04ce935ae67d4ea730c0"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_validation/validation_summary.json",
+      "size_bytes": 30537,
+      "sha256": "6b491fa49fcca6f078d4760807e9d1ba92580f6cc004c34aa9dd1bdd438eccfa"
+    },
+    {
       "path": "research/v17c/v17c_11/local15_parameters.json",
       "size_bytes": 3605,
       "sha256": "884002c1079ee90ffebc7ac8f3a18807d4d99964231d29fcc8199b7e9afec0ce"
@@ -150,19 +190,34 @@
       "sha256": "e089d96f485bdf365d7ba5bb44919ebe6470f76539acac2b8cd6394969015e6c"
     },
     {
+      "path": "research/v17c/v17c_11/P3_INDEPENDENT_VALIDATION_RU.md",
+      "size_bytes": 6268,
+      "sha256": "d0046dbdc11297fa3b6edb1aeb881257ff5a33f7846aa955aef2e017f7d96d44"
+    },
+    {
+      "path": "research/v17c/v17c_11/run_loading_validation.py",
+      "size_bytes": 7055,
+      "sha256": "4ca7adfac5997f3941b492d47de64a33da2cd0535a0eaec27773ea4996b60d63"
+    },
+    {
       "path": "research/v17c/v17c_11/screen_loading_protocols.py",
       "size_bytes": 13806,
       "sha256": "024aaf103fb76f27af35e5846458de06bf57c77ad16ae3014c89b1adb74f4098"
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 8563,
-      "sha256": "ac0908f132214b30345c5ff9f919657d3b7abec6b07819441fe06fd8381fa18b"
+      "size_bytes": 9865,
+      "sha256": "36917a2b8bcbe3f04ea40e2c5437afa27082215cf37e9d375cea896bcf579699"
     },
     {
       "path": "research/v17c/v17c_11/summarize_initial_capture.py",
       "size_bytes": 8850,
       "sha256": "1a78579662d7bfa6df433d6a92fcada8cc1b141aae110cf08e89b54fb87e949a"
+    },
+    {
+      "path": "research/v17c/v17c_11/summarize_loading_validation.py",
+      "size_bytes": 5085,
+      "sha256": "37e373778063dac43dc0e5644c16fd77320c4cb29a444e7cb50a3c571d815734"
     },
     {
       "path": "research/v17c/v17c_11/validate_constant_protocol.py",

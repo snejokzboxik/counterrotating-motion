@@ -1,0 +1,28 @@
+{
+  "n": 64,
+  "seeds": {
+    "rest": 20261141,
+    "weak": 20261142,
+    "wide": 20261143,
+    "edge": 20261144
+  },
+  "groups": {
+    "rest": {
+      "initial_sha256": "7ba2c53963341090ba6b4ac47d756584aa6587cc9adf4fb23be44df96853bb09",
+      "phase_sha256": "4d4825b34ee92cf8d77d6ac5195941e3697cd39451b97d6a677ccbdd2df9d837"
+    },
+    "weak": {
+      "initial_sha256": "575a68d99cdfe7a0a60809382f1fc06ab7114677298b20b955b3c0c29373fe36",
+      "phase_sha256": "1a401386533fdac5b311e46a2cd2b5d45078ca15a49a790b9a7e4adb9e2db043"
+    },
+    "wide": {
+      "initial_sha256": "071d1712bf538b4bf4a0992c72f34b3e5ad5e0567096d2b67ca3720c59f92bb7",
+      "phase_sha256": "a02d4e1fc98c7a8b45231cc1c555372c8ffa77f358f1d9c0bc83a299a0094a9b"
+    },
+    "edge": {
+      "initial_sha256": "c61b00af0eb1a63f449b651838f2d60d32d407de3d2cfe13e2dab7df813758de",
+      "phase_sha256": "4527074fca065a65126201a01352759ae656d3cff2fb7e939a5e616bc8ae697b"
+    }
+  },
+  "source": "Same V17C.10 published start distributions; new independent scrambled-Sobol seeds, disjoint from P2 train set."
+}
