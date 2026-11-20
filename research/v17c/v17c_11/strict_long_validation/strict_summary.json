@@ -1,0 +1,373 @@
+{
+  "status": "strict_15k_period_validation_complete; numeric-method_validation_pending",
+  "N_per_ensemble": 64,
+  "periods": 15000,
+  "steps_per_period": 96,
+  "transient_discard": "transition completion plus 200 primary RF cycles",
+  "strict_success": "category CR_screen only; every other state counts as failure",
+  "unique_run_keys": 768,
+  "by_protocol": {
+    "0": {
+      "family": "constant",
+      "transition_cycles": 0,
+      "by_ensemble": {
+        "rest": {
+          "CR_count": 57,
+          "N": 64,
+          "P_CR": 0.890625,
+          "wilson95": [
+            0.7910113670806147,
+            0.9459995524731695
+          ],
+          "category_counts": {
+            "CR_screen": 57,
+            "finite_particle_wall_contact": 7
+          },
+          "contact_count": 7,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.82707632180149,
+            -14.827518402051853
+          ],
+          "mean_frequency_Hz_successes": [
+            154.23700217433438,
+            -100.185935148999
+          ],
+          "mean_min_radius_all_starts": [
+            0.4097767006243615,
+            0.5473829140902368
+          ],
+          "mean_min_separation_all_starts": 0.284867878567336
+        },
+        "weak": {
+          "CR_count": 57,
+          "N": 64,
+          "P_CR": 0.890625,
+          "wilson95": [
+            0.7910113670806147,
+            0.9459995524731695
+          ],
+          "category_counts": {
+            "CR_screen": 57,
+            "finite_particle_wall_contact": 7
+          },
+          "contact_count": 7,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.83579070488998,
+            -14.828051753624806
+          ],
+          "mean_frequency_Hz_successes": [
+            154.2958831411485,
+            -100.1895388758433
+          ],
+          "mean_min_radius_all_starts": [
+            0.40678298913659605,
+            0.5426309742202661
+          ],
+          "mean_min_separation_all_starts": 0.28652674195593075
+        },
+        "wide": {
+          "CR_count": 50,
+          "N": 64,
+          "P_CR": 0.78125,
+          "wilson95": [
+            0.665669836692222,
+            0.8649780253865025
+          ],
+          "category_counts": {
+            "CR_screen": 50,
+            "finite_particle_wall_contact": 14
+          },
+          "contact_count": 14,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.829831036534184,
+            -14.828715704435192
+          ],
+          "mean_frequency_Hz_successes": [
+            154.25561511171742,
+            -100.19402502996755
+          ],
+          "mean_min_radius_all_starts": [
+            0.4251007035819461,
+            0.5115128939652083
+          ],
+          "mean_min_separation_all_starts": 0.4197697766975159
+        },
+        "edge": {
+          "CR_count": 42,
+          "N": 64,
+          "P_CR": 0.65625,
+          "wilson95": [
+            0.5340341181762038,
+            0.7607702496453097
+          ],
+          "category_counts": {
+            "finite_particle_wall_contact": 20,
+            "CR_screen": 42,
+            "axis_ambiguous": 2
+          },
+          "contact_count": 20,
+          "axis_ambiguous_count": 2,
+          "mean_turns_successes": [
+            22.82750668064966,
+            -14.827998631029388
+          ],
+          "mean_frequency_Hz_successes": [
+            154.2399100043896,
+            -100.18917993938774
+          ],
+          "mean_min_radius_all_starts": [
+            0.4514873129192074,
+            0.5896863845771668
+          ],
+          "mean_min_separation_all_starts": 0.472290221951591
+        }
+      },
+      "J_standard_min_rest_weak_wide": 0.78125,
+      "J_robust_min_four": 0.65625
+    },
+    "505": {
+      "family": "rf_then_dc",
+      "transition_cycles": 3.0,
+      "by_ensemble": {
+        "rest": {
+          "CR_count": 64,
+          "N": 64,
+          "P_CR": 1.0,
+          "wilson95": [
+            0.9433739770288436,
+            1.0
+          ],
+          "category_counts": {
+            "CR_screen": 64
+          },
+          "contact_count": 0,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.820253322794017,
+            -14.82530886808776
+          ],
+          "mean_frequency_Hz_successes": [
+            154.22216207875937,
+            -100.19131491577865
+          ],
+          "mean_min_radius_all_starts": [
+            0.3267707245159843,
+            0.5172002662363299
+          ],
+          "mean_min_separation_all_starts": 0.19104917219759496
+        },
+        "weak": {
+          "CR_count": 61,
+          "N": 64,
+          "P_CR": 0.953125,
+          "wilson95": [
+            0.8710013921145747,
+            0.9839312745678148
+          ],
+          "category_counts": {
+            "CR_screen": 61,
+            "finite_particle_wall_contact": 3
+          },
+          "contact_count": 3,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.82574894668118,
+            -14.824889885710087
+          ],
+          "mean_frequency_Hz_successes": [
+            154.25930220099465,
+            -100.18848337980731
+          ],
+          "mean_min_radius_all_starts": [
+            0.3475700096235849,
+            0.5185458938526688
+          ],
+          "mean_min_separation_all_starts": 0.22743935311838476
+        },
+        "wide": {
+          "CR_count": 58,
+          "N": 64,
+          "P_CR": 0.90625,
+          "wilson95": [
+            0.8101690141672233,
+            0.9563223421687121
+          ],
+          "category_counts": {
+            "CR_screen": 58,
+            "axis_ambiguous": 1,
+            "finite_particle_wall_contact": 5
+          },
+          "contact_count": 5,
+          "axis_ambiguous_count": 1,
+          "mean_turns_successes": [
+            22.82022169266766,
+            -14.824871247425005
+          ],
+          "mean_frequency_Hz_successes": [
+            154.22194831835952,
+            -100.18835741991623
+          ],
+          "mean_min_radius_all_starts": [
+            0.34546941390299946,
+            0.4684403384206794
+          ],
+          "mean_min_separation_all_starts": 0.25554538892233264
+        },
+        "edge": {
+          "CR_count": 51,
+          "N": 64,
+          "P_CR": 0.796875,
+          "wilson95": [
+            0.6828613244878341,
+            0.8772669743730419
+          ],
+          "category_counts": {
+            "finite_particle_wall_contact": 11,
+            "CR_screen": 51,
+            "axis_ambiguous": 2
+          },
+          "contact_count": 11,
+          "axis_ambiguous_count": 2,
+          "mean_turns_successes": [
+            22.818951654842195,
+            -14.82494320594358
+          ],
+          "mean_frequency_Hz_successes": [
+            154.21336524188823,
+            -100.18884372469809
+          ],
+          "mean_min_radius_all_starts": [
+            0.379594407205358,
+            0.5361680273046157
+          ],
+          "mean_min_separation_all_starts": 0.35973678526443287
+        }
+      },
+      "J_standard_min_rest_weak_wide": 0.90625,
+      "J_robust_min_four": 0.796875
+    },
+    "353": {
+      "family": "reduced_initial_dc",
+      "transition_cycles": 10.0,
+      "by_ensemble": {
+        "rest": {
+          "CR_count": 64,
+          "N": 64,
+          "P_CR": 1.0,
+          "wilson95": [
+            0.9433739770288436,
+            1.0
+          ],
+          "category_counts": {
+            "CR_screen": 64
+          },
+          "contact_count": 0,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.813280221763293,
+            -14.817792098752504
+          ],
+          "mean_frequency_Hz_successes": [
+            154.24800690847394,
+            -100.18791141820489
+          ],
+          "mean_min_radius_all_starts": [
+            0.34838863172522405,
+            0.5340231800121608
+          ],
+          "mean_min_separation_all_starts": 0.19142379034225837
+        },
+        "weak": {
+          "CR_count": 62,
+          "N": 64,
+          "P_CR": 0.96875,
+          "wilson95": [
+            0.8930250611770575,
+            0.9913880422874833
+          ],
+          "category_counts": {
+            "CR_screen": 62,
+            "finite_particle_wall_contact": 2
+          },
+          "contact_count": 2,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.821785745402657,
+            -14.817634992443935
+          ],
+          "mean_frequency_Hz_successes": [
+            154.30551551996382,
+            -100.18684917135855
+          ],
+          "mean_min_radius_all_starts": [
+            0.35995132191521234,
+            0.5320510366327964
+          ],
+          "mean_min_separation_all_starts": 0.21612562857624784
+        },
+        "wide": {
+          "CR_count": 56,
+          "N": 64,
+          "P_CR": 0.875,
+          "wilson95": [
+            0.7722521366978408,
+            0.9352783460737919
+          ],
+          "category_counts": {
+            "CR_screen": 56,
+            "finite_particle_wall_contact": 8
+          },
+          "contact_count": 8,
+          "axis_ambiguous_count": 0,
+          "mean_turns_successes": [
+            22.81195880861633,
+            -14.818043243807628
+          ],
+          "mean_frequency_Hz_successes": [
+            154.23907240443768,
+            -100.18960949159994
+          ],
+          "mean_min_radius_all_starts": [
+            0.38477922314007246,
+            0.4866138821610411
+          ],
+          "mean_min_separation_all_starts": 0.33156457534697675
+        },
+        "edge": {
+          "CR_count": 54,
+          "N": 64,
+          "P_CR": 0.84375,
+          "wilson95": [
+            0.7357170979769467,
+            0.9128525112303834
+          ],
+          "category_counts": {
+            "CR_screen": 54,
+            "finite_particle_wall_contact": 9,
+            "axis_ambiguous": 1
+          },
+          "contact_count": 9,
+          "axis_ambiguous_count": 1,
+          "mean_turns_successes": [
+            22.809820401894665,
+            -14.817101621308987
+          ],
+          "mean_frequency_Hz_successes": [
+            154.2246139411405,
+            -100.1832428756524
+          ],
+          "mean_min_radius_all_starts": [
+            0.3989829968939395,
+            0.5546162446023088
+          ],
+          "mean_min_separation_all_starts": 0.33936852820382357
+        }
+      },
+      "J_standard_min_rest_weak_wide": 0.875,
+      "J_robust_min_four": 0.84375
+    }
+  }
+}

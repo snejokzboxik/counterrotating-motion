@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P3 complete; strict ten-turn long-horizon protocol validation pending",
+  "status": "P0-P4 complete; independent integrator, energy, robustness, and larger holdout pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/analyze_initial_capture.py",
@@ -16,8 +16,8 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2168,
-      "sha256": "cd0270ac6b782723988960a61439ad33f68b6d80cba689574352d86326b69654"
+      "size_bytes": 2182,
+      "sha256": "38cc99e2a1e3f283672ca8d77b3869d08e37c486e3b04ed21a81b79c76c865ba"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -195,9 +195,19 @@
       "sha256": "d0046dbdc11297fa3b6edb1aeb881257ff5a33f7846aa955aef2e017f7d96d44"
     },
     {
+      "path": "research/v17c/v17c_11/P4_STRICT_COUNTERROTATION_RU.md",
+      "size_bytes": 7523,
+      "sha256": "68b8c1e26c013ed08606120ea39038a5dd59f78c536cdaf50571c9ccf6c0f076"
+    },
+    {
       "path": "research/v17c/v17c_11/run_loading_validation.py",
       "size_bytes": 7055,
       "sha256": "4ca7adfac5997f3941b492d47de64a33da2cd0535a0eaec27773ea4996b60d63"
+    },
+    {
+      "path": "research/v17c/v17c_11/run_strict_loading_validation.py",
+      "size_bytes": 6357,
+      "sha256": "585a0ab1ba2c022a05e13c2d8e6fee9e327b42c300ce97eca7d1a5627dc4f809"
     },
     {
       "path": "research/v17c/v17c_11/screen_loading_protocols.py",
@@ -206,8 +216,43 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 9865,
-      "sha256": "36917a2b8bcbe3f04ea40e2c5437afa27082215cf37e9d375cea896bcf579699"
+      "size_bytes": 11495,
+      "sha256": "e8e14374b1f30430eb1325cf4f776989a63dd79884a433a3792e87c392c26c56"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/long_starts.json",
+      "size_bytes": 1120,
+      "sha256": "58dca334e6e9e89a504c96dcaa019ac71e8bd7d67e6373e5cd7c040454d7c7c5"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/long_starts.npz",
+      "size_bytes": 25813,
+      "sha256": "975fe70c3b765b850aec3390e535526417e8b1a8b1ccdf42f7a43d048a246df3"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/strict_counterrotation_rates.png",
+      "size_bytes": 53618,
+      "sha256": "172aafdd0dcfbf33cf325440eaf665d38ce7c4fe48da25d8b25ff6a6fff20936"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/strict_metadata.json",
+      "size_bytes": 1882,
+      "sha256": "c4912218b619021d00f1b28027613a6d7209f52cdab44a09a16f5d68603f128b"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/strict_runs.jsonl",
+      "size_bytes": 909622,
+      "sha256": "78246632c6b4a35e59bad05b45bc84c97d8d09e9c0b23ea075f9f2baabc0be6b"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/strict_summary.csv",
+      "size_bytes": 1490,
+      "sha256": "23bb0286686e8d43f8b7ad483b6d93b4aaf8072c5d094ce11d1ba1df00f5fdd4"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/strict_summary.json",
+      "size_bytes": 10947,
+      "sha256": "64b66dc3e2bffdd5145ca926b38f7d4a6b767a8e56201db66f9030f9d30d4b9a"
     },
     {
       "path": "research/v17c/v17c_11/summarize_initial_capture.py",
@@ -218,6 +263,11 @@
       "path": "research/v17c/v17c_11/summarize_loading_validation.py",
       "size_bytes": 5085,
       "sha256": "37e373778063dac43dc0e5644c16fd77320c4cb29a444e7cb50a3c571d815734"
+    },
+    {
+      "path": "research/v17c/v17c_11/summarize_strict_loading.py",
+      "size_bytes": 5150,
+      "sha256": "b38aa0ad0f77e498fb24bbf7c06e0872bd762df6634aaaf8acccf388f16ab0a8"
     },
     {
       "path": "research/v17c/v17c_11/validate_constant_protocol.py",

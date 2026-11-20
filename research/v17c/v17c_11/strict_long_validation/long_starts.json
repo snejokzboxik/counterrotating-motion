@@ -1,0 +1,28 @@
+{
+  "n": 64,
+  "seeds": {
+    "rest": 20261151,
+    "weak": 20261152,
+    "wide": 20261153,
+    "edge": 20261154
+  },
+  "groups": {
+    "rest": {
+      "initial_sha256": "af64732370e8f0e157c28668d267ab67caef9f855fae0f7256c792d32e5142b4",
+      "phase_sha256": "d448a3309180bcb8893c748356b27e31ff16a8416cc256f7104a3ff872798c52"
+    },
+    "weak": {
+      "initial_sha256": "334f864278ed05d42a87f8a93dd060f907ce6d515ca1a1e3f3bdf5a028f549d9",
+      "phase_sha256": "e47d29a5cac4f513f5aa5fd2fe8f06f06fda126cc492616c0819987605ae83b3"
+    },
+    "wide": {
+      "initial_sha256": "c53eac76879dd7fc6bb3bf463d00bd0e2c95bb85c3b6a1fb6d4cb8f54f428528",
+      "phase_sha256": "0b0611a563734de4939f5de7c9fd5b9662c00c5063502885a9ebfae8e3a50222"
+    },
+    "edge": {
+      "initial_sha256": "d5c442954a59a55dffffd3e6e8803ae1e93919fbb57d574b2df063bd2f4a9e16",
+      "phase_sha256": "5d4a513b9a48be8b7b7d8258e6b44538505b3c879e8f2e4c0e8e73b7569490b1"
+    }
+  },
+  "definition": "Fresh independent scrambled Sobol starts from existing V17C.10 distributions; edge has one area-uniform radius in [0.70,0.90]R."
+}
