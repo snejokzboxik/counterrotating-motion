@@ -3,10 +3,10 @@
   "branch": "research/v17c",
   "base_commit": "a9a92bb8ca46528215729780d689f4f72bc02892",
   "status": "in_progress",
-  "generated_utc": "2026-11-20T15:16:42+00:00",
+  "generated_utc": "2026-11-20T15:28:31+00:00",
   "excluded_paths": [],
-  "file_count": 144,
-  "total_bytes": 31487477,
+  "file_count": 146,
+  "total_bytes": 31515180,
   "files": [
     {
       "path": "best_physical_configuration.json",
@@ -87,6 +87,11 @@
       "path": "model/audit_multiradius_screen.py",
       "bytes": 5940,
       "sha256": "caf5ad11b2c99d8325d06edef13d509a2e89e9e4cb0eec32060a283ebb5bd675"
+    },
+    {
+      "path": "model/audit_physical_parameter_sobol_screen.py",
+      "bytes": 8950,
+      "sha256": "03c8970f6c78f392dd14ed5d0d7cf51d667b30aa093edc26de29034dcbe9845e"
     },
     {
       "path": "model/audit_sobol_screen.py",
@@ -204,14 +209,19 @@
       "sha256": "6433439c4f783fea8f6c94edf369d0c9566c645ef8b9ec566f89951b3d0fc634"
     },
     {
+      "path": "physical_parameter_sobol_screen.py",
+      "bytes": 17506,
+      "sha256": "d6360f5ca987569b5319c717d557418044b3488c7ed0c19548d50c4bfaa2041a"
+    },
+    {
       "path": "PHYSICAL_PARAMETERIZATION_RU.md",
       "bytes": 10579,
       "sha256": "118f4007f8adb867c5ab2952675c099be1cebae9af193978b2824e6cdb66761c"
     },
     {
       "path": "README.md",
-      "bytes": 8057,
-      "sha256": "f3ace677e904105aecefa9d65c5deb194d4f838dc21cb2a47d5e19eee8e51f18"
+      "bytes": 9304,
+      "sha256": "6d76da352d6e9d8fd41ffe59008f03cee63b96bc0f32a8da23d555b140373b51"
     },
     {
       "path": "REPORT_RU.md",
