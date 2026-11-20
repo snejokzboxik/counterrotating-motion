@@ -1,0 +1,59 @@
+{
+  "study": "experiment-anchored Al2O3 50 Hz physical discovery",
+  "rows": 6144,
+  "expected_rows": 6144,
+  "outcome_counts": {
+    "AXIS_AMBIGUOUS": 230,
+    "NONROTATING": 78,
+    "PROVISIONAL_CO_MINUS_MINUS": 245,
+    "PROVISIONAL_CO_PLUS_PLUS": 614,
+    "UNRESOLVED_SHORT": 11,
+    "WALL_OR_AXIAL_ESCAPE": 4966
+  },
+  "outcomes_by_ensemble": {
+    "experimental_injection": {
+      "AXIS_AMBIGUOUS": 66,
+      "NONROTATING": 30,
+      "PROVISIONAL_CO_MINUS_MINUS": 76,
+      "PROVISIONAL_CO_PLUS_PLUS": 200,
+      "UNRESOLVED_SHORT": 4,
+      "WALL_OR_AXIAL_ESCAPE": 2696
+    },
+    "rest": {
+      "AXIS_AMBIGUOUS": 164,
+      "NONROTATING": 48,
+      "PROVISIONAL_CO_MINUS_MINUS": 169,
+      "PROVISIONAL_CO_PLUS_PLUS": 414,
+      "UNRESOLVED_SHORT": 7,
+      "WALL_OR_AXIAL_ESCAPE": 2270
+    }
+  },
+  "outcomes_by_radius": {
+    "10.0": {
+      "AXIS_AMBIGUOUS": 103,
+      "NONROTATING": 44,
+      "PROVISIONAL_CO_MINUS_MINUS": 86,
+      "PROVISIONAL_CO_PLUS_PLUS": 300,
+      "WALL_OR_AXIAL_ESCAPE": 1515
+    },
+    "12.5": {
+      "AXIS_AMBIGUOUS": 71,
+      "NONROTATING": 25,
+      "PROVISIONAL_CO_MINUS_MINUS": 106,
+      "PROVISIONAL_CO_PLUS_PLUS": 210,
+      "WALL_OR_AXIAL_ESCAPE": 1636
+    },
+    "15.0": {
+      "AXIS_AMBIGUOUS": 56,
+      "NONROTATING": 9,
+      "PROVISIONAL_CO_MINUS_MINUS": 53,
+      "PROVISIONAL_CO_PLUS_PLUS": 104,
+      "UNRESOLVED_SHORT": 11,
+      "WALL_OR_AXIAL_ESCAPE": 1815
+    }
+  },
+  "classification": "Short discovery labels only; not final probabilities or attractor verification.",
+  "trajectory_sha256": "49f5da126f614eecbc14f3d74a24edac3a0e9647010039f82b868590c6ceecaf",
+  "meta_sha256": "f5f77fbd7ba5c8b304c5d45565da9ccc474553946539e2be4afb4394c2c53ac4",
+  "wall_seconds": 455.8153088000836
+}

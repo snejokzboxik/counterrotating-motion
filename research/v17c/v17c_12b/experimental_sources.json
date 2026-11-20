@@ -73,6 +73,16 @@
       "notes": "K20 true density 0.20 g/cm3; particle-size distribution d10/d50/d90 30/60/90 micrometers; crush-strength data are distributional and do not imply electrical performance."
     },
     {
+      "source_id": "3M_GLASS_BUBBLES_K1",
+      "title": "3M Glass Bubbles K, S and iM Series Technical Data Sheet",
+      "authors": "3M",
+      "venue": "Manufacturer technical data sheet, issued 2013",
+      "doi": null,
+      "url": "https://multimedia.3m.com/mws/media/91049O/3m-glass-bubbles-k-s-and-im-series.pdf",
+      "source_class": "manufacturer technical specification",
+      "notes": "K1 true density 0.125 g/cm3 (0.10-0.14); d10/d50/d90 30/65/115 micrometers and effective top size 120 micrometers. Isostatic test pressure 250 psi, target fractional survival 90%, minimum 80%. Product mechanical specification only, not electrical strength or charge data."
+    },
+    {
       "source_id": "MACROTRAP_PREPRINT_2026",
       "title": "A linear Paul trap to study the equilibrium of charged micron-sized particles in air",
       "authors": "Kissangou et al.",
@@ -80,7 +90,7 @@
       "doi": null,
       "url": "https://arxiv.org/abs/2609.35391",
       "source_class": "preprint; not independently peer reviewed as of 2026-11-20",
-      "notes": "Uses hollow-core glass spheres 80-120 micrometers in atmospheric air and a separate DC gravity-compensation rod; reports 13% uncertainty in q/m."
+      "notes": "Uses 3M K-series hollow-core spheres, diameter 80-120 micrometers, at 50 Hz and 1 bar; charge is triboelectric. Reports q=(1.16±0.08)e6 e, q/m=(3.8±0.5)e-4 C/kg, and derived m=(4.9±0.7)e-10 kg. The same paper gives a manufacturer-density estimate 6.5e-11 kg for 100 micrometers, about 7.5 times lower; these estimates are not jointly measured and must remain separate."
     },
     {
       "source_id": "COAX_TRAP_JINST2011",

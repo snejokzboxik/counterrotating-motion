@@ -1,0 +1,49 @@
+{
+  "study": "directed counterrotation-seed search for the best retained physical 50 Hz Al2O3 configs",
+  "rows": 128,
+  "expected_rows": 128,
+  "outcome_counts": {
+    "PROVISIONAL_CO_MINUS_MINUS": 64,
+    "PROVISIONAL_CO_PLUS_PLUS": 64
+  },
+  "outcomes_by_initial_direction": {
+    "MINUS_PLUS": {
+      "PROVISIONAL_CO_MINUS_MINUS": 32,
+      "PROVISIONAL_CO_PLUS_PLUS": 32
+    },
+    "PLUS_MINUS": {
+      "PROVISIONAL_CO_MINUS_MINUS": 32,
+      "PROVISIONAL_CO_PLUS_PLUS": 32
+    }
+  },
+  "outcomes_by_config": {
+    "a10um_exp50_0006": {
+      "PROVISIONAL_CO_PLUS_PLUS": 16
+    },
+    "a10um_exp50_0038": {
+      "PROVISIONAL_CO_PLUS_PLUS": 16
+    },
+    "a10um_exp50_0050": {
+      "PROVISIONAL_CO_PLUS_PLUS": 16
+    },
+    "a10um_exp50_0106": {
+      "PROVISIONAL_CO_MINUS_MINUS": 16
+    },
+    "a12.5um_exp50_0019": {
+      "PROVISIONAL_CO_MINUS_MINUS": 16
+    },
+    "a12.5um_exp50_0091": {
+      "PROVISIONAL_CO_MINUS_MINUS": 16
+    },
+    "a12.5um_exp50_0104": {
+      "PROVISIONAL_CO_PLUS_PLUS": 16
+    },
+    "a15um_exp50_0115": {
+      "PROVISIONAL_CO_MINUS_MINUS": 16
+    }
+  },
+  "classification": "Directed initial-condition search only; not basin probabilities.",
+  "trajectory_sha256": "ed59d5cb76419ef42396362b9cbfc56f951a0a8406e7668ddb7b1dee9a5d6773",
+  "meta_sha256": "373bf53e36ed17d7bbb8b377170c54d499f7cb99c925450a5b6f77e49a8046f3",
+  "wall_seconds": 152.23507669998799
+}

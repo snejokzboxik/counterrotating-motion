@@ -3,22 +3,20 @@
   "branch": "research/v17c",
   "base_commit": "a9a92bb8ca46528215729780d689f4f72bc02892",
   "status": "in_progress",
-  "generated_utc": "2026-11-20T13:44:13+00:00",
-  "excluded_paths": [
-    "results/alumina_experimental_50hz_screen"
-  ],
-  "file_count": 108,
-  "total_bytes": 20755942,
+  "generated_utc": "2026-11-20T14:17:29+00:00",
+  "excluded_paths": [],
+  "file_count": 124,
+  "total_bytes": 29375398,
   "files": [
     {
       "path": "best_physical_configuration.json",
-      "bytes": 1091,
-      "sha256": "046d97d84607fee89af9244cabd6c997d7b3e333662003b060f981779fa0d453"
+      "bytes": 1372,
+      "sha256": "36fd816cad2bdaa7aaf32e1c373b1eba2e73b091d3076e34cbe8fcaf2593d4d5"
     },
     {
       "path": "BISTABILITY_ANALYSIS_RU.md",
-      "bytes": 13527,
-      "sha256": "b37993568d222627e0ff0d039eee0600c2148695765ae3ee269fd7b282cba507"
+      "bytes": 19893,
+      "sha256": "81a6f2bed0706614cd882783f671d2383666ed1d09fd33d9a1521b48d416c148"
     },
     {
       "path": "BREAKDOWN_ANALYSIS_RU.md",
@@ -27,18 +25,23 @@
     },
     {
       "path": "CO_ROTATION_SUPPRESSION_RU.md",
-      "bytes": 5416,
-      "sha256": "5b8372c5a474acb54de0b2bf7fc355e2c45b98c4a2bd9f23e32d7100a8d252b2"
+      "bytes": 7216,
+      "sha256": "7d5855be225eb58c7da99ea31c66735fcea16af6d8f9ccde35158e50d25d1c53"
+    },
+    {
+      "path": "directed_counterrotation_search.py",
+      "bytes": 11651,
+      "sha256": "39b4491ec83d4a865e27248f3a913a0f16373d3feef33a5c783b717fc77bf27f"
     },
     {
       "path": "experimental_particle_database.csv",
-      "bytes": 4730,
-      "sha256": "b374b9b7fe129178455dd60110ab278978ece8b86998de089f0ce0853dce0305"
+      "bytes": 5628,
+      "sha256": "0af52ceffd432938182d25b127ca9f0dc850252eef3a4afc13e343a725608de1"
     },
     {
       "path": "experimental_sources.json",
-      "bytes": 7698,
-      "sha256": "c4f53217eaf331a6f6f39d8148cf60d39d1b8707ec80627090cac34e5c053134"
+      "bytes": 8611,
+      "sha256": "b6803dfe9df30814967178d069206867d7dcedde1cc7158cee05e2631eee7d7f"
     },
     {
       "path": "LEGACY_CANDIDATE_PHYSICAL_MAPPING_RU.md",
@@ -47,8 +50,13 @@
     },
     {
       "path": "LITERATURE_REVIEW_RU.md",
-      "bytes": 14063,
-      "sha256": "ca61f0c1b34ebfc64b4f01418ba3e4f5b8967dc7940a07d57f59e18906d479db"
+      "bytes": 15132,
+      "sha256": "f24007a19170a5d9ad5416bcaae945fdef8165923b6adbe26175519c12d15aaa"
+    },
+    {
+      "path": "model/audit_directed_counterrotation_search.py",
+      "bytes": 4621,
+      "sha256": "f3128261677e6c2d963faf934bb0d0fe7d1c2de912548b920e980dd64cd6b49b"
     },
     {
       "path": "model/audit_experimental_50hz_screen.py",
@@ -172,8 +180,8 @@
     },
     {
       "path": "PHYSICAL_OPTIMIZATION_RU.md",
-      "bytes": 7397,
-      "sha256": "6a496a2199371911e01b465263e9b6f62decaa1ecd89c4f459d25793e2f164a0"
+      "bytes": 11290,
+      "sha256": "aebe079e1e242a4052014462a7ef34442d863f31ee7819b3c98c167a3b5df78f"
     },
     {
       "path": "PHYSICAL_PARAMETERIZATION_RU.md",
@@ -182,18 +190,53 @@
     },
     {
       "path": "README.md",
-      "bytes": 5911,
-      "sha256": "1f810f77ee6623cb43d3f81385de72ba1489126ce9d1f1512f85c01b0ed7eb9f"
+      "bytes": 6226,
+      "sha256": "09a44a8cb09b991b0bfe365ef6d4f24b3d75640c5fe9e5a482c3c33174035a12"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 6446,
-      "sha256": "ddbff517cb17394d8e55cffd1126450ecf4067f1b3b785f3ed4e3bc43a3424dd"
+      "bytes": 7794,
+      "sha256": "c75c89bd092770fd615138f5a347f57cfe18117d2e19b8872f99a2ef9ba29627"
     },
     {
       "path": "requirements.txt",
       "bytes": 109,
       "sha256": "23edcfbb37e5bbf7c41ee6431c3218aca6b0453cefa5802682555ff75a60c8a9"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/campaign_code_sha256.json",
+      "bytes": 545,
+      "sha256": "8a7f5badc89dabea6a0e8d5b399468177f3e98891f9f3fff7160d557cf4459a0"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/campaign_meta.json",
+      "bytes": 726800,
+      "sha256": "f5f77fbd7ba5c8b304c5d45565da9ccc474553946539e2be4afb4394c2c53ac4"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/campaign_runner_source.py",
+      "bytes": 14976,
+      "sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/frozen_starts.npz",
+      "bytes": 2782,
+      "sha256": "0748aa15e78b5bf5ba432ee3c51250b12b1e78e19457917b453da09009196117"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/independent_audit.json",
+      "bytes": 4976,
+      "sha256": "4652305c11e262b4616c4fe3e93b394f65e595a6a5c5491e97de3c4a1060e860"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/summary.json",
+      "bytes": 1809,
+      "sha256": "80d96620e39622bad23a21729ad63fa6c05b7bf42241a2adf97d704a1bc882bd"
+    },
+    {
+      "path": "results/alumina_experimental_50hz_screen/trajectories.jsonl",
+      "bytes": 7602300,
+      "sha256": "49f5da126f614eecbc14f3d74a24edac3a0e9647010039f82b868590c6ceecaf"
     },
     {
       "path": "results/alumina_multiradius_sobol_screen/campaign_code_sha256.json",
@@ -234,6 +277,41 @@
       "path": "results/candidate_drag_compatibility.json",
       "bytes": 2517,
       "sha256": "ff182bb142166c6d34bcfb06ef33c4ce32cacbc6f18186a0626388a5904fc669"
+    },
+    {
+      "path": "results/directed_counterrotation_search/campaign_code_sha256.json",
+      "bytes": 543,
+      "sha256": "4a11227aff4462872d757557924bd2c06912ecb29a0aaa59875abe6187aed870"
+    },
+    {
+      "path": "results/directed_counterrotation_search/campaign_meta.json",
+      "bytes": 16122,
+      "sha256": "373bf53e36ed17d7bbb8b377170c54d499f7cb99c925450a5b6f77e49a8046f3"
+    },
+    {
+      "path": "results/directed_counterrotation_search/campaign_runner_source.py",
+      "bytes": 11651,
+      "sha256": "39b4491ec83d4a865e27248f3a913a0f16373d3feef33a5c783b717fc77bf27f"
+    },
+    {
+      "path": "results/directed_counterrotation_search/frozen_directed_starts.npz",
+      "bytes": 20290,
+      "sha256": "e15f2104416006ef0d4b06c52920873693f6c3e731a89754c9623d9e2adc66f7"
+    },
+    {
+      "path": "results/directed_counterrotation_search/independent_audit.json",
+      "bytes": 1572,
+      "sha256": "5ded36e0f5da610ad16236b441ee3ab687d0f1c658e7ce344584d81ec21c4545"
+    },
+    {
+      "path": "results/directed_counterrotation_search/summary.json",
+      "bytes": 1448,
+      "sha256": "4531bb0085db540cfe702cbbf9d045d0cc0f7c68ebe67574187fa3a54668439d"
+    },
+    {
+      "path": "results/directed_counterrotation_search/trajectories.jsonl",
+      "bytes": 181409,
+      "sha256": "ed59d5cb76419ef42396362b9cbfc56f951a0a8406e7668ddb7b1dee9a5d6773"
     },
     {
       "path": "results/fem_crosscheck.json",
@@ -522,8 +600,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 11190,
-      "sha256": "6d4324d8df526b95992cbb3f63f4e9dd6cdb5ad9630b5fe07afb8eef80b0bb2c"
+      "bytes": 8587,
+      "sha256": "c88d49006a15c78992d3f5a283cf4a57acbab2f0e0de44c1c5291c0b3eb46037"
     },
     {
       "path": "sobol_alumina_experimental_50hz_search.py",
@@ -542,8 +620,8 @@
     },
     {
       "path": "STATISTICAL_VALIDATION_RU.md",
-      "bytes": 4059,
-      "sha256": "c41241943dfbc8284772cbf39a92f82d559edca1a63fad8a0a2a5cb10ade36a4"
+      "bytes": 5740,
+      "sha256": "e956e02c98302efa2f1cb414f209d0bb427abcdf0ec9d4c703a5f3b304b2fd85"
     },
     {
       "path": "V17C7_V17C8_REPRODUCTION_RU.md",

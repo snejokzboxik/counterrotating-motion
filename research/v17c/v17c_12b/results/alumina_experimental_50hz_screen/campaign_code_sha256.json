@@ -1,0 +1,13 @@
+{
+  "runner_sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf",
+  "saved_runner_sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "campaign": "alumina_experimental_50hz_screen",
+  "seed": 20261228,
+  "configs": 384,
+  "starts_per_config": 16,
+  "periods": 5000,
+  "steps": 64,
+  "workers": 11
+}

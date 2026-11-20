@@ -3,25 +3,33 @@
   "status": "no_confirmed_bistable_physical_configuration",
   "best_physical_configuration": null,
   "best_discovery_candidate": null,
-  "reason": "No completed physical screen has observed both counterrotating states (+-) and (-+) at one fixed configuration. The active multiradius Al2O3 discovery campaign is not yet complete.",
+  "reason": "No physical configuration has produced both counterrotating late-window labels (+-) and (-+) under one fixed parameter set. The 50 Hz identical-Al2O3 screen and a 15,000-period directed-start follow-up found no counterrotation.",
   "do_not_use_as_leader": [
-    "results/identical_physical_sobol_screen_corrected/summary.json::top_config",
-    "Any short-horizon class from the 8-start-per-config screens"
+    "Any short-horizon class from screens with 8 starts per configuration",
+    "The directed counterrotation search as a basin-probability estimate"
   ],
-  "last_completed_audited_screen": {
-    "directory": "results/identical_physical_sobol_screen_corrected",
-    "configurations": 512,
-    "starts_per_configuration": 8,
-    "trajectory_rows": 4096,
-    "counterrotation_labels": 0,
-    "audit_pass": true
-  },
-  "active_screen": {
-    "runner": "sobol_alumina_multiradius_search.py",
-    "directory": "results/alumina_multiradius_sobol_screen",
-    "radii_um": [5.0, 7.5, 10.0, 12.5, 15.0, 20.0, 30.0, 40.0],
-    "planned_configurations": 512,
-    "planned_trajectory_rows": 4096,
-    "workers": 11
-  }
+  "last_completed_audited_screens": [
+    {
+      "directory": "results/alumina_experimental_50hz_screen",
+      "configurations": 384,
+      "starts_per_configuration": 16,
+      "trajectory_rows": 6144,
+      "counterrotation_labels": 0,
+      "audit_pass": true
+    },
+    {
+      "directory": "results/directed_counterrotation_search",
+      "configurations": 8,
+      "starts_per_configuration": 16,
+      "trajectory_rows": 128,
+      "directed_counterrotation_labels": 0,
+      "outcomes": {
+        "PROVISIONAL_CO_PLUS_PLUS": 64,
+        "PROVISIONAL_CO_MINUS_MINUS": 64
+      },
+      "audit_pass": true,
+      "classification_note": "Directed initial-condition search, not a probability estimate or proof of global attractor stability."
+    }
+  ],
+  "active_screen": null
 }

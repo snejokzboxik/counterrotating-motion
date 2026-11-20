@@ -1,0 +1,43 @@
+{
+  "audit": "directed_counterrotation_search",
+  "integrity_pass": true,
+  "checks": {
+    "expected_row_count": true,
+    "unique_complete_config_start_keys": true,
+    "frozen_starts_and_phases_match": true,
+    "all_initial_velocity_pairs_are_counterrotating": true,
+    "all_trajectories_reached_full_horizon": true,
+    "all_pairs_retained": true,
+    "runner_hash_matches_saved_copy_and_campaign": true,
+    "integrator_hash_matches_campaign": true,
+    "field_hash_matches_campaign": true,
+    "summary_counts_match_rows": true,
+    "summary_trajectory_hash_matches": true,
+    "per_config_row_counts_match": true,
+    "initial_orientation_balance_match": true
+  },
+  "rows": 128,
+  "unique_keys": 128,
+  "configuration_count": 8,
+  "rows_per_configuration": {
+    "a10um_exp50_0006": 16,
+    "a10um_exp50_0038": 16,
+    "a10um_exp50_0050": 16,
+    "a10um_exp50_0106": 16,
+    "a12.5um_exp50_0019": 16,
+    "a12.5um_exp50_0091": 16,
+    "a12.5um_exp50_0104": 16,
+    "a15um_exp50_0115": 16
+  },
+  "initial_orientation_counts": {
+    "MINUS_PLUS": 64,
+    "PLUS_MINUS": 64
+  },
+  "outcome_counts": {
+    "PROVISIONAL_CO_MINUS_MINUS": 64,
+    "PROVISIONAL_CO_PLUS_PLUS": 64
+  },
+  "classification_caveat": "Long-horizon window labels remain provisional dynamical classifications, not basin probabilities or proof of a global attractor.",
+  "trajectory_sha256": "ed59d5cb76419ef42396362b9cbfc56f951a0a8406e7668ddb7b1dee9a5d6773",
+  "audit_script_sha256": "f3128261677e6c2d963faf934bb0d0fe7d1c2de912548b920e980dd64cd6b49b"
+}

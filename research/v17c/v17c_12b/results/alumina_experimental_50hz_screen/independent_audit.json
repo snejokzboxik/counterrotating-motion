@@ -1,0 +1,177 @@
+{
+  "audit": "integrity and grouped outcome audit; short screen is not probability validation",
+  "expected_rows": 6144,
+  "actual_rows": 6144,
+  "unique_keys": 6144,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "unexpected_keys": [],
+  "frozen_start_or_phase_mismatches": [],
+  "ensemble_mismatches": [],
+  "injection_speed_mismatches": [],
+  "row_radius_mismatches": [],
+  "outcome_counts": {
+    "AXIS_AMBIGUOUS": 230,
+    "NONROTATING": 78,
+    "PROVISIONAL_CO_MINUS_MINUS": 245,
+    "PROVISIONAL_CO_PLUS_PLUS": 614,
+    "UNRESOLVED_SHORT": 11,
+    "WALL_OR_AXIAL_ESCAPE": 4966
+  },
+  "outcomes_by_ensemble": {
+    "experimental_injection": {
+      "AXIS_AMBIGUOUS": 66,
+      "NONROTATING": 30,
+      "PROVISIONAL_CO_MINUS_MINUS": 76,
+      "PROVISIONAL_CO_PLUS_PLUS": 200,
+      "UNRESOLVED_SHORT": 4,
+      "WALL_OR_AXIAL_ESCAPE": 2696
+    },
+    "rest": {
+      "AXIS_AMBIGUOUS": 164,
+      "NONROTATING": 48,
+      "PROVISIONAL_CO_MINUS_MINUS": 169,
+      "PROVISIONAL_CO_PLUS_PLUS": 414,
+      "UNRESOLVED_SHORT": 7,
+      "WALL_OR_AXIAL_ESCAPE": 2270
+    }
+  },
+  "pair_retained_counts_by_ensemble": {
+    "experimental_injection": 376,
+    "rest": 802
+  },
+  "outcomes_by_radius_and_ensemble": {
+    "10.0um_experimental_injection": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 39,
+        "NONROTATING": 20,
+        "PROVISIONAL_CO_MINUS_MINUS": 34,
+        "PROVISIONAL_CO_PLUS_PLUS": 128,
+        "WALL_OR_AXIAL_ESCAPE": 803
+      },
+      "pair_retained_count": 221,
+      "pair_retained_fraction": 0.2158203125,
+      "loss_mechanisms": {
+        "radial": 803,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "10.0um_rest": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 64,
+        "NONROTATING": 24,
+        "PROVISIONAL_CO_MINUS_MINUS": 52,
+        "PROVISIONAL_CO_PLUS_PLUS": 172,
+        "WALL_OR_AXIAL_ESCAPE": 712
+      },
+      "pair_retained_count": 312,
+      "pair_retained_fraction": 0.3046875,
+      "loss_mechanisms": {
+        "radial": 712,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "12.5um_experimental_injection": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 17,
+        "NONROTATING": 9,
+        "PROVISIONAL_CO_MINUS_MINUS": 31,
+        "PROVISIONAL_CO_PLUS_PLUS": 59,
+        "WALL_OR_AXIAL_ESCAPE": 908
+      },
+      "pair_retained_count": 116,
+      "pair_retained_fraction": 0.11328125,
+      "loss_mechanisms": {
+        "radial": 908,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "12.5um_rest": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 54,
+        "NONROTATING": 16,
+        "PROVISIONAL_CO_MINUS_MINUS": 75,
+        "PROVISIONAL_CO_PLUS_PLUS": 151,
+        "WALL_OR_AXIAL_ESCAPE": 728
+      },
+      "pair_retained_count": 296,
+      "pair_retained_fraction": 0.2890625,
+      "loss_mechanisms": {
+        "radial": 728,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "15.0um_experimental_injection": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 10,
+        "NONROTATING": 1,
+        "PROVISIONAL_CO_MINUS_MINUS": 11,
+        "PROVISIONAL_CO_PLUS_PLUS": 13,
+        "UNRESOLVED_SHORT": 4,
+        "WALL_OR_AXIAL_ESCAPE": 985
+      },
+      "pair_retained_count": 39,
+      "pair_retained_fraction": 0.0380859375,
+      "loss_mechanisms": {
+        "radial": 985,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "15.0um_rest": {
+      "rows": 1024,
+      "counts": {
+        "AXIS_AMBIGUOUS": 46,
+        "NONROTATING": 8,
+        "PROVISIONAL_CO_MINUS_MINUS": 42,
+        "PROVISIONAL_CO_PLUS_PLUS": 91,
+        "UNRESOLVED_SHORT": 7,
+        "WALL_OR_AXIAL_ESCAPE": 830
+      },
+      "pair_retained_count": 194,
+      "pair_retained_fraction": 0.189453125,
+      "loss_mechanisms": {
+        "radial": 830,
+        "axial": 0,
+        "both": 0
+      }
+    }
+  },
+  "wall_or_axial_escape_mechanisms": {
+    "radial": 4966,
+    "axial": 0,
+    "both": 0
+  },
+  "configurations_with_both_CR_directions": 0,
+  "physical_config_summary": {
+    "n_configs": 384,
+    "n_per_radius": {
+      "10.0": 128,
+      "12.5": 128,
+      "15.0": 128
+    },
+    "f1_Hz_values": [
+      50.0
+    ],
+    "charge_e_min": 100208.50607982009,
+    "charge_e_max": 499729.64501957735,
+    "U_sum_peak_max_V": 4362.5618289019185,
+    "MFS_triangle_bound_max_V_m": 10938912.383221814
+  },
+  "code_sha256": {
+    "runner_sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf",
+    "saved_runner_sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf",
+    "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d"
+  },
+  "integrity_pass": true
+}
