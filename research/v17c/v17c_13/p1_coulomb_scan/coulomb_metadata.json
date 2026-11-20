@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "source_start": "P2_505_angle0_phase0",
+  "baseline_C": 9.463121589050818e-06,
+  "coupling_multipliers": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0,
+    50.0
+  ],
+  "steps_per_primary_period": 96,
+  "post_load_periods": 15000,
+  "initial_state_sha256": "8f33543492413d8781ab80ef54d8772cc3bcd69809035f1adc0bc279ec207a9f",
+  "rf_phase_rad": [
+    0.0,
+    0.0
+  ],
+  "workers": 4,
+  "purpose": "determine whether long-lived triangular phase order depends on Coulomb coupling"
+}

@@ -1,0 +1,440 @@
+{
+  "status": "passed",
+  "runs": 10,
+  "unique_task_ids": 10,
+  "trajectory_count": 10,
+  "data_errors": [],
+  "interpretation": "For this selected ordered start, counterrotation persists through C/C0=2 and both rings corotate by C/C0=5; the transition is bracketed only within that interval and this loading history.",
+  "results": [
+    {
+      "C_multiplier": 0.0,
+      "C_absolute": 0.0,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        157.29805890180182,
+        -100.47839308168994
+      ],
+      "mean_turns_by_group": [
+        23.594708835270534,
+        -15.07175896225369
+      ],
+      "frequency_spread_percent_by_group": [
+        0.052772848622938705,
+        0.020995798086832575
+      ],
+      "mean_Psi3_by_group": [
+        0.9782928976547969,
+        0.9926525867160431
+      ],
+      "p05_Psi3_by_group": [
+        0.949817193397921,
+        0.9834835014355702
+      ],
+      "late_gap_max_error_deg_by_group": [
+        15.54277225137227,
+        9.594790157365864
+      ],
+      "mean_radius_R_by_group": [
+        0.5487408054521766,
+        0.7654876469309709
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.021914298702715315,
+        0.03828663430059843
+      ],
+      "minimum_pair_distance_R": 0.13310932178700752,
+      "wall_clearance_min_R": 0.17970599390275604,
+      "energy_relative_max_residual": 1.4644298207232637e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 0.1,
+      "C_absolute": 9.463121589050818e-07,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        157.40086268876,
+        -100.50513211966832
+      ],
+      "mean_turns_by_group": [
+        23.61012940331338,
+        -15.075769817950066
+      ],
+      "frequency_spread_percent_by_group": [
+        0.06961646101355425,
+        0.022416769529019994
+      ],
+      "mean_Psi3_by_group": [
+        0.9825045182678072,
+        0.9943904176326266
+      ],
+      "p05_Psi3_by_group": [
+        0.9596447373950479,
+        0.9865260171265332
+      ],
+      "late_gap_max_error_deg_by_group": [
+        13.754958367347399,
+        8.575708691526415
+      ],
+      "mean_radius_R_by_group": [
+        0.5486701007262856,
+        0.7655473565585896
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.1943278493075985,
+        0.1230279977740188
+      ],
+      "minimum_pair_distance_R": 0.1349341498267691,
+      "wall_clearance_min_R": 0.17945056277979793,
+      "energy_relative_max_residual": 1.4643781075978674e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 0.25,
+      "C_absolute": 2.3657803972627045e-06,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        157.2083133494178,
+        -100.51168625624547
+      ],
+      "mean_turns_by_group": [
+        23.581247002412255,
+        -15.07675293843746
+      ],
+      "frequency_spread_percent_by_group": [
+        0.061582351047229325,
+        0.02784812218958247
+      ],
+      "mean_Psi3_by_group": [
+        0.9850146558938032,
+        0.9958089431549024
+      ],
+      "p05_Psi3_by_group": [
+        0.966124042537032,
+        0.9888871557797786
+      ],
+      "late_gap_max_error_deg_by_group": [
+        11.946474441720738,
+        7.389120960653727
+      ],
+      "mean_radius_R_by_group": [
+        0.5485676039466821,
+        0.7656356410108076
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.22085207617676658,
+        0.17715904972548385
+      ],
+      "minimum_pair_distance_R": 0.1376017765063893,
+      "wall_clearance_min_R": 0.1790839635783255,
+      "energy_relative_max_residual": 1.464324434678125e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 0.5,
+      "C_absolute": 4.731560794525409e-06,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        155.90885008879903,
+        -100.43655233817488
+      ],
+      "mean_turns_by_group": [
+        23.386327513320392,
+        -15.065482850725916
+      ],
+      "frequency_spread_percent_by_group": [
+        0.036218487152182656,
+        0.027547598965292068
+      ],
+      "mean_Psi3_by_group": [
+        0.9863753950948155,
+        0.9968448466734969
+      ],
+      "p05_Psi3_by_group": [
+        0.9721064125698577,
+        0.99081006501383
+      ],
+      "late_gap_max_error_deg_by_group": [
+        10.357716252773116,
+        5.852726097401174
+      ],
+      "mean_radius_R_by_group": [
+        0.5483951881738419,
+        0.7657804422124461
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.1460774800194107,
+        0.17226242976204617
+      ],
+      "minimum_pair_distance_R": 0.1418768906842605,
+      "wall_clearance_min_R": 0.17851221538850787,
+      "energy_relative_max_residual": 1.4642701644366658e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 1.0,
+      "C_absolute": 9.463121589050818e-06,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        149.97718911355398,
+        -99.95234884482208
+      ],
+      "mean_turns_by_group": [
+        22.4965783670331,
+        -14.992852326723002
+      ],
+      "frequency_spread_percent_by_group": [
+        0.024338008594347302,
+        0.0254443613277487
+      ],
+      "mean_Psi3_by_group": [
+        0.98708906502795,
+        0.9975190371130316
+      ],
+      "p05_Psi3_by_group": [
+        0.9777764750603544,
+        0.9930200015907656
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.274992231689964,
+        4.55084890600466
+      ],
+      "mean_radius_R_by_group": [
+        0.548035768137866,
+        0.7660740865582666
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.027084129422502917,
+        0.11066305217485789
+      ],
+      "minimum_pair_distance_R": 0.14986890006003545,
+      "wall_clearance_min_R": 0.1774901945409883,
+      "energy_relative_max_residual": 1.4641661606686251e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 2.0,
+      "C_absolute": 1.8926243178101636e-05,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COUNTERROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        122.55165636514214,
+        -97.4923957640762
+      ],
+      "mean_turns_by_group": [
+        18.382748454770525,
+        -14.623859364611391
+      ],
+      "frequency_spread_percent_by_group": [
+        0.08143087847637458,
+        0.045639938704037084
+      ],
+      "mean_Psi3_by_group": [
+        0.9874448255961251,
+        0.9978288009914347
+      ],
+      "p05_Psi3_by_group": [
+        0.9811032317799109,
+        0.9948547740070843
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.063806243349632,
+        3.979916598822925
+      ],
+      "mean_radius_R_by_group": [
+        0.5472090253760366,
+        0.7666758375971184
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.03567651775353812,
+        0.005542874758032084
+      ],
+      "minimum_pair_distance_R": 0.16409232143553726,
+      "wall_clearance_min_R": 0.1757989084374984,
+      "energy_relative_max_residual": 1.4638874198655837e-05,
+      "opposite_group_directions": true
+    },
+    {
+      "C_multiplier": 5.0,
+      "C_absolute": 4.731560794525409e-05,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        -79.0097780808585,
+        -78.9928902321174
+      ],
+      "mean_turns_by_group": [
+        -11.851466712129309,
+        -11.848933534817704
+      ],
+      "frequency_spread_percent_by_group": [
+        0.10303873524344848,
+        0.09389363086258581
+      ],
+      "mean_Psi3_by_group": [
+        0.9876908900419994,
+        0.9981394494492416
+      ],
+      "p05_Psi3_by_group": [
+        0.9815073661935466,
+        0.9965817903759773
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.026659298152495,
+        3.95137171162456
+      ],
+      "mean_radius_R_by_group": [
+        0.5480540515779493,
+        0.76783667392169
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.11814452357781265,
+        0.04307043364703637
+      ],
+      "minimum_pair_distance_R": 0.1978970203052841,
+      "wall_clearance_min_R": 0.1722659337536107,
+      "energy_relative_max_residual": 1.4664259235003376e-05,
+      "opposite_group_directions": false
+    },
+    {
+      "C_multiplier": 10.0,
+      "C_absolute": 9.463121589050818e-05,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        -80.226529655828,
+        -80.20687394857107
+      ],
+      "mean_turns_by_group": [
+        -12.03397944837395,
+        -12.031031092285389
+      ],
+      "frequency_spread_percent_by_group": [
+        0.035438793079817656,
+        0.01886836211631475
+      ],
+      "mean_Psi3_by_group": [
+        0.9876950456463743,
+        0.998169362535743
+      ],
+      "p05_Psi3_by_group": [
+        0.9814072204352169,
+        0.9966017975984262
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.054170598435235,
+        3.961471117522521
+      ],
+      "mean_radius_R_by_group": [
+        0.5515663625439858,
+        0.7690811688342656
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.1304322031231842,
+        0.05162922507983161
+      ],
+      "minimum_pair_distance_R": 0.2053391488630461,
+      "wall_clearance_min_R": 0.16861413305968548,
+      "energy_relative_max_residual": 1.4729697695596532e-05,
+      "opposite_group_directions": false
+    },
+    {
+      "C_multiplier": 20.0,
+      "C_absolute": 0.00018926243178101637,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        -82.43738458447736,
+        -82.42212786204456
+      ],
+      "mean_turns_by_group": [
+        -12.365607687671316,
+        -12.363319179307226
+      ],
+      "frequency_spread_percent_by_group": [
+        0.12316135066399493,
+        0.06358517393087576
+      ],
+      "mean_Psi3_by_group": [
+        0.9876582486072111,
+        0.9981743286836062
+      ],
+      "p05_Psi3_by_group": [
+        0.9812596651454892,
+        0.9965860807197565
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.100574196769657,
+        3.9810906162912545
+      ],
+      "mean_radius_R_by_group": [
+        0.5562168325931008,
+        0.7719675551424451
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.053698993226294574,
+        0.019180051738970322
+      ],
+      "minimum_pair_distance_R": 0.20591260281974,
+      "wall_clearance_min_R": 0.16428497605188724,
+      "energy_relative_max_residual": 1.4833670040884328e-05,
+      "opposite_group_directions": false
+    },
+    {
+      "C_multiplier": 50.0,
+      "C_absolute": 0.0004731560794525409,
+      "completed_periods": 15203,
+      "retained": true,
+      "integrator_category": "COROTATING_UNORDERED",
+      "mean_frequency_Hz_by_group": [
+        -87.64916024544856,
+        -87.66086956707443
+      ],
+      "mean_turns_by_group": [
+        -13.147374036817984,
+        -13.149130435060798
+      ],
+      "frequency_spread_percent_by_group": [
+        0.1265049509806924,
+        0.057267442988505717
+      ],
+      "mean_Psi3_by_group": [
+        0.9875337266459704,
+        0.9981545166050304
+      ],
+      "p05_Psi3_by_group": [
+        0.9808672820230692,
+        0.9965025569446133
+      ],
+      "late_gap_max_error_deg_by_group": [
+        9.247029397304175,
+        4.0492279684739
+      ],
+      "mean_radius_R_by_group": [
+        0.5676454970298946,
+        0.7803490910455463
+      ],
+      "max_abs_late_phase_drift_deg_per_1000_periods": [
+        0.08374687951713022,
+        0.04007353636738717
+      ],
+      "minimum_pair_distance_R": 0.20591260281974,
+      "wall_clearance_min_R": 0.15392406116412177,
+      "energy_relative_max_residual": 1.5104425366019507e-05,
+      "opposite_group_directions": false
+    }
+  ]
+}

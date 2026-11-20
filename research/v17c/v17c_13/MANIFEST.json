@@ -2,8 +2,18 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 validated; P1 has 7 long N=6 runs, including 6 finite-horizon ordered crystal candidates; Coulomb dependence and perturbation validation pending",
+  "status": "P0 validated; P1 has 6 finite-horizon ordered crystal candidates; P4 ten-point C continuation brackets corotation transition between 2 and 5 C0; perturbed starts, DOP853 and long step refinement pending",
   "outputs": [
+    {
+      "path": "research/v17c/v17c_13/analyze_p1_coulomb_work.py",
+      "size_bytes": 6305,
+      "sha256": "f9310ad325deb42a61c23fc548d8f52d0940b247694c5ea2f0ec726ac439cc31"
+    },
+    {
+      "path": "research/v17c/v17c_13/audit_p1_coulomb_scan.py",
+      "size_bytes": 3701,
+      "sha256": "7d395158ea845370ba375878a28b6fa3bc7d1a5543662a282cd5ddc23f78a75f"
+    },
     {
       "path": "research/v17c/v17c_13/audit_p1_long.py",
       "size_bytes": 4813,
@@ -11,13 +21,18 @@
     },
     {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1868,
-      "sha256": "397e2eeece987456167c7dd7472d1e4dc6b50e7fd7e692fc6773f1cae9263657"
+      "size_bytes": 1923,
+      "sha256": "2701340ed3c82f8849927bbece28ebdbfa4e5ec8173540b577226f5e27604ba7"
     },
     {
       "path": "research/v17c/v17c_13/COLLECTIVE_STABILITY_RU.md",
       "size_bytes": 4072,
       "sha256": "454c05a7185c6c8e493cac45ab2ac8f4f12b202eb94abd2695a37d5dc6129088"
+    },
+    {
+      "path": "research/v17c/v17c_13/COULOMB_COUPLING_RU.md",
+      "size_bytes": 5766,
+      "sha256": "a6338f237b29bb823746e2f917b7aed3bcbfb6763b75593a83fde3a02c6f13be"
     },
     {
       "path": "research/v17c/v17c_13/local15_n6_parameters.json",
@@ -38,6 +53,81 @@
       "path": "research/v17c/v17c_13/p0_nbody_validation.json",
       "size_bytes": 1961,
       "sha256": "7823ed87831197b1576187b6ebfed2388966fb579c250530664965ef54747b50"
+    },
+    {
+      "path": "research/v17c/v17c_13/P1_COULOMB_CONTINUATION.png",
+      "size_bytes": 107423,
+      "sha256": "7f461cffa0a423a62aace7fd757e4a6e43e15628ca2b57423d99d267cf97e317"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_0.1_trajectory.npz",
+      "size_bytes": 4553294,
+      "sha256": "3ec1d62ecd5c182ec7cf92e6d1531ef65422d1814d9da76f0048f39ab68130ee"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_0.25_trajectory.npz",
+      "size_bytes": 4558466,
+      "sha256": "d786bdbd789b8ba40a01f621acd466250ff37d2a310203916314d2e18d9c9bd5"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_0.5_trajectory.npz",
+      "size_bytes": 4559532,
+      "sha256": "d7580c729c51e5726e07f4204dfe0ec9fe08a2644dbf288486ba8b0eab53ab0c"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_0_trajectory.npz",
+      "size_bytes": 4430466,
+      "sha256": "f5aa0cb412ebfb7042b851aa5a6d7e3bb483599b541b7d1abdf29adb8833c1e8"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_10_trajectory.npz",
+      "size_bytes": 4535914,
+      "sha256": "cff9ebfbd2868bfab098be658c272920097d89f3126e16d963ea6b4f5a6a1399"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_1_trajectory.npz",
+      "size_bytes": 4560797,
+      "sha256": "360033d5a2c57242dc555dc4ac65369e2493f27cee2f0de9f465438270540436"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_20_trajectory.npz",
+      "size_bytes": 4536327,
+      "sha256": "f5886512bef89518781f6735102cb6013a3bb3b5c733de956b06cdf78b6d8530"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_2_trajectory.npz",
+      "size_bytes": 4561446,
+      "sha256": "b81958533ee9454547f1857619d98489aa052150747acf51e01ca84f30f3f95b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_50_trajectory.npz",
+      "size_bytes": 4547161,
+      "sha256": "5c73c49c22c8a626212afecbcdc96992b0251a0649c22ff6f019fd20c20cce95"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/C_5_trajectory.npz",
+      "size_bytes": 4541078,
+      "sha256": "7c6c9152bc958f5cdbdea78802d75d820e9fe23927b4843bb52506bbf3a44d0f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/coulomb_metadata.json",
+      "size_bytes": 572,
+      "sha256": "865fab1c52ec396525fd04e7f90c4da72076648a126796e26b2ebabd9af7d49f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/coulomb_runs.jsonl",
+      "size_bytes": 45013,
+      "sha256": "2e7483c36cc441b3da7296fb434961469807264156bf72bbc0104240942828df"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/coulomb_work_analysis.json",
+      "size_bytes": 20062,
+      "sha256": "1a4a2f7789a561a41b87d896f5ff3514da9cebf1232148ff55a86cf364e79b26"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_coulomb_scan/coupling_audit.json",
+      "size_bytes": 13010,
+      "sha256": "562f53f69e89374e07cd8479a9c26c461e1e2e9a7981d536612d6fa5ef71617d"
     },
     {
       "path": "research/v17c/v17c_13/p1_energy_balance_validation.json",
@@ -200,14 +290,19 @@
       "sha256": "052eec360dc1fa8f5ae468e1d08a24693a014f84d8174b7113cc08bb3063f668"
     },
     {
+      "path": "research/v17c/v17c_13/plot_p1_coulomb_scan.py",
+      "size_bytes": 2002,
+      "sha256": "049f9be96e24c0b8d7c00a59ecb335a0262e47e1be3a11617158a1accca0ba62"
+    },
+    {
       "path": "research/v17c/v17c_13/plot_p1_long_candidate.py",
       "size_bytes": 4033,
       "sha256": "e36b18c946410ca2f253a5e69a638483d901bb86715503b5d27a4db8b1af3d66"
     },
     {
       "path": "research/v17c/v17c_13/REPORT_RU.md",
-      "size_bytes": 9714,
-      "sha256": "96c65b25e878830ad1382e479b9a7041226652136fa59f8ae6e141e1a0609a61"
+      "size_bytes": 12000,
+      "sha256": "63e8b186931dfbf9ce8dc9030326872ec086f66db6131ce6577cb822aecd246e"
     },
     {
       "path": "research/v17c/v17c_13/run_ordered_pilot.py",
@@ -215,9 +310,19 @@
       "sha256": "63edc926197825c25c089d5ce70c9d483f8810860db600968f5fd4f0ebe53e61"
     },
     {
+      "path": "research/v17c/v17c_13/run_p1_coulomb_perturbation.py",
+      "size_bytes": 6349,
+      "sha256": "a3dcfafd1cfd748df975e33114d8b6b48e5014abccf87a1fc9ddd5030f37e50a"
+    },
+    {
       "path": "research/v17c/v17c_13/run_p1_coulomb_scan.py",
       "size_bytes": 5705,
       "sha256": "7bc8ffb0dcf4e63292f9fa56ff648ff8efa95e9d374f7ee79defabe4fa7a8a5f"
+    },
+    {
+      "path": "research/v17c/v17c_13/run_p1_dop853_check.py",
+      "size_bytes": 6647,
+      "sha256": "58d68c6f4b8fb1e37843e50a4e19c93e7e8f1f145dd92364dcf5ce6b75d51329"
     },
     {
       "path": "research/v17c/v17c_13/run_p1_long_candidates.py",
@@ -225,9 +330,19 @@
       "sha256": "b4923a459d50b09d467fa84388a2277ea61fa7ace4f95fe5c062698e0af80a7b"
     },
     {
+      "path": "research/v17c/v17c_13/run_p1_rk4_refinement.py",
+      "size_bytes": 5157,
+      "sha256": "584b4fd7dc19ceea6ed4ec4ac3d4551659d2a470c10713f58371366d8d856784"
+    },
+    {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 13640,
-      "sha256": "5d551a44fdcb1173b57c18c1c8d82b9533f8143acf810a8c19de915cdf83b759"
+      "size_bytes": 13936,
+      "sha256": "0e0f0c059e77baefae49c9a827d514dd0995bc69f11c276f3220416847183b0f"
+    },
+    {
+      "path": "research/v17c/v17c_13/SPATIAL_SEPARATION_RU.md",
+      "size_bytes": 2394,
+      "sha256": "975b0779de27849f838e722914eccfbb0ffc31d922c12b59dbdaea8347b054c6"
     },
     {
       "path": "research/v17c/v17c_13/THREE_PLUS_THREE_REPRODUCTION_RU.md",

@@ -1,0 +1,577 @@
+{
+  "status": "completed",
+  "normalization": "dimensionless energy m1*R^2*Omega1^2, torque m1*R^2*Omega1^2, power per tau",
+  "note": "Force and energy summaries use stroboscopic samples every five primary RF periods; between-sample peak forces are not represented.",
+  "runs": {
+    "C_0": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 0.0,
+        "between_groups": 0.0,
+        "within_group2": 0.0,
+        "total": 0.0
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.0,
+        0.0
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0,
+      "median_ratio_each_particle": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        0.0,
+        0.0
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.0,
+        0.0
+      ],
+      "max_abs_pairwise_group_torque_closure": 0.0,
+      "integrated_group1_Coulomb_torque_trapezoid": 0.0,
+      "integrated_group1_Coulomb_power_trapezoid": 0.0,
+      "integrated_group2_Coulomb_power_trapezoid": 0.0,
+      "mean_group_Coulomb_power": [
+        0.0,
+        0.0
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8935427022979633,
+        0.8441679876392428,
+        0.19636811378647231,
+        0.19526069345909225,
+        0.1935630023721304,
+        0.8927579705695999,
+        0.1953773205281202,
+        0.1948013933677279,
+        0.19467116943674792,
+        0.19616926776685276,
+        0.19425370638084372,
+        0.19198635451395096,
+        1.2958329776874122,
+        1.2494204580265338,
+        1.3068678737459012
+      ]
+    },
+    "C_0.1": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 9.61426904797731e-07,
+        "between_groups": 1.3220427183369836e-05,
+        "within_group2": 6.681670493745182e-06,
+        "total": 2.086352458191275e-05
+      },
+      "Coulomb_potential_energy_range_total": [
+        1.807648381434649e-05,
+        2.5822431695542308e-05
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 4.184264360789772e-05,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.00015294980903606144,
+      "median_ratio_each_particle": [
+        4.8066970474502006e-05,
+        4.684863665648756e-05,
+        4.7642836338365155e-05,
+        1.0450445852342928e-05,
+        1.0435194403508637e-05,
+        1.0481592621761177e-05
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -1.7437659243165305e-07,
+        1.743765924316531e-07
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        8.477661246501094e-06,
+        8.477661246501094e-06
+      ],
+      "max_abs_pairwise_group_torque_closure": 8.470329472543003e-21,
+      "integrated_group1_Coulomb_torque_trapezoid": -0.01636355213713351,
+      "integrated_group1_Coulomb_power_trapezoid": -0.0002664219313843609,
+      "integrated_group2_Coulomb_power_trapezoid": 0.0002638583357334732,
+      "mean_group_Coulomb_power": [
+        -2.833969429439501e-09,
+        2.80151073345312e-09
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8857068335475391,
+        0.8453682133662571,
+        0.19505654532227942,
+        0.19688617253292848,
+        0.19563830816759578,
+        0.8856910865498853,
+        0.19485005817239245,
+        0.1957600839133742,
+        0.19507975773453157,
+        0.19630694311333288,
+        0.19564449449238336,
+        0.19461067006239824,
+        1.2933168188798354,
+        1.25068714483865,
+        1.3015923995766674
+      ]
+    },
+    "C_0.25": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 2.403141724272186e-06,
+        "between_groups": 3.3037678796364185e-05,
+        "within_group2": 1.6698900137705674e-05,
+        "total": 5.213972065834204e-05
+      },
+      "Coulomb_potential_energy_range_total": [
+        4.5198174055159144e-05,
+        6.439876280025706e-05
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.00010449084569372217,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.00037958380357320425,
+      "median_ratio_each_particle": [
+        0.00011738724290968238,
+        0.00011981593956026168,
+        0.00012058093546919466,
+        2.604451805348295e-05,
+        2.617685099412339e-05,
+        2.6505684606495274e-05
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -1.0665892128352672e-06,
+        1.0665892128352667e-06
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        2.1311187924164314e-05,
+        2.1311187924164318e-05
+      ],
+      "max_abs_pairwise_group_torque_closure": 2.0328790734103208e-20,
+      "integrated_group1_Coulomb_torque_trapezoid": -0.10043290609015124,
+      "integrated_group1_Coulomb_power_trapezoid": -0.0005700914894732303,
+      "integrated_group2_Coulomb_power_trapezoid": 0.0005664748173399658,
+      "mean_group_Coulomb_power": [
+        -6.0620451834538585e-09,
+        6.013061411990764e-09
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8807734121121595,
+        0.8465454593336499,
+        0.19823367214929416,
+        0.19579374906468514,
+        0.19522211560705002,
+        0.880329049360932,
+        0.19368869164588545,
+        0.1947347659691133,
+        0.1965932107369373,
+        0.19645568678788772,
+        0.1944409192879088,
+        0.19557439350745953,
+        1.2911118361951663,
+        1.250933144417062,
+        1.296261049516777
+      ]
+    },
+    "C_0.5": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 4.806856624578534e-06,
+        "between_groups": 6.604305938785278e-05,
+        "within_group2": 3.3386605207995964e-05,
+        "total": 0.0001042365212204273
+      },
+      "Coulomb_potential_energy_range_total": [
+        9.040680965746007e-05,
+        0.0001285326233949761
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.00020867096767879717,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0007624886780249262,
+      "median_ratio_each_particle": [
+        0.00024062757601571336,
+        0.0002381593959321523,
+        0.0002408103982531397,
+        5.2679482703592715e-05,
+        5.253636723158787e-05,
+        5.250288927209419e-05
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -4.356935189052023e-06,
+        4.3569351890520224e-06
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        4.27550009561503e-05,
+        4.27550009561503e-05
+      ],
+      "max_abs_pairwise_group_torque_closure": 4.0657581468206416e-20,
+      "integrated_group1_Coulomb_torque_trapezoid": -0.40968625640087464,
+      "integrated_group1_Coulomb_power_trapezoid": -0.0009627262597558903,
+      "integrated_group2_Coulomb_power_trapezoid": 0.0009417616323670614,
+      "mean_group_Coulomb_power": [
+        -1.020439629932212e-08,
+        9.898470499615156e-09
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8762911436216252,
+        0.8466654773016608,
+        0.1985910000164473,
+        0.19632681268939325,
+        0.1962651201972175,
+        0.8762418414434123,
+        0.19609974839510733,
+        0.19827569730368147,
+        0.19610878258331368,
+        0.1975190292846283,
+        0.19504594462359123,
+        0.19660770912185102,
+        1.2902744874322265,
+        1.2514078398355657,
+        1.2919211109364364
+      ]
+    },
+    "C_1": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 9.619066166639234e-06,
+        "between_groups": 0.000132224135580447,
+        "within_group2": 6.67413093346512e-05,
+        "total": 0.00020858451108173742
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.0001806855647502377,
+        0.0002554279358882645
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0004189899142493953,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0015135164761781962,
+      "median_ratio_each_particle": [
+        0.0004900702670293802,
+        0.0004895344075644115,
+        0.0004909226864917743,
+        0.00010619645693162342,
+        0.00010640048320403414,
+        0.00010689840090979587
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -1.7034670581050605e-05,
+        1.7034670581050608e-05
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        8.586203726405488e-05,
+        8.586203726405488e-05
+      ],
+      "max_abs_pairwise_group_torque_closure": 8.131516293641283e-20,
+      "integrated_group1_Coulomb_torque_trapezoid": -1.607349616802034,
+      "integrated_group1_Coulomb_power_trapezoid": -0.0011943815379289527,
+      "integrated_group2_Coulomb_power_trapezoid": 0.0011339757129393104,
+      "mean_group_Coulomb_power": [
+        -1.2707057604000374e-08,
+        1.193115222149863e-08
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8756373543544252,
+        0.8506602636109949,
+        0.19981297258312536,
+        0.1997299729075467,
+        0.19942744096664675,
+        0.8719449687794948,
+        0.19779342307410475,
+        0.19783327314901092,
+        0.19794245328020177,
+        0.20409073971248207,
+        0.20323442612596207,
+        0.20308227555762645,
+        1.2894380079045638,
+        1.2524665205175427,
+        1.28923718539638
+      ]
+    },
+    "C_2": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 1.9266488146375987e-05,
+        "between_groups": 0.00026675087652722955,
+        "within_group2": 0.00013337213290287093,
+        "total": 0.0004193894975764765
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.00036113179185717455,
+        0.0005053297229643483
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0008614556388224301,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.003004240817825238,
+      "median_ratio_each_particle": [
+        0.0011030334343414057,
+        0.0010900149915733085,
+        0.001110961889315168,
+        0.00023152403842345803,
+        0.0002285920723816867,
+        0.00022797511276799177
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -7.123414545624337e-05,
+        7.123414545624337e-05
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.0001780091442856266,
+        0.0001780091442856266
+      ],
+      "max_abs_pairwise_group_torque_closure": 1.6263032587282567e-19,
+      "integrated_group1_Coulomb_torque_trapezoid": -6.715697788861593,
+      "integrated_group1_Coulomb_power_trapezoid": 0.0007702031898610881,
+      "integrated_group2_Coulomb_power_trapezoid": -0.0009598155825134365,
+      "mean_group_Coulomb_power": [
+        8.110727363068147e-09,
+        -1.0069935155158401e-08
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8669436859242727,
+        0.8584987832497905,
+        0.2064034227655615,
+        0.20456727555427265,
+        0.20584716469983255,
+        0.8666864356444571,
+        0.2061984703561038,
+        0.20337825382627533,
+        0.20423139280537325,
+        0.20497964156117005,
+        0.2043830398420511,
+        0.2037688022667896,
+        1.2890945510182907,
+        1.2552852336457676,
+        1.2892063060594154
+      ]
+    },
+    "C_5": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 4.8088961524084465e-05,
+        "between_groups": 0.0006280849837343497,
+        "within_group2": 0.0003329114436533016,
+        "total": 0.0010090853889117358
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.0010031616622494274,
+        0.0010155917496595932
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0015768147253157373,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.0039054289483456926,
+      "median_ratio_each_particle": [
+        0.0023401645447918597,
+        0.002334567934040497,
+        0.0023424968229121875,
+        0.0005242813265241905,
+        0.0005240867105726096,
+        0.0005230773815848031
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -0.00043900281259070227,
+        0.00043900281259070227
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.00043915900528874085,
+        0.0004391590052887408
+      ],
+      "max_abs_pairwise_group_torque_closure": 2.168404344971009e-19,
+      "integrated_group1_Coulomb_torque_trapezoid": -41.37487825895676,
+      "integrated_group1_Coulomb_power_trapezoid": 0.03548916493306474,
+      "integrated_group2_Coulomb_power_trapezoid": -0.035835178890080234,
+      "mean_group_Coulomb_power": [
+        3.7627996076817984e-07,
+        -3.791331528276337e-07
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8766886481714211,
+        0.8765671901510459,
+        0.8911019301664803,
+        0.3418394680922804,
+        1.1944732042301187,
+        0.8669539662507196,
+        1.1909011119266617,
+        0.8907383402749898,
+        0.3422525134589558,
+        0.3423917919893172,
+        1.1945025062129275,
+        0.8779040105833135,
+        1.2915936848860714,
+        1.2786835550539015,
+        1.2916055555238761
+      ]
+    },
+    "C_10": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 9.556545541984059e-05,
+        "between_groups": 0.0011086103484864974,
+        "within_group2": 0.0006647426384351748,
+        "total": 0.0018689184423415126
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.0018630155721195473,
+        0.0018749121425075638
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.001853310516502251,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.004314356053087043,
+      "median_ratio_each_particle": [
+        0.0026304028644399263,
+        0.0026376512745485197,
+        0.0026311144072842484,
+        0.0007742021185562334,
+        0.0007727824285358711,
+        0.0007732481673147916
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -0.0004291242188279166,
+        0.0004291242188279166
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.00042943895168854614,
+        0.00042943895168854614
+      ],
+      "max_abs_pairwise_group_torque_closure": 2.710505431213761e-19,
+      "integrated_group1_Coulomb_torque_trapezoid": -40.44363555072511,
+      "integrated_group1_Coulomb_power_trapezoid": 0.03521786200409231,
+      "integrated_group2_Coulomb_power_trapezoid": -0.035254191619375486,
+      "mean_group_Coulomb_power": [
+        3.737771450124538e-07,
+        -3.730820763670031e-07
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8824004842356911,
+        0.8824236911053688,
+        0.7856390463177423,
+        0.4549776409721657,
+        1.2243121357422961,
+        0.8779183316109259,
+        1.2233038261249032,
+        0.7855639948118952,
+        0.4544203988673916,
+        0.45456923400389443,
+        1.2242103818023182,
+        0.7833062715569771,
+        1.293604067931619,
+        1.2902559225069237,
+        1.2936343775080152
+      ]
+    },
+    "C_20": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 0.00018953402860022662,
+        "between_groups": 0.00211085276286067,
+        "within_group2": 0.0013245130866774148,
+        "total": 0.0036248998781383116
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.00361741067421907,
+        0.0036342985065519083
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.002896022697339802,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.00642484748356321,
+      "median_ratio_each_particle": [
+        0.003975566345070591,
+        0.003971730320201513,
+        0.003962504863104645,
+        0.0013741101187831925,
+        0.001372537275432019,
+        0.001374689110608507
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -0.00041654847766166547,
+        0.0004165484776616654
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.00041736405679726674,
+        0.00041736405679726674
+      ],
+      "max_abs_pairwise_group_torque_closure": 4.336808689942018e-19,
+      "integrated_group1_Coulomb_torque_trapezoid": -39.25783158316802,
+      "integrated_group1_Coulomb_power_trapezoid": 0.03430910422748308,
+      "integrated_group2_Coulomb_power_trapezoid": -0.034325879388466235,
+      "mean_group_Coulomb_power": [
+        3.6416721371183057e-07,
+        -3.6343752158773084e-07
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.8894690844473109,
+        0.8894539391208168,
+        0.7137366713125218,
+        0.5353129459139543,
+        1.2405812418807003,
+        0.8894564159249893,
+        1.2405635369579335,
+        0.7136767116370314,
+        0.5357342150072941,
+        0.5353784192596601,
+        1.2406100069874393,
+        0.7136711498181754,
+        1.2982128786555738,
+        1.2982335081032181,
+        1.2982375241703048
+      ]
+    },
+    "C_50": {
+      "samples_every_primary_period": 5,
+      "sample_count": 3001,
+      "mean_Coulomb_potential_energy_normalized": {
+        "within_group1": 0.00046430456299791095,
+        "between_groups": 0.005134843585496806,
+        "within_group2": 0.003275728896353146,
+        "total": 0.008874877044847863
+      },
+      "Coulomb_potential_energy_range_total": [
+        0.008848212904892426,
+        0.008905440409645343
+      ],
+      "mean_Coulomb_acceleration_over_RF_acceleration_ratio": 0.006227310086294432,
+      "p95_Coulomb_acceleration_over_RF_acceleration_ratio": 0.013351172117011017,
+      "median_ratio_each_particle": [
+        0.008416877574336495,
+        0.008417334189807576,
+        0.008421433379713676,
+        0.0031383025796323048,
+        0.003141550024640397,
+        0.0031500261822831814
+      ],
+      "mean_group_Coulomb_torque_normalized": [
+        -0.00038039718336487074,
+        0.00038039718336487063
+      ],
+      "rms_group_Coulomb_torque_normalized": [
+        0.00038384020224133125,
+        0.0003838402022413313
+      ],
+      "max_abs_pairwise_group_torque_closure": 9.215718466126788e-19,
+      "integrated_group1_Coulomb_torque_trapezoid": -35.85056161835719,
+      "integrated_group1_Coulomb_power_trapezoid": 0.033255590463221504,
+      "integrated_group2_Coulomb_power_trapezoid": -0.03317697765395476,
+      "mean_group_Coulomb_power": [
+        3.5398187845469357e-07,
+        -3.499833310535453e-07
+      ],
+      "minimum_pair_distances_R_i_lt_j": [
+        0.9075044428993081,
+        0.9075416544907204,
+        0.6675461790600461,
+        0.5983237526268201,
+        1.2610675289489601,
+        0.9075207295602,
+        1.2615181746621642,
+        0.6674051128454996,
+        0.5976860213095772,
+        0.5977569066127053,
+        1.2611507614481705,
+        0.6672019132803195,
+        1.3114335022290597,
+        1.311417598929614,
+        1.3113666936416355
+      ]
+    }
+  }
+}
