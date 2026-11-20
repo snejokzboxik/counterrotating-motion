@@ -24,7 +24,7 @@ def main():
         )
     manifest = {
         "study": "V17C.10 counter-rotation basin optimization",
-        "created": "2026-11-19",
+        "created": "2026-11-20",
         "status": "P0-P5 complete through audited independent N=128 holdout of 3,584 trajectories; all computations stopped; final report and handoff complete",
         "branch": "research/v17c",
         "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",

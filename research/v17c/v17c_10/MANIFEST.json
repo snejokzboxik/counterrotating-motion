@@ -1,6 +1,6 @@
 {
   "study": "V17C.10 counter-rotation basin optimization",
-  "created": "2026-11-19",
+  "created": "2026-11-20",
   "status": "P0-P5 complete through audited independent N=128 holdout of 3,584 trajectories; all computations stopped; final report and handoff complete",
   "branch": "research/v17c",
   "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
@@ -18,7 +18,7 @@
     {
       "path": "build_manifest.py",
       "size_bytes": 1373,
-      "sha256": "ed4c00b285a26dc421b58fee157c4ea61642055a810af2608fc82ad06e60d760"
+      "sha256": "a3c9a6a93c2610eea6846b7b5d3de2266fc5edb5c3fcdfe2a77b197fd646aa95"
     },
     {
       "path": "candidate17_holdout/cfg17_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
@@ -1642,8 +1642,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 15591,
-      "sha256": "98c1bd48d0c63b6cf9db099765cfeaae20175637d489fd61af7112e43104f0ac"
+      "size_bytes": 15772,
+      "sha256": "92294f92dbbca1c5883e88c0c55db191963dc2378556ed7cd0958841febae0e3"
     },
     {
       "path": "sobol_leader_config17.json",
@@ -1652,8 +1652,8 @@
     },
     {
       "path": "V17C.10_FINAL_REPORT_RU.md",
-      "size_bytes": 16424,
-      "sha256": "cba0d385be8217d56bb8ffeae87b22c25af04269410fe9558fd00323006405e4"
+      "size_bytes": 16547,
+      "sha256": "102269d14b05244ec5c1587fdc4dd17c28d62dcbe9b87ea057d938c8af3816ef"
     },
     {
       "path": "validate_config17_matched_holdout.py",
