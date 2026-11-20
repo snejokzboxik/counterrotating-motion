@@ -202,9 +202,13 @@ def main() -> None:
             handle.write(json.dumps(row, separators=(",", ":")) + "\n")
             handle.flush(); os.fsync(handle.fileno())
             completed += 1
+            structure_groups = row["structure_after_load"].get("groups", [])
+            first_group_frequency = (structure_groups[0].get("mean_frequency_Hz")
+                                     if structure_groups else None)
+            freq_text = f"{first_group_frequency:.2f}Hz" if first_group_frequency is not None else "n/a"
             print(f"{completed}/{len(tasks)} {task_id} {row['category']} retained={row['retained']} "
                   f"turns_min={min(abs(x) for x in row['turns_each_total']):.2f} "
-                  f"freq={np.round(row['structure_after_load'].get('groups', [{}])[0].get('mean_frequency_Hz', 0), 2)}Hz "
+                  f"freq={freq_text} "
                   f"time={row['elapsed_seconds']:.1f}s", flush=True)
     meta["status"] = "complete"
     metadata_path.write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
