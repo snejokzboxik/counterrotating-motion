@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "local15_mfs_harmonics": 8,
+  "n6_unique_pairs": 15,
+  "n2_protocol_505_equivalence": {
+    "old_category": "CR_screen",
+    "new_category": "CR_screen",
+    "old_completed_periods": 15203,
+    "new_completed_periods": 15203,
+    "max_abs_final_state_difference": 5.041800310578992e-14,
+    "max_abs_turns_difference": 5.115907697472721e-13,
+    "max_abs_late_window_turns_difference": 2.3803181647963356e-13,
+    "max_abs_frequency_Hz_difference": 3.410605131648481e-12,
+    "min_pair_distance_difference": 0.0,
+    "reference_frequency_Hz": [
+      154.17354711731298,
+      -100.195650463022
+    ]
+  },
+  "checks": {
+    "pair_force_momentum_residual": 1.3552527156068805e-20,
+    "permutation_symmetry_residual": 2.710505431213761e-20,
+    "zero_coupling_coulomb_acceleration_residual": 0.0,
+    "self_interaction_terms": 0,
+    "finite_difference_potential_gradient_residual": 7.402739532480496e-11,
+    "instantaneous_energy_balance_residual": -5.126353578828804e-13,
+    "instantaneous_Lz_balance_residual": 5.551115123125783e-17,
+    "charge_and_mass_scaled_pair_coefficients": {
+      "11": -7.587572763827488e-05,
+      "12": -0.0002365780397262705,
+      "22": -8.073465580889694e-05
+    },
+    "charge_mass_scaling_residual": 8.131516293641283e-20,
+    "pair_distances_count": 15,
+    "pair_distances_initial": [
+      0.7794228634059948,
+      0.779422863405995,
+      0.2842013283596304,
+      1.025320020190128,
+      0.8343551169351917,
+      0.7794228634059948,
+      0.8343551169351915,
+      0.2842013283596304,
+      1.0253200201901278,
+      1.025320020190128,
+      0.8343551169351914,
+      0.28420132835963047,
+      1.0911920087683926,
+      1.0911920087683928,
+      1.0911920087683926
+    ],
+    "minimum_initial_surface_clearance": 0.28211132835963043,
+    "drag_power": -3.406380809242502e-05,
+    "explicit_rf_dc_power": -0.014770757764473452
+  }
+}

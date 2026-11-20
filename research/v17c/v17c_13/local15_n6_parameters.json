@@ -1,0 +1,154 @@
+{
+  "study": "V17C.13 six-particle 3+3 local15 baseline",
+  "source_repository_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+  "source_v17c11_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+  "source_config": "research/v17c/v17c_11/local15_parameters.json",
+  "field": {
+    "electrodes": 24,
+    "a_over_D": 0.05,
+    "shield_radius_over_D": 1.1,
+    "R_over_D": 0.95,
+    "f1_Hz": 100000.0,
+    "f2_Hz": 311180.29452860355,
+    "nu": 3.1118029452860356,
+    "family": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": [
+      -46,
+      -22,
+      2,
+      26,
+      -28,
+      -4,
+      20,
+      44
+    ],
+    "coeff_real_imag": [
+      [
+        0.01195544657862462,
+        -1.0842155436372173e-16
+      ],
+      [
+        0.09570557011088898,
+        -4.2872248166624126e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.03864580974495959,
+        1.7793248982720981e-16
+      ],
+      [
+        0.044100519066165626,
+        -2.0091592851606255e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.17652762769656,
+        8.03012740525487e-16
+      ],
+      [
+        0.02491992749735757,
+        2.3153021498709014e-16
+      ]
+    ]
+  },
+  "dimensionless_parameters": {
+    "order": [
+      "A",
+      "B",
+      "nu",
+      "beta",
+      "s=m1/m2",
+      "C_eff",
+      "lambda1",
+      "lambda2"
+    ],
+    "values": [
+      0.03716194907442204,
+      0.1626938199343468,
+      3.1118029452860356,
+      0.017273303124515367,
+      0.10944955727644175,
+      9.463121589050818e-06,
+      0.20975541409005094,
+      0.12617311138613094
+    ],
+    "q2_over_q1": 3.1179673274978996,
+    "m2_over_m1": 9.136629008688033,
+    "particle_radii_over_R": [
+      0.0002,
+      0.00189
+    ]
+  },
+  "three_particle_group_model": {
+    "group_1": {
+      "particles": [
+        0,
+        1,
+        2
+      ],
+      "mass_over_m1": 1.0,
+      "charge_over_q1": 1.0,
+      "radius_over_R": 0.0002,
+      "drag_lambda": 0.20975541409005094,
+      "q_over_m_factor": 1.0
+    },
+    "group_2": {
+      "particles": [
+        3,
+        4,
+        5
+      ],
+      "mass_over_m1": 9.136629008688033,
+      "charge_over_q1": 3.1179673274978996,
+      "radius_over_R": 0.00189,
+      "drag_lambda": 0.12617311138613094,
+      "q_over_m_factor": 0.34126014359705537
+    },
+    "coulomb_pair_normalization": "C_ij=C_eff*(Q_i*Q_j/(q2/q1)); acceleration_i=(m1/m_i)*C_ij*(x_i-x_j)/|x_i-x_j|^3",
+    "C_eff": 9.463121589050818e-06,
+    "pair_C_over_m1_before_inverse_mass": {
+      "11": 3.0350291055309954e-06,
+      "12": 9.463121589050818e-06,
+      "22": 2.9505703930800456e-05
+    },
+    "acceleration_pair_coefficients": {
+      "11": 3.0350291055309954e-06,
+      "12_group1": 9.463121589050818e-06,
+      "12_group2": 1.03573446837475e-06,
+      "22": 3.229386232355877e-06
+    },
+    "unique_pairs": 15
+  },
+  "dynamics": {
+    "tau": "Omega1*t",
+    "position": "r/R",
+    "velocity": "v/(R*Omega1)",
+    "energy": "E/(m1*R^2*Omega1^2)",
+    "drag_model": "linear dimensionless Stokes-form damping; hydrodynamic coupling off",
+    "finite_particle_contact": true,
+    "wall_center_radius_limit": "r_i+a_i/R <= 1",
+    "end_boundary": "abs(z_i)+a_i/R <= 2",
+    "axis_classification_rmin_over_R": 0.02
+  },
+  "protocols_to_compare": {
+    "constant": "published local15 constant field",
+    "P2_505": "best loading protocol in V17C.11 N=256 holdout; not assumed optimal for N=6",
+    "P2_353": "published protocol source 353 from P2 screen",
+    "P7_292": "published protocol source 292 from P7 screen; exact 19-vectors read from V17C.11 holdout JSON"
+  }
+}
