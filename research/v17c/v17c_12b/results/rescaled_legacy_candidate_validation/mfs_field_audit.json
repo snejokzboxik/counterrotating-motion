@@ -1,0 +1,187 @@
+{
+  "study": "V17C.12B rescaled candidates; MFS surface field over full two-phase RF torus",
+  "geometry": "V17C.5 archived 24-electrode mixed6 pattern; 2D infinite rods + grounded circular shield",
+  "source_meta_sha256": "f34ff6a354c80b49ebfba3cc957afc442b6a6f1a493895e0a9b6acfd90b1ebd3",
+  "mfs_source_sha256": "7c30838539bc7df378148c104d4056593fc9bbcf8eb6c1443b22f47c6d5c2ae8",
+  "results": {
+    "scaled_candidate52_f45hz": {
+      "voltage": {
+        "u1_electrode_peak_V": 846.2409971112463,
+        "u2_electrode_peak_V": 3506.134261257152,
+        "v2_dc_coefficient_V": 296.32937380734023,
+        "D_m": 0.010526315789473686,
+        "R_m": 0.01
+      },
+      "mfs_convergence": [
+        {
+          "p_collocation_per_rod": 24,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 512,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.667050864592712e-15,
+          "rf_only_max_surface_field_V_m_all": 10927996.491838526,
+          "rf_only_rod_max_surface_field_V_m": 10927996.491838526,
+          "rf_only_shield_max_surface_field_V_m": 7155671.079936763,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 10960748.620542001,
+          "rod_max_surface_field_ideal_DC_added_V_m": 10960748.620542001,
+          "rod_max_point_index": 12266,
+          "rod_max_electrode_index": 23,
+          "rod_max_angle_within_rod_deg": 344.8828125,
+          "shield_max_surface_field_ideal_DC_added_V_m": 7189982.9021670865,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 34311.822230323625,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 496.02685051225126,
+          "support_vs_direct_torus_max_rel_diff": 6.08836244781998e-05,
+          "rod_to_shield_voltage_bound_V": 4352.375258368398,
+          "adjacent_rod_voltage_bound_V": 3944.1808348550276,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        }
+      ]
+    },
+    "scaled_local15_f50hz": {
+      "voltage": {
+        "u1_electrode_peak_V": 696.8388016221224,
+        "u2_electrode_peak_V": 3326.29830306215,
+        "v2_dc_coefficient_V": 281.8945296286567,
+        "D_m": 0.010526315789473686,
+        "R_m": 0.01
+      },
+      "mfs_convergence": [
+        {
+          "p_collocation_per_rod": 24,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 512,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.667050864592712e-15,
+          "rf_only_max_surface_field_V_m_all": 10101988.750929173,
+          "rf_only_rod_max_surface_field_V_m": 10101988.750929173,
+          "rf_only_shield_max_surface_field_V_m": 6613951.737278265,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 10133145.452664742,
+          "rod_max_surface_field_ideal_DC_added_V_m": 10133145.452664742,
+          "rod_max_point_index": 12266,
+          "rod_max_electrode_index": 23,
+          "rod_max_angle_within_rod_deg": 344.8828125,
+          "shield_max_surface_field_ideal_DC_added_V_m": 6646592.156498426,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 32640.41922016026,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 470.08707861602306,
+          "support_vs_direct_torus_max_rel_diff": 6.236746072154916e-05,
+          "rod_to_shield_voltage_bound_V": 4023.1371046842723,
+          "adjacent_rod_voltage_bound_V": 3687.0086095145953,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        }
+      ]
+    },
+    "scaled_refine12_sobol17_f50hz": {
+      "voltage": {
+        "u1_electrode_peak_V": 602.6420186673314,
+        "u2_electrode_peak_V": 2941.0023977714923,
+        "v2_dc_coefficient_V": 231.104897087284,
+        "D_m": 0.010526315789473686,
+        "R_m": 0.01
+      },
+      "mfs_convergence": [
+        {
+          "p_collocation_per_rod": 16,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 512,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.5550683900048382e-15,
+          "rf_only_max_surface_field_V_m_all": 8910457.26856666,
+          "rf_only_rod_max_surface_field_V_m": 8910457.26856666,
+          "rf_only_shield_max_surface_field_V_m": 5824951.076509159,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8935999.9834569,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8935999.9834569,
+          "rod_max_point_index": 1599,
+          "rod_max_electrode_index": 3,
+          "rod_max_angle_within_rod_deg": 44.6484375,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5851710.59090874,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26759.51439958027,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 404.3230103906244,
+          "support_vs_direct_torus_max_rel_diff": 6.09675000444044e-05,
+          "rod_to_shield_voltage_bound_V": 3543.6444164388236,
+          "adjacent_rod_voltage_bound_V": 3252.9528613917605,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        },
+        {
+          "p_collocation_per_rod": 24,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 512,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.667050864592712e-15,
+          "rf_only_max_surface_field_V_m_all": 8898080.043944985,
+          "rf_only_rod_max_surface_field_V_m": 8898080.043944985,
+          "rf_only_shield_max_surface_field_V_m": 5825620.610840408,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8923623.165897947,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8923623.165897947,
+          "rod_max_point_index": 12266,
+          "rod_max_electrode_index": 23,
+          "rod_max_angle_within_rod_deg": 344.8828125,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5852380.125239989,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26759.51439958027,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 415.64689899235964,
+          "support_vs_direct_torus_max_rel_diff": 6.261134614085335e-05,
+          "rod_to_shield_voltage_bound_V": 3543.6444164388236,
+          "adjacent_rod_voltage_bound_V": 3252.9528613917605,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        },
+        {
+          "p_collocation_per_rod": 32,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 512,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 2.1117728819589778e-15,
+          "rf_only_max_surface_field_V_m_all": 8897624.084147181,
+          "rf_only_rod_max_surface_field_V_m": 8897624.084147181,
+          "rf_only_shield_max_surface_field_V_m": 5825634.615811852,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8923167.206100143,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8923167.206100143,
+          "rod_max_point_index": 7466,
+          "rod_max_electrode_index": 14,
+          "rod_max_angle_within_rod_deg": 209.8828125,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5852394.130211432,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26759.51439958027,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 415.32224159128964,
+          "support_vs_direct_torus_max_rel_diff": 6.256356059334824e-05,
+          "rod_to_shield_voltage_bound_V": 3543.6444164388236,
+          "adjacent_rod_voltage_bound_V": 3252.9528613917605,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Infinite 2D rods and grounded shield; no rod ends, feedthroughs, or physical DC segmentation.",
+    "RF basis fields are superposed over the independent two-phase torus.",
+    "The ideal analytic DC quadrupole is added as a near-center estimate, not solved as a conductor-boundary problem.",
+    "No independent FEM, corona, or gas-discharge model is included; this is not a breakdown clearance."
+  ]
+}

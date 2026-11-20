@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import gzip
 import json
 import math
 from collections import Counter, defaultdict
@@ -30,6 +31,25 @@ def sha(path: Path) -> str:
     return h.hexdigest()
 
 
+def trajectory_reader():
+    raw = OUT / "trajectories.jsonl"
+    archived = OUT / "trajectories.jsonl.gz"
+    if raw.exists():
+        return raw.open(encoding="utf-8")
+    return gzip.open(archived, "rt", encoding="utf-8")
+
+
+def trajectory_sha256() -> str:
+    raw = OUT / "trajectories.jsonl"
+    if raw.exists():
+        return sha(raw)
+    h = hashlib.sha256()
+    with gzip.open(OUT / "trajectories.jsonl.gz", "rb") as f:
+        for block in iter(lambda: f.read(1 << 20), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
 def main() -> None:
     meta=json.loads((OUT/"campaign_meta.json").read_text(encoding="utf-8"))
     codes=json.loads((OUT/"campaign_code_sha256.json").read_text(encoding="utf-8"))
@@ -42,7 +62,7 @@ def main() -> None:
     n=meta["starts_per_ensemble"]
     expected={(cid,g,i) for cid in configs for g in groups for i in range(n)}
     rows=[]
-    with (OUT/"trajectories.jsonl").open(encoding="utf-8") as f:
+    with trajectory_reader() as f:
         for line in f:
             if line.strip(): rows.append(json.loads(line))
     keys=[(str(r["configuration"]),str(r["ensemble"]),int(r["start_index"])) for r in rows]
@@ -137,7 +157,7 @@ def main() -> None:
         "summary_config_results_match_rows":expected_summary==summary["configuration_results"],
         "summary_candidate_ids_match_rows":candidates==summary["configurations_with_both_counterrotation_labels"],
         "summary_total_outcomes_match_rows":dict(sorted(global_outcomes.items()))==summary["outcome_counts"],
-        "trajectory_hash_matches_summary":sha(OUT/"trajectories.jsonl")==summary["trajectory_sha256"],
+        "trajectory_hash_matches_summary":trajectory_sha256()==summary["trajectory_sha256"],
         "runner_hash_matches_saved_copy":sha(ROOT/"physical_parameter_sobol_screen.py")==sha(OUT/"campaign_runner_source.py")==codes["runner_sha256"]==codes["saved_runner_sha256"],
         "integrator_hash_matches_saved_copy":sha(ROOT/"model"/"basin_scan.py")==sha(OUT/"campaign_integrator_source.py")==codes["integrator_sha256"]==codes["saved_integrator_sha256"],
         "field_hash_matches":sha(ROOT/"model"/"field_model.json")==codes["field_model_sha256"],
@@ -151,7 +171,7 @@ def main() -> None:
         "configurations_with_both_counterrotation_labels":candidates,
         "reconstructed_parameters":reconstructed,
         "interpretation":"Physical-parameter discovery screen with 3000-period preliminary labels; not a strict probability estimate or proof of absent attractors.",
-        "trajectory_sha256":sha(OUT/"trajectories.jsonl"),"audit_script_sha256":sha(Path(__file__))}
+        "trajectory_sha256":trajectory_sha256(),"audit_script_sha256":sha(Path(__file__))}
     (OUT/"independent_audit.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
     print(json.dumps({k:v for k,v in report.items() if k!="reconstructed_parameters" and k!="loss_mechanisms_by_configuration"},indent=2,ensure_ascii=False))
     if not report["integrity_pass"]: raise SystemExit(1)

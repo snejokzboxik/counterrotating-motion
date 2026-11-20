@@ -1,0 +1,6 @@
+{
+  "completed_rows": 131072,
+  "expected_rows": 131072,
+  "last_checkpoint_utc": "2026-11-20T16:47:51+00:00",
+  "elapsed_seconds_this_invocation": 4704.645660900045
+}

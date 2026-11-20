@@ -1,0 +1,36 @@
+{
+  "audit": "numerical_convergence_refine12",
+  "integrity_pass": true,
+  "checks": {
+    "all_four_integrators_present": true,
+    "all_metrics_finite": true,
+    "all_methods_same_strict_CR_label": true,
+    "all_RK4_runs_complete_horizon": true,
+    "DOP853_successful_and_full_samples": true,
+    "DOP853_archive_initial_and_phase_match": true,
+    "DOP853_post_transient_turns_reconstruct_from_raw_archive": true,
+    "RK4_64_96_128_turn_metrics_converge": true,
+    "RK4_128_and_DOP853_total_and_window_metrics_agree": true,
+    "integrator_hash_matches": true,
+    "field_hash_matches": true,
+    "source_long_horizon_summary_hash_matches": true,
+    "executed_runner_hash_matches_saved_copy": true,
+    "corrected_runner_hash_matches": true,
+    "metric_correction_hash_matches": true
+  },
+  "method_labels": {
+    "RK4_64": "STRICT_CR_PLUS_MINUS",
+    "RK4_96": "STRICT_CR_PLUS_MINUS",
+    "RK4_128": "STRICT_CR_PLUS_MINUS",
+    "DOP853": "STRICT_CR_PLUS_MINUS"
+  },
+  "max_turn_difference_RK64_vs_RK128": 0.004849440564775875,
+  "max_turn_difference_RK128_vs_DOP853": 6.091847829736707e-06,
+  "max_late_window_turn_difference_RK128_vs_DOP853": 0.02718544703924408,
+  "DOP853_trajectory_shape": [
+    12,
+    240001
+  ],
+  "trajectory_sha256": "ae0a5b15ec4f25c64e12b42662d74d4c6ec0204c773bd1f6e7d25bdce7a616cd",
+  "audit_script_sha256": "4e96cbdbbfcb9e103cc7b9731d4c8f17ee19760994047f7b11d7a03870451e16"
+}

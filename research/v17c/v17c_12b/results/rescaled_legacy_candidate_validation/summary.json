@@ -1,0 +1,185 @@
+{
+  "study": "V17C.12B frequency-rescaled legacy candidate validation",
+  "rows": 1536,
+  "expected_rows": 1536,
+  "trajectory_sha256": "b6babfc8114e68566f3ece68dbc3c4777f76b78ec5bfe266854a2a1417f5488e",
+  "meta_sha256": "f34ff6a354c80b49ebfba3cc957afc442b6a6f1a493895e0a9b6acfd90b1ebd3",
+  "configuration_results": {
+    "scaled_candidate52_f45hz": {
+      "rows": 512,
+      "CR_any_direction_of_512": 395,
+      "CR_fraction_of_512": 0.771484375,
+      "co_rotation_total": 0,
+      "escape_total": 114,
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "AXIS_AMBIGUOUS": 1,
+            "STRICT_CR_PLUS_MINUS": 111,
+            "WALL_OR_AXIAL_ESCAPE": 16
+          },
+          "CR_any_direction": 111,
+          "CR_plus_minus": 111,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 16
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 113,
+            "WALL_OR_AXIAL_ESCAPE": 15
+          },
+          "CR_any_direction": 113,
+          "CR_plus_minus": 113,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 15
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 95,
+            "WALL_OR_AXIAL_ESCAPE": 33
+          },
+          "CR_any_direction": 95,
+          "CR_plus_minus": 95,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 33
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "AXIS_AMBIGUOUS": 2,
+            "STRICT_CR_PLUS_MINUS": 76,
+            "WALL_OR_AXIAL_ESCAPE": 50
+          },
+          "CR_any_direction": 76,
+          "CR_plus_minus": 76,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 50
+        }
+      }
+    },
+    "scaled_local15_f50hz": {
+      "rows": 512,
+      "CR_any_direction_of_512": 420,
+      "CR_fraction_of_512": 0.8203125,
+      "co_rotation_total": 0,
+      "escape_total": 91,
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 113,
+            "WALL_OR_AXIAL_ESCAPE": 15
+          },
+          "CR_any_direction": 113,
+          "CR_plus_minus": 113,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 15
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 116,
+            "WALL_OR_AXIAL_ESCAPE": 12
+          },
+          "CR_any_direction": 116,
+          "CR_plus_minus": 116,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 12
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 103,
+            "WALL_OR_AXIAL_ESCAPE": 25
+          },
+          "CR_any_direction": 103,
+          "CR_plus_minus": 103,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 25
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "AXIS_AMBIGUOUS": 1,
+            "STRICT_CR_PLUS_MINUS": 88,
+            "WALL_OR_AXIAL_ESCAPE": 39
+          },
+          "CR_any_direction": 88,
+          "CR_plus_minus": 88,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 39
+        }
+      }
+    },
+    "scaled_refine12_sobol17_f50hz": {
+      "rows": 512,
+      "CR_any_direction_of_512": 437,
+      "CR_fraction_of_512": 0.853515625,
+      "co_rotation_total": 0,
+      "escape_total": 75,
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 114,
+            "WALL_OR_AXIAL_ESCAPE": 14
+          },
+          "CR_any_direction": 114,
+          "CR_plus_minus": 114,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 14
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 118,
+            "WALL_OR_AXIAL_ESCAPE": 10
+          },
+          "CR_any_direction": 118,
+          "CR_plus_minus": 118,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 10
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 108,
+            "WALL_OR_AXIAL_ESCAPE": 20
+          },
+          "CR_any_direction": 108,
+          "CR_plus_minus": 108,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 20
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 97,
+            "WALL_OR_AXIAL_ESCAPE": 31
+          },
+          "CR_any_direction": 97,
+          "CR_plus_minus": 97,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 31
+        }
+      }
+    }
+  },
+  "classification": "Fresh-start 15,000-period RK4/64 screen, strict late-window label and >=10 net turns per particle; discovery frequency only.",
+  "wall_seconds_this_invocation": 1497.9151570000686
+}

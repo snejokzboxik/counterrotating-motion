@@ -1,0 +1,249 @@
+{
+  "study": "V17C.12B RK4 step refinement and independent DOP853 check",
+  "configuration": "scaled_refine12_sobol17_f50hz",
+  "selected_start": {
+    "ensemble": "wide",
+    "start_index": 87,
+    "source_240k_turns": [
+      129.61990791303072,
+      -116.2154321676299
+    ],
+    "initial": [
+      0.00033317967430090566,
+      -0.1718643093626697,
+      0.14217114448547363,
+      0.04128662387671843,
+      -0.031581352073894835,
+      0.0192819858665468,
+      -0.5305151143426503,
+      0.024003358159902358,
+      0.23226389586925508,
+      -0.02054918165202482,
+      0.09340388584956037,
+      0.06214607417550724
+    ],
+    "phase": [
+      4.8509459600676195,
+      3.0479454624769637
+    ]
+  },
+  "integration_horizon_periods": 30000,
+  "skip_periods": 10000,
+  "dimensionless_parameters": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    0.10963763906505944,
+    9.747265456858355e-06,
+    0.24575362874758605,
+    0.17750147818833362
+  ],
+  "physical_drag_mode": "Schiller-Naumann with mean Cunningham slip correction",
+  "results": {
+    "RK4_64": {
+      "turns": [
+        21.620558719845835,
+        -19.36981162711349
+      ],
+      "window_turns": [
+        [
+          7.2215846572390685,
+          -6.452095995026174
+        ],
+        [
+          7.1725548163817265,
+          -6.459249961586764
+        ],
+        [
+          7.226419246224861,
+          -6.458465670499678
+        ]
+      ],
+      "frequency_over_rf": [
+        108.10279359922917,
+        -96.84905813556745
+      ],
+      "strict_label": "STRICT_CR_PLUS_MINUS",
+      "raw_category": "CR_screen",
+      "retained": true,
+      "completed_periods": 30000,
+      "r_min_over_R": [
+        0.17186463231684057,
+        0.5310578572518704
+      ],
+      "r_max_over_R": [
+        0.6069767569564126,
+        0.807589436753779
+      ],
+      "abs_z_max_over_R": [
+        0.338326107565492,
+        0.8540266206941102
+      ],
+      "min_pair_distance_over_R": 0.560240253785017,
+      "max_Re_by_particle": [
+        0.5154546401988898,
+        4.808944447824748
+      ]
+    },
+    "RK4_96": {
+      "turns": [
+        21.62508599006167,
+        -19.367923832295155
+      ],
+      "window_turns": [
+        [
+          7.222318140470095,
+          -6.451314354906933
+        ],
+        [
+          7.174666588891111,
+          -6.458569508225881
+        ],
+        [
+          7.228101260698664,
+          -6.458039969162757
+        ]
+      ],
+      "frequency_over_rf": [
+        108.12542995030836,
+        -96.83961916147578
+      ],
+      "strict_label": "STRICT_CR_PLUS_MINUS",
+      "raw_category": "CR_screen",
+      "retained": true,
+      "completed_periods": 30000,
+      "r_min_over_R": [
+        0.17186463231684057,
+        0.5310578572518704
+      ],
+      "r_max_over_R": [
+        0.60707117362313,
+        0.8076064219117676
+      ],
+      "abs_z_max_over_R": [
+        0.3383261223081483,
+        0.8540266586528332
+      ],
+      "min_pair_distance_over_R": 0.5602525834407359,
+      "max_Re_by_particle": [
+        0.516384890237032,
+        4.8649362794059
+      ]
+    },
+    "RK4_128": {
+      "turns": [
+        21.62540816041061,
+        -19.36779087335175
+      ],
+      "window_turns": [
+        [
+          7.222371204014761,
+          -6.451260714303285
+        ],
+        [
+          7.174824002698787,
+          -6.458521952814821
+        ],
+        [
+          7.228212953694137,
+          -6.45800820623279
+        ]
+      ],
+      "frequency_over_rf": [
+        108.12704080205306,
+        -96.83895436675876
+      ],
+      "strict_label": "STRICT_CR_PLUS_MINUS",
+      "raw_category": "CR_screen",
+      "retained": true,
+      "completed_periods": 30000,
+      "r_min_over_R": [
+        0.17186463231684057,
+        0.5310578572518704
+      ],
+      "r_max_over_R": [
+        0.6070535621484541,
+        0.8076497770466536
+      ],
+      "abs_z_max_over_R": [
+        0.3383261822799543,
+        0.8540266585008109
+      ],
+      "min_pair_distance_over_R": 0.5602549897887841,
+      "max_Re_by_particle": [
+        0.5158611252483791,
+        4.894804044382533
+      ]
+    },
+    "DOP853": {
+      "turns": [
+        21.62541425225844,
+        -19.367791599489394
+      ],
+      "window_turns": [
+        [
+          7.20513398495507,
+          -6.457614977751915
+        ],
+        [
+          7.202009449738031,
+          -6.456569085966436
+        ],
+        [
+          7.205818771902025,
+          -6.453970316462007
+        ]
+      ],
+      "frequency_over_rf": [
+        0.001081270712612922,
+        -0.0009683895799744697
+      ],
+      "strict_label": "STRICT_CR_PLUS_MINUS",
+      "r_min_over_R": [
+        0.17186463231684057,
+        0.5310578572518704
+      ],
+      "r_max_over_R": [
+        0.6055981275478516,
+        0.7999684208240777
+      ],
+      "abs_z_max_over_R": [
+        0.33831830452058126,
+        0.8540266314880746
+      ],
+      "min_pair_distance_over_R_sampled": 0.5602730407631403,
+      "success": true,
+      "nfev": 26255141,
+      "njev": 0,
+      "nlu": 0,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_over_main_rf_period": 0.015625,
+      "sample_points_per_main_rf_period": 8,
+      "turn_accounting": "post-transient only; matches RK4 skip=10000 periods",
+      "max_dimensionless_speed_sampled": [
+        0.07681570452794881,
+        0.11405564121863182
+      ],
+      "max_Re_by_particle_sampled": [
+        0.5103427681506131,
+        4.991959776092472
+      ]
+    }
+  },
+  "runtime_seconds": {
+    "RK4_all": 68.23698519996833,
+    "DOP853": 399.49333820003085
+  },
+  "interpretation": "Comparison of orbit metrics/classification for a representative long-lived trajectory; not a basin statistic.",
+  "source_hashes": {
+    "runner": "36483e2f716ee906e0ecbef6c1d8fbe8d4d555795718347674cd42e2f81e532c",
+    "integrator": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "field_model": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "source_campaign_meta": "f34ff6a354c80b49ebfba3cc957afc442b6a6f1a493895e0a9b6acfd90b1ebd3",
+    "long_horizon_summary": "924adda281eafb69aba608b99464755056ff8e552800db8f7d01b7f98d642c5a",
+    "executed_runner_sha256": "767fe579678625d81134d7b72258493b8535527300ea72c5235beb83be31cd35",
+    "metric_correction_script_sha256": "a4327b243e768dd3341ac0a150e843c953f09adf2226ed0dcda07687b8b57b09"
+  }
+}

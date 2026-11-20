@@ -1,0 +1,13 @@
+{
+  "runner_sha256": "d6360f5ca987569b5319c717d557418044b3488c7ed0c19548d50c4bfaa2041a",
+  "saved_runner_sha256": "d6360f5ca987569b5319c717d557418044b3488c7ed0c19548d50c4bfaa2041a",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "saved_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "frozen_starts_sha256": "e8b880682d73133463fb429af6d5dde496dc78eada90c0e451510c94ad98b222",
+  "workers": 11,
+  "configs": 1024,
+  "trajectories": 131072,
+  "periods": 3000,
+  "steps_per_period": 128
+}

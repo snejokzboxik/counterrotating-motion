@@ -1,0 +1,195 @@
+{
+  "study": "V17C.12B additional physical finalists fresh-start validation",
+  "rows": 1536,
+  "expected_rows": 1536,
+  "trajectory_sha256": "dad9270cd6434c146289f313e321f137133aea264a4387e883d91d1c1caeb6fd",
+  "configuration_results": {
+    "phys0352": {
+      "rows": 512,
+      "strict_CR_any_direction_of_512": 352,
+      "strict_CR_fraction_of_512": 0.6875,
+      "co_rotation_total": 0,
+      "escape_total": 160,
+      "outcome_counts": {
+        "STRICT_CR_PLUS_MINUS": 352,
+        "WALL_OR_AXIAL_ESCAPE": 160
+      },
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 102,
+            "WALL_OR_AXIAL_ESCAPE": 26
+          },
+          "counterrotation_any_direction": 102,
+          "CR_plus_minus": 102,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 26
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 104,
+            "WALL_OR_AXIAL_ESCAPE": 24
+          },
+          "counterrotation_any_direction": 104,
+          "CR_plus_minus": 104,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 24
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 89,
+            "WALL_OR_AXIAL_ESCAPE": 39
+          },
+          "counterrotation_any_direction": 89,
+          "CR_plus_minus": 89,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 39
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 57,
+            "WALL_OR_AXIAL_ESCAPE": 71
+          },
+          "counterrotation_any_direction": 57,
+          "CR_plus_minus": 57,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 71
+        }
+      }
+    },
+    "phys0109": {
+      "rows": 512,
+      "strict_CR_any_direction_of_512": 337,
+      "strict_CR_fraction_of_512": 0.658203125,
+      "co_rotation_total": 0,
+      "escape_total": 175,
+      "outcome_counts": {
+        "STRICT_CR_PLUS_MINUS": 337,
+        "WALL_OR_AXIAL_ESCAPE": 175
+      },
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 96,
+            "WALL_OR_AXIAL_ESCAPE": 32
+          },
+          "counterrotation_any_direction": 96,
+          "CR_plus_minus": 96,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 32
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 102,
+            "WALL_OR_AXIAL_ESCAPE": 26
+          },
+          "counterrotation_any_direction": 102,
+          "CR_plus_minus": 102,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 26
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 86,
+            "WALL_OR_AXIAL_ESCAPE": 42
+          },
+          "counterrotation_any_direction": 86,
+          "CR_plus_minus": 86,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 42
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 53,
+            "WALL_OR_AXIAL_ESCAPE": 75
+          },
+          "counterrotation_any_direction": 53,
+          "CR_plus_minus": 53,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 75
+        }
+      }
+    },
+    "phys0526": {
+      "rows": 512,
+      "strict_CR_any_direction_of_512": 323,
+      "strict_CR_fraction_of_512": 0.630859375,
+      "co_rotation_total": 0,
+      "escape_total": 188,
+      "outcome_counts": {
+        "AXIS_AMBIGUOUS": 1,
+        "STRICT_CR_PLUS_MINUS": 323,
+        "WALL_OR_AXIAL_ESCAPE": 188
+      },
+      "per_ensemble": {
+        "rest": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 95,
+            "WALL_OR_AXIAL_ESCAPE": 33
+          },
+          "counterrotation_any_direction": 95,
+          "CR_plus_minus": 95,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 33
+        },
+        "weak": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 99,
+            "WALL_OR_AXIAL_ESCAPE": 29
+          },
+          "counterrotation_any_direction": 99,
+          "CR_plus_minus": 99,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 29
+        },
+        "wide": {
+          "n": 128,
+          "strict_late": {
+            "AXIS_AMBIGUOUS": 1,
+            "STRICT_CR_PLUS_MINUS": 78,
+            "WALL_OR_AXIAL_ESCAPE": 49
+          },
+          "counterrotation_any_direction": 78,
+          "CR_plus_minus": 78,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 49
+        },
+        "edge": {
+          "n": 128,
+          "strict_late": {
+            "STRICT_CR_PLUS_MINUS": 51,
+            "WALL_OR_AXIAL_ESCAPE": 77
+          },
+          "counterrotation_any_direction": 51,
+          "CR_plus_minus": 51,
+          "CR_minus_plus": 0,
+          "co_rotation": 0,
+          "escape": 77
+        }
+      }
+    }
+  },
+  "classification": "Fresh-start 15000-period RK4/64; strict late label requires consistent signs in three late windows and at least 10 net turns per particle; discovery frequency only.",
+  "wall_seconds": 1196.4889272999717
+}

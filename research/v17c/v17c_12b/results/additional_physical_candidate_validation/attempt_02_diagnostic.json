@@ -1,0 +1,8 @@
+{
+  "attempt": 2,
+  "stopped_utc": "2026-11-20T19:07:24Z",
+  "session_id": 23870,
+  "saved_trajectory_rows": 0,
+  "integrated_calls_without_saved_rows": 128,
+  "reason": "The warmed integrator completed its first bounded 128-task batch, but each task then raised AttributeError because the runner called classify.provisional while the tested API is base.provisional. The thread pool drained the submitted batch before exiting; no trajectory row was persisted. The fixed candidates, frozen starts, and numerical integrator are unchanged. This attempt source, metadata, and code hashes are preserved alongside the diagnostic."
+}

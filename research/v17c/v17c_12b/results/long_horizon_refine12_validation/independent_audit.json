@@ -1,0 +1,37 @@
+{
+  "audit": "long_horizon_refine12_validation",
+  "integrity_pass": true,
+  "checks": {
+    "expected_and_unique_keys": true,
+    "selected_starts_match_source_and_frozen_arrays": true,
+    "rows_match_15000_period_CR_source": true,
+    "all_rows_complete_full_horizon_and_match_start_phase": true,
+    "ensemble_outcomes_reconstruct_summary": true,
+    "long_horizon_counts_reconstruct_summary": true,
+    "trajectory_hash_matches_summary": true,
+    "source_trajectory_hash_matches": true,
+    "integrator_hash_matches_saved_source": true,
+    "field_hash_matches": true,
+    "runner_hash_matches_saved_source": true
+  },
+  "rows": 32,
+  "unique_keys": 32,
+  "outcomes_by_ensemble": {
+    "rest": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "weak": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "wide": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "edge": {
+      "STRICT_CR_PLUS_MINUS": 8
+    }
+  },
+  "long_horizon_CR_at_100_turns": 0,
+  "trajectories_at_100_turns": 0,
+  "trajectory_sha256": "8eed7b181981e0c511be4b5bba6ff1186200d8a452dc0b08033d59b7b63c3ef8",
+  "audit_script_sha256": "7912539d33440be5c18299b1f9b5489fff8986b65785eb7006ed4f18bcfdaa49"
+}

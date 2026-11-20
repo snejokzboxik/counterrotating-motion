@@ -1,0 +1,29 @@
+{
+  "study": "V17C.12B 120000-period representative persistence check",
+  "rows": 32,
+  "expected_rows": 32,
+  "trajectory_sha256": "8eed7b181981e0c511be4b5bba6ff1186200d8a452dc0b08033d59b7b63c3ef8",
+  "outcomes_by_ensemble": {
+    "rest": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "weak": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "wide": {
+      "STRICT_CR_PLUS_MINUS": 8
+    },
+    "edge": {
+      "STRICT_CR_PLUS_MINUS": 8
+    }
+  },
+  "long_horizon_CR_count": 0,
+  "long_horizon_CR_fraction_of_selected": 0.0,
+  "at_least_100_turns_per_particle_count": 0,
+  "retained_full_horizon_count": 32,
+  "median_min_abs_turns": 58.10496146652757,
+  "wall_seconds": 291.40481269999873,
+  "interpretation": "Selected trajectories conditional on a 15000-period strict CR result; persistence check, not basin probability.",
+  "runner_sha256": "4a7d33f5c7f56a14e6549f8a8c1d55aa8db6525a0d9dd662576c8f5247773e65",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f"
+}

@@ -1,0 +1,93 @@
+{
+  "study": "independent linear P1 FEM RF surface-field cross-check for three rescaled candidates",
+  "geometry": "24 circular rods a/D=0.05, center radius D, grounded circular shield 1.10D; infinite 2-D rods",
+  "phase_maximum": "support-function maximum over the two independent RF phases",
+  "dc": "Excluded; ideal quadrupole coefficient is not a solved electrode-boundary potential.",
+  "source_hashes": {
+    "fem": "e49ad029cf16c502e798f298b338ac131d48b4eb01941a0badb4bebb768b4952",
+    "field_model": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "campaign_meta": "f34ff6a354c80b49ebfba3cc957afc442b6a6f1a493895e0a9b6acfd90b1ebd3"
+  },
+  "refinement": [
+    {
+      "hmin_over_D": 0.01,
+      "nodes": 43570,
+      "triangles": 85814,
+      "surface_adjacent_triangles": 6992,
+      "boundary_dofs": 1372,
+      "rods_vs_shield_gap_elements_min_approx": 5.0,
+      "candidate_fields": {
+        "scaled_candidate52_f45hz": {
+          "rf_only_surface_max_V_m": 10440873.771011079,
+          "mfs_rf_only_surface_max_V_m": 10927996.491838526,
+          "relative_to_candidate_mfs": -0.0445756659229577
+        },
+        "scaled_local15_f50hz": {
+          "rf_only_surface_max_V_m": 9651691.697631357,
+          "mfs_rf_only_surface_max_V_m": 10101988.750929173,
+          "relative_to_candidate_mfs": -0.0445750895591126
+        },
+        "scaled_refine12_sobol17_f50hz": {
+          "rf_only_surface_max_V_m": 8501448.088981774,
+          "mfs_rf_only_surface_max_V_m": 8910457.26856666,
+          "relative_to_candidate_mfs": -0.0459021537567712
+        }
+      }
+    },
+    {
+      "hmin_over_D": 0.005,
+      "nodes": 171526,
+      "triangles": 340478,
+      "surface_adjacent_triangles": 12901,
+      "boundary_dofs": 2620,
+      "rods_vs_shield_gap_elements_min_approx": 10.0,
+      "candidate_fields": {
+        "scaled_candidate52_f45hz": {
+          "rf_only_surface_max_V_m": 10744412.854590653,
+          "mfs_rf_only_surface_max_V_m": 10927996.491838526,
+          "relative_to_candidate_mfs": -0.0167993865467454
+        },
+        "scaled_local15_f50hz": {
+          "rf_only_surface_max_V_m": 9932282.189715657,
+          "mfs_rf_only_surface_max_V_m": 10101988.750929173,
+          "relative_to_candidate_mfs": -0.01679932193528788
+        },
+        "scaled_refine12_sobol17_f50hz": {
+          "rf_only_surface_max_V_m": 8748598.417866971,
+          "mfs_rf_only_surface_max_V_m": 8910457.26856666,
+          "relative_to_candidate_mfs": -0.018165044264414676
+        }
+      }
+    },
+    {
+      "hmin_over_D": 0.0025,
+      "nodes": 643988,
+      "triangles": 1283234,
+      "surface_adjacent_triangles": 23655,
+      "boundary_dofs": 4788,
+      "rods_vs_shield_gap_elements_min_approx": 20.0,
+      "candidate_fields": {
+        "scaled_candidate52_f45hz": {
+          "rf_only_surface_max_V_m": 10818909.398548221,
+          "mfs_rf_only_surface_max_V_m": 10927996.491838526,
+          "relative_to_candidate_mfs": -0.00998235068722575
+        },
+        "scaled_local15_f50hz": {
+          "rf_only_surface_max_V_m": 10001147.946272295,
+          "mfs_rf_only_surface_max_V_m": 10101988.750929173,
+          "relative_to_candidate_mfs": -0.00998227251516226
+        },
+        "scaled_refine12_sobol17_f50hz": {
+          "rf_only_surface_max_V_m": 8809257.087149592,
+          "mfs_rf_only_surface_max_V_m": 8910457.26856666,
+          "relative_to_candidate_mfs": -0.011357462178071542
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "P1 FEM gradients are piecewise constant and tend to under-resolve conductor-surface maxima.",
+    "No finite axial ends, DC segmentation, feedthroughs, roughness, corona, or gas-breakdown model.",
+    "Field maxima are screening results, not a certified electrical-strength margin."
+  ]
+}

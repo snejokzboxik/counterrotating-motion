@@ -1,0 +1,39 @@
+{
+  "correction": "DOP853 total turns originally included the first 10000 transient RF periods, while RK4 turn totals excluded them.",
+  "trajectory_reintegrated": false,
+  "raw_DOP853_trajectory_sha256": "ae0a5b15ec4f25c64e12b42662d74d4c6ec0204c773bd1f6e7d25bdce7a616cd",
+  "previous_DOP853_turns_including_transient": [
+    32.49309872011451,
+    -29.14849776049723
+  ],
+  "corrected_post_transient_DOP853_turns": [
+    21.62541425225844,
+    -19.367791599489394
+  ],
+  "corrected_post_transient_frequencies_over_rf": [
+    0.001081270712612922,
+    -0.0009683895799744697
+  ],
+  "sampled_max_Re_by_particle": [
+    0.5103427681506131,
+    4.991959776092472
+  ],
+  "window_turns_unchanged": [
+    [
+      7.20513398495507,
+      -6.457614977751915
+    ],
+    [
+      7.202009449738031,
+      -6.456569085966436
+    ],
+    [
+      7.205818771902025,
+      -6.453970316462007
+    ]
+  ],
+  "strict_label_after_correction": "STRICT_CR_PLUS_MINUS",
+  "executed_runner_sha256": "767fe579678625d81134d7b72258493b8535527300ea72c5235beb83be31cd35",
+  "corrected_runner_sha256": "36483e2f716ee906e0ecbef6c1d8fbe8d4d555795718347674cd42e2f81e532c",
+  "correction_script_sha256": "a4327b243e768dd3341ac0a150e843c953f09adf2226ed0dcda07687b8b57b09"
+}

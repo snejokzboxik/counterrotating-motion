@@ -1,0 +1,9 @@
+{
+  "source": "trajectories.jsonl",
+  "archive": "trajectories.jsonl.gz",
+  "uncompressed_bytes": 142847330,
+  "compressed_bytes": 44019821,
+  "uncompressed_sha256": "78f33caf84f3b5bca30e1a4e17142707079da6df7d7b69bd806048577dc81cdb",
+  "compressed_sha256": "744342901f7eded55579fc9c59c657c82a01decaa16d1e53fb3a30acde5d712c",
+  "compression": "gzip level 9; lossless"
+}

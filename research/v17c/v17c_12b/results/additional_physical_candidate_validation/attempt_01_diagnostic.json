@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "stopped_utc": "2026-11-20T19:04:01Z",
+  "session_id": 5795,
+  "completed_trajectory_rows": 0,
+  "trajectory_file_bytes_at_stop": 0,
+  "reason": "The run produced no rows before interruption. Source audit found that unlike the preceding successful validation runners, this runner did not warm the Numba integrator serially before starting 11 worker threads. The runner has been corrected to warm once and dispatch bounded 128-task batches; the fixed candidates and frozen start panel remain unchanged.",
+  "results_retained": true
+}

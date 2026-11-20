@@ -1,0 +1,25 @@
+{
+  "audit": "rescaled_candidate_field_audit",
+  "integrity_pass": true,
+  "checks": {
+    "all_three_candidates_present_in_MFS_and_FEM": true,
+    "MFS_refine12_order_converges_24_to_32": true,
+    "MFS_direct_phase_torus_check_within_1e-4": true,
+    "FEM_refine12_monotonic_mesh_convergence": true,
+    "FEM_fine_mesh_within_2pct_of_MFS": true,
+    "MFS_source_hash_matches": true,
+    "FEM_source_hash_matches": true,
+    "field_model_hashes_match": true
+  },
+  "mfs_refine12_max_V_m": 8897624.084147181,
+  "fem_refine12_refinement_V_m": [
+    8501448.088981774,
+    8748598.417866971,
+    8809257.087149592
+  ],
+  "fem_fine_relative_to_mfs": -0.009931527356278447,
+  "scope": "Independent numerical cross-check of 2-D RF-only conductor-boundary maxima; not a discharge/breakdown assessment.",
+  "mfs_artifact_sha256": "e18ba41efa3f9479c6a76dc4001f3740fed04d2c86c5f6780d07c00fc3d17636",
+  "fem_artifact_sha256": "6ec915a0364e19c95f849f39397239a9de86ca520eecad5671bee9c52e6adfc1",
+  "audit_script_sha256": "c8b76b05c5433da25314f43f6c4bdf2750aafe67d070e833f02edff251688d82"
+}
