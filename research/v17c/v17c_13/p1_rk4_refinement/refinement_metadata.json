@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "source_start": "P2_505_angle0_phase0",
+  "resolutions_steps_per_period": [
+    64,
+    128,
+    256
+  ],
+  "post_load_periods": 15000,
+  "workers": 3,
+  "phase_rad": [
+    0.0,
+    0.0
+  ],
+  "purpose": "full-horizon convergence of mean frequency, structure, and integrated energy balance"
+}

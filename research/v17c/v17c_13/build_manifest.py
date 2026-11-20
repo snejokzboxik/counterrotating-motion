@@ -34,7 +34,7 @@ def main() -> None:
         "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
         "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
         "branch": "research/v17c-crystals",
-        "status": "P0 validated; P1 has 6 finite-horizon ordered crystal candidates; P4 ten-point C continuation brackets corotation transition between 2 and 5 C0; four initial and four post-formation perturbation tests complete; RK4 full-horizon refinement and independent DOP853 pending",
+        "status": "P0 validated; finite-horizon ordered 3+3 crystal candidate; C continuation and 8 perturbation tests complete; full-horizon RK4/64-256 refinement and independent late-segment DOP853 passed; basin statistics and physical feasibility remain open",
         "outputs": [item(p) for p in outputs],
         "fixed_sources": [item(ROOT / p) for p in SOURCES],
     }

@@ -2,7 +2,7 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 validated; P1 has 6 finite-horizon ordered crystal candidates; P4 ten-point C continuation brackets corotation transition between 2 and 5 C0; four initial and four post-formation perturbation tests complete; RK4 full-horizon refinement and independent DOP853 pending",
+  "status": "P0 validated; finite-horizon ordered 3+3 crystal candidate; C continuation and 8 perturbation tests complete; full-horizon RK4/64-256 refinement and independent late-segment DOP853 passed; basin statistics and physical feasibility remain open",
   "outputs": [
     {
       "path": "research/v17c/v17c_13/analyze_p1_coulomb_work.py",
@@ -20,14 +20,19 @@
       "sha256": "4c50f55fe8a934516c7cc027fe24d6c27b261d8c4446d23c23775fee8e479d26"
     },
     {
+      "path": "research/v17c/v17c_13/audit_p1_numerical_validation.py",
+      "size_bytes": 6320,
+      "sha256": "dcc4a46ad214a8f86d98afe821c04d0a0dc782a5398313f781b19b97063a3d77"
+    },
+    {
       "path": "research/v17c/v17c_13/audit_p1_perturbations.py",
       "size_bytes": 3810,
       "sha256": "bec6185038b5eee4fd16f6a04f7891777345737842b5788c6edd8884153dcf16"
     },
     {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1990,
-      "sha256": "035a083f6a482a82a85fa574b58ded316cfd6176197ebed5e0858fdf1357cc75"
+      "size_bytes": 1963,
+      "sha256": "46bba4907ff046956920f999ed004a880c9609d8cdb7e085cbda000d3d5cfd4c"
     },
     {
       "path": "research/v17c/v17c_13/COLLECTIVE_STABILITY_RU.md",
@@ -53,6 +58,11 @@
       "path": "research/v17c/v17c_13/nbody_dynamics.py",
       "size_bytes": 21033,
       "sha256": "86dea5423c19bdbae195776f3d0fbfccc56d08950ace3749c13a4a7809df39c3"
+    },
+    {
+      "path": "research/v17c/v17c_13/NUMERICAL_VALIDATION_RU.md",
+      "size_bytes": 6430,
+      "sha256": "f6676638a629b0f3e51ad90ed67d2a0d9c3987d4ff6c3358016e68ead8f20ddd"
     },
     {
       "path": "research/v17c/v17c_13/p0_nbody_validation.json",
@@ -165,6 +175,16 @@
       "sha256": "562f53f69e89374e07cd8479a9c26c461e1e2e9a7981d536612d6fa5ef71617d"
     },
     {
+      "path": "research/v17c/v17c_13/p1_dop853/dop853_late_segment.npz",
+      "size_bytes": 1193374,
+      "sha256": "772c692042c5107ee29420a6e07bdfe737bf15859dd8891d59811f9125edb863"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_dop853/dop853_summary.json",
+      "size_bytes": 2659,
+      "sha256": "cd8c56b7ad76c3459f08744ce7a16792e904b6bfe7129c2e2b1f6b109318c1b9"
+    },
+    {
       "path": "research/v17c/v17c_13/p1_energy_balance_validation.json",
       "size_bytes": 2199,
       "sha256": "48af93cc7fac5393075998a2cbc85a37e05096687983dffae982b77a381c82f2"
@@ -228,6 +248,16 @@
       "path": "research/v17c/v17c_13/P1_LONG_TRAJECTORY_VIEWS.png",
       "size_bytes": 254076,
       "sha256": "43a4c64f610727b167e722bdb0a94de8dcbc2a5840817cec0734398af9e2fced"
+    },
+    {
+      "path": "research/v17c/v17c_13/P1_NUMERICAL_CONVERGENCE.png",
+      "size_bytes": 157346,
+      "sha256": "fd71ac70996fb5a8621c27ace594394ab9bd6effbe61b360bed2ba089faa2e8f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_numerical_validation_audit.json",
+      "size_bytes": 3355,
+      "sha256": "ec299b7c4409011c1f179fe361fae5cb37bff24ecd02734103c0a93da9e266ba"
     },
     {
       "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle0_phase0_trajectory.npz",
@@ -360,6 +390,31 @@
       "sha256": "b7fe54fbd555e4fcfa969364eb3e8c2061a0a4b3e48290d953f2cdcfdafe5d74"
     },
     {
+      "path": "research/v17c/v17c_13/p1_rk4_refinement/refinement_metadata.json",
+      "size_bytes": 337,
+      "sha256": "db54cb8a6bb95391e9a3057e7f9e851f4e8000b1eb1d77fb825c107a3aed7015"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_rk4_refinement/refinement_runs.jsonl",
+      "size_bytes": 13073,
+      "sha256": "101592625b4872a780658f6e22ee9846399297aba1ea7b703f62d098a66b3143"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_rk4_refinement/steps_128_trajectory.npz",
+      "size_bytes": 4560353,
+      "sha256": "d22ef28576f5a34ffe0c49a2577ba2140cd503d89f6b91ea01be8081e5fb9d99"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_rk4_refinement/steps_256_trajectory.npz",
+      "size_bytes": 4555210,
+      "sha256": "83ecdc60e205f40673dd48004112f6b5460dae85bd8a4fe0f9722bb000aa6093"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_rk4_refinement/steps_64_trajectory.npz",
+      "size_bytes": 4561401,
+      "sha256": "eb383f8004b70a187f503296d3032becaa3c3880505c6ef7c23b706e804294f0"
+    },
+    {
       "path": "research/v17c/v17c_13/PHASE_SYNCHRONIZATION_RU.md",
       "size_bytes": 4296,
       "sha256": "052eec360dc1fa8f5ae468e1d08a24693a014f84d8174b7113cc08bb3063f668"
@@ -375,14 +430,19 @@
       "sha256": "e36b18c946410ca2f253a5e69a638483d901bb86715503b5d27a4db8b1af3d66"
     },
     {
+      "path": "research/v17c/v17c_13/plot_p1_numerical_convergence.py",
+      "size_bytes": 2923,
+      "sha256": "5229403ddbd2a99512e1660d1833a2bc8429ea43aaf39171a41ebcd71d5f1d5e"
+    },
+    {
       "path": "research/v17c/v17c_13/plot_p1_postformation_perturbation.py",
       "size_bytes": 2822,
       "sha256": "d3e9a256ac39f68865f68356b28d532c6916deed92a0f8627709ffbac92505f9"
     },
     {
       "path": "research/v17c/v17c_13/REPORT_RU.md",
-      "size_bytes": 13438,
-      "sha256": "78ec1d3b0cac0c00fe580b2dab494dbc2bd4ffdf50d215bf5c13055e6bb80d37"
+      "size_bytes": 14272,
+      "sha256": "b21226b2e268fb6e77ee0f70ae94eec24526a732ad24fdc391376fe32d5551ff"
     },
     {
       "path": "research/v17c/v17c_13/run_ordered_pilot.py",
@@ -421,8 +481,8 @@
     },
     {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 15842,
-      "sha256": "be19330f6b526c419ed24bdf6b743635f1131d5d23006b7e54e81cc41486abf7"
+      "size_bytes": 16222,
+      "sha256": "ab88636f17acefe42276244085c04d7fa9bed887f970c94909d674d20dcc14f7"
     },
     {
       "path": "research/v17c/v17c_13/SPATIAL_SEPARATION_RU.md",

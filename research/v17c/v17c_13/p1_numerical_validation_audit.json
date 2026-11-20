@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "rk4_full_horizon": {
+    "post_load_periods": 15000,
+    "resolutions_steps_per_period": [
+      64,
+      128,
+      256
+    ],
+    "all_six_retained_at_each_resolution": true,
+    "counterrotation_in_three_late_windows_at_each_resolution": true,
+    "minimum_turns_over_all_particles_by_resolution": {
+      "64": 14.991497596006761,
+      "128": 14.988592371160298,
+      "256": 14.98855485148715
+    },
+    "mean_frequency_Hz_by_group": {
+      "64": [
+        149.95146461105324,
+        -99.97004004170431
+      ],
+      "128": [
+        149.97916964411584,
+        -99.95077306092469
+      ],
+      "256": [
+        149.97933698341765,
+        -99.95052413504645
+      ]
+    },
+    "max_abs_frequency_change_128_to_256_Hz": 0.0002489258782389925,
+    "mean_radius_R_by_group": {
+      "64": [
+        0.5480423525605131,
+        0.7660823950361529
+      ],
+      "128": [
+        0.5480346679794481,
+        0.7660726812581732
+      ],
+      "256": [
+        0.5480341953917901,
+        0.7660720736202783
+      ]
+    },
+    "mean_Psi3_by_group": {
+      "64": [
+        0.9870874966788283,
+        0.9975192336641143
+      ],
+      "128": [
+        0.9870891905321524,
+        0.997519020247752
+      ],
+      "256": [
+        0.9870892118791702,
+        0.9975190186678367
+      ]
+    },
+    "global_minimum_pair_distance_R_by_resolution": {
+      "64": 0.14989098560032887,
+      "128": 0.1498953274647809,
+      "256": 0.14989776405734817
+    },
+    "relative_energy_residual_by_resolution": {
+      "64": 2.6518637018756096e-05,
+      "128": 6.117707049393659e-06,
+      "256": 5.211095722894031e-07
+    },
+    "integrated_energy_residual_decreases_with_refinement": true
+  },
+  "independent_dop853_late_segment": {
+    "status": "passed",
+    "segment_primary_periods": 3000,
+    "nfev": 3465017,
+    "rtol": 1e-11,
+    "atol": 1e-12,
+    "max_step_tau": 0.06544984694978735,
+    "independent_rhs_max_abs_difference_at_start": 5.551115123125783e-17,
+    "max_abs_state_difference_over_segment": 0.00045166043795372146,
+    "max_abs_frequency_difference_Hz": 0.0024886815114086858,
+    "rk4_late_mean_frequency_Hz_by_group": [
+      149.3596353544295,
+      -99.9177248100775
+    ],
+    "dop853_late_mean_frequency_Hz_by_group": [
+      149.36173524812898,
+      -99.91594843895683
+    ],
+    "dop853_turns_each_over_late_segment": [
+      4.479716508860912,
+      4.485106753043099,
+      4.477732910427595,
+      -2.9995439372413895,
+      -2.993052740580443,
+      -2.99983868168428
+    ],
+    "dop853_mean_radius_R_by_particle": [
+      0.5479528942019537,
+      0.5480401193041033,
+      0.5481055557847594,
+      0.7660744705553524,
+      0.7660604907338094,
+      0.7660725340806689
+    ],
+    "dop853_mean_Psi3_by_group": [
+      0.9876722346177922,
+      0.9981734626038357
+    ]
+  },
+  "limitations": [
+    "DOP853 independently checks only a late 3000-period segment, not the whole 15000-period horizon.",
+    "The full-horizon RK4 frequency statistics are converged at 128/256 steps; RK4/64 shows a visible finite-step frequency bias.",
+    "The DOP853 comparison begins from the same saved RK4/96 state, so it validates local continuation rather than independent loading history."
+  ]
+}
