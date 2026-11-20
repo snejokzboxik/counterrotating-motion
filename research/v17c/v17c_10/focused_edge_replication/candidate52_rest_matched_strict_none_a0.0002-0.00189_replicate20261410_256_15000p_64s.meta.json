@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 36,
+  "candidate_label": "candidate52_anchor",
+  "source": "P0 training anchor config 64",
+  "parameters": [
+    0.03956095746691348,
+    0.15032976498886072,
+    2.8996277751401065,
+    0.015917322789905167,
+    0.11307613545330587,
+    9.281679945656495e-06,
+    0.1868668374144136,
+    0.10359181855828002
+  ],
+  "qratio": 3.5274259874597194,
+  "ensemble": "rest",
+  "n": 256,
+  "seed": 20261410,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\focused_edge_replication\\replication_starts\\rest_N256_seed20261410.npz",
+  "frozen_start_sha256": "6ef145d443c316c624f7bc9f5fa431fa3f9a8ddeeeb88ef2a6d95d379e8109ca",
+  "candidate_source": "V17C.10 independent P3 replication",
+  "run_tag": "replicate20261410",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "49dffd878af538b710109f77f43d8ea28679e810365ed4fc8e19ca11dea42a85"
+}

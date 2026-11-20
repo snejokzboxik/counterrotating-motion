@@ -1,7 +1,7 @@
 {
   "study": "V17C.10 counter-rotation basin optimization",
   "created": "2026-11-19",
-  "status": "P0-P3 complete through fresh N=128 strict matched holdout; independent N=256 replication underway",
+  "status": "P0-P3 complete through independent N=256 strict matched replication; 96-step convergence check pending",
   "branch": "research/v17c",
   "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
   "files": [
@@ -17,8 +17,8 @@
     },
     {
       "path": "build_manifest.py",
-      "size_bytes": 1331,
-      "sha256": "8cc29a08fb58caf7b89471e872c8647dbdc8ccfb5e7f97f82ccbc62ef1e57955"
+      "size_bytes": 1336,
+      "sha256": "4d04ecb70162ebb2f568c2e91fa13103cd44ba75e21a353bf56f182cde0720c5"
     },
     {
       "path": "candidate17_holdout/cfg17_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
@@ -184,6 +184,156 @@
       "path": "failure_maps_candidate52.png",
       "size_bytes": 496649,
       "sha256": "7e1baf6af7e232651c580edde6af533ae1a2b0b477fa13f4a7248f2c440a65c4"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 314728,
+      "sha256": "30b254c57a7529c0394535966422ba8cdf6075a036da9017876592a9c74faaf7"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1068,
+      "sha256": "da7646132db521b50b9c89cdd7ab20726fb2c3db5ccde1d0df9353002d0fe026"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 296001,
+      "sha256": "f217c42f881945428d11e19af08e9fae5b54293c1f20df865e9c85a71d9c8a10"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1068,
+      "sha256": "22651d7cc24eb310c6270002a88e4f97e243431833f15017e8a339c30c3caf61"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 323122,
+      "sha256": "5be0f546240f7fc157feffb6685156a2652da38906cfd5175c7a717f5beeb9ac"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1068,
+      "sha256": "a2ef9fe27898a5799af29e7d10347bbe70a2d006b2e8aec77227789ca97ac515"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 318017,
+      "sha256": "2d31f71a54baa84c8f066e48b0eeb700345526770edb7ccd43a27079e7c70786"
+    },
+    {
+      "path": "focused_edge_replication/candidate52_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1068,
+      "sha256": "8de4f92774ee9144362cd26c20034ae504acb770f8149eb2e74d5d6874cebbf0"
+    },
+    {
+      "path": "focused_edge_replication/local06_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 315098,
+      "sha256": "93b0e78cbb1ef155c3a8a734aa74588accae874926279d66856c3211c16172a8"
+    },
+    {
+      "path": "focused_edge_replication/local06_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1091,
+      "sha256": "1eb289f63c263f4c6b443f7ae8cb1d55b4d6cc56ae5f034fbce8bcf484a0f38f"
+    },
+    {
+      "path": "focused_edge_replication/local06_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 296000,
+      "sha256": "71f8bf975d6bda7de7a333be9c31e4e6b72eecdad9472103964757c8d3081a72"
+    },
+    {
+      "path": "focused_edge_replication/local06_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1091,
+      "sha256": "5a545878f57e8dadfc52f48906ac35145ac35b299053f26e3a150cb80f8be946"
+    },
+    {
+      "path": "focused_edge_replication/local06_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 322755,
+      "sha256": "5e07c4b46d927438ecab6e4d84b697c1f2a8ba096d336bddf00b7103beace73c"
+    },
+    {
+      "path": "focused_edge_replication/local06_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1091,
+      "sha256": "66f442ea0787fc0d7f927cd10f91c0802c6dc96e1d85a82b3a2b41a29a4a37e4"
+    },
+    {
+      "path": "focused_edge_replication/local06_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 318442,
+      "sha256": "930053258032f8244829af41527e69fdb8cb383b4dc0f421d628de88978ce01f"
+    },
+    {
+      "path": "focused_edge_replication/local06_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1091,
+      "sha256": "ac0198912b2ef036a5ef1dcb65babc271a0deb1133d09a8b55d14f8ef0d84d3a"
+    },
+    {
+      "path": "focused_edge_replication/local15_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 316287,
+      "sha256": "d7e3107f40e8c7b6bd0a9bdc762eb17453fccf574ce328a014b6ac5170b616b6"
+    },
+    {
+      "path": "focused_edge_replication/local15_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1094,
+      "sha256": "b17d2cf529f2c324d5e1ec34141cbd8cd5ff7413368da99429496b24c9eb01d5"
+    },
+    {
+      "path": "focused_edge_replication/local15_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 296089,
+      "sha256": "6f322bc6a3522494471432bc7b68a61a5b832f83389cb1263a293c80b0b37093"
+    },
+    {
+      "path": "focused_edge_replication/local15_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1094,
+      "sha256": "ccaf1cbcee8b75e98ed0093a082393a89b943275997d2c9842d8216810cc06ab"
+    },
+    {
+      "path": "focused_edge_replication/local15_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 323036,
+      "sha256": "95f54466fa68754d7cc4ce46c3eb5bdc657bda1826ee514f600a91cba6417a80"
+    },
+    {
+      "path": "focused_edge_replication/local15_weak_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1094,
+      "sha256": "cd0871957eec242247cbbadcef6b3ebc242db57d0c6cd58e3728250311a03283"
+    },
+    {
+      "path": "focused_edge_replication/local15_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
+      "size_bytes": 319098,
+      "sha256": "893c5324ee100de6c541ca8b68f7d8c7b76f04263eb12cbbdd63151302b150f5"
+    },
+    {
+      "path": "focused_edge_replication/local15_wide_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1094,
+      "sha256": "0e264dcdf399622de2c2f9d06389eca4ec145f59231cd8099a3b0d6b3ad0b0fe"
+    },
+    {
+      "path": "focused_edge_replication/replication_starts/edge_N256_seed20261413.npz",
+      "size_bytes": 27343,
+      "sha256": "021f87b4d5c62ac5775b29e72c77a06832b733359d10b26da60644b5065a6c1d"
+    },
+    {
+      "path": "focused_edge_replication/replication_starts/rest_N256_seed20261410.npz",
+      "size_bytes": 15860,
+      "sha256": "6ef145d443c316c624f7bc9f5fa431fa3f9a8ddeeeb88ef2a6d95d379e8109ca"
+    },
+    {
+      "path": "focused_edge_replication/replication_starts/weak_N256_seed20261411.npz",
+      "size_bytes": 27210,
+      "sha256": "53fa0e53fef421a9fa85191c0563458f91c5590d9adb83eacee79b14a76e4ed5"
+    },
+    {
+      "path": "focused_edge_replication/replication_starts/wide_N256_seed20261412.npz",
+      "size_bytes": 27366,
+      "sha256": "32ee8f6155416e79ba5994fbc7e2d1707a2e22faefa61c83db46e86b0d17d7d7"
+    },
+    {
+      "path": "focused_edge_replication/replication_validation_summary.json",
+      "size_bytes": 14251,
+      "sha256": "4c8d409c468cd7e9cfc5c42b767013a2e4c1162b61a86055b37da029e0cf9655"
+    },
+    {
+      "path": "FOCUSED_EDGE_REPLICATION_RU.md",
+      "size_bytes": 6110,
+      "sha256": "642acba7ebf07aefe3c9f58aac5b00e71aa61d8fbbf601e96a9edab912f3ae3e"
     },
     {
       "path": "focused_edge_screen/configurations_and_training_starts.npz",
@@ -481,6 +631,11 @@
       "sha256": "98dd410f793383aab7077d47253226343680bdefdc6bd17b6e0ba4bafdc28a01"
     },
     {
+      "path": "run_focused_edge_replication.py",
+      "size_bytes": 9208,
+      "sha256": "49dffd878af538b710109f77f43d8ea28679e810365ed4fc8e19ca11dea42a85"
+    },
+    {
       "path": "run_focused_edge_screen.py",
       "size_bytes": 13633,
       "sha256": "d92b9e60f67798a6e36af68a04f04042dc3ee12ff7c609f92dd03e13e44442be"
@@ -497,8 +652,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 9801,
-      "sha256": "d4a30fd88afe6e758cba9cd9fb1154da34dac5710a5e4197ab9b905492e36050"
+      "size_bytes": 11108,
+      "sha256": "b4d88fc8f331b22477125b28e1b42a895334a1e14481762376580f092de6016e"
     },
     {
       "path": "sobol_leader_config17.json",
@@ -514,6 +669,11 @@
       "path": "validate_focused_edge_holdout.py",
       "size_bytes": 10042,
       "sha256": "1255a965c932347326292e1abf493a4c879a48cb2b9330b3d09e8820a4d0c8d6"
+    },
+    {
+      "path": "validate_focused_edge_replication.py",
+      "size_bytes": 9444,
+      "sha256": "ff07fbd6a9c352695a669f75d096ba496de7f4e641a486b005e84b828607da07"
     },
     {
       "path": "validate_focused_edge_screen.py",

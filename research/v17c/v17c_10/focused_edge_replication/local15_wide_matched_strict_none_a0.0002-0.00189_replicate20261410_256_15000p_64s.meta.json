@@ -1,0 +1,31 @@
+{
+  "screen_config_id": 15,
+  "candidate_label": "local_sobol_15",
+  "source": "fresh Sobol neighborhood spanning candidate52 and config17",
+  "parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "qratio": 3.1179673274978996,
+  "ensemble": "wide",
+  "n": 256,
+  "seed": 20261412,
+  "periods": 15000,
+  "steps": 64,
+  "transient": 200,
+  "starts": "research\\v17c\\v17c_10\\focused_edge_replication\\replication_starts\\wide_N256_seed20261412.npz",
+  "frozen_start_sha256": "32ee8f6155416e79ba5994fbc7e2d1707a2e22faefa61c83db46e86b0d17d7d7",
+  "candidate_source": "V17C.10 independent P3 replication",
+  "run_tag": "replicate20261410",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "49dffd878af538b710109f77f43d8ea28679e810365ed4fc8e19ca11dea42a85"
+}
