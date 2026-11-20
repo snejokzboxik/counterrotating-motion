@@ -1,0 +1,364 @@
+{
+  "study": "V17C.11 P0 constant-envelope equivalence",
+  "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
+  "protocol": {
+    "n_samples": 16,
+    "sample_rule": "first local15 CR and first local15 finite wall-contact index in each group; same paired index on candidate52",
+    "steps_per_primary_period": 64,
+    "periods": 15000,
+    "transient_periods": 200,
+    "finite_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "workers": 4,
+    "same_rhs": "v17c_9/baseline/basin_scan.py"
+  },
+  "sources": {
+    "rest": {
+      "local15_rows_sha256": "6f322bc6a3522494471432bc7b68a61a5b832f83389cb1263a293c80b0b37093",
+      "candidate52_rows_sha256": "f217c42f881945428d11e19af08e9fae5b54293c1f20df865e9c85a71d9c8a10",
+      "frozen_starts_sha256": "6ef145d443c316c624f7bc9f5fa431fa3f9a8ddeeeb88ef2a6d95d379e8109ca"
+    },
+    "weak": {
+      "local15_rows_sha256": "95f54466fa68754d7cc4ce46c3eb5bdc657bda1826ee514f600a91cba6417a80",
+      "candidate52_rows_sha256": "5be0f546240f7fc157feffb6685156a2652da38906cfd5175c7a717f5beeb9ac",
+      "frozen_starts_sha256": "53fa0e53fef421a9fa85191c0563458f91c5590d9adb83eacee79b14a76e4ed5"
+    },
+    "wide": {
+      "local15_rows_sha256": "893c5324ee100de6c541ca8b68f7d8c7b76f04263eb12cbbdd63151302b150f5",
+      "candidate52_rows_sha256": "2d31f71a54baa84c8f066e48b0eeb700345526770edb7ccd43a27079e7c70786",
+      "frozen_starts_sha256": "32ee8f6155416e79ba5994fbc7e2d1707a2e22faefa61c83db46e86b0d17d7d7"
+    },
+    "edge": {
+      "local15_rows_sha256": "d7e3107f40e8c7b6bd0a9bdc762eb17453fccf574ce328a014b6ac5170b616b6",
+      "candidate52_rows_sha256": "30b254c57a7529c0394535966422ba8cdf6075a036da9017876592a9c74faaf7",
+      "frozen_starts_sha256": "021f87b4d5c62ac5775b29e72c77a06832b733359d10b26da60644b5065a6c1d"
+    }
+  },
+  "all_exact_matches": true,
+  "total_wall_seconds": 74.1110833000057,
+  "trajectories_per_second": 0.21589213498919085,
+  "results": [
+    {
+      "candidate": "local15",
+      "group": "rest",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        22.822721892207728,
+        -14.8338381867237
+      ],
+      "r_min_R": [
+        0.3352688430747331,
+        0.5036903956283225
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "rest",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        40.40119221310021,
+        -12.598484030351184
+      ],
+      "r_min_R": [
+        0.28255618363149715,
+        0.5036518413787651
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "rest",
+      "index": 7,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.87273572938071,
+        0.3465578678910873
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "rest",
+      "index": 7,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.87273572938071,
+        0.3465578678910873
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "weak",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        22.819589898790458,
+        -14.820785718322458
+      ],
+      "r_min_R": [
+        0.16589318596722907,
+        0.16331200043097105
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "weak",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        40.394017737710286,
+        -12.596507842997081
+      ],
+      "r_min_R": [
+        0.16590302978776,
+        0.1661644449572227
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "weak",
+      "index": 17,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.4678022825263544,
+        0.838708838423659
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "weak",
+      "index": 17,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.4784252517032059,
+        0.838708838423659
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "wide",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        22.851129116782822,
+        -14.82918197315871
+      ],
+      "r_min_R": [
+        0.49379213209209044,
+        0.6263953651414307
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "wide",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        40.388242482287296,
+        -12.596308544614935
+      ],
+      "r_min_R": [
+        0.46822975795514454,
+        0.5609329375286763
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "wide",
+      "index": 2,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.8965753724649527,
+        0.6257767378546002
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "wide",
+      "index": 2,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 0,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.8965753724649527,
+        0.6333283797630328
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "edge",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        22.821556925700065,
+        -14.835608948403186
+      ],
+      "r_min_R": [
+        0.3349095509821908,
+        0.6554928974515646
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "edge",
+      "index": 0,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        40.374115401600775,
+        -12.59762151531074
+      ],
+      "r_min_R": [
+        0.3098991205553454,
+        0.6466702199285072
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "local15",
+      "group": "edge",
+      "index": 2,
+      "published_category": "finite_particle_wall_contact",
+      "baseline_replay_category": "finite_particle_wall_contact",
+      "timed_constant_category": "finite_particle_wall_contact",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 1,
+      "turns": [
+        0.0,
+        0.0
+      ],
+      "r_min_R": [
+        0.38591500289913355,
+        0.8758823713452274
+      ],
+      "wall_seconds": null
+    },
+    {
+      "candidate": "candidate52",
+      "group": "edge",
+      "index": 2,
+      "published_category": "CR_screen",
+      "baseline_replay_category": "CR_screen",
+      "timed_constant_category": "CR_screen",
+      "exact_full_result_match": true,
+      "max_abs_numeric_difference": 0.0,
+      "completed_periods": 15000,
+      "turns": [
+        40.40299771309848,
+        -12.592503465245088
+      ],
+      "r_min_R": [
+        0.3785155739542359,
+        0.4792814972841406
+      ],
+      "wall_seconds": null
+    }
+  ]
+}

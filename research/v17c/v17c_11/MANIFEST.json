@@ -1,0 +1,105 @@
+{
+  "study": "V17C.11 shared RF-DC loading protocol optimization",
+  "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
+  "working_branch": "research/v17c-loading",
+  "status": "P0 complete; P1 and protocol search pending",
+  "outputs": [
+    {
+      "path": "research/v17c/v17c_11/build_manifest.py",
+      "size_bytes": 2139,
+      "sha256": "c83d95ab3bd283dcabb679bfc663da078f47a3955faa713ea5f035a97402defe"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_dynamics.py",
+      "size_bytes": 15579,
+      "sha256": "e6e021bd0e182ddcf052e4aab290eec29254273126035c14ccf009c75ba5337a"
+    },
+    {
+      "path": "research/v17c/v17c_11/local15_parameters.json",
+      "size_bytes": 3605,
+      "sha256": "884002c1079ee90ffebc7ac8f3a18807d4d99964231d29fcc8199b7e9afec0ce"
+    },
+    {
+      "path": "research/v17c/v17c_11/p0_constant_equivalence.json",
+      "size_bytes": 10863,
+      "sha256": "d5ce1fab1e508468d2e823d760330cfb17ff54c4895dd59c205c210c4907d424"
+    },
+    {
+      "path": "research/v17c/v17c_11/P0_MODEL_VALIDATION_RU.md",
+      "size_bytes": 6705,
+      "sha256": "cf4c50c4a4e8371b8d854cb0214d98eccc8a3ed9d66f9fb526416dd3eb929e72"
+    },
+    {
+      "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
+      "size_bytes": 4876,
+      "sha256": "ef0424192722167254ff23e9482c666f017c2f72ec444523d8ce8451a805f655"
+    },
+    {
+      "path": "research/v17c/v17c_11/validate_constant_protocol.py",
+      "size_bytes": 7911,
+      "sha256": "5b0aa3f1f4c2b69d89a60c2861cb960a0ebfc46b5bc9b345da65589d577a790c"
+    }
+  ],
+  "fixed_sources": [
+    {
+      "path": "research/v17c/v17c_10/SESSION_HANDOFF.md",
+      "size_bytes": 12084,
+      "sha256": "9a630cd78dcf3e8b277c7a9381ab776330242bead51066ef371d433890eea41f"
+    },
+    {
+      "path": "research/v17c/v17c_10/FOCUSED_EDGE_VALIDATION_RU.md",
+      "size_bytes": 7495,
+      "sha256": "f30fd5a39316204a4d7c768f3853d60c57a79f1c4fe791888a00bc9dfdb04fbf"
+    },
+    {
+      "path": "research/v17c/v17c_10/FOCUSED_EDGE_REPLICATION_RU.md",
+      "size_bytes": 6110,
+      "sha256": "642acba7ebf07aefe3c9f58aac5b00e71aa61d8fbbf601e96a9edab912f3ae3e"
+    },
+    {
+      "path": "research/v17c/v17c_10/NUMERICAL_CONVERGENCE_RU.md",
+      "size_bytes": 4078,
+      "sha256": "5369cc4b9695612b2b2b8c8ed584f1764f92d287393337613d9167998601d049"
+    },
+    {
+      "path": "research/v17c/v17c_10/FAILURE_ANALYSIS_RU.md",
+      "size_bytes": 8309,
+      "sha256": "a4b6e9d1a8007eb7947668b380898a65bf1b8c235ee366c30b4f2de78795712b"
+    },
+    {
+      "path": "research/v17c/v17c_10/focused_edge_screen/ranked.json",
+      "size_bytes": 70566,
+      "sha256": "30883ad98fcabe8b03a1b82d8bce79e0087c619ef27572443a74f8bb0d1dd4e7"
+    },
+    {
+      "path": "research/v17c/v17c_10/focused_edge_replication/replication_validation_summary.json",
+      "size_bytes": 14251,
+      "sha256": "4c8d409c468cd7e9cfc5c42b767013a2e4c1162b61a86055b37da029e0cf9655"
+    },
+    {
+      "path": "research/v17c/v17c_10/focused_edge_replication/local15_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1094,
+      "sha256": "ccaf1cbcee8b75e98ed0093a082393a89b943275997d2c9842d8216810cc06ab"
+    },
+    {
+      "path": "research/v17c/v17c_10/focused_edge_replication/candidate52_rest_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.meta.json",
+      "size_bytes": 1068,
+      "sha256": "22651d7cc24eb310c6270002a88e4f97e243431833f15017e8a339c30c3caf61"
+    },
+    {
+      "path": "research/v17c/v17c_5/input/config.json",
+      "size_bytes": 1473,
+      "sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d"
+    },
+    {
+      "path": "research/v17c/v17c_9/baseline/basin_scan.py",
+      "size_bytes": 17805,
+      "sha256": "f293c546fc1462981dfb04051d6ff8a17bbfb6f663ef95eceefd3f9327cd9408"
+    },
+    {
+      "path": "research/v17c/v17c_9/baseline/verify_candidate_dop853.py",
+      "size_bytes": 5361,
+      "sha256": "5d6d2852fb30e25ae2d1be1db4da85a03a1c4040ecf37f710ef4448044cb9c2e"
+    }
+  ]
+}

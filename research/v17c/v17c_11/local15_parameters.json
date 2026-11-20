@@ -1,0 +1,165 @@
+{
+  "study": "V17C.11 loading optimization fixed terminal configuration local15",
+  "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
+  "source_config": "research/v17c/v17c_5/input/config.json",
+  "source_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "candidate": {
+    "name": "local15",
+    "source": "V17C.10 P3 independent strict replication",
+    "screen_config_id": 15,
+    "p_order": [
+      "A",
+      "B",
+      "nu",
+      "beta",
+      "s=m1/m2",
+      "C_eff",
+      "lambda1",
+      "lambda2"
+    ],
+    "p": [
+      0.03716194907442204,
+      0.1626938199343468,
+      3.1118029452860356,
+      0.017273303124515367,
+      0.10944955727644175,
+      9.463121589050818e-06,
+      0.20975541409005094,
+      0.12617311138613094
+    ],
+    "q2_over_q1": 3.1179673274978996,
+    "m2_over_m1": 9.136629008688033,
+    "particle_radii_over_R": [
+      0.0002,
+      0.00189
+    ]
+  },
+  "field": {
+    "electrodes": 24,
+    "a_over_D": 0.05,
+    "shield_radius_over_D": 1.1,
+    "aperture_R_over_D": 0.95,
+    "f1_Hz": 100000.0,
+    "f2_Hz": 311180.29452860355,
+    "nu_f2_over_f1": 3.1118029452860356,
+    "phase_convention": "carrier1=A exp(-i(tau+phase1)); carrier2=B exp(-i(nu*tau+phase2)); phases remain continuous",
+    "family": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "k": [
+      -46,
+      -22,
+      2,
+      26,
+      -28,
+      -4,
+      20,
+      44
+    ],
+    "coeff_real_imag": [
+      [
+        0.01195544657862462,
+        -1.0842155436372173e-16
+      ],
+      [
+        0.09570557011088898,
+        -4.2872248166624126e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.03864580974495959,
+        1.7793248982720981e-16
+      ],
+      [
+        0.044100519066165626,
+        -2.0091592851606255e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.17652762769656,
+        8.03012740525487e-16
+      ],
+      [
+        0.02491992749735757,
+        2.3153021498709014e-16
+      ]
+    ],
+    "field_config_parameters_reference": [
+      0.075,
+      0.1875,
+      1.4142135623730951,
+      0.02933064342691967,
+      0.24862203964463545,
+      1e-05,
+      0.012,
+      0.012
+    ]
+  },
+  "dynamics": {
+    "tau": "Omega1*t",
+    "position": "r/R",
+    "velocity": "v/(R*Omega1)",
+    "energy": "E/(m1*R^2*Omega1^2)",
+    "drag": "linear Stokes-form phenomenological damping lambda_i",
+    "coupling": "full 3D Coulomb term with finite-sphere contact test; hydrodynamic model off in V17C.10 baseline",
+    "escape_center_r_over_R": 1.0,
+    "escape_abs_z_over_R": 2.0,
+    "classification_rmin_over_R": 0.02,
+    "required_turns_each": 10.0,
+    "stable_windows": 3,
+    "finite_radii_over_R": [
+      0.0002,
+      0.00189
+    ]
+  },
+  "baseline_local15_replication_N256": {
+    "groups": [
+      "rest",
+      "weak",
+      "wide",
+      "edge"
+    ],
+    "successes": [
+      225,
+      225,
+      199,
+      180
+    ],
+    "n_each": 256,
+    "success_fraction": [
+      0.87890625,
+      0.87890625,
+      0.77734375,
+      0.703125
+    ],
+    "source": "research/v17c/v17c_10/focused_edge_replication/replication_validation_summary.json"
+  },
+  "candidate52_matched_control_N256": {
+    "successes": [
+      220,
+      222,
+      188,
+      166
+    ],
+    "n_each": 256,
+    "success_fraction": [
+      0.859375,
+      0.8671875,
+      0.734375,
+      0.6484375
+    ]
+  }
+}
