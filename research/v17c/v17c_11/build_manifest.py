@@ -37,7 +37,7 @@ def main() -> None:
         "study": "V17C.11 shared RF-DC loading protocol optimization",
         "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
         "working_branch": "research/v17c-loading",
-        "status": "P0-P5 validated; P6 128-protocol and P7 1024-protocol early-retention screens complete; strict holdout, robustness, and transferability pending",
+        "status": "P0-P5 validated; P6 128- and P7 1024-protocol early-retention screens complete; P8 strict independent holdout prepared but not yet run; robustness and transferability pending",
         "outputs": [entry(p) for p in outputs],
         "fixed_sources": [entry(ROOT / p) for p in SOURCE_INPUTS],
     }

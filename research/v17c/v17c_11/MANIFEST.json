@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P5 validated; P6 128-protocol and P7 1024-protocol early-retention screens complete; strict holdout, robustness, and transferability pending",
+  "status": "P0-P5 validated; P6 128- and P7 1024-protocol early-retention screens complete; P8 strict independent holdout prepared but not yet run; robustness and transferability pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/adaptive_loading/adaptive_early_retention_top16.png",
@@ -141,8 +141,8 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2239,
-      "sha256": "d8045635b8a46f0c5291d14ad711e38200dcc47606cfcd0b3dbfcd885ef96ee7"
+      "size_bytes": 2270,
+      "sha256": "36d719febe7a29d6c232fcd8551645c5234a197d0aa479b5371b2e16ca4e0069"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -350,6 +350,11 @@
       "sha256": "4ca7adfac5997f3941b492d47de64a33da2cd0535a0eaec27773ea4996b60d63"
     },
     {
+      "path": "research/v17c/v17c_11/run_strict_loading_holdout.py",
+      "size_bytes": 8914,
+      "sha256": "41eb66e9c88d63dce597c0d5ee6147b5e8bd1d76e60f9866261de6500e9f0293"
+    },
+    {
       "path": "research/v17c/v17c_11/run_strict_loading_validation.py",
       "size_bytes": 6357,
       "sha256": "585a0ab1ba2c022a05e13c2d8e6fee9e327b42c300ce97eca7d1a5627dc4f809"
@@ -361,8 +366,8 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 16830,
-      "sha256": "0de2c1c1fd2b4c5c896364c63dd4b88087e5289db7af79b8f4964ade724513e0"
+      "size_bytes": 17959,
+      "sha256": "f3b9a26a243419ed6ca018f1e931745dc219e927d9c003a001787cd05b700b47"
     },
     {
       "path": "research/v17c/v17c_11/strict_long_validation/coupling_controls.json",
