@@ -1,8 +1,9 @@
 {
-  "status": "provisional_early_retention_leader_not_long_term_validated",
-  "protocol_id": 40,
-  "family": "adaptive_delayed_dc",
+  "status": "provisional_early_retention_candidate_not_strictly_validated",
+  "protocol_id": 292,
+  "family": "local40_delayed_dc_neighborhood",
   "terminal_configuration": "local15",
+  "selection": "highest J_robust_early among 1024 protocols in the V2 training screen; independent holdout and long-term P_CR not yet measured",
   "screen": {
     "N_per_ensemble": 32,
     "periods_after_start": 48,
@@ -10,39 +11,45 @@
     "retained": {
       "rest": "32/32",
       "weak": "32/32",
-      "wide": "31/32",
+      "wide": "30/32",
       "edge": "27/32"
     },
-    "J_standard_early": 0.96875,
+    "J_standard_early": 0.9375,
     "J_robust_early": 0.84375,
+    "edge_wilson_95": [0.6825, 0.9314],
+    "losses": {
+      "wide": "2/32 finite-particle wall contacts",
+      "edge": "5/32 finite-particle wall contacts",
+      "other": "one retained run was axis-ambiguous; it is not a rotation success"
+    },
     "metric": "early retention only; not P_CR"
   },
   "units": "duration and delay are periods of the primary RF frequency; carrier phases remain continuous",
   "envelope": {
-    "shape": "half-cosine",
-    "shape_id": 1,
-    "power_parameter_unused_by_half_cosine": 4.0,
-    "gA_start": 0.08645146442577244,
-    "gB_start": 0.531632397742942,
-    "gDC_start": 0.1364382192492485,
-    "duration_A_cycles": 1.4939666914447995,
-    "duration_B_cycles": 0.5143617522567785,
-    "duration_DC_cycles": 0.841960231336111,
+    "shape": "s^4",
+    "shape_id": 4,
+    "gA_start": 0.03726579205598682,
+    "gB_start": 0.21415993906557562,
+    "gDC_start": 0.054049581401050095,
+    "duration_A_cycles": 1.1924144657797928,
+    "duration_B_cycles": 0.21809138780756848,
+    "duration_DC_cycles": 0.2869588053729809,
     "delay_B_cycles": 0.0,
-    "delay_DC_cycles": 0.859403014183044,
+    "delay_DC_cycles": 1.5575518049299717,
+    "power": 4.0,
     "DC_mode": "independent envelope"
   },
   "protocol_vector_19": [
     1.0,
-    1.4939666914447995,
-    0.5143617522567785,
-    0.841960231336111,
+    1.1924144657797928,
+    0.21809138780756848,
+    0.2869588053729809,
     0.0,
-    0.859403014183044,
-    0.08645146442577244,
-    0.531632397742942,
-    0.1364382192492485,
-    1.0,
+    1.5575518049299717,
+    0.03726579205598682,
+    0.21415993906557562,
+    0.054049581401050095,
+    4.0,
     4.0,
     0.0,
     0.0,
@@ -53,6 +60,6 @@
     0.0,
     0.0
   ],
-  "source": "adaptive_loading/adaptive_protocols.json; protocol id 40",
-  "frozen_start_hashes": "adaptive_loading/training_starts.json"
+  "source": "adaptive_loading_v2/adaptive_protocols.json; protocol id 292",
+  "frozen_start_hashes": "adaptive_loading_v2/training_starts.json"
 }

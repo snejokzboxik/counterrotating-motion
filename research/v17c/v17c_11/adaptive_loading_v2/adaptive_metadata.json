@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "protocols": 1024,
+  "N_per_ensemble": 32,
+  "periods": 48,
+  "steps_per_period": 96,
+  "workers": 4,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "seeds": {
+    "rest": 20261171,
+    "weak": 20261172,
+    "wide": 20261173,
+    "edge": 20261174
+  },
+  "start_hashes": {
+    "rest": {
+      "initial_sha256": "1a62d4f9dfb909afa98ee15c97feccdc8cc80d2669f167db912d0ec9a8cbd4e3",
+      "phase_sha256": "d1f73f9a62fc763f14a21d3bef9e2ce668f285fcaf5da2aa7c5f6431d5def2e1"
+    },
+    "weak": {
+      "initial_sha256": "7377353898d07d43646babc0b418f49094fe75e7dc06472900abf9591cdb76e3",
+      "phase_sha256": "ec183ee44b8ec1f406a1e00224e9408ca69a80c3f2ab27d3df5be7d6a8789be6"
+    },
+    "wide": {
+      "initial_sha256": "15ffb386d8a7d6037693ce607c43a9b8e8042a64b4828f330d38d6c4dd61c607",
+      "phase_sha256": "1bfedb9cf1292c36c10bc588acad25befc59a2b8b3be5d9a7a26e9661db3a048"
+    },
+    "edge": {
+      "initial_sha256": "7fe82d0c3e415ef3e34b15b48d5209af228e29c4806d1410b2b0e245dc8be876",
+      "phase_sha256": "cf795280935a71ac948e5c141b408c0acd1ac8ca95cd8b3901645f6298c11fa7"
+    }
+  },
+  "terminal_parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "q2_over_q1": 3.1179673274978996,
+  "sobol_seed": 20261175,
+  "screen_semantics": "early retention only; not long-term counter-rotation probability",
+  "elapsed_seconds": 1664.965876340866,
+  "unique_rows_verified": 131072
+}
