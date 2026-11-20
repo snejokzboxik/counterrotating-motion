@@ -1,65 +1,53 @@
 {
-  "status": "provisional_early_retention_candidate_not_strictly_validated",
-  "protocol_id": 292,
-  "family": "local40_delayed_dc_neighborhood",
+  "status": "empirical_leader_in_completed_independent_N256_holdout; target_95_percent_not_met",
+  "protocol_id": 505,
+  "holdout_label": "P2_505",
+  "selection_criterion": "largest J_robust=min(P_rest,P_weak,P_wide,P_edge) among three preselected fixed protocols; no parameters selected on this holdout",
   "terminal_configuration": "local15",
-  "selection": "highest J_robust_early among 1024 protocols in the V2 training screen; independent holdout and long-term P_CR not yet measured",
-  "screen": {
-    "N_per_ensemble": 32,
-    "periods_after_start": 48,
-    "steps_per_primary_RF_period": 96,
-    "retained": {
-      "rest": "32/32",
-      "weak": "32/32",
-      "wide": "30/32",
-      "edge": "27/32"
-    },
-    "J_standard_early": 0.9375,
-    "J_robust_early": 0.84375,
-    "edge_wilson_95": [0.6825, 0.9314],
-    "losses": {
-      "wide": "2/32 finite-particle wall contacts",
-      "edge": "5/32 finite-particle wall contacts",
-      "other": "one retained run was axis-ambiguous; it is not a rotation success"
-    },
-    "metric": "early retention only; not P_CR"
+  "terminal_parameters": {
+    "order": ["A", "B", "nu", "beta", "s=m1/m2", "C_eff", "lambda1", "lambda2"],
+    "values": [0.03716194907442204, 0.1626938199343468, 3.1118029452860356, 0.017273303124515367, 0.10944955727644175, 9.463121589050818e-06, 0.20975541409005094, 0.12617311138613094],
+    "q2_over_q1": 3.1179673274978996,
+    "m2_over_m1": 9.136629008688033,
+    "particle_radii_over_R": [0.0002, 0.00189],
+    "f1_Hz": 100000.0,
+    "f2_Hz": 311180.29452860355
   },
-  "units": "duration and delay are periods of the primary RF frequency; carrier phases remain continuous",
   "envelope": {
-    "shape": "s^4",
-    "shape_id": 4,
-    "gA_start": 0.03726579205598682,
-    "gB_start": 0.21415993906557562,
-    "gDC_start": 0.054049581401050095,
-    "duration_A_cycles": 1.1924144657797928,
-    "duration_B_cycles": 0.21809138780756848,
-    "duration_DC_cycles": 0.2869588053729809,
-    "delay_B_cycles": 0.0,
-    "delay_DC_cycles": 1.5575518049299717,
-    "power": 4.0,
-    "DC_mode": "independent envelope"
+    "family": "direct linear ramps, kind=1; independent DC envelope",
+    "carrier_phases": "both RF carrier phases remain continuous; frequencies are unchanged",
+    "gA_start": 0.1,
+    "gA_duration_primary_cycles": 3.0,
+    "gB_start": 0.1,
+    "gB_duration_primary_cycles": 0.25,
+    "gB_delay_primary_cycles": 0.0,
+    "gDC_start": 0.35,
+    "gDC_duration_primary_cycles": 0.25,
+    "gDC_delay_primary_cycles": 2.2228266522288322,
+    "terminal_after_primary_cycles": 3.0,
+    "primary_period_us": 10.0,
+    "terminal_after_us": 30.0,
+    "protocol_vector_19": [1.0, 3.0, 0.25, 0.25, 0.0, 2.2228266522288322, 0.1, 0.1, 0.35, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
   },
-  "protocol_vector_19": [
-    1.0,
-    1.1924144657797928,
-    0.21809138780756848,
-    0.2869588053729809,
-    0.0,
-    1.5575518049299717,
-    0.03726579205598682,
-    0.21415993906557562,
-    0.054049581401050095,
-    4.0,
-    4.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0
-  ],
-  "source": "adaptive_loading_v2/adaptive_protocols.json; protocol id 292",
-  "frozen_start_hashes": "adaptive_loading_v2/training_starts.json"
+  "strict_independent_holdout": {
+    "seed_base": 20261301,
+    "N_per_ensemble": 256,
+    "ensembles": ["rest", "weak", "wide", "edge"],
+    "successes": {"rest": "254/256", "weak": "254/256", "wide": "236/256", "edge": "213/256"},
+    "P_CR_unconditional_overall": "957/1024 = 0.9345703125",
+    "J_standard": 0.921875,
+    "J_robust": 0.83203125,
+    "retained": {"rest": "254/256", "weak": "255/256", "wide": "237/256", "edge": "216/256"},
+    "direction_counts": {"(+,-)": 957, "(-,+)": 0},
+    "measurement": "200 relaxation cycles then 15,000 measured primary RF cycles; RK4 FP64, 96 steps per primary period"
+  },
+  "controls": {
+    "P2_353_J_robust": 0.828125,
+    "P7_292_J_robust": 0.8125,
+    "paired_frozen_starts": true,
+    "paired_total_exact_mcnemar_p_vs_353": 0.18774155899882317,
+    "paired_total_exact_mcnemar_p_vs_292": 0.8776143287523154
+  },
+  "interpretation": "#505 is the empirical robust-score leader by 0.39 percentage points over #353. No candidate reaches the 95% target, and the aggregate paired comparisons do not establish a statistically significant difference between protocols.",
+  "source": "research/v17c/v17c_11/strict_loading_holdout_n256/holdout_protocols.json; holdout_metadata.json; holdout_integrity_audit.json"
 }

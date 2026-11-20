@@ -1,0 +1,402 @@
+{
+  "status": "passed",
+  "rows": 3072,
+  "expected_rows": 3072,
+  "unique_keys": 3072,
+  "n_per_protocol_ensemble": 256,
+  "frozen_starts_identical_across_protocols": true,
+  "frozen_start_checksums": {
+    "rest": {
+      "initial_sha256": "0218204481e333c27e3163e184c0ebda91b7b19cad78b8f13add689ea9801c8c",
+      "phase_sha256": "509a0962b40ce7e6d7be75efe54b43c7f641434a3ca0ec92360138a0cb34c380"
+    },
+    "weak": {
+      "initial_sha256": "c06d4659c3fec08f8f745ef6def0201af3a4c442e3e71632cde14c072066f5ee",
+      "phase_sha256": "c780480419fe38a790fae7fac99c7f5dae388012c97b10454e82e51407361238"
+    },
+    "wide": {
+      "initial_sha256": "ce7d6d1f9c1e47b8a96698f6f4307edf565e5e031887a8b2260dad387eb0e85f",
+      "phase_sha256": "976bf48d02152382e3fd28c8559a82588715804932b989fe900a25c46f5e5872"
+    },
+    "edge": {
+      "initial_sha256": "a3cf1c6bc421d83ecd0f0011bc88f3bd70fbe9705ba3122a530b5ef296d03c5a",
+      "phase_sha256": "ee3bc51ca131bf491754fff20d74752edd46daca97a21e6caa28e190bf5e2fb0"
+    }
+  },
+  "integrator_steps_per_primary_RF_period": 96,
+  "relax_periods": 200,
+  "measured_periods_after_load": 15000,
+  "frequency_orientation_among_strict_CR": "validated in each row; aggregates below",
+  "protocol_summaries": [
+    {
+      "protocol_id": 1,
+      "label": "P2_505",
+      "n_total": 1024,
+      "strict_counterrotations": 957,
+      "p_cr_unconditional": 0.9345703125,
+      "wilson95_overall": [
+        0.9177417042727388,
+        0.9481505910440428
+      ],
+      "retained_total": 962,
+      "retention_total_fraction": 0.939453125,
+      "J_standard": 0.921875,
+      "J_robust": 0.83203125,
+      "direction_counts_among_strict_successes": {
+        "+-": 957
+      },
+      "groups": {
+        "rest": {
+          "n": 256,
+          "strict_counterrotations": 254,
+          "p_cr_unconditional": 0.9921875,
+          "wilson95": [
+            0.9719672316984642,
+            0.9978549096323186
+          ],
+          "retained": 254,
+          "retention_fraction": 0.9921875,
+          "outcomes": {
+            "CR_screen": 254,
+            "finite_particle_wall_contact": 2
+          }
+        },
+        "weak": {
+          "n": 256,
+          "strict_counterrotations": 254,
+          "p_cr_unconditional": 0.9921875,
+          "wilson95": [
+            0.9719672316984642,
+            0.9978549096323186
+          ],
+          "retained": 255,
+          "retention_fraction": 0.99609375,
+          "outcomes": {
+            "CR_screen": 254,
+            "finite_particle_wall_contact": 1,
+            "axis_ambiguous": 1
+          }
+        },
+        "wide": {
+          "n": 256,
+          "strict_counterrotations": 236,
+          "p_cr_unconditional": 0.921875,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ],
+          "retained": 237,
+          "retention_fraction": 0.92578125,
+          "outcomes": {
+            "CR_screen": 236,
+            "finite_particle_wall_contact": 19,
+            "axis_ambiguous": 1
+          }
+        },
+        "edge": {
+          "n": 256,
+          "strict_counterrotations": 213,
+          "p_cr_unconditional": 0.83203125,
+          "wilson95": [
+            0.7814036577580846,
+            0.8728414375841101
+          ],
+          "retained": 216,
+          "retention_fraction": 0.84375,
+          "outcomes": {
+            "CR_screen": 213,
+            "finite_particle_wall_contact": 40,
+            "axis_ambiguous": 3
+          }
+        }
+      }
+    },
+    {
+      "protocol_id": 2,
+      "label": "P2_353",
+      "n_total": 1024,
+      "strict_counterrotations": 948,
+      "p_cr_unconditional": 0.92578125,
+      "wilson95_overall": [
+        0.9080861903096547,
+        0.9402936765625178
+      ],
+      "retained_total": 954,
+      "retention_total_fraction": 0.931640625,
+      "J_standard": 0.921875,
+      "J_robust": 0.828125,
+      "direction_counts_among_strict_successes": {
+        "+-": 948
+      },
+      "groups": {
+        "rest": {
+          "n": 256,
+          "strict_counterrotations": 247,
+          "p_cr_unconditional": 0.96484375,
+          "wilson95": [
+            0.9345472295717082,
+            0.9813959039073644
+          ],
+          "retained": 248,
+          "retention_fraction": 0.96875,
+          "outcomes": {
+            "CR_screen": 247,
+            "finite_particle_wall_contact": 8,
+            "axis_ambiguous": 1
+          }
+        },
+        "weak": {
+          "n": 256,
+          "strict_counterrotations": 253,
+          "p_cr_unconditional": 0.98828125,
+          "wilson95": [
+            0.9661184273321177,
+            0.9960067128769923
+          ],
+          "retained": 254,
+          "retention_fraction": 0.9921875,
+          "outcomes": {
+            "CR_screen": 253,
+            "finite_particle_wall_contact": 2,
+            "axis_ambiguous": 1
+          }
+        },
+        "wide": {
+          "n": 256,
+          "strict_counterrotations": 236,
+          "p_cr_unconditional": 0.921875,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ],
+          "retained": 238,
+          "retention_fraction": 0.9296875,
+          "outcomes": {
+            "CR_screen": 236,
+            "finite_particle_wall_contact": 18,
+            "axis_ambiguous": 2
+          }
+        },
+        "edge": {
+          "n": 256,
+          "strict_counterrotations": 212,
+          "p_cr_unconditional": 0.828125,
+          "wilson95": [
+            0.7771462145851933,
+            0.8694018796353287
+          ],
+          "retained": 214,
+          "retention_fraction": 0.8359375,
+          "outcomes": {
+            "CR_screen": 212,
+            "finite_particle_wall_contact": 42,
+            "axis_ambiguous": 2
+          }
+        }
+      }
+    },
+    {
+      "protocol_id": 4,
+      "label": "P7_292",
+      "n_total": 1024,
+      "strict_counterrotations": 955,
+      "p_cr_unconditional": 0.9326171875,
+      "wilson95_overall": [
+        0.9155898849932159,
+        0.946410759558097
+      ],
+      "retained_total": 964,
+      "retention_total_fraction": 0.94140625,
+      "J_standard": 0.921875,
+      "J_robust": 0.8125,
+      "direction_counts_among_strict_successes": {
+        "+-": 955
+      },
+      "groups": {
+        "rest": {
+          "n": 256,
+          "strict_counterrotations": 256,
+          "p_cr_unconditional": 1.0,
+          "wilson95": [
+            0.9852161435741286,
+            0.9999999999999999
+          ],
+          "retained": 256,
+          "retention_fraction": 1.0,
+          "outcomes": {
+            "CR_screen": 256
+          }
+        },
+        "weak": {
+          "n": 256,
+          "strict_counterrotations": 255,
+          "p_cr_unconditional": 0.99609375,
+          "wilson95": [
+            0.9782090246194175,
+            0.9993101178330381
+          ],
+          "retained": 256,
+          "retention_fraction": 1.0,
+          "outcomes": {
+            "CR_screen": 255,
+            "axis_ambiguous": 1
+          }
+        },
+        "wide": {
+          "n": 256,
+          "strict_counterrotations": 236,
+          "p_cr_unconditional": 0.921875,
+          "wilson95": [
+            0.8824167617091012,
+            0.9488593594315697
+          ],
+          "retained": 239,
+          "retention_fraction": 0.93359375,
+          "outcomes": {
+            "CR_screen": 236,
+            "finite_particle_wall_contact": 17,
+            "axis_ambiguous": 3
+          }
+        },
+        "edge": {
+          "n": 256,
+          "strict_counterrotations": 208,
+          "p_cr_unconditional": 0.8125,
+          "wilson95": [
+            0.7601980554703877,
+            0.8555620342634428
+          ],
+          "retained": 213,
+          "retention_fraction": 0.83203125,
+          "outcomes": {
+            "CR_screen": 208,
+            "finite_particle_wall_contact": 43,
+            "axis_ambiguous": 5
+          }
+        }
+      }
+    }
+  ],
+  "paired_same_start_comparisons": [
+    {
+      "ensemble": "rest",
+      "protocol_a": 1,
+      "protocol_b": 2,
+      "both_success": 246,
+      "a_only_success": 8,
+      "b_only_success": 1,
+      "both_failure": 1,
+      "mcnemar_exact_two_sided_p": 0.0390625
+    },
+    {
+      "ensemble": "rest",
+      "protocol_a": 1,
+      "protocol_b": 4,
+      "both_success": 254,
+      "a_only_success": 0,
+      "b_only_success": 2,
+      "both_failure": 0,
+      "mcnemar_exact_two_sided_p": 0.5
+    },
+    {
+      "ensemble": "rest",
+      "protocol_a": 2,
+      "protocol_b": 4,
+      "both_success": 247,
+      "a_only_success": 0,
+      "b_only_success": 9,
+      "both_failure": 0,
+      "mcnemar_exact_two_sided_p": 0.00390625
+    },
+    {
+      "ensemble": "weak",
+      "protocol_a": 1,
+      "protocol_b": 2,
+      "both_success": 252,
+      "a_only_success": 2,
+      "b_only_success": 1,
+      "both_failure": 1,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "weak",
+      "protocol_a": 1,
+      "protocol_b": 4,
+      "both_success": 254,
+      "a_only_success": 0,
+      "b_only_success": 1,
+      "both_failure": 1,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "weak",
+      "protocol_a": 2,
+      "protocol_b": 4,
+      "both_success": 252,
+      "a_only_success": 1,
+      "b_only_success": 3,
+      "both_failure": 0,
+      "mcnemar_exact_two_sided_p": 0.625
+    },
+    {
+      "ensemble": "wide",
+      "protocol_a": 1,
+      "protocol_b": 2,
+      "both_success": 231,
+      "a_only_success": 5,
+      "b_only_success": 5,
+      "both_failure": 15,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "wide",
+      "protocol_a": 1,
+      "protocol_b": 4,
+      "both_success": 229,
+      "a_only_success": 7,
+      "b_only_success": 7,
+      "both_failure": 13,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "wide",
+      "protocol_a": 2,
+      "protocol_b": 4,
+      "both_success": 227,
+      "a_only_success": 9,
+      "b_only_success": 9,
+      "both_failure": 11,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "edge",
+      "protocol_a": 1,
+      "protocol_b": 2,
+      "both_success": 205,
+      "a_only_success": 8,
+      "b_only_success": 7,
+      "both_failure": 36,
+      "mcnemar_exact_two_sided_p": 1.0
+    },
+    {
+      "ensemble": "edge",
+      "protocol_a": 1,
+      "protocol_b": 4,
+      "both_success": 198,
+      "a_only_success": 15,
+      "b_only_success": 10,
+      "both_failure": 33,
+      "mcnemar_exact_two_sided_p": 0.42435622215270996
+    },
+    {
+      "ensemble": "edge",
+      "protocol_a": 2,
+      "protocol_b": 4,
+      "both_success": 195,
+      "a_only_success": 17,
+      "b_only_success": 13,
+      "both_failure": 31,
+      "mcnemar_exact_two_sided_p": 0.5846647117286922
+    }
+  ]
+}

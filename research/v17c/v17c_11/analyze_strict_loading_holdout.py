@@ -109,7 +109,10 @@ def main():
         for i, v in enumerate(vals):
             lo, hi = summaries[i][f"wilson95_{group}"]
             ax.errorbar(xloc[i] + (j - 1.5) * width, v,
-                        yerr=[[v - lo], [hi - v]], fmt="none", ecolor="black", capsize=2, lw=.8)
+                        # Clamp round-off at p=1: Wilson's upper limit can be
+                        # 1-1 ulp, which otherwise creates a negative y-error.
+                        yerr=[[max(0.0, v - lo)], [max(0.0, hi - v)]],
+                        fmt="none", ecolor="black", capsize=2, lw=.8)
     ax.axhline(.95, color="tab:red", ls="--", lw=1, label="95% target")
     ax.set_xticks(xloc, [x["label"] for x in protocols], rotation=15)
     ax.set_ylim(0, 1.02); ax.set_ylabel("strict CR / all starts")

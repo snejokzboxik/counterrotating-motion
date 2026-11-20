@@ -1,0 +1,342 @@
+{
+  "protocols": 3,
+  "unique_runs": 3072,
+  "N_per_ensemble": 256,
+  "strict_success": "category == CR_screen",
+  "denominator": "all starts in each ensemble; includes wall loss, contact, axis ambiguity, localization and inconclusive outcomes as failures",
+  "measurement": "15,000 periods after envelope completion and 200-period relaxation",
+  "summaries": [
+    {
+      "protocol_id": 1,
+      "label": "P2_505",
+      "transition_cycles": 3.0,
+      "cr_rest": 254,
+      "pcr_rest": 0.9921875,
+      "wilson95_rest": [
+        0.9719672316984642,
+        0.9978549096323186
+      ],
+      "retained_rest": 254,
+      "retention_rest": 0.9921875,
+      "categories_rest": {
+        "CR_screen": 254,
+        "finite_particle_wall_contact": 2
+      },
+      "mean_frequency_hz_rest": [
+        154.23231822073785,
+        -100.19211434837555
+      ],
+      "mean_turns_rest": [
+        23.134847733110675,
+        -15.02881715225636
+      ],
+      "mean_rmin_rest": [
+        0.3223294345233805,
+        0.5153929882193846
+      ],
+      "mean_min_separation_rest": 0.19347465158192464,
+      "cr_weak": 254,
+      "pcr_weak": 0.9921875,
+      "wilson95_weak": [
+        0.9719672316984642,
+        0.9978549096323186
+      ],
+      "retained_weak": 255,
+      "retention_weak": 0.99609375,
+      "categories_weak": {
+        "CR_screen": 254,
+        "finite_particle_wall_contact": 1,
+        "axis_ambiguous": 1
+      },
+      "mean_frequency_hz_weak": [
+        154.22692727837548,
+        -100.19240650343811
+      ],
+      "mean_turns_weak": [
+        23.134039091756303,
+        -15.028860975515714
+      ],
+      "mean_rmin_weak": [
+        0.32740995862902833,
+        0.5104027095914048
+      ],
+      "mean_min_separation_weak": 0.1925216977298415,
+      "cr_wide": 236,
+      "pcr_wide": 0.921875,
+      "wilson95_wide": [
+        0.8824167617091012,
+        0.9488593594315697
+      ],
+      "retained_wide": 237,
+      "retention_wide": 0.92578125,
+      "categories_wide": {
+        "CR_screen": 236,
+        "finite_particle_wall_contact": 19,
+        "axis_ambiguous": 1
+      },
+      "mean_frequency_hz_wide": [
+        154.2230667492614,
+        -100.19290274775116
+      ],
+      "mean_turns_wide": [
+        23.13346001238921,
+        -15.028935412162676
+      ],
+      "mean_rmin_wide": [
+        0.30908664632202,
+        0.4616248540138577
+      ],
+      "mean_min_separation_wide": 0.19413844430228394,
+      "cr_edge": 213,
+      "pcr_edge": 0.83203125,
+      "wilson95_edge": [
+        0.7814036577580846,
+        0.8728414375841101
+      ],
+      "retained_edge": 216,
+      "retention_edge": 0.84375,
+      "categories_edge": {
+        "CR_screen": 213,
+        "finite_particle_wall_contact": 40,
+        "axis_ambiguous": 3
+      },
+      "mean_frequency_hz_edge": [
+        154.22198281567725,
+        -100.1932914231478
+      ],
+      "mean_turns_edge": [
+        23.13329742235159,
+        -15.028993713472163
+      ],
+      "mean_rmin_edge": [
+        0.30520253897859306,
+        0.5153644701783593
+      ],
+      "mean_min_separation_edge": 0.19374372626918965,
+      "J_standard_PCR": 0.921875,
+      "J_robust_PCR": 0.83203125,
+      "overall_PCR_unconditional": 0.9345703125
+    },
+    {
+      "protocol_id": 2,
+      "label": "P2_353",
+      "transition_cycles": 10.0,
+      "cr_rest": 247,
+      "pcr_rest": 0.96484375,
+      "wilson95_rest": [
+        0.9345472295717082,
+        0.9813959039073644
+      ],
+      "retained_rest": 248,
+      "retention_rest": 0.96875,
+      "categories_rest": {
+        "CR_screen": 247,
+        "finite_particle_wall_contact": 8,
+        "axis_ambiguous": 1
+      },
+      "mean_frequency_hz_rest": [
+        154.25376623179906,
+        -100.18775205173117
+      ],
+      "mean_turns_rest": [
+        23.13806493476985,
+        -15.028162807759674
+      ],
+      "mean_rmin_rest": [
+        0.3555626860912983,
+        0.5331610878397669
+      ],
+      "mean_min_separation_rest": 0.1914793482563668,
+      "cr_weak": 253,
+      "pcr_weak": 0.98828125,
+      "wilson95_weak": [
+        0.9661184273321177,
+        0.9960067128769923
+      ],
+      "retained_weak": 254,
+      "retention_weak": 0.9921875,
+      "categories_weak": {
+        "CR_screen": 253,
+        "finite_particle_wall_contact": 2,
+        "axis_ambiguous": 1
+      },
+      "mean_frequency_hz_weak": [
+        154.24825529002692,
+        -100.18860871824859
+      ],
+      "mean_turns_weak": [
+        23.137238293504033,
+        -15.02829130773728
+      ],
+      "mean_rmin_weak": [
+        0.3501025322754385,
+        0.5258440477824269
+      ],
+      "mean_min_separation_weak": 0.19181518944795536,
+      "cr_wide": 236,
+      "pcr_wide": 0.921875,
+      "wilson95_wide": [
+        0.8824167617091012,
+        0.9488593594315697
+      ],
+      "retained_wide": 238,
+      "retention_wide": 0.9296875,
+      "categories_wide": {
+        "CR_screen": 236,
+        "finite_particle_wall_contact": 18,
+        "axis_ambiguous": 2
+      },
+      "mean_frequency_hz_wide": [
+        154.24425044205665,
+        -100.18795790643385
+      ],
+      "mean_turns_wide": [
+        23.13663756630852,
+        -15.028193685965087
+      ],
+      "mean_rmin_wide": [
+        0.3384369771756674,
+        0.4764968719955954
+      ],
+      "mean_min_separation_wide": 0.19407627472572941,
+      "cr_edge": 212,
+      "pcr_edge": 0.828125,
+      "wilson95_edge": [
+        0.7771462145851933,
+        0.8694018796353287
+      ],
+      "retained_edge": 214,
+      "retention_edge": 0.8359375,
+      "categories_edge": {
+        "CR_screen": 212,
+        "finite_particle_wall_contact": 42,
+        "axis_ambiguous": 2
+      },
+      "mean_frequency_hz_edge": [
+        154.24597106736013,
+        -100.19117247112472
+      ],
+      "mean_turns_edge": [
+        23.13689566010401,
+        -15.028675870668723
+      ],
+      "mean_rmin_edge": [
+        0.33330339377367935,
+        0.5434008404739774
+      ],
+      "mean_min_separation_edge": 0.19331869466273852,
+      "J_standard_PCR": 0.921875,
+      "J_robust_PCR": 0.828125,
+      "overall_PCR_unconditional": 0.92578125
+    },
+    {
+      "protocol_id": 4,
+      "label": "P7_292",
+      "transition_cycles": 1.8445106103029527,
+      "cr_rest": 256,
+      "pcr_rest": 1.0,
+      "wilson95_rest": [
+        0.9852161435741286,
+        0.9999999999999999
+      ],
+      "retained_rest": 256,
+      "retention_rest": 1.0,
+      "categories_rest": {
+        "CR_screen": 256
+      },
+      "mean_frequency_hz_rest": [
+        154.25886206415845,
+        -100.19406899643444
+      ],
+      "mean_turns_rest": [
+        23.13882930962378,
+        -15.029110349465155
+      ],
+      "mean_rmin_rest": [
+        0.2718454232218337,
+        0.4924576392515148
+      ],
+      "mean_min_separation_rest": 0.19487720076969287,
+      "cr_weak": 255,
+      "pcr_weak": 0.99609375,
+      "wilson95_weak": [
+        0.9782090246194175,
+        0.9993101178330381
+      ],
+      "retained_weak": 256,
+      "retention_weak": 1.0,
+      "categories_weak": {
+        "CR_screen": 255,
+        "axis_ambiguous": 1
+      },
+      "mean_frequency_hz_weak": [
+        154.26082313668084,
+        -100.19362873551881
+      ],
+      "mean_turns_weak": [
+        23.139123470502106,
+        -15.029044310327814
+      ],
+      "mean_rmin_weak": [
+        0.27376575194036484,
+        0.4826260546993163
+      ],
+      "mean_min_separation_weak": 0.19141329336850998,
+      "cr_wide": 236,
+      "pcr_wide": 0.921875,
+      "wilson95_wide": [
+        0.8824167617091012,
+        0.9488593594315697
+      ],
+      "retained_wide": 239,
+      "retention_wide": 0.93359375,
+      "categories_wide": {
+        "CR_screen": 236,
+        "finite_particle_wall_contact": 17,
+        "axis_ambiguous": 3
+      },
+      "mean_frequency_hz_wide": [
+        154.25603907022983,
+        -100.19410919511355
+      ],
+      "mean_turns_wide": [
+        23.13840586053447,
+        -15.029116379267037
+      ],
+      "mean_rmin_wide": [
+        0.2671198354402736,
+        0.44535190183199674
+      ],
+      "mean_min_separation_wide": 0.19306696465731882,
+      "cr_edge": 208,
+      "pcr_edge": 0.8125,
+      "wilson95_edge": [
+        0.7601980554703877,
+        0.8555620342634428
+      ],
+      "retained_edge": 213,
+      "retention_edge": 0.83203125,
+      "categories_edge": {
+        "finite_particle_wall_contact": 43,
+        "CR_screen": 208,
+        "axis_ambiguous": 5
+      },
+      "mean_frequency_hz_edge": [
+        154.25222470124476,
+        -100.19275897610432
+      ],
+      "mean_turns_edge": [
+        23.13783370518669,
+        -15.028913846415644
+      ],
+      "mean_rmin_edge": [
+        0.25711251911636296,
+        0.498822921168463
+      ],
+      "mean_min_separation_edge": 0.19414044159719543,
+      "J_standard_PCR": 0.921875,
+      "J_robust_PCR": 0.8125,
+      "overall_PCR_unconditional": 0.9326171875
+    }
+  ]
+}

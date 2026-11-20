@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "protocol_count": 3,
+  "N_per_ensemble": 256,
+  "ensembles": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "seeds": {
+    "rest": 20261301,
+    "weak": 20261302,
+    "wide": 20261303,
+    "edge": 20261304
+  },
+  "start_hashes": {
+    "rest": {
+      "initial_sha256": "0218204481e333c27e3163e184c0ebda91b7b19cad78b8f13add689ea9801c8c",
+      "phase_sha256": "509a0962b40ce7e6d7be75efe54b43c7f641434a3ca0ec92360138a0cb34c380"
+    },
+    "weak": {
+      "initial_sha256": "c06d4659c3fec08f8f745ef6def0201af3a4c442e3e71632cde14c072066f5ee",
+      "phase_sha256": "c780480419fe38a790fae7fac99c7f5dae388012c97b10454e82e51407361238"
+    },
+    "wide": {
+      "initial_sha256": "ce7d6d1f9c1e47b8a96698f6f4307edf565e5e031887a8b2260dad387eb0e85f",
+      "phase_sha256": "976bf48d02152382e3fd28c8559a82588715804932b989fe900a25c46f5e5872"
+    },
+    "edge": {
+      "initial_sha256": "a3cf1c6bc421d83ecd0f0011bc88f3bd70fbe9705ba3122a530b5ef296d03c5a",
+      "phase_sha256": "ee3bc51ca131bf491754fff20d74752edd46daca97a21e6caa28e190bf5e2fb0"
+    }
+  },
+  "RF_steps_per_primary_period": 96,
+  "post_load_periods": 15000,
+  "relax_periods": 200,
+  "workers": 4,
+  "batch_size": 4,
+  "candidate_vector": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "q2_over_q1": 3.1179673274978996,
+  "strict_success_category": "CR_screen",
+  "warning": "This holdout chooses no new parameters; screens only fixed controls and preselected protocol #292.",
+  "elapsed_seconds": 13910.097279071808
+}
