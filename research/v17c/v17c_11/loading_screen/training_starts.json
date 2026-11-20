@@ -1,0 +1,28 @@
+{
+  "n": 16,
+  "seeds": {
+    "rest": 20261131,
+    "weak": 20261132,
+    "wide": 20261133,
+    "edge": 20261134
+  },
+  "groups": {
+    "rest": {
+      "initial_sha256": "bf25fe053cf45094c813923a5636c649e879f9eea87e25fdf9f655887842f7df",
+      "phase_sha256": "36d57e45087609dc0dd8357b9b37468b8476fdd252db61fe49becfd2c0e25fa6"
+    },
+    "weak": {
+      "initial_sha256": "5e07cf89ed884075418acd3251a2658ea49517af911cb7ff8759d25371159e06",
+      "phase_sha256": "29d9ee3e7ee8e0278d5b0fe0044557b9d8a37cc3fc8a8ad9b7f639b5cb87086f"
+    },
+    "wide": {
+      "initial_sha256": "38c24c512b47e04bcd86a4f18099e8ff3cd8a024df49f17c45c38bc99a3f6703",
+      "phase_sha256": "aec302a8ac58082dfe2ca93cba5fc91db854226939f9c06b576d54c4e0261b21"
+    },
+    "edge": {
+      "initial_sha256": "c6f7852e9f7b75ca62760b34dbc05e6b898e2b5d72b3e3fda8aeff43c0eaa022",
+      "phase_sha256": "b023e456aa7a96e29fe5e9a66d43394e871900a47d707a47138bee087bd63522"
+    }
+  },
+  "definition": "Fresh scrambled Sobol training starts generated from the V17C.9 basin_scan.make_initials; edge draws one particle radius area-uniformly in [0.70,0.90]R. Frozen across protocols."
+}

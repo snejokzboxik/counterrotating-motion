@@ -37,7 +37,7 @@ def protocol_spec():
     return {
         "units": "time knots and durations are cycles of f1; carrier phases remain continuous",
         "vector_fields": [
-            "kind (0=constant, 1=independent/direct ramps, 2=two-stage capture)",
+            "kind (0=constant, 1=direct ramps with A starting at zero, 2=two-stage capture, 3=direct ramps with B starting first)",
             "T_A_cycles", "T_B_cycles", "T_DC_cycles", "delay_B_cycles", "delay_DC_cycles",
             "gA_start", "gB_start", "gDC_start", "shape_id", "power_p", "dc_mode",
             "A_capture_multiplier", "B_capture_multiplier", "DC_capture_multiplier",
@@ -107,6 +107,16 @@ def _envelopes(tau, protocol):
             gd = ga * gb
         else:
             gd = _ramp(protocol[G0DC], 1.0, cycle, protocol[DELAY_DC], protocol[TDC], shape_id, power)
+        return ga, gb, gd
+    if kind == 3:
+        # B starts immediately; A is delayed by DELAY_DC. DELAY_B is used for
+        # an independent DC delay unless DC follows the RF product.
+        ga = _ramp(protocol[G0A], 1.0, cycle, protocol[DELAY_DC], protocol[TA], shape_id, power)
+        gb = _ramp(protocol[G0B], 1.0, cycle, 0.0, protocol[TB], shape_id, power)
+        if int(protocol[DC_MODE]) == 1:
+            gd = ga * gb
+        else:
+            gd = _ramp(protocol[G0DC], 1.0, cycle, protocol[DELAY_B], protocol[TDC], shape_id, power)
         return ga, gb, gd
     ga = _capture(protocol[G0A], protocol[CAP_A], cycle, protocol[CAP_RAMP],
                   protocol[CAP_HOLD], protocol[CAP_TRANS], shape_id,
@@ -302,6 +312,20 @@ def ramp_protocol(*, duration: float, shape: int, power: float = 1.0,
     return a
 
 
+def b_first_protocol(*, duration_a: float, duration_b: float, duration_dc: float,
+                     delay_a: float, delay_dc: float, shape: int,
+                     power: float = 1.0, g0: float = 0.0,
+                     dc_mode: int = 0) -> np.ndarray:
+    """Ramp B first, then A; both RF carriers retain their absolute phase."""
+    a = np.zeros(19, dtype=np.float64)
+    a[KIND] = 3
+    a[TA] = duration_a; a[TB] = duration_b; a[TDC] = duration_dc
+    a[DELAY_DC] = delay_a; a[DELAY_B] = delay_dc
+    a[G0A] = g0; a[G0B] = g0; a[G0DC] = g0
+    a[SHAPE] = shape; a[POWER] = power; a[DC_MODE] = dc_mode
+    return a
+
+
 def capture_protocol(*, capture_a: float, capture_b: float, capture_dc: float,
                      ramp_cycles: float, hold_cycles: float, transition_cycles: float,
                      shape: int = 3, transition_shape: int = 3, power: float = 1.0,
@@ -323,6 +347,9 @@ def protocol_duration_cycles(protocol: np.ndarray) -> float:
     if int(protocol[KIND]) == 1:
         return max(float(protocol[TA]), float(protocol[DELAY_B] + protocol[TB]),
                    float(protocol[DELAY_DC] + protocol[TDC]))
+    if int(protocol[KIND]) == 3:
+        return max(float(protocol[DELAY_DC] + protocol[TA]), float(protocol[TB]),
+                   float(protocol[DELAY_B] + protocol[TDC]))
     return float(protocol[CAP_RAMP] + protocol[CAP_HOLD] + protocol[CAP_TRANS])
 
 

@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P1 complete; protocol screening and optimization pending",
+  "status": "P0-P2 complete; independent validation and strict long-horizon protocol checks pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/analyze_initial_capture.py",
@@ -10,9 +10,14 @@
       "sha256": "54e058b0396326922bc93e5f08b98d262f653151016a69cec6051288d00acfce"
     },
     {
+      "path": "research/v17c/v17c_11/analyze_loading_screen.py",
+      "size_bytes": 7354,
+      "sha256": "2d7d300eaa8d5944ae3975e09262c8f50eba12dc30955ca6aa9af41ce36a2fd8"
+    },
+    {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2155,
-      "sha256": "0eb97810a38b80f2c468fb7551b9fd9f32ad3cea9b88704c323b9d3ecec89a80"
+      "size_bytes": 2182,
+      "sha256": "56251f68909011205a62057b0324181fa609e6f856c1750d2eb9a7aac448aec7"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -21,8 +26,68 @@
     },
     {
       "path": "research/v17c/v17c_11/loading_dynamics.py",
-      "size_bytes": 15918,
-      "sha256": "c2c0315ea292d6840348d3edee02bda14bdf214cd9e17c75d8d7ac3e68b7c730"
+      "size_bytes": 17347,
+      "sha256": "d663a7c86f6d08752e5b223f120ffe45b4937e663e5c67a062a372f8be85cd1f"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/early_screen.jsonl",
+      "size_bytes": 20561557,
+      "sha256": "e708cf0c15c702569847d53b7d8b7c9b4ffd4fc2c832961c03ee415e88fe92b9"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/early_screen_invalid_wrong_terminal_p.jsonl",
+      "size_bytes": 1234281,
+      "sha256": "d8cdaf8538185d2e0bc6c38a3217b30af47150cf1c7bfb852a9a490c842bf70a"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/p2_family_retention.csv",
+      "size_bytes": 706,
+      "sha256": "6aad81414f7855b552e933fa5722ed7e6992e11cb2b5f6bcf42bd77dd28ce716"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/p2_leader_envelopes.png",
+      "size_bytes": 75209,
+      "sha256": "ee2334c098dc41fb3b3feae125690cf6934aa73506d7873b9d3a6625510b2c73"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/p2_protocol_retention.csv",
+      "size_bytes": 243673,
+      "sha256": "958456d1bb2c72a73eca032427b339cff08e68a8f2018220807832e2584ed95a"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/p2_retention_leaders.png",
+      "size_bytes": 93306,
+      "sha256": "d6cb62cefd1e51dc0b5e13ca9ec4c1dfb000495af01b6c16d86df73d41c7f3ce"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/p2_screen_summary.json",
+      "size_bytes": 17551,
+      "sha256": "9a875f184648958a006bb74a297ec3078699015f820601b97381522c198baf31"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/protocols.json",
+      "size_bytes": 189556,
+      "sha256": "ea0e9e4d1fdb8120495dd0e1dde73d51d9724c345147f6976e1219356437d406"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/screen_metadata.json",
+      "size_bytes": 1674,
+      "sha256": "c85dae34bbf1133d62e5c515194e2df71436863c6e2cec667707c009ee5656b1"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/screen_metadata_invalid_wrong_terminal_p.json",
+      "size_bytes": 1340,
+      "sha256": "bbe68e24d72586893af1221d1c7a06d3a9557dcc10aab31b713f95186c5f68b8"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/training_starts.json",
+      "size_bytes": 1170,
+      "sha256": "d3b429b50deb884690b928f95bdecbc20cf313806ea8c532554c157b03589c14"
+    },
+    {
+      "path": "research/v17c/v17c_11/loading_screen/training_starts.npz",
+      "size_bytes": 7929,
+      "sha256": "2e1c145d5e84d982c9d17f95355b21e23095c0b8a56cb1003a73ae105874d383"
     },
     {
       "path": "research/v17c/v17c_11/local15_parameters.json",
@@ -80,9 +145,19 @@
       "sha256": "e922ddef28e52f7a25e4d45b7e8d220a7d3befea98ed1fbad7bfbaa98f66f189"
     },
     {
+      "path": "research/v17c/v17c_11/P2_LOADING_SCREEN_RU.md",
+      "size_bytes": 10233,
+      "sha256": "e089d96f485bdf365d7ba5bb44919ebe6470f76539acac2b8cd6394969015e6c"
+    },
+    {
+      "path": "research/v17c/v17c_11/screen_loading_protocols.py",
+      "size_bytes": 13806,
+      "sha256": "024aaf103fb76f27af35e5846458de06bf57c77ad16ae3014c89b1adb74f4098"
+    },
+    {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 6468,
-      "sha256": "4fb6859e65d2a74c1137d418e32ae591ceed9fef9d0b4d2061c2a933d914c265"
+      "size_bytes": 8563,
+      "sha256": "ac0908f132214b30345c5ff9f919657d3b7abec6b07819441fe06fd8381fa18b"
     },
     {
       "path": "research/v17c/v17c_11/summarize_initial_capture.py",
