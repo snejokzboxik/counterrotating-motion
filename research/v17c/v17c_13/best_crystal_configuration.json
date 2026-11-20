@@ -1,0 +1,518 @@
+{
+  "study": "V17C.13 best finite-horizon N=6 counterrotating 3+3 crystal",
+  "status": "confirmed finite-horizon numerical candidate; not experimentally validated and not a statistical basin estimate",
+  "field_and_particles": {
+    "study": "V17C.13 six-particle 3+3 local15 baseline",
+    "source_repository_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+    "source_v17c11_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+    "source_config": "research/v17c/v17c_11/local15_parameters.json",
+    "field": {
+      "electrodes": 24,
+      "a_over_D": 0.05,
+      "shield_radius_over_D": 1.1,
+      "R_over_D": 0.95,
+      "f1_Hz": 100000.0,
+      "f2_Hz": 311180.29452860355,
+      "nu": 3.1118029452860356,
+      "family": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "k": [
+        -46,
+        -22,
+        2,
+        26,
+        -28,
+        -4,
+        20,
+        44
+      ],
+      "coeff_real_imag": [
+        [
+          0.01195544657862462,
+          -1.0842155436372173e-16
+        ],
+        [
+          0.09570557011088898,
+          -4.2872248166624126e-16
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.03864580974495959,
+          1.7793248982720981e-16
+        ],
+        [
+          0.044100519066165626,
+          -2.0091592851606255e-16
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.17652762769656,
+          8.03012740525487e-16
+        ],
+        [
+          0.02491992749735757,
+          2.3153021498709014e-16
+        ]
+      ]
+    },
+    "dimensionless_parameters": {
+      "order": [
+        "A",
+        "B",
+        "nu",
+        "beta",
+        "s=m1/m2",
+        "C_eff",
+        "lambda1",
+        "lambda2"
+      ],
+      "values": [
+        0.03716194907442204,
+        0.1626938199343468,
+        3.1118029452860356,
+        0.017273303124515367,
+        0.10944955727644175,
+        9.463121589050818e-06,
+        0.20975541409005094,
+        0.12617311138613094
+      ],
+      "q2_over_q1": 3.1179673274978996,
+      "m2_over_m1": 9.136629008688033,
+      "particle_radii_over_R": [
+        0.0002,
+        0.00189
+      ]
+    },
+    "three_particle_group_model": {
+      "group_1": {
+        "particles": [
+          0,
+          1,
+          2
+        ],
+        "mass_over_m1": 1.0,
+        "charge_over_q1": 1.0,
+        "radius_over_R": 0.0002,
+        "drag_lambda": 0.20975541409005094,
+        "q_over_m_factor": 1.0
+      },
+      "group_2": {
+        "particles": [
+          3,
+          4,
+          5
+        ],
+        "mass_over_m1": 9.136629008688033,
+        "charge_over_q1": 3.1179673274978996,
+        "radius_over_R": 0.00189,
+        "drag_lambda": 0.12617311138613094,
+        "q_over_m_factor": 0.34126014359705537
+      },
+      "coulomb_pair_normalization": "C_ij=C_eff*(Q_i*Q_j/(q2/q1)); acceleration_i=(m1/m_i)*C_ij*(x_i-x_j)/|x_i-x_j|^3",
+      "C_eff": 9.463121589050818e-06,
+      "pair_C_over_m1_before_inverse_mass": {
+        "11": 3.0350291055309954e-06,
+        "12": 9.463121589050818e-06,
+        "22": 2.9505703930800456e-05
+      },
+      "acceleration_pair_coefficients": {
+        "11": 3.0350291055309954e-06,
+        "12_group1": 9.463121589050818e-06,
+        "12_group2": 1.03573446837475e-06,
+        "22": 3.229386232355877e-06
+      },
+      "unique_pairs": 15
+    },
+    "dynamics": {
+      "tau": "Omega1*t",
+      "position": "r/R",
+      "velocity": "v/(R*Omega1)",
+      "energy": "E/(m1*R^2*Omega1^2)",
+      "drag_model": "linear dimensionless Stokes-form damping; hydrodynamic coupling off",
+      "finite_particle_contact": true,
+      "wall_center_radius_limit": "r_i+a_i/R <= 1",
+      "end_boundary": "abs(z_i)+a_i/R <= 2",
+      "axis_classification_rmin_over_R": 0.02
+    },
+    "protocols_to_compare": {
+      "constant": "published local15 constant field",
+      "P2_505": "best loading protocol in V17C.11 N=256 holdout; not assumed optimal for N=6",
+      "P2_353": "published protocol source 353 from P2 screen",
+      "P7_292": "published protocol source 292 from P7 screen; exact 19-vectors read from V17C.11 holdout JSON"
+    }
+  },
+  "loading_protocol": {
+    "protocol_id": 505,
+    "label": "P2_505",
+    "envelope": {
+      "family": "direct linear ramps, kind=1; independent DC envelope",
+      "carrier_phases": "both RF carrier phases remain continuous; frequencies are unchanged",
+      "gA_start": 0.1,
+      "gA_duration_primary_cycles": 3.0,
+      "gB_start": 0.1,
+      "gB_duration_primary_cycles": 0.25,
+      "gB_delay_primary_cycles": 0.0,
+      "gDC_start": 0.35,
+      "gDC_duration_primary_cycles": 0.25,
+      "gDC_delay_primary_cycles": 2.2228266522288322,
+      "terminal_after_primary_cycles": 3.0,
+      "primary_period_us": 10.0,
+      "terminal_after_us": 30.0,
+      "protocol_vector_19": [
+        1.0,
+        3.0,
+        0.25,
+        0.25,
+        0.0,
+        2.2228266522288322,
+        0.1,
+        0.1,
+        0.35,
+        0.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "note": "The same predeclared protocol was applied to every run; carrier phases were continuous. After loading, all fields were held at constant local15."
+  },
+  "initial_condition": {
+    "source_task_id": "ordered_003",
+    "source_ensemble": "ordered",
+    "initial_state_particle_order": "rows 0-2: group 1; rows 3-5: group 2; columns x,y,z,vx,vy,vz in units of R and primary RF velocity scale",
+    "state": [
+      [
+        -0.28791106820328544,
+        -0.3458427631251565,
+        -0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.44346415268303235,
+        -0.07641691753218097,
+        -0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.15555308447974675,
+        0.42225968065733765,
+        -0.1,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.2634956536169624,
+        -0.572249980799449,
+        -0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.36383519387899876,
+        0.5143189202187991,
+        -0.25,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.6273308474959612,
+        0.0579310605806503,
+        -0.25,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "rf_phase_rad": [
+      3.917866836845417,
+      1.7492066532954031
+    ],
+    "initial_velocities_zero": true
+  },
+  "long_horizon_result": {
+    "total_post_load_periods": 120000,
+    "rk4_steps_per_primary_period": 96,
+    "full_horizon_group_frequencies_Hz": [
+      150.13353843634698,
+      -99.95555135340699
+    ],
+    "full_horizon_mean_radii_R": [
+      [
+        0.5480284350913388,
+        0.5480759402994321,
+        0.5480345484833913
+      ],
+      [
+        0.7660739224349029,
+        0.7660727139730589,
+        0.7660595729583103
+      ]
+    ],
+    "late_half_metrics": {
+      "groups": [
+        {
+          "particle_indices": [
+            0,
+            1,
+            2
+          ],
+          "mean_frequencies_Hz": [
+            150.17553296811982,
+            150.1352941215878,
+            150.13974353186725
+          ],
+          "mean_frequency_Hz": 150.15019020719163,
+          "relative_frequency_spread": 0.00011995899387540445,
+          "turns_each_after_load": [
+            90.1053197808719,
+            90.08117647295269,
+            90.08384611912034
+          ],
+          "minimum_turns_abs": 90.08117647295269,
+          "mean_radius_R_each": [
+            0.5480147869100792,
+            0.5480756188189345,
+            0.5480495939334026
+          ],
+          "radius_5_95_percentile_R": [
+            [
+              0.5025164596976025,
+              0.5029841590895786,
+              0.5029559995998535
+            ],
+            [
+              0.5940927210929857,
+              0.5945383737053322,
+              0.5943063824886303
+            ]
+          ],
+          "mean_z_R_each": [
+            1.23e-321,
+            1.23e-321,
+            1.23e-321
+          ],
+          "center_z_mean_R": 1.23e-321,
+          "within_group_z_rms_R": 0.0,
+          "mean_Psi3": 0.9876564631125896,
+          "p05_Psi3": 0.9814573718091043,
+          "late_mean_cyclic_gaps_deg": [
+            117.16774273440045,
+            120.91677696880714,
+            121.9154802967964
+          ],
+          "late_max_abs_gap_error_deg": 9.061209337034938,
+          "relative_phase_late_diagnostics": [
+            {
+              "linear_drift_deg_per_1000_periods": 0.0,
+              "detrended_range_deg": 0.0,
+              "raw_range_deg": 0.0
+            },
+            {
+              "linear_drift_deg_per_1000_periods": 0.004984161769289858,
+              "detrended_range_deg": 18.211993345538954,
+              "raw_range_deg": 18.1036829674342
+            },
+            {
+              "linear_drift_deg_per_1000_periods": 0.00414315432057655,
+              "detrended_range_deg": 18.196907936223084,
+              "raw_range_deg": 18.096871475152746
+            }
+          ],
+          "minimum_internal_pair_distances_R": [
+            0.8739289898282545,
+            0.8716910370019868,
+            0.8717988616359676
+          ]
+        },
+        {
+          "particle_indices": [
+            3,
+            4,
+            5
+          ],
+          "mean_frequencies_Hz": [
+            -99.95731793667028,
+            -99.95270352445192,
+            -99.95054431358052
+          ],
+          "mean_frequency_Hz": -99.9535219249009,
+          "relative_frequency_spread": 2.8265366504643554e-05,
+          "turns_each_after_load": [
+            -59.97439076200217,
+            -59.971622114671156,
+            -59.97032658814832
+          ],
+          "minimum_turns_abs": 59.97032658814832,
+          "mean_radius_R_each": [
+            0.7660732531037431,
+            0.7660742442934791,
+            0.7660598729220927
+          ],
+          "radius_5_95_percentile_R": [
+            [
+              0.7408043830783323,
+              0.7407827715705281,
+              0.7407978043666475
+            ],
+            [
+              0.7916844380719528,
+              0.7916868540278251,
+              0.7916555589060812
+            ]
+          ],
+          "mean_z_R_each": [
+            -3.157e-321,
+            -3.157e-321,
+            -3.157e-321
+          ],
+          "center_z_mean_R": -3.157e-321,
+          "within_group_z_rms_R": 0.0,
+          "mean_Psi3": 0.9981924690478855,
+          "p05_Psi3": 0.9966528997395699,
+          "late_mean_cyclic_gaps_deg": [
+            118.9928520137384,
+            120.34855047062595,
+            120.65859751563713
+          ],
+          "late_max_abs_gap_error_deg": 3.885731741296027,
+          "relative_phase_late_diagnostics": [
+            {
+              "linear_drift_deg_per_1000_periods": 0.0,
+              "detrended_range_deg": 0.0,
+              "raw_range_deg": 0.0
+            },
+            {
+              "linear_drift_deg_per_1000_periods": 0.0004564631784796012,
+              "detrended_range_deg": 7.770534781323765,
+              "raw_range_deg": 7.766179224147231
+            },
+            {
+              "linear_drift_deg_per_1000_periods": -0.00200784335446684,
+              "detrended_range_deg": 7.819455771068364,
+              "raw_range_deg": 7.765293382380597
+            }
+          ],
+          "minimum_internal_pair_distances_R": [
+            1.2892776298881752,
+            1.289287031342496,
+            1.2892853796527655
+          ]
+        }
+      ],
+      "opposite_group_frequency_signs": true,
+      "all_particles_at_least_10_turns": true,
+      "late_window_group_signs": [
+        [
+          30.031241908828378,
+          -19.988894920256346
+        ],
+        [
+          30.029749234707612,
+          -19.990806247699236
+        ],
+        [
+          30.02912298077898,
+          -19.992411986984965
+        ]
+      ],
+      "directions_constant_in_three_windows": true
+    },
+    "minimum_pair_distance_R_i_lt_j": [
+      0.7295351595901295,
+      0.7534848270756969,
+      0.19674631082053665,
+      0.19673804668424952,
+      0.19673106626864015,
+      0.7239804050996227,
+      0.19674139913824432,
+      0.1967329223373344,
+      0.196726018618722,
+      0.19672433097205194,
+      0.19674162917949634,
+      0.19673084533496324,
+      1.0691398698240748,
+      1.0458237695967711,
+      1.048445623696822
+    ],
+    "minimum_radius_R": [
+      0.43154200189906694,
+      0.4132797527578285,
+      0.42099725129752824,
+      0.597048357286263,
+      0.6246914975064992,
+      0.593324907061671
+    ],
+    "maximum_radius_R": [
+      0.6061800157451828,
+      0.6122288066760582,
+      0.6151560836264272,
+      0.8186326614474495,
+      0.8132959130046217,
+      0.8223962569246344
+    ],
+    "maximum_absolute_z_R": [
+      0.1,
+      0.1,
+      0.1,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "energy_balance": {
+      "samples": 120001,
+      "initial_postload_total_energy": 0.03150946885469555,
+      "final_total_energy": 0.0119315247672755,
+      "integrated_RF_work": 4991.9264253197225,
+      "integrated_drag_work": -4992.01909328859,
+      "final_balance_residual": 0.07309002477995818,
+      "max_abs_balance_residual": 0.07309002477995818,
+      "relative_max_residual_vs_RF_work": 1.4641647042159063e-05
+    },
+    "independent_checkpoint_audit": {
+      "status": "passed",
+      "all_six_directions_pass": true,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_rf_phase_boundary_error_rad": 1.495763513048587e-10,
+      "max_energy_boundary_error": 2.347982919204128e-13
+    }
+  },
+  "files": {
+    "trajectory": "p1_formation_extensions/ordered_003/full_120k_trajectory.npz",
+    "audit": "p1_formation_extensions/extension_audit.json",
+    "parameters": "local15_n6_parameters.json"
+  },
+  "limitations": [
+    "120k continuation uses RK4/96 only; no independent DOP853 or 128/256 refinement over this entire horizon.",
+    "The candidate starts from two ordered triangles. Random-start long runs are a small outcome-selected set and do not determine P_crystal.",
+    "Dimensionless local15 parameters have not been shown physically compatible with real particle material, charge, drag, gravity, or breakdown constraints.",
+    "Both rings relax to z approximately zero; axial separation was not obtained."
+  ]
+}

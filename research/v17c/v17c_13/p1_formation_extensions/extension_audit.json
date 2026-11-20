@@ -1,0 +1,2172 @@
+{
+  "status": "passed",
+  "n_representative_extensions": 5,
+  "target_total_postload_periods": 120000,
+  "steps_per_period": 96,
+  "phase_continuity_checked": true,
+  "all_six_individual_directions_checked": true,
+  "late_half_crystal_thresholds": {
+    "relative_frequency_spread_max": 0.01,
+    "mean_and_p05_Psi3_min": 0.9,
+    "late_cyclic_gap_error_max_deg": 10.0,
+    "relative_phase_drift_max_deg_per_1000_periods": 0.25,
+    "detrended_phase_range_max_deg": 20.0
+  },
+  "results": [
+    {
+      "task_id": "ordered_003",
+      "status": "passed",
+      "errors": [],
+      "full_trace_sha256": "50bde997b975911cb0d2e2796ce88b20c1f59dd609ef7394531afbd9f17f46c0",
+      "full_trace_shape": [
+        120204,
+        6,
+        8
+      ],
+      "chunk_count": 7,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_total_energy_boundary_error": 2.347982919204128e-13,
+      "max_continuous_rf_phase_error_rad": 1.495763513048587e-10,
+      "three_window_turns_each": [
+        [
+          60.03986374992036,
+          60.03946143234003,
+          60.05793227582257,
+          -39.98320016657531,
+          -39.987442555584146,
+          -39.98255075924688
+        ],
+        [
+          60.055665484052845,
+          60.05431647147296,
+          60.05688231078066,
+          -39.97872368822846,
+          -39.98054573280432,
+          -39.9778672657735
+        ],
+        [
+          60.07223823489097,
+          60.05041961494158,
+          60.05395879662723,
+          -39.985193621743,
+          -39.98222406800879,
+          -39.98223701430081
+        ]
+      ],
+      "individual_particle_directions_pass": true,
+      "late_half_structure_pass_by_group": [
+        true,
+        true
+      ],
+      "full_horizon_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.13980622405347,
+              150.12016459896216,
+              150.14064448602537
+            ],
+            "mean_frequency_Hz": 150.13353843634698,
+            "relative_frequency_spread": 6.303002825159174e-05,
+            "turns_each_after_load": [
+              180.16776746886418,
+              180.1441975187546,
+              180.16877338323044
+            ],
+            "minimum_turns_abs": 180.1441975187546,
+            "mean_radius_R_each": [
+              0.5480284350913388,
+              0.5480759402994321,
+              0.5480345484833913
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028225892515465,
+                0.5028053830584237,
+                0.5028511721343927
+              ],
+              [
+                0.5942893213365452,
+                0.5943096142988317,
+                0.5943384285508175
+              ]
+            ],
+            "mean_z_R_each": [
+              -9.485472427013748e-43,
+              -9.499883500848404e-43,
+              -8.760790837788402e-43
+            ],
+            "center_z_mean_R": -9.24871558855018e-43,
+            "within_group_z_rms_R": 1.9609662093748513e-41,
+            "mean_Psi3": 0.9876467038755916,
+            "p05_Psi3": 0.9814447876652771,
+            "late_mean_cyclic_gaps_deg": [
+              117.16469461268592,
+              120.92742549603929,
+              121.90787989127608
+            ],
+            "late_max_abs_gap_error_deg": 9.062556747267408,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0011627755986788103,
+                "detrended_range_deg": 18.15181525240792,
+                "raw_range_deg": 18.10503037766668
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.00071196542937342,
+                "detrended_range_deg": 18.131035578844504,
+                "raw_range_deg": 18.102096887212458
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8613380595224276,
+              0.8716910370019868,
+              0.8704681749027922
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.95593123045565,
+              -99.9585102969977,
+              -99.95221253276766
+            ],
+            "mean_frequency_Hz": -99.95555135340699,
+            "relative_frequency_spread": 2.5861947897413046e-05,
+            "turns_each_after_load": [
+              -119.94711747654678,
+              -119.95021235639724,
+              -119.94265503932118
+            ],
+            "minimum_turns_abs": 119.94265503932118,
+            "mean_radius_R_each": [
+              0.7660739224349029,
+              0.7660727139730589,
+              0.7660595729583103
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7407853596335991,
+                0.7407816031234424,
+                0.7407960066583114
+              ],
+              [
+                0.7916748676078845,
+                0.7916800032886027,
+                0.7916566117184073
+              ]
+            ],
+            "mean_z_R_each": [
+              -2.260487422406104e-42,
+              -1.9105726893365558e-42,
+              -2.15990487856658e-42
+            ],
+            "center_z_mean_R": -2.1103216634364004e-42,
+            "within_group_z_rms_R": 3.3457645690029763e-41,
+            "mean_Psi3": 0.9981812968744185,
+            "p05_Psi3": 0.9966277543424186,
+            "late_mean_cyclic_gaps_deg": [
+              118.99261128766045,
+              120.351600335056,
+              120.6557883772837
+            ],
+            "late_max_abs_gap_error_deg": 3.885731741296027,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 6.22420315328399e-05,
+                "detrended_range_deg": 7.76907050592858,
+                "raw_range_deg": 7.766375674931329
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0005263846339631196,
+                "detrended_range_deg": 7.791982981942493,
+                "raw_range_deg": 7.769212811998983
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.289032440867181,
+              1.2892763228787714,
+              1.279914514125306
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            60.04575248602765,
+            -39.984397827135446
+          ],
+          [
+            60.05562142210215,
+            -39.97904556226876
+          ],
+          [
+            60.05887221548659,
+            -39.983218234684195
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "late_half_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.17553296811982,
+              150.1352941215878,
+              150.13974353186725
+            ],
+            "mean_frequency_Hz": 150.15019020719163,
+            "relative_frequency_spread": 0.00011995899387540445,
+            "turns_each_after_load": [
+              90.1053197808719,
+              90.08117647295269,
+              90.08384611912034
+            ],
+            "minimum_turns_abs": 90.08117647295269,
+            "mean_radius_R_each": [
+              0.5480147869100792,
+              0.5480756188189345,
+              0.5480495939334026
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5025164596976025,
+                0.5029841590895786,
+                0.5029559995998535
+              ],
+              [
+                0.5940927210929857,
+                0.5945383737053322,
+                0.5943063824886303
+              ]
+            ],
+            "mean_z_R_each": [
+              1.23e-321,
+              1.23e-321,
+              1.23e-321
+            ],
+            "center_z_mean_R": 1.23e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9876564631125896,
+            "p05_Psi3": 0.9814573718091043,
+            "late_mean_cyclic_gaps_deg": [
+              117.16774273440045,
+              120.91677696880714,
+              121.9154802967964
+            ],
+            "late_max_abs_gap_error_deg": 9.061209337034938,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.004984161769289858,
+                "detrended_range_deg": 18.211993345538954,
+                "raw_range_deg": 18.1036829674342
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.00414315432057655,
+                "detrended_range_deg": 18.196907936223084,
+                "raw_range_deg": 18.096871475152746
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8739289898282545,
+              0.8716910370019868,
+              0.8717988616359676
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.95731793667028,
+              -99.95270352445192,
+              -99.95054431358052
+            ],
+            "mean_frequency_Hz": -99.9535219249009,
+            "relative_frequency_spread": 2.8265366504643554e-05,
+            "turns_each_after_load": [
+              -59.97439076200217,
+              -59.971622114671156,
+              -59.97032658814832
+            ],
+            "minimum_turns_abs": 59.97032658814832,
+            "mean_radius_R_each": [
+              0.7660732531037431,
+              0.7660742442934791,
+              0.7660598729220927
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7408043830783323,
+                0.7407827715705281,
+                0.7407978043666475
+              ],
+              [
+                0.7916844380719528,
+                0.7916868540278251,
+                0.7916555589060812
+              ]
+            ],
+            "mean_z_R_each": [
+              -3.157e-321,
+              -3.157e-321,
+              -3.157e-321
+            ],
+            "center_z_mean_R": -3.157e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9981924690478855,
+            "p05_Psi3": 0.9966528997395699,
+            "late_mean_cyclic_gaps_deg": [
+              118.9928520137384,
+              120.34855047062595,
+              120.65859751563713
+            ],
+            "late_max_abs_gap_error_deg": 3.885731741296027,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0004564631784796012,
+                "detrended_range_deg": 7.770534781323765,
+                "raw_range_deg": 7.766179224147231
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.00200784335446684,
+                "detrended_range_deg": 7.819455771068364,
+                "raw_range_deg": 7.765293382380597
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2892776298881752,
+              1.289287031342496,
+              1.2892853796527655
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            30.031241908828378,
+            -19.988894920256346
+          ],
+          [
+            30.029749234707612,
+            -19.990806247699236
+          ],
+          [
+            30.02912298077898,
+            -19.992411986984965
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "max_relative_energy_residual_vs_rf_work": 1.4641647042159063e-05,
+      "minimum_pair_distances_R_i_lt_j": [
+        0.7295351595901295,
+        0.7534848270756969,
+        0.19674631082053665,
+        0.19673804668424952,
+        0.19673106626864015,
+        0.7239804050996227,
+        0.19674139913824432,
+        0.1967329223373344,
+        0.196726018618722,
+        0.19672433097205194,
+        0.19674162917949634,
+        0.19673084533496324,
+        1.0691398698240748,
+        1.0458237695967711,
+        1.048445623696822
+      ],
+      "minimum_radius_R_each": [
+        0.43154200189906694,
+        0.4132797527578285,
+        0.42099725129752824,
+        0.597048357286263,
+        0.6246914975064992,
+        0.593324907061671
+      ],
+      "maximum_radius_R_each": [
+        0.6061800157451828,
+        0.6122288066760582,
+        0.6151560836264272,
+        0.8186326614474495,
+        0.8132959130046217,
+        0.8223962569246344
+      ],
+      "maximum_abs_z_R_each": [
+        0.1,
+        0.1,
+        0.1,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "mean_group_center_z_R": [
+        -9.24871558855018e-43,
+        -2.1103216634364004e-42
+      ]
+    },
+    {
+      "task_id": "random_azimuth_010",
+      "status": "passed",
+      "errors": [],
+      "full_trace_sha256": "970a92fcbf5c21fa3020114293238510705e7bc8d41edda0bf7a635bea152ffb",
+      "full_trace_shape": [
+        120204,
+        6,
+        8
+      ],
+      "chunk_count": 7,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_total_energy_boundary_error": 2.716854519135836e-13,
+      "max_continuous_rf_phase_error_rad": 2.5783464252526755e-10,
+      "three_window_turns_each": [
+        [
+          60.12149866345832,
+          59.917955668276996,
+          60.094838468820626,
+          -39.95892753122893,
+          -40.05916665396827,
+          -39.92119847593138
+        ],
+        [
+          60.050475918825576,
+          60.059561919004096,
+          60.07098524677729,
+          -39.982761518529465,
+          -39.985553786236345,
+          -39.98535204429388
+        ],
+        [
+          60.05184004809512,
+          60.05122677273158,
+          60.064786612864545,
+          -39.977802303161276,
+          -39.981413964969256,
+          -39.976320567338796
+        ]
+      ],
+      "individual_particle_directions_pass": true,
+      "late_half_structure_pass_by_group": [
+        true,
+        true
+      ],
+      "full_horizon_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.1865121919825,
+              150.0239536333439,
+              150.1921752737187
+            ],
+            "mean_frequency_Hz": 150.1342136996817,
+            "relative_frequency_spread": 0.0005195345524262369,
+            "turns_each_after_load": [
+              180.223814630379,
+              180.02874436001267,
+              180.23061032846246
+            ],
+            "minimum_turns_abs": 180.02874436001267,
+            "mean_radius_R_each": [
+              0.5480488153649201,
+              0.5480398329081655,
+              0.5480127165216817
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028035053986689,
+                0.5028302612906287,
+                0.5028370251408089
+              ],
+              [
+                0.594286102266649,
+                0.594273523757495,
+                0.5943334523364058
+              ]
+            ],
+            "mean_z_R_each": [
+              3.1127027856939566e-44,
+              4.291827668551859e-44,
+              6.1228628085201055e-43
+            ],
+            "center_z_mean_R": 2.2877719513148953e-43,
+            "within_group_z_rms_R": 1.4245573709655687e-40,
+            "mean_Psi3": 0.9806854978707815,
+            "p05_Psi3": 0.9808547159835742,
+            "late_mean_cyclic_gaps_deg": [
+              117.33813156221079,
+              120.28311295137853,
+              122.37875548641377
+            ],
+            "late_max_abs_gap_error_deg": 9.05734832575402,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0005630594102904935,
+                "detrended_range_deg": 18.131189461821055,
+                "raw_range_deg": 18.108241903268556
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0011713065253107977,
+                "detrended_range_deg": 18.149093809262464,
+                "raw_range_deg": 18.104875051108976
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.42316981801966286,
+              0.8441452632298445,
+              0.8715982015989915
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.9329094607664,
+              -100.02177867097824,
+              -99.90239257297003
+            ],
+            "mean_frequency_Hz": -99.9523602349049,
+            "relative_frequency_spread": 0.0005066673855655465,
+            "turns_each_after_load": [
+              -119.91949135291968,
+              -120.02613440517388,
+              -119.88287108756404
+            ],
+            "minimum_turns_abs": 119.88287108756404,
+            "mean_radius_R_each": [
+              0.7660565278688716,
+              0.7660728377913343,
+              0.7660806504461076
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7408515093224696,
+                0.7408656040702412,
+                0.7408707254548321
+              ],
+              [
+                0.7920119694469921,
+                0.792029539874596,
+                0.7920177694588807
+              ]
+            ],
+            "mean_z_R_each": [
+              -2.4604080769043055e-42,
+              2.1855758548746335e-42,
+              2.94180501601839e-42
+            ],
+            "center_z_mean_R": 8.889909313295691e-43,
+            "within_group_z_rms_R": 5.026107005501665e-40,
+            "mean_Psi3": 0.9908250793849902,
+            "p05_Psi3": 0.9809926245389757,
+            "late_mean_cyclic_gaps_deg": [
+              119.06416342053531,
+              120.10086114717483,
+              120.83497543229078
+            ],
+            "late_max_abs_gap_error_deg": 3.941456449590774,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.00019159822773841178,
+                "detrended_range_deg": 7.770663269194694,
+                "raw_range_deg": 7.765542969220663
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0006342959290215644,
+                "detrended_range_deg": 7.793409597309485,
+                "raw_range_deg": 7.765055275266259
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2884624704369037,
+              1.2884573103607029,
+              0.8157522724645128
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            60.044764266851985,
+            -39.97976422037619
+          ],
+          [
+            60.06034102820232,
+            -39.98455578301989
+          ],
+          [
+            60.05595114456375,
+            -39.978512278489774
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "late_half_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.13012296159872,
+              150.13722963826845,
+              150.17442701221347
+            ],
+            "mean_frequency_Hz": 150.14725987069355,
+            "relative_frequency_spread": 0.00012939247033945376,
+            "turns_each_after_load": [
+              90.07807377695923,
+              90.08233778296108,
+              90.10465620732809
+            ],
+            "minimum_turns_abs": 90.07807377695923,
+            "mean_radius_R_each": [
+              0.5480760827859955,
+              0.5480496480783041,
+              0.5480153215921225
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028708540696497,
+                0.502524441742333,
+                0.503013215058311
+              ],
+              [
+                0.5944508408763512,
+                0.5940635844920619,
+                0.59438049896043
+              ]
+            ],
+            "mean_z_R_each": [
+              9.44e-322,
+              1.37e-321,
+              -9.44e-322
+            ],
+            "center_z_mean_R": 4.55e-322,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9876580099342206,
+            "p05_Psi3": 0.9814601905673962,
+            "late_mean_cyclic_gaps_deg": [
+              117.34178705226327,
+              120.26329074211357,
+              122.3949222056257
+            ],
+            "late_max_abs_gap_error_deg": 9.056367029615885,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0033491775260438197,
+                "detrended_range_deg": 18.171841229165928,
+                "raw_range_deg": 18.10071527439291
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.004958252671704166,
+                "detrended_range_deg": 18.220133204883016,
+                "raw_range_deg": 18.104287020118484
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8733076504363101,
+              0.8716632102713155,
+              0.8715982015989915
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.94767224577016,
+              -99.95672321639843,
+              -99.94715315756429
+            ],
+            "mean_frequency_Hz": -99.95051620657762,
+            "relative_frequency_spread": 4.396307253103692e-05,
+            "turns_each_after_load": [
+              -59.9686033474621,
+              -59.97403392983906,
+              -59.968291894538574
+            ],
+            "minimum_turns_abs": 59.968291894538574,
+            "mean_radius_R_each": [
+              0.7660616926774964,
+              0.7660672128067221,
+              0.7660769704051122
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7408582199909628,
+                0.7408629462369054,
+                0.7408674260072736
+              ],
+              [
+                0.7920147889761676,
+                0.7920331970351088,
+                0.7920149889536364
+              ]
+            ],
+            "mean_z_R_each": [
+              3.157e-321,
+              3.157e-321,
+              3.157e-321
+            ],
+            "center_z_mean_R": 3.157e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9981925104551642,
+            "p05_Psi3": 0.9966540073664243,
+            "late_mean_cyclic_gaps_deg": [
+              119.0633998290517,
+              120.10339665090603,
+              120.83320352004324
+            ],
+            "late_max_abs_gap_error_deg": 3.9412159309580943,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0005762753099453819,
+                "detrended_range_deg": 7.769754042095806,
+                "raw_range_deg": 7.763855288023223
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.002517282297471957,
+                "detrended_range_deg": 7.829301446102672,
+                "raw_range_deg": 7.765055275266259
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2884624704369037,
+              1.2884573103607029,
+              1.2884594738384727
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            30.03240477785239,
+            -19.9917974454568
+          ],
+          [
+            30.029254944095555,
+            -19.98920794032044
+          ],
+          [
+            30.02669620046819,
+            -19.989304338169333
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "max_relative_energy_residual_vs_rf_work": 1.4642207768898186e-05,
+      "minimum_pair_distances_R_i_lt_j": [
+        0.14102529688630988,
+        0.8380124452710422,
+        0.1967970192690512,
+        0.1967927472640051,
+        0.19679378875514056,
+        0.8655130359487876,
+        0.196795250305479,
+        0.19676194528078683,
+        0.19676476659555145,
+        0.1967997869090379,
+        0.1967544231322448,
+        0.19678796651148897,
+        1.1870704488865749,
+        1.119288630985057,
+        0.6399158961560478
+      ],
+      "minimum_radius_R_each": [
+        0.42485346734067714,
+        0.43270200977399803,
+        0.4332857577095654,
+        0.5998111985456147,
+        0.6065793397691822,
+        0.6121898196282842
+      ],
+      "maximum_radius_R_each": [
+        0.6116505167792851,
+        0.6095577319813408,
+        0.6078693732286415,
+        0.8185956762323583,
+        0.8124537114682123,
+        0.8150901131215135
+      ],
+      "maximum_abs_z_R_each": [
+        0.0008153466117597591,
+        0.003052634775975225,
+        0.0003164728791874103,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "mean_group_center_z_R": [
+        2.2877719513148953e-43,
+        8.889909313295691e-43
+      ]
+    },
+    {
+      "task_id": "random_position_rest_004",
+      "status": "passed",
+      "errors": [],
+      "full_trace_sha256": "72c64e013a3091a00ce715a3a76ac14ac99d7616ac5b808d0829d94bbc76522e",
+      "full_trace_shape": [
+        120204,
+        6,
+        8
+      ],
+      "chunk_count": 7,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_total_energy_boundary_error": 3.0117575100518934e-13,
+      "max_continuous_rf_phase_error_rad": 1.495763513048587e-10,
+      "three_window_turns_each": [
+        [
+          60.11752044145478,
+          59.99059734740902,
+          60.032888885805875,
+          -39.98852089292363,
+          -39.88151651005724,
+          -40.08581269712808
+        ],
+        [
+          60.03754288085992,
+          60.04984396331866,
+          60.03927158089069,
+          -39.98083063728275,
+          -39.98080900604211,
+          -39.97566236743006
+        ],
+        [
+          60.044154688992876,
+          60.064128411672876,
+          60.05601996119564,
+          -39.981136345291304,
+          -39.985059924800666,
+          -39.98016394453911
+        ]
+      ],
+      "individual_particle_directions_pass": true,
+      "late_half_structure_pass_by_group": [
+        true,
+        true
+      ],
+      "full_horizon_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.16601500942298,
+              150.08714143533382,
+              150.1068170232435
+            ],
+            "mean_frequency_Hz": 150.11999115600008,
+            "relative_frequency_spread": 0.00022329089136056995,
+            "turns_each_after_load": [
+              180.19921801130755,
+              180.10456972240056,
+              180.1281804278922
+            ],
+            "minimum_turns_abs": 180.10456972240056,
+            "mean_radius_R_each": [
+              0.548082791300903,
+              0.5480175798968725,
+              0.5480501004734819
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028577742581773,
+                0.5027797116122243,
+                0.5027764658252164
+              ],
+              [
+                0.5943384471091082,
+                0.5942784025823561,
+                0.5942496394898613
+              ]
+            ],
+            "mean_z_R_each": [
+              6.280064318830432e-44,
+              -8.106381469239683e-44,
+              7.240132978859633e-43
+            ],
+            "center_z_mean_R": 2.352500421272903e-43,
+            "within_group_z_rms_R": 1.7824011454068446e-40,
+            "mean_Psi3": 0.9845290388395879,
+            "p05_Psi3": 0.9812799624316233,
+            "late_mean_cyclic_gaps_deg": [
+              117.61264530339847,
+              122.68769303036989,
+              119.69966166623252
+            ],
+            "late_max_abs_gap_error_deg": 9.064423099838777,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0010485669845011862,
+                "detrended_range_deg": 18.147985558691566,
+                "raw_range_deg": 18.102673004663004
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.00012808279490494938,
+                "detrended_range_deg": 18.10732800059938,
+                "raw_range_deg": 18.10225298529436
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.6135761092841557,
+              0.8716828216375467,
+              0.8541185122322448
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.95873989624808,
+              -99.87282120075001,
+              -100.03469917424772
+            ],
+            "mean_frequency_Hz": -99.95542009041526,
+            "relative_frequency_spread": 0.0006615757783895744,
+            "turns_each_after_load": [
+              -119.9504878754977,
+              -119.84738544090001,
+              -120.04163900909725
+            ],
+            "minimum_turns_abs": 119.84738544090001,
+            "mean_radius_R_each": [
+              0.7660674996099381,
+              0.7660476070726435,
+              0.7660636097353093
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7409674061857063,
+                0.7409667078085049,
+                0.7409789938717228
+              ],
+              [
+                0.7920520393309773,
+                0.7920527017371415,
+                0.7920530032923844
+              ]
+            ],
+            "mean_z_R_each": [
+              -1.2144703881112184e-42,
+              -5.645487919107585e-42,
+              9.718801807830134e-42
+            ],
+            "center_z_mean_R": 9.529478335371098e-43,
+            "within_group_z_rms_R": 9.033111835430171e-39,
+            "mean_Psi3": 0.9885807978566337,
+            "p05_Psi3": 0.979360452668903,
+            "late_mean_cyclic_gaps_deg": [
+              119.18158891106623,
+              120.94347821917141,
+              119.87493286976259
+            ],
+            "late_max_abs_gap_error_deg": 3.9305997574699347,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.00015975574457960536,
+                "detrended_range_deg": 7.781169068388965,
+                "raw_range_deg": 7.777263575810079
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.00046256945981326485,
+                "detrended_range_deg": 7.793014213420546,
+                "raw_range_deg": 7.777091333161778
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2885804502592701,
+              1.2885835752739174,
+              0.6102433873532597
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            60.047002224889894,
+            -39.98528336670298
+          ],
+          [
+            60.042219475023096,
+            -39.97910067025164
+          ],
+          [
+            60.054767687287125,
+            -39.9821200715437
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "late_half_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.10353782018075,
+              150.15112994231657,
+              150.12687599537003
+            ],
+            "mean_frequency_Hz": 150.12718125262245,
+            "relative_frequency_spread": 0.00012942760454206899,
+            "turns_each_after_load": [
+              90.06212269210846,
+              90.09067796538993,
+              90.07612559722202
+            ],
+            "minimum_turns_abs": 90.06212269210846,
+            "mean_radius_R_each": [
+              0.5480693064290569,
+              0.5480127412693431,
+              0.5480563181750953
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5027769445722955,
+                0.5030457678672192,
+                0.5025751856875009
+              ],
+              [
+                0.5941578426607413,
+                0.5945417984264605,
+                0.5941365290764371
+              ]
+            ],
+            "mean_z_R_each": [
+              1.37e-321,
+              1.393e-321,
+              9.44e-322
+            ],
+            "center_z_mean_R": 1.235e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.987657514840391,
+            "p05_Psi3": 0.9814577586100639,
+            "late_mean_cyclic_gaps_deg": [
+              117.61903108107761,
+              122.68366963686331,
+              119.69729928206313
+            ],
+            "late_max_abs_gap_error_deg": 9.062568438881797,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.004127722148053479,
+                "detrended_range_deg": 18.192780850026,
+                "raw_range_deg": 18.102673004663004
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.00046300545576434575,
+                "detrended_range_deg": 18.101380858304797,
+                "raw_range_deg": 18.10225298529436
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8717648954212757,
+              0.8717492830850827,
+              0.8727761706768773
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.94851987973672,
+              -99.95607347685855,
+              -99.94239617249694
+            ],
+            "mean_frequency_Hz": -99.94899650969741,
+            "relative_frequency_spread": 5.5967527470883745e-05,
+            "turns_each_after_load": [
+              -59.969111927842036,
+              -59.97364408611513,
+              -59.96543770349817
+            ],
+            "minimum_turns_abs": 59.96543770349817,
+            "mean_radius_R_each": [
+              0.7660665556618605,
+              0.7660633666110014,
+              0.7660773380406684
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7409727404816161,
+                0.7409642523414623,
+                0.7409951090735142
+              ],
+              [
+                0.792061954229326,
+                0.7920800981304119,
+                0.7920613535835289
+              ]
+            ],
+            "mean_z_R_each": [
+              3.157e-321,
+              -3.157e-321,
+              3.157e-321
+            ],
+            "center_z_mean_R": 1.05e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9981925931753264,
+            "p05_Psi3": 0.9966526835997801,
+            "late_mean_cyclic_gaps_deg": [
+              119.17965628620853,
+              120.9425206368476,
+              119.877823076945
+            ],
+            "late_max_abs_gap_error_deg": 3.9305997574699347,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.00039729143291872184,
+                "detrended_range_deg": 7.776825333644221,
+                "raw_range_deg": 7.774264796082293
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.002049361228830051,
+                "detrended_range_deg": 7.816491461592644,
+                "raw_range_deg": 7.777091333161778
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2886015170808476,
+              1.2885835752739174,
+              1.288587254369676
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            30.02154106428634,
+            -19.987277834274753
+          ],
+          [
+            30.026866191280877,
+            -19.989577641648484
+          ],
+          [
+            30.02790149600625,
+            -19.992542429895206
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "max_relative_energy_residual_vs_rf_work": 1.4641918524539398e-05,
+      "minimum_pair_distances_R_i_lt_j": [
+        0.42596652797726287,
+        0.7672596425414209,
+        0.1927027227924769,
+        0.19676329615073868,
+        0.19674664267032385,
+        0.7325756110933871,
+        0.19675312376590923,
+        0.19674051864828826,
+        0.1967267237488461,
+        0.1967523991718722,
+        0.19675776772864104,
+        0.18428419790397849,
+        1.1280143133227523,
+        1.2819722900785353,
+        0.34303211645314535
+      ],
+      "minimum_radius_R_each": [
+        0.41408026381629714,
+        0.3197045679859485,
+        0.3831035379064245,
+        0.6312222798307888,
+        0.4553868457544843,
+        0.6270047457704472
+      ],
+      "maximum_radius_R_each": [
+        0.6076154773425254,
+        0.6158401146658068,
+        0.6880267898477623,
+        0.8181689970433262,
+        0.8206558796946891,
+        0.8110948674604802
+      ],
+      "maximum_abs_z_R_each": [
+        0.36255211010575294,
+        0.23223863076418638,
+        0.3771519726142287,
+        0.31042931880801916,
+        0.030197767540812492,
+        0.10422577429562807
+      ],
+      "mean_group_center_z_R": [
+        2.352500421272903e-43,
+        9.529478335371098e-43
+      ]
+    },
+    {
+      "task_id": "random_position_rest_015",
+      "status": "passed",
+      "errors": [],
+      "full_trace_sha256": "0e4af0ff4f52311db027259db05268b841a97e43dac96eec9293203860c7a3c3",
+      "full_trace_shape": [
+        120204,
+        6,
+        8
+      ],
+      "chunk_count": 7,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_total_energy_boundary_error": 2.1966456431599113e-13,
+      "max_continuous_rf_phase_error_rad": 1.475797262173728e-10,
+      "three_window_turns_each": [
+        [
+          60.08006217831288,
+          60.02008929840796,
+          60.076883717947446,
+          -39.89597546876602,
+          -39.986233091267366,
+          -40.06399710769381
+        ],
+        [
+          60.043722756911464,
+          60.04306678211769,
+          60.049042345586784,
+          -39.98433209084069,
+          -39.98127319011635,
+          -39.97898351959113
+        ],
+        [
+          60.039164625411296,
+          60.04953356576413,
+          60.03718158932255,
+          -39.9798149976432,
+          -39.98100973939715,
+          -39.97508705701642
+        ]
+      ],
+      "individual_particle_directions_pass": true,
+      "late_half_structure_pass_by_group": [
+        true,
+        true
+      ],
+      "full_horizon_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.13579130052972,
+              150.09390803857482,
+              150.13592304404733
+            ],
+            "mean_frequency_Hz": 150.1218741277173,
+            "relative_frequency_spread": 0.0001317268687965123,
+            "turns_each_after_load": [
+              180.16294956063564,
+              180.1126896462898,
+              180.16310765285678
+            ],
+            "minimum_turns_abs": 180.1126896462898,
+            "mean_radius_R_each": [
+              0.548085372703716,
+              0.5480301550788702,
+              0.5480279167646572
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028477601374338,
+                0.5028391066575929,
+                0.5027836834941848
+              ],
+              [
+                0.5943296762683407,
+                0.594312807098639,
+                0.5942889048429063
+              ]
+            ],
+            "mean_z_R_each": [
+              2.1741399341808464e-43,
+              3.410410354579579e-44,
+              -3.573615065360856e-43
+            ],
+            "center_z_mean_R": -3.528113652406839e-44,
+            "within_group_z_rms_R": 1.1587571044852956e-40,
+            "mean_Psi3": 0.9863870279698546,
+            "p05_Psi3": 0.9813152012600423,
+            "late_mean_cyclic_gaps_deg": [
+              117.20366799569751,
+              120.71926781387742,
+              122.07706419042471
+            ],
+            "late_max_abs_gap_error_deg": 9.077692849539403,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0009978501035427083,
+                "detrended_range_deg": 18.144748568348312,
+                "raw_range_deg": 18.102533549650033
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0006571020609293886,
+                "detrended_range_deg": 18.12593959822747,
+                "raw_range_deg": 18.10676338732906
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.7495209964225275,
+              0.8557838310280235,
+              0.8471009894037361
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.88343546437493,
+              -99.95709668398406,
+              -100.01505640358447
+            ],
+            "mean_frequency_Hz": -99.95186285064783,
+            "relative_frequency_spread": 0.0005388725966646237,
+            "turns_each_after_load": [
+              -119.86012255724991,
+              -119.94851602078087,
+              -120.01806768430136
+            ],
+            "minimum_turns_abs": 119.86012255724991,
+            "mean_radius_R_each": [
+              0.7660696164449471,
+              0.7660655066291215,
+              0.7660654956612042
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.740920118671805,
+                0.7409330257936176,
+                0.7409276716099481
+              ],
+              [
+                0.7918161658592524,
+                0.7918012098293549,
+                0.7918186140575741
+              ]
+            ],
+            "mean_z_R_each": [
+              -4.075813151576354e-43,
+              3.3077168968043768e-43,
+              -9.560178597127835e-42
+            ],
+            "center_z_mean_R": -3.212329407535013e-42,
+            "within_group_z_rms_R": 7.267070069760035e-39,
+            "mean_Psi3": 0.9860865323116894,
+            "p05_Psi3": 0.9564065145412319,
+            "late_mean_cyclic_gaps_deg": [
+              119.00880840239292,
+              120.27634779765556,
+              120.7148437999548
+            ],
+            "late_max_abs_gap_error_deg": 3.888915368133439,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 7.272146218816546e-05,
+                "detrended_range_deg": 7.73271682227303,
+                "raw_range_deg": 7.73189053472673
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0005905249309378706,
+                "detrended_range_deg": 7.7598908957939114,
+                "raw_range_deg": 7.734601453252988
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.0322803282026078,
+              1.289462862156265,
+              1.085071520172119
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            60.0590117315561,
+            -39.98206855590906
+          ],
+          [
+            60.04527729487197,
+            -39.98152960018272
+          ],
+          [
+            60.041959926832654,
+            -39.978637264685595
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "late_half_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.1042368958827,
+              150.12100232384535,
+              150.10120903491875
+            ],
+            "mean_frequency_Hz": 150.10881608488228,
+            "relative_frequency_spread": 5.799247914129957e-05,
+            "turns_each_after_load": [
+              90.06254213752962,
+              90.0726013943072,
+              90.06072542095124
+            ],
+            "minimum_turns_abs": 90.06072542095124,
+            "mean_radius_R_each": [
+              0.5480768880700282,
+              0.5480231386152347,
+              0.5480409942695597
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028168074897874,
+                0.5030928445585361,
+                0.5025799329624447
+              ],
+              [
+                0.594174477798678,
+                0.5945690815944165,
+                0.5942013578288512
+              ]
+            ],
+            "mean_z_R_each": [
+              9.44e-322,
+              9.44e-322,
+              -9.44e-322
+            ],
+            "center_z_mean_R": 3.16e-322,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9876560182622165,
+            "p05_Psi3": 0.9814547339102161,
+            "late_mean_cyclic_gaps_deg": [
+              117.20824143396267,
+              120.71172370701576,
+              122.08003485902532
+            ],
+            "late_max_abs_gap_error_deg": 9.077692849539403,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0045222605697317255,
+                "detrended_range_deg": 18.198924528275636,
+                "raw_range_deg": 18.099245045311797
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.001987052104288071,
+                "detrended_range_deg": 18.141021487181217,
+                "raw_range_deg": 18.103651887466665
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8717948899840433,
+              0.8718184224691169,
+              0.8730224456055561
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.95110838030939,
+              -99.95097178288204,
+              -99.93793607388818
+            ],
+            "mean_frequency_Hz": -99.94667207902654,
+            "relative_frequency_spread": 6.180836293330941e-05,
+            "turns_each_after_load": [
+              -59.97066502818564,
+              -59.97058306972922,
+              -59.962761644332915
+            ],
+            "minimum_turns_abs": 59.962761644332915,
+            "mean_radius_R_each": [
+              0.7660638447980069,
+              0.7660655401385924,
+              0.766077126903286
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7409305796175123,
+                0.7409379436991338,
+                0.7409388519174991
+              ],
+              [
+                0.791819201357182,
+                0.7917966601691224,
+                0.7918174879595177
+              ]
+            ],
+            "mean_z_R_each": [
+              -3.157e-321,
+              -3.157e-321,
+              3.157e-321
+            ],
+            "center_z_mean_R": -1.05e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9981925794910534,
+            "p05_Psi3": 0.9966520924304885,
+            "late_mean_cyclic_gaps_deg": [
+              119.00899012582781,
+              120.27419343814277,
+              120.71681643603131
+            ],
+            "late_max_abs_gap_error_deg": 3.887798086297593,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0005179119045312452,
+                "detrended_range_deg": 7.733094160698643,
+                "raw_range_deg": 7.73189053472673
+              },
+              {
+                "linear_drift_deg_per_1000_periods": 0.0024745769857289325,
+                "detrended_range_deg": 7.79377383260439,
+                "raw_range_deg": 7.733613295379476
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.289468844291108,
+              1.289462862156265,
+              1.2894635651535016
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            30.023329724096694,
+            -19.989365982730334
+          ],
+          [
+            30.020806256817195,
+            -19.98784086407829
+          ],
+          [
+            30.021153670015465,
+            -19.990796400607305
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "max_relative_energy_residual_vs_rf_work": 1.4640072708571582e-05,
+      "minimum_pair_distances_R_i_lt_j": [
+        0.5456040422614369,
+        0.7105145673560866,
+        0.19674053854454052,
+        0.19672773273668248,
+        0.19675728240168386,
+        0.6709100165508564,
+        0.1967181960282504,
+        0.17977835829921338,
+        0.1967284974876189,
+        0.19674670949688228,
+        0.19673831917507176,
+        0.03027989039004543,
+        0.4071311259811463,
+        0.6937295649654067,
+        0.31425855677514636
+      ],
+      "minimum_radius_R_each": [
+        0.3093741524513914,
+        0.36911751445994373,
+        0.4302252019837364,
+        0.3583006279886819,
+        0.09328609176481095,
+        0.255030269969869
+      ],
+      "maximum_radius_R_each": [
+        0.8220233800378878,
+        0.7654878697297952,
+        0.6294251905416205,
+        0.8249738050168777,
+        0.8264682752145126,
+        0.8253761633667817
+      ],
+      "maximum_abs_z_R_each": [
+        0.36542400531470776,
+        0.12287627160549164,
+        0.042226224206388,
+        0.16862676199525595,
+        0.00349322147667408,
+        0.15812503453344107
+      ],
+      "mean_group_center_z_R": [
+        -3.528113652406839e-44,
+        -3.212329407535013e-42
+      ]
+    },
+    {
+      "task_id": "random_position_moving_006",
+      "status": "passed",
+      "errors": [],
+      "full_trace_sha256": "622bc00386b61e2e87b8d6a0a749f248b13fd2fb85e93c7109bf10a05584699d",
+      "full_trace_shape": [
+        120204,
+        6,
+        8
+      ],
+      "chunk_count": 7,
+      "max_state_boundary_error": 0.0,
+      "max_unwrapped_angle_boundary_error_rad": 0.0,
+      "max_total_energy_boundary_error": 7.404701851676521e-13,
+      "max_continuous_rf_phase_error_rad": 2.0578738713084022e-10,
+      "three_window_turns_each": [
+        [
+          60.046320336957315,
+          60.25911031367306,
+          59.91495953198347,
+          -40.16071720314204,
+          -39.967704805755915,
+          -39.82671205194394
+        ],
+        [
+          60.042808168933675,
+          60.05604540037082,
+          60.06378407513186,
+          -39.97755973945036,
+          -39.98046719514708,
+          -39.975739702959764
+        ],
+        [
+          60.044965558905005,
+          60.054736717257306,
+          60.055829387561765,
+          -39.986012543840204,
+          -39.984124840331894,
+          -39.98392195115844
+        ]
+      ],
+      "individual_particle_directions_pass": true,
+      "late_half_structure_pass_by_group": [
+        true,
+        true
+      ],
+      "full_horizon_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.11174505399669,
+              150.30824369275098,
+              150.02881082889758
+            ],
+            "mean_frequency_Hz": 150.1495998585484,
+            "relative_frequency_spread": 0.0007803968873554359,
+            "turns_each_after_load": [
+              180.13409406479602,
+              180.36989243130117,
+              180.0345729946771
+            ],
+            "minimum_turns_abs": 180.0345729946771,
+            "mean_radius_R_each": [
+              0.5480653228299978,
+              0.5480104916331864,
+              0.5480457187567683
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.5028520141586764,
+                0.5027586865314124,
+                0.5028385808721295
+              ],
+              [
+                0.5943106427602713,
+                0.5942571295212372,
+                0.5943314297125829
+              ]
+            ],
+            "mean_z_R_each": [
+              8.757122504067034e-44,
+              -6.16491485273585e-45,
+              5.817745103280215e-42
+            ],
+            "center_z_mean_R": 1.966383804489382e-42,
+            "within_group_z_rms_R": 9.213837894891114e-40,
+            "mean_Psi3": 0.9694665696043461,
+            "p05_Psi3": 0.9591532526525952,
+            "late_mean_cyclic_gaps_deg": [
+              122.59703054267425,
+              119.85030994158821,
+              117.55265951574042
+            ],
+            "late_max_abs_gap_error_deg": 9.05496007454579,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0005787184543417336,
+                "detrended_range_deg": 18.12686117331127,
+                "raw_range_deg": 18.102903613157505
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0011501223921381292,
+                "detrended_range_deg": 18.153367004839225,
+                "raw_range_deg": 18.10476352011954
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.4020217906940859,
+              0.44965682207568886,
+              0.8414372090777603
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -100.10357457202717,
+              -99.94358070102906,
+              -99.82197808838514
+            ],
+            "mean_frequency_Hz": -99.95637778714712,
+            "relative_frequency_spread": 0.001153671905178607,
+            "turns_each_after_load": [
+              -120.1242894864326,
+              -119.93229684123489,
+              -119.78637370606215
+            ],
+            "minimum_turns_abs": 119.78637370606215,
+            "mean_radius_R_each": [
+              0.7660624350488743,
+              0.7660648397346845,
+              0.7660805846545927
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7407445284982497,
+                0.7407482116082563,
+                0.7407456670412187
+              ],
+              [
+                0.7916566064515071,
+                0.7916251425716333,
+                0.7916546530834321
+              ]
+            ],
+            "mean_z_R_each": [
+              9.433624417893945e-41,
+              -1.028291219175792e-40,
+              -5.128380671920519e-41
+            ],
+            "center_z_mean_R": -1.992556148594832e-41,
+            "within_group_z_rms_R": 3.877978899270813e-38,
+            "mean_Psi3": 0.969498038023572,
+            "p05_Psi3": 0.857334359211035,
+            "late_mean_cyclic_gaps_deg": [
+              120.84531521554524,
+              120.06782403917111,
+              119.08686074528528
+            ],
+            "late_max_abs_gap_error_deg": 3.902460247258446,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0005135301805742236,
+                "detrended_range_deg": 7.796711724205375,
+                "raw_range_deg": 7.777011896608377
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0006037804249618508,
+                "detrended_range_deg": 7.804164253397234,
+                "raw_range_deg": 7.777832523573449
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.6012522737456574,
+              1.289083563026932,
+              0.8299972165620852
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            60.073463394204616,
+            -39.9850446869473
+          ],
+          [
+            60.05421254814545,
+            -39.97792221251907
+          ],
+          [
+            60.05184388790803,
+            -39.98468644511018
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "late_half_metrics": {
+        "groups": [
+          {
+            "particle_indices": [
+              0,
+              1,
+              2
+            ],
+            "mean_frequencies_Hz": [
+              150.10951143440712,
+              150.13998685155303,
+              150.14743206940437
+            ],
+            "mean_frequency_Hz": 150.13231011845485,
+            "relative_frequency_spread": 0.00010927119989553179,
+            "turns_each_after_load": [
+              90.06570686064428,
+              90.08399211093182,
+              90.08845924164261
+            ],
+            "minimum_turns_abs": 90.06570686064428,
+            "mean_radius_R_each": [
+              0.5480764762712362,
+              0.5480481464798502,
+              0.5480172249867701
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.502675019916933,
+                0.5027216395011047,
+                0.5030806463790846
+              ],
+              [
+                0.5940564890090735,
+                0.5942881626823739,
+                0.5945030807092203
+              ]
+            ],
+            "mean_z_R_each": [
+              -9.44e-322,
+              -1.23e-321,
+              -9.44e-322
+            ],
+            "center_z_mean_R": -1.04e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9876586094423819,
+            "p05_Psi3": 0.9814577185338451,
+            "late_mean_cyclic_gaps_deg": [
+              122.59969794535745,
+              119.83964128083632,
+              117.56066077380974
+            ],
+            "late_max_abs_gap_error_deg": 9.05496007454579,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0013698892282733002,
+                "detrended_range_deg": 18.128753953018347,
+                "raw_range_deg": 18.096353796108612
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.004950525909618197,
+                "detrended_range_deg": 18.232069292366354,
+                "raw_range_deg": 18.10476352011954
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              0.8719892663354712,
+              0.871720549147723,
+              0.872633180665022
+            ]
+          },
+          {
+            "particle_indices": [
+              3,
+              4,
+              5
+            ],
+            "mean_frequencies_Hz": [
+              -99.95795473013604,
+              -99.9561219082189,
+              -99.95228091588841
+            ],
+            "mean_frequency_Hz": -99.95545251808112,
+            "relative_frequency_spread": 2.365245470804692e-05,
+            "turns_each_after_load": [
+              -59.97477283808163,
+              -59.97367314493135,
+              -59.97136854953305
+            ],
+            "minimum_turns_abs": 59.97136854953305,
+            "mean_radius_R_each": [
+              0.7660782393837507,
+              0.7660656040197559,
+              0.766063018814222
+            ],
+            "radius_5_95_percentile_R": [
+              [
+                0.7407565036328764,
+                0.7407263515169756,
+                0.7407384777435166
+              ],
+              [
+                0.7916285078636305,
+                0.7916451569552673,
+                0.7916534336325264
+              ]
+            ],
+            "mean_z_R_each": [
+              -3.157e-321,
+              3.157e-321,
+              3.157e-321
+            ],
+            "center_z_mean_R": 1.05e-321,
+            "within_group_z_rms_R": 0.0,
+            "mean_Psi3": 0.9981924516536903,
+            "p05_Psi3": 0.9966548778713039,
+            "late_mean_cyclic_gaps_deg": [
+              120.84378813648463,
+              120.07108380832372,
+              119.08512805519405
+            ],
+            "late_max_abs_gap_error_deg": 3.902177942169814,
+            "relative_phase_late_diagnostics": [
+              {
+                "linear_drift_deg_per_1000_periods": 0.0,
+                "detrended_range_deg": 0.0,
+                "raw_range_deg": 0.0
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0019488215174040967,
+                "detrended_range_deg": 7.82727261589856,
+                "raw_range_deg": 7.776899527491383
+              },
+              {
+                "linear_drift_deg_per_1000_periods": -0.0025331587660683674,
+                "detrended_range_deg": 7.829285708646838,
+                "raw_range_deg": 7.776081937746981
+              }
+            ],
+            "minimum_internal_pair_distances_R": [
+              1.2890814926961858,
+              1.289083563026932,
+              1.289082805391432
+            ]
+          }
+        ],
+        "opposite_group_frequency_signs": true,
+        "all_particles_at_least_10_turns": true,
+        "late_window_group_signs": [
+          [
+            30.02754218316488,
+            -19.988585065738494
+          ],
+          [
+            30.02751198979189,
+            -19.99204062133717
+          ],
+          [
+            30.024331898116134,
+            -19.992645823773007
+          ]
+        ],
+        "directions_constant_in_three_windows": true
+      },
+      "max_relative_energy_residual_vs_rf_work": 1.4641263898709657e-05,
+      "minimum_pair_distances_R_i_lt_j": [
+        0.2392729371218507,
+        0.3123034021391195,
+        0.19123581127441217,
+        0.19672592258761448,
+        0.19671561965941903,
+        0.5290540627133757,
+        0.1967177978607228,
+        0.03318036716391462,
+        0.196711050792564,
+        0.19673130761587457,
+        0.19673100225484996,
+        0.19673246165940322,
+        0.45870289781639595,
+        1.1319051369143653,
+        0.6659373592953289
+      ],
+      "minimum_radius_R_each": [
+        0.34381349572814096,
+        0.39671219295197063,
+        0.42069464057573874,
+        0.5952432991621804,
+        0.2625889695516931,
+        0.6465978820659058
+      ],
+      "maximum_radius_R_each": [
+        0.778825718259045,
+        0.6469368903164898,
+        0.6067035723360505,
+        0.8493484197325561,
+        0.8268425759944197,
+        0.8641387277284648
+      ],
+      "maximum_abs_z_R_each": [
+        0.4944864865391281,
+        0.20689108036458492,
+        0.4010020988062024,
+        0.625626321942796,
+        0.3408446256071329,
+        0.4357990071041579
+      ],
+      "mean_group_center_z_R": [
+        1.966383804489382e-42,
+        -1.992556148594832e-41
+      ]
+    }
+  ]
+}

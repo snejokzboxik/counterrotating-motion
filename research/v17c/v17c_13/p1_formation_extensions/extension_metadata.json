@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "purpose": "extend frozen formation-ensemble representatives to 120k total post-load periods under constant local15",
+  "base_protocol": "P2_505; its 15k post-load endpoint is used as exact state/phase checkpoint",
+  "continuation_protocol": "constant local15; no amplitude modulation after pre-existing loading ends",
+  "rf_phase_continuity": "phase_j(t0)=phase_j(0)+Omega_j*t0 mod 2pi; chunk endpoint phases advanced using exact integrated chunk duration",
+  "total_post_load_periods_target": 120000,
+  "base_post_load_periods": 15000,
+  "extension_periods": 105000,
+  "chunk_periods": 15000,
+  "steps_per_primary_period": 96,
+  "workers": 4,
+  "selected_task_ids": [
+    "ordered_003",
+    "random_azimuth_010",
+    "random_position_rest_004",
+    "random_position_rest_015",
+    "random_position_moving_006"
+  ],
+  "stability_note": "representative extensions address persistence; they do not estimate ensemble probabilities",
+  "execution_note": "Main run used four worker threads. A redundant second process for random_position_moving_006 was interrupted at the 60k-extension checkpoint; the main checkpoint chain completed 105k additional periods. Final audit verified zero state/angle discontinuity and continuous RF phase/energy across all seven chunks."
+}
