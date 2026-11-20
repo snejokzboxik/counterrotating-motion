@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P5 validated; P6/P7 early screens and P8 N=64 strict holdout complete; P9 DOP853/energy audit prepared but not yet run; larger holdout, robustness, and transferability pending",
+  "status": "P0-P5 validated; P6/P7 early screens, P8 N=64 strict holdout, and P9 DOP853/energy/step checks complete; P10 larger holdout, robustness, and transferability pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/adaptive_loading/adaptive_early_retention_top16.png",
@@ -146,8 +146,13 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2274,
-      "sha256": "0076c85fb988e76da9fde252181192041735837613e25c88753d9c361cdaeba7"
+      "size_bytes": 2260,
+      "sha256": "132054fad31cd3bec4eb296468612a3fb1d7dae872e52fe29a7ec99f6663b2d1"
+    },
+    {
+      "path": "research/v17c/v17c_11/DOP853_ENERGY_VALIDATION_RU.md",
+      "size_bytes": 6100,
+      "sha256": "6da40e542a66f82f7b128ec7f0c873b8f95085d1441aef4cf5f0dabffc9a673d"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -335,6 +340,11 @@
       "sha256": "2aede0f129a168ee7ad189f09593d1d615ff892b662ddb85ae905547eaaac450"
     },
     {
+      "path": "research/v17c/v17c_11/plot_loading_dop853_representative.py",
+      "size_bytes": 2935,
+      "sha256": "6038e8fb52562dceb0dad43794a92253122525828a1f3cad1f9e91820134bad0"
+    },
+    {
       "path": "research/v17c/v17c_11/run_adaptive_loading_screen.py",
       "size_bytes": 8566,
       "sha256": "6f2e6f289a4bec69d0c43259e6089454b2bab2e5c68df3f78cd560f3bd93b98b"
@@ -371,8 +381,33 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 18996,
-      "sha256": "1d39c148b7fbed932fabe2b3ba7f86b13e463c7b2a03333c5faa7ecd8300c7e9"
+      "size_bytes": 19770,
+      "sha256": "09c1aeb67bdb2d713308bea1b111ba9fb4af815418110b1d119e3f2f979f0b08"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_P2_353_edge_1.npz",
+      "size_bytes": 3607570,
+      "sha256": "ec98cb23b433dbcbd12bb94668d969f41158e56e6cee35d31c53dc9759d4c101"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_P2_505_edge_1.npz",
+      "size_bytes": 3598774,
+      "sha256": "e8e0fb9cf9e3624a78d930562406947f31df76cca57cb3de66aaf41d233d0705"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_P7_292_edge_1.npz",
+      "size_bytes": 3599910,
+      "sha256": "12d7369c93696ef293efee7dc81b6e8732785135455b4d06d2a8c5b35355ccf2"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_representatives.json",
+      "size_bytes": 21012,
+      "sha256": "71f00dc836a7f1d47ce3199619da19c0f0322aedbb4bfbda65223b921fc7195e"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/dop853_representatives.jsonl",
+      "size_bytes": 13636,
+      "sha256": "b55fa5f054cceed51558443a18a79a640d372f60e080d85085ac475d6a6e5198"
     },
     {
       "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_metadata.json",
@@ -408,6 +443,16 @@
       "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_summary.json",
       "size_bytes": 14773,
       "sha256": "6336a66a994454a114fb93402b5f6b1494937f2b07f69138f1fb97e2d4131d87"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/P7_292_dop853_loading_trajectory.png",
+      "size_bytes": 327479,
+      "sha256": "2a6a5454d0c9428cbde31cb410e6711582f60ec4d237ee507b22abb918653b81"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/step_convergence_P7_292.json",
+      "size_bytes": 2825,
+      "sha256": "d952ff9893c8e71beff576ae30c4aecf8052c23f19db98fab83c3dcfe6fe7e4e"
     },
     {
       "path": "research/v17c/v17c_11/strict_loading_holdout/strict_holdout_comparison.png",
@@ -528,6 +573,11 @@
       "path": "research/v17c/v17c_11/verify_loading_holdout_dop853.py",
       "size_bytes": 7550,
       "sha256": "e3bdad0b88255ffed2c6b2c1a7dcd385a6ed8c6d790d395eb546baaf0d1dbf6f"
+    },
+    {
+      "path": "research/v17c/v17c_11/verify_loading_rk4_step_convergence.py",
+      "size_bytes": 3091,
+      "sha256": "fcaba043123f7bb580d4f8c961b176837565601b63482ae32f404f06fe9c8b18"
     },
     {
       "path": "research/v17c/v17c_11/verify_loading_step_convergence.py",
