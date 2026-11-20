@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "protocol": "P2_505",
+  "steps_per_period": 96,
+  "post_load_periods": 15000,
+  "relax_cycles": 200,
+  "n_total_starts": 80,
+  "n_strict_crystals": 28,
+  "P_crystal_all_starts": 0.35,
+  "n_full_horizon_retained": 72,
+  "P_retention_all_starts": 0.9,
+  "n_opposite_group_rotation": 72,
+  "P_opposite_group_rotation_all_starts": 0.9,
+  "denominator_note": "All generated, initially non-overlapping starts are included; early wall/contact losses are failures, never dropped.",
+  "sampling_note": "Exploratory scrambled-Sobol N=16 per ensemble; point probabilities are not final IID statistical validation.",
+  "integrity_errors": [],
+  "ensembles": {
+    "ordered": {
+      "n_total": 16,
+      "outcome_counts": {
+        "COUNTERROTATING_CRYSTALS_3_PLUS_3": 16
+      },
+      "retained_all_six_full_horizon": 16,
+      "retention_probability_all_starts": 1.0,
+      "strict_counterrotating_crystal_successes": 16,
+      "P_crystal_all_starts": 1.0,
+      "opposite_group_mean_rotation_cases": 16,
+      "P_opposite_group_rotation_all_starts": 1.0,
+      "all_six_directions_opposite_in_three_late_windows": 16,
+      "minimum_turns_each_over_retained_cases": 14.980887619660583,
+      "mean_group_frequency_Hz_over_strict_crystals": [
+        150.12174049228912,
+        -99.95442982537047
+      ],
+      "mean_Psi3_over_strict_crystals": [
+        0.9872559707915054,
+        0.9977191029371755
+      ],
+      "mean_group_center_z_R_over_retained_structures": [
+        7.412742203318198e-44,
+        -4.005266457062831e-42
+      ],
+      "energy_balance_coverage": 16,
+      "maximum_relative_energy_residual_vs_RF_work": 1.4642230844443878e-05,
+      "start_sha256": "0799c54e53d5bfa33a7460ab2856760dc2a2304fc5f703c90fce5d492bedf144"
+    },
+    "perturbed": {
+      "n_total": 16,
+      "outcome_counts": {
+        "COUNTERROTATING_CRYSTALS_3_PLUS_3": 12,
+        "COUNTERROTATING_UNORDERED": 1,
+        "PHASE_SLIP": 3
+      },
+      "retained_all_six_full_horizon": 16,
+      "retention_probability_all_starts": 1.0,
+      "strict_counterrotating_crystal_successes": 12,
+      "P_crystal_all_starts": 0.75,
+      "opposite_group_mean_rotation_cases": 16,
+      "P_opposite_group_rotation_all_starts": 1.0,
+      "all_six_directions_opposite_in_three_late_windows": 16,
+      "minimum_turns_each_over_retained_cases": 14.96360401914151,
+      "mean_group_frequency_Hz_over_strict_crystals": [
+        150.11468592049349,
+        -99.94874056137739
+      ],
+      "mean_Psi3_over_strict_crystals": [
+        0.9863939483204075,
+        0.996642987041854
+      ],
+      "mean_group_center_z_R_over_retained_structures": [
+        -7.62287776453124e-43,
+        7.93372215954318e-42
+      ],
+      "energy_balance_coverage": 16,
+      "maximum_relative_energy_residual_vs_RF_work": 1.4646069274735625e-05,
+      "start_sha256": "025331b9ed9b2258b12df1255754a74d3564f43a2c9d2cfc6c084a244660dbdc"
+    },
+    "random_azimuth": {
+      "n_total": 16,
+      "outcome_counts": {
+        "PHASE_SLIP": 16
+      },
+      "retained_all_six_full_horizon": 16,
+      "retention_probability_all_starts": 1.0,
+      "strict_counterrotating_crystal_successes": 0,
+      "P_crystal_all_starts": 0.0,
+      "opposite_group_mean_rotation_cases": 16,
+      "P_opposite_group_rotation_all_starts": 1.0,
+      "all_six_directions_opposite_in_three_late_windows": 16,
+      "minimum_turns_each_over_retained_cases": 14.771019021752037,
+      "mean_group_frequency_Hz_over_strict_crystals": null,
+      "mean_Psi3_over_strict_crystals": null,
+      "mean_group_center_z_R_over_retained_structures": [
+        -1.5499875880664753e-43,
+        -5.003439938889615e-42
+      ],
+      "energy_balance_coverage": 16,
+      "maximum_relative_energy_residual_vs_RF_work": 1.46506407719577e-05,
+      "start_sha256": "854c14a2d5e83ddbce8e9193929ae2ca000e6b14aef2d41ee3936bfe78874fd7"
+    },
+    "random_position_rest": {
+      "n_total": 16,
+      "outcome_counts": {
+        "PHASE_SLIP": 11,
+        "RING_EXCHANGE": 5
+      },
+      "retained_all_six_full_horizon": 16,
+      "retention_probability_all_starts": 1.0,
+      "strict_counterrotating_crystal_successes": 0,
+      "P_crystal_all_starts": 0.0,
+      "opposite_group_mean_rotation_cases": 16,
+      "P_opposite_group_rotation_all_starts": 1.0,
+      "all_six_directions_opposite_in_three_late_windows": 16,
+      "minimum_turns_each_over_retained_cases": 14.76884075086691,
+      "mean_group_frequency_Hz_over_strict_crystals": null,
+      "mean_Psi3_over_strict_crystals": null,
+      "mean_group_center_z_R_over_retained_structures": [
+        1.2165064139224553e-41,
+        2.351998352991252e-41
+      ],
+      "energy_balance_coverage": 16,
+      "maximum_relative_energy_residual_vs_RF_work": 1.46492819503817e-05,
+      "start_sha256": "4cc55d0b955d9d56e6a92ec6b1aa116639c2e177552ec7b1dc1d467fc755c2c9"
+    },
+    "random_position_moving": {
+      "n_total": 16,
+      "outcome_counts": {
+        "AXIS_AMBIGUOUS": 1,
+        "PHASE_SLIP": 2,
+        "RING_EXCHANGE": 5,
+        "WALL_CONTACT": 8
+      },
+      "retained_all_six_full_horizon": 8,
+      "retention_probability_all_starts": 0.5,
+      "strict_counterrotating_crystal_successes": 0,
+      "P_crystal_all_starts": 0.0,
+      "opposite_group_mean_rotation_cases": 8,
+      "P_opposite_group_rotation_all_starts": 0.5,
+      "all_six_directions_opposite_in_three_late_windows": 8,
+      "minimum_turns_each_over_retained_cases": 14.770880574600646,
+      "mean_group_frequency_Hz_over_strict_crystals": null,
+      "mean_Psi3_over_strict_crystals": null,
+      "mean_group_center_z_R_over_retained_structures": [
+        1.3683747605331246e-42,
+        -2.1561664155640172e-41
+      ],
+      "energy_balance_coverage": 8,
+      "maximum_relative_energy_residual_vs_RF_work": 1.4647810070974993e-05,
+      "start_sha256": "3402e9ec81cc9728d61e53be1f827d85f3c4261c49773cc83ed729de2c44aec3"
+    }
+  },
+  "category_counts_overall": {
+    "AXIS_AMBIGUOUS": 1,
+    "COUNTERROTATING_CRYSTALS_3_PLUS_3": 28,
+    "COUNTERROTATING_UNORDERED": 1,
+    "PHASE_SLIP": 32,
+    "RING_EXCHANGE": 10,
+    "WALL_CONTACT": 8
+  },
+  "early_boundary_failures": [
+    {
+      "task_id": "random_position_moving_000",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.7910934518928991,
+      "initial_max_abs_z_R": 0.4142934028059244,
+      "initial_max_speed": 0.09515637056591641
+    },
+    {
+      "task_id": "random_position_moving_003",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.8520204051917619,
+      "initial_max_abs_z_R": 0.475747455842793,
+      "initial_max_speed": 0.11606360380272929
+    },
+    {
+      "task_id": "random_position_moving_004",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.8579075371546491,
+      "initial_max_abs_z_R": 0.2862513530999422,
+      "initial_max_speed": 0.15591757538323897
+    },
+    {
+      "task_id": "random_position_moving_005",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.8213916677429743,
+      "initial_max_abs_z_R": 0.4170589568093419,
+      "initial_max_speed": 0.16199523454543907
+    },
+    {
+      "task_id": "random_position_moving_008",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.89214640302024,
+      "initial_max_abs_z_R": 0.4636760428547859,
+      "initial_max_speed": 0.11722908759654987
+    },
+    {
+      "task_id": "random_position_moving_010",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.8958684467239821,
+      "initial_max_abs_z_R": 0.4518075669184327,
+      "initial_max_speed": 0.12681744816258675
+    },
+    {
+      "task_id": "random_position_moving_014",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.889641963730633,
+      "initial_max_abs_z_R": 0.3855420686304569,
+      "initial_max_speed": 0.1402101744510455
+    },
+    {
+      "task_id": "random_position_moving_015",
+      "completed_primary_periods": 0,
+      "initial_max_r_R": 0.8675321241766314,
+      "initial_max_abs_z_R": 0.4937217440456152,
+      "initial_max_speed": 0.14506137801521146
+    }
+  ],
+  "run_ids": [
+    "ordered_003",
+    "ordered_001",
+    "ordered_002",
+    "ordered_000",
+    "ordered_004",
+    "ordered_005",
+    "ordered_006",
+    "ordered_007",
+    "ordered_008",
+    "ordered_010",
+    "ordered_009",
+    "ordered_011",
+    "ordered_012",
+    "ordered_014",
+    "ordered_013",
+    "ordered_015",
+    "perturbed_000",
+    "perturbed_002",
+    "perturbed_001",
+    "perturbed_003",
+    "perturbed_004",
+    "perturbed_006",
+    "perturbed_005",
+    "perturbed_007",
+    "perturbed_008",
+    "perturbed_009",
+    "perturbed_010",
+    "perturbed_011",
+    "perturbed_012",
+    "perturbed_013",
+    "perturbed_014",
+    "perturbed_015",
+    "random_azimuth_000",
+    "random_azimuth_002",
+    "random_azimuth_001",
+    "random_azimuth_003",
+    "random_azimuth_004",
+    "random_azimuth_005",
+    "random_azimuth_006",
+    "random_azimuth_007",
+    "random_azimuth_008",
+    "random_azimuth_009",
+    "random_azimuth_010",
+    "random_azimuth_011",
+    "random_azimuth_012",
+    "random_azimuth_013",
+    "random_azimuth_014",
+    "random_azimuth_015",
+    "random_position_rest_000",
+    "random_position_rest_001",
+    "random_position_rest_002",
+    "random_position_rest_003",
+    "random_position_rest_004",
+    "random_position_rest_005",
+    "random_position_rest_006",
+    "random_position_rest_007",
+    "random_position_rest_008",
+    "random_position_rest_009",
+    "random_position_rest_010",
+    "random_position_rest_011",
+    "random_position_rest_012",
+    "random_position_moving_000",
+    "random_position_rest_014",
+    "random_position_rest_015",
+    "random_position_moving_003",
+    "random_position_moving_004",
+    "random_position_moving_005",
+    "random_position_moving_001",
+    "random_position_rest_013",
+    "random_position_moving_008",
+    "random_position_moving_006",
+    "random_position_moving_010",
+    "random_position_moving_002",
+    "random_position_moving_009",
+    "random_position_moving_007",
+    "random_position_moving_014",
+    "random_position_moving_015",
+    "random_position_moving_011",
+    "random_position_moving_012",
+    "random_position_moving_013"
+  ]
+}

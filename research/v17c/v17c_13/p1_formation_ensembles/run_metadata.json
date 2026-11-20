@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "protocol": "P2_505",
+  "protocol_duration_cycles": 3.0,
+  "relax_after_load_cycles": 200,
+  "post_load_periods": 15000,
+  "steps_per_period": 96,
+  "total_periods": 15203,
+  "workers": 4,
+  "ensembles": [
+    "ordered",
+    "perturbed",
+    "random_azimuth",
+    "random_position_rest",
+    "random_position_moving"
+  ],
+  "n_per_ensemble": 16,
+  "classification": "explicit finite-horizon 3+3 criteria in classify(); failures remain in denominator",
+  "energy_balance": "RK4 stage-integrated RF work and drag with kinetic+RF+DC+Coulomb total energy"
+}

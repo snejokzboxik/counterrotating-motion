@@ -2,7 +2,7 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 validated; finite-horizon ordered 3+3 crystal candidate; C continuation, 8 perturbation tests, full-horizon RK4 refinement and late DOP853 passed; five frozen N=16 formation ensembles audited, integrations pending; basin statistics and physical feasibility remain open",
+  "status": "P0 validated; ordered finite-horizon 3+3 candidate passed RK4 refinement and late DOP853; Coulomb continuation and 8 perturbation tests complete; first audited formation survey N=16 across five ensembles: 28/80 strict crystals, 72/80 retained; long random-start extension and physical feasibility remain open",
   "outputs": [
     {
       "path": "research/v17c/v17c_13/analyze_p1_coulomb_work.py",
@@ -13,6 +13,11 @@
       "path": "research/v17c/v17c_13/audit_p1_coulomb_scan.py",
       "size_bytes": 3701,
       "sha256": "7d395158ea845370ba375878a28b6fa3bc7d1a5543662a282cd5ddc23f78a75f"
+    },
+    {
+      "path": "research/v17c/v17c_13/audit_p1_formation_ensembles.py",
+      "size_bytes": 8632,
+      "sha256": "82c52eff41b04d28cc0068284f2b03d660a9f31b7cbc9ca8bd8b75be4a82a0f4"
     },
     {
       "path": "research/v17c/v17c_13/audit_p1_formation_starts.py",
@@ -35,9 +40,14 @@
       "sha256": "bec6185038b5eee4fd16f6a04f7891777345737842b5788c6edd8884153dcf16"
     },
     {
+      "path": "research/v17c/v17c_13/BASIN_ANALYSIS_RU.md",
+      "size_bytes": 10003,
+      "sha256": "fc943ddec7a1f2fe2ab7a75cf4fb41ee8388e3cea77224418875e9783470660d"
+    },
+    {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1992,
-      "sha256": "19a4ae5bd4fd0113a1bb61d98452f17e05de4e18acf1f836cf729fdaa3d2bc51"
+      "size_bytes": 2029,
+      "sha256": "9b63582919d58b49cb305bb61d187641f2c44c4a7fc0862db38c7bd5e5d03d48"
     },
     {
       "path": "research/v17c/v17c_13/COLLECTIVE_STABILITY_RU.md",
@@ -200,9 +210,99 @@
       "sha256": "8a49ac8fe1be38024de24d3b904bcf0f7ec3a830bf43793a8c38fad75a159a0d"
     },
     {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/formation_ensemble_audit.json",
+      "size_bytes": 10511,
+      "sha256": "adf305691c57117f9cd78506823ab78a71a467dfa0c0185cb1c9367374af7875"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/formation_runs.jsonl",
+      "size_bytes": 439723,
+      "sha256": "ab4a0b0a060824335bcd6a6a1d0dfb9f8f9708ef661f2be958c8d07612304a6c"
+    },
+    {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/formation_start_audit.json",
       "size_bytes": 4653,
       "sha256": "a2bd34d32e6c8fdfc13403738e008593dc885ea9a1d52241c962eda367da9b99"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_000_trajectory.npz",
+      "size_bytes": 4555332,
+      "sha256": "b89eeffa464d87eaa9906a809b528b909686ea3dd95343beb2d7493cc726237d"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_001_trajectory.npz",
+      "size_bytes": 4554724,
+      "sha256": "eebccc8144a8342856a3360f8988f26e5d2c4d5db320fa0d127a6dab34bfa82a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_002_trajectory.npz",
+      "size_bytes": 4560470,
+      "sha256": "97a6de3b45522ee395b67f00d3aaa64276df784e82129dc001ec0525c4e0e69a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_003_trajectory.npz",
+      "size_bytes": 4552819,
+      "sha256": "b23da8b949b4488e4d8cc32a85523ee7322753b3f6ed678d39f9d8805085ceb7"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_004_trajectory.npz",
+      "size_bytes": 4557955,
+      "sha256": "90bea18bd3be994927e09581b9cc9a52267c55ad4a6cd14837c1e4c0f9375e38"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_005_trajectory.npz",
+      "size_bytes": 4562072,
+      "sha256": "2262b49ad90007b2c2125fb0451987d8dd5c666cbe72420aba6e678575359789"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_006_trajectory.npz",
+      "size_bytes": 4556223,
+      "sha256": "7516df20c4a533fb4dba1063c03debb28ded540de1e72d839b89dd2519c404d8"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_007_trajectory.npz",
+      "size_bytes": 4562109,
+      "sha256": "9b1f69385c9342c8191685f01c33e39ff4f375d41662fd1a95efb4a622a16bf4"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_008_trajectory.npz",
+      "size_bytes": 4555158,
+      "sha256": "51e5dffda979595f89bcc79bd73a3ca4eb3a6645d0291b851287a9575a8fd3dd"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_009_trajectory.npz",
+      "size_bytes": 4560505,
+      "sha256": "22a776ea380e46957e542ddc22581804fc07e7e618f6ab913c4e1c0a1974e823"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_010_trajectory.npz",
+      "size_bytes": 4556788,
+      "sha256": "ee2d5505a93e821e868103b2feb11f00daecc45d18375701a37c503982497550"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_011_trajectory.npz",
+      "size_bytes": 4552916,
+      "sha256": "77c478fea97fbd643c32befa89ddd247019c29eb1a36078cd9525e1657cfd659"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_012_trajectory.npz",
+      "size_bytes": 4551915,
+      "sha256": "d4be02e15ae925fe36e56f6b813bac27f1ccc0ec33bd362fa1b39b751e07ab30"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_013_trajectory.npz",
+      "size_bytes": 4555154,
+      "sha256": "a6f21b4bebaa1f078ca3f0569636583e062605d6c502a15587f830df91347f50"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_014_trajectory.npz",
+      "size_bytes": 4562658,
+      "sha256": "9143cc0d86aa25520e2961ea703e8807b0cc0158076a410004d33228cbf5a64b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_015_trajectory.npz",
+      "size_bytes": 4556554,
+      "sha256": "26ad9ee574965d5ab3622f4fe3545e74e853871e8169758bf7a307786786a04a"
     },
     {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/ordered_initials.npz",
@@ -215,6 +315,86 @@
       "sha256": "b8209f8131f810e653061c08e45b12216fa805a28b60b392df8454fe6cd07a35"
     },
     {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_000_trajectory.npz",
+      "size_bytes": 4557413,
+      "sha256": "ab123d3edcbafb148f22e3498466bb80fb975ae18d6c7bf59b80cf4ab2bd9ba3"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_001_trajectory.npz",
+      "size_bytes": 4554920,
+      "sha256": "3e521bb526ca7c1ce4889f93d621ff0cfdafeb93283a72e9e79fb4b86a0e75d2"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_002_trajectory.npz",
+      "size_bytes": 4559937,
+      "sha256": "57529dd3200dc7b63f26184f659493dea4e24cae4de65bd1794b822eceaa9e32"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_003_trajectory.npz",
+      "size_bytes": 4557048,
+      "sha256": "819b45f094f273b250f7571d41cdbe61d26341bbe12840b264fd1d47b6ab785c"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_004_trajectory.npz",
+      "size_bytes": 4556038,
+      "sha256": "61012c7539f412cdf0484a1f47cbf49c0101df74ada87e5856da892f07aa7fc6"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_005_trajectory.npz",
+      "size_bytes": 4561364,
+      "sha256": "6f8520d0a9a0629d514a6d0b987eab1a2015f2d319a5a628f99fe8e3daf27571"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_006_trajectory.npz",
+      "size_bytes": 4558374,
+      "sha256": "4bb51e2c647078b6852e566a26647712fb34ce6af983abb21db4071e4956ebce"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_007_trajectory.npz",
+      "size_bytes": 4559131,
+      "sha256": "94597edb4128b71b0d814f12b013137aefff96c9b2a499a093357112c6fc969b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_008_trajectory.npz",
+      "size_bytes": 4556290,
+      "sha256": "c7b6e603f8b536082f6e732357dadfacc74fca3098bf1c1fd3986eda6b4d450f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_009_trajectory.npz",
+      "size_bytes": 4565281,
+      "sha256": "4c5cbfb769c4b2510e36feaa70d5dd6817c23536b13d93abbed6ea1757023d7d"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_010_trajectory.npz",
+      "size_bytes": 4561239,
+      "sha256": "2e6f4a15268e51e371471786973bb3b67ecc14f94791077c18ce6236c912edb4"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_011_trajectory.npz",
+      "size_bytes": 4561583,
+      "sha256": "46d7c185925dc51a3faa2dc28713da572f5151896c0b87a49639e70dbee9031b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_012_trajectory.npz",
+      "size_bytes": 4563534,
+      "sha256": "a11ddf5ead2ed5088dbea0db34cbd1211a11101a98459d40a6fbd11a7919ba54"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_013_trajectory.npz",
+      "size_bytes": 4558018,
+      "sha256": "e47c6f8c2338604affd29332dbba52222c0b5dd7f46e3eec06d03af508b349a4"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_014_trajectory.npz",
+      "size_bytes": 4554990,
+      "sha256": "ca0782f08dabc72ae2aedd1589d1b355eb8b4e9f2402e886ef4371be7adb4093"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_015_trajectory.npz",
+      "size_bytes": 4555338,
+      "sha256": "67434193ef88fbaa1c13cbca2c20ba54ae4d0219e17c7ccd856d1c04e21b4234"
+    },
+    {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_initials.npz",
       "size_bytes": 3586,
       "sha256": "df95a1ebd20dad63f797624fa721f0c14503527388a7876cdc190259c75fe997"
@@ -223,6 +403,86 @@
       "path": "research/v17c/v17c_13/p1_formation_ensembles/perturbed_metadata.json",
       "size_bytes": 1059,
       "sha256": "b02491d1e9562644e5697bfad02f5cffbf8930c05185ce51cc882e1f5bd68989"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_000_trajectory.npz",
+      "size_bytes": 4561613,
+      "sha256": "09d260c182553dd8fe25cc2bcbbc11df2d5a503700dfb527c461975d7c6618b5"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_001_trajectory.npz",
+      "size_bytes": 4561291,
+      "sha256": "f066d5ef8aeeb9cf742390fd029893249f536fc2acdb4be6a854172f6c9b970b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_002_trajectory.npz",
+      "size_bytes": 4567945,
+      "sha256": "e74e9bfbabcab034c5a3fab56da15bad1880205702d0f238d9c81ded855092eb"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_003_trajectory.npz",
+      "size_bytes": 4559740,
+      "sha256": "fd48a10e50dd854b1484a928e8e40c7fac3e2e0a44ac4011db9fc9ea0a42c8d1"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_004_trajectory.npz",
+      "size_bytes": 4557976,
+      "sha256": "3286c51bc70508c3787d9908ea3ced78936e44cd32b3b8c5da8205e8c815902f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_005_trajectory.npz",
+      "size_bytes": 4557952,
+      "sha256": "3861109ee3d57e0e61066b440128f7a63ef9f3ae8a6388e7e058c510223991c5"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_006_trajectory.npz",
+      "size_bytes": 4564072,
+      "sha256": "ac9ecc5764ce568d2d0f0956e8048d3d5cea289e7a0cde000310179ba696e129"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_007_trajectory.npz",
+      "size_bytes": 4564249,
+      "sha256": "d5089cd90d33c013ad25102d77c17f8d3bccd7ec78f18361ad9f88d546da18da"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_008_trajectory.npz",
+      "size_bytes": 4565150,
+      "sha256": "9cac2234b9a84d3711ebbf7f7b88585fa716fb6e13aa54667f2a90fc406ed89f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_009_trajectory.npz",
+      "size_bytes": 4563454,
+      "sha256": "6c604e4bd71426be50c01fb4201910c7e62304dee09850ee7b5449f27b62b3ab"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_010_trajectory.npz",
+      "size_bytes": 4561601,
+      "sha256": "686b14fdfd5e19d1faa422ed481dd47cd958c243647e5195a59b6287017a843a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_011_trajectory.npz",
+      "size_bytes": 4563043,
+      "sha256": "fd2b0f9c39e1b5d873f1cfa52694f3fbccf90890e2789a657d44907f4dee4077"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_012_trajectory.npz",
+      "size_bytes": 4562149,
+      "sha256": "1863d0dec1668348f933237ed913a059cfc277568789ad13e0d8eb75b9d9e259"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_013_trajectory.npz",
+      "size_bytes": 4560378,
+      "sha256": "aeb1d2c2b18993cc42a8b43becb03992c554f885af2ec4de77e412ff5c5a50b9"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_014_trajectory.npz",
+      "size_bytes": 4565703,
+      "sha256": "78f29399ffb547e1aecbcee0f5ea4c8eec5c36d4e757ecf6dccb70307fd3936c"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_015_trajectory.npz",
+      "size_bytes": 4561654,
+      "sha256": "197c2d896ee90b3442a22c2edcf438778a5fbe7d34b0cf653eac6e255eb16e72"
     },
     {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/random_azimuth_initials.npz",
@@ -235,6 +495,86 @@
       "sha256": "03564a38988a6cd8d2b3a18bc87aeeecd76fc2b942057833204f35e401122d98"
     },
     {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_000_trajectory.npz",
+      "size_bytes": 1854,
+      "sha256": "0e3357068f929b79f8852b11964881c716f747872e748178a122d045ba20c0dd"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_001_trajectory.npz",
+      "size_bytes": 4570277,
+      "sha256": "dcd8a3f844a99bb38b6c16032dc1619ed6d9c8d58c49074a8cc7dff4cea677c7"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_002_trajectory.npz",
+      "size_bytes": 4566032,
+      "sha256": "251899a2001a8e27ae2bc882c1e6bd0995c966b84f36b7204a591313d7864a8b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_003_trajectory.npz",
+      "size_bytes": 1857,
+      "sha256": "9df2c49e90e2702d522b2c82036f41289cb1e781f81bbf1254ea0c0c7b682837"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_004_trajectory.npz",
+      "size_bytes": 1854,
+      "sha256": "ab90615929c90b0f703044b833d248f26e8c667ab5bbe1ce4def74a4bf274c59"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_005_trajectory.npz",
+      "size_bytes": 1852,
+      "sha256": "24baeebe8f849e33cbdbf7541ab34633f4c91fe96f0f812f8db8891f7ec935bf"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_006_trajectory.npz",
+      "size_bytes": 4570277,
+      "sha256": "45400641c0e9e493c4d0e2a536708cd846652554c051a69b94467ed94c4a8bcb"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_007_trajectory.npz",
+      "size_bytes": 4574851,
+      "sha256": "c9e62f34fed3008bd23993fae5ff76a919e598d495ad66e7abb712b7c59e23c7"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_008_trajectory.npz",
+      "size_bytes": 1857,
+      "sha256": "dea844b988e2f0bc2ab6ddc192213780d07364996b9959c22c6247c97ede3c23"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_009_trajectory.npz",
+      "size_bytes": 4573641,
+      "sha256": "f7c3b911d7d27524cb57f74d015d0c0c6e31a1b3fa249a6e8329a19a06a239a1"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_010_trajectory.npz",
+      "size_bytes": 1853,
+      "sha256": "f543ceb7b35cb2f2b75e03109ed4b2816c503befe5a55164599d41a38c3c1116"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_011_trajectory.npz",
+      "size_bytes": 4574808,
+      "sha256": "21fe18b93212eb87f60bf9b57994b86e6bcf283193145297fcc70b6bb1fb9a33"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_012_trajectory.npz",
+      "size_bytes": 4571917,
+      "sha256": "afa9fc265392a61c8071c9a6eb2c2d3dd39310313753dff043f34b2fdcbf77c9"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_013_trajectory.npz",
+      "size_bytes": 4562468,
+      "sha256": "5ad845ef940bcfc475a2e1f221b5171b29d53ac143b8b80bc7d3e701144f1901"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_014_trajectory.npz",
+      "size_bytes": 1856,
+      "sha256": "ee348d33f4d2e6e6ba1bdd30b025ddac25c94a4d434ecaf8a912f45b7a9a58e2"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_015_trajectory.npz",
+      "size_bytes": 1855,
+      "sha256": "f3a333a367d3e256bf08cf095821f4af0cc28eff0164e7e2dce8a1939bf81121"
+    },
+    {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_moving_initials.npz",
       "size_bytes": 5637,
       "sha256": "5f4a64f4454c6ff291b95a9b3fcd6879006650d306fce7d18d5381442b6d0092"
@@ -245,6 +585,86 @@
       "sha256": "79649475304500495c7b9a8dfb35d2f81f72166ac0a9bfe2bd4de080c07fa3ba"
     },
     {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_000_trajectory.npz",
+      "size_bytes": 4571476,
+      "sha256": "b9483a1fa8071f67144a03d1243b78d2bbd9c29962ebb690d5fc6ecc2db46a7f"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_001_trajectory.npz",
+      "size_bytes": 4575615,
+      "sha256": "2e770b079fb1001e96c7e5b338326ad9c3dade2e533ea380f256b30866054bc3"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_002_trajectory.npz",
+      "size_bytes": 4574962,
+      "sha256": "64a98a080b9d83d220d31492a777663bddee35063c7f460c997044f875c7adb5"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_003_trajectory.npz",
+      "size_bytes": 4574331,
+      "sha256": "a6aa0f41030d9ecd2845a6274815103cefbc9621d348fd85ce8dbedad0e9438a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_004_trajectory.npz",
+      "size_bytes": 4569105,
+      "sha256": "a1101368f852cc2570919b6a8aa947f0e563959f6b0755f5ff89b9213308d2ba"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_005_trajectory.npz",
+      "size_bytes": 4584249,
+      "sha256": "3f6c53cb5c6c6a4377b1cd4bb8c9df227e17f57ba0b485895c8177f8abfff674"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_006_trajectory.npz",
+      "size_bytes": 4572290,
+      "sha256": "165025c3bcd1764e7c190de3a482523007b9af97cca451581f20110829b64d1a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_007_trajectory.npz",
+      "size_bytes": 4559377,
+      "sha256": "4f123864c4715fb113bb93147758f3ec9f48b9c22f6aa516e75a7a0ed9597bae"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_008_trajectory.npz",
+      "size_bytes": 4572459,
+      "sha256": "ec1af3f8b2a9b45f7a779f5cc01919c7885e15da7846de1bf5ccf0085568dc14"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_009_trajectory.npz",
+      "size_bytes": 4578150,
+      "sha256": "2f8c0d11a8ba239ee7d00f4fa827208c8d9154b0a307392cd73f33c98828b388"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_010_trajectory.npz",
+      "size_bytes": 4572412,
+      "sha256": "de281da39d89913eac3513a9d6b19bb5769f6a169fd58583f309773ec740770b"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_011_trajectory.npz",
+      "size_bytes": 4575244,
+      "sha256": "a120903a3cca5193e901b4a98065c8a01a19520c9b0de74a807cf9fadf22083e"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_012_trajectory.npz",
+      "size_bytes": 4567909,
+      "sha256": "573bec61d9f4dd6ec38aaccf0e1655147312371d5119971d775695d2ed10b956"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_013_trajectory.npz",
+      "size_bytes": 4578920,
+      "sha256": "a8c8e221b47d04fbef8ca8acaee63ccc98275bb6da3fa9d9225ab7519a50fea4"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_014_trajectory.npz",
+      "size_bytes": 4571010,
+      "sha256": "b922b12f9bd7673d55f50c48c1b9139f056acd56006e19dbb17101325e99b35a"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_015_trajectory.npz",
+      "size_bytes": 4572615,
+      "sha256": "03d8110a0310e4f8040463545567209871221e85e68257f6b1e17fc283162244"
+    },
+    {
       "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_initials.npz",
       "size_bytes": 3528,
       "sha256": "569e891eea794fad1b917f2100f60ae78393a3decf0e219f96e788d399a07fb3"
@@ -253,6 +673,16 @@
       "path": "research/v17c/v17c_13/p1_formation_ensembles/random_position_rest_metadata.json",
       "size_bytes": 1042,
       "sha256": "19935b0825b44904c847c17a28abfb95b3cca06263f05b083c405e79f50577ab"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_formation_ensembles/run_metadata.json",
+      "size_bytes": 602,
+      "sha256": "bfb3fb83045a005cec1a19fdf32c686d3b700635c62e0a41f74b5663f3c24aad"
+    },
+    {
+      "path": "research/v17c/v17c_13/P1_FORMATION_ENSEMBLES.png",
+      "size_bytes": 124374,
+      "sha256": "6590a4e5343f010a3a58aa304ae0d7b48a25d267ace15e78641d25e4895fc70f"
     },
     {
       "path": "research/v17c/v17c_13/p1_long_candidates/constant_angle0_phase0_long_trajectory.npz",
@@ -490,6 +920,11 @@
       "sha256": "049f9be96e24c0b8d7c00a59ecb335a0262e47e1be3a11617158a1accca0ba62"
     },
     {
+      "path": "research/v17c/v17c_13/plot_p1_formation_ensembles.py",
+      "size_bytes": 4023,
+      "sha256": "687f7b1fdfe354003ae4a31cd43b26727956685f8e51eb1caacdc776521ed483"
+    },
+    {
       "path": "research/v17c/v17c_13/plot_p1_long_candidate.py",
       "size_bytes": 4033,
       "sha256": "e36b18c946410ca2f253a5e69a638483d901bb86715503b5d27a4db8b1af3d66"
@@ -511,8 +946,8 @@
     },
     {
       "path": "research/v17c/v17c_13/REPORT_RU.md",
-      "size_bytes": 14272,
-      "sha256": "b21226b2e268fb6e77ee0f70ae94eec24526a732ad24fdc391376fe32d5551ff"
+      "size_bytes": 15316,
+      "sha256": "5ed814c6e68fef3d88424f2d5d6a6e67566ddafac83344e1f1cecb0500481137"
     },
     {
       "path": "research/v17c/v17c_13/run_ordered_pilot.py",
@@ -536,8 +971,8 @@
     },
     {
       "path": "research/v17c/v17c_13/run_p1_formation_ensembles.py",
-      "size_bytes": 10979,
-      "sha256": "8f3fb0a105b9d984e0f6f2a54daf8c81e6a3cd624063c6ee70c00c8f4a9e170a"
+      "size_bytes": 11227,
+      "sha256": "405976eefaf19605ca657db439ecb6bee65ab4e99ef08cd6f030c9268fd2a8e5"
     },
     {
       "path": "research/v17c/v17c_13/run_p1_long_candidates.py",
@@ -556,8 +991,8 @@
     },
     {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 17123,
-      "sha256": "ec9ff89b5e9d58365967e9a89a40cfe3b8d992240ac7afc3498a53cc390ac311"
+      "size_bytes": 18020,
+      "sha256": "97708f85ddeb616f5feb49bee5b1a3b1cab290ffadd3f5bb0450898e09d244af"
     },
     {
       "path": "research/v17c/v17c_13/SPATIAL_SEPARATION_RU.md",
