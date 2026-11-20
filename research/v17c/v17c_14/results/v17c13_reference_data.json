@@ -1,0 +1,77 @@
+{
+  "source": {
+    "repository": "snejokzboxik/three-phase-12-electrode-trap",
+    "branch": "research/v17c-crystals",
+    "commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "parameter_file_commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "parameter_file": "research/v17c/v17c_13/local15_n6_parameters.json",
+    "long_audit_file": "research/v17c/v17c_13/p1_long_candidates/long_audit.json",
+    "limitations": "Values are copied from the pinned published V17C.13 artifacts. Sweep frequency values are the discrete points reported in COULOMB_COUPLING_RU.md; one selected frozen start, not a probability sample."
+  },
+  "local15": {
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "nu": 3.1118029452860356,
+    "beta": 0.017273303124515367,
+    "mass_ratio_m1_over_m2": 0.10944955727644175,
+    "C0": 9.463121589050818e-06,
+    "lambda1": 0.20975541409005094,
+    "lambda2": 0.12617311138613094,
+    "q2_over_q1": 3.1179673274978996,
+    "m2_over_m1": 9.136629008688033,
+    "alpha1": 1.0,
+    "alpha2": 0.34126014359705537,
+    "kappa": 3.0350291055309954e-06,
+    "rho1_n6_mean": 0.5480284351,
+    "rho2_n6_mean": 0.7660739224,
+    "omega1_n6_mean": 0.0015013353843634698,
+    "omega2_n6_mean": -0.0009995555135310699,
+    "f1_normalization_Hz": 100000.0,
+    "source_horizon_periods": 120000,
+    "source_integrator": "RK4/96 after loading",
+    "source_initial_state_id": "P2_505 selected ordered start; source states reproduced in V17C.13 best_crystal_configuration.json",
+    "representative_saved_initial_state_positions_velocities": [
+      [-0.2879110682, -0.3458427631, -0.1, 0.0, 0.0, 0.0],
+      [0.4434641527, -0.0764169175, -0.1, 0.0, 0.0, 0.0],
+      [-0.1555530845, 0.4222596807, -0.1, 0.0, 0.0, 0.0],
+      [0.2634956536, -0.5722499808, -0.25, 0.0, 0.0, 0.0],
+      [0.3638351939, 0.5143189202, -0.25, 0.0, 0.0, 0.0],
+      [-0.6273308475, 0.0579310606, -0.25, 0.0, 0.0, 0.0]
+    ],
+    "representative_saved_rf_phases_rad": [3.917866836845417, 1.7492066532954031],
+    "mfs_modes": [-46, -22, 2, 26, -28, -4, 20, 44],
+    "mfs_family": [0, 0, 0, 0, 1, 1, 1, 1],
+    "mfs_coefficients_real_imag": [
+      [0.01195544657862462, -1.0842155436372173e-16],
+      [0.09570557011088898, -4.2872248166624126e-16],
+      [1.0, 0.0],
+      [0.03864580974495959, 1.7793248982720981e-16],
+      [0.044100519066165626, -2.0091592851606255e-16],
+      [1.0, 0.0],
+      [0.17652762769656, 8.03012740525487e-16],
+      [0.02491992749735757, 2.3153021498709014e-16]
+    ]
+  },
+  "coulomb_sweep": {
+    "source_report": "research/v17c/v17c_13/COULOMB_COUPLING_RU.md",
+    "C_over_C0": [0.0, 0.1, 0.25, 0.5, 1.0, 2.0, 5.0, 10.0, 20.0, 50.0],
+    "group1_mean_frequency_Hz": [157.298, 157.401, 157.208, 155.909, 149.977, 122.552, -79.010, -80.227, -82.437, -87.649],
+    "group2_mean_frequency_Hz": [-100.478, -100.505, -100.512, -100.437, -99.952, -97.492, -78.993, -80.207, -82.422, -87.661],
+    "f1_Hz": 100000.0,
+    "runs_per_point": 1,
+    "initial_condition": "same P2_505 ordered frozen start, with load phase preserved",
+    "horizon_after_loading_periods": 15000,
+    "integrator": "RK4/96",
+    "continuation_direction": "C increased only; no reverse continuation",
+    "reported_transition_bracket_C_over_C0": [2.0, 5.0]
+  },
+  "representative_3plus3_long_run": {
+    "selected_start": "P2_505 ordered start #505",
+    "particles": 6,
+    "periods_after_loading": 120000,
+    "integrator": "RK4/96",
+    "mean_group_radii_R": [0.5480284351, 0.7660739224],
+    "mean_group_omega": [0.0015013353843634698, -0.0009995555135310699],
+    "scope": "One selected ordered initial state; not IID and not a basin probability estimate. Full-MFS, full Coulomb N-body result."
+  }
+}

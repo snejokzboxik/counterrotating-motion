@@ -1,0 +1,11 @@
+{
+  "laplace_H2": true,
+  "laplace_H4": true,
+  "H4_axial_curvature": "2*(beta_2 - 3*beta_4*(x**2 + y**2 - 2*z**2))",
+  "averaged_force_radial": "-a**2*alpha**2*n**2*rho**(2*n - 3)*(n - 1)/(lambda**2 + nu**2)",
+  "averaged_force_tangential_positive_chirality": "a**2*alpha**2*lambda*n**2*rho**(2*n - 3)*(n - 1)/(nu*(lambda**2 + nu**2))",
+  "moment_split_identity": true,
+  "coulomb_pair_torque_cancellation": true,
+  "sympy_version": "1.14.0",
+  "scope": "symbolic identities; no nonlinear-orbit stability theorem"
+}

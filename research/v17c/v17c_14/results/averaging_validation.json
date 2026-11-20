@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "random_seed": 1410,
+  "phase_quadrature_points_per_case": 65536,
+  "phase_quadrature_cases": 12,
+  "leading_mode_cases": 884,
+  "max_complex_mean_vs_phase_quadrature_relative_error": 1.4611518570955468e-14,
+  "max_leading_harmonic_formula_relative_error": 1.0611074693314089e-15,
+  "scope": "Frozen-position algebra only; this does not validate long-time orbit averaging or Floquet stability.",
+  "checks": [
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 4.145536079172681,
+      "lambda": 0.15546974801561536,
+      "relative_error": 1.3089863649835573e-14
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 1.980124436478405,
+      "lambda": 0.24803761450527348,
+      "relative_error": 6.506327704542035e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 1.3251392616246727,
+      "lambda": 0.2837688980132509,
+      "relative_error": 4.66641511021753e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 2.2073703608918533,
+      "lambda": 0.0394823770995939,
+      "relative_error": 4.849398983805524e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 2.892101805282004,
+      "lambda": 0.30047772828651037,
+      "relative_error": 2.945674534717791e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 0.8093302697634298,
+      "lambda": 0.29209934499410045,
+      "relative_error": 5.818390159683495e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 1.2798737083434668,
+      "lambda": 0.48691198837290756,
+      "relative_error": 1.4611518570955468e-14
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 4.049964123072046,
+      "lambda": 0.4415976736268837,
+      "relative_error": 1.7839258686903427e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 3.2480592072609156,
+      "lambda": 0.3284957080677341,
+      "relative_error": 8.09659618630097e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 0.8088180502906563,
+      "lambda": 0.10578012723078277,
+      "relative_error": 9.562108905160773e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 1.8841905403901744,
+      "lambda": 0.31991215971014225,
+      "relative_error": 4.371776328745038e-15
+    },
+    {
+      "check": "phase quadrature vs complex mean",
+      "nu": 1.9449274093209739,
+      "lambda": 0.12491104152167003,
+      "relative_error": 4.3654032981571654e-15
+    }
+  ]
+}

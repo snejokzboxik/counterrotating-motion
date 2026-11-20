@@ -1,0 +1,75 @@
+{
+  "method": "leading p=2,s=4 RF average; independent species; Coulomb omitted",
+  "source_commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+  "scan": {
+    "beta_min": 0.005,
+    "beta_max": 0.03,
+    "samples": 301,
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "nu": 3.1118029452860356,
+    "lambda1": 0.20975541409005094,
+    "lambda2": 0.12617311138613094,
+    "alpha1": 1.0,
+    "alpha2": 0.34126014359705537
+  },
+  "classification": "algebraic roots 0<rho<1; local stability by eigenvalues of reduced 3D polar Jacobian",
+  "trajectory_initial_conditions": null,
+  "trajectory_horizon": null,
+  "species_at_local15_beta": {
+    "1": [
+      {
+        "rho": 0.5503691530067869,
+        "omega_over_Omega1": 0.001440054163088106,
+        "stable_reduced_model": true,
+        "eigenvalues_real_imag": [
+          [
+            -0.10479885451038796,
+            0.19225520073580743
+          ],
+          [
+            -0.10479885451038796,
+            -0.19225520073580743
+          ],
+          [
+            -0.20991311915931832,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "2": [
+      {
+        "rho": 0.7663818561742767,
+        "omega_over_Omega1": -0.0010579232360122394,
+        "stable_reduced_model": true,
+        "eigenvalues_real_imag": [
+          [
+            -0.06314289369578074,
+            0.13064355552670415
+          ],
+          [
+            -0.06314289369578074,
+            -0.13064355552670415
+          ],
+          [
+            -0.12606043538068112,
+            0.0
+          ]
+        ]
+      }
+    ]
+  },
+  "scan_root_counts": {
+    "1": {
+      "stable": 297,
+      "unstable": 0,
+      "total": 297
+    },
+    "2": {
+      "stable": 301,
+      "unstable": 0,
+      "total": 301
+    }
+  }
+}
