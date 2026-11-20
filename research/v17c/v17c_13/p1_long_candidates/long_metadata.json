@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "purpose": "long post-load verification of P1 ordered candidates; stroboscopic at primary RF period",
+  "post_load_primary_RF_periods": 15000,
+  "steps_per_primary_period": 96,
+  "workers": 4,
+  "selected_source_task_ids": [
+    "P2_505_angle0_phase0",
+    "P2_505_angle0_phase1",
+    "P2_505_angle1_phase0",
+    "P2_505_angle1_phase1",
+    "constant_angle0_phase0",
+    "P2_353_angle0_phase0",
+    "P7_292_angle0_phase0"
+  ],
+  "start_and_phase_sha256": "3e84b7f392ec427dc8bad4722edc10f7055a1024334a948741d19de8680cfb75",
+  "fixed_local15_parameters": "../local15_n6_parameters.json",
+  "energy_balance": "RK4 stage-integrated explicit RF power and drag after completed loading, with total kinetic+RF+DC+Coulomb energy"
+}

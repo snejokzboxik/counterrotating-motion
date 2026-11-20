@@ -1,0 +1,501 @@
+{
+  "status": "passed",
+  "runs": 7,
+  "unique_task_ids": 7,
+  "trajectory_npz_count": 7,
+  "data_errors": [],
+  "criteria_note": "Finite-horizon structural classification; not a claim of asymptotic attractor or random-basin success.",
+  "candidates": [
+    {
+      "task_id": "P2_505_angle1_phase0_long",
+      "protocol": "P2_505",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.551877894128626,
+        22.53897217485505,
+        22.531470952677257,
+        -15.00083641286881,
+        -14.99265081444328,
+        -14.99466653779706
+      ],
+      "frequencies_Hz_each": [
+        150.34585262752418,
+        150.25981449903367,
+        150.2098063511817,
+        -100.00557608579207,
+        -99.95100542962186,
+        -99.96444358531373
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5480017964898654,
+          0.54805189240542,
+          0.5480557453915132
+        ],
+        [
+          0.7660681801692529,
+          0.7660836732321159,
+          0.7660683368300591
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.987011787570286,
+        0.9975467295470531
+      ],
+      "p05_Psi3_each_group": [
+        0.97717283777115,
+        0.9931880449940735
+      ],
+      "frequency_spread_each_group": [
+        0.0003738968545558168,
+        0.00023221106043014192
+      ],
+      "late_gap_error_each_group_deg": [
+        9.385170539640384,
+        4.587628376949056
+      ],
+      "center_z_R_each_group": [
+        4.215361413540267e-42,
+        1.5759822852474938e-42
+      ],
+      "energy_relative_max_residual": 1.464168465538481e-05,
+      "minimum_pair_distance_R": 0.19678093828557983,
+      "wall_clearance_min_R": 0.17914609251629815
+    },
+    {
+      "task_id": "P2_505_angle1_phase1_long",
+      "protocol": "P2_505",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.552924558375672,
+        22.53075695987388,
+        22.5386887595893,
+        -14.994400617475346,
+        -14.991684062148847,
+        -15.002113252262061
+      ],
+      "frequencies_Hz_each": [
+        150.35283038917115,
+        150.20504639915922,
+        150.25792506392864,
+        -99.96267078316897,
+        -99.94456041432565,
+        -100.01408834841374
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5480189865060217,
+          0.5480477949410537,
+          0.5480485592635591
+        ],
+        [
+          0.7660658876407538,
+          0.7660832200743803,
+          0.7660697721682487
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.986941768756275,
+        0.9972849089619136
+      ],
+      "p05_Psi3_each_group": [
+        0.9768545119498632,
+        0.9919071930621643
+      ],
+      "frequency_spread_each_group": [
+        0.0004068647314758515,
+        0.0002945803262602887
+      ],
+      "late_gap_error_each_group_deg": [
+        9.46372917704312,
+        4.593184262629308
+      ],
+      "center_z_R_each_group": [
+        4.21059452789305e-42,
+        1.8139403670743728e-42
+      ],
+      "energy_relative_max_residual": 1.464192441222249e-05,
+      "minimum_pair_distance_R": 0.19677130065134735,
+      "wall_clearance_min_R": 0.17928382625034905
+    },
+    {
+      "task_id": "P2_505_angle0_phase1_long",
+      "protocol": "P2_505",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.505238966578073,
+        22.487271134856908,
+        22.497214002965453,
+        -14.988075119947414,
+        -14.999246230197642,
+        -14.990901148050556
+      ],
+      "frequencies_Hz_each": [
+        150.0349264438538,
+        149.91514089904604,
+        149.98142668643635,
+        -99.92050079964943,
+        -99.99497486798428,
+        -99.9393409870037
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5479808797369885,
+          0.548067013608791,
+          0.5480695087031482
+        ],
+        [
+          0.7660828855142171,
+          0.7660713133183232,
+          0.7660672049323165
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.9869521519271027,
+        0.9972133092589957
+      ],
+      "p05_Psi3_each_group": [
+        0.9769069186887838,
+        0.9915442884845487
+      ],
+      "frequency_spread_each_group": [
+        0.00032668318838625026,
+        0.0003163187937585286
+      ],
+      "late_gap_error_each_group_deg": [
+        9.482793706062694,
+        4.656880521607945
+      ],
+      "center_z_R_each_group": [
+        4.2097172188231004e-43,
+        -4.3421910824593424e-42
+      ],
+      "energy_relative_max_residual": 1.4641968562254176e-05,
+      "minimum_pair_distance_R": 0.15262458081230038,
+      "wall_clearance_min_R": 0.17761845582278163
+    },
+    {
+      "task_id": "P2_505_angle0_phase0_long",
+      "protocol": "P2_505",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.502831007558324,
+        22.497407473723108,
+        22.489496619817874,
+        -14.988829815199649,
+        -14.991750062636994,
+        -14.997977102332362
+      ],
+      "frequencies_Hz_each": [
+        150.01887338372217,
+        149.98271649148737,
+        149.9299774654525,
+        -99.925532101331,
+        -99.94500041757996,
+        -99.98651401554908
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5479996813173904,
+          0.5480403408410571,
+          0.5480672822551507
+        ],
+        [
+          0.7660832780014671,
+          0.7660685179268154,
+          0.7660704637465173
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.98708906502795,
+        0.9975190371130316
+      ],
+      "p05_Psi3_each_group": [
+        0.9777764750603544,
+        0.9930200015907656
+      ],
+      "frequency_spread_each_group": [
+        0.00024338008594347303,
+        0.000254443613277487
+      ],
+      "late_gap_error_each_group_deg": [
+        9.274992231689964,
+        4.55084890600466
+      ],
+      "center_z_R_each_group": [
+        4.19200153612474e-43,
+        -4.207196626674868e-42
+      ],
+      "energy_relative_max_residual": 1.4641661606686251e-05,
+      "minimum_pair_distance_R": 0.14986890006003545,
+      "wall_clearance_min_R": 0.1774901945409883
+    },
+    {
+      "task_id": "constant_angle0_phase0_long",
+      "protocol": "constant",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.520458486568938,
+        22.493229074294003,
+        22.47959139828829,
+        -14.994225885873993,
+        -14.991321174802962,
+        -14.993710203593585
+      ],
+      "frequencies_Hz_each": [
+        150.13638991045957,
+        149.95486049529336,
+        149.86394265525527,
+        -99.96150590582663,
+        -99.94214116535308,
+        -99.95806802395724
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5479747849151998,
+          0.5480379952587052,
+          0.5480514549067216
+        ],
+        [
+          0.7660710337319739,
+          0.7660697480626746,
+          0.7660637717770514
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.9840459076614337,
+        0.9980392160716614
+      ],
+      "p05_Psi3_each_group": [
+        0.9584064116747687,
+        0.9958321594514017
+      ],
+      "frequency_spread_each_group": [
+        0.0007551289081264535,
+        8.439772866356571e-05
+      ],
+      "late_gap_error_each_group_deg": [
+        9.598156184471037,
+        4.141315985105834
+      ],
+      "center_z_R_each_group": [
+        1.876781192872493e-42,
+        -3.2532422504722995e-40
+      ],
+      "energy_relative_max_residual": 1.4641181143913584e-05,
+      "minimum_pair_distance_R": 0.14790101059076835,
+      "wall_clearance_min_R": 0.14558390147253503
+    },
+    {
+      "task_id": "P2_353_angle0_phase0_long",
+      "protocol": "P2_353",
+      "scientific_classification": "COUNTERROTATING_CRYSTALS_3_PLUS_3",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": true,
+        "late_gap_deviation_at_most_10_deg": true,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": true,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.520541957329698,
+        22.497684783321986,
+        22.482300599234875,
+        -14.984134649638149,
+        -14.988825801657033,
+        -14.9993629606278
+      ],
+      "frequencies_Hz_each": [
+        150.13694638219798,
+        149.98456522214659,
+        149.88200399489918,
+        -99.89423099758767,
+        -99.92550534438023,
+        -99.99575307085199
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5479747202946814,
+          0.5480455077469062,
+          0.5480449841249816
+        ],
+        [
+          0.766082593472982,
+          0.7660684113437336,
+          0.7660734858978785
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.9839760847818769,
+        0.9972681427309813
+      ],
+      "p05_Psi3_each_group": [
+        0.9581483537811997,
+        0.9918041475959058
+      ],
+      "frequency_spread_each_group": [
+        0.0006982620450307473,
+        0.00042478136631630953
+      ],
+      "late_gap_error_each_group_deg": [
+        9.586854439946862,
+        4.659657524099018
+      ],
+      "center_z_R_each_group": [
+        3.896153063978255e-44,
+        -1.2824176110103053e-41
+      ],
+      "energy_relative_max_residual": 1.4640011394599547e-05,
+      "minimum_pair_distance_R": 0.11392550114645421,
+      "wall_clearance_min_R": 0.16392606485751532
+    },
+    {
+      "task_id": "P7_292_angle0_phase0_long",
+      "protocol": "P7_292",
+      "scientific_classification": "COUNTERROTATING_UNORDERED",
+      "criteria": {
+        "all_six_retained": true,
+        "all_six_at_least_10_turns": true,
+        "opposite_group_frequencies": true,
+        "directions_persist_in_three_windows": true,
+        "each_group_frequency_spread_below_1_percent": true,
+        "each_group_mean_psi3_at_least_0_9": true,
+        "each_group_p05_psi3_at_least_0_9": false,
+        "late_gap_deviation_at_most_10_deg": false,
+        "relative_phase_drift_at_most_0_25_deg_per_1000_periods": false,
+        "detrended_relative_phase_range_at_most_20_deg": true,
+        "no_particle_or_wall_contact": true
+      },
+      "turns_each": [
+        22.545708660898004,
+        22.475371017961617,
+        22.479069164012902,
+        -14.958879599260818,
+        -15.01608373852036,
+        -14.997681390918425
+      ],
+      "frequencies_Hz_each": [
+        150.3047244059867,
+        149.83580678641079,
+        149.86046109341936,
+        -99.72586399507212,
+        -100.10722492346906,
+        -99.98454260612284
+      ],
+      "mean_radius_R_each_group": [
+        [
+          0.5479471548390705,
+          0.5480712990221035,
+          0.5480297774365035
+        ],
+        [
+          0.7661128335429443,
+          0.7660653856464702,
+          0.7660729979771962
+        ]
+      ],
+      "mean_Psi3_each_group": [
+        0.974034602912275,
+        0.9863369575448488
+      ],
+      "p05_Psi3_each_group": [
+        0.8973461896538952,
+        0.9365464149231499
+      ],
+      "frequency_spread_each_group": [
+        0.001436490264811277,
+        0.0015905221279019562
+      ],
+      "late_gap_error_each_group_deg": [
+        10.898437779616316,
+        7.30381518834335
+      ],
+      "center_z_R_each_group": [
+        2.123423037814297e-42,
+        -2.2628789272792746e-40
+      ],
+      "energy_relative_max_residual": 1.4635012714735002e-05,
+      "minimum_pair_distance_R": 0.15075215723281318,
+      "wall_clearance_min_R": 0.1741365917822026
+    }
+  ],
+  "crystal_candidates": [
+    "P2_505_angle1_phase0_long",
+    "P2_505_angle1_phase1_long",
+    "P2_505_angle0_phase1_long",
+    "P2_505_angle0_phase0_long",
+    "constant_angle0_phase0_long",
+    "P2_353_angle0_phase0_long"
+  ]
+}
