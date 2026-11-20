@@ -1,0 +1,554 @@
+{
+  "study": "V17C.12B",
+  "branch": "research/v17c",
+  "base_commit": "a9a92bb8ca46528215729780d689f4f72bc02892",
+  "status": "in_progress",
+  "generated_utc": "2026-11-20T13:44:13+00:00",
+  "excluded_paths": [
+    "results/alumina_experimental_50hz_screen"
+  ],
+  "file_count": 108,
+  "total_bytes": 20755942,
+  "files": [
+    {
+      "path": "best_physical_configuration.json",
+      "bytes": 1091,
+      "sha256": "046d97d84607fee89af9244cabd6c997d7b3e333662003b060f981779fa0d453"
+    },
+    {
+      "path": "BISTABILITY_ANALYSIS_RU.md",
+      "bytes": 13527,
+      "sha256": "b37993568d222627e0ff0d039eee0600c2148695765ae3ee269fd7b282cba507"
+    },
+    {
+      "path": "BREAKDOWN_ANALYSIS_RU.md",
+      "bytes": 10658,
+      "sha256": "9640773b60ccbb9f30fc0192f1e6ba503bc877de9a6fbae197e87d97f9fef988"
+    },
+    {
+      "path": "CO_ROTATION_SUPPRESSION_RU.md",
+      "bytes": 5416,
+      "sha256": "5b8372c5a474acb54de0b2bf7fc355e2c45b98c4a2bd9f23e32d7100a8d252b2"
+    },
+    {
+      "path": "experimental_particle_database.csv",
+      "bytes": 4730,
+      "sha256": "b374b9b7fe129178455dd60110ab278978ece8b86998de089f0ce0853dce0305"
+    },
+    {
+      "path": "experimental_sources.json",
+      "bytes": 7698,
+      "sha256": "c4f53217eaf331a6f6f39d8148cf60d39d1b8707ec80627090cac34e5c053134"
+    },
+    {
+      "path": "LEGACY_CANDIDATE_PHYSICAL_MAPPING_RU.md",
+      "bytes": 4612,
+      "sha256": "a05e69c85ade2b164f47668acd3ce14c45ebbc50c962be8ee33408c612bce05a"
+    },
+    {
+      "path": "LITERATURE_REVIEW_RU.md",
+      "bytes": 14063,
+      "sha256": "ca61f0c1b34ebfc64b4f01418ba3e4f5b8967dc7940a07d57f59e18906d479db"
+    },
+    {
+      "path": "model/audit_experimental_50hz_screen.py",
+      "bytes": 7590,
+      "sha256": "974bf6380b2723974cb0f2a3db15bd4fecd0935513a0e4827c8b24884fc02bca"
+    },
+    {
+      "path": "model/audit_grid.py",
+      "bytes": 3790,
+      "sha256": "d9ea1cb79dfaefc00302e68e102698708d2d10bec73367a012e1bf1668dafc50"
+    },
+    {
+      "path": "model/audit_legacy_candidate_results.py",
+      "bytes": 2394,
+      "sha256": "095f7e2d39ef48d2768049f94d8433fea65dbfc4eba3f748018d087a8ea46979"
+    },
+    {
+      "path": "model/audit_multiradius_screen.py",
+      "bytes": 5940,
+      "sha256": "caf5ad11b2c99d8325d06edef13d509a2e89e9e4cb0eec32060a283ebb5bd675"
+    },
+    {
+      "path": "model/audit_sobol_screen.py",
+      "bytes": 5307,
+      "sha256": "43b61b34d934ff533ba8d60636bb4170990b05c51e237c9a4ee07eda53bc506f"
+    },
+    {
+      "path": "model/basin_scan.py",
+      "bytes": 17920,
+      "sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f"
+    },
+    {
+      "path": "model/build_manifest.py",
+      "bytes": 2197,
+      "sha256": "5120c4fef1dbfb36246ae9ed4cedaae9439566adeee3f7c4b25d09f9346dec54"
+    },
+    {
+      "path": "model/compare_coupling_levels.py",
+      "bytes": 2495,
+      "sha256": "057f8da46d08a010c3171b266515ed66da1c9b9ffc91ce528aea0a1f27ed0ff1"
+    },
+    {
+      "path": "model/fem_crosscheck.py",
+      "bytes": 10213,
+      "sha256": "e49ad029cf16c502e798f298b338ac131d48b4eb01941a0badb4bebb768b4952"
+    },
+    {
+      "path": "model/field_model.json",
+      "bytes": 1473,
+      "sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d"
+    },
+    {
+      "path": "model/geometry_spectra.csv",
+      "bytes": 205164,
+      "sha256": "a49d5737ff2e04871642aab086ebc16616d6d0033c2acedcce7ac7a3390e7a4b"
+    },
+    {
+      "path": "model/MANIFEST.json",
+      "bytes": 2687,
+      "sha256": "d7c2f8a0bcd78193988e73e0c34361314c2029e0b094f8469db5afac9e4bb322"
+    },
+    {
+      "path": "model/mfs.py",
+      "bytes": 4114,
+      "sha256": "2d1fac3456e19eeb55a2fc0321e52dac07954dd4824e8c8e47e1d6378f6cbd7a"
+    },
+    {
+      "path": "model/mfs_breakdown.py",
+      "bytes": 8695,
+      "sha256": "7c30838539bc7df378148c104d4056593fc9bbcf8eb6c1443b22f47c6d5c2ae8"
+    },
+    {
+      "path": "model/mfs_coefficients.csv",
+      "bytes": 1683,
+      "sha256": "c5038eb70efe31a0eff8479cbaacedfc726fa0f1c9ad4c0b54e81c7a7fc25668"
+    },
+    {
+      "path": "model/mfs_surface_refinement.py",
+      "bytes": 1596,
+      "sha256": "517a88b00854f26233de9966b1fabb382aa2b6fd574acbb77aa4708b825a7ab3"
+    },
+    {
+      "path": "model/mfs_unit_basis_fields.py",
+      "bytes": 1673,
+      "sha256": "d7bc1cac26e16ddde0e7967d07db58940c4cfd1d8c70581b59723ffd695a7f51"
+    },
+    {
+      "path": "model/multielectrode.py",
+      "bytes": 1219,
+      "sha256": "35c8d6fcc6f9a0fe08045b721050ee65573b83c0b9d70f1eefc24c423ea745e3"
+    },
+    {
+      "path": "model/physical_candidate_map.py",
+      "bytes": 5761,
+      "sha256": "a8a270209f0cb0c7166ab74fb790aa8b2ab07ed4686b9fc74fb83ef35939cad2"
+    },
+    {
+      "path": "model/physical_parameterization.py",
+      "bytes": 7549,
+      "sha256": "2228d8071bab8b0239fa3020bbeb67d1f1529a7dde61d63d0d878803463cbcd7"
+    },
+    {
+      "path": "model/rank_sobol_screen.py",
+      "bytes": 4155,
+      "sha256": "f90e5a5ffba8a52362393c4161c1fdcea9e8c176f79ff7f92b5367d56bf940f0"
+    },
+    {
+      "path": "model/symmetry_audit.py",
+      "bytes": 4371,
+      "sha256": "a52da20e50df7ee76ab4b5bb4e881c229f6ce4b2acd089c9403ae12b1259b995"
+    },
+    {
+      "path": "model/verification.json",
+      "bytes": 5467,
+      "sha256": "38f0e88d06d6c08c777e5c6ea81bfd63b937bd593ef2000a33d33bab9614e5e6"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "bytes": 3354,
+      "sha256": "da5ad8f321ac98b6e8ad540f067ee29bb181f255be65a348390cb7cf8b897fd4"
+    },
+    {
+      "path": "PHYSICAL_OPTIMIZATION_RU.md",
+      "bytes": 7397,
+      "sha256": "6a496a2199371911e01b465263e9b6f62decaa1ecd89c4f459d25793e2f164a0"
+    },
+    {
+      "path": "PHYSICAL_PARAMETERIZATION_RU.md",
+      "bytes": 10579,
+      "sha256": "118f4007f8adb867c5ab2952675c099be1cebae9af193978b2824e6cdb66761c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5911,
+      "sha256": "1f810f77ee6623cb43d3f81385de72ba1489126ce9d1f1512f85c01b0ed7eb9f"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "bytes": 6446,
+      "sha256": "ddbff517cb17394d8e55cffd1126450ecf4067f1b3b785f3ed4e3bc43a3424dd"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 109,
+      "sha256": "23edcfbb37e5bbf7c41ee6431c3218aca6b0453cefa5802682555ff75a60c8a9"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/campaign_code_sha256.json",
+      "bytes": 544,
+      "sha256": "7f2ae587467f2816ba1ea3e910c62b1907c5a1a995719f2961a10cfd15f22197"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/campaign_meta.json",
+      "bytes": 977089,
+      "sha256": "e365df41148a0f97bbcdc104dbb1be784e428e2a016efeccd1a6a40e5ee4558b"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/campaign_runner_source.py",
+      "bytes": 13354,
+      "sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/frozen_rest_starts.npz",
+      "bytes": 1489,
+      "sha256": "f76c0f7daddf170af4c4f674dd79f9d8c125d6d53a40adc049b482c51644fc95"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/independent_audit.json",
+      "bytes": 5738,
+      "sha256": "42ea055202afdfe58887df8a10ccd5aaa2a856de7383d673c25363a666c36719"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/summary.json",
+      "bytes": 2204,
+      "sha256": "10490f4b251917fb76627dc05dd3302c1e5350a1e94705a3dff03cd14ba36848"
+    },
+    {
+      "path": "results/alumina_multiradius_sobol_screen/trajectories.jsonl",
+      "bytes": 4689634,
+      "sha256": "4dd097e06bf5e850d84a09e5f10f46c95e53f837918498b032cbaf4ccac6c13e"
+    },
+    {
+      "path": "results/candidate_drag_compatibility.json",
+      "bytes": 2517,
+      "sha256": "ff182bb142166c6d34bcfb06ef33c4ce32cacbc6f18186a0626388a5904fc669"
+    },
+    {
+      "path": "results/fem_crosscheck.json",
+      "bytes": 2102,
+      "sha256": "155a272bc4af340ca4639516a63be479bcdbba0e271aedbd415483202bcecbe0"
+    },
+    {
+      "path": "results/identical_alumina_screen/campaign_meta.json",
+      "bytes": 2095,
+      "sha256": "87cbc49a684c2aef6368c92e0fcd13a4c51c3c144c3c91a78bc8204cf8574eb1"
+    },
+    {
+      "path": "results/identical_alumina_screen/frozen_starts.npz",
+      "bytes": 49625,
+      "sha256": "e52114848d2e7fa86e117d534d58127e6a778d82d51f7c25fb850db522370578"
+    },
+    {
+      "path": "results/identical_alumina_screen/independent_audit.json",
+      "bytes": 970,
+      "sha256": "f6df0fbe155745f31804f8de55f00551ed3156f049a94df986bd0136dd913ac1"
+    },
+    {
+      "path": "results/identical_alumina_screen/INVALIDATED_RU.md",
+      "bytes": 2011,
+      "sha256": "53c0e6453b80b4565b4a6d5d7f4c2d0231299d58a1452b13fd02ecd8c4dc510a"
+    },
+    {
+      "path": "results/identical_alumina_screen/summary.json",
+      "bytes": 3361,
+      "sha256": "04a87a61ca8308b7b0d00ca297bb541e6cd724775df7904df9ac9c8e2e0c372e"
+    },
+    {
+      "path": "results/identical_alumina_screen/trajectories.jsonl",
+      "bytes": 748555,
+      "sha256": "b92811a47ff210dcf0971e0b0c5b45aab7d62e0ec08fd73589cccbf4a354b764"
+    },
+    {
+      "path": "results/identical_alumina_screen_corrected/campaign_meta.json",
+      "bytes": 2095,
+      "sha256": "982cb3d2e731d712550de63740d5a8a5015d1c365c8ba166c74029557124e61c"
+    },
+    {
+      "path": "results/identical_alumina_screen_corrected/frozen_starts.npz",
+      "bytes": 49625,
+      "sha256": "e52114848d2e7fa86e117d534d58127e6a778d82d51f7c25fb850db522370578"
+    },
+    {
+      "path": "results/identical_alumina_screen_corrected/independent_audit.json",
+      "bytes": 2439,
+      "sha256": "9945065f5bcbe554443ff555c178fb09032b9ffcd0cfc4aaaff788d63e3f675e"
+    },
+    {
+      "path": "results/identical_alumina_screen_corrected/summary.json",
+      "bytes": 3360,
+      "sha256": "a29e9e5c0cdb51a5171cf7aacb38c1cfe7702ab60a389e61a87f43c394eff1f5"
+    },
+    {
+      "path": "results/identical_alumina_screen_corrected/trajectories.jsonl",
+      "bytes": 748826,
+      "sha256": "3963ec6a74b41265d4dd78482d6b2613e6a57c664a44da90744786f3d0ca6233"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen/campaign_code_sha256.json",
+      "bytes": 381,
+      "sha256": "2679793f48ff930ef5e08d83b7b631cf52e5b4febdc76bd80eadca7b5597f54b"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen/campaign_meta.json",
+      "bytes": 859479,
+      "sha256": "8cf80335b940300f564f8cb2c63a0ac0b001a5529c9e7f96f88500f06ebdb69f"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen/frozen_rest_starts.npz",
+      "bytes": 1486,
+      "sha256": "8defd37154979e05504223be9fdad19f888e46d9247ab9d484ea0ff0deb65c08"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen/INVALIDATED_RU.md",
+      "bytes": 1100,
+      "sha256": "83c55681c31037e25072bc56b943dfed02a223bc6370080ea2e0f37bf90a4b2d"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen/trajectories.jsonl",
+      "bytes": 1730023,
+      "sha256": "d2829732bc3e99912d0d29cfb332d071c38e40ac70edac9a60e271df6b915fc0"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/campaign_code_sha256.json",
+      "bytes": 459,
+      "sha256": "beebe0194acead7a7c567c044db938a620b502af475eaa0114c95976c0af7928"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/campaign_meta.json",
+      "bytes": 927001,
+      "sha256": "e9261e618403c041a84f10b330b4b6bdc6bb7aacaab8cc2c40917608ed1d2db4"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/campaign_runner_source.py",
+      "bytes": 11868,
+      "sha256": "51134c9bbf7e004fb6207fdd0cc4bd71206b66ae9c5d485b45609634e9d1c83b"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/frozen_rest_starts.npz",
+      "bytes": 1486,
+      "sha256": "8defd37154979e05504223be9fdad19f888e46d9247ab9d484ea0ff0deb65c08"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/independent_audit.json",
+      "bytes": 106411,
+      "sha256": "1cc51d0567df2724b6cdf0c2aa7d642e4e4f6189b0dad3340ffbdcfe16ee2f8e"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/independent_retention_ranking.json",
+      "bytes": 1219620,
+      "sha256": "cb49d877408d7eb7224027f557187b7dbd413c983d3b230dfeedc7fb7f03cbc0"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/summary.json",
+      "bytes": 92954,
+      "sha256": "72e41b8dc01a0769954f767dca36eee2df6c38b77f062c0b0612d87475aec176"
+    },
+    {
+      "path": "results/identical_physical_sobol_screen_corrected/trajectories.jsonl",
+      "bytes": 4569230,
+      "sha256": "a0582fecbfee81bad24be45a25bbff641182e4aae54fd07d9307acfbbf688d65"
+    },
+    {
+      "path": "results/legacy_candidate_physical_map_10mm.json",
+      "bytes": 13870,
+      "sha256": "bf67e8aaf4c1900fc8b622766679316a7cba2442bbf9eb7ddc58ab4bb4cd4c08"
+    },
+    {
+      "path": "results/legacy_candidate_v17c10_comparison.json",
+      "bytes": 9120,
+      "sha256": "6a3e3359ca3fab8df55d2fa0c405b4da2c80d538b02b18d56c657c70dbebbc21"
+    },
+    {
+      "path": "results/mfs_breakdown_screen.json",
+      "bytes": 7381,
+      "sha256": "467be1feda6d1b3cf5f30daae5170b35811cb2c52c308d13c0e4186e13452890"
+    },
+    {
+      "path": "results/mfs_surface_refinement.json",
+      "bytes": 7215,
+      "sha256": "42540eaf7e27da4cb6b886b4527e9a26542938f8a9374a9c8dce2a134dc8d1e1"
+    },
+    {
+      "path": "results/mfs_unit_basis_fields.json",
+      "bytes": 950,
+      "sha256": "b6d61adf779ef178c34ef2c0eca07a10ee6092a49a669c800608dc2507ad712d"
+    },
+    {
+      "path": "results/physical_seed.json",
+      "bytes": 2798,
+      "sha256": "33decdce2deecaba361b90e395c7d7ed21edbd4eab4f2c981f27154921198daf"
+    },
+    {
+      "path": "results/pilot/campaign_meta.json",
+      "bytes": 2091,
+      "sha256": "59fcfdb792c10502933bb5da213ec97fec2961edd8c872ad7b6bdb995d6cd09e"
+    },
+    {
+      "path": "results/pilot/frozen_starts.npz",
+      "bytes": 13895,
+      "sha256": "f93d3d224aba0405e465c15eeb5872baa2ca469b78ebffa91dfaddf039f411f7"
+    },
+    {
+      "path": "results/pilot/summary.json",
+      "bytes": 3294,
+      "sha256": "e8039ce5de6d9a9091915976c895270dd441528a0f41edbc38935c4137791853"
+    },
+    {
+      "path": "results/pilot/trajectories.jsonl",
+      "bytes": 188622,
+      "sha256": "9193fc9a6050eb2cac7b1f7f10bf1e7efbca07aed788b97a95e97fe9bedcc6af"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/campaign_code_sha256.json",
+      "bytes": 395,
+      "sha256": "e73add88d5f71d346418cb1eebec5356bbee751ebb8b47dd63929036c329304f"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/campaign_meta.json",
+      "bytes": 50784,
+      "sha256": "1da4e1dd1407ea108167e2885004846c570bf877856b8b396466729333edc096"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/frozen_rest_starts.npz",
+      "bytes": 2989,
+      "sha256": "f61650d8bcec9ebf23de28380adc618e5d53b516e1194f8ec48d304cccc7340b"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/independent_audit.json",
+      "bytes": 19979,
+      "sha256": "b7966bd4ec8e3aaa79de96769c00f97eb73d4bd2aecca26b296289b86c469d4f"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/paired_coupling_comparison.json",
+      "bytes": 9748,
+      "sha256": "e3a03ab56d689d0898546dd7ad3622dfacbe286371b2e5ec95adb3a8f5134bc3"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/summary.json",
+      "bytes": 4398,
+      "sha256": "3427c1bd69a5fae4d557dd2ee0791e0a7fb80506e5dc0fa5c49cd62121eac760"
+    },
+    {
+      "path": "results/symmetric_coupling_grid_corrected/trajectories.jsonl",
+      "bytes": 1363989,
+      "sha256": "b11394369d64e499b8a4707b4c6f78a98be56ab24c3103cb1d3abdfdb5c78bec"
+    },
+    {
+      "path": "results/symmetric_parameter_grid/campaign_meta.json",
+      "bytes": 38289,
+      "sha256": "04627e8029263bd88b92a67186f942e386b8a857ce20639812573b2c36e68e1f"
+    },
+    {
+      "path": "results/symmetric_parameter_grid/frozen_rest_starts.npz",
+      "bytes": 2979,
+      "sha256": "dd9cbbcd35f6ad30a6cac34ca0a5a7cf2a609a0bbf67fd19ec09ec240090dcd9"
+    },
+    {
+      "path": "results/symmetric_parameter_grid/INVALIDATED_RU.md",
+      "bytes": 961,
+      "sha256": "3d867356a0639d569b9cfad7ee9e2a5e53d11888fac625449cb96d4333cfc030"
+    },
+    {
+      "path": "results/symmetric_parameter_grid/trajectories.jsonl",
+      "bytes": 607424,
+      "sha256": "0a1dcb6960513754b835547ca21c8893b70f7ce06387d325d6bcc1e43b512e7b"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/campaign_code_sha256.json",
+      "bytes": 395,
+      "sha256": "e73add88d5f71d346418cb1eebec5356bbee751ebb8b47dd63929036c329304f"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/campaign_meta.json",
+      "bytes": 38289,
+      "sha256": "04627e8029263bd88b92a67186f942e386b8a857ce20639812573b2c36e68e1f"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/frozen_rest_starts.npz",
+      "bytes": 2979,
+      "sha256": "dd9cbbcd35f6ad30a6cac34ca0a5a7cf2a609a0bbf67fd19ec09ec240090dcd9"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/independent_audit.json",
+      "bytes": 15270,
+      "sha256": "5a7fec5372385e6203257cb3f8ee24381cf2f8d8e6bfa8fbed9c2b00749c3e69"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/summary.json",
+      "bytes": 3121,
+      "sha256": "0ebffe6f45ad0aaabe6c9e37c2877e7210951e0203c3f4383c1113a57d8fdd18"
+    },
+    {
+      "path": "results/symmetric_parameter_grid_corrected/trajectories.jsonl",
+      "bytes": 1011879,
+      "sha256": "603dc2d550f3e944f7f6b9c50722e4f22ee88409c109a73ba9a12d1245086b7f"
+    },
+    {
+      "path": "results/symmetry_audit.json",
+      "bytes": 3771,
+      "sha256": "d4a86d50cfb005767b0dfb82b27c148b77873ed5b4c26d54420cb147328c7744"
+    },
+    {
+      "path": "ROBUSTNESS_RU.md",
+      "bytes": 2280,
+      "sha256": "be37600fd346c20580da5ae535e77b43ac72b953076793bdff8b34247a2b1ae6"
+    },
+    {
+      "path": "run_physical_screen.py",
+      "bytes": 16913,
+      "sha256": "8dc075484ed6ba4c43f8205a5548cfded1156f4964342b45308c66a05c2b8474"
+    },
+    {
+      "path": "screen_coupling_grid.py",
+      "bytes": 1228,
+      "sha256": "b5c7f41b9f3d7f015224525c9b15a28cc473032fb4f7050567b9b18416e18946"
+    },
+    {
+      "path": "screen_parameter_grid.py",
+      "bytes": 10263,
+      "sha256": "4318470081dbf17e867554f3fea3fb7d1525c475d24cdf61ea467df47224b6e0"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 11190,
+      "sha256": "6d4324d8df526b95992cbb3f63f4e9dd6cdb5ad9630b5fe07afb8eef80b0bb2c"
+    },
+    {
+      "path": "sobol_alumina_experimental_50hz_search.py",
+      "bytes": 14976,
+      "sha256": "985a08249ab3542f86d779373bd453830adb324ad4b19bebd605695641300dbf"
+    },
+    {
+      "path": "sobol_alumina_multiradius_search.py",
+      "bytes": 13354,
+      "sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456"
+    },
+    {
+      "path": "sobol_identical_search.py",
+      "bytes": 11868,
+      "sha256": "51134c9bbf7e004fb6207fdd0cc4bd71206b66ae9c5d485b45609634e9d1c83b"
+    },
+    {
+      "path": "STATISTICAL_VALIDATION_RU.md",
+      "bytes": 4059,
+      "sha256": "c41241943dfbc8284772cbf39a92f82d559edca1a63fad8a0a2a5cb10ade36a4"
+    },
+    {
+      "path": "V17C7_V17C8_REPRODUCTION_RU.md",
+      "bytes": 4761,
+      "sha256": "058a10c92712ed2090570a607168c5199dadd6e4818971040ef37ed58611ca73"
+    }
+  ]
+}

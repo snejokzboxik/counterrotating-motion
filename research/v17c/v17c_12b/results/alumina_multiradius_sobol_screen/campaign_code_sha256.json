@@ -1,0 +1,13 @@
+{
+  "runner_sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456",
+  "saved_runner_sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "campaign": "alumina_multiradius_sobol_screen",
+  "seed": 20261226,
+  "configs": 512,
+  "starts_per_config": 8,
+  "periods": 5000,
+  "steps": 64,
+  "workers": 11
+}

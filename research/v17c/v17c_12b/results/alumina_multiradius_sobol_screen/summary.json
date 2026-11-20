@@ -1,0 +1,74 @@
+{
+  "study": "dimensionally linked multi-radius Al2O3 discovery; air at 300K",
+  "rows": 4096,
+  "expected_rows": 4096,
+  "outcome_counts": {
+    "AXIS_AMBIGUOUS": 64,
+    "NONROTATING": 154,
+    "PROVISIONAL_CO_MINUS_MINUS": 789,
+    "PROVISIONAL_CO_PLUS_PLUS": 737,
+    "UNRESOLVED_SHORT": 32,
+    "WALL_OR_AXIAL_ESCAPE": 2320
+  },
+  "outcomes_by_radius": {
+    "5.0": {
+      "PROVISIONAL_CO_MINUS_MINUS": 94,
+      "PROVISIONAL_CO_PLUS_PLUS": 150,
+      "WALL_OR_AXIAL_ESCAPE": 218,
+      "AXIS_AMBIGUOUS": 10,
+      "NONROTATING": 32,
+      "UNRESOLVED_SHORT": 8
+    },
+    "7.5": {
+      "WALL_OR_AXIAL_ESCAPE": 186,
+      "PROVISIONAL_CO_MINUS_MINUS": 150,
+      "PROVISIONAL_CO_PLUS_PLUS": 118,
+      "NONROTATING": 40,
+      "UNRESOLVED_SHORT": 8,
+      "AXIS_AMBIGUOUS": 10
+    },
+    "10.0": {
+      "WALL_OR_AXIAL_ESCAPE": 222,
+      "PROVISIONAL_CO_MINUS_MINUS": 142,
+      "PROVISIONAL_CO_PLUS_PLUS": 123,
+      "NONROTATING": 24,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "12.5": {
+      "NONROTATING": 32,
+      "WALL_OR_AXIAL_ESCAPE": 198,
+      "PROVISIONAL_CO_MINUS_MINUS": 154,
+      "PROVISIONAL_CO_PLUS_PLUS": 107,
+      "AXIS_AMBIGUOUS": 21
+    },
+    "15.0": {
+      "PROVISIONAL_CO_PLUS_PLUS": 143,
+      "WALL_OR_AXIAL_ESCAPE": 227,
+      "PROVISIONAL_CO_MINUS_MINUS": 93,
+      "NONROTATING": 24,
+      "UNRESOLVED_SHORT": 16,
+      "AXIS_AMBIGUOUS": 9
+    },
+    "20.0": {
+      "WALL_OR_AXIAL_ESCAPE": 311,
+      "PROVISIONAL_CO_MINUS_MINUS": 109,
+      "PROVISIONAL_CO_PLUS_PLUS": 80,
+      "AXIS_AMBIGUOUS": 12
+    },
+    "30.0": {
+      "WALL_OR_AXIAL_ESCAPE": 453,
+      "PROVISIONAL_CO_PLUS_PLUS": 16,
+      "PROVISIONAL_CO_MINUS_MINUS": 42,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "40.0": {
+      "WALL_OR_AXIAL_ESCAPE": 505,
+      "PROVISIONAL_CO_MINUS_MINUS": 5,
+      "NONROTATING": 2
+    }
+  },
+  "classification": "Short discovery labels only; no probabilities or attractor claims.",
+  "trajectory_sha256": "4dd097e06bf5e850d84a09e5f10f46c95e53f837918498b032cbaf4ccac6c13e",
+  "meta_sha256": "e365df41148a0f97bbcdc104dbb1be784e428e2a016efeccd1a6a40e5ee4558b",
+  "wall_seconds": 672.4437822999898
+}

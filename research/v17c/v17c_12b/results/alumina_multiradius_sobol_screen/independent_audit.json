@@ -1,0 +1,215 @@
+{
+  "audit": "integrity and physical-discovery aggregation; not a final probability study",
+  "expected_rows": 4096,
+  "actual_rows": 4096,
+  "unique_keys": 4096,
+  "missing_keys": [],
+  "duplicate_keys": [],
+  "unexpected_keys": [],
+  "frozen_start_or_phase_mismatches": [],
+  "row_radius_metadata_mismatches": [],
+  "configurations": 512,
+  "starts_per_configuration": 8,
+  "configuration_count_by_radius": {
+    "5.0": 64,
+    "7.5": 64,
+    "10.0": 64,
+    "12.5": 64,
+    "15.0": 64,
+    "20.0": 64,
+    "30.0": 64,
+    "40.0": 64
+  },
+  "outcome_counts": {
+    "AXIS_AMBIGUOUS": 64,
+    "NONROTATING": 154,
+    "PROVISIONAL_CO_MINUS_MINUS": 789,
+    "PROVISIONAL_CO_PLUS_PLUS": 737,
+    "UNRESOLVED_SHORT": 32,
+    "WALL_OR_AXIAL_ESCAPE": 2320
+  },
+  "outcome_fractions_of_all_search_rows": {
+    "AXIS_AMBIGUOUS": 0.015625,
+    "NONROTATING": 0.03759765625,
+    "PROVISIONAL_CO_MINUS_MINUS": 0.192626953125,
+    "PROVISIONAL_CO_PLUS_PLUS": 0.179931640625,
+    "UNRESOLVED_SHORT": 0.0078125,
+    "WALL_OR_AXIAL_ESCAPE": 0.56640625
+  },
+  "outcomes_by_radius": {
+    "5.0": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 10,
+        "NONROTATING": 32,
+        "PROVISIONAL_CO_MINUS_MINUS": 94,
+        "PROVISIONAL_CO_PLUS_PLUS": 150,
+        "UNRESOLVED_SHORT": 8,
+        "WALL_OR_AXIAL_ESCAPE": 218
+      },
+      "pair_retained_count": 294,
+      "pair_retained_fraction": 0.57421875,
+      "loss_mechanisms": {
+        "radial": 218,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "7.5": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 10,
+        "NONROTATING": 40,
+        "PROVISIONAL_CO_MINUS_MINUS": 150,
+        "PROVISIONAL_CO_PLUS_PLUS": 118,
+        "UNRESOLVED_SHORT": 8,
+        "WALL_OR_AXIAL_ESCAPE": 186
+      },
+      "pair_retained_count": 326,
+      "pair_retained_fraction": 0.63671875,
+      "loss_mechanisms": {
+        "radial": 186,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "10.0": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 1,
+        "NONROTATING": 24,
+        "PROVISIONAL_CO_MINUS_MINUS": 142,
+        "PROVISIONAL_CO_PLUS_PLUS": 123,
+        "WALL_OR_AXIAL_ESCAPE": 222
+      },
+      "pair_retained_count": 290,
+      "pair_retained_fraction": 0.56640625,
+      "loss_mechanisms": {
+        "radial": 222,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "12.5": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 21,
+        "NONROTATING": 32,
+        "PROVISIONAL_CO_MINUS_MINUS": 154,
+        "PROVISIONAL_CO_PLUS_PLUS": 107,
+        "WALL_OR_AXIAL_ESCAPE": 198
+      },
+      "pair_retained_count": 314,
+      "pair_retained_fraction": 0.61328125,
+      "loss_mechanisms": {
+        "radial": 198,
+        "axial": 0,
+        "both": 0
+      }
+    },
+    "15.0": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 9,
+        "NONROTATING": 24,
+        "PROVISIONAL_CO_MINUS_MINUS": 93,
+        "PROVISIONAL_CO_PLUS_PLUS": 143,
+        "UNRESOLVED_SHORT": 16,
+        "WALL_OR_AXIAL_ESCAPE": 227
+      },
+      "pair_retained_count": 285,
+      "pair_retained_fraction": 0.556640625,
+      "loss_mechanisms": {
+        "radial": 197,
+        "axial": 30,
+        "both": 0
+      }
+    },
+    "20.0": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 12,
+        "PROVISIONAL_CO_MINUS_MINUS": 109,
+        "PROVISIONAL_CO_PLUS_PLUS": 80,
+        "WALL_OR_AXIAL_ESCAPE": 311
+      },
+      "pair_retained_count": 201,
+      "pair_retained_fraction": 0.392578125,
+      "loss_mechanisms": {
+        "radial": 161,
+        "axial": 150,
+        "both": 0
+      }
+    },
+    "30.0": {
+      "counts": {
+        "AXIS_AMBIGUOUS": 1,
+        "PROVISIONAL_CO_MINUS_MINUS": 42,
+        "PROVISIONAL_CO_PLUS_PLUS": 16,
+        "WALL_OR_AXIAL_ESCAPE": 453
+      },
+      "pair_retained_count": 59,
+      "pair_retained_fraction": 0.115234375,
+      "loss_mechanisms": {
+        "radial": 132,
+        "axial": 321,
+        "both": 0
+      }
+    },
+    "40.0": {
+      "counts": {
+        "NONROTATING": 2,
+        "PROVISIONAL_CO_MINUS_MINUS": 5,
+        "WALL_OR_AXIAL_ESCAPE": 505
+      },
+      "pair_retained_count": 7,
+      "pair_retained_fraction": 0.013671875,
+      "loss_mechanisms": {
+        "radial": 67,
+        "axial": 438,
+        "both": 0
+      }
+    }
+  },
+  "wall_or_axial_escape_mechanism_counts": {
+    "radial": 1381,
+    "axial": 939,
+    "both": 0
+  },
+  "configs_with_both_CR_directions": 0,
+  "physical_screen_diagnostics": {
+    "5.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 103
+    },
+    "7.5": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 137
+    },
+    "10.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 159
+    },
+    "12.5": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 174
+    },
+    "15.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 194
+    },
+    "20.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 205
+    },
+    "30.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 250
+    },
+    "40.0": {
+      "proposed": 512,
+      "passing_charge_voltage_screen": 263
+    }
+  },
+  "code_sha256": {
+    "runner_sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456",
+    "saved_runner_sha256": "19369ce93cf3a00762dffa420d88c955452bc5eb9027e4de5aea0825a782f456",
+    "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d"
+  },
+  "integrity_pass": true
+}
