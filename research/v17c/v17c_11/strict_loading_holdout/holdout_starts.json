@@ -1,0 +1,28 @@
+{
+  "n": 64,
+  "seeds": {
+    "rest": 20261201,
+    "weak": 20261202,
+    "wide": 20261203,
+    "edge": 20261204
+  },
+  "groups": {
+    "rest": {
+      "initial_sha256": "17e50be940b9aa7d9b041d3f0445fc9004dd70c3c9a95d708cc1405664802cf6",
+      "phase_sha256": "9cb2de751f36b68cc3a9861225a378a39f8899655bf7f90ad44811f5580f0dc8"
+    },
+    "weak": {
+      "initial_sha256": "5c5e6673cc33449d2676c0aa60b6e0c4cbc34c2b5c6d740dc15a72e0099e17f3",
+      "phase_sha256": "4c71fb26bc9ed316b39b5d6e1b04ed285865a2bb161003eff2418495a390007e"
+    },
+    "wide": {
+      "initial_sha256": "ffb18f1cd9f289115aae8366b1c3961b8a4b0357afdca55f4f90e37566ac4268",
+      "phase_sha256": "e887b4053c6dc5d90cd0039d51693e24337694a90ca706fe7e0609a3e792bfd5"
+    },
+    "edge": {
+      "initial_sha256": "42000eaeb9e181d787eed92d884023300bd2f2c130d1066975aaa939234664cd",
+      "phase_sha256": "fe70f01c3f351f52cb76d4cf75f985de9b12fac19a72bc041c316a107bca929a"
+    }
+  },
+  "definition": "Independent scrambled Sobol holdout from V17C.10 generator; edge has area-uniform radius [0.70,0.90]R."
+}

@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P5 validated; P6 128- and P7 1024-protocol early-retention screens complete; P8 strict independent holdout prepared but not yet run; robustness and transferability pending",
+  "status": "P0-P5 validated; P6/P7 early-retention screens and P8 N=64 strict independent holdout complete; P9 DOP853/step convergence, larger holdout, robustness, and transferability pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/adaptive_loading/adaptive_early_retention_top16.png",
@@ -135,14 +135,19 @@
       "sha256": "2d7d300eaa8d5944ae3975e09262c8f50eba12dc30955ca6aa9af41ce36a2fd8"
     },
     {
+      "path": "research/v17c/v17c_11/analyze_strict_loading_holdout.py",
+      "size_bytes": 5739,
+      "sha256": "f9fe93f43974e908575a5a06617265b0354393cdaafbf4d397e24a0dd577d7f8"
+    },
+    {
       "path": "research/v17c/v17c_11/best_loading_protocol.json",
       "size_bytes": 1922,
       "sha256": "c68777d5a3443b918d0f7d916074de952e03ee646def0d96fb3590c531f26520"
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2270,
-      "sha256": "36d719febe7a29d6c232fcd8551645c5234a197d0aa479b5371b2e16ca4e0069"
+      "size_bytes": 2275,
+      "sha256": "145fc389d7a1270c5c793f50b639b70f3f3f250e6e70a6f4f483743b1264ea4e"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -366,8 +371,53 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 17959,
-      "sha256": "f3b9a26a243419ed6ca018f1e931745dc219e927d9c003a001787cd05b700b47"
+      "size_bytes": 18736,
+      "sha256": "dd3b53a35ed26588681c690a2b87c7a85bc79633a9a784a7d3010426559e4a27"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_metadata.json",
+      "size_bytes": 1722,
+      "sha256": "7f838e4dc4861e9518fd4aaa8524350c56be25c7fc3be3855c542b4625c845cc"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_protocols.json",
+      "size_bytes": 3873,
+      "sha256": "957274f47e8871fd1de19ed5261fb6be5f08b5b6605ca82912d7a4b9772a215b"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_runs.jsonl",
+      "size_bytes": 1620571,
+      "sha256": "f634d4414187074ba116482ea376aab48c46a9bed2acd7105461180e73ff10c4"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_starts.json",
+      "size_bytes": 1095,
+      "sha256": "9841f025ea40ea6d6fade709132ee0be820c630c0a5a9c76206e71337a3564d5"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_starts.npz",
+      "size_bytes": 25840,
+      "sha256": "35dbb5ffaf44c5082cafb5af3e38f4312feb8d4caf46190790826a244574f035"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_summary.csv",
+      "size_bytes": 1444,
+      "sha256": "71d5818811870c8c65ff351421e7ddf9df48f6edf82568ebcb57da9238f7c34f"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/holdout_summary.json",
+      "size_bytes": 14773,
+      "sha256": "6336a66a994454a114fb93402b5f6b1494937f2b07f69138f1fb97e2d4131d87"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_loading_holdout/strict_holdout_comparison.png",
+      "size_bytes": 62161,
+      "sha256": "ce3d609aa5a04c8d08aeafe61e8e9e658ec83d6fd88472df322c9a20e8854fa1"
+    },
+    {
+      "path": "research/v17c/v17c_11/STRICT_LOADING_HOLDOUT_RU.md",
+      "size_bytes": 7160,
+      "sha256": "ee9cc516902777309954dd3005a6ddad3def23917f0c0a45d305c5e8a29e1600"
     },
     {
       "path": "research/v17c/v17c_11/strict_long_validation/coupling_controls.json",
