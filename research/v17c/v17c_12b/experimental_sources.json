@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-20",
+  "sources": [
+    {
+      "source_id": "ALUMINA_NJP2013",
+      "title": "Coulomb stable structures of charged dust particles in a dynamical trap at atmospheric pressure in air",
+      "authors": "Vasilyak et al.",
+      "venue": "New Journal of Physics 15, 043047 (2013)",
+      "doi": "10.1088/1367-2630/15/4/043047",
+      "url": "https://doi.org/10.1088/1367-2630/15/4/043047",
+      "source_class": "peer-reviewed primary experiment and model",
+      "notes": "Reported operating RF examples include 2 kV at 80 Hz with 900 V end DC; 4.4 kV is a simulated parameter in the paper, not the displayed operating experiment. Charges in ordered structures are estimates from gravity balance."
+    },
+    {
+      "source_id": "ALUMINA_CTPP_2013",
+      "title": "Dust Particles Behavior in an Electrodynamic Trap",
+      "authors": "Filinov et al.",
+      "venue": "Contributions to Plasma Physics 53(4–5), 450–456 (2013)",
+      "doi": "10.1002/ctpp.201300011",
+      "url": "https://doi.org/10.1002/ctpp.201300011",
+      "source_class": "peer-reviewed primary experiment and Brownian-dynamics model",
+      "notes": "The separate CTPP paper reports an experimental four-rod linear Paul trap at 50 Hz, Uω=4400 V AC amplitude in the paper's sinusoidal convention, and Uend=900 V DC; Al2O3 radius 10–15 µm, density 0.38×10^4 kg/m^3, estimated charge about 10^5–5×10^5 e. Rods were 3 mm diameter and 12 cm long, axis spacing 1.3 cm, end-electrode gap 6.5 cm. The paper does not fully specify in the accessible text whether Uω is a terminal-to-ground or differential pair amplitude; do not convert it to RMS or peak-to-peak. This is not the same operating point/geometry as the NJP paper's displayed 2 kV, 80 Hz example; its 4.4 kV also appears as a numerical-model input in the NJP article."
+    },
+    {
+      "source_id": "ALUMINA_MASS_CHARGE_2015",
+      "title": "Measurement of the charge of a single dust particle",
+      "authors": "Deputatova et al.",
+      "venue": "Journal of Physics: Conference Series 653, 012129 (2015)",
+      "doi": "10.1088/1742-6596/653/1/012129",
+      "url": "https://doi.org/10.1088/1742-6596/653/1/012129",
+      "source_class": "peer-reviewed primary experiment",
+      "notes": "Abstract reports separate mass and charge ranges; individual paired values must be extracted from the full text before drawing correlations."
+    },
+    {
+      "source_id": "ALUMINA_CORONA_2016",
+      "title": "The charging of microparticles in corona discharge in the air",
+      "authors": "Deputatova et al.",
+      "venue": "Herald of Dagestan State University, Natural Sciences 31(4) (2016)",
+      "doi": "10.21779/2542-0321-2016-31-4-41-48",
+      "url": "https://doi.org/10.21779/2542-0321-2016-31-4-41-48",
+      "source_class": "peer-reviewed primary experiment",
+      "notes": "Reports measured individual Al2O3 sizes and charges after corona charging; charging voltage is on the corona charger, not the trap."
+    },
+    {
+      "source_id": "PAUL_SEPARATION_2021",
+      "title": "Microparticle separation in a linear Paul trap",
+      "authors": "Syrovatka et al.",
+      "venue": "Journal of Applied Engineering Science 19(3), 564-569 (2021)",
+      "doi": "10.5937/jaes0-28342",
+      "url": "https://doi.org/10.5937/jaes0-28342",
+      "source_class": "peer-reviewed primary experiment and model",
+      "notes": "Open-air separation experiment of corona-charged glassy carbon and alumina; reported model charges are not all direct single-particle measurements."
+    },
+    {
+      "source_id": "MMEIT_8_12_2016",
+      "title": "Multipole Electrodynamic Ion Trap Geometries for Microparticle Confinement under Standard Ambient Temperature and Pressure Conditions",
+      "authors": "Mihalcea et al.",
+      "venue": "Journal of Applied Physics 119, 114303 (2016)",
+      "doi": "10.1063/1.4943933",
+      "url": "https://doi.org/10.1063/1.4943933",
+      "source_class": "peer-reviewed primary experiment and model",
+      "notes": "Experimental 8- and 12-electrode traps, multiparticle structures in air; does not report counter-rotating orbits."
+    },
+    {
+      "source_id": "3M_GLASS_BUBBLES_K20",
+      "title": "3M Glass Bubbles K, S and iM Series Technical Data Sheet",
+      "authors": "3M",
+      "venue": "Manufacturer technical data sheet, issued 2013",
+      "doi": null,
+      "url": "https://multimedia.3m.com/mws/media/91049O/3m-glass-bubbles-k-s-and-im-series.pdf",
+      "source_class": "manufacturer technical specification",
+      "notes": "K20 true density 0.20 g/cm3; particle-size distribution d10/d50/d90 30/60/90 micrometers; crush-strength data are distributional and do not imply electrical performance."
+    },
+    {
+      "source_id": "MACROTRAP_PREPRINT_2026",
+      "title": "A linear Paul trap to study the equilibrium of charged micron-sized particles in air",
+      "authors": "Kissangou et al.",
+      "venue": "arXiv:2609.35391 (submitted 2026-09-28)",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2609.35391",
+      "source_class": "preprint; not independently peer reviewed as of 2026-11-20",
+      "notes": "Uses hollow-core glass spheres 80-120 micrometers in atmospheric air and a separate DC gravity-compensation rod; reports 13% uncertainty in q/m."
+    },
+    {
+      "source_id": "COAX_TRAP_JINST2011",
+      "title": "A charged-particle manipulator utilizing a co-axial tube electrodynamic trap with an integrated camera",
+      "authors": "Jiang, Whitten and Pau",
+      "venue": "Journal of Instrumentation 6, P10014 (2011)",
+      "doi": "10.1088/1748-0221/6/10/P10014",
+      "url": "https://doi.org/10.1088/1748-0221/6/10/P10014",
+      "source_class": "peer-reviewed primary experiment",
+      "notes": "Coaxial tubes, ambient-air trapping, 300-750 V amplitude, 30-140 Hz, particle diameters 3-50 micrometers."
+    },
+    {
+      "source_id": "MICROGAP_PASCHEN_2019",
+      "title": "The Transition to Paschen's Law for Microscale Gas Breakdown at Subatmospheric Pressure",
+      "authors": "Loveless et al.",
+      "venue": "Scientific Reports 9, 5669 (2019)",
+      "doi": "10.1038/s41598-019-42111-2",
+      "url": "https://doi.org/10.1038/s41598-019-42111-2",
+      "source_class": "peer-reviewed primary experiment and theory",
+      "notes": "Characterizes field-emission/Townsend transition for 1-25 micrometer gaps; classical Paschen use is not universal at microscale."
+    },
+    {
+      "source_id": "PROTRUSION_MICROGAP_2018",
+      "title": "Gas breakdown in atmospheric pressure microgaps with a surface protrusion on the cathode",
+      "authors": "Fu, Zhang and Verboncoeur",
+      "venue": "Applied Physics Letters 112, 254102 (2018)",
+      "doi": null,
+      "url": "https://pubs.aip.org/aip/apl/article/112/25/254102/35800/Gas-breakdown-in-atmospheric-pressure-microgaps",
+      "source_class": "peer-reviewed primary numerical study",
+      "notes": "Demonstrates strong sensitivity of atmospheric microgap breakdown to cathode-protrusion geometry; DC study, not a direct low-frequency RF threshold."
+    },
+    {
+      "source_id": "RF_GAP_BREAKDOWN_2022",
+      "title": "DC and RF Breakdown in Microscale Gaps from near vacuum to atmospheric pressures",
+      "authors": "Moore et al.",
+      "venue": "U.S. Department of Energy technical report (2022)",
+      "doi": "10.2172/2003276",
+      "url": "https://doi.org/10.2172/2003276",
+      "source_class": "government technical report with experimental and modeling work",
+      "notes": "Studies RF and DC breakdown across pressures and microscale gaps; frequencies and gaps differ substantially from the present 10^2 Hz, submillimeter geometry."
+    }
+  ]
+}

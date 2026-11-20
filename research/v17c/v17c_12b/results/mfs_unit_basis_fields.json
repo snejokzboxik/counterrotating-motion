@@ -1,0 +1,20 @@
+{
+  "study": "MFS single-basis RF surface field per electrode volt at D=1 m",
+  "geometry": "24 cylindrical rods, a/D=0.05, center radius D, grounded shield 1.10D",
+  "basis_solutions": {
+    "RF1_k_plus2_1V": {
+      "rod_max_V_m_per_electrode_V": 26.363126866924716,
+      "shield_max_V_m_per_electrode_V": 17.348310458627335,
+      "boundary_residual": 2.4427480659543297e-15,
+      "surface_samples_per_rod": 128
+    },
+    "RF2_k_minus4_1V": {
+      "rod_max_V_m_per_electrode_V": 26.442998019675162,
+      "shield_max_V_m_per_electrode_V": 17.29602544161173,
+      "boundary_residual": 2.4427480659543297e-15,
+      "surface_samples_per_rod": 128
+    }
+  },
+  "conservative_combination_bound": "Emax <= Emax_RF1_unit*U1 + Emax_RF2_unit*U2; bound is for RF-only fields and can be loose.",
+  "limitation": "Surface-angle sampling is 128 points per rod; use the high-resolution phase/angle MFS and FEM checks for finalists."
+}

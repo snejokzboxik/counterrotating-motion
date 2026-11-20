@@ -1,0 +1,124 @@
+{
+  "config_counts": {
+    "A0.0175_B0.0782_nu2.500": {
+      "WALL_CONTACT": 4,
+      "CO_MINUS_MINUS": 28
+    },
+    "A0.0175_B0.1563_nu2.500": {
+      "WALL_CONTACT": 7,
+      "CO_MINUS_MINUS": 25
+    },
+    "A0.0175_B0.2345_nu2.500": {
+      "WALL_CONTACT": 15,
+      "CO_MINUS_MINUS": 17
+    },
+    "A0.0349_B0.0782_nu2.500": {
+      "WALL_CONTACT": 7,
+      "UNRESOLVED": 25
+    },
+    "A0.0349_B0.1563_nu2.500": {
+      "WALL_CONTACT": 6,
+      "UNRESOLVED": 26
+    },
+    "A0.0349_B0.2345_nu2.500": {
+      "WALL_CONTACT": 15,
+      "UNRESOLVED": 17
+    },
+    "A0.0700_B0.0782_nu2.500": {
+      "WALL_CONTACT": 17,
+      "CO_PLUS_PLUS": 15
+    },
+    "A0.0700_B0.1563_nu2.500": {
+      "WALL_CONTACT": 7,
+      "AXIS_AMBIGUOUS": 2,
+      "CO_PLUS_PLUS": 23
+    },
+    "A0.0700_B0.2345_nu2.500": {
+      "WALL_CONTACT": 16,
+      "CO_PLUS_PLUS": 14,
+      "AXIS_AMBIGUOUS": 2
+    },
+    "A0.0175_B0.0782_nu3.220": {
+      "WALL_CONTACT": 5,
+      "UNRESOLVED": 27
+    },
+    "A0.0175_B0.1563_nu3.220": {
+      "WALL_CONTACT": 3,
+      "CO_MINUS_MINUS": 29
+    },
+    "A0.0175_B0.2345_nu3.220": {
+      "WALL_CONTACT": 6,
+      "CO_MINUS_MINUS": 26
+    },
+    "A0.0349_B0.0782_nu3.220": {
+      "WALL_CONTACT": 6,
+      "CO_PLUS_PLUS": 26
+    },
+    "A0.0349_B0.1563_nu3.220": {
+      "WALL_CONTACT": 5,
+      "CO_PLUS_PLUS": 27
+    },
+    "A0.0349_B0.2345_nu3.220": {
+      "WALL_CONTACT": 6,
+      "CO_PLUS_PLUS": 25,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu3.220": {
+      "WALL_CONTACT": 18,
+      "CO_PLUS_PLUS": 14
+    },
+    "A0.0700_B0.1563_nu3.220": {
+      "WALL_CONTACT": 11,
+      "CO_PLUS_PLUS": 21
+    },
+    "A0.0700_B0.2345_nu3.220": {
+      "WALL_CONTACT": 6,
+      "AXIS_AMBIGUOUS": 1,
+      "CO_PLUS_PLUS": 25
+    },
+    "A0.0175_B0.0782_nu4.000": {
+      "WALL_CONTACT": 4,
+      "NONROTATING": 28
+    },
+    "A0.0175_B0.1563_nu4.000": {
+      "WALL_CONTACT": 2,
+      "CO_MINUS_MINUS": 30
+    },
+    "A0.0175_B0.2345_nu4.000": {
+      "WALL_CONTACT": 3,
+      "CO_MINUS_MINUS": 29
+    },
+    "A0.0349_B0.0782_nu4.000": {
+      "WALL_CONTACT": 10,
+      "NONROTATING": 22
+    },
+    "A0.0349_B0.1563_nu4.000": {
+      "WALL_CONTACT": 4,
+      "CO_PLUS_PLUS": 28
+    },
+    "A0.0349_B0.2345_nu4.000": {
+      "WALL_CONTACT": 4,
+      "CO_PLUS_PLUS": 28
+    },
+    "A0.0700_B0.0782_nu4.000": {
+      "WALL_CONTACT": 17,
+      "CO_PLUS_PLUS": 15
+    },
+    "A0.0700_B0.1563_nu4.000": {
+      "WALL_CONTACT": 11,
+      "CO_PLUS_PLUS": 19,
+      "AXIS_AMBIGUOUS": 2
+    },
+    "A0.0700_B0.2345_nu4.000": {
+      "WALL_CONTACT": 8,
+      "CO_PLUS_PLUS": 23,
+      "AXIS_AMBIGUOUS": 1
+    }
+  },
+  "trajectory_rows": 864,
+  "meta_sha256": "04627e8029263bd88b92a67186f942e386b8a857ce20639812573b2c36e68e1f",
+  "trajectory_sha256": "603dc2d550f3e944f7f6b9c50722e4f22ee88409c109a73ba9a12d1245086b7f",
+  "elapsed_s": 753.6935661999742,
+  "process_cpu_s": 7933.59375,
+  "classification_note": "Discovery classification; N=32/config is not a probability estimate."
+}

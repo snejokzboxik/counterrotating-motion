@@ -1,0 +1,55 @@
+{
+  "study": "independent linear FEM cross-check of 2-D RF surface fields",
+  "geometry": "24 circular rods a/D=0.05, center radius D, grounded shield radius 1.10D",
+  "rf_bases": [
+    "complex electrode pattern k=+2",
+    "complex electrode pattern k=-4"
+  ],
+  "phase_maximum": "support-function maximization over independent RF phases",
+  "mfs_reference_rf_only_V_m_p40_n1024": 4685628.460540502,
+  "seed": "alumina_identical_symmetric_ref17_shape",
+  "electrode_peak_V": {
+    "U1": 317.3599145580288,
+    "U2": 1548.773966567617
+  },
+  "refinement": [
+    {
+      "hmin_over_D": 0.01,
+      "nodes": 43570,
+      "triangles": 85814,
+      "surface_adjacent_triangles": 6992,
+      "boundary_dofs": 1372,
+      "rf_only_max_surface_field_V_m": 4476984.27186526,
+      "rods_vs_shield_gap_elements_min_approx": 5.0,
+      "mfs_reference_rf_only_V_m_p40_n1024": 4685628.460540502,
+      "relative_to_mfs_reference": -0.04452853879310237
+    },
+    {
+      "hmin_over_D": 0.005,
+      "nodes": 171526,
+      "triangles": 340478,
+      "surface_adjacent_triangles": 12901,
+      "boundary_dofs": 2620,
+      "rf_only_max_surface_field_V_m": 4607137.173303241,
+      "rods_vs_shield_gap_elements_min_approx": 10.0,
+      "mfs_reference_rf_only_V_m_p40_n1024": 4685628.460540502,
+      "relative_to_mfs_reference": -0.016751496175650082
+    },
+    {
+      "hmin_over_D": 0.0025,
+      "nodes": 643988,
+      "triangles": 1283234,
+      "surface_adjacent_triangles": 23655,
+      "boundary_dofs": 4788,
+      "rf_only_max_surface_field_V_m": 4639080.896947514,
+      "rods_vs_shield_gap_elements_min_approx": 20.0,
+      "mfs_reference_rf_only_V_m_p40_n1024": 4685628.460540502,
+      "relative_to_mfs_reference": -0.009934113211276352
+    }
+  ],
+  "limitations": [
+    "2-D infinite-rod electrostatics only; no axial ends, feedthroughs, or DC electrode solution.",
+    "P1 FEM gradients are elementwise constant; refinement study does not replace a 3-D FEM model.",
+    "No gas discharge/corona criterion is computed from the field maximum."
+  ]
+}

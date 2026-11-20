@@ -1,0 +1,135 @@
+{
+  "sample_size_per_ensemble": 32,
+  "categories": {
+    "UNRESOLVED": 108,
+    "WALL_CONTACT": 19,
+    "AXIS_AMBIGUOUS": 1
+  },
+  "ensembles": {
+    "rest": {
+      "n": 32,
+      "counts": {
+        "UNRESOLVED": 28,
+        "WALL_CONTACT": 4
+      },
+      "P_CR_PLUS_MINUS": 0.0,
+      "P_CR_MINUS_PLUS": 0.0,
+      "P_CR": 0.0,
+      "P_CR_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_CO": 0.0,
+      "P_CO_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_retained": 0.875,
+      "Q_CR_given_retained": 0.0,
+      "P_CO_zero_one_sided95_upper": 0.08936819898626475,
+      "rotation_balance": 0.0
+    },
+    "weak": {
+      "n": 32,
+      "counts": {
+        "UNRESOLVED": 31,
+        "WALL_CONTACT": 1
+      },
+      "P_CR_PLUS_MINUS": 0.0,
+      "P_CR_MINUS_PLUS": 0.0,
+      "P_CR": 0.0,
+      "P_CR_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_CO": 0.0,
+      "P_CO_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_retained": 0.96875,
+      "Q_CR_given_retained": 0.0,
+      "P_CO_zero_one_sided95_upper": 0.08936819898626475,
+      "rotation_balance": 0.0
+    },
+    "wide": {
+      "n": 32,
+      "counts": {
+        "UNRESOLVED": 26,
+        "WALL_CONTACT": 5,
+        "AXIS_AMBIGUOUS": 1
+      },
+      "P_CR_PLUS_MINUS": 0.0,
+      "P_CR_MINUS_PLUS": 0.0,
+      "P_CR": 0.0,
+      "P_CR_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_CO": 0.0,
+      "P_CO_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_retained": 0.84375,
+      "Q_CR_given_retained": 0.0,
+      "P_CO_zero_one_sided95_upper": 0.08936819898626475,
+      "rotation_balance": 0.0
+    },
+    "edge": {
+      "n": 32,
+      "counts": {
+        "UNRESOLVED": 23,
+        "WALL_CONTACT": 9
+      },
+      "P_CR_PLUS_MINUS": 0.0,
+      "P_CR_MINUS_PLUS": 0.0,
+      "P_CR": 0.0,
+      "P_CR_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_CO": 0.0,
+      "P_CO_Wilson95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "P_retained": 0.71875,
+      "Q_CR_given_retained": 0.0,
+      "P_CO_zero_one_sided95_upper": 0.08936819898626475,
+      "rotation_balance": 0.0
+    }
+  },
+  "overall_unweighted_strata_pooled": {
+    "n": 128,
+    "P_CR_PLUS_MINUS": 0.0,
+    "P_CR_MINUS_PLUS": 0.0,
+    "P_CR": 0.0,
+    "P_CR_Wilson95": [
+      0.0,
+      0.029136956273508416
+    ],
+    "P_CO": 0.0,
+    "P_CO_Wilson95": [
+      0.0,
+      0.029136956273508416
+    ],
+    "P_retained": 0.8515625,
+    "Q_CR_given_retained": 0.0,
+    "P_CO_zero_one_sided95_upper": 0.023132405251746743,
+    "rotation_balance": 0.0
+  },
+  "campaign_meta_sha256": "59fcfdb792c10502933bb5da213ec97fec2961edd8c872ad7b6bdb995d6cd09e",
+  "trajectory_rows": 128,
+  "trajectory_file_sha256": "9193fc9a6050eb2cac7b1f7f10bf1e7efbca07aed788b97a95e97fe9bedcc6af",
+  "elapsed_s_this_invocation": 4.550625300034881,
+  "process_cpu_s_this_invocation": 45.734375,
+  "memory_end": {
+    "available": true,
+    "load_percent": 67,
+    "total_bytes": 16562126848,
+    "available_bytes": 5340487680,
+    "total_GiB": 15.425,
+    "available_GiB": 4.974
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "study": "V17C.12B symmetric Al2O3, gravity, continuum drag screen",
+  "pilot": true,
+  "n_per_ensemble": 32,
+  "groups": [
+    "rest",
+    "weak",
+    "wide",
+    "edge"
+  ],
+  "seeds": {
+    "rest": 20261210,
+    "weak": 20261211,
+    "wide": 20261212,
+    "edge": 20261213
+  },
+  "parameters": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    1.0,
+    9.747265456858355e-06,
+    0.24575362874758605,
+    0.24575362874758605
+  ],
+  "qratio": 1.0,
+  "periods": 500,
+  "steps_per_RF_period": 64,
+  "transient_periods": 200,
+  "particle_radius_m": 1.7e-05,
+  "particle_density_kg_m3": 3990.0,
+  "particle_hard_contact_a_over_R": 0.0017,
+  "retention_R_m": 0.01,
+  "gravity_axis_z_m_s2": -9.80665,
+  "drag_model": "Schiller-Naumann F/F_Stokes=1+0.15 Re^0.687, plus Cunningham slip; continuum, Re<1000",
+  "hydrodynamics": "pair Rotne-Prager-like far-field mode 2; finite-size contact truncation; lubrication not modeled",
+  "slip_correction": 1.0048135705882353,
+  "Re_per_dimensionless_speed": 6.354731653464096,
+  "MFS_field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "physical_parameterization_sha256": "33decdce2deecaba361b90e395c7d7ed21edbd4eab4f2c981f27154921198daf",
+  "starts_sha256": "f93d3d224aba0405e465c15eeb5872baa2ca469b78ebffa91dfaddf039f411f7",
+  "runner_sha256": "ad67e6c4546a923f5f60781bce3ad309f4a95045f852a953c7bbe5388c25b5dd",
+  "logical_processors": 12,
+  "workers": 11,
+  "trajectory_parallelism": "ThreadPoolExecutor over independent Numba nogil RK4 trajectories",
+  "memory_start": {
+    "available": true,
+    "load_percent": 66,
+    "total_bytes": 16562126848,
+    "available_bytes": 5478440960,
+    "total_GiB": 15.425,
+    "available_GiB": 5.102
+  },
+  "denominators": "every requested start; failures remain in unconditional denominator",
+  "classification": "CR_PLUS_MINUS, CR_MINUS_PLUS, CO_PLUS_PLUS, CO_MINUS_MINUS, NONROTATING, AXIS_AMBIGUOUS, WALL_CONTACT, PARTICLE_CONTACT, ESCAPE, UNRESOLVED"
+}

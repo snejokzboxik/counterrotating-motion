@@ -1,0 +1,81 @@
+{
+  "n": 512,
+  "unique_global_indices": 512,
+  "starts_exactly_match_invalidated_repeat": true,
+  "category_counts": {
+    "WALL_CONTACT": 95,
+    "CO_PLUS_PLUS": 416,
+    "AXIS_AMBIGUOUS": 1
+  },
+  "ensemble": {
+    "rest": {
+      "n": 128,
+      "counts": {
+        "WALL_CONTACT": 20,
+        "CO_PLUS_PLUS": 107,
+        "AXIS_AMBIGUOUS": 1
+      },
+      "P_CR": 0.0,
+      "P_co": 0.8359375,
+      "P_pair_retained": 0.84375,
+      "zero_CR_exact_onesided95_upper": 0.023132405251746743
+    },
+    "weak": {
+      "n": 128,
+      "counts": {
+        "WALL_CONTACT": 15,
+        "CO_PLUS_PLUS": 113
+      },
+      "P_CR": 0.0,
+      "P_co": 0.8828125,
+      "P_pair_retained": 0.8828125,
+      "zero_CR_exact_onesided95_upper": 0.023132405251746743
+    },
+    "wide": {
+      "n": 128,
+      "counts": {
+        "CO_PLUS_PLUS": 107,
+        "WALL_CONTACT": 21
+      },
+      "P_CR": 0.0,
+      "P_co": 0.8359375,
+      "P_pair_retained": 0.8359375,
+      "zero_CR_exact_onesided95_upper": 0.023132405251746743
+    },
+    "edge": {
+      "n": 128,
+      "counts": {
+        "WALL_CONTACT": 39,
+        "CO_PLUS_PLUS": 89
+      },
+      "P_CR": 0.0,
+      "P_co": 0.6953125,
+      "P_pair_retained": 0.6953125,
+      "zero_CR_exact_onesided95_upper": 0.023132405251746743
+    }
+  },
+  "pooled_descriptive_P_CR": 0.0,
+  "pooled_iid_binomial_zero_CR_one_sided95_upper_not_design_exact": 0.005833955600556329,
+  "stratified_95pct_conservative_zero_CR_upper_Bonferroni": 0.033655210093607835,
+  "wall_rows_consistent_with_accepted_endpoint_geometry": 95,
+  "wall_rows_checked": 95,
+  "old_to_corrected_category_transitions": {
+    "CO_PLUS_PLUS->CO_PLUS_PLUS": 414,
+    "WALL_CONTACT->WALL_CONTACT": 95,
+    "AXIS_AMBIGUOUS->AXIS_AMBIGUOUS": 1,
+    "WALL_CONTACT->CO_PLUS_PLUS": 2
+  },
+  "Re_max_by_particle": [
+    2.8171701975137857,
+    3.219532734590394
+  ],
+  "Re_median_of_trajectory_max_by_particle": [
+    1.0438432315919401,
+    1.000463510235689
+  ],
+  "max_abs_z_over_R": 0.9712307876316633,
+  "trajectory_sha256": "3963ec6a74b41265d4dd78482d6b2613e6a57c664a44da90744786f3d0ca6233",
+  "starts_sha256": "e52114848d2e7fa86e117d534d58127e6a778d82d51f7c25fb850db522370578",
+  "run_sha256": "8dc075484ed6ba4c43f8205a5548cfded1156f4964342b45308c66a05c2b8474",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f"
+}

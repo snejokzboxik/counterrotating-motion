@@ -1,0 +1,27 @@
+{
+  "study": "V17C.12B",
+  "status": "no_confirmed_bistable_physical_configuration",
+  "best_physical_configuration": null,
+  "best_discovery_candidate": null,
+  "reason": "No completed physical screen has observed both counterrotating states (+-) and (-+) at one fixed configuration. The active multiradius Al2O3 discovery campaign is not yet complete.",
+  "do_not_use_as_leader": [
+    "results/identical_physical_sobol_screen_corrected/summary.json::top_config",
+    "Any short-horizon class from the 8-start-per-config screens"
+  ],
+  "last_completed_audited_screen": {
+    "directory": "results/identical_physical_sobol_screen_corrected",
+    "configurations": 512,
+    "starts_per_configuration": 8,
+    "trajectory_rows": 4096,
+    "counterrotation_labels": 0,
+    "audit_pass": true
+  },
+  "active_screen": {
+    "runner": "sobol_alumina_multiradius_search.py",
+    "directory": "results/alumina_multiradius_sobol_screen",
+    "radii_um": [5.0, 7.5, 10.0, 12.5, 15.0, 20.0, 30.0, 40.0],
+    "planned_configurations": 512,
+    "planned_trajectory_rows": 4096,
+    "workers": 11
+  }
+}

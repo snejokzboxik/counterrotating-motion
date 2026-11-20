@@ -1,0 +1,12 @@
+{
+  "runner_sha256": "51134c9bbf7e004fb6207fdd0cc4bd71206b66ae9c5d485b45609634e9d1c83b",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_model_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "campaign": "identical_physical_sobol_screen_corrected",
+  "seed": 20261225,
+  "configs": 512,
+  "starts_per_config": 8,
+  "periods": 5000,
+  "steps": 64,
+  "workers": 11
+}

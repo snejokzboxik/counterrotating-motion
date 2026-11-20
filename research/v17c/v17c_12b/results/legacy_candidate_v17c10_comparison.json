@@ -1,0 +1,314 @@
+{
+  "study": "V17C.10 strict CR outcomes, legacy virtual-particle parameters",
+  "interpretation": [
+    "These are the archived V17C.10 outcomes under its original drag-free, point-dynamics setup with finite-radius collision tests.",
+    "They count the single CR orientation accepted by that protocol and do not establish the reverse orientation or bistability.",
+    "The V17C.10 common-medium Stokes mapping is inconsistent at its archived radii; see PHYSICAL_PARAMETERIZATION_RU.md.",
+    "Denominators remain stratified by the four start ensembles and must not be pooled as a universal probability."
+  ],
+  "candidates": {
+    "candidate52": {
+      "source": "local15_refinement_confirmation_N256/paired_validation_summary.json",
+      "protocol": {
+        "candidates": {
+          "refine00": 0,
+          "refine12": 12,
+          "refine18": 18,
+          "local15": 32,
+          "candidate52": 35
+        },
+        "ensembles": {
+          "rest": 256,
+          "weak": 256,
+          "wide": 256,
+          "edge": 256
+        },
+        "periods": 15000,
+        "steps_per_period": 64,
+        "transient_periods": 200,
+        "finite_radii_over_R": [
+          0.0002,
+          0.00189
+        ],
+        "hydrodynamics": "none",
+        "strict_turn_threshold": 10.0,
+        "axis_rmin_threshold_over_R": 0.02,
+        "window_sign_deadband_turns": 0.05,
+        "same_frozen_starts_and_phases_for_all_candidates": true
+      },
+      "ensembles": {
+        "rest": {
+          "n": 256,
+          "strict_cr": 219,
+          "strict_fraction": 0.85546875,
+          "retained": 219,
+          "category_counts": {
+            "finite_particle_wall_contact": 37,
+            "CR_screen": 219
+          }
+        },
+        "weak": {
+          "n": 256,
+          "strict_cr": 227,
+          "strict_fraction": 0.88671875,
+          "retained": 227,
+          "category_counts": {
+            "finite_particle_wall_contact": 29,
+            "CR_screen": 227
+          }
+        },
+        "wide": {
+          "n": 256,
+          "strict_cr": 186,
+          "strict_fraction": 0.7265625,
+          "retained": 188,
+          "category_counts": {
+            "finite_particle_wall_contact": 68,
+            "CR_screen": 186,
+            "axis_ambiguous": 2
+          }
+        },
+        "edge": {
+          "n": 256,
+          "strict_cr": 161,
+          "strict_fraction": 0.62890625,
+          "retained": 162,
+          "category_counts": {
+            "finite_particle_wall_contact": 94,
+            "CR_screen": 161,
+            "axis_ambiguous": 1
+          }
+        }
+      }
+    },
+    "local15": {
+      "source": "local15_refinement_confirmation_N256/paired_validation_summary.json",
+      "protocol": {
+        "candidates": {
+          "refine00": 0,
+          "refine12": 12,
+          "refine18": 18,
+          "local15": 32,
+          "candidate52": 35
+        },
+        "ensembles": {
+          "rest": 256,
+          "weak": 256,
+          "wide": 256,
+          "edge": 256
+        },
+        "periods": 15000,
+        "steps_per_period": 64,
+        "transient_periods": 200,
+        "finite_radii_over_R": [
+          0.0002,
+          0.00189
+        ],
+        "hydrodynamics": "none",
+        "strict_turn_threshold": 10.0,
+        "axis_rmin_threshold_over_R": 0.02,
+        "window_sign_deadband_turns": 0.05,
+        "same_frozen_starts_and_phases_for_all_candidates": true
+      },
+      "ensembles": {
+        "rest": {
+          "n": 256,
+          "strict_cr": 229,
+          "strict_fraction": 0.89453125,
+          "retained": 229,
+          "category_counts": {
+            "finite_particle_wall_contact": 27,
+            "CR_screen": 229
+          }
+        },
+        "weak": {
+          "n": 256,
+          "strict_cr": 233,
+          "strict_fraction": 0.91015625,
+          "retained": 233,
+          "category_counts": {
+            "finite_particle_wall_contact": 23,
+            "CR_screen": 233
+          }
+        },
+        "wide": {
+          "n": 256,
+          "strict_cr": 198,
+          "strict_fraction": 0.7734375,
+          "retained": 199,
+          "category_counts": {
+            "finite_particle_wall_contact": 57,
+            "CR_screen": 198,
+            "axis_ambiguous": 1
+          }
+        },
+        "edge": {
+          "n": 256,
+          "strict_cr": 170,
+          "strict_fraction": 0.6640625,
+          "retained": 171,
+          "category_counts": {
+            "finite_particle_wall_contact": 85,
+            "CR_screen": 170,
+            "axis_ambiguous": 1
+          }
+        }
+      }
+    },
+    "refine12": {
+      "source": "refine12_neighborhood_validation/paired_validation_summary.json",
+      "protocol": {
+        "candidates": {
+          "refine12_sobol17": 17,
+          "refine12_sobol10": 10,
+          "refine12_sobol23": 23,
+          "refine12": 32,
+          "refine00": 34,
+          "local15": 35,
+          "candidate52": 36
+        },
+        "ensembles": {
+          "rest": 128,
+          "weak": 128,
+          "wide": 128,
+          "edge": 128
+        },
+        "periods": 15000,
+        "steps_per_period": 64,
+        "transient_periods": 200,
+        "finite_radii_over_R": [
+          0.0002,
+          0.00189
+        ],
+        "hydrodynamics": "none",
+        "strict_turn_threshold": 10.0,
+        "axis_rmin_threshold_over_R": 0.02,
+        "window_sign_deadband_turns": 0.05,
+        "same_frozen_starts_and_phases_for_all_candidates": true
+      },
+      "ensembles": {
+        "rest": {
+          "n": 128,
+          "strict_cr": 114,
+          "strict_fraction": 0.890625,
+          "retained": 115,
+          "category_counts": {
+            "finite_particle_wall_contact": 13,
+            "CR_screen": 114,
+            "axis_ambiguous": 1
+          }
+        },
+        "weak": {
+          "n": 128,
+          "strict_cr": 114,
+          "strict_fraction": 0.890625,
+          "retained": 115,
+          "category_counts": {
+            "finite_particle_wall_contact": 13,
+            "CR_screen": 114,
+            "axis_ambiguous": 1
+          }
+        },
+        "wide": {
+          "n": 128,
+          "strict_cr": 109,
+          "strict_fraction": 0.8515625,
+          "retained": 109,
+          "category_counts": {
+            "finite_particle_wall_contact": 19,
+            "CR_screen": 109
+          }
+        },
+        "edge": {
+          "n": 128,
+          "strict_cr": 99,
+          "strict_fraction": 0.7734375,
+          "retained": 99,
+          "category_counts": {
+            "finite_particle_wall_contact": 29,
+            "CR_screen": 99
+          }
+        }
+      }
+    },
+    "refine12_sobol17": {
+      "source": "refine12_neighborhood_validation/paired_validation_summary.json",
+      "protocol": {
+        "candidates": {
+          "refine12_sobol17": 17,
+          "refine12_sobol10": 10,
+          "refine12_sobol23": 23,
+          "refine12": 32,
+          "refine00": 34,
+          "local15": 35,
+          "candidate52": 36
+        },
+        "ensembles": {
+          "rest": 128,
+          "weak": 128,
+          "wide": 128,
+          "edge": 128
+        },
+        "periods": 15000,
+        "steps_per_period": 64,
+        "transient_periods": 200,
+        "finite_radii_over_R": [
+          0.0002,
+          0.00189
+        ],
+        "hydrodynamics": "none",
+        "strict_turn_threshold": 10.0,
+        "axis_rmin_threshold_over_R": 0.02,
+        "window_sign_deadband_turns": 0.05,
+        "same_frozen_starts_and_phases_for_all_candidates": true
+      },
+      "ensembles": {
+        "rest": {
+          "n": 128,
+          "strict_cr": 116,
+          "strict_fraction": 0.90625,
+          "retained": 116,
+          "category_counts": {
+            "finite_particle_wall_contact": 12,
+            "CR_screen": 116
+          }
+        },
+        "weak": {
+          "n": 128,
+          "strict_cr": 115,
+          "strict_fraction": 0.8984375,
+          "retained": 116,
+          "category_counts": {
+            "finite_particle_wall_contact": 12,
+            "CR_screen": 115,
+            "axis_ambiguous": 1
+          }
+        },
+        "wide": {
+          "n": 128,
+          "strict_cr": 112,
+          "strict_fraction": 0.875,
+          "retained": 112,
+          "category_counts": {
+            "finite_particle_wall_contact": 16,
+            "CR_screen": 112
+          }
+        },
+        "edge": {
+          "n": 128,
+          "strict_cr": 103,
+          "strict_fraction": 0.8046875,
+          "retained": 103,
+          "category_counts": {
+            "finite_particle_wall_contact": 25,
+            "CR_screen": 103
+          }
+        }
+      }
+    }
+  },
+  "all_checks_pass_in_source_summaries": {
+    "local15_refinement_confirmation_N256": true,
+    "refine12_neighborhood_validation": true
+  }
+}

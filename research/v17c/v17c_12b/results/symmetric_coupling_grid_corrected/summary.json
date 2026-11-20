@@ -1,0 +1,164 @@
+{
+  "config_counts": {
+    "A0.0175_B0.0782_nu2.500_C9.75e-06": {
+      "WALL_CONTACT": 3,
+      "CO_MINUS_MINUS": 29
+    },
+    "A0.0175_B0.0782_nu2.500_C2e-05": {
+      "WALL_CONTACT": 3,
+      "CO_MINUS_MINUS": 29
+    },
+    "A0.0175_B0.0782_nu2.500_C3.5e-05": {
+      "WALL_CONTACT": 3,
+      "CO_MINUS_MINUS": 29
+    },
+    "A0.0175_B0.0782_nu3.220_C9.75e-06": {
+      "WALL_CONTACT": 2,
+      "UNRESOLVED": 30
+    },
+    "A0.0175_B0.0782_nu3.220_C2e-05": {
+      "WALL_CONTACT": 2,
+      "UNRESOLVED": 30
+    },
+    "A0.0175_B0.0782_nu3.220_C3.5e-05": {
+      "WALL_CONTACT": 2,
+      "NONROTATING": 26,
+      "UNRESOLVED": 4
+    },
+    "A0.0175_B0.0782_nu4.000_C9.75e-06": {
+      "WALL_CONTACT": 4,
+      "NONROTATING": 28
+    },
+    "A0.0175_B0.0782_nu4.000_C2e-05": {
+      "WALL_CONTACT": 4,
+      "NONROTATING": 28
+    },
+    "A0.0175_B0.0782_nu4.000_C3.5e-05": {
+      "WALL_CONTACT": 4,
+      "NONROTATING": 28
+    },
+    "A0.0349_B0.1563_nu2.500_C9.75e-06": {
+      "WALL_CONTACT": 6,
+      "UNRESOLVED": 26
+    },
+    "A0.0349_B0.1563_nu2.500_C2e-05": {
+      "WALL_CONTACT": 6,
+      "UNRESOLVED": 26
+    },
+    "A0.0349_B0.1563_nu2.500_C3.5e-05": {
+      "WALL_CONTACT": 6,
+      "UNRESOLVED": 26
+    },
+    "A0.0349_B0.1563_nu3.220_C9.75e-06": {
+      "WALL_CONTACT": 4,
+      "CO_PLUS_PLUS": 28
+    },
+    "A0.0349_B0.1563_nu3.220_C2e-05": {
+      "WALL_CONTACT": 4,
+      "CO_PLUS_PLUS": 28
+    },
+    "A0.0349_B0.1563_nu3.220_C3.5e-05": {
+      "WALL_CONTACT": 4,
+      "CO_PLUS_PLUS": 28
+    },
+    "A0.0349_B0.1563_nu4.000_C9.75e-06": {
+      "WALL_CONTACT": 2,
+      "CO_PLUS_PLUS": 30
+    },
+    "A0.0349_B0.1563_nu4.000_C2e-05": {
+      "WALL_CONTACT": 2,
+      "CO_PLUS_PLUS": 30
+    },
+    "A0.0349_B0.1563_nu4.000_C3.5e-05": {
+      "WALL_CONTACT": 2,
+      "CO_PLUS_PLUS": 30
+    },
+    "A0.0700_B0.0782_nu2.500_C9.75e-06": {
+      "WALL_CONTACT": 14,
+      "CO_PLUS_PLUS": 17,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu2.500_C2e-05": {
+      "WALL_CONTACT": 14,
+      "CO_PLUS_PLUS": 17,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu2.500_C3.5e-05": {
+      "WALL_CONTACT": 14,
+      "CO_PLUS_PLUS": 17,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu3.220_C9.75e-06": {
+      "WALL_CONTACT": 17,
+      "AXIS_AMBIGUOUS": 2,
+      "CO_PLUS_PLUS": 13
+    },
+    "A0.0700_B0.0782_nu3.220_C2e-05": {
+      "WALL_CONTACT": 17,
+      "AXIS_AMBIGUOUS": 2,
+      "CO_PLUS_PLUS": 13
+    },
+    "A0.0700_B0.0782_nu3.220_C3.5e-05": {
+      "WALL_CONTACT": 17,
+      "AXIS_AMBIGUOUS": 2,
+      "CO_PLUS_PLUS": 13
+    },
+    "A0.0700_B0.0782_nu4.000_C9.75e-06": {
+      "WALL_CONTACT": 15,
+      "CO_PLUS_PLUS": 16,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu4.000_C2e-05": {
+      "WALL_CONTACT": 15,
+      "CO_PLUS_PLUS": 16,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "A0.0700_B0.0782_nu4.000_C3.5e-05": {
+      "WALL_CONTACT": 15,
+      "AXIS_AMBIGUOUS": 1,
+      "CO_PLUS_PLUS": 16
+    },
+    "A0.0175_B0.2345_nu2.500_C9.75e-06": {
+      "WALL_CONTACT": 13,
+      "CO_MINUS_MINUS": 19
+    },
+    "A0.0175_B0.2345_nu2.500_C2e-05": {
+      "WALL_CONTACT": 13,
+      "CO_MINUS_MINUS": 19
+    },
+    "A0.0175_B0.2345_nu2.500_C3.5e-05": {
+      "WALL_CONTACT": 13,
+      "CO_MINUS_MINUS": 19
+    },
+    "A0.0175_B0.2345_nu3.220_C9.75e-06": {
+      "WALL_CONTACT": 6,
+      "CO_MINUS_MINUS": 26
+    },
+    "A0.0175_B0.2345_nu3.220_C2e-05": {
+      "WALL_CONTACT": 6,
+      "CO_MINUS_MINUS": 26
+    },
+    "A0.0175_B0.2345_nu3.220_C3.5e-05": {
+      "WALL_CONTACT": 6,
+      "CO_MINUS_MINUS": 26
+    },
+    "A0.0175_B0.2345_nu4.000_C9.75e-06": {
+      "WALL_CONTACT": 2,
+      "CO_MINUS_MINUS": 30
+    },
+    "A0.0175_B0.2345_nu4.000_C2e-05": {
+      "WALL_CONTACT": 2,
+      "CO_MINUS_MINUS": 30
+    },
+    "A0.0175_B0.2345_nu4.000_C3.5e-05": {
+      "WALL_CONTACT": 2,
+      "CO_MINUS_MINUS": 30
+    }
+  },
+  "trajectory_rows": 1152,
+  "meta_sha256": "1da4e1dd1407ea108167e2885004846c570bf877856b8b396466729333edc096",
+  "trajectory_sha256": "b11394369d64e499b8a4707b4c6f78a98be56ab24c3103cb1d3abdfdb5c78bec",
+  "elapsed_s": 1009.0258590000449,
+  "process_cpu_s": 10828.8125,
+  "classification_note": "Discovery classification; N=32/config is not a probability estimate."
+}

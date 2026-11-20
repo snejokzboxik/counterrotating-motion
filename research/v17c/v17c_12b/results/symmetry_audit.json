@@ -1,0 +1,131 @@
+{
+  "study": "identical-particle label-exchange audit",
+  "candidate_source": "first retained CO++ row in the corrected strict 512-start physical baseline",
+  "start_index": 1,
+  "initial": [
+    0.5801129193193775,
+    -0.06203341621459182,
+    -0.02700633369386196,
+    0.0,
+    0.0,
+    0.0,
+    -0.2936124206572863,
+    -0.5859191635368411,
+    -0.4252723343670368,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "phase": [
+    5.115421243496182,
+    0.8355488384315064
+  ],
+  "parameters": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    1.0,
+    9.747265456858355e-06,
+    0.24575362874758605,
+    0.24575362874758605
+  ],
+  "physical_drag": {
+    "drag_mode": "Schiller-Naumann",
+    "hydrodynamic_mode": "pairwise Rotne-Prager-like cross mobility mode 2",
+    "Cunningham_factor_each": 1.0048135705882353,
+    "Re_per_dimensionless_speed_each": 6.354731653464096,
+    "gravity_z": -0.01187079632795914
+  },
+  "resolutions": [
+    {
+      "steps_per_rf_period": 64,
+      "forward_category": "same_direction",
+      "swapped_category": "same_direction",
+      "periods_completed": 15000,
+      "swapped_periods_completed": 15000,
+      "retained": true,
+      "swapped_retained": true,
+      "max_abs_final_state_swap_error": 0.0,
+      "turns_forward": [
+        16.312789025312494,
+        16.094659792480826
+      ],
+      "turns_swapped": [
+        16.094659792480826,
+        16.312789025312494
+      ],
+      "max_abs_turn_swap_error": 0.0,
+      "min_distance_forward": 0.6977512167979085,
+      "min_distance_swapped": 0.6977512167979085,
+      "max_abs_z_forward": [
+        0.39583184701473634,
+        0.4252723343670368
+      ],
+      "max_abs_z_swapped": [
+        0.4252723343670368,
+        0.39583184701473634
+      ]
+    },
+    {
+      "steps_per_rf_period": 96,
+      "forward_category": "same_direction",
+      "swapped_category": "same_direction",
+      "periods_completed": 15000,
+      "swapped_periods_completed": 15000,
+      "retained": true,
+      "swapped_retained": true,
+      "max_abs_final_state_swap_error": 0.0,
+      "turns_forward": [
+        16.316334282394084,
+        16.098216270393344
+      ],
+      "turns_swapped": [
+        16.098216270393344,
+        16.316334282394084
+      ],
+      "max_abs_turn_swap_error": 0.0,
+      "min_distance_forward": 0.6976256559562424,
+      "min_distance_swapped": 0.6976256559562424,
+      "max_abs_z_forward": [
+        0.39583223331069056,
+        0.4252723343670368
+      ],
+      "max_abs_z_swapped": [
+        0.4252723343670368,
+        0.39583223331069056
+      ]
+    },
+    {
+      "steps_per_rf_period": 128,
+      "forward_category": "same_direction",
+      "swapped_category": "same_direction",
+      "periods_completed": 15000,
+      "swapped_periods_completed": 15000,
+      "retained": true,
+      "swapped_retained": true,
+      "max_abs_final_state_swap_error": 0.0,
+      "turns_forward": [
+        16.316590761516775,
+        16.098473738282944
+      ],
+      "turns_swapped": [
+        16.098473738282944,
+        16.316590761516775
+      ],
+      "max_abs_turn_swap_error": 0.0,
+      "min_distance_forward": 0.6975579797448184,
+      "min_distance_swapped": 0.6975579797448184,
+      "max_abs_z_forward": [
+        0.3958322929365327,
+        0.4252723343670368
+      ],
+      "max_abs_z_swapped": [
+        0.4252723343670368,
+        0.3958322929365327
+      ]
+    }
+  ],
+  "equivariance_pass": true,
+  "interpretation": "This verifies label-swap symmetry of the equations and numerical trajectory for one representative state. It does not establish basin sizes or attractor stability."
+}

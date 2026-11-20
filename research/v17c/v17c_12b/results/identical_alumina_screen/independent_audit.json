@@ -1,0 +1,48 @@
+{
+  "rows": 512,
+  "unique_global_indices": 512,
+  "global_index_minmax": [
+    0,
+    511
+  ],
+  "starts_shapes": {
+    "initial": [
+      512,
+      12
+    ],
+    "phases": [
+      512,
+      2
+    ],
+    "labels": [
+      512
+    ]
+  },
+  "counts": {
+    "WALL_CONTACT": 97,
+    "CO_PLUS_PLUS": 414,
+    "AXIS_AMBIGUOUS": 1
+  },
+  "ensemble_counts": {
+    "rest": {
+      "WALL_CONTACT": 20,
+      "CO_PLUS_PLUS": 107,
+      "AXIS_AMBIGUOUS": 1
+    },
+    "weak": {
+      "WALL_CONTACT": 15,
+      "CO_PLUS_PLUS": 113
+    },
+    "wide": {
+      "CO_PLUS_PLUS": 107,
+      "WALL_CONTACT": 21
+    },
+    "edge": {
+      "WALL_CONTACT": 41,
+      "CO_PLUS_PLUS": 87
+    }
+  },
+  "zero_CR_one_sided_exact95_upper": 0.005833955600556329,
+  "campaign_meta_sha256": "87cbc49a684c2aef6368c92e0fcd13a4c51c3c144c3c91a78bc8204cf8574eb1",
+  "trajectory_sha256": "b92811a47ff210dcf0971e0b0c5b45aab7d62e0ec08fd73589cccbf4a354b764"
+}

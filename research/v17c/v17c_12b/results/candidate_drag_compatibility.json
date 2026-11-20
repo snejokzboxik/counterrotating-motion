@@ -1,0 +1,54 @@
+[
+  {
+    "candidate": "candidate52",
+    "radius_ratio_a2_a1_from_V17C10": 9.45,
+    "mass_ratio_m1_m2": 0.11307613545330587,
+    "mass_ratio_if_same_density_spheres": 0.0011849624122516821,
+    "required_density_ratio_rho1_rho2_at_fixed_radii": 95.42592599071308,
+    "lambda2_lambda1_model": 0.554361704792729,
+    "lambda2_lambda1_Stokes_same_fluid_fixed_radii": 1.0685694800337404,
+    "model_over_Stokes_drag_ratio": 0.5187886376609079,
+    "radius_ratio_for_Stokes_same_fluid_fixed_masses": 4.902552625895579,
+    "density_ratio_at_that_radius_ratio": 13.324095909061356,
+    "qratio": 3.5274259874597194
+  },
+  {
+    "candidate": "local15",
+    "radius_ratio_a2_a1_from_V17C10": 9.45,
+    "mass_ratio_m1_m2": 0.10944955727644175,
+    "mass_ratio_if_same_density_spheres": 0.0011849624122516821,
+    "required_density_ratio_rho1_rho2_at_fixed_radii": 92.36542538802068,
+    "lambda2_lambda1_model": 0.6015249329009599,
+    "lambda2_lambda1_Stokes_same_fluid_fixed_radii": 1.0342983162623745,
+    "model_over_Stokes_drag_ratio": 0.5815777937980987,
+    "radius_ratio_for_Stokes_same_fluid_fixed_masses": 5.4959101513920325,
+    "density_ratio_at_that_radius_ratio": 18.16907767687405,
+    "qratio": 3.1179673274978996
+  },
+  {
+    "candidate": "refine12",
+    "radius_ratio_a2_a1_from_V17C10": 9.45,
+    "mass_ratio_m1_m2": 0.12340655648341282,
+    "mass_ratio_if_same_density_spheres": 0.0011849624122516821,
+    "required_density_ratio_rho1_rho2_at_fixed_radii": 104.14385739790173,
+    "lambda2_lambda1_model": 0.6551447300864368,
+    "lambda2_lambda1_Stokes_same_fluid_fixed_radii": 1.166191958768251,
+    "model_over_Stokes_drag_ratio": 0.5617812103407146,
+    "radius_ratio_for_Stokes_same_fluid_fixed_masses": 5.308832437719753,
+    "density_ratio_at_that_radius_ratio": 18.464403742524592,
+    "qratio": 2.852663503959775
+  },
+  {
+    "candidate": "refine12_sobol17",
+    "radius_ratio_a2_a1_from_V17C10": 9.45,
+    "mass_ratio_m1_m2": 0.10963763906505944,
+    "mass_ratio_if_same_density_spheres": 0.0011849624122516821,
+    "required_density_ratio_rho1_rho2_at_fixed_radii": 92.52414923164058,
+    "lambda2_lambda1_model": 0.7222740884556609,
+    "lambda2_lambda1_Stokes_same_fluid_fixed_radii": 1.0360756891648115,
+    "model_over_Stokes_drag_ratio": 0.6971248297871863,
+    "radius_ratio_for_Stokes_same_fluid_fixed_masses": 6.587829641488908,
+    "density_ratio_at_that_radius_ratio": 31.346333857935036,
+    "qratio": 3.4490536225028334
+  }
+]

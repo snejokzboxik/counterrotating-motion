@@ -1,0 +1,301 @@
+{
+  "study": "paired C-level outcome comparison, identical-particle rest ensemble",
+  "comparisons": [
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 29,
+        "WALL_CONTACT -> WALL_CONTACT": 3
+      },
+      "max_abs_final_state_difference": 0.3748463048525349
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 29,
+        "WALL_CONTACT -> WALL_CONTACT": 3
+      },
+      "max_abs_final_state_difference": 0.6815898040614952
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "UNRESOLVED -> UNRESOLVED": 30,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 0.46219322727501233
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 26,
+      "transition_counts": {
+        "UNRESOLVED -> NONROTATING": 26,
+        "UNRESOLVED -> UNRESOLVED": 4,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 1.6700909009794045
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "NONROTATING -> NONROTATING": 28,
+        "WALL_CONTACT -> WALL_CONTACT": 4
+      },
+      "max_abs_final_state_difference": 0.34396856257965064
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.0782_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "NONROTATING -> NONROTATING": 28,
+        "WALL_CONTACT -> WALL_CONTACT": 4
+      },
+      "max_abs_final_state_difference": 0.3454510778310927
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 19,
+        "WALL_CONTACT -> WALL_CONTACT": 13
+      },
+      "max_abs_final_state_difference": 0.530943863837389
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 19,
+        "WALL_CONTACT -> WALL_CONTACT": 13
+      },
+      "max_abs_final_state_difference": 0.8753801501343794
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 26,
+        "WALL_CONTACT -> WALL_CONTACT": 6
+      },
+      "max_abs_final_state_difference": 0.36395295389417104
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 26,
+        "WALL_CONTACT -> WALL_CONTACT": 6
+      },
+      "max_abs_final_state_difference": 0.7311903818284955
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 30,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 0.24903836946773233
+    },
+    {
+      "amplitude_frequency_family": "A0.0175_B0.2345_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_MINUS_MINUS -> CO_MINUS_MINUS": 30,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 0.5331015648630785
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "UNRESOLVED -> UNRESOLVED": 26,
+        "WALL_CONTACT -> WALL_CONTACT": 6
+      },
+      "max_abs_final_state_difference": 0.6871857535062078
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "UNRESOLVED -> UNRESOLVED": 26,
+        "WALL_CONTACT -> WALL_CONTACT": 6
+      },
+      "max_abs_final_state_difference": 0.8888507984225693
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 28,
+        "WALL_CONTACT -> WALL_CONTACT": 4
+      },
+      "max_abs_final_state_difference": 0.2913421396762294
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 28,
+        "WALL_CONTACT -> WALL_CONTACT": 4
+      },
+      "max_abs_final_state_difference": 0.6319301972075256
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 30,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 0.21237517977302728
+    },
+    {
+      "amplitude_frequency_family": "A0.0349_B0.1563_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 30,
+        "WALL_CONTACT -> WALL_CONTACT": 2
+      },
+      "max_abs_final_state_difference": 0.46062902894010876
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 1,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 17,
+        "WALL_CONTACT -> WALL_CONTACT": 14
+      },
+      "max_abs_final_state_difference": 0.14007728213061596
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu2.500",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 1,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 17,
+        "WALL_CONTACT -> WALL_CONTACT": 14
+      },
+      "max_abs_final_state_difference": 0.12716177670928305
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 2,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 13,
+        "WALL_CONTACT -> WALL_CONTACT": 17
+      },
+      "max_abs_final_state_difference": 0.13370641428591212
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu3.220",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 2,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 13,
+        "WALL_CONTACT -> WALL_CONTACT": 17
+      },
+      "max_abs_final_state_difference": 0.10001038036391817
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 2e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 1,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 16,
+        "WALL_CONTACT -> WALL_CONTACT": 15
+      },
+      "max_abs_final_state_difference": 0.1306466112055683
+    },
+    {
+      "amplitude_frequency_family": "A0.0700_B0.0782_nu4.000",
+      "C_low": 9.75e-06,
+      "C_high": 3.5e-05,
+      "paired_starts": 32,
+      "category_transitions": 0,
+      "transition_counts": {
+        "AXIS_AMBIGUOUS -> AXIS_AMBIGUOUS": 1,
+        "CO_PLUS_PLUS -> CO_PLUS_PLUS": 16,
+        "WALL_CONTACT -> WALL_CONTACT": 15
+      },
+      "max_abs_final_state_difference": 0.09075364330281571
+    }
+  ],
+  "interpretation": "Only the discrete category and maximum final-state differences are compared; no single trajectory is treated as a stability proof."
+}

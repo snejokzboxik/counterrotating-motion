@@ -1,0 +1,6 @@
+{
+  "script_sha256": "ed3a50844bcac8f6364bd5f2e69f8c309761afed7534c554a7b192269ef08d8f",
+  "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+  "field_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "run_state": "interrupted after 1536 of 4096 rows; invalidated due to Cunningham/Stokes lambda mismatch"
+}
