@@ -2,7 +2,7 @@
   "study": "V17C.11 shared RF-DC loading protocol optimization",
   "source_commit": "57e197bb744a3af890d466f418a76a95cf7758b4",
   "working_branch": "research/v17c-loading",
-  "status": "P0-P4 complete; independent integrator, energy, robustness, and larger holdout pending",
+  "status": "P0-P5 complete; adaptive envelope optimization, larger holdout, robustness, and transferability pending",
   "outputs": [
     {
       "path": "research/v17c/v17c_11/analyze_initial_capture.py",
@@ -16,8 +16,8 @@
     },
     {
       "path": "research/v17c/v17c_11/build_manifest.py",
-      "size_bytes": 2182,
-      "sha256": "38cc99e2a1e3f283672ca8d77b3869d08e37c486e3b04ed21a81b79c76c865ba"
+      "size_bytes": 2199,
+      "sha256": "2eedd5aa6d8a86c76d57cfc314142cc69b95c2df751ce0f5a60847aa8b7f978a"
     },
     {
       "path": "research/v17c/v17c_11/INITIAL_CAPTURE_ANALYSIS_RU.md",
@@ -200,6 +200,16 @@
       "sha256": "68b8c1e26c013ed08606120ea39038a5dd59f78c536cdaf50571c9ccf6c0f076"
     },
     {
+      "path": "research/v17c/v17c_11/P5_NUMERICAL_ENERGY_COUPLING_RU.md",
+      "size_bytes": 8794,
+      "sha256": "2aede0f129a168ee7ad189f09593d1d615ff892b662ddb85ae905547eaaac450"
+    },
+    {
+      "path": "research/v17c/v17c_11/run_coupling_controls.py",
+      "size_bytes": 2742,
+      "sha256": "a885d0d12c5ed9194e29f3acf8201f15524c20543be4df699560f1801faa92f8"
+    },
+    {
       "path": "research/v17c/v17c_11/run_loading_validation.py",
       "size_bytes": 7055,
       "sha256": "4ca7adfac5997f3941b492d47de64a33da2cd0535a0eaec27773ea4996b60d63"
@@ -216,8 +226,43 @@
     },
     {
       "path": "research/v17c/v17c_11/SESSION_HANDOFF.md",
-      "size_bytes": 11495,
-      "sha256": "e8e14374b1f30430eb1325cf4f776989a63dd79884a433a3792e87c392c26c56"
+      "size_bytes": 13165,
+      "sha256": "ad74bdb1250478d4f50cde72b4a31dad31113c7c41607441561ca44af15b9a6c"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/coupling_controls.json",
+      "size_bytes": 18016,
+      "sha256": "25de3bb082e28cd22763d10c48585a812d53461d96ef04c0172d96d51c3c60fe"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_energy_balance_summary.json",
+      "size_bytes": 14002,
+      "sha256": "2b5edd03900b4085f1dde1a863b3d44f26dff7aed75ee27a4eb0bdc6e33a0871"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_energy_validation.json",
+      "size_bytes": 13228,
+      "sha256": "17bac83995e057095e7479f95091b685b3ee861fc232fc61c3625470c657535a"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_energy_validation.jsonl",
+      "size_bytes": 9020,
+      "sha256": "05dcbefe90fad7ab400516f239e966588380d9b921009cff2825718e9a201f78"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_protocol0_edge_start0.npz",
+      "size_bytes": 3554767,
+      "sha256": "100fd43c0dff070c74a5f6541079856ba86d2b666ec585c74b374dd3dd0d55dd"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_protocol353_edge_start0.npz",
+      "size_bytes": 3554869,
+      "sha256": "5e1ce330035c5518c60f27d56cd4a4fb0078e76fdce28aaa7c526ddc07c32ad3"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/dop853_protocol505_edge_start0.npz",
+      "size_bytes": 3551040,
+      "sha256": "7d1516f23ad2b7ed594d97a381668bb20be48e7e59f8fdcf571a270d2ceff0bc"
     },
     {
       "path": "research/v17c/v17c_11/strict_long_validation/long_starts.json",
@@ -228,6 +273,16 @@
       "path": "research/v17c/v17c_11/strict_long_validation/long_starts.npz",
       "size_bytes": 25813,
       "sha256": "975fe70c3b765b850aec3390e535526417e8b1a8b1ccdf42f7a43d048a246df3"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/protocol505_dop853_trajectory.png",
+      "size_bytes": 404961,
+      "sha256": "a7793dbd32b8d05e6aa0701e2743cccd6c36902ed5ba6cf7d04e77867b8f7b8c"
+    },
+    {
+      "path": "research/v17c/v17c_11/strict_long_validation/step_convergence.json",
+      "size_bytes": 13073,
+      "sha256": "c46c33b2baa16579bd1664e0adc17d29442aea5a4185c226854576ef9a248574"
     },
     {
       "path": "research/v17c/v17c_11/strict_long_validation/strict_counterrotation_rates.png",
@@ -255,6 +310,11 @@
       "sha256": "64b66dc3e2bffdd5145ca926b38f7d4a6b767a8e56201db66f9030f9d30d4b9a"
     },
     {
+      "path": "research/v17c/v17c_11/summarize_dop853_energy.py",
+      "size_bytes": 6608,
+      "sha256": "d1b5657a6df83dc675efbea8f26e7e2590f9c7cb3f882be50460eeeeb6edafcc"
+    },
+    {
       "path": "research/v17c/v17c_11/summarize_initial_capture.py",
       "size_bytes": 8850,
       "sha256": "1a78579662d7bfa6df433d6a92fcada8cc1b141aae110cf08e89b54fb87e949a"
@@ -273,6 +333,16 @@
       "path": "research/v17c/v17c_11/validate_constant_protocol.py",
       "size_bytes": 7911,
       "sha256": "5b0aa3f1f4c2b69d89a60c2861cb960a0ebfc46b5bc9b345da65589d577a790c"
+    },
+    {
+      "path": "research/v17c/v17c_11/verify_loading_step_convergence.py",
+      "size_bytes": 2751,
+      "sha256": "ecbc596f914dbde7f72f85693e0fe69c278a60bd6854ed421bd847aba01de86f"
+    },
+    {
+      "path": "research/v17c/v17c_11/verify_strict_leaders_dop853.py",
+      "size_bytes": 15515,
+      "sha256": "f1f212bd642de1bbc7d6e51e887445fe0b1d1f071da2b0e470e21af95cfbdc1d"
     }
   ],
   "fixed_sources": [

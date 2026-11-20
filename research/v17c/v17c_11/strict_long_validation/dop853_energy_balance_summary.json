@@ -1,0 +1,413 @@
+[
+  {
+    "protocol_id": 0,
+    "representative": "edge:0",
+    "strict_category_DOP853": "CR_screen",
+    "RK4_category": "CR_screen",
+    "RK4_DOP853_final_max_abs_difference": 0.0012988874977254289,
+    "DOP853_turns": [
+      22.805317526138047,
+      -14.828589570519895
+    ],
+    "DOP853_frequencies_Hz": [
+      154.08998328471654,
+      -100.19317277378308
+    ],
+    "nfev": 8685053,
+    "elapsed_seconds": 213.98082110000541,
+    "first_to_last_system_energy": {
+      "H_initial": {
+        "K_total": 0.02128986380650821,
+        "U_RF1": 0.010870108041286594,
+        "U_RF2": 0.19288892138219488,
+        "U_DC": -0.02301481836211683,
+        "U_Coulomb": 2.0678800955459293e-05,
+        "H_total": 0.20205475366882833
+      },
+      "H_final": {
+        "K_total": 0.015445082485835971,
+        "U_RF1": 0.07333818888085752,
+        "U_RF2": -0.10480473093428531,
+        "U_DC": -0.019119106792571266,
+        "U_Coulomb": 2.30298099250254e-05,
+        "H_total": -0.03511753655023806
+      },
+      "delta_H": -0.23717229021906638,
+      "explicit_work_RF1_RF2_DC": [
+        72.46011169774947,
+        135.04304508112588,
+        0.0
+      ],
+      "drag_work_total": -207.7403289901495,
+      "balance_residual": -7.894490750004479e-08
+    },
+    "after_transition_plus_200_cycles": {
+      "H_start": {
+        "K_total": 0.012152363443634646,
+        "U_RF1": -0.06600218882674859,
+        "U_RF2": 0.16634965663401236,
+        "U_DC": -0.01769179633946121,
+        "U_Coulomb": 7.543962291055369e-06,
+        "H_total": 0.09481557887372825
+      },
+      "H_end": {
+        "K_total": 0.015445082485835971,
+        "U_RF1": 0.07333818888085752,
+        "U_RF2": -0.10480473093428531,
+        "U_DC": -0.019119106792571266,
+        "U_Coulomb": 2.30298099250254e-05,
+        "H_total": -0.03511753655023806
+      },
+      "delta_H": -0.12993311542396632,
+      "explicit_work_RF1_RF2_DC": [
+        71.58084899134883,
+        133.24009385135292,
+        0.0
+      ],
+      "drag_work_total": -204.9508758802197,
+      "balance_residual": -7.790600875523523e-08,
+      "integrated_torque_system_RF1_RF2_DC_Coulomb_drag": [
+        144.1232942051849,
+        -169.04667727453472,
+        2.1102682040337107e-15,
+        1.6349768761081407e-16,
+        25.559604062764357
+      ],
+      "delta_Lz_system": 0.6362210209466433,
+      "angular_balance_residual": 2.75321071496748e-08
+    },
+    "per_particle_ledger": {
+      "1": {
+        "post_relaxation_delta_K": 0.0011402190633298121,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          31.480145142897307,
+          23.264859773566073,
+          0.0006579147115847298,
+          -0.00015117793056284792,
+          -54.74437143058541
+        ],
+        "post_relaxation_kinetic_residual": -3.5956595749887105e-09,
+        "post_relaxation_delta_Lz": 0.05145957207501346,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          62.9993930175735,
+          -29.893013274819825,
+          2.510246603687909e-16,
+          -0.22685607044930942,
+          -32.82806410393195
+        ],
+        "post_relaxation_angular_residual": 3.702598186383632e-09,
+        "full_interval_delta_K": 0.0015632695253582573,
+        "full_interval_work_by_source": [
+          31.90337058531174,
+          23.591260735594698,
+          -0.0024673824952916048,
+          -0.00016071711544683306,
+          -55.490439948130245
+        ]
+      },
+      "2": {
+        "post_relaxation_delta_K": 0.0021524999788715155,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          39.961363470731364,
+          110.24638841322765,
+          0.0007693957877620381,
+          0.0001356920828988822,
+          -150.2065044496343
+        ],
+        "post_relaxation_kinetic_residual": -2.2216488036394533e-08,
+        "post_relaxation_delta_Lz": 0.58476144887163,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          81.12390118761138,
+          -139.1536639997149,
+          1.85924354366492e-15,
+          0.22685607044930958,
+          58.38766816669631
+        ],
+        "post_relaxation_angular_residual": 2.38295267962485e-08,
+        "full_interval_delta_K": -0.0074080508460304985,
+        "full_interval_work_by_source": [
+          40.49427303158569,
+          111.74947794501142,
+          -0.0014283290273929274,
+          0.0001583661064468279,
+          -152.24988904201925
+        ]
+      }
+    },
+    "trajectory_file": "dop853_protocol0_edge_start0.npz"
+  },
+  {
+    "protocol_id": 505,
+    "representative": "edge:0",
+    "strict_category_DOP853": "CR_screen",
+    "RK4_category": "CR_screen",
+    "RK4_DOP853_final_max_abs_difference": 0.0014608284330053234,
+    "DOP853_turns": [
+      22.800914881404776,
+      -14.821705131430011
+    ],
+    "DOP853_frequencies_Hz": [
+      154.09147044268954,
+      -100.16696040704204
+    ],
+    "nfev": 8687225,
+    "elapsed_seconds": 208.2363500000065,
+    "first_to_last_system_energy": {
+      "H_initial": {
+        "K_total": 0.02128986380650821,
+        "U_RF1": 0.0010870108041286593,
+        "U_RF2": 0.019288892138219486,
+        "U_DC": -0.008055186426740888,
+        "U_Coulomb": 2.0678800955459293e-05,
+        "H_total": 0.03363125912307093
+      },
+      "H_final": {
+        "K_total": 0.012665998207642871,
+        "U_RF1": 0.054426379852730224,
+        "U_RF2": 0.03458337444752892,
+        "U_DC": -0.019167382804854808,
+        "U_Coulomb": 1.40441212679402e-05,
+        "H_total": 0.08252241382431516
+      },
+      "delta_H": 0.04889115470124423,
+      "explicit_work_RF1_RF2_DC": [
+        72.4444787328301,
+        135.30906183547955,
+        -0.0037629640828499246
+      ],
+      "drag_work_total": -207.7008863705769,
+      "balance_residual": -7.89486591656896e-08
+    },
+    "after_transition_plus_200_cycles": {
+      "H_start": {
+        "K_total": 0.009186114385316194,
+        "U_RF1": -0.0725345758634268,
+        "U_RF2": 0.0741179056918137,
+        "U_DC": -0.017364599901409233,
+        "U_Coulomb": 7.586213444481076e-06,
+        "H_total": -0.006587569474261663
+      },
+      "H_end": {
+        "K_total": 0.012665998207642871,
+        "U_RF1": 0.054426379852730224,
+        "U_RF2": 0.03458337444752892,
+        "U_DC": -0.019167382804854808,
+        "U_Coulomb": 1.40441212679402e-05,
+        "H_total": 0.08252241382431516
+      },
+      "delta_H": 0.08910998329857682,
+      "explicit_work_RF1_RF2_DC": [
+        71.55403867699584,
+        133.442553874835,
+        0.0
+      ],
+      "drag_work_total": -204.90748249026527,
+      "balance_residual": -7.82669928867108e-08,
+      "integrated_torque_system_RF1_RF2_DC_Coulomb_drag": [
+        144.06944323245546,
+        -169.31771493745734,
+        -5.149270955606573e-16,
+        -8.326672684688674e-17,
+        25.537973963282525
+      ],
+      "delta_Lz_system": 0.28970228580574653,
+      "angular_balance_residual": 2.7525105084080792e-08
+    },
+    "per_particle_ledger": {
+      "1": {
+        "post_relaxation_delta_K": 0.0009071442639018755,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          31.473642821905297,
+          23.259670892196446,
+          0.0006603371709691592,
+          -0.00014439364065083513,
+          -54.73292250977019
+        ],
+        "post_relaxation_kinetic_residual": -3.5979646441017255e-09,
+        "post_relaxation_delta_Lz": 0.006467452178556055,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          62.97117560954494,
+          -29.919403651802323,
+          -9.076398656303987e-17,
+          -0.2238960607313274,
+          -32.82140844853133
+        ],
+        "post_relaxation_angular_residual": 3.6985964404004368e-09,
+        "full_interval_delta_K": 0.0006817892962227158,
+        "full_interval_work_by_source": [
+          31.899874807410157,
+          23.589814311110228,
+          0.0008451118341037008,
+          -0.0002373707498633445,
+          -55.489615066662424
+        ]
+      },
+      "2": {
+        "post_relaxation_delta_K": 0.002572739558424802,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          39.9534348993886,
+          110.22241746137065,
+          0.001142445778702047,
+          0.0001379357327972396,
+          -150.17455998049508
+        ],
+        "post_relaxation_kinetic_residual": -2.221724242947032e-08,
+        "post_relaxation_delta_Lz": 0.28323483362719043,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          81.09826762291051,
+          -139.398311285655,
+          -4.2416310899761743e-16,
+          0.2238960607313273,
+          58.35938241181386
+        ],
+        "post_relaxation_angular_residual": 2.382650149401755e-08,
+        "full_interval_delta_K": -0.009305654895088058,
+        "full_interval_work_by_source": [
+          40.4912645568553,
+          111.7039529889719,
+          0.006504120265613544,
+          0.00024400542952012494,
+          -152.2112713039145
+        ]
+      }
+    },
+    "trajectory_file": "dop853_protocol505_edge_start0.npz"
+  },
+  {
+    "protocol_id": 353,
+    "representative": "edge:0",
+    "strict_category_DOP853": "CR_screen",
+    "RK4_category": "CR_screen",
+    "RK4_DOP853_final_max_abs_difference": 0.001771872312552103,
+    "DOP853_turns": [
+      22.791352171977394,
+      -14.814481061708202
+    ],
+    "DOP853_frequencies_Hz": [
+      154.09974423243676,
+      -100.16552441993376
+    ],
+    "nfev": 8685449,
+    "elapsed_seconds": 211.33383529999992,
+    "first_to_last_system_energy": {
+      "H_initial": {
+        "K_total": 0.02128986380650821,
+        "U_RF1": 0.005435054020643297,
+        "U_RF2": 0.09644446069109744,
+        "U_DC": -0.008055186426740888,
+        "U_Coulomb": 2.0678800955459293e-05,
+        "H_total": 0.11513487089246353
+      },
+      "H_final": {
+        "K_total": 0.013917342012074313,
+        "U_RF1": 0.06427975348826784,
+        "U_RF2": -0.02905600554731496,
+        "U_DC": -0.019092226377530424,
+        "U_Coulomb": 1.77454559255735e-05,
+        "H_total": 0.03006660903142234
+      },
+      "delta_H": -0.08506826186104119,
+      "explicit_work_RF1_RF2_DC": [
+        72.44513866809432,
+        135.18701361667914,
+        -0.006241985937711115
+      ],
+      "drag_work_total": -207.71097847640297,
+      "balance_residual": -8.429381637142797e-08
+    },
+    "after_transition_plus_200_cycles": {
+      "H_start": {
+        "K_total": 0.013559574396646673,
+        "U_RF1": -0.07418513560141744,
+        "U_RF2": 0.17268722483681986,
+        "U_DC": -0.01765394184467966,
+        "U_Coulomb": 7.4494173552628485e-06,
+        "H_total": 0.09441517120472472
+      },
+      "H_end": {
+        "K_total": 0.013917342012074313,
+        "U_RF1": 0.06427975348826784,
+        "U_RF2": -0.02905600554731496,
+        "U_DC": -0.019092226377530424,
+        "U_Coulomb": 1.77454559255735e-05,
+        "H_total": 0.03006660903142234
+      },
+      "delta_H": -0.06434856217330237,
+      "explicit_work_RF1_RF2_DC": [
+        71.53121161479709,
+        133.21513602199383,
+        0.0
+      ],
+      "drag_work_total": -204.81069612124762,
+      "balance_residual": -7.771660648359102e-08,
+      "integrated_torque_system_RF1_RF2_DC_Coulomb_drag": [
+        144.02618193047255,
+        -169.01975501585991,
+        4.960359286268648e-16,
+        -1.4137996329210978e-16,
+        25.524046510184924
+      ],
+      "delta_Lz_system": 0.5304734519728034,
+      "angular_balance_residual": 2.717524738571342e-08
+    },
+    "per_particle_ledger": {
+      "1": {
+        "post_relaxation_delta_K": 0.0002742651797403759,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          31.458588469773222,
+          23.248327466521665,
+          0.0006066744798279071,
+          -0.00014725088646473137,
+          -54.70710109124321
+        ],
+        "post_relaxation_kinetic_residual": -3.465302831576894e-09,
+        "post_relaxation_delta_Lz": 0.04971741398664503,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          62.951498218830416,
+          -29.870346457703977,
+          -2.4391157686671433e-17,
+          -0.2250331424227154,
+          -32.80640120838204
+        ],
+        "post_relaxation_angular_residual": 3.6649686063761067e-09,
+        "full_interval_delta_K": 0.0012713939817204675,
+        "full_interval_work_by_source": [
+          31.900134095727807,
+          23.58992075234416,
+          0.00049869732807634,
+          -0.00021327103072270464,
+          -55.48906887687212
+        ]
+      },
+      "2": {
+        "post_relaxation_delta_K": 8.35024356872667e-05,
+        "post_relaxation_work_by_source_RF1_RF2_DC_Coulomb_drag": [
+          39.93415825593767,
+          110.16855173277611,
+          0.0008316100992427238,
+          0.00013695484786430579,
+          -150.1035950300044
+        ],
+        "post_relaxation_kinetic_residual": -2.1220798073623426e-08,
+        "post_relaxation_delta_Lz": 0.4807560379861583,
+        "post_relaxation_integrated_torque_RF1_RF2_DC_Coulomb_drag": [
+          81.07468371164211,
+          -139.14940855815593,
+          5.204270863135362e-16,
+          0.22503314242271527,
+          58.330447718566965
+        ],
+        "post_relaxation_angular_residual": 2.3510292934680876e-08,
+        "full_interval_delta_K": -0.008643915776154365,
+        "full_interval_work_by_source": [
+          40.48615986895717,
+          111.72259327846224,
+          0.004296353479662235,
+          0.0002162043757218775,
+          -152.22190959953085
+        ]
+      }
+    },
+    "trajectory_file": "dop853_protocol353_edge_start0.npz"
+  }
+]
