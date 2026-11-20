@@ -34,7 +34,7 @@ def main() -> None:
         "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
         "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
         "branch": "research/v17c-crystals",
-        "status": "P0 general N-body model validated; P1 six-particle crystal reproduction not yet completed",
+        "status": "P0 validated; P1 16-run ordered pilot complete; no strict 3+3 crystal confirmation yet",
         "outputs": [item(p) for p in outputs],
         "fixed_sources": [item(ROOT / p) for p in SOURCES],
     }

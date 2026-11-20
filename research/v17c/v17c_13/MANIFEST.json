@@ -2,12 +2,12 @@
   "study": "V17C.13 collective dynamics of two three-particle Coulomb crystals",
   "base_commit": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
   "branch": "research/v17c-crystals",
-  "status": "P0 general N-body model validated; P1 six-particle crystal reproduction not yet completed",
+  "status": "P0 validated; P1 16-run ordered pilot complete; no strict 3+3 crystal confirmation yet",
   "outputs": [
     {
       "path": "research/v17c/v17c_13/build_manifest.py",
-      "size_bytes": 1810,
-      "sha256": "5373cfa756aa48e7bfaf462ff84b10954c43402cc5f72aab98d425e8cb266e92"
+      "size_bytes": 1807,
+      "sha256": "51f15a3d7091f94f9352f048ba8ae57970bf54521fa4798dcd8a2a19740eab26"
     },
     {
       "path": "research/v17c/v17c_13/local15_n6_parameters.json",
@@ -30,14 +30,114 @@
       "sha256": "7823ed87831197b1576187b6ebfed2388966fb579c250530664965ef54747b50"
     },
     {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle0_phase0_trajectory.npz",
+      "size_bytes": 945306,
+      "sha256": "79acdb57e5333ca658a36a3c93799630cc854086f11430c04f23ded6aff6385d"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle0_phase1_trajectory.npz",
+      "size_bytes": 945334,
+      "sha256": "04bd302b90e03a70a5693a5a21478a4a09b239867628cfb668aabd666a399277"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle1_phase0_trajectory.npz",
+      "size_bytes": 945155,
+      "sha256": "63c70c4d7c8bdd6eaf85fc84cea225fd42ccee87c8532154ab0abef94388a4a6"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/constant_angle1_phase1_trajectory.npz",
+      "size_bytes": 944995,
+      "sha256": "3dfcdb9d40b63221d642c1d277bf50325f3ffe72c6d874663553a05d4adab5ec"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_353_angle0_phase0_trajectory.npz",
+      "size_bytes": 945929,
+      "sha256": "370bc10365ae9fb3d64c58d3675713a6335708414dbc8991d51105fd3d8eecf8"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_353_angle0_phase1_trajectory.npz",
+      "size_bytes": 945564,
+      "sha256": "eb1bd90028fef627119b7e616261bc5652d424814412f98f32a8c4fb37396c15"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_353_angle1_phase0_trajectory.npz",
+      "size_bytes": 945444,
+      "sha256": "ba55914deee20f4f1ac03fdc191ce1347ffde404340d95705de347b98ef04ec9"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_353_angle1_phase1_trajectory.npz",
+      "size_bytes": 945378,
+      "sha256": "dc14c1a19526246bdf4f19739929af1cc988536e40cc9e96614a6576e28e023e"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_505_angle0_phase0_trajectory.npz",
+      "size_bytes": 944944,
+      "sha256": "59e694e18db448cdacce3a9e3f391c9d88654eca0413410e0270791b906f0af6"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_505_angle0_phase1_trajectory.npz",
+      "size_bytes": 945256,
+      "sha256": "9f8cfba880f9c0f17b877deed402d4ec4c6da1b0a67f58612f283f4b4ec41ec4"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_505_angle1_phase0_trajectory.npz",
+      "size_bytes": 944917,
+      "sha256": "52c1ebea612bc3d8828e7617c3254af7760a9f561928491737f32a7d4a56869e"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P2_505_angle1_phase1_trajectory.npz",
+      "size_bytes": 944785,
+      "sha256": "89fa907221d6cb277310383449598da233bb145e75d0b54b5a1d51743fe8b0ed"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P7_292_angle0_phase0_trajectory.npz",
+      "size_bytes": 945315,
+      "sha256": "536df3f57e814d1efede8b6e352670ed53d370a9e3d0266783d4595e389af397"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P7_292_angle0_phase1_trajectory.npz",
+      "size_bytes": 945390,
+      "sha256": "bf2dd3e49d4f0bdae5668376bb8cb87882de27fd6647746667d5900c4f3cbd02"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P7_292_angle1_phase0_trajectory.npz",
+      "size_bytes": 945204,
+      "sha256": "b23163a0fe6d0070988d9cd82fbb06b548c67c4d3fd5bb9087efd4aeb73ad416"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/P7_292_angle1_phase1_trajectory.npz",
+      "size_bytes": 944984,
+      "sha256": "3e04ce03726d079851fc7ef74a1f652507519c54d68359ac21fb4598de6082be"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/pilot_metadata.json",
+      "size_bytes": 724,
+      "sha256": "40bae28d3956b384d50895631845925d586f12ba67e89a3ad96c69ed55098756"
+    },
+    {
+      "path": "research/v17c/v17c_13/p1_ordered_pilot/pilot_runs.jsonl",
+      "size_bytes": 57083,
+      "sha256": "e432dc64e8114e401b162ab628f3b09f0d2353b1b5e342dec8b0081863c3f163"
+    },
+    {
       "path": "research/v17c/v17c_13/REPORT_RU.md",
-      "size_bytes": 3974,
-      "sha256": "c53b2568bc458c8fe9d9509511abe1be173a7d982a665e679fdb8e67035c74e8"
+      "size_bytes": 6917,
+      "sha256": "c5589fe616beda8afb1768a6c82f8e791b8f22612e832a684081c6ff91ce34a8"
+    },
+    {
+      "path": "research/v17c/v17c_13/run_ordered_pilot.py",
+      "size_bytes": 8223,
+      "sha256": "63edc926197825c25c089d5ce70c9d483f8810860db600968f5fd4f0ebe53e61"
     },
     {
       "path": "research/v17c/v17c_13/SESSION_HANDOFF.md",
-      "size_bytes": 5537,
-      "sha256": "fb7bacc3ad4d89e93412b7e7be09cd71376b38912b97848dbe89e5c855e381de"
+      "size_bytes": 8388,
+      "sha256": "51a7969babedb15a6f46d22d56f3468eb5b930cc6368c9e8c4612c88504c08cc"
+    },
+    {
+      "path": "research/v17c/v17c_13/THREE_PLUS_THREE_REPRODUCTION_RU.md",
+      "size_bytes": 5366,
+      "sha256": "9893481c3abf0efe439832deccc6f48a911134fb450ac296d450aa1b078e8fc2"
     },
     {
       "path": "research/v17c/v17c_13/validate_nbody_p0.py",

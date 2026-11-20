@@ -1,0 +1,44 @@
+{
+  "status": "screening_only",
+  "seed": 20261313,
+  "periods": 3000,
+  "steps_per_period": 96,
+  "groups": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "ring_radii_R": [
+    0.45,
+    0.63
+  ],
+  "ring_z_centers_R": [
+    0.0,
+    0.1
+  ],
+  "relative_angles_rad": [
+    0.0,
+    1.0471975511965976
+  ],
+  "rf_phase_sets_rad": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.7,
+      2.1
+    ]
+  ],
+  "protocols": [
+    "constant",
+    "P2_505",
+    "P2_353",
+    "P7_292"
+  ],
+  "warning": "P1 pilot is too short for strict 10-turn validation and is not an attractor claim",
+  "start_and_phase_hash": "9b68b8eb599bd60cd1e44f304b3dc2b5e6a15d2201f9612b6d946c8ac72bcc7a"
+}
