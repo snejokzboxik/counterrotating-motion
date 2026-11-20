@@ -1,0 +1,35 @@
+{
+  "screen_config_id": 15,
+  "candidate_label": "local_sobol_15",
+  "parameters": [
+    0.03716194907442204,
+    0.1626938199343468,
+    3.1118029452860356,
+    0.017273303124515367,
+    0.10944955727644175,
+    9.463121589050818e-06,
+    0.20975541409005094,
+    0.12617311138613094
+  ],
+  "qratio": 3.1179673274978996,
+  "ensemble": "weak",
+  "n": 128,
+  "seed": 20261411,
+  "periods": 15000,
+  "steps": 96,
+  "transient": 200,
+  "source_start_file": "research\\v17c\\v17c_10\\focused_edge_replication\\replication_starts\\weak_N256_seed20261411.npz",
+  "source_start_sha256": "53fa0e53fef421a9fa85191c0563458f91c5590d9adb83eacee79b14a76e4ed5",
+  "frozen_start_sha256": "f035fa5a9b25e1e332ed82f84943e9b35c81796343c49ca3c87584a05a04ce99",
+  "source_start_indices": [
+    0,
+    128
+  ],
+  "run_tag": "stepconv20261420",
+  "candidate_source": "V17C.10 same-start numerical sensitivity check",
+  "hydro_mode": "none",
+  "a1_over_R": 0.0002,
+  "a2_over_R": 0.00189,
+  "fixed_field_config_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+  "runner_sha256": "eb8f2154465459b594469d26204d6185fd4b00cc38e43fa81f04168fcc651095"
+}

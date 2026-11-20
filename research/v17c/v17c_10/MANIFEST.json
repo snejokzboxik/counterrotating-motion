@@ -1,7 +1,7 @@
 {
   "study": "V17C.10 counter-rotation basin optimization",
   "created": "2026-11-19",
-  "status": "P0-P3 complete through independent N=256 strict matched replication; 96-step convergence check pending",
+  "status": "P0-P3 complete through independent N=256 replication and same-start 64-vs-96-step sensitivity check; local refinement search pending",
   "branch": "research/v17c",
   "base_commit": "cc41be9082c62e9b907eb459f453ac51001d4267",
   "files": [
@@ -17,8 +17,8 @@
     },
     {
       "path": "build_manifest.py",
-      "size_bytes": 1336,
-      "sha256": "4d04ecb70162ebb2f568c2e91fa13103cd44ba75e21a353bf56f182cde0720c5"
+      "size_bytes": 1366,
+      "sha256": "3196f93b522ee5f9e95b923ed80bf425ed911c9e614ca426afcc8d41bbcbe5b3"
     },
     {
       "path": "candidate17_holdout/cfg17_rest_matched_holdout_none_chi0-0_a0.0002-0.00189_pairedholdout20261150_128_15000p_64s.jsonl",
@@ -184,6 +184,111 @@
       "path": "failure_maps_candidate52.png",
       "size_bytes": 496649,
       "sha256": "7e1baf6af7e232651c580edde6af533ae1a2b0b477fa13f4a7248f2c440a65c4"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_edge_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 156850,
+      "sha256": "b96e8f46ba38ab4247b2eeb1126747eacf2e0d14012e1f1cbb0a1e5bddd7ad42"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_edge_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1191,
+      "sha256": "09165e148d7f45e13e75eb5d8a3291bff3ff816c031813c0fa2a3c8e5bcba128"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_rest_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 148098,
+      "sha256": "dd59f843ecd7f5044a7f7f6b648c67b2accbf45bdaad5fa640c6801802759a9f"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_rest_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1191,
+      "sha256": "07fe3ea07e8d27d4d7784fce6dc7d9b364156320e467c83176c8eeded1697929"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_weak_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 161497,
+      "sha256": "3f6f74642cf1cc1c581feb93e36e0aca0d70118f36a4eacbe113a52f2050cbd0"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_weak_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1191,
+      "sha256": "0781cc7f25a5c60c117ee69584411d34acffed1bd33e6c0d34c4b4bb3d184515"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_wide_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 158074,
+      "sha256": "30408f803fffb779b5f2d0a7e89e0146f4bce4008ecff0f887e7c68b57830001"
+    },
+    {
+      "path": "focused_edge_convergence/candidate52_wide_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1191,
+      "sha256": "b65b535f5595476e07bafca8ec9bb84d322e8d46cd6ad6ea9da94219b3fd984c"
+    },
+    {
+      "path": "focused_edge_convergence/convergence_starts/edge_N128_subset256_seed20261413.npz",
+      "size_bytes": 14734,
+      "sha256": "d92771286249a0856d9b4132f2fd8ddb9c917c8dae81800806f9b9970a233759"
+    },
+    {
+      "path": "focused_edge_convergence/convergence_starts/rest_N128_subset256_seed20261410.npz",
+      "size_bytes": 9008,
+      "sha256": "53c92db6eb0cd1eee271e7da3b9374ed97b86a55500f03b4491a1b3bbecb1a78"
+    },
+    {
+      "path": "focused_edge_convergence/convergence_starts/weak_N128_subset256_seed20261411.npz",
+      "size_bytes": 14667,
+      "sha256": "f035fa5a9b25e1e332ed82f84943e9b35c81796343c49ca3c87584a05a04ce99"
+    },
+    {
+      "path": "focused_edge_convergence/convergence_starts/wide_N128_subset256_seed20261412.npz",
+      "size_bytes": 14746,
+      "sha256": "823da28c7605a4c4c5790e9a6b5b3ec191cc4d4553e1eebf4193b38e94c880a7"
+    },
+    {
+      "path": "focused_edge_convergence/local15_edge_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 157747,
+      "sha256": "8c7e8448ba14ba85d5bd8b533e92ea0cc1b61a31415ceb3b72a1211cdbb9e3c8"
+    },
+    {
+      "path": "focused_edge_convergence/local15_edge_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1187,
+      "sha256": "2140248269eec4e9c66a8f823f3311564c11941362a4a68160c89acf89289305"
+    },
+    {
+      "path": "focused_edge_convergence/local15_rest_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 148032,
+      "sha256": "cccca1f2828b337866613f2c5d6e2976210fb96f2a20a737c9b2f2314d1c9c2a"
+    },
+    {
+      "path": "focused_edge_convergence/local15_rest_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1187,
+      "sha256": "9d613d3279f7288bd474ed5d9df2a0f96788ee76a5046d3ed0178e34ea5bf60e"
+    },
+    {
+      "path": "focused_edge_convergence/local15_weak_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 161312,
+      "sha256": "f769122a1198c4b2734638b06486ebbaf06185564acfc03cd8b5b974ba5e34cd"
+    },
+    {
+      "path": "focused_edge_convergence/local15_weak_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1187,
+      "sha256": "41a7c69bf64d79358cba4f62a90a1930266b05cdf593dd998a756195594b3598"
+    },
+    {
+      "path": "focused_edge_convergence/local15_wide_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.jsonl",
+      "size_bytes": 158263,
+      "sha256": "2979dd90aa9b0d9d97ebc7933b349814606f6e325055015c75c629cc588a6bb3"
+    },
+    {
+      "path": "focused_edge_convergence/local15_wide_matched_strict_none_a0.0002-0.00189_stepconv20261420_128_15000p_96s.meta.json",
+      "size_bytes": 1187,
+      "sha256": "321b3e006240981792dc7c5c9ede9fba02265d29303675416cf9c9d64afb103e"
+    },
+    {
+      "path": "focused_edge_convergence/step_convergence_summary.json",
+      "size_bytes": 11948,
+      "sha256": "dd7cb495c57dc7b282606eefe4310a19a971a871458b2c023ccfe757954cdb61"
     },
     {
       "path": "focused_edge_replication/candidate52_edge_matched_strict_none_a0.0002-0.00189_replicate20261410_256_15000p_64s.jsonl",
@@ -596,6 +701,11 @@
       "sha256": "f30fd5a39316204a4d7c768f3853d60c57a79f1c4fe791888a00bc9dfdb04fbf"
     },
     {
+      "path": "NUMERICAL_CONVERGENCE_RU.md",
+      "size_bytes": 4078,
+      "sha256": "5369cc4b9695612b2b2b8c8ed584f1764f92d287393337613d9167998601d049"
+    },
+    {
       "path": "PREFLIGHT_RU.md",
       "size_bytes": 7621,
       "sha256": "b2dba312aac256199970106cb6054be0c3136119fa6c9dd7517f260c6067d8d2"
@@ -641,6 +751,11 @@
       "sha256": "d92b9e60f67798a6e36af68a04f04042dc3ee12ff7c609f92dd03e13e44442be"
     },
     {
+      "path": "run_step_convergence_check.py",
+      "size_bytes": 8444,
+      "sha256": "eb8f2154465459b594469d26204d6185fd4b00cc38e43fa81f04168fcc651095"
+    },
+    {
       "path": "screen_completion_summary.json",
       "size_bytes": 12499,
       "sha256": "a8b3091870ab8acd25c083e1ee0bd80df1304bd723762432d5251f33e63da3cf"
@@ -652,8 +767,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "size_bytes": 11108,
-      "sha256": "b4d88fc8f331b22477125b28e1b42a895334a1e14481762376580f092de6016e"
+      "size_bytes": 12084,
+      "sha256": "9a630cd78dcf3e8b277c7a9381ab776330242bead51066ef371d433890eea41f"
     },
     {
       "path": "sobol_leader_config17.json",
@@ -684,6 +799,11 @@
       "path": "validate_screen.py",
       "size_bytes": 8269,
       "sha256": "4287afc5f1f55cdb35fa883a0f503dc463872f5be680126b73f20041561506f7"
+    },
+    {
+      "path": "validate_step_convergence_check.py",
+      "size_bytes": 9970,
+      "sha256": "0735e53e111f190a6c1bb52996b5b29201d060e97a7f616948afd9f471c9a8e1"
     }
   ],
   "manifest_note": "MANIFEST.json is intentionally excluded from its own file list."

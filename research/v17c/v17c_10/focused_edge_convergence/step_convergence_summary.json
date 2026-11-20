@@ -1,0 +1,333 @@
+{
+  "study": "V17C.10 same-start 64-vs-96-step numerical sensitivity",
+  "status": "complete; same-start subset comparison",
+  "protocol": {
+    "candidates": {
+      "local15": 15,
+      "candidate52": 36
+    },
+    "ensembles": {
+      "rest": 128,
+      "weak": 128,
+      "wide": 128,
+      "edge": 128
+    },
+    "periods": 15000,
+    "transient_periods": 200,
+    "steps_compared": [
+      64,
+      96
+    ],
+    "same_start_indices": "0..127 from each independent N=256 replication group",
+    "finite_radii_over_R": [
+      0.0002,
+      0.00189
+    ],
+    "hydrodynamics": "none"
+  },
+  "all_checks_pass": true,
+  "checks": {
+    "all_8_96_step_files_complete": true,
+    "subset_starts_match_N256_replication_prefix": true,
+    "metadata_and_hashes_match_protocol": true,
+    "parameters_match_selected_candidates": true,
+    "all_64_and_96_step_strict_labels_reproduce": true,
+    "all_1024_candidate_group_index_keys_unique": true
+  },
+  "category_counts_96_step_runs": {
+    "CR_screen": 791,
+    "finite_particle_wall_contact": 228,
+    "axis_ambiguous": 5
+  },
+  "by_candidate_and_ensemble": {
+    "local15": {
+      "rest": {
+        "n": 128,
+        "strict_cr_64_steps": 113,
+        "strict_cr_96_steps": 113,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 113,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 15
+        },
+        "category_counts_64": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "category_counts_96": {
+          "CR_screen": 113,
+          "finite_particle_wall_contact": 15
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 113,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 15
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 226,
+          "turn_abs_difference_median": 0.003796377424687414,
+          "turn_abs_difference_q95": 0.004819979158171783,
+          "rmin_abs_difference_median": 6.69259246710574e-06,
+          "rmin_abs_difference_q95": 7.534542929932275e-05
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr_64_steps": 112,
+        "strict_cr_96_steps": 112,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 112,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 16
+        },
+        "category_counts_64": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "category_counts_96": {
+          "CR_screen": 112,
+          "finite_particle_wall_contact": 16
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 112,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 16
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 224,
+          "turn_abs_difference_median": 0.0036618012455376103,
+          "turn_abs_difference_q95": 0.004750400239607977,
+          "rmin_abs_difference_median": 7.79887548105207e-06,
+          "rmin_abs_difference_q95": 8.543927916886407e-05
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr_64_steps": 90,
+        "strict_cr_96_steps": 90,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 90,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 38
+        },
+        "category_counts_64": {
+          "CR_screen": 90,
+          "finite_particle_wall_contact": 36,
+          "axis_ambiguous": 2
+        },
+        "category_counts_96": {
+          "CR_screen": 90,
+          "finite_particle_wall_contact": 36,
+          "axis_ambiguous": 2
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 90,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 36,
+          "axis_ambiguous -> axis_ambiguous": 2
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 184,
+          "turn_abs_difference_median": 0.0037899167178618853,
+          "turn_abs_difference_q95": 0.0046010825035450505,
+          "rmin_abs_difference_median": 5.03189264283721e-06,
+          "rmin_abs_difference_q95": 7.809862800861876e-05
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr_64_steps": 88,
+        "strict_cr_96_steps": 88,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 88,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 40
+        },
+        "category_counts_64": {
+          "CR_screen": 88,
+          "finite_particle_wall_contact": 39,
+          "axis_ambiguous": 1
+        },
+        "category_counts_96": {
+          "CR_screen": 88,
+          "finite_particle_wall_contact": 39,
+          "axis_ambiguous": 1
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 88,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 39,
+          "axis_ambiguous -> axis_ambiguous": 1
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 178,
+          "turn_abs_difference_median": 0.003678114382348774,
+          "turn_abs_difference_q95": 0.0048869766778496535,
+          "rmin_abs_difference_median": 1.0868036446759488e-05,
+          "rmin_abs_difference_q95": 0.00010828790624934915
+        }
+      }
+    },
+    "candidate52": {
+      "rest": {
+        "n": 128,
+        "strict_cr_64_steps": 111,
+        "strict_cr_96_steps": 111,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 111,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 17
+        },
+        "category_counts_64": {
+          "CR_screen": 111,
+          "finite_particle_wall_contact": 17
+        },
+        "category_counts_96": {
+          "CR_screen": 111,
+          "finite_particle_wall_contact": 17
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 111,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 17
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 222,
+          "turn_abs_difference_median": 0.0029860541739230584,
+          "turn_abs_difference_q95": 0.0036610000095347317,
+          "rmin_abs_difference_median": 7.432783533781184e-06,
+          "rmin_abs_difference_q95": 7.196938146752647e-05
+        }
+      },
+      "weak": {
+        "n": 128,
+        "strict_cr_64_steps": 110,
+        "strict_cr_96_steps": 110,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 110,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 18
+        },
+        "category_counts_64": {
+          "CR_screen": 110,
+          "finite_particle_wall_contact": 18
+        },
+        "category_counts_96": {
+          "CR_screen": 110,
+          "finite_particle_wall_contact": 18
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 110,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 18
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 220,
+          "turn_abs_difference_median": 0.0030834274829674158,
+          "turn_abs_difference_q95": 0.0036516834103294646,
+          "rmin_abs_difference_median": 8.571024509400338e-06,
+          "rmin_abs_difference_q95": 6.699918748606641e-05
+        }
+      },
+      "wide": {
+        "n": 128,
+        "strict_cr_64_steps": 88,
+        "strict_cr_96_steps": 88,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 88,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 40
+        },
+        "category_counts_64": {
+          "CR_screen": 88,
+          "finite_particle_wall_contact": 39,
+          "axis_ambiguous": 1
+        },
+        "category_counts_96": {
+          "CR_screen": 88,
+          "finite_particle_wall_contact": 39,
+          "axis_ambiguous": 1
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 88,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 39,
+          "axis_ambiguous -> axis_ambiguous": 1
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 178,
+          "turn_abs_difference_median": 0.0030637104613013832,
+          "turn_abs_difference_q95": 0.003664982031367181,
+          "rmin_abs_difference_median": 7.006249620467031e-06,
+          "rmin_abs_difference_q95": 7.373396322495895e-05
+        }
+      },
+      "edge": {
+        "n": 128,
+        "strict_cr_64_steps": 79,
+        "strict_cr_96_steps": 79,
+        "difference_96_minus_64": 0,
+        "strict_label_agreement_n": 128,
+        "strict_label_agreement_fraction": 1.0,
+        "exact_category_agreement_n": 128,
+        "success_transitions_64_to_96": {
+          "both_success": 79,
+          "64_step_only": 0,
+          "96_step_only": 0,
+          "neither": 49
+        },
+        "category_counts_64": {
+          "CR_screen": 79,
+          "finite_particle_wall_contact": 48,
+          "axis_ambiguous": 1
+        },
+        "category_counts_96": {
+          "CR_screen": 79,
+          "finite_particle_wall_contact": 48,
+          "axis_ambiguous": 1
+        },
+        "category_transition_counts_64_to_96": {
+          "CR_screen -> CR_screen": 79,
+          "finite_particle_wall_contact -> finite_particle_wall_contact": 48,
+          "axis_ambiguous -> axis_ambiguous": 1
+        },
+        "continuous_metric_differences_for_full_horizon_pairs": {
+          "n_particles_turn_differences": 160,
+          "turn_abs_difference_median": 0.0030012184145622456,
+          "turn_abs_difference_q95": 0.0035662285260651847,
+          "rmin_abs_difference_median": 9.876434171024462e-06,
+          "rmin_abs_difference_q95": 0.00010084319580396779
+        }
+      }
+    }
+  },
+  "interpretation_note": "This measures numerical sensitivity on the first 128 paired starts per group, not a new basin-probability sample. Report category transition rates by group; do not pool distinct start distributions."
+}
