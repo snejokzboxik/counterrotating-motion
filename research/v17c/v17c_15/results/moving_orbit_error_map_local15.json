@@ -1,0 +1,1468 @@
+{
+  "status": "completed_reduced_model_parameter_slice",
+  "model_scope": "ideal k=+2,-4 Local15 RF; C=0; exact comparator reused from frozen 3000-period screen; no new RF integrations",
+  "question": "How do leading and local moving-orbit reduced-model errors vary along the sampled frequency-ratio slice and its derived epsilon_mu values?",
+  "varying_parameter": "nu=omega2/Omega1",
+  "fixed_parameters": {
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "beta": 0.017273303124515367
+  },
+  "species_parameters": {
+    "species1": {
+      "alpha": 1.0,
+      "lambda": 0.20975541409005094,
+      "leading_rho": 0.5503691530067869,
+      "leading_omega": 0.001440054163088106
+    },
+    "species2": {
+      "alpha": 0.34126014359705537,
+      "lambda": 0.12617311138613094,
+      "leading_rho": 0.7663818561742767,
+      "leading_omega": -0.0010579232360122394
+    }
+  },
+  "exact_data_source": "results/rotation_sign_scan/local15_sign_screen.json",
+  "exact_data_sha256": "2911952b4e004723a110b644eb28b6fc2973b324b477e4c49d4b5f1c9b3c9c44",
+  "panel_seed": 15152026,
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "panel_is_iid_probability_sample": false,
+  "exact_horizon_periods": 3000,
+  "measurement_window_periods": 500,
+  "epsilon_mu_definition": "||D f_k||_2 / (nu_k sqrt(nu_k^2+lambda^2)) at the leading reduced root",
+  "epsilon_mu_is_derived_coordinate_not_independent_sweep": true,
+  "nodes": [
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.4527162640227437,
+          "omega": -0.0004145842359181964,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10492063711759228,
+              0.19214913352701102
+            ],
+            [
+              -0.10492063711759228,
+              -0.19214913352701102
+            ],
+            [
+              -0.2096695539449234,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 20,
+        "n_escaped": 4,
+        "mean_rho": 0.45069907334082665,
+        "sd_rho_across_retained": 0.02081068857007203,
+        "median_rho": 0.44205803627659956,
+        "mean_omega": -0.00035294505659747,
+        "sd_omega_across_retained": 3.419053700765454e-05,
+        "median_omega": -0.000362364592719436,
+        "sign_counts": {
+          "negative": 20,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0008291684718363928
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.18056776427161694,
+              "orbital_frequency_shift_ratio": 0.0007896842588918027
+            }
+          ],
+          "epsilon_mu_max": 0.18056776427161694,
+          "orbital_frequency_shift_ratio_max": 0.0008291684718363928,
+          "model": "leading",
+          "rho_prediction": 0.4527162640227437,
+          "omega_prediction": -0.0004145842359181964,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.44756929872620255,
+          "omega_error_absolute_prediction_minus_exact_mean": -6.16391793207264e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 17.4642421443588,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.02081068857007203,
+          "omega_panel_spread_sd": 3.419053700765454e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0008291684718363928
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.18056776427161694,
+              "orbital_frequency_shift_ratio": 0.0007896842588918027
+            }
+          ],
+          "epsilon_mu_max": 0.18056776427161694,
+          "orbital_frequency_shift_ratio_max": 0.0008291684718363928,
+          "model": "kinematic_only",
+          "rho_prediction": 0.452620532040943,
+          "omega_prediction": -0.0004267067708325238,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 2.574980159653073e-19,
+          "rho_error_percent_prediction_over_exact_mean": 0.4263285224603397,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.376171423505379e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 20.898922610262893,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.02081068857007203,
+          "omega_panel_spread_sd": 3.419053700765454e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0008291684718363928
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.18056776427161694,
+              "orbital_frequency_shift_ratio": 0.0007896842588918027
+            }
+          ],
+          "epsilon_mu_max": 0.18056776427161694,
+          "orbital_frequency_shift_ratio_max": 0.0008291684718363928,
+          "model": "full_local_response",
+          "rho_prediction": 0.45378881545031324,
+          "omega_prediction": -0.0006193880440858762,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.7490768896086537e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.6855443670171546,
+          "omega_error_absolute_prediction_minus_exact_mean": -0.00026644298748840624,
+          "omega_error_percent_abs_prediction_over_exact_mean": 75.49134985966997,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.02081068857007203,
+          "omega_panel_spread_sd": 3.419053700765454e-05
+        }
+      ]
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.6299572003549506,
+          "omega": -0.001873883599772259,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06324140177472382,
+              0.13066946791490336
+            ],
+            [
+              -0.06324140177472382,
+              -0.13066946791490336
+            ],
+            [
+              -0.12586341922280844,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 22,
+        "n_escaped": 2,
+        "mean_rho": 0.6293142620031452,
+        "sd_rho_across_retained": 0.0006395560433324131,
+        "median_rho": 0.6294123460694794,
+        "mean_omega": -0.0018748196500572958,
+        "sd_omega_across_retained": 7.854441128693481e-06,
+        "median_omega": -0.0018750429494818095,
+        "sign_counts": {
+          "negative": 22,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003747767199544518
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.11969304014958207,
+              "orbital_frequency_shift_ratio": 0.0035693020948043028
+            }
+          ],
+          "epsilon_mu_max": 0.11969304014958207,
+          "orbital_frequency_shift_ratio_max": 0.003747767199544518,
+          "model": "leading",
+          "rho_prediction": 0.6299572003549506,
+          "omega_prediction": -0.001873883599772259,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.10216491038339548,
+          "omega_error_absolute_prediction_minus_exact_mean": 9.360502850367606e-07,
+          "omega_error_percent_abs_prediction_over_exact_mean": -0.049927484225387175,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0006395560433324131,
+          "omega_panel_spread_sd": 7.854441128693481e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003747767199544518
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.11969304014958207,
+              "orbital_frequency_shift_ratio": 0.0035693020948043028
+            }
+          ],
+          "epsilon_mu_max": 0.11969304014958207,
+          "orbital_frequency_shift_ratio_max": 0.003747767199544518,
+          "model": "kinematic_only",
+          "rho_prediction": 0.6291826380078165,
+          "omega_prediction": -0.0018853250102624178,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 3.1786960580223496e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.02091546358885532,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.0505360205122086e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.5603397748045191,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0006395560433324131,
+          "omega_panel_spread_sd": 7.854441128693481e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003747767199544518
+            },
+            {
+              "k": -4,
+              "carrier": 2.1,
+              "epsilon_mu": 0.11969304014958207,
+              "orbital_frequency_shift_ratio": 0.0035693020948043028
+            }
+          ],
+          "epsilon_mu_max": 0.11969304014958207,
+          "orbital_frequency_shift_ratio_max": 0.003747767199544518,
+          "model": "full_local_response",
+          "rho_prediction": 0.6294973177589895,
+          "omega_prediction": -0.0018909133839479413,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.3410840230045617e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.029088130826981917,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.609373389064553e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.8584150422230596,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0006395560433324131,
+          "omega_panel_spread_sd": 7.854441128693481e-06
+        }
+      ]
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.46065123239771416,
+          "omega": -0.0002177744099391369,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10489912809145471,
+              0.19215827164595797
+            ],
+            [
+              -0.10489912809145471,
+              -0.19215827164595797
+            ],
+            [
+              -0.20971257199719173,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 20,
+        "n_escaped": 4,
+        "mean_rho": 0.46278645232988475,
+        "sd_rho_across_retained": 0.022330154291881517,
+        "median_rho": 0.4643615430242729,
+        "mean_omega": -0.0001414258456418162,
+        "sd_omega_across_retained": 1.381254028631029e-05,
+        "median_omega": -0.00014153313092495816,
+        "sign_counts": {
+          "negative": 20,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0004355488198782738
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.1743403842345788,
+              "orbital_frequency_shift_ratio": 0.0004005046619570334
+            }
+          ],
+          "epsilon_mu_max": 0.1743403842345788,
+          "orbital_frequency_shift_ratio_max": 0.0004355488198782738,
+          "model": "leading",
+          "rho_prediction": 0.46065123239771416,
+          "omega_prediction": -0.0002177744099391369,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": -0.4613834137583095,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.634856429732068e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 53.984873804952,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.022330154291881517,
+          "omega_panel_spread_sd": 1.381254028631029e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0004355488198782738
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.1743403842345788,
+              "orbital_frequency_shift_ratio": 0.0004005046619570334
+            }
+          ],
+          "epsilon_mu_max": 0.1743403842345788,
+          "orbital_frequency_shift_ratio_max": 0.0004355488198782738,
+          "model": "kinematic_only",
+          "rho_prediction": 0.4606025629766994,
+          "omega_prediction": -0.00022397588039175566,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.2197274440461925e-19,
+          "rho_error_percent_prediction_over_exact_mean": -0.4719000182893507,
+          "omega_error_absolute_prediction_minus_exact_mean": -8.255003474993944e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 58.36983641519864,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.022330154291881517,
+          "omega_panel_spread_sd": 1.381254028631029e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0004355488198782738
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.1743403842345788,
+              "orbital_frequency_shift_ratio": 0.0004005046619570334
+            }
+          ],
+          "epsilon_mu_max": 0.1743403842345788,
+          "orbital_frequency_shift_ratio_max": 0.0004355488198782738,
+          "model": "full_local_response",
+          "rho_prediction": 0.46176372269476756,
+          "omega_prediction": -0.0004176001161177312,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 5.235206344872272e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.22099385795938398,
+          "omega_error_absolute_prediction_minus_exact_mean": -0.000276174270475915,
+          "omega_error_percent_abs_prediction_over_exact_mean": 195.27850034948418,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.022330154291881517,
+          "omega_panel_spread_sd": 1.381254028631029e-05
+        }
+      ]
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.6410590227515105,
+          "omega": -0.0017872852713722571,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06322867103339322,
+              0.1306658653660786
+            ],
+            [
+              -0.06322867103339322,
+              -0.1306658653660786
+            ],
+            [
+              -0.12588888070546977,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 22,
+        "n_escaped": 2,
+        "mean_rho": 0.6402784414760552,
+        "sd_rho_across_retained": 0.0011146154286351276,
+        "median_rho": 0.6402392205586113,
+        "mean_omega": -0.001789404643859375,
+        "sd_omega_across_retained": 6.5824304948824785e-06,
+        "median_omega": -0.0017887343894763567,
+        "sign_counts": {
+          "negative": 22,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0035745705427445143
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.11556221425514138,
+              "orbital_frequency_shift_ratio": 0.0032869614186156458
+            }
+          ],
+          "epsilon_mu_max": 0.11556221425514138,
+          "orbital_frequency_shift_ratio_max": 0.0035745705427445143,
+          "model": "leading",
+          "rho_prediction": 0.6410590227515105,
+          "omega_prediction": -0.0017872852713722571,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.12191278432798214,
+          "omega_error_absolute_prediction_minus_exact_mean": 2.1193724871178352e-06,
+          "omega_error_percent_abs_prediction_over_exact_mean": -0.11844009092022434,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0011146154286351276,
+          "omega_panel_spread_sd": 6.5824304948824785e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0035745705427445143
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.11556221425514138,
+              "orbital_frequency_shift_ratio": 0.0032869614186156458
+            }
+          ],
+          "epsilon_mu_max": 0.11556221425514138,
+          "orbital_frequency_shift_ratio_max": 0.0035745705427445143,
+          "model": "kinematic_only",
+          "rho_prediction": 0.6403354984815439,
+          "omega_prediction": -0.0017977171457536428,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 2.032879073410321e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.008911280123258258,
+          "omega_error_absolute_prediction_minus_exact_mean": -8.312501894267802e-06,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.4645400872739236,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0011146154286351276,
+          "omega_panel_spread_sd": 6.5824304948824785e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0035745705427445143
+            },
+            {
+              "k": -4,
+              "carrier": 2.175,
+              "epsilon_mu": 0.11556221425514138,
+              "orbital_frequency_shift_ratio": 0.0032869614186156458
+            }
+          ],
+          "epsilon_mu_max": 0.11556221425514138,
+          "orbital_frequency_shift_ratio_max": 0.0035745705427445143,
+          "model": "full_local_response",
+          "rho_prediction": 0.6406413255585994,
+          "omega_prediction": -0.001803589324673151,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 5.114171419281514e-19,
+          "rho_error_percent_prediction_over_exact_mean": 0.05667598017320419,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.4184680813776e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.7927039231988786,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0011146154286351276,
+          "omega_panel_spread_sd": 6.5824304948824785e-06
+        }
+      ]
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.4684549574707003,
+          "omega": -3.411999141434037e-05,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10488089814718876,
+              0.1921672546346052
+            ],
+            [
+              -0.10488089814718876,
+              -0.1921672546346052
+            ],
+            [
+              -0.20974903188572377,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 21,
+        "n_escaped": 3,
+        "mean_rho": 0.4739657678810566,
+        "sd_rho_across_retained": 0.022425739458415046,
+        "median_rho": 0.4800937690667653,
+        "mean_omega": 4.378003551786361e-05,
+        "sd_omega_across_retained": 5.790673329378178e-06,
+        "median_omega": 4.214793670300895e-05,
+        "sign_counts": {
+          "negative": 0,
+          "positive": 21,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 6.823998282868074e-05
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.16852871275767708,
+              "orbital_frequency_shift_ratio": 6.065776251438288e-05
+            }
+          ],
+          "epsilon_mu_max": 0.16852871275767708,
+          "orbital_frequency_shift_ratio_max": 6.823998282868074e-05,
+          "model": "leading",
+          "rho_prediction": 0.4684549574707003,
+          "omega_prediction": -3.411999141434037e-05,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": -1.1627021999907838,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.790002693220398e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": null,
+          "rotation_sign_agreement_with_exact_panel_mean": false,
+          "rho_panel_spread_sd": 0.022425739458415046,
+          "omega_panel_spread_sd": 5.790673329378178e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 6.823998282868074e-05
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.16852871275767708,
+              "orbital_frequency_shift_ratio": 6.065776251438288e-05
+            }
+          ],
+          "epsilon_mu_max": 0.16852871275767708,
+          "orbital_frequency_shift_ratio_max": 6.823998282868074e-05,
+          "model": "kinematic_only",
+          "rho_prediction": 0.46844757456960257,
+          "omega_prediction": -3.506800028578958e-05,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.781732143502339e-18,
+          "rho_error_percent_prediction_over_exact_mean": -1.1642598865576392,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.884803580365319e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": null,
+          "rotation_sign_agreement_with_exact_panel_mean": false,
+          "rho_panel_spread_sd": 0.022425739458415046,
+          "omega_panel_spread_sd": 5.790673329378178e-06
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 6.823998282868074e-05
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.16852871275767708,
+              "orbital_frequency_shift_ratio": 6.065776251438288e-05
+            }
+          ],
+          "epsilon_mu_max": 0.16852871275767708,
+          "orbital_frequency_shift_ratio_max": 6.823998282868074e-05,
+          "model": "full_local_response",
+          "rho_prediction": 0.4696031502347312,
+          "omega_prediction": -0.0002294284994791918,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.9364588549388742e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.9204499442711289,
+          "omega_error_absolute_prediction_minus_exact_mean": -0.00027320853499705544,
+          "omega_error_percent_abs_prediction_over_exact_mean": null,
+          "rotation_sign_agreement_with_exact_panel_mean": false,
+          "rho_panel_spread_sd": 0.022425739458415046,
+          "omega_panel_spread_sd": 5.790673329378178e-06
+        }
+      ]
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.6519735065465241,
+          "omega": -0.0017064755966099397,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06321727892500298,
+              0.13066268705116088
+            ],
+            [
+              -0.06321727892500298,
+              -0.13066268705116088
+            ],
+            [
+              -0.12591166492223654,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 22,
+        "n_escaped": 2,
+        "mean_rho": 0.6514365860884062,
+        "sd_rho_across_retained": 0.001723492663424275,
+        "median_rho": 0.6515189050255894,
+        "mean_omega": -0.0017035485189825748,
+        "sd_omega_across_retained": 1.2307616038534352e-05,
+        "median_omega": -0.0017034635699851195,
+        "sign_counts": {
+          "negative": 22,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0034129511932198793
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.11170714503871482,
+              "orbital_frequency_shift_ratio": 0.003033734393973226
+            }
+          ],
+          "epsilon_mu_max": 0.11170714503871482,
+          "orbital_frequency_shift_ratio_max": 0.0034129511932198793,
+          "model": "leading",
+          "rho_prediction": 0.6519735065465241,
+          "omega_prediction": -0.0017064755966099397,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.08242098610731219,
+          "omega_error_absolute_prediction_minus_exact_mean": -2.9270776273648304e-06,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.17182238103279346,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.001723492663424275,
+          "omega_panel_spread_sd": 1.2307616038534352e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0034129511932198793
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.11170714503871482,
+              "orbital_frequency_shift_ratio": 0.003033734393973226
+            }
+          ],
+          "epsilon_mu_max": 0.11170714503871482,
+          "orbital_frequency_shift_ratio_max": 0.0034129511932198793,
+          "model": "kinematic_only",
+          "rho_prediction": 0.6512965488198642,
+          "omega_prediction": -0.0017160213371764275,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.6090451540233692e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.021496684640143204,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.2472818193852648e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.7321668889889832,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.001723492663424275,
+          "omega_panel_spread_sd": 1.2307616038534352e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.0034129511932198793
+            },
+            {
+              "k": -4,
+              "carrier": 2.25,
+              "epsilon_mu": 0.11170714503871482,
+              "orbital_frequency_shift_ratio": 0.003033734393973226
+            }
+          ],
+          "epsilon_mu_max": 0.11170714503871482,
+          "orbital_frequency_shift_ratio_max": 0.0034129511932198793,
+          "model": "full_local_response",
+          "rho_prediction": 0.6515943863737979,
+          "omega_prediction": -0.0017221366847368737,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.3347691281510183e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.024223429994818524,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.8588165754298896e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 1.0911439003451706,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.001723492663424275,
+          "omega_panel_spread_sd": 1.2307616038534352e-05
+        }
+      ]
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.4761335940350639,
+          "omega": 0.00013765820779566493,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10486545508044309,
+              0.1921760539859786
+            ],
+            [
+              -0.10486545508044309,
+              -0.1921760539859786
+            ],
+            [
+              -0.20977991801921486,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 21,
+        "n_escaped": 3,
+        "mean_rho": 0.47739534624169433,
+        "sd_rho_across_retained": 0.02252912409882407,
+        "median_rho": 0.48378534870171325,
+        "mean_omega": 0.00022114317506992,
+        "sd_omega_across_retained": 2.0902806344078155e-05,
+        "median_omega": 0.00021385246589082128,
+        "sign_counts": {
+          "negative": 0,
+          "positive": 21,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.00027531641559132985
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.16309242371193047,
+              "orbital_frequency_shift_ratio": 0.00023683132523985361
+            }
+          ],
+          "epsilon_mu_max": 0.16309242371193047,
+          "orbital_frequency_shift_ratio_max": 0.00027531641559132985,
+          "model": "leading",
+          "rho_prediction": 0.4761335940350639,
+          "omega_prediction": 0.00013765820779566493,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": -0.26429922632543734,
+          "omega_error_absolute_prediction_minus_exact_mean": -8.348496727425507e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": -37.751545914930084,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.02252912409882407,
+          "omega_panel_spread_sd": 2.0902806344078155e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.00027531641559132985
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.16309242371193047,
+              "orbital_frequency_shift_ratio": 0.00023683132523985361
+            }
+          ],
+          "epsilon_mu_max": 0.16309242371193047,
+          "orbital_frequency_shift_ratio_max": 0.00027531641559132985,
+          "model": "kinematic_only",
+          "rho_prediction": 0.47616244312508643,
+          "omega_prediction": 0.00014139633368682623,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.781732143502339e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.258256207630414,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.974684138309376e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": -36.061181340043525,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.02252912409882407,
+          "omega_panel_spread_sd": 2.0902806344078155e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.00027531641559132985
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.16309242371193047,
+              "orbital_frequency_shift_ratio": 0.00023683132523985361
+            }
+          ],
+          "epsilon_mu_max": 0.16309242371193047,
+          "orbital_frequency_shift_ratio_max": 0.00027531641559132985,
+          "model": "full_local_response",
+          "rho_prediction": 0.47731378456915086,
+          "omega_prediction": -5.3532245043389864e-05,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.740901646422138e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.017084723004856528,
+          "omega_error_absolute_prediction_minus_exact_mean": -0.00027467542011330986,
+          "omega_error_percent_abs_prediction_over_exact_mean": -75.79294724946213,
+          "rotation_sign_agreement_with_exact_panel_mean": false,
+          "rho_panel_spread_sd": 0.02252912409882407,
+          "omega_panel_spread_sd": 2.0902806344078155e-05
+        }
+      ]
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.6627097482077191,
+          "omega": -0.00163089238718549,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06320704965821886,
+              0.13065987426866543
+            ],
+            [
+              -0.06320704965821886,
+              -0.13065987426866543
+            ],
+            [
+              -0.1259321234558184,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 22,
+        "n_escaped": 2,
+        "mean_rho": 0.6618175012166421,
+        "sd_rho_across_retained": 0.0024226608840232974,
+        "median_rho": 0.6610981973006294,
+        "mean_omega": -0.0016306009985568642,
+        "sd_omega_across_retained": 1.1830640692547896e-05,
+        "median_omega": -0.0016289785301251368,
+        "sign_counts": {
+          "negative": 22,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.00326178477437098
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.10810109874901934,
+              "orbital_frequency_shift_ratio": 0.002805836365050305
+            }
+          ],
+          "epsilon_mu_max": 0.10810109874901934,
+          "orbital_frequency_shift_ratio_max": 0.00326178477437098,
+          "model": "leading",
+          "rho_prediction": 0.6627097482077191,
+          "omega_prediction": -0.00163089238718549,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.13481767850453963,
+          "omega_error_absolute_prediction_minus_exact_mean": -2.913886286257279e-07,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.017870014116483368,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0024226608840232974,
+          "omega_panel_spread_sd": 1.1830640692547896e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.00326178477437098
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.10810109874901934,
+              "orbital_frequency_shift_ratio": 0.002805836365050305
+            }
+          ],
+          "epsilon_mu_max": 0.10810109874901934,
+          "orbital_frequency_shift_ratio_max": 0.00326178477437098,
+          "model": "kinematic_only",
+          "rho_prediction": 0.6620753989457743,
+          "omega_prediction": -0.0016396564016380073,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.5487876418821047e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.038968103541847654,
+          "omega_error_absolute_prediction_minus_exact_mean": -9.055403081143117e-06,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.5553414409262158,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0024226608840232974,
+          "omega_panel_spread_sd": 1.1830640692547896e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.00326178477437098
+            },
+            {
+              "k": -4,
+              "carrier": 2.325,
+              "epsilon_mu": 0.10810109874901934,
+              "orbital_frequency_shift_ratio": 0.002805836365050305
+            }
+          ],
+          "epsilon_mu_max": 0.10810109874901934,
+          "orbital_frequency_shift_ratio_max": 0.00326178477437098,
+          "model": "full_local_response",
+          "rho_prediction": 0.6623660106518372,
+          "omega_prediction": -0.0016459809424472186,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 4.733694229938162e-19,
+          "rho_error_percent_prediction_over_exact_mean": 0.0828792581318627,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.5379943890354375e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.9432070692932282,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.0024226608840232974,
+          "omega_panel_spread_sd": 1.1830640692547896e-05
+        }
+      ]
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.4836928423367843,
+          "omega": 0.00029867840563859924,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10485238975234384,
+              0.19218465025369424
+            ],
+            [
+              -0.10485238975234384,
+              -0.19218465025369424
+            ],
+            [
+              -0.20980604867542,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 21,
+        "n_escaped": 3,
+        "mean_rho": 0.4871111052854749,
+        "sd_rho_across_retained": 0.017481027901341983,
+        "median_rho": 0.4889017377795812,
+        "mean_omega": 0.00038345014970551976,
+        "sd_omega_across_retained": 2.5495262696791087e-05,
+        "median_omega": 0.00038743374408620207,
+        "sign_counts": {
+          "negative": 0,
+          "positive": 21,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0005973568112771985
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.15799624868809367,
+              "orbital_frequency_shift_ratio": 0.0004977973427309988
+            }
+          ],
+          "epsilon_mu_max": 0.15799624868809367,
+          "orbital_frequency_shift_ratio_max": 0.0005973568112771985,
+          "model": "leading",
+          "rho_prediction": 0.4836928423367843,
+          "omega_prediction": 0.00029867840563859924,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": -0.7017419458518304,
+          "omega_error_absolute_prediction_minus_exact_mean": -8.477174406692052e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": -22.107630974201765,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.017481027901341983,
+          "omega_panel_spread_sd": 2.5495262696791087e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0005973568112771985
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.15799624868809367,
+              "orbital_frequency_shift_ratio": 0.0004977973427309988
+            }
+          ],
+          "epsilon_mu_max": 0.15799624868809367,
+          "orbital_frequency_shift_ratio_max": 0.0005973568112771985,
+          "model": "kinematic_only",
+          "rho_prediction": 0.48375348380083133,
+          "omega_prediction": 0.00030661747503475006,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 9.486769009248164e-20,
+          "rho_error_percent_prediction_over_exact_mean": -0.6892927400363513,
+          "omega_error_absolute_prediction_minus_exact_mean": -7.68326746707697e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": -20.037200332240136,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.017481027901341983,
+          "omega_panel_spread_sd": 2.5495262696791087e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.14548183839284667,
+              "orbital_frequency_shift_ratio": 0.0005973568112771985
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.15799624868809367,
+              "orbital_frequency_shift_ratio": 0.0004977973427309988
+            }
+          ],
+          "epsilon_mu_max": 0.15799624868809367,
+          "orbital_frequency_shift_ratio_max": 0.0005973568112771985,
+          "model": "full_local_response",
+          "rho_prediction": 0.4849017785743009,
+          "omega_prediction": 0.00011125820380868858,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.7671770806740975e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.4535570401087874,
+          "omega_error_absolute_prediction_minus_exact_mean": -0.0002721919458968312,
+          "omega_error_percent_abs_prediction_over_exact_mean": -70.98496274049387,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.017481027901341983,
+          "omega_panel_spread_sd": 2.5495262696791087e-05
+        }
+      ]
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "horizon_periods": 3000,
+      "measurement_window_periods": 500,
+      "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+      "panel_is_iid_probability_sample": false,
+      "leading_stable_roots": [
+        {
+          "rho": 0.6732761371459075,
+          "omega": -0.0015600440351818904,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06319783506998132,
+              0.13065737786480977
+            ],
+            [
+              -0.06319783506998132,
+              -0.13065737786480977
+            ],
+            [
+              -0.12595055263229343,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "exact_panel": {
+        "n_starts": 24,
+        "n_retained": 22,
+        "n_escaped": 2,
+        "mean_rho": 0.6729539182319105,
+        "sd_rho_across_retained": 0.002733668703673266,
+        "median_rho": 0.6737656748505452,
+        "mean_omega": -0.0015593591718919496,
+        "sd_omega_across_retained": 1.2295355632702916e-05,
+        "median_omega": -0.0015565617526096366,
+        "sign_counts": {
+          "negative": 22,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "models": [
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003120088070363781
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.10472069067174089,
+              "orbital_frequency_shift_ratio": 0.0026000733919698173
+            }
+          ],
+          "epsilon_mu_max": 0.10472069067174089,
+          "orbital_frequency_shift_ratio_max": 0.003120088070363781,
+          "model": "leading",
+          "rho_prediction": 0.6732761371459075,
+          "omega_prediction": -0.0015600440351818904,
+          "solver_success": true,
+          "solver_message": "analytic leading-order root",
+          "balance_residual_norm": 0.0,
+          "rho_error_percent_prediction_over_exact_mean": 0.0478812746708579,
+          "omega_error_absolute_prediction_minus_exact_mean": -6.848632899407632e-07,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.04391953452966835,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.002733668703673266,
+          "omega_panel_spread_sd": 1.2295355632702916e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003120088070363781
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.10472069067174089,
+              "orbital_frequency_shift_ratio": 0.0026000733919698173
+            }
+          ],
+          "epsilon_mu_max": 0.10472069067174089,
+          "orbital_frequency_shift_ratio_max": 0.003120088070363781,
+          "model": "kinematic_only",
+          "rho_prediction": 0.672680878930076,
+          "omega_prediction": -0.001568115185426638,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.802027509264653e-18,
+          "rho_error_percent_prediction_over_exact_mean": -0.040573253894105044,
+          "omega_error_absolute_prediction_minus_exact_mean": -8.756013534688299e-06,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.561513581509554,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.002733668703673266,
+          "omega_panel_spread_sd": 1.2295355632702916e-05
+        },
+        {
+          "modes": [
+            {
+              "k": 2,
+              "carrier": 1.0,
+              "epsilon_mu": 0.050328543621742015,
+              "orbital_frequency_shift_ratio": 0.003120088070363781
+            },
+            {
+              "k": -4,
+              "carrier": 2.4,
+              "epsilon_mu": 0.10472069067174089,
+              "orbital_frequency_shift_ratio": 0.0026000733919698173
+            }
+          ],
+          "epsilon_mu_max": 0.10472069067174089,
+          "orbital_frequency_shift_ratio_max": 0.003120088070363781,
+          "model": "full_local_response",
+          "rho_prediction": 0.6729649430866752,
+          "omega_prediction": -0.0015746203556307437,
+          "solver_success": true,
+          "solver_message": "The solution converged.",
+          "balance_residual_norm": 1.742330095302999e-18,
+          "rho_error_percent_prediction_over_exact_mean": 0.0016382778175394463,
+          "omega_error_absolute_prediction_minus_exact_mean": -1.5261183738794065e-05,
+          "omega_error_percent_abs_prediction_over_exact_mean": 0.9786830394102219,
+          "rotation_sign_agreement_with_exact_panel_mean": true,
+          "rho_panel_spread_sd": 0.002733668703673266,
+          "omega_panel_spread_sd": 1.2295355632702916e-05
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "species1": {
+      "leading": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.6075392169305127,
+        "mean_abs_frequency_error": 7.682889637828534e-05,
+        "radius_error_improved_vs_leading_nodes": 0,
+        "frequency_error_improved_vs_leading_nodes": 0,
+        "rotation_sign_agreement_nodes": 4
+      },
+      "kinematic_only": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.602007474994819,
+        "mean_abs_frequency_error": 7.834786016850198e-05,
+        "radius_error_improved_vs_leading_nodes": 3,
+        "frequency_error_improved_vs_leading_nodes": 2,
+        "rotation_sign_agreement_nodes": 4
+      },
+      "full_local_response": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.4595259864722623,
+        "mean_abs_frequency_error": 0.0002725386317943035,
+        "radius_error_improved_vs_leading_nodes": 4,
+        "frequency_error_improved_vs_leading_nodes": 0,
+        "rotation_sign_agreement_nodes": 3
+      }
+    },
+    "species2": {
+      "leading": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.09783952679881747,
+        "mean_abs_frequency_error": 1.3917504636171835e-06,
+        "radius_error_improved_vs_leading_nodes": 0,
+        "frequency_error_improved_vs_leading_nodes": 0,
+        "rotation_sign_agreement_nodes": 5
+      },
+      "kinematic_only": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.026172957157641896,
+        "mean_abs_frequency_error": 9.82041938181479e-06,
+        "radius_error_improved_vs_leading_nodes": 5,
+        "frequency_error_improved_vs_leading_nodes": 0,
+        "rotation_sign_agreement_nodes": 5
+      },
+      "full_local_response": {
+        "sampled_nodes": 5,
+        "mean_abs_radius_error_percent": 0.038901015388881355,
+        "mean_abs_frequency_error": 1.5901541617573774e-05,
+        "radius_error_improved_vs_leading_nodes": 5,
+        "frequency_error_improved_vs_leading_nodes": 0,
+        "rotation_sign_agreement_nodes": 5
+      }
+    }
+  },
+  "limitations": [
+    "frequency ratios are discrete archived nodes, not a continuous or full multidimensional error map",
+    "all other field coefficients and species drag parameters are fixed; epsilon_mu is derived and not independently varied",
+    "exact reference is the mean over a deterministic fixed panel of retained starts; reported SD is panel spread, not a confidence interval",
+    "near-zero measured rotation is compared by signed absolute frequency error; relative frequency errors are suppressed below 5e-5",
+    "ideal two-mode point-particle dynamics only: no Coulomb, MFS higher harmonics, or electrode geometry",
+    "the full local-response equilibrium is a diagnostic reduced model, not a systematic next-order asymptotic formula"
+  ]
+}

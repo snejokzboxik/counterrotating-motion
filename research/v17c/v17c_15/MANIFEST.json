@@ -156,6 +156,32 @@
     },
     "inventory_policy": "continuation segments and particle-periods count nominal resumed intervals; unreconstructable repeated work during checkpoint recovery is excluded; static ring checks are not trajectories"
   },
+  "moving_orbit_error_map": {
+    "status": "completed_discrete_frequency_slice",
+    "frequency_nodes": [
+      2.1,
+      2.175,
+      2.25,
+      2.325,
+      2.4
+    ],
+    "species": [
+      "species1",
+      "species2"
+    ],
+    "model_variants": [
+      "leading",
+      "kinematic_only",
+      "full_local_response"
+    ],
+    "exact_panel_horizon_periods": 3000,
+    "exact_panel_starts_per_species": 24,
+    "new_rf_trajectories": 0,
+    "reduced_root_solves": 20,
+    "prediction_reference_rows": 30,
+    "figure": "FIG10_MOVING_ORBIT_ERROR_MAP",
+    "scope_note": "derived epsilon_mu coordinate on one archived frequency slice; not a full multidimensional applicability boundary"
+  },
   "artifacts": [
     {
       "path": ".gitignore",
@@ -184,8 +210,8 @@
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 15188,
-      "sha256": "c1ceabd739d8d00a51a0b86f10380acc84bd183643704b099a0d1fbccae1d562"
+      "bytes": 16351,
+      "sha256": "949b53d8705451ca3e95df99fede7b104d8adc1dfadabf7c079d1cd14c7be6a9"
     },
     {
       "path": "FIG01_AUDIT_RU.md",
@@ -226,6 +252,11 @@
       "path": "FIG09_AUDIT_RU.md",
       "bytes": 3992,
       "sha256": "236d91d31541b3b142dd89b916f98ef15bdd2921c95b4bc644e4dbccbf4b8beb"
+    },
+    {
+      "path": "FIG10_AUDIT_RU.md",
+      "bytes": 8078,
+      "sha256": "4aad37c4bcffcc5c4dbead328dafcc03f94bd46f3674fdf449adf29fd9d8c23a"
     },
     {
       "path": "figures/FIG01_LOCAL15_EXACT_VS_AVERAGED.pdf",
@@ -348,6 +379,21 @@
       "sha256": "a8bdab6696f15f3fd202167ac743c9f14c8f7168d1b8f0f998b7e78f07adc268"
     },
     {
+      "path": "figures/FIG10_MOVING_ORBIT_ERROR_MAP.pdf",
+      "bytes": 26015,
+      "sha256": "9717a41e82b06a28490710417dfc04a0ab75e095ba3f414e6121a1b57e443289"
+    },
+    {
+      "path": "figures/FIG10_MOVING_ORBIT_ERROR_MAP.png",
+      "bytes": 601227,
+      "sha256": "3424d25c69a178833c48e22e18f15087ab512997a95a2119d81b0c34af7a4d82"
+    },
+    {
+      "path": "figures/FIG10_MOVING_ORBIT_ERROR_MAP.svg",
+      "bytes": 104026,
+      "sha256": "4584919560836d598a9506c998ff477b5536ff336e28a20bbb3fa16dd90b3627"
+    },
+    {
       "path": "FULL_MFS_COMPARISON_RU.md",
       "bytes": 1402,
       "sha256": "1644af0943d17a74acff413864e0ed73003781f867606bfaf9777b17fa4717f0"
@@ -364,8 +410,8 @@
     },
     {
       "path": "MOVING_ORBIT_CORRECTION_RU.md",
-      "bytes": 8399,
-      "sha256": "48c7c20c827aa1d3604a62c8ff0ae72b60146294da5646b248acadc0801e2899"
+      "bytes": 12430,
+      "sha256": "d7f81aec021433e43c7557c258aec869e3e4e92e83af0e08a15589284a3a581f"
     },
     {
       "path": "MULTIPOLE_GENERALIZATION_RU.md",
@@ -478,9 +524,19 @@
       "sha256": "d1ff3dbf55590ba0668965e343256fcc74be978c4cb0f4900d4a1cacf4993e4f"
     },
     {
+      "path": "numerical/make_fig10_moving_orbit_error.py",
+      "bytes": 4898,
+      "sha256": "715b0a24cb7579ccc2db390fbca5d73bfd96ec8acbf8f3fbf757219689ab5b27"
+    },
+    {
       "path": "numerical/moving_orbit_correction_local15.py",
       "bytes": 11456,
       "sha256": "d7c831d25843977c8d18d076bc9e6574e457b42f961a61d21a64cd911dc5e314"
+    },
+    {
+      "path": "numerical/moving_orbit_error_map_local15.py",
+      "bytes": 12269,
+      "sha256": "c37423f879c52f1d7171356cef458dcdea467ada696c1b14d96cf961308dcc4b"
     },
     {
       "path": "numerical/nonautonomous_qr_extend.py",
@@ -524,8 +580,8 @@
     },
     {
       "path": "numerical/write_manifest.py",
-      "bytes": 6752,
-      "sha256": "ec2dc730de2ada4e1969a405bedb1c32d402974fa48083ab80beba467c6c113b"
+      "bytes": 7453,
+      "sha256": "7f2496db625cc4a4edf24718802313a492a736937a2146ff6060eac981b975bc"
     },
     {
       "path": "NUMERICAL_CONVERGENCE_RU.md",
@@ -544,13 +600,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5104,
-      "sha256": "e2e62dae6aed3cedb0df193fa198b4bc74f2950036cb5534e5611b3f5dc2aeb7"
+      "bytes": 5348,
+      "sha256": "636cd36417cee224d1782c4f0ba8b9889c09adace497d4cf0ce06d9024d3d83d"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 21313,
-      "sha256": "56e87449c071aa37d314e20b9e3c8badcccdff6833a48caffe80b23ff1c41c0b"
+      "bytes": 22710,
+      "sha256": "186d511266e42a8682f8c394f2db4bdc50968ed0949f5c7bbb838e8ad568289d"
     },
     {
       "path": "requirements.txt",
@@ -638,6 +694,11 @@
       "sha256": "b421e8089c9ea1915996dad30a2dfb7e4ba007e669f652685fd23ff70697f7f5"
     },
     {
+      "path": "results/figure_data/moving_orbit_error_map_local15.csv",
+      "bytes": 18743,
+      "sha256": "c993067bd075edb732d071dd50c57ec8f2cdde81130b3f8f49f3336c8ff8242d"
+    },
+    {
       "path": "results/frozen_local15_single_particle_panel.csv",
       "bytes": 3931,
       "sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761"
@@ -706,6 +767,11 @@
       "path": "results/moving_orbit_correction_local15.json",
       "bytes": 13784,
       "sha256": "9146558b6c645a3cfe9f57d9e53763ccef256a47364176f0a07462a09925d6c1"
+    },
+    {
+      "path": "results/moving_orbit_error_map_local15.json",
+      "bytes": 55619,
+      "sha256": "ffd7e1fd01cb4e88d6a14bff050bec3d2df4a98470850a32e4a87a598f6a3b11"
     },
     {
       "path": "results/nonautonomous_stability/local15_panel_conditional_qr_15000.json",
@@ -1284,8 +1350,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 13810,
-      "sha256": "9c3664f22dbcbc1898016eafdd853f962db22ae782f27d8e3d450c783141bf84"
+      "bytes": 15066,
+      "sha256": "24a0a52989f6d5d71a109decf9bfdf3c377cfc81fdbab263edc91cde6e054028"
     },
     {
       "path": "tests/test_collective_rings.py",
@@ -1314,8 +1380,8 @@
     },
     {
       "path": "THEORY_VALIDATION_RU.md",
-      "bytes": 8666,
-      "sha256": "2799706201b1d0d4d51c411380c28a53a83db7ce96b27e462b77aeb59a60e371"
+      "bytes": 9625,
+      "sha256": "0cd0bc9e6b8380a8bd49dd8494cdd83d0019a299d11c7a8ec616d156ea9f4d81"
     },
     {
       "path": "theory_validation_ru.tex",
@@ -1325,8 +1391,8 @@
   ],
   "unresolved": [
     "exact-RF continuation beyond 50,000 periods at nodes other than the species1 mixed node nu=2.23125; individual transition points, long-term branch stability, and asymptotic classification remain unresolved at all nodes",
-    "quantitative error map versus epsilon_mu over RF and drag parameters",
-    "independent numerical validation of moving-orbit and higher-order averaging corrections",
+    "full multidimensional moving-orbit error map over drag, RF amplitudes, epsilon_mu, and moment balance",
+    "exact-RF variational validation of moving-orbit and higher-order averaging corrections",
     "full MFS higher-spatial-harmonic comparison and real-electrode transfer validation",
     "asymptotic classification beyond the conditional mechanical QR panel: substantially longer horizons, RF phase tangent directions, exact periodic Floquet analysis where applicable, and N-body variational spectra",
     "basin measures under explicitly sampled initial coordinates, velocities, RF phases, and loading protocols; the retained QR panel is fixed and not an iid basin sample",
