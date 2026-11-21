@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "input_report_sha256": "154a556504000d41c90060cd3aabc4b73773f876b5a2fa81ab3c86887335afd2",
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "source_50k_checkpoint_sha256": "7c37c3f4e788ca041286733f362138917d768afc69046e3cfc98ff248ea3248e",
+  "combined_120k_checkpoint_sha256": "d7aaa77341f9684c90713d0e529db99992103fd4ec56de1f423224f66ab64a53",
+  "trajectory_segments_checked": 24,
+  "per_start_checkpoints_checked": 24,
+  "sample_rows_checked": 2880024,
+  "trajectory_window_rows_recomputed": 192,
+  "additional_particle_periods_recomputed": 1680000,
+  "sign_counts_120k": {
+    "negative": 9,
+    "positive": 12,
+    "escaped": 3,
+    "n_starts": 24
+  },
+  "cumulative_50k_to_120k": {
+    "positive": 0,
+    "negative": 21,
+    "escaped": 3,
+    "n_starts": 24,
+    "retained_min_median_max": [
+      -1.280841158119114e-06,
+      -1.1160362082361073e-06,
+      -8.836769315096659e-07
+    ]
+  },
+  "cumulative_15k_to_120k": {
+    "positive": 0,
+    "negative": 21,
+    "escaped": 3,
+    "n_starts": 24,
+    "retained_min_median_max": [
+      -1.2829476920825622e-06,
+      -1.103287149474307e-06,
+      -9.637797128857164e-07
+    ]
+  },
+  "checks": [
+    "all 24 start histories retain an exact bitwise match to the archived 50k prefix",
+    "combined checkpoint is exactly reproducible by its 24 per-start checkpoints",
+    "step, metadata, finite arrays, escape flags, and panel provenance are valid",
+    "all local-window means, signs, escape counts, cumulative means, and CSV values recompute"
+  ]
+}

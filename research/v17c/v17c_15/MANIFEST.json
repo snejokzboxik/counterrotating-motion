@@ -38,9 +38,9 @@
     "conditional_qr_panel_workers": 11,
     "conditional_qr_extension_workers": 8,
     "full_integrations_from_initial_state": 656,
-    "continuation_segments": 152,
-    "total_solver_job_segments": 808,
-    "total_particle_periods": 8939000,
+    "continuation_segments": 176,
+    "total_solver_job_segments": 832,
+    "total_particle_periods": 10619000,
     "archived_baseline_particle_periods": 1135000,
     "repeated_failed_export_runs": 96,
     "repeated_failed_export_periods": 288000,
@@ -122,6 +122,38 @@
       1,
       2
     ],
+    "mixed_node_120k_extension": {
+      "species": "species1",
+      "nu": 2.23125,
+      "starts": 24,
+      "source_horizon": 50000,
+      "target_horizon": 120000,
+      "continuation_segments": 24,
+      "nominal_particle_periods": 1680000,
+      "workers": 8,
+      "steps_per_primary_period": 96,
+      "window_horizons": [
+        50000,
+        60000,
+        70000,
+        80000,
+        90000,
+        100000,
+        110000,
+        120000
+      ],
+      "last_window_signs_at_120k_retained_negative_positive_escaped": [
+        9,
+        12,
+        3
+      ],
+      "cumulative_50k_to_120k_retained_negative_positive_escaped": [
+        21,
+        0,
+        3
+      ],
+      "restart_note": "one stalled worker was restarted from the latest 500-period checkpoint; unreconstructable duplicate work is excluded from nominal inventory"
+    },
     "inventory_policy": "continuation segments and particle-periods count nominal resumed intervals; unreconstructable repeated work during checkpoint recovery is excluded; static ring checks are not trajectories"
   },
   "artifacts": [
@@ -152,8 +184,8 @@
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 14069,
-      "sha256": "007402a7f809dcf78e11dcd4774eb83e245118d70418a66019cf60d9cbbbcf26"
+      "bytes": 15188,
+      "sha256": "c1ceabd739d8d00a51a0b86f10380acc84bd183643704b099a0d1fbccae1d562"
     },
     {
       "path": "FIG01_AUDIT_RU.md",
@@ -187,8 +219,8 @@
     },
     {
       "path": "FIG08_AUDIT_RU.md",
-      "bytes": 6127,
-      "sha256": "adde64ab201d7ac91ac92d3e3b8758775243cc4f5f66bba82249687d57afb500"
+      "bytes": 7300,
+      "sha256": "0f253c2694a58d1feff54a1e42616f5ddd34d70c242e1f731ff7ed54e60a7d52"
     },
     {
       "path": "FIG09_AUDIT_RU.md",
@@ -287,18 +319,18 @@
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.pdf",
-      "bytes": 25648,
-      "sha256": "ec5b61d84ae35f4262d0001d41ad2428dd2c6f4aaedf85c135b7e5c2aacfbf2e"
+      "bytes": 26695,
+      "sha256": "06a7903ff97def1fcd4e0b395ee0e10cfaf5f2d8e51b027bc84d9c1d39d08eda"
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.png",
-      "bytes": 441311,
-      "sha256": "9a336ef70d8ca429b1768af5a90f9b9611913a71691a79b061b2f5018fb83c98"
+      "bytes": 468238,
+      "sha256": "618780d55c78d4c210474bf959f66b4a8c585a482f4ad8e2f1971b5ef3643d79"
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.svg",
-      "bytes": 120211,
-      "sha256": "522cd11c1f84adb73624e8a285ad6b99b6a846d4b84a17ae65b8061394ec9eea"
+      "bytes": 126332,
+      "sha256": "83510677edf6c712bed3bf493ffe2dc29e95064a7957aa8dfb3b8a54ee13ef65"
     },
     {
       "path": "figures/FIG09_NONAUTONOMOUS_QR.pdf",
@@ -351,6 +383,11 @@
       "sha256": "ab3a14a5be7edc39439c155c631e86b1081ea0ba2129b88f2b90df43a2f99054"
     },
     {
+      "path": "numerical/audit_sign_transition_120k.py",
+      "bytes": 8806,
+      "sha256": "36aa992b159c29d9086dfa9ad7e406681f5f67404777e9df532fdb21ac372264"
+    },
+    {
       "path": "numerical/audit_sign_transition_50000.py",
       "bytes": 6756,
       "sha256": "3902ad5c0fe8b78c58d239134466ccc667abca713a3e280061209850d3d5ed3d"
@@ -379,6 +416,11 @@
       "path": "numerical/extend_rotation_transition.py",
       "bytes": 10942,
       "sha256": "7315639f208e3f479705bfbc2d3595e72bb18e2f64328f82d95c941c833f7b33"
+    },
+    {
+      "path": "numerical/extend_sign_transition_to_120k.py",
+      "bytes": 11645,
+      "sha256": "fe03b632ab46cee2b334aec35c1575bf6cfe8fa3c166e8a2958523fb4cf3ab92"
     },
     {
       "path": "numerical/freeze_local15_panel.py",
@@ -427,8 +469,8 @@
     },
     {
       "path": "numerical/make_fig08_rotation_sign.py",
-      "bytes": 8583,
-      "sha256": "c3cf990e9429f207b5cf290adbaa5887f7fae48950722d5fa14b75af4cde9dc9"
+      "bytes": 11231,
+      "sha256": "a7e0aad886fb61d5cccba1ff29ae35ae960a5c93968c38ad0008f405a188d6d4"
     },
     {
       "path": "numerical/make_fig09_nonautonomous_stability.py",
@@ -482,8 +524,8 @@
     },
     {
       "path": "numerical/write_manifest.py",
-      "bytes": 5876,
-      "sha256": "4530abe8b3778f944abfddb8993756f5b6170376ecb7923371c6ae32a6b7a59d"
+      "bytes": 6752,
+      "sha256": "ec2dc730de2ada4e1969a405bedb1c32d402974fa48083ab80beba467c6c113b"
     },
     {
       "path": "NUMERICAL_CONVERGENCE_RU.md",
@@ -492,8 +534,8 @@
     },
     {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 7763,
-      "sha256": "6be9c34b9c457d928a75cef809022b8260413077acacf15a755b104a198012bb"
+      "bytes": 8530,
+      "sha256": "09e81148528055713498c851e653941051b7ba5904e81798a26f5f82c94bda34"
     },
     {
       "path": "PHYSICAL_SCALING_RU.md",
@@ -502,13 +544,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4782,
-      "sha256": "c5149e2c2ef38f09e1cd427ddad888d96d0ea500e9cc57483d21a5521c5d89f4"
+      "bytes": 5104,
+      "sha256": "e2e62dae6aed3cedb0df193fa198b4bc74f2950036cb5534e5611b3f5dc2aeb7"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 20272,
-      "sha256": "20ca12484b8f3378d9378e64569b1d93c385ddd19e8b88d3ef51d02a5f677934"
+      "bytes": 21313,
+      "sha256": "56e87449c071aa37d314e20b9e3c8badcccdff6833a48caffe80b23ff1c41c0b"
     },
     {
       "path": "requirements.txt",
@@ -587,8 +629,8 @@
     },
     {
       "path": "results/figure_data/fig08_rotation_sign.csv",
-      "bytes": 95477,
-      "sha256": "983ed42d074219bcd89c18b75da936737924dfdfc4a131f83409bcf76ccae9dd"
+      "bytes": 102423,
+      "sha256": "7c5b12d9e7f79372cf6e7669cf36e45b315062ff01cd1f61870bb4617bce3c3f"
     },
     {
       "path": "results/figure_data/fig09_conditional_qr.csv",
@@ -941,6 +983,131 @@
       "sha256": "df09d09e9da2cf27ad761c9a3ef5b698ca64e22af50c81aad19358e3f5ecaa89"
     },
     {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/nu_2.231_species1.npz",
+      "bytes": 38555076,
+      "sha256": "d7aaa77341f9684c90713d0e529db99992103fd4ec56de1f423224f66ab64a53"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S01/nu_2.231_species1.npz",
+      "bytes": 1713631,
+      "sha256": "b5e82c4cae8c76fa13b4e7efde71cd42dd8959538f624f5cc87794f4de79754c"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S02/nu_2.231_species1.npz",
+      "bytes": 1701741,
+      "sha256": "f472a99583543c9e5194a5cbbb541d08653fdc88a0a4c1ad19b1909d80bc4b19"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S03/nu_2.231_species1.npz",
+      "bytes": 1689888,
+      "sha256": "c282fffceafe7b827d5048a3d4c9effbe292eb8901018fbabc17535afd822a29"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S04/nu_2.231_species1.npz",
+      "bytes": 1739570,
+      "sha256": "49b5efdae93573e10eb49335bc8f95de8b986117aaf6d35f7f8923cf10902ace"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S05/nu_2.231_species1.npz",
+      "bytes": 1728506,
+      "sha256": "e19860b847438c1efb12aca4ce6c1f3580e00d69b01fd2ccb71943db4a6b497f"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S06/nu_2.231_species1.npz",
+      "bytes": 5276,
+      "sha256": "573ca1f530f0fea9abf0429df2bfe4fe709a02d1561ea4a7a3f29c0dd60aab61"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S07/nu_2.231_species1.npz",
+      "bytes": 1698186,
+      "sha256": "d1f0d78d5251868c2337f213ca5f2350ab1ae33360c2124f2debb04d51fb975f"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S08/nu_2.231_species1.npz",
+      "bytes": 5283,
+      "sha256": "20e5635a2653657e86c76307c6e2fbde060d85e90b5d16d2b2eb3cc8df18a951"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S09/nu_2.231_species1.npz",
+      "bytes": 1690121,
+      "sha256": "49be169d53a33f0f176cd45478dffae39f1a43e028b7c6fa7a95a5ec98fb1213"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S10/nu_2.231_species1.npz",
+      "bytes": 1689548,
+      "sha256": "754e395b274edfcae029a990c3f21c73b1ef60a593c120fa79210ee5bbf5c888"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S11/nu_2.231_species1.npz",
+      "bytes": 1708326,
+      "sha256": "f849c89dfb8d720e67ace82d1fcadc4cb29b52ddb1de737e9c33bb600be3b20c"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S12/nu_2.231_species1.npz",
+      "bytes": 1715964,
+      "sha256": "307d28824790f2cda15a64997f0b8444c78b58c7832d79d2603764d2ee96e8c4"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S13/nu_2.231_species1.npz",
+      "bytes": 1688969,
+      "sha256": "b19529d05c8342869ef0cd3447ad29fdd58da5676138486cfe627101a8cef503"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S14/nu_2.231_species1.npz",
+      "bytes": 1693080,
+      "sha256": "97d30424465c79c1ceb56e9b8a602a0da6a371e52d988229221f38df9819c98f"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S15/nu_2.231_species1.npz",
+      "bytes": 1715134,
+      "sha256": "e987393dd10a6e0f9904371ad8d062880a02b355e89ff493c707e5abca0979b0"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S16/nu_2.231_species1.npz",
+      "bytes": 5285,
+      "sha256": "1e04e7208e0fe2738db9aed58aebf88506b860b4c3cf31cf3c37705295274532"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S17/nu_2.231_species1.npz",
+      "bytes": 1687302,
+      "sha256": "13d96d7e8649837fd1b62622553f00735a4b473d069f741d2462ce6c138dee1e"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S18/nu_2.231_species1.npz",
+      "bytes": 1707764,
+      "sha256": "94d4c1ccc07527120849ed04ae04a3c769a3364940e71c7c95cf19fa61770ac9"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S19/nu_2.231_species1.npz",
+      "bytes": 1726896,
+      "sha256": "c4c2328470c9a0b5c1b24ee58ee90eef90ad41d1b9a19cfef428c5d6ba7e6960"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S20/nu_2.231_species1.npz",
+      "bytes": 1689319,
+      "sha256": "1fd341be327e2b89f6767204970ae0e483541b39a0579b646078fce8c87b7c1c"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S21/nu_2.231_species1.npz",
+      "bytes": 1696972,
+      "sha256": "7a742ad18493a72a9aefc76068626e6c541ba89c510b74cbcdcf236e31f08572"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S22/nu_2.231_species1.npz",
+      "bytes": 1687630,
+      "sha256": "f32f06b442bd4c0497c0b4966a34f07cb6ac375e4b3cab3965d63ffd239fe514"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S23/nu_2.231_species1.npz",
+      "bytes": 1689616,
+      "sha256": "85371529a875f10d027309ab3390154dcd9a954ebc85edab7f1bd69f311dffef"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_120000_checkpoints/S24/nu_2.231_species1.npz",
+      "bytes": 1727868,
+      "sha256": "3e1e03219b5a274e907a0e9590150bc9688e5c7df2100eadd477420650c3acf2"
+    },
+    {
       "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.212_species1.npz",
       "bytes": 15850268,
       "sha256": "159d6bf71a9047287ac20bd7c8bb887426ef921c64e77a0331ac820b4618c5e6"
@@ -999,6 +1166,21 @@
       "path": "results/rotation_sign_scan/local15_sign_trajectory_windows.csv",
       "bytes": 22451,
       "sha256": "08ab3a6c215fc8fcd36f788210591b87fcc03ed53fff4b62f8579d82ed26089f"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_120000_mixed_node.csv",
+      "bytes": 23523,
+      "sha256": "f39ced80212f59441003743c0dc9936802ad9ecc4b0497161cd06aa9b7560509"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_120000_mixed_node.json",
+      "bytes": 57297,
+      "sha256": "154a556504000d41c90060cd3aabc4b73773f876b5a2fa81ab3c86887335afd2"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_120000_mixed_node_audit.json",
+      "bytes": 1572,
+      "sha256": "3d0f7d85861febab0cc5a87b70819131e47871f53c4fb749bc7c2f794596f9b3"
     },
     {
       "path": "results/rotation_sign_scan/local15_sign_transition_50000.csv",
@@ -1092,18 +1274,18 @@
     },
     {
       "path": "ROTATION_SIGN_TRANSITIONS_RU.md",
-      "bytes": 12555,
-      "sha256": "5ff2feb4589e8c4b62d28641cbec4c96291cf036f624dee058219aa6ead402b4"
+      "bytes": 16485,
+      "sha256": "9c4034104445def3b8980b3330eae1436bf1a05ca16bee8ea9ac594a757e5a64"
     },
     {
       "path": "SCIENTIFIC_CLAIMS_RU.md",
-      "bytes": 4659,
-      "sha256": "200c54f3f1a3bfaf9b29d935b4916addb0650209effdfaabe745ce90aa8e0fff"
+      "bytes": 5340,
+      "sha256": "0194429cd20491fd1f0638fc87ef824d5ad44647f2b62488a4e4f2f4b83f79cb"
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 12915,
-      "sha256": "9a8b68e10c92df23eb3605494a4b5a8efece5de0f6aa5c1a6d545c12c242917c"
+      "bytes": 13770,
+      "sha256": "fe7ebcfee4a050669875d10f28a8973f7cab4d8acf745219e70f0432672089ee"
     },
     {
       "path": "tests/test_collective_rings.py",
@@ -1132,17 +1314,17 @@
     },
     {
       "path": "THEORY_VALIDATION_RU.md",
-      "bytes": 8077,
-      "sha256": "d2d4199dd371c80518d94dc790e213dbe1641a53fdb958f151b0b435e01b2093"
+      "bytes": 8666,
+      "sha256": "2799706201b1d0d4d51c411380c28a53a83db7ce96b27e462b77aeb59a60e371"
     },
     {
       "path": "theory_validation_ru.tex",
-      "bytes": 13863,
-      "sha256": "9b4a8406c2b7c2a386f16a0c623c551d5de0b2bf28d18e4872dc5ed4657c5fde"
+      "bytes": 14177,
+      "sha256": "517d52ea8d8cac4a567e7d81e95037fdcc7f5c125054867892438b2ee10d08b2"
     }
   ],
   "unresolved": [
-    "exact-RF continuation beyond 50,000 periods around the mixed-sign rotation-sign transition, individual transition points, and long-term branch stability",
+    "exact-RF continuation beyond 50,000 periods at nodes other than the species1 mixed node nu=2.23125; individual transition points, long-term branch stability, and asymptotic classification remain unresolved at all nodes",
     "quantitative error map versus epsilon_mu over RF and drag parameters",
     "independent numerical validation of moving-orbit and higher-order averaging corrections",
     "full MFS higher-spatial-harmonic comparison and real-electrode transfer validation",

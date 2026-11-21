@@ -44,4 +44,6 @@ Leading теория правильно дала знак обеих ветве�
 
 ## Воспроизводимость
 
+- Дополнительная проверка смешанного узла вида 1 \(\nu=2.23125\): все 24 фиксированных старта продолжены RK4/96 с 50k до 120k. Локальное окно на 120k даёт 9 отрицательных и 12 положительных знаков при 3 потерях, но cumulative drift 50k–120k отрицателен у всех 21 retained стартов. Полный независимый checkpoint-аудит и обновлённая FIG08 описаны в `ROTATION_SIGN_TRANSITIONS_RU.md`.
+
 Исходные параметры, frozen-panel hash, классификация потерь и времена интегрирования: `results/local15_exact_rf/independent_audit.json`; CSV panel: `results/frozen_local15_single_particle_panel.csv`; численная реализация: `numerical/local15_exact_validation.py` и `numerical/convergence_local15_methods.py`.
