@@ -1,0 +1,5608 @@
+{
+  "status": "completed",
+  "model_scope": "exact ideal k=+2,-4 Local15; C=0; linear drag; no full MFS",
+  "parameters": {
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "beta": 0.017273303124515367,
+    "species": {
+      "species1": {
+        "alpha": 1.0,
+        "lambda": 0.20975541409005094
+      },
+      "species2": {
+        "alpha": 0.34126014359705537,
+        "lambda": 0.12617311138613094
+      }
+    }
+  },
+  "nu_values": [
+    2.1,
+    2.175,
+    2.25,
+    2.325,
+    2.4
+  ],
+  "periods": 3000,
+  "steps_per_primary_period": 96,
+  "measurement_window_periods": 500,
+  "panel_seed": 15152026,
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "panel_is_iid_probability_sample": false,
+  "worker_count": 10,
+  "wall_seconds": 130.44591390003916,
+  "results": [
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "rows": [
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.47910473893519934,
+          "omega_last_500": -0.00032739128201950075,
+          "max_rho": 0.5004256512031736,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.47878840768778896,
+          "omega_last_500": -0.00029918050184776833,
+          "max_rho": 0.5318808863007533,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.4246493979328775,
+          "omega_last_500": -0.00040404808184772614,
+          "max_rho": 0.6544713945715205,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.4344297600426924,
+          "omega_last_500": -0.0003602770408533931,
+          "max_rho": 0.8089161871911893,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.43159710613794344,
+          "omega_last_500": -0.0003924982493765278,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S06",
+          "rho_mean_last_500": 1.010972932915321,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0109729329153212,
+          "escaped": true,
+          "escape_period": 0.15625,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S07",
+          "rho_mean_last_500": 1.0118437180168822,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0118437180168827,
+          "escaped": true,
+          "escape_period": 0.78125,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.0126109498389706,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0126109498389706,
+          "escaped": true,
+          "escape_period": 0.07291666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.478823189156257,
+          "omega_last_500": -0.00031063250697533495,
+          "max_rho": 0.5197120678001422,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.4309131644586107,
+          "omega_last_500": -0.00037753823655564396,
+          "max_rho": 0.504208425642622,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.4350502919083831,
+          "omega_last_500": -0.00036445214458547887,
+          "max_rho": 0.5668753156920018,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.4306363062630815,
+          "omega_last_500": -0.00038798512025085667,
+          "max_rho": 0.6533157987830033,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.4297886536198587,
+          "omega_last_500": -0.0003820555989875273,
+          "max_rho": 0.858783831504866,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.4334678868869074,
+          "omega_last_500": -0.0003907411525726858,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.46859085482465984,
+          "omega_last_500": -0.0003106220341253756,
+          "max_rho": 0.9242914878172037,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0137187953612894,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0137187953612896,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.4591666461959813,
+          "omega_last_500": -0.00034337326014300946,
+          "max_rho": 0.5113459910851257,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.44182388672910955,
+          "omega_last_500": -0.0003774916236920878,
+          "max_rho": 0.5734258516858856,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.4788258444259136,
+          "omega_last_500": -0.0003024144671693564,
+          "max_rho": 0.55,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.4533948291348753,
+          "omega_last_500": -0.0003486717928845934,
+          "max_rho": 0.652397572425633,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.4783727700074993,
+          "omega_last_500": -0.0003080666495788634,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.44229218582408963,
+          "omega_last_500": -0.000375062526962565,
+          "max_rho": 0.8584940110459783,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.4701738780118733,
+          "omega_last_500": -0.0003281887335506048,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.1,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.43409166863293125,
+          "omega_last_500": -0.0003682101279705017,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.4527162640227437,
+          "omega": -0.0004145842359181964,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10492063711759228,
+              0.19214913352701102
+            ],
+            [
+              -0.10492063711759228,
+              -0.19214913352701102
+            ],
+            [
+              -0.2096695539449234,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 128.04519279999658,
+      "checkpoint": "nu_2.100_species1.npz"
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "rows": [
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.6296214180546971,
+          "omega_last_500": -0.0018798422267424265,
+          "max_rho": 0.6865831963110024,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.6299579167063062,
+          "omega_last_500": -0.0018666869610281065,
+          "max_rho": 0.6803888307202551,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.6288405226854322,
+          "omega_last_500": -0.0018834609177243884,
+          "max_rho": 0.6670735991255841,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.6282278071981084,
+          "omega_last_500": -0.0018779781145549204,
+          "max_rho": 0.706674253395085,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.6294687509194619,
+          "omega_last_500": -0.0018781491485959775,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S06",
+          "rho_mean_last_500": 0.6283187370264298,
+          "omega_last_500": -0.0018836662063835637,
+          "max_rho": 0.9310345135410525,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.6300942872201907,
+          "omega_last_500": -0.001862071733900892,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.0074121424990676,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0074121424990679,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.6296140992611834,
+          "omega_last_500": -0.0018653759540796272,
+          "max_rho": 0.6787292849697355,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.6291428513747048,
+          "omega_last_500": -0.0018864635786740482,
+          "max_rho": 0.6800209081920757,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.6288573593836287,
+          "omega_last_500": -0.0018843890232118025,
+          "max_rho": 0.6707676061395397,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.630164789642964,
+          "omega_last_500": -0.0018615789449696902,
+          "max_rho": 0.6730266030839072,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.6288356915449801,
+          "omega_last_500": -0.0018704114481447366,
+          "max_rho": 0.875963164635414,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.6295114795134337,
+          "omega_last_500": -0.0018665356459660097,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.628953825764769,
+          "omega_last_500": -0.0018704933145333072,
+          "max_rho": 0.9283892361946697,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.004400680263011,
+          "omega_last_500": 0.0,
+          "max_rho": 1.004400680263011,
+          "escaped": true,
+          "escape_period": 0.19791666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.6286323008116288,
+          "omega_last_500": -0.0018715564696270182,
+          "max_rho": 0.685455838882237,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.6298659754230196,
+          "omega_last_500": -0.001871951349046168,
+          "max_rho": 0.6843196819664115,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.629355941219497,
+          "omega_last_500": -0.0018766321770489658,
+          "max_rho": 0.6681082868503087,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.6289655701270012,
+          "omega_last_500": -0.0018793884003123517,
+          "max_rho": 0.6777031930496841,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.6297439834259025,
+          "omega_last_500": -0.001881075538245886,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.6302040839288886,
+          "omega_last_500": -0.0018681751823049814,
+          "max_rho": 0.8812279616036943,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.6283381074308303,
+          "omega_last_500": -0.0018866962442509912,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.1,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.6301982654061377,
+          "omega_last_500": -0.0018734537219146535,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.6299572003549506,
+          "omega": -0.001873883599772259,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06324140177472382,
+              0.13066946791490336
+            ],
+            [
+              -0.06324140177472382,
+              -0.13066946791490336
+            ],
+            [
+              -0.12586341922280844,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 129.0878173999954,
+      "checkpoint": "nu_2.100_species2.npz"
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "rows": [
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.48204010510861295,
+          "omega_last_500": -0.0001197051557268169,
+          "max_rho": 0.5245884653057885,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.4860460258022996,
+          "omega_last_500": -0.00013958209176417153,
+          "max_rho": 0.5351251285661666,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.4400564615108468,
+          "omega_last_500": -0.00014711811704630717,
+          "max_rho": 0.6482908921252135,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.48747217022403094,
+          "omega_last_500": -0.00012426029168662695,
+          "max_rho": 0.7995031237124116,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.4310458086295363,
+          "omega_last_500": -0.00016198767637390547,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S06",
+          "rho_mean_last_500": 1.0069699749949577,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0069699749949579,
+          "escaped": true,
+          "escape_period": 0.15625,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S07",
+          "rho_mean_last_500": 1.0015498585357692,
+          "omega_last_500": 0.0,
+          "max_rho": 1.001549858535769,
+          "escaped": true,
+          "escape_period": 0.9583333333333334,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.0129020399309727,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0129020399309727,
+          "escaped": true,
+          "escape_period": 0.07291666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.4803435652600674,
+          "omega_last_500": -0.00013485020333249876,
+          "max_rho": 0.5165922873974824,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.4577589203286389,
+          "omega_last_500": -0.00014969075302176654,
+          "max_rho": 0.5084265074588936,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.4635348379026584,
+          "omega_last_500": -0.0001490572644275985,
+          "max_rho": 0.5662217442775366,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.4326895957801254,
+          "omega_last_500": -0.0001514649587214067,
+          "max_rho": 0.6524166909841377,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.4460508120186445,
+          "omega_last_500": -0.00016131195803576582,
+          "max_rho": 0.8548549935157659,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.438627130470869,
+          "omega_last_500": -0.00015823653887516855,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.44556346589032914,
+          "omega_last_500": -0.0001434841700857448,
+          "max_rho": 0.924247901738668,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0147337825629636,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0147337825629639,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.44387901567648635,
+          "omega_last_500": -0.00015230841999622555,
+          "max_rho": 0.5227174098208759,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.474139968590419,
+          "omega_last_500": -0.00012436014014653585,
+          "max_rho": 0.5812433443659447,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.4803872372472745,
+          "omega_last_500": -0.00013846480657217332,
+          "max_rho": 0.55,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.48961296723084885,
+          "omega_last_500": -0.0001333239021348985,
+          "max_rho": 0.6522360497289411,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.4890192180599663,
+          "omega_last_500": -0.00013442197919565419,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.43102565285916333,
+          "omega_last_500": -0.0001568549814308658,
+          "max_rho": 0.864851534269864,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.49124783986099135,
+          "omega_last_500": -0.00011811348465972128,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species1",
+          "nu": 2.175,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.46518824814588733,
+          "omega_last_500": -0.0001299200196024718,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.46065123239771416,
+          "omega": -0.0002177744099391369,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10489912809145471,
+              0.19215827164595797
+            ],
+            [
+              -0.10489912809145471,
+              -0.19215827164595797
+            ],
+            [
+              -0.20971257199719173,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 127.82370779989287,
+      "checkpoint": "nu_2.175_species1.npz"
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "rows": [
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.6396010629740824,
+          "omega_last_500": -0.0017907209417897755,
+          "max_rho": 0.6915833785010634,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.6388944929100364,
+          "omega_last_500": -0.0018006243367440478,
+          "max_rho": 0.6899457484330547,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.6413015487983736,
+          "omega_last_500": -0.0017817477817381187,
+          "max_rho": 0.679866786435934,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.6420966802058895,
+          "omega_last_500": -0.0017777772521309946,
+          "max_rho": 0.7035260609442672,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.6397614396638589,
+          "omega_last_500": -0.0017952901587685716,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S06",
+          "rho_mean_last_500": 0.6419754937120186,
+          "omega_last_500": -0.0017828850857948852,
+          "max_rho": 0.9241179554492349,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.638645571576807,
+          "omega_last_500": -0.0017971537031145099,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.007565145084562,
+          "omega_last_500": 0.0,
+          "max_rho": 1.007565145084562,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.6394011202917272,
+          "omega_last_500": -0.0017951298460026045,
+          "max_rho": 0.6971301022079598,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.6408596029461017,
+          "omega_last_500": -0.0017858122735709757,
+          "max_rho": 0.6889596409628712,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.6412930228642807,
+          "omega_last_500": -0.0017863219749049471,
+          "max_rho": 0.6761831779669795,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.6386437154943483,
+          "omega_last_500": -0.001799218328895634,
+          "max_rho": 0.6850364702425099,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.6407262838584885,
+          "omega_last_500": -0.0017875947887037622,
+          "max_rho": 0.8754643323081036,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.6394511237506331,
+          "omega_last_500": -0.0017948248514624188,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.6411576846530017,
+          "omega_last_500": -0.0017846474240136641,
+          "max_rho": 0.9282843169541223,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.004189974098831,
+          "omega_last_500": 0.0,
+          "max_rho": 1.004189974098831,
+          "escaped": true,
+          "escape_period": 0.19791666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.6411245161584859,
+          "omega_last_500": -0.0017853039119908871,
+          "max_rho": 0.6889485019317477,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.6394133423608268,
+          "omega_last_500": -0.0017917084699747281,
+          "max_rho": 0.6864413488760561,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.6399359161934798,
+          "omega_last_500": -0.001794715946942846,
+          "max_rho": 0.6926735925765676,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.6407516599315045,
+          "omega_last_500": -0.0017846069030727728,
+          "max_rho": 0.6886518560508919,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.6398658224833602,
+          "omega_last_500": -0.001789873990248951,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.6387558899357998,
+          "omega_last_500": -0.0017956146626421855,
+          "max_rho": 0.8823320489424211,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.6419271967863666,
+          "omega_last_500": -0.0017781096393501012,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.175,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.6405425249237428,
+          "omega_last_500": -0.0017872198930488732,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.6410590227515105,
+          "omega": -0.0017872852713722571,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06322867103339322,
+              0.1306658653660786
+            ],
+            [
+              -0.06322867103339322,
+              -0.1306658653660786
+            ],
+            [
+              -0.12588888070546977,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 129.44289890001528,
+      "checkpoint": "nu_2.175_species2.npz"
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "rows": [
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.4819145347314095,
+          "omega_last_500": 4.014645066177142e-05,
+          "max_rho": 0.5307339603001473,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.48804751947767705,
+          "omega_last_500": 4.6140079000971043e-05,
+          "max_rho": 0.5370737923072598,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.45869033214194926,
+          "omega_last_500": 4.214793670300895e-05,
+          "max_rho": 0.6426535907828311,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.4930877289302067,
+          "omega_last_500": 3.617689370605213e-05,
+          "max_rho": 0.7909908412038039,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.4653935925713106,
+          "omega_last_500": 4.657900566246403e-05,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S06",
+          "rho_mean_last_500": 1.0029093621288945,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0029093621288945,
+          "escaped": true,
+          "escape_period": 0.15625,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.4717522556069012,
+          "omega_last_500": 4.239834399005858e-05,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.0131823877475945,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0131823877475945,
+          "escaped": true,
+          "escape_period": 0.07291666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.4800937690667653,
+          "omega_last_500": 4.719931869749225e-05,
+          "max_rho": 0.5257355812826462,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.4765550664117643,
+          "omega_last_500": 4.058790258512543e-05,
+          "max_rho": 0.5193163517857557,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.4811457672465217,
+          "omega_last_500": 4.7528047414744734e-05,
+          "max_rho": 0.5655871577047796,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.4582882315476052,
+          "omega_last_500": 4.19481070558632e-05,
+          "max_rho": 0.6516855754242848,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.5008871451513813,
+          "omega_last_500": 3.570617002938871e-05,
+          "max_rho": 0.8513083722846825,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.43637217119757676,
+          "omega_last_500": 5.458946181463008e-05,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.4324281027880422,
+          "omega_last_500": 4.9704523744264725e-05,
+          "max_rho": 0.9242044752935109,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0002782642663244,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0002782642663246,
+          "escaped": true,
+          "escape_period": 0.10416666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.4424249707119255,
+          "omega_last_500": 5.342254702037857e-05,
+          "max_rho": 0.517255926086319,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.4921860381374205,
+          "omega_last_500": 3.894205211856152e-05,
+          "max_rho": 0.5862980149046613,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.47981997207742727,
+          "omega_last_500": 4.065964527891971e-05,
+          "max_rho": 0.55,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.5012168444758737,
+          "omega_last_500": 3.943634253832263e-05,
+          "max_rho": 0.6521053362547714,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.4940589476237927,
+          "omega_last_500": 4.548462865117492e-05,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.4342705911145855,
+          "omega_last_500": 5.3978321887079956e-05,
+          "max_rho": 0.8704693996214213,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.501190771185899,
+          "omega_last_500": 3.57209514383087e-05,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.25,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.48345677330615117,
+          "omega_last_500": 4.088401587655451e-05,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.4684549574707003,
+          "omega": -3.411999141434037e-05,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10488089814718876,
+              0.1921672546346052
+            ],
+            [
+              -0.10488089814718876,
+              -0.1921672546346052
+            ],
+            [
+              -0.20974903188572377,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 129.0900496999966,
+      "checkpoint": "nu_2.250_species1.npz"
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "rows": [
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.6530035124195811,
+          "omega_last_500": -0.001695620855405224,
+          "max_rho": 0.7096306392807342,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.6536715179088156,
+          "omega_last_500": -0.0016983209736103713,
+          "max_rho": 0.7086606544791818,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.6494675658607509,
+          "omega_last_500": -0.0017133790521847861,
+          "max_rho": 0.6853934610114233,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.6491745581866092,
+          "omega_last_500": -0.0017075107724859682,
+          "max_rho": 0.7006179974285126,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.6528496817364766,
+          "omega_last_500": -0.001710581404184526,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S06",
+          "rho_mean_last_500": 0.6489660994104024,
+          "omega_last_500": -0.0017230144465336288,
+          "max_rho": 0.918081252701601,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.6537062518000989,
+          "omega_last_500": -0.0016849470010695984,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.007695111073012,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0076951110730117,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.6532077995472175,
+          "omega_last_500": -0.0016891676079969465,
+          "max_rho": 0.6997141023098343,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.6499518276065988,
+          "omega_last_500": -0.0017205415538612784,
+          "max_rho": 0.7048684724884581,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.6494524655975723,
+          "omega_last_500": -0.0017289828815285479,
+          "max_rho": 0.6972831879293514,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.6535364706227682,
+          "omega_last_500": -0.001687499348305677,
+          "max_rho": 0.6988542847160656,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.651590087443126,
+          "omega_last_500": -0.0016971383468104223,
+          "max_rho": 0.8734922747781522,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.6532646235737712,
+          "omega_last_500": -0.001689887412032342,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.6494081411004162,
+          "omega_last_500": -0.0017094190561036276,
+          "max_rho": 0.9281806800491338,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0038318509978852,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0038318509978852,
+          "escaped": true,
+          "escape_period": 0.19791666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.6509901807069572,
+          "omega_last_500": -0.0017000600709093255,
+          "max_rho": 0.7077073121251595,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.6519491752262965,
+          "omega_last_500": -0.0016951510730829436,
+          "max_rho": 0.7064508802536693,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.6526212951034532,
+          "omega_last_500": -0.0017103352456282715,
+          "max_rho": 0.6967222333048887,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.6514477226080527,
+          "omega_last_500": -0.001700260188939866,
+          "max_rho": 0.7019639403089162,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.6511222845768498,
+          "omega_last_500": -0.0017066669510303729,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.6530531567250277,
+          "omega_last_500": -0.0016874140656525556,
+          "max_rho": 0.8830879222554561,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.6497887991190414,
+          "omega_last_500": -0.001708027794195461,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.25,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.6493816770650531,
+          "omega_last_500": -0.0017141413160649027,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.6519735065465241,
+          "omega": -0.0017064755966099397,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06321727892500298,
+              0.13066268705116088
+            ],
+            [
+              -0.06321727892500298,
+              -0.13066268705116088
+            ],
+            [
+              -0.12591166492223654,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 128.50982619996648,
+      "checkpoint": "nu_2.250_species2.npz"
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "rows": [
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.49168057643765956,
+          "omega_last_500": 0.00021203636462930852,
+          "max_rho": 0.5283845800200386,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.4976758594495134,
+          "omega_last_500": 0.0002009114064077376,
+          "max_rho": 0.5381212358436993,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.46457035443644323,
+          "omega_last_500": 0.0002327907816719165,
+          "max_rho": 0.6374776242418315,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.47853074707341536,
+          "omega_last_500": 0.00021680626479523982,
+          "max_rho": 0.7831649162350275,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.4930830551713612,
+          "omega_last_500": 0.0002074724188233898,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S06",
+          "rho_mean_last_500": 1.0144634635484164,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0144634635484164,
+          "escaped": true,
+          "escape_period": 0.16666666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.4480625641171799,
+          "omega_last_500": 0.0002493600520619573,
+          "max_rho": 0.9443958713797906,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.013451935923459,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0134519359234588,
+          "escaped": true,
+          "escape_period": 0.07291666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.49042508284513076,
+          "omega_last_500": 0.00020992248783105683,
+          "max_rho": 0.5427444597086161,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.4801539501512835,
+          "omega_last_500": 0.00021512720074459612,
+          "max_rho": 0.5300991240692589,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.48378534870171325,
+          "omega_last_500": 0.00021385246589082128,
+          "max_rho": 0.565004340242628,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.471220327209878,
+          "omega_last_500": 0.00022489139111485465,
+          "max_rho": 0.6510542595664612,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.49771176784172144,
+          "omega_last_500": 0.00019955224111926028,
+          "max_rho": 0.8480102233561817,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.44300552386227554,
+          "omega_last_500": 0.0002530382077463282,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.4427529320163973,
+          "omega_last_500": 0.0002532635425648673,
+          "max_rho": 0.9241612112463696,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0011202029705635,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0011202029705635,
+          "escaped": true,
+          "escape_period": 0.10416666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.45488774905129864,
+          "omega_last_500": 0.00024236230456016667,
+          "max_rho": 0.5367142005722222,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.4962967399854935,
+          "omega_last_500": 0.0002081474912316787,
+          "max_rho": 0.5894412508562403,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.4898614240693042,
+          "omega_last_500": 0.00020725386838922852,
+          "max_rho": 0.55,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.5052037868910336,
+          "omega_last_500": 0.00019331721465482983,
+          "max_rho": 0.6519749318756545,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.503647430535869,
+          "omega_last_500": 0.00019679073858564026,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.4473178815023604,
+          "omega_last_500": 0.00024991362989191157,
+          "max_rho": 0.8752036735111799,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.5025600464709007,
+          "omega_last_500": 0.0002036385599334842,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.325,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.4428691232553487,
+          "omega_last_500": 0.00025355804382004674,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.4761335940350639,
+          "omega": 0.00013765820779566493,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10486545508044309,
+              0.1921760539859786
+            ],
+            [
+              -0.10486545508044309,
+              -0.1921760539859786
+            ],
+            [
+              -0.20977991801921486,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 127.2524936000118,
+      "checkpoint": "nu_2.325_species1.npz"
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "rows": [
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.6592158945032236,
+          "omega_last_500": -0.0016470974382459377,
+          "max_rho": 0.7181801210834582,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.6591827308934328,
+          "omega_last_500": -0.0016434574562335976,
+          "max_rho": 0.7124284923619784,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.6649861325786607,
+          "omega_last_500": -0.0016195868940215743,
+          "max_rho": 0.7069491137003981,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.6636946465146479,
+          "omega_last_500": -0.0016183041874350576,
+          "max_rho": 0.6980169317558096,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.6593027877351664,
+          "omega_last_500": -0.0016498080575009467,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S06",
+          "rho_mean_last_500": 0.6650153798005352,
+          "omega_last_500": -0.0016126573559655675,
+          "max_rho": 0.912782638313882,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.6593350993464717,
+          "omega_last_500": -0.0016435981002022948,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.007802124261211,
+          "omega_last_500": 0.0,
+          "max_rho": 1.007802124261211,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.6590914488643269,
+          "omega_last_500": -0.001638282405625243,
+          "max_rho": 0.722133272483325,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.664740742710236,
+          "omega_last_500": -0.0016257995472993341,
+          "max_rho": 0.713458275635159,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.6650248933318664,
+          "omega_last_500": -0.001623271866401289,
+          "max_rho": 0.7077659812623123,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.6600771487913963,
+          "omega_last_500": -0.001633404588930809,
+          "max_rho": 0.7076394484254833,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.6602385699334868,
+          "omega_last_500": -0.0016326458435250624,
+          "max_rho": 0.8777289169410818,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.6590620687563667,
+          "omega_last_500": -0.0016390084445648283,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.665016715606241,
+          "omega_last_500": -0.0016092578523159945,
+          "max_rho": 0.9280783500430373,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0033308431307264,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0033308431307264,
+          "escaped": true,
+          "escape_period": 0.19791666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.660895657254217,
+          "omega_last_500": -0.0016293764182112183,
+          "max_rho": 0.716786503766232,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.6626845506080141,
+          "omega_last_500": -0.0016260554689865045,
+          "max_rho": 0.7179212933319166,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.6594460251239579,
+          "omega_last_500": -0.0016473868945062649,
+          "max_rho": 0.714961543536033,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.6605328475496246,
+          "omega_last_500": -0.0016385724264138981,
+          "max_rho": 0.7125791626116798,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.6637987344600368,
+          "omega_last_500": -0.0016258553631474909,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.6613007373470419,
+          "omega_last_500": -0.0016285806420390553,
+          "max_rho": 0.8835589232686348,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.6623081963315179,
+          "omega_last_500": -0.0016277362228069232,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.325,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.6650340187256563,
+          "omega_last_500": -0.001613478493872115,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.6627097482077191,
+          "omega": -0.00163089238718549,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06320704965821886,
+              0.13065987426866543
+            ],
+            [
+              -0.06320704965821886,
+              -0.13065987426866543
+            ],
+            [
+              -0.1259321234558184,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 128.48869670007844,
+      "checkpoint": "nu_2.325_species2.npz"
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "rows": [
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.506189523613214,
+          "omega_last_500": 0.00036240329613251984,
+          "max_rho": 0.5489825652187958,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.5090620140519899,
+          "omega_last_500": 0.0003506517204146061,
+          "max_rho": 0.5379904911980745,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.4627426691418669,
+          "omega_last_500": 0.00042088113694005664,
+          "max_rho": 0.6328589466326561,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.4841735352003732,
+          "omega_last_500": 0.00038481532327588983,
+          "max_rho": 0.7761868813740029,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.5014472220651892,
+          "omega_last_500": 0.00037255622074554875,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S06",
+          "rho_mean_last_500": 1.009278989468374,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0092789894683742,
+          "escaped": true,
+          "escape_period": 0.16666666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.49160877571745343,
+          "omega_last_500": 0.00036506223766869883,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.0137106320813414,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0137106320813414,
+          "escaped": true,
+          "escape_period": 0.07291666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.5057110650408979,
+          "omega_last_500": 0.00036450920828409267,
+          "max_rho": 0.5501656841198113,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.47321965649346137,
+          "omega_last_500": 0.0003945228056136856,
+          "max_rho": 0.5370251148658747,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.4755798773264297,
+          "omega_last_500": 0.00040191900972973144,
+          "max_rho": 0.5645042806360797,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.4714209063816033,
+          "omega_last_500": 0.0003983033373747347,
+          "max_rho": 0.650534611358957,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.501274415644865,
+          "omega_last_500": 0.0003599813459810128,
+          "max_rho": 0.844739066495654,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.47131472389160783,
+          "omega_last_500": 0.00040388059493909215,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.46354005878740456,
+          "omega_last_500": 0.00041217952430823955,
+          "max_rho": 0.9241181123466456,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.001922880960718,
+          "omega_last_500": 0.0,
+          "max_rho": 1.001922880960718,
+          "escaped": true,
+          "escape_period": 0.10416666666666667,
+          "sign": 0
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.4785120872432916,
+          "omega_last_500": 0.0004055204017892741,
+          "max_rho": 0.5503996798239302,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.4889017377795812,
+          "omega_last_500": 0.00038743374408620207,
+          "max_rho": 0.590837855403298,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.505301616147072,
+          "omega_last_500": 0.0003438223206064802,
+          "max_rho": 0.55,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.5098392686604966,
+          "omega_last_500": 0.0003491151908232126,
+          "max_rho": 0.6518448703227495,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.5100569935277887,
+          "omega_last_500": 0.00034964885478073543,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.4717951278215178,
+          "omega_last_500": 0.0004150406147023412,
+          "max_rho": 0.8791211030897351,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.4892308891404793,
+          "omega_last_500": 0.00039002541400683815,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        },
+        {
+          "species": "species1",
+          "nu": 2.4,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.4584110473183902,
+          "omega_last_500": 0.00042018084161292267,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": 1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.4836928423367843,
+          "omega": 0.00029867840563859924,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.10485238975234384,
+              0.19218465025369424
+            ],
+            [
+              -0.10485238975234384,
+              -0.19218465025369424
+            ],
+            [
+              -0.20980604867542,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 127.66279770003166,
+      "checkpoint": "nu_2.400_species1.npz"
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "rows": [
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S01",
+          "rho_mean_last_500": 0.675830764046476,
+          "omega_last_500": -0.001543839012676536,
+          "max_rho": 0.731094465366528,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S02",
+          "rho_mean_last_500": 0.6746240824280996,
+          "omega_last_500": -0.0015524851821805822,
+          "max_rho": 0.7285440927946301,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S03",
+          "rho_mean_last_500": 0.6695570770637357,
+          "omega_last_500": -0.0015716093371534229,
+          "max_rho": 0.716832122820897,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S04",
+          "rho_mean_last_500": 0.6728281467655471,
+          "omega_last_500": -0.0015606383230386911,
+          "max_rho": 0.7025541962408663,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S05",
+          "rho_mean_last_500": 0.6759016184489501,
+          "omega_last_500": -0.001543310988861144,
+          "max_rho": 0.7500000000000001,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S06",
+          "rho_mean_last_500": 0.6699725160562497,
+          "omega_last_500": -0.00157608828147111,
+          "max_rho": 0.9081005449469983,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S07",
+          "rho_mean_last_500": 0.6746696305187879,
+          "omega_last_500": -0.0015494935727136795,
+          "max_rho": 0.9199999999999999,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S08",
+          "rho_mean_last_500": 1.007886293669411,
+          "omega_last_500": 0.0,
+          "max_rho": 1.0078862936694108,
+          "escaped": true,
+          "escape_period": 0.11458333333333333,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S09",
+          "rho_mean_last_500": 0.6755935786176483,
+          "omega_last_500": -0.0015500336921994483,
+          "max_rho": 0.7235219342633085,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S10",
+          "rho_mean_last_500": 0.6693114463182065,
+          "omega_last_500": -0.0015707041308414145,
+          "max_rho": 0.7264620494568348,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S11",
+          "rho_mean_last_500": 0.6696449828142639,
+          "omega_last_500": -0.0015709865405350942,
+          "max_rho": 0.7168290597192348,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S12",
+          "rho_mean_last_500": 0.6729072672729908,
+          "omega_last_500": -0.0015627344331162745,
+          "max_rho": 0.723540966407579,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S13",
+          "rho_mean_last_500": 0.67593745404679,
+          "omega_last_500": -0.001548396230137952,
+          "max_rho": 0.8892016848323726,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S14",
+          "rho_mean_last_500": 0.675292902548087,
+          "omega_last_500": -0.0015512666312324317,
+          "max_rho": 0.85,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S15",
+          "rho_mean_last_500": 0.6699165404566081,
+          "omega_last_500": -0.0015767937305986779,
+          "max_rho": 0.9279773509916778,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S16",
+          "rho_mean_last_500": 1.0026918575062562,
+          "omega_last_500": 0.0,
+          "max_rho": 1.002691857506256,
+          "escaped": true,
+          "escape_period": 0.19791666666666666,
+          "sign": 0
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S17",
+          "rho_mean_last_500": 0.6756105413398428,
+          "omega_last_500": -0.0015499459791974027,
+          "max_rho": 0.7300311394196134,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S18",
+          "rho_mean_last_500": 0.6700229228683844,
+          "omega_last_500": -0.001572378111298681,
+          "max_rho": 0.7231684297635202,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S19",
+          "rho_mean_last_500": 0.67600453769313,
+          "omega_last_500": -0.0015437982065696328,
+          "max_rho": 0.7233302853621134,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S20",
+          "rho_mean_last_500": 0.675798323163673,
+          "omega_last_500": -0.0015446529882056504,
+          "max_rho": 0.7255368046803492,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S21",
+          "rho_mean_last_500": 0.6693434023555349,
+          "omega_last_500": -0.0015728857678683089,
+          "max_rho": 0.75,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S22",
+          "rho_mean_last_500": 0.6710513074845547,
+          "omega_last_500": -0.001570777249429356,
+          "max_rho": 0.8837940561618094,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S23",
+          "rho_mean_last_500": 0.6747084846444831,
+          "omega_last_500": -0.0015513230976610152,
+          "max_rho": 0.92,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        },
+        {
+          "species": "species2",
+          "nu": 2.4,
+          "start_id": "S24",
+          "rho_mean_last_500": 0.6704586741499856,
+          "omega_last_500": -0.0015717602946363825,
+          "max_rho": 0.96,
+          "escaped": false,
+          "escape_period": null,
+          "sign": -1
+        }
+      ],
+      "leading_roots": [
+        {
+          "rho": 0.6732761371459075,
+          "omega": -0.0015600440351818904,
+          "stable_reduced": true,
+          "eigenvalues": [
+            [
+              -0.06319783506998132,
+              0.13065737786480977
+            ],
+            [
+              -0.06319783506998132,
+              -0.13065737786480977
+            ],
+            [
+              -0.12595055263229343,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "elapsed_seconds": 129.24404169991612,
+      "checkpoint": "nu_2.400_species2.npz"
+    }
+  ],
+  "rows": [
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.47910473893519934,
+      "omega_last_500": -0.00032739128201950075,
+      "max_rho": 0.5004256512031736,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.47878840768778896,
+      "omega_last_500": -0.00029918050184776833,
+      "max_rho": 0.5318808863007533,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.4246493979328775,
+      "omega_last_500": -0.00040404808184772614,
+      "max_rho": 0.6544713945715205,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.4344297600426924,
+      "omega_last_500": -0.0003602770408533931,
+      "max_rho": 0.8089161871911893,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.43159710613794344,
+      "omega_last_500": -0.0003924982493765278,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S06",
+      "rho_mean_last_500": 1.010972932915321,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0109729329153212,
+      "escaped": true,
+      "escape_period": 0.15625,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S07",
+      "rho_mean_last_500": 1.0118437180168822,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0118437180168827,
+      "escaped": true,
+      "escape_period": 0.78125,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.0126109498389706,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0126109498389706,
+      "escaped": true,
+      "escape_period": 0.07291666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.478823189156257,
+      "omega_last_500": -0.00031063250697533495,
+      "max_rho": 0.5197120678001422,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.4309131644586107,
+      "omega_last_500": -0.00037753823655564396,
+      "max_rho": 0.504208425642622,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.4350502919083831,
+      "omega_last_500": -0.00036445214458547887,
+      "max_rho": 0.5668753156920018,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.4306363062630815,
+      "omega_last_500": -0.00038798512025085667,
+      "max_rho": 0.6533157987830033,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.4297886536198587,
+      "omega_last_500": -0.0003820555989875273,
+      "max_rho": 0.858783831504866,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.4334678868869074,
+      "omega_last_500": -0.0003907411525726858,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.46859085482465984,
+      "omega_last_500": -0.0003106220341253756,
+      "max_rho": 0.9242914878172037,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0137187953612894,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0137187953612896,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.4591666461959813,
+      "omega_last_500": -0.00034337326014300946,
+      "max_rho": 0.5113459910851257,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.44182388672910955,
+      "omega_last_500": -0.0003774916236920878,
+      "max_rho": 0.5734258516858856,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.4788258444259136,
+      "omega_last_500": -0.0003024144671693564,
+      "max_rho": 0.55,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.4533948291348753,
+      "omega_last_500": -0.0003486717928845934,
+      "max_rho": 0.652397572425633,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.4783727700074993,
+      "omega_last_500": -0.0003080666495788634,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.44229218582408963,
+      "omega_last_500": -0.000375062526962565,
+      "max_rho": 0.8584940110459783,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.4701738780118733,
+      "omega_last_500": -0.0003281887335506048,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.1,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.43409166863293125,
+      "omega_last_500": -0.0003682101279705017,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.6296214180546971,
+      "omega_last_500": -0.0018798422267424265,
+      "max_rho": 0.6865831963110024,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.6299579167063062,
+      "omega_last_500": -0.0018666869610281065,
+      "max_rho": 0.6803888307202551,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.6288405226854322,
+      "omega_last_500": -0.0018834609177243884,
+      "max_rho": 0.6670735991255841,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.6282278071981084,
+      "omega_last_500": -0.0018779781145549204,
+      "max_rho": 0.706674253395085,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.6294687509194619,
+      "omega_last_500": -0.0018781491485959775,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S06",
+      "rho_mean_last_500": 0.6283187370264298,
+      "omega_last_500": -0.0018836662063835637,
+      "max_rho": 0.9310345135410525,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.6300942872201907,
+      "omega_last_500": -0.001862071733900892,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.0074121424990676,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0074121424990679,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.6296140992611834,
+      "omega_last_500": -0.0018653759540796272,
+      "max_rho": 0.6787292849697355,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.6291428513747048,
+      "omega_last_500": -0.0018864635786740482,
+      "max_rho": 0.6800209081920757,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.6288573593836287,
+      "omega_last_500": -0.0018843890232118025,
+      "max_rho": 0.6707676061395397,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.630164789642964,
+      "omega_last_500": -0.0018615789449696902,
+      "max_rho": 0.6730266030839072,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.6288356915449801,
+      "omega_last_500": -0.0018704114481447366,
+      "max_rho": 0.875963164635414,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.6295114795134337,
+      "omega_last_500": -0.0018665356459660097,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.628953825764769,
+      "omega_last_500": -0.0018704933145333072,
+      "max_rho": 0.9283892361946697,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.004400680263011,
+      "omega_last_500": 0.0,
+      "max_rho": 1.004400680263011,
+      "escaped": true,
+      "escape_period": 0.19791666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.6286323008116288,
+      "omega_last_500": -0.0018715564696270182,
+      "max_rho": 0.685455838882237,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.6298659754230196,
+      "omega_last_500": -0.001871951349046168,
+      "max_rho": 0.6843196819664115,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.629355941219497,
+      "omega_last_500": -0.0018766321770489658,
+      "max_rho": 0.6681082868503087,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.6289655701270012,
+      "omega_last_500": -0.0018793884003123517,
+      "max_rho": 0.6777031930496841,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.6297439834259025,
+      "omega_last_500": -0.001881075538245886,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.6302040839288886,
+      "omega_last_500": -0.0018681751823049814,
+      "max_rho": 0.8812279616036943,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.6283381074308303,
+      "omega_last_500": -0.0018866962442509912,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.1,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.6301982654061377,
+      "omega_last_500": -0.0018734537219146535,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.48204010510861295,
+      "omega_last_500": -0.0001197051557268169,
+      "max_rho": 0.5245884653057885,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.4860460258022996,
+      "omega_last_500": -0.00013958209176417153,
+      "max_rho": 0.5351251285661666,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.4400564615108468,
+      "omega_last_500": -0.00014711811704630717,
+      "max_rho": 0.6482908921252135,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.48747217022403094,
+      "omega_last_500": -0.00012426029168662695,
+      "max_rho": 0.7995031237124116,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.4310458086295363,
+      "omega_last_500": -0.00016198767637390547,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S06",
+      "rho_mean_last_500": 1.0069699749949577,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0069699749949579,
+      "escaped": true,
+      "escape_period": 0.15625,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S07",
+      "rho_mean_last_500": 1.0015498585357692,
+      "omega_last_500": 0.0,
+      "max_rho": 1.001549858535769,
+      "escaped": true,
+      "escape_period": 0.9583333333333334,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.0129020399309727,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0129020399309727,
+      "escaped": true,
+      "escape_period": 0.07291666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.4803435652600674,
+      "omega_last_500": -0.00013485020333249876,
+      "max_rho": 0.5165922873974824,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.4577589203286389,
+      "omega_last_500": -0.00014969075302176654,
+      "max_rho": 0.5084265074588936,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.4635348379026584,
+      "omega_last_500": -0.0001490572644275985,
+      "max_rho": 0.5662217442775366,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.4326895957801254,
+      "omega_last_500": -0.0001514649587214067,
+      "max_rho": 0.6524166909841377,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.4460508120186445,
+      "omega_last_500": -0.00016131195803576582,
+      "max_rho": 0.8548549935157659,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.438627130470869,
+      "omega_last_500": -0.00015823653887516855,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.44556346589032914,
+      "omega_last_500": -0.0001434841700857448,
+      "max_rho": 0.924247901738668,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0147337825629636,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0147337825629639,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.44387901567648635,
+      "omega_last_500": -0.00015230841999622555,
+      "max_rho": 0.5227174098208759,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.474139968590419,
+      "omega_last_500": -0.00012436014014653585,
+      "max_rho": 0.5812433443659447,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.4803872372472745,
+      "omega_last_500": -0.00013846480657217332,
+      "max_rho": 0.55,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.48961296723084885,
+      "omega_last_500": -0.0001333239021348985,
+      "max_rho": 0.6522360497289411,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.4890192180599663,
+      "omega_last_500": -0.00013442197919565419,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.43102565285916333,
+      "omega_last_500": -0.0001568549814308658,
+      "max_rho": 0.864851534269864,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.49124783986099135,
+      "omega_last_500": -0.00011811348465972128,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.175,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.46518824814588733,
+      "omega_last_500": -0.0001299200196024718,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.6396010629740824,
+      "omega_last_500": -0.0017907209417897755,
+      "max_rho": 0.6915833785010634,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.6388944929100364,
+      "omega_last_500": -0.0018006243367440478,
+      "max_rho": 0.6899457484330547,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.6413015487983736,
+      "omega_last_500": -0.0017817477817381187,
+      "max_rho": 0.679866786435934,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.6420966802058895,
+      "omega_last_500": -0.0017777772521309946,
+      "max_rho": 0.7035260609442672,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.6397614396638589,
+      "omega_last_500": -0.0017952901587685716,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S06",
+      "rho_mean_last_500": 0.6419754937120186,
+      "omega_last_500": -0.0017828850857948852,
+      "max_rho": 0.9241179554492349,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.638645571576807,
+      "omega_last_500": -0.0017971537031145099,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.007565145084562,
+      "omega_last_500": 0.0,
+      "max_rho": 1.007565145084562,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.6394011202917272,
+      "omega_last_500": -0.0017951298460026045,
+      "max_rho": 0.6971301022079598,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.6408596029461017,
+      "omega_last_500": -0.0017858122735709757,
+      "max_rho": 0.6889596409628712,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.6412930228642807,
+      "omega_last_500": -0.0017863219749049471,
+      "max_rho": 0.6761831779669795,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.6386437154943483,
+      "omega_last_500": -0.001799218328895634,
+      "max_rho": 0.6850364702425099,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.6407262838584885,
+      "omega_last_500": -0.0017875947887037622,
+      "max_rho": 0.8754643323081036,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.6394511237506331,
+      "omega_last_500": -0.0017948248514624188,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.6411576846530017,
+      "omega_last_500": -0.0017846474240136641,
+      "max_rho": 0.9282843169541223,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.004189974098831,
+      "omega_last_500": 0.0,
+      "max_rho": 1.004189974098831,
+      "escaped": true,
+      "escape_period": 0.19791666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.6411245161584859,
+      "omega_last_500": -0.0017853039119908871,
+      "max_rho": 0.6889485019317477,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.6394133423608268,
+      "omega_last_500": -0.0017917084699747281,
+      "max_rho": 0.6864413488760561,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.6399359161934798,
+      "omega_last_500": -0.001794715946942846,
+      "max_rho": 0.6926735925765676,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.6407516599315045,
+      "omega_last_500": -0.0017846069030727728,
+      "max_rho": 0.6886518560508919,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.6398658224833602,
+      "omega_last_500": -0.001789873990248951,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.6387558899357998,
+      "omega_last_500": -0.0017956146626421855,
+      "max_rho": 0.8823320489424211,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.6419271967863666,
+      "omega_last_500": -0.0017781096393501012,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.175,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.6405425249237428,
+      "omega_last_500": -0.0017872198930488732,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.4819145347314095,
+      "omega_last_500": 4.014645066177142e-05,
+      "max_rho": 0.5307339603001473,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.48804751947767705,
+      "omega_last_500": 4.6140079000971043e-05,
+      "max_rho": 0.5370737923072598,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.45869033214194926,
+      "omega_last_500": 4.214793670300895e-05,
+      "max_rho": 0.6426535907828311,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.4930877289302067,
+      "omega_last_500": 3.617689370605213e-05,
+      "max_rho": 0.7909908412038039,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.4653935925713106,
+      "omega_last_500": 4.657900566246403e-05,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S06",
+      "rho_mean_last_500": 1.0029093621288945,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0029093621288945,
+      "escaped": true,
+      "escape_period": 0.15625,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.4717522556069012,
+      "omega_last_500": 4.239834399005858e-05,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.0131823877475945,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0131823877475945,
+      "escaped": true,
+      "escape_period": 0.07291666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.4800937690667653,
+      "omega_last_500": 4.719931869749225e-05,
+      "max_rho": 0.5257355812826462,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.4765550664117643,
+      "omega_last_500": 4.058790258512543e-05,
+      "max_rho": 0.5193163517857557,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.4811457672465217,
+      "omega_last_500": 4.7528047414744734e-05,
+      "max_rho": 0.5655871577047796,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.4582882315476052,
+      "omega_last_500": 4.19481070558632e-05,
+      "max_rho": 0.6516855754242848,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.5008871451513813,
+      "omega_last_500": 3.570617002938871e-05,
+      "max_rho": 0.8513083722846825,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.43637217119757676,
+      "omega_last_500": 5.458946181463008e-05,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.4324281027880422,
+      "omega_last_500": 4.9704523744264725e-05,
+      "max_rho": 0.9242044752935109,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0002782642663244,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0002782642663246,
+      "escaped": true,
+      "escape_period": 0.10416666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.4424249707119255,
+      "omega_last_500": 5.342254702037857e-05,
+      "max_rho": 0.517255926086319,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.4921860381374205,
+      "omega_last_500": 3.894205211856152e-05,
+      "max_rho": 0.5862980149046613,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.47981997207742727,
+      "omega_last_500": 4.065964527891971e-05,
+      "max_rho": 0.55,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.5012168444758737,
+      "omega_last_500": 3.943634253832263e-05,
+      "max_rho": 0.6521053362547714,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.4940589476237927,
+      "omega_last_500": 4.548462865117492e-05,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.4342705911145855,
+      "omega_last_500": 5.3978321887079956e-05,
+      "max_rho": 0.8704693996214213,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.501190771185899,
+      "omega_last_500": 3.57209514383087e-05,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.48345677330615117,
+      "omega_last_500": 4.088401587655451e-05,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.6530035124195811,
+      "omega_last_500": -0.001695620855405224,
+      "max_rho": 0.7096306392807342,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.6536715179088156,
+      "omega_last_500": -0.0016983209736103713,
+      "max_rho": 0.7086606544791818,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.6494675658607509,
+      "omega_last_500": -0.0017133790521847861,
+      "max_rho": 0.6853934610114233,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.6491745581866092,
+      "omega_last_500": -0.0017075107724859682,
+      "max_rho": 0.7006179974285126,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.6528496817364766,
+      "omega_last_500": -0.001710581404184526,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S06",
+      "rho_mean_last_500": 0.6489660994104024,
+      "omega_last_500": -0.0017230144465336288,
+      "max_rho": 0.918081252701601,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.6537062518000989,
+      "omega_last_500": -0.0016849470010695984,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.007695111073012,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0076951110730117,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.6532077995472175,
+      "omega_last_500": -0.0016891676079969465,
+      "max_rho": 0.6997141023098343,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.6499518276065988,
+      "omega_last_500": -0.0017205415538612784,
+      "max_rho": 0.7048684724884581,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.6494524655975723,
+      "omega_last_500": -0.0017289828815285479,
+      "max_rho": 0.6972831879293514,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.6535364706227682,
+      "omega_last_500": -0.001687499348305677,
+      "max_rho": 0.6988542847160656,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.651590087443126,
+      "omega_last_500": -0.0016971383468104223,
+      "max_rho": 0.8734922747781522,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.6532646235737712,
+      "omega_last_500": -0.001689887412032342,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.6494081411004162,
+      "omega_last_500": -0.0017094190561036276,
+      "max_rho": 0.9281806800491338,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0038318509978852,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0038318509978852,
+      "escaped": true,
+      "escape_period": 0.19791666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.6509901807069572,
+      "omega_last_500": -0.0017000600709093255,
+      "max_rho": 0.7077073121251595,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.6519491752262965,
+      "omega_last_500": -0.0016951510730829436,
+      "max_rho": 0.7064508802536693,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.6526212951034532,
+      "omega_last_500": -0.0017103352456282715,
+      "max_rho": 0.6967222333048887,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.6514477226080527,
+      "omega_last_500": -0.001700260188939866,
+      "max_rho": 0.7019639403089162,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.6511222845768498,
+      "omega_last_500": -0.0017066669510303729,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.6530531567250277,
+      "omega_last_500": -0.0016874140656525556,
+      "max_rho": 0.8830879222554561,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.6497887991190414,
+      "omega_last_500": -0.001708027794195461,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.6493816770650531,
+      "omega_last_500": -0.0017141413160649027,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.49168057643765956,
+      "omega_last_500": 0.00021203636462930852,
+      "max_rho": 0.5283845800200386,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.4976758594495134,
+      "omega_last_500": 0.0002009114064077376,
+      "max_rho": 0.5381212358436993,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.46457035443644323,
+      "omega_last_500": 0.0002327907816719165,
+      "max_rho": 0.6374776242418315,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.47853074707341536,
+      "omega_last_500": 0.00021680626479523982,
+      "max_rho": 0.7831649162350275,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.4930830551713612,
+      "omega_last_500": 0.0002074724188233898,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S06",
+      "rho_mean_last_500": 1.0144634635484164,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0144634635484164,
+      "escaped": true,
+      "escape_period": 0.16666666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.4480625641171799,
+      "omega_last_500": 0.0002493600520619573,
+      "max_rho": 0.9443958713797906,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.013451935923459,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0134519359234588,
+      "escaped": true,
+      "escape_period": 0.07291666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.49042508284513076,
+      "omega_last_500": 0.00020992248783105683,
+      "max_rho": 0.5427444597086161,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.4801539501512835,
+      "omega_last_500": 0.00021512720074459612,
+      "max_rho": 0.5300991240692589,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.48378534870171325,
+      "omega_last_500": 0.00021385246589082128,
+      "max_rho": 0.565004340242628,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.471220327209878,
+      "omega_last_500": 0.00022489139111485465,
+      "max_rho": 0.6510542595664612,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.49771176784172144,
+      "omega_last_500": 0.00019955224111926028,
+      "max_rho": 0.8480102233561817,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.44300552386227554,
+      "omega_last_500": 0.0002530382077463282,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.4427529320163973,
+      "omega_last_500": 0.0002532635425648673,
+      "max_rho": 0.9241612112463696,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0011202029705635,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0011202029705635,
+      "escaped": true,
+      "escape_period": 0.10416666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.45488774905129864,
+      "omega_last_500": 0.00024236230456016667,
+      "max_rho": 0.5367142005722222,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.4962967399854935,
+      "omega_last_500": 0.0002081474912316787,
+      "max_rho": 0.5894412508562403,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.4898614240693042,
+      "omega_last_500": 0.00020725386838922852,
+      "max_rho": 0.55,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.5052037868910336,
+      "omega_last_500": 0.00019331721465482983,
+      "max_rho": 0.6519749318756545,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.503647430535869,
+      "omega_last_500": 0.00019679073858564026,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.4473178815023604,
+      "omega_last_500": 0.00024991362989191157,
+      "max_rho": 0.8752036735111799,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.5025600464709007,
+      "omega_last_500": 0.0002036385599334842,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.325,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.4428691232553487,
+      "omega_last_500": 0.00025355804382004674,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.6592158945032236,
+      "omega_last_500": -0.0016470974382459377,
+      "max_rho": 0.7181801210834582,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.6591827308934328,
+      "omega_last_500": -0.0016434574562335976,
+      "max_rho": 0.7124284923619784,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.6649861325786607,
+      "omega_last_500": -0.0016195868940215743,
+      "max_rho": 0.7069491137003981,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.6636946465146479,
+      "omega_last_500": -0.0016183041874350576,
+      "max_rho": 0.6980169317558096,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.6593027877351664,
+      "omega_last_500": -0.0016498080575009467,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S06",
+      "rho_mean_last_500": 0.6650153798005352,
+      "omega_last_500": -0.0016126573559655675,
+      "max_rho": 0.912782638313882,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.6593350993464717,
+      "omega_last_500": -0.0016435981002022948,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.007802124261211,
+      "omega_last_500": 0.0,
+      "max_rho": 1.007802124261211,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.6590914488643269,
+      "omega_last_500": -0.001638282405625243,
+      "max_rho": 0.722133272483325,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.664740742710236,
+      "omega_last_500": -0.0016257995472993341,
+      "max_rho": 0.713458275635159,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.6650248933318664,
+      "omega_last_500": -0.001623271866401289,
+      "max_rho": 0.7077659812623123,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.6600771487913963,
+      "omega_last_500": -0.001633404588930809,
+      "max_rho": 0.7076394484254833,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.6602385699334868,
+      "omega_last_500": -0.0016326458435250624,
+      "max_rho": 0.8777289169410818,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.6590620687563667,
+      "omega_last_500": -0.0016390084445648283,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.665016715606241,
+      "omega_last_500": -0.0016092578523159945,
+      "max_rho": 0.9280783500430373,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0033308431307264,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0033308431307264,
+      "escaped": true,
+      "escape_period": 0.19791666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.660895657254217,
+      "omega_last_500": -0.0016293764182112183,
+      "max_rho": 0.716786503766232,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.6626845506080141,
+      "omega_last_500": -0.0016260554689865045,
+      "max_rho": 0.7179212933319166,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.6594460251239579,
+      "omega_last_500": -0.0016473868945062649,
+      "max_rho": 0.714961543536033,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.6605328475496246,
+      "omega_last_500": -0.0016385724264138981,
+      "max_rho": 0.7125791626116798,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.6637987344600368,
+      "omega_last_500": -0.0016258553631474909,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.6613007373470419,
+      "omega_last_500": -0.0016285806420390553,
+      "max_rho": 0.8835589232686348,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.6623081963315179,
+      "omega_last_500": -0.0016277362228069232,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.325,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.6650340187256563,
+      "omega_last_500": -0.001613478493872115,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.506189523613214,
+      "omega_last_500": 0.00036240329613251984,
+      "max_rho": 0.5489825652187958,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.5090620140519899,
+      "omega_last_500": 0.0003506517204146061,
+      "max_rho": 0.5379904911980745,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.4627426691418669,
+      "omega_last_500": 0.00042088113694005664,
+      "max_rho": 0.6328589466326561,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.4841735352003732,
+      "omega_last_500": 0.00038481532327588983,
+      "max_rho": 0.7761868813740029,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.5014472220651892,
+      "omega_last_500": 0.00037255622074554875,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S06",
+      "rho_mean_last_500": 1.009278989468374,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0092789894683742,
+      "escaped": true,
+      "escape_period": 0.16666666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.49160877571745343,
+      "omega_last_500": 0.00036506223766869883,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.0137106320813414,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0137106320813414,
+      "escaped": true,
+      "escape_period": 0.07291666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.5057110650408979,
+      "omega_last_500": 0.00036450920828409267,
+      "max_rho": 0.5501656841198113,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.47321965649346137,
+      "omega_last_500": 0.0003945228056136856,
+      "max_rho": 0.5370251148658747,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.4755798773264297,
+      "omega_last_500": 0.00040191900972973144,
+      "max_rho": 0.5645042806360797,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.4714209063816033,
+      "omega_last_500": 0.0003983033373747347,
+      "max_rho": 0.650534611358957,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.501274415644865,
+      "omega_last_500": 0.0003599813459810128,
+      "max_rho": 0.844739066495654,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.47131472389160783,
+      "omega_last_500": 0.00040388059493909215,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.46354005878740456,
+      "omega_last_500": 0.00041217952430823955,
+      "max_rho": 0.9241181123466456,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.001922880960718,
+      "omega_last_500": 0.0,
+      "max_rho": 1.001922880960718,
+      "escaped": true,
+      "escape_period": 0.10416666666666667,
+      "sign": 0
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.4785120872432916,
+      "omega_last_500": 0.0004055204017892741,
+      "max_rho": 0.5503996798239302,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.4889017377795812,
+      "omega_last_500": 0.00038743374408620207,
+      "max_rho": 0.590837855403298,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.505301616147072,
+      "omega_last_500": 0.0003438223206064802,
+      "max_rho": 0.55,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.5098392686604966,
+      "omega_last_500": 0.0003491151908232126,
+      "max_rho": 0.6518448703227495,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.5100569935277887,
+      "omega_last_500": 0.00034964885478073543,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.4717951278215178,
+      "omega_last_500": 0.0004150406147023412,
+      "max_rho": 0.8791211030897351,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.4892308891404793,
+      "omega_last_500": 0.00039002541400683815,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species1",
+      "nu": 2.4,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.4584110473183902,
+      "omega_last_500": 0.00042018084161292267,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": 1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S01",
+      "rho_mean_last_500": 0.675830764046476,
+      "omega_last_500": -0.001543839012676536,
+      "max_rho": 0.731094465366528,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S02",
+      "rho_mean_last_500": 0.6746240824280996,
+      "omega_last_500": -0.0015524851821805822,
+      "max_rho": 0.7285440927946301,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S03",
+      "rho_mean_last_500": 0.6695570770637357,
+      "omega_last_500": -0.0015716093371534229,
+      "max_rho": 0.716832122820897,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S04",
+      "rho_mean_last_500": 0.6728281467655471,
+      "omega_last_500": -0.0015606383230386911,
+      "max_rho": 0.7025541962408663,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S05",
+      "rho_mean_last_500": 0.6759016184489501,
+      "omega_last_500": -0.001543310988861144,
+      "max_rho": 0.7500000000000001,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S06",
+      "rho_mean_last_500": 0.6699725160562497,
+      "omega_last_500": -0.00157608828147111,
+      "max_rho": 0.9081005449469983,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S07",
+      "rho_mean_last_500": 0.6746696305187879,
+      "omega_last_500": -0.0015494935727136795,
+      "max_rho": 0.9199999999999999,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S08",
+      "rho_mean_last_500": 1.007886293669411,
+      "omega_last_500": 0.0,
+      "max_rho": 1.0078862936694108,
+      "escaped": true,
+      "escape_period": 0.11458333333333333,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S09",
+      "rho_mean_last_500": 0.6755935786176483,
+      "omega_last_500": -0.0015500336921994483,
+      "max_rho": 0.7235219342633085,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S10",
+      "rho_mean_last_500": 0.6693114463182065,
+      "omega_last_500": -0.0015707041308414145,
+      "max_rho": 0.7264620494568348,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S11",
+      "rho_mean_last_500": 0.6696449828142639,
+      "omega_last_500": -0.0015709865405350942,
+      "max_rho": 0.7168290597192348,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S12",
+      "rho_mean_last_500": 0.6729072672729908,
+      "omega_last_500": -0.0015627344331162745,
+      "max_rho": 0.723540966407579,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S13",
+      "rho_mean_last_500": 0.67593745404679,
+      "omega_last_500": -0.001548396230137952,
+      "max_rho": 0.8892016848323726,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S14",
+      "rho_mean_last_500": 0.675292902548087,
+      "omega_last_500": -0.0015512666312324317,
+      "max_rho": 0.85,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S15",
+      "rho_mean_last_500": 0.6699165404566081,
+      "omega_last_500": -0.0015767937305986779,
+      "max_rho": 0.9279773509916778,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S16",
+      "rho_mean_last_500": 1.0026918575062562,
+      "omega_last_500": 0.0,
+      "max_rho": 1.002691857506256,
+      "escaped": true,
+      "escape_period": 0.19791666666666666,
+      "sign": 0
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S17",
+      "rho_mean_last_500": 0.6756105413398428,
+      "omega_last_500": -0.0015499459791974027,
+      "max_rho": 0.7300311394196134,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S18",
+      "rho_mean_last_500": 0.6700229228683844,
+      "omega_last_500": -0.001572378111298681,
+      "max_rho": 0.7231684297635202,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S19",
+      "rho_mean_last_500": 0.67600453769313,
+      "omega_last_500": -0.0015437982065696328,
+      "max_rho": 0.7233302853621134,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S20",
+      "rho_mean_last_500": 0.675798323163673,
+      "omega_last_500": -0.0015446529882056504,
+      "max_rho": 0.7255368046803492,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S21",
+      "rho_mean_last_500": 0.6693434023555349,
+      "omega_last_500": -0.0015728857678683089,
+      "max_rho": 0.75,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S22",
+      "rho_mean_last_500": 0.6710513074845547,
+      "omega_last_500": -0.001570777249429356,
+      "max_rho": 0.8837940561618094,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S23",
+      "rho_mean_last_500": 0.6747084846444831,
+      "omega_last_500": -0.0015513230976610152,
+      "max_rho": 0.92,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    },
+    {
+      "species": "species2",
+      "nu": 2.4,
+      "start_id": "S24",
+      "rho_mean_last_500": 0.6704586741499856,
+      "omega_last_500": -0.0015717602946363825,
+      "max_rho": 0.96,
+      "escaped": false,
+      "escape_period": null,
+      "sign": -1
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "start_id": "S01",
+  "source_panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "initial_state_reused_from_terminal_checkpoint": true,
+  "sampling": {
+    "extra_periods": 1000,
+    "steps_per_primary_period": 96,
+    "sample_interval_tau": 0.06544984694978735,
+    "secondary_cycles_in_window": 3111.8029452860355
+  },
+  "species": {
+    "species1": {
+      "sample_count": 96001,
+      "mean_rho": 0.5487463372117867,
+      "std_rho_rf_resolved": 0.030101373085933986,
+      "min_rho": 0.4974254528350378,
+      "max_rho": 0.6017698963398287,
+      "mean_omega_instantaneous": 0.0015693307185637893,
+      "omega_from_unwrapped_angle": 0.001569278189610238,
+      "std_omega_instantaneous": 0.0672076593059288,
+      "mean_rf_torque_mode1": 0.0006747012616476997,
+      "mean_rf_torque_mode2": -0.0003238414273597139,
+      "mean_rf_torque_total": 0.0003508598342879858,
+      "mean_drag_torque": -0.00035507321210540146,
+      "mean_torque_residual": -4.213377817415593e-06,
+      "rho_reference_phase1_sampled_period_std_from_full_run": 0.02971389957942056
+    },
+    "species2": {
+      "sample_count": 96001,
+      "mean_rho": 0.765811451474559,
+      "std_rho_rf_resolved": 0.015596369601169224,
+      "min_rho": 0.7363348758295849,
+      "max_rho": 0.795949631866269,
+      "mean_omega_instantaneous": -0.0010520229765268363,
+      "omega_from_unwrapped_angle": -0.0010520319203069577,
+      "std_omega_instantaneous": 0.03443951156041095,
+      "mean_rf_torque_mode1": 9.529840433348501e-05,
+      "mean_rf_torque_mode2": -0.00017032875135087542,
+      "mean_rf_torque_total": -7.503034701739041e-05,
+      "mean_drag_torque": 7.256302299093253e-05,
+      "mean_torque_residual": -2.4673240264578816e-06,
+      "rho_reference_phase1_sampled_period_std_from_full_run": 0.015725597284337412
+    }
+  }
+}

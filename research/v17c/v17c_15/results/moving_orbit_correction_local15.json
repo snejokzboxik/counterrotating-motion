@@ -1,0 +1,411 @@
+{
+  "status": "computed reduced moving-orbit response; compared to frozen exact-RF panel",
+  "method": "co-rotating 2x2 susceptibility including Coriolis, centrifugal, drag, and DC Jacobian; mean RF force 1/2 Re[D f xi*]",
+  "parameters": {
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "nu": 3.1118029452860356,
+    "beta": 0.017273303124515367,
+    "species1": {
+      "alpha": 1.0,
+      "lambda": 0.20975541409005094,
+      "leading_rho": 0.5503691530067869,
+      "leading_omega": 0.001440054163088106
+    },
+    "species2": {
+      "alpha": 0.34126014359705537,
+      "lambda": 0.12617311138613094,
+      "leading_rho": 0.7663818561742767,
+      "leading_omega": -0.0010579232360122394
+    }
+  },
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "horizon_primary_periods": 15000,
+  "warning": "The corrected equilibria are asymptotic reduced-model predictions. Existing RF data are a fixed panel, not a probability estimate; this comparison does not establish full RF Floquet stability or validate omitted harmonics.",
+  "species": {
+    "species1": {
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "leading": {
+        "rho": 0.5503691530067869,
+        "omega": 0.001440054163088106
+      },
+      "moving_orbit_corrected": {
+        "rho": 0.551745266004148,
+        "omega": 0.0012771817038559458,
+        "balance_residual": [
+          -3.469446951953614e-18,
+          -1.6263032587282567e-19
+        ]
+      },
+      "moving_kinematic_only": {
+        "solver_success": true,
+        "solver_message": "The solution converged.",
+        "rho": 0.5505871636321064,
+        "omega": 0.0014730775036223582,
+        "balance_residual": [
+          0.0,
+          1.6263032587282567e-19
+        ],
+        "mode_responses": [
+          {
+            "k": 2,
+            "includes_slow_jacobian": false,
+            "carrier": 1.0,
+            "sigma": 0.9970538449927553,
+            "D_condition_number": 1.0058012543405848,
+            "micromotion_amplitude": 0.056803263492921814,
+            "micromotion_over_radius": 0.1031685212532068,
+            "micromotion_phasor": [
+              [
+                0.03930805690538363,
+                -0.0082572413096793
+              ],
+              [
+                0.0082572413096793,
+                0.03930805690538364
+              ]
+            ],
+            "mean_force_xy": [
+              -0.0029215280178647002,
+              0.0006137103620910321
+            ]
+          },
+          {
+            "k": -4,
+            "includes_slow_jacobian": false,
+            "carrier": 3.1118029452860356,
+            "sigma": 3.117695255300525,
+            "D_condition_number": 1.0018874780644285,
+            "micromotion_amplitude": 0.01578286518497539,
+            "micromotion_over_radius": 0.028665516066264943,
+            "micromotion_phasor": [
+              [
+                0.011134974645979697,
+                -0.0007495040740005645
+              ],
+              [
+                -0.0007495040740005645,
+                -0.011134974645979697
+              ]
+            ],
+            "mean_force_xy": [
+              -0.006590125706672267,
+              -0.0004435866467922373
+            ]
+          }
+        ]
+      },
+      "exact_rf_panel_15k": {
+        "rho": 0.5508577545439892,
+        "omega": 0.0015608216064741784,
+        "retained": 22
+      },
+      "errors": {
+        "same_convention_as_report_percent": {
+          "leading_radius": 0.0887770570957569,
+          "kinematic_only_radius": 0.04914588093514194,
+          "full_moving_radius": -0.16085529225946527,
+          "leading_abs_frequency": 8.386312576402965,
+          "kinematic_only_abs_frequency": 5.956516383968524,
+          "full_moving_abs_frequency": 22.208265414536864
+        },
+        "prediction_minus_exact_over_exact_percent": {
+          "leading_radius": -0.08869831334348266,
+          "kinematic_only_radius": -0.0491217396234811,
+          "full_moving_radius": 0.16111445338433672,
+          "leading_abs_frequency": -7.737427703789946,
+          "kinematic_only_abs_frequency": -5.621661212778184,
+          "full_moving_abs_frequency": -18.172474127838456
+        },
+        "leading_frequency_absolute": -0.00012076744338607236,
+        "corrected_frequency_absolute": -0.00028363990261823257
+      },
+      "mode_responses": [
+        {
+          "k": 2,
+          "includes_slow_jacobian": true,
+          "carrier": 1.0,
+          "sigma": 0.9974456365922881,
+          "D_condition_number": 1.0049452394537812,
+          "micromotion_amplitude": 0.055972202868882596,
+          "micromotion_over_radius": 0.10144573287278881,
+          "micromotion_phasor": [
+            [
+              0.03876092860667304,
+              -0.008002134749307239
+            ],
+            [
+              0.008002134749307237,
+              0.03876092860667304
+            ]
+          ],
+          "mean_force_xy": [
+            -0.0028808633099169836,
+            0.000594749848080837
+          ]
+        },
+        {
+          "k": -4,
+          "includes_slow_jacobian": true,
+          "carrier": 3.1118029452860356,
+          "sigma": 3.1169116721014594,
+          "D_condition_number": 1.0016337905784447,
+          "micromotion_amplitude": 0.015860550805532544,
+          "micromotion_over_radius": 0.028746147511872457,
+          "micromotion_phasor": [
+            [
+              0.01118986273670682,
+              -0.0007520025672161399
+            ],
+            [
+              -0.00075200256721614,
+              -0.01118986273670682
+            ]
+          ],
+          "mean_force_xy": [
+            -0.006650499920362461,
+            -0.00044693962125000634
+          ]
+        }
+      ],
+      "zero_orbit_speed_recovery_of_leading_formula": {
+        "analytic_mean_force_xy": [
+          -0.009507834541598214,
+          0.00016624404255599748
+        ],
+        "complex_response_mean_force_xy": [
+          -0.009507834541598212,
+          0.00016624404255599748
+        ],
+        "absolute_vector_error": 1.734723475976807e-18
+      },
+      "phase_quadrature_on_linear_response_cycle": {
+        "k2": {
+          "samples_per_cycle": 65536,
+          "exact_field_mean_on_linear_response_cycle": [
+            -0.0028808633099170144,
+            0.0005947498480807914
+          ],
+          "first_order_mean_force": [
+            -0.0028808633099169836,
+            0.000594749848080837
+          ],
+          "nonlinear_displacement_residual": [
+            -3.0791341698588326e-17,
+            -4.5644911461639737e-17
+          ],
+          "residual_norm": 5.505964643856837e-17
+        },
+        "k_minus4": {
+          "samples_per_cycle": 65536,
+          "exact_field_mean_on_linear_response_cycle": [
+            -0.006650499920362441,
+            -0.0004469396212496483
+          ],
+          "first_order_mean_force": [
+            -0.006650499920362461,
+            -0.00044693962125000634
+          ],
+          "nonlinear_displacement_residual": [
+            2.0816681711721685e-17,
+            3.5805776746333784e-16
+          ],
+          "residual_norm": 3.586623747737095e-16
+        }
+      }
+    },
+    "species2": {
+      "solver_success": true,
+      "solver_message": "The solution converged.",
+      "leading": {
+        "rho": 0.7663818561742767,
+        "omega": -0.0010579232360122394
+      },
+      "moving_orbit_corrected": {
+        "rho": 0.7662833082551475,
+        "omega": -0.0010694770940450292,
+        "balance_residual": [
+          8.673617379884035e-19,
+          5.421010862427522e-20
+        ]
+      },
+      "moving_kinematic_only": {
+        "solver_success": true,
+        "solver_message": "The solution converged.",
+        "rho": 0.7660384643499731,
+        "omega": -0.0010620771081635122,
+        "balance_residual": [
+          -1.734723475976807e-18,
+          -1.0842021724855044e-19
+        ],
+        "mode_responses": [
+          {
+            "k": 2,
+            "includes_slow_jacobian": false,
+            "carrier": 1.0,
+            "sigma": 1.002124154216327,
+            "D_condition_number": 1.0042150867265287,
+            "micromotion_amplitude": 0.027204148697180845,
+            "micromotion_over_radius": 0.035512771176921386,
+            "micromotion_phasor": [
+              [
+                0.019085242283642,
+                -0.002405489585063037
+              ],
+              [
+                0.0024054895850630373,
+                0.019085242283641994
+              ]
+            ],
+            "mean_force_xy": [
+              -0.0004840739658275536,
+              6.101231862256108e-05
+            ]
+          },
+          {
+            "k": -4,
+            "includes_slow_jacobian": false,
+            "carrier": 3.1118029452860356,
+            "sigma": 3.1075546368533815,
+            "D_condition_number": 1.0013668989239357,
+            "micromotion_amplitude": 0.014597939380230483,
+            "micromotion_over_radius": 0.01905640520625509,
+            "micromotion_phasor": [
+              [
+                0.010313809933782187,
+                -0.0004186188293159198
+              ],
+              [
+                -0.00041861882931592,
+                -0.010313809933782189
+              ]
+            ],
+            "mean_force_xy": [
+              -0.0040323493339136755,
+              -0.00016366574218386413
+            ]
+          }
+        ]
+      },
+      "exact_rf_panel_15k": {
+        "rho": 0.7656987649096684,
+        "omega": -0.00105391965234957,
+        "retained": 22
+      },
+      "errors": {
+        "same_convention_as_report_percent": {
+          "leading_radius": -0.08913197241101622,
+          "kinematic_only_radius": -0.044344958655961886,
+          "full_moving_radius": -0.07628292815227145,
+          "leading_abs_frequency": -0.3784380119828623,
+          "kinematic_only_abs_frequency": -0.7680662497328239,
+          "full_moving_abs_frequency": -1.4546774103049942
+        },
+        "prediction_minus_exact_over_exact_percent": {
+          "leading_radius": 0.08921148837022219,
+          "kinematic_only_radius": 0.044364632133730986,
+          "full_moving_radius": 0.07634116342711827,
+          "leading_abs_frequency": 0.37987560567298573,
+          "kinematic_only_abs_frequency": 0.7740111682855932,
+          "full_moving_abs_frequency": 1.4761506402102054
+        },
+        "leading_frequency_absolute": -4.003583662669447e-06,
+        "corrected_frequency_absolute": -1.5557441695459315e-05
+      },
+      "mode_responses": [
+        {
+          "k": 2,
+          "includes_slow_jacobian": true,
+          "carrier": 1.0,
+          "sigma": 1.00213895418809,
+          "D_condition_number": 1.0042202096010593,
+          "micromotion_amplitude": 0.027055781180771454,
+          "micromotion_over_radius": 0.03530780442337752,
+          "micromotion_phasor": [
+            [
+              0.018982887146902848,
+              -0.002378580084597554
+            ],
+            [
+              0.0023785800845975537,
+              0.018982887146902844
+            ]
+          ],
+          "mean_force_xy": [
+            -0.00048147785223214955,
+            6.0329791861036565e-05
+          ]
+        },
+        {
+          "k": -4,
+          "includes_slow_jacobian": true,
+          "carrier": 3.1118029452860356,
+          "sigma": 3.1075250369098555,
+          "D_condition_number": 1.0013756041890953,
+          "micromotion_amplitude": 0.014603256518691342,
+          "micromotion_over_radius": 0.019057255144893398,
+          "micromotion_phasor": [
+            [
+              0.010317576846133304,
+              -0.000418519413509724
+            ],
+            [
+              -0.00041851941350972403,
+              -0.010317576846133304
+            ]
+          ],
+          "mean_force_xy": [
+            -0.004036401089538505,
+            -0.00016373148868930072
+          ]
+        }
+      ],
+      "zero_orbit_speed_recovery_of_leading_formula": {
+        "analytic_mean_force_xy": [
+          -0.004518441126490085,
+          -0.00010229777390429322
+        ],
+        "complex_response_mean_force_xy": [
+          -0.004518441126490084,
+          -0.00010229777390429318
+        ],
+        "absolute_vector_error": 8.683141271781244e-19
+      },
+      "phase_quadrature_on_linear_response_cycle": {
+        "k2": {
+          "samples_per_cycle": 65536,
+          "exact_field_mean_on_linear_response_cycle": [
+            -0.0004814778522321288,
+            6.03297918609863e-05
+          ],
+          "first_order_mean_force": [
+            -0.00048147785223214955,
+            6.0329791861036565e-05
+          ],
+          "nonlinear_displacement_residual": [
+            2.076247160309741e-17,
+            -5.02663232218592e-17
+          ],
+          "residual_norm": 5.4385507971460997e-17
+        },
+        "k_minus4": {
+          "samples_per_cycle": 65536,
+          "exact_field_mean_on_linear_response_cycle": [
+            -0.00403640108953865,
+            -0.0001637314886889378
+          ],
+          "first_order_mean_force": [
+            -0.004036401089538505,
+            -0.00016373148868930072
+          ],
+          "nonlinear_displacement_residual": [
+            -1.448494102440634e-16,
+            3.6290957218521047e-16
+          ],
+          "residual_norm": 3.9074890816444446e-16
+        }
+      }
+    }
+  }
+}

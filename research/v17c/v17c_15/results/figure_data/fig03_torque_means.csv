@@ -1,0 +1,7 @@
+species,component,mean_torque
+species1,mean_rf_torque_mode1,0.0006747012616476997
+species1,mean_rf_torque_mode2,-0.0003238414273597139
+species1,mean_drag_torque,-0.00035507321210540146
+species2,mean_rf_torque_mode1,9.529840433348501e-05
+species2,mean_rf_torque_mode2,-0.00017032875135087542
+species2,mean_drag_torque,7.256302299093253e-05

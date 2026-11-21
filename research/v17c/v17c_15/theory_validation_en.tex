@@ -1,0 +1,93 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,booktabs,geometry}
+\geometry{margin=25mm}
+\title{Predictive Validity of Averaging and Nonlinear Stability of Counterrotating RF States}
+\author{V17C.15 theory validation}
+\date{21 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The exact RF panel preserves both rotation signs and predicts mean radii within about 0.09%, while one species has an 8.386% frequency error. For one frozen start, RK4/128 agrees with independent DOP853 within 0.00089% in radius and 0.00014% in frequency magnitude. These are numerical checks of the stated models and protocols, not proof of a global attractor or high capture probability.
+\end{abstract}
+
+\section{Dimensionless N-body equations}
+Let \(\tau=\Omega_*t\), \(\mathbf x_i=\mathbf r_i/R\), \(\mu_i=m_i/m_*\), \(Q_i=q_i/q_*\), \(\lambda_i=\gamma_i/(m_i\Omega_*)\), and \(\kappa=q_*^2/(4\pi\varepsilon m_*R^3\Omega_*^2)\). Then
+\begin{equation}
+\mathbf x_i'=\mathbf u_i,\qquad
+\mu_i\mathbf u_i'=-Q_i\nabla\phi(\mathbf x_i,\tau)-\mu_i\lambda_i\mathbf u_i
++\kappa\sum_{j\ne i}Q_iQ_j\frac{\mathbf x_i-\mathbf x_j}{|\mathbf x_i-\mathbf x_j|^3}.
+\label{eq:nbody}
+\end{equation}
+All frequencies are dimensionless, \(\nu_\ell=\omega_\ell/\Omega_*\). The pair force contains the signed product (Q_iQ_j), and the acceleration of particle (i) is divided by \(\mu_i\). The executable model in `numerical/general_nbody.py` currently covers a finite family of signed planar RF harmonics and DC terms of orders two and four; a generic three-dimensional MFS/FEM field adapter remains future work.
+
+\section{Averaging on a moving orbit}
+For one fast force,
+\[
+\mathbf X''+\lambda\mathbf X'=\mathbf F_s(\mathbf X)+\operatorname{Re}\{\mathbf f(\mathbf X)e^{-i\nu\tau}\},
+\]
+the leading local displacement and mean force are
+\[
+\widehat{\boldsymbol\xi}=\frac{\widehat{\mathbf f}}{-\nu^2-i\lambda\nu},\qquad
+\Delta\overline{\mathbf F}=\frac12\operatorname{Re}[(D\mathbf f)\widehat{\boldsymbol\xi}^{*}].
+\]
+This asymptotic approximation requires small micromotion, slow envelope variation and no nearby resonance. The exact transformation \(\mathbf x=R_z(\Omega\tau)\mathbf y\) adds Coriolis, centrifugal and rotational drag terms. For azimuthal index (k), the co-rotating frequency is \(\sigma=\nu-k\Omega\), but the response is matrix-valued:
+\[
+\mathcal D(\sigma)=-\sigma^2I-i\sigma(\lambda I+2\Omega J_z)
+-\Omega^2P_{xy}+\lambda\Omega J_z-A_s.
+\]
+The moving-orbit correction is derived in `GENERAL_N_PARTICLE_THEORY_RU.md`; its quantitative improvement has not yet been established.
+
+\section{Regular rings and stability}
+A ring of (N_a) identical particles of species (s_a) is
+\[
+\mathbf x_{aj}=R_a\mathbf e_r(\Theta_a+2\pi j/N_a)+Z_a\mathbf e_z.
+\]
+Its exact point-charge Coulomb energy and outward self-force per particle are
+\[
+U_{aa}=\frac{\kappa Q_a^2N_a}{4R_a}\sum_{j=1}^{N_a-1}\csc\frac{\pi j}{N_a},\quad
+F^{\mathrm{self}}_{R,a}=\frac{\kappa Q_a^2}{4R_a^2}\sum_{j=1}^{N_a-1}\csc\frac{\pi j}{N_a}.
+\]
+For multiple rings, a finite double sum over all inter-ring pairs determines the mutual energy; its derivatives produce radial/axial forces and exchange torque, while the total internal torque is zero. With cyclic symmetry, internal deformations decompose into discrete Fourier modes. Exact RF stability requires Floquet multipliers for periodic motion or QR Lyapunov exponents for incommensurate drives. A local spectrum does not determine the global loading basin.
+
+For axial perturbations of a planar equal-charge ring, the exact weighted-Laplacian spectrum is
+\[
+\ell_m=\sum_{j=1}^{N-1}\frac{1-\cos(2\pi mj/N)}{[2R\sin(\pi j/N)]^3}.
+\]
+The linear quadrupole buckling boundary is \((Q/\mu)2\beta_2=(\kappa Q^2/\mu)\max_m\ell_m\). This is a local criterion for the given planar ring and does not determine its nonlinear post-buckling branch. Direct matrix sums and the Fourier spectrum were compared for (N=2,3,6,8,12,16,24,32); the maximum spectral discrepancy was (1.45\times10^{-12}\).
+
+\section{Direct Local15 RF comparison}
+We performed 48 integrations: 24 frozen initial states per species, shared coordinates/velocities/RF phases, seed 15152026, RK4/96, and a horizon of (15{,}000) primary RF periods. The model contains only ideal (k=+2,-4) modes, linear drag, and DC quadrupole; there is no Coulomb coupling, real-electrode field, or higher MFS spectrum. Escape is registered at \(\rho\ge1\).
+
+\begin{center}
+\begin{tabular}{lrrrrrr}
+\toprule
+species & \(\rho_\mathrm{lead}\) & \(\rho_\mathrm{RF}\) & radius error & \(\omega_\mathrm{lead}\) & \(\omega_\mathrm{RF}\) & absolute-frequency error\\
+\midrule
+1 & 0.55036915 & 0.55085775 & +0.0888\% & +0.00144005 & +0.00156082 & +8.39\%\\
+2 & 0.76638186 & 0.76569876 & -0.0891\% & -0.00105792 & -0.00105392 & -0.38\%\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For each species, 22 of 24 starts remained within the boundary; S08 and S16 escaped after (0.073) and (0.104) periods. All 22 retained pairs counterrotated. The frozen covering panel is not iid, so (22/24) is not a capture-probability estimate.
+
+For S01, RK4/64, /96 and /128 were compared with DOP853 over 15,000 periods and the final 500-period window. DOP853 used rtol=2e-11, atol=2e-13 and maximum step T1/96. RK4/128 errors relative to DOP853 were -0.000405% in radius and +0.000883% in frequency for species 1; +0.000121% and -0.000139% for species 2. DOP853 was not run for the full 24-start panel.
+
+\section{Basins and physical drag}
+For a structural class (S), initial-state/loading measure \(\mu_\mathrm{load}\) and protocol \(\mathcal P_\mathrm{load}\),
+\[
+P_S(\mu_\mathrm{load})=\int\mathbf 1_{B_S}(X_0,\boldsymbol\psi_0;\mathcal P_\mathrm{load})\,d\mu_\mathrm{load}.
+\]
+Existence, local stability and (P_S) are distinct. With Cunningham slip factor (C_c\ge1\),
+\[
+\gamma=\frac{6\pi\eta a}{C_c},\qquad
+\lambda=\frac{6\pi\eta a}{C_cm\Omega_*}.
+\]
+Archived V17C.12B multiplied the Stokes coefficient by C_c, so the old-to-corrected drag ratio is C_c^2. A paired Local15 test with C_c=1.0027476353, 24 frozen starts per species, RK4/96 and 3,000 periods retained the same 22/24 starts for both conventions; every retained rotation sign matched. This isolates the factor in the ideal model and is not a rerun of the physical V17C.12B/MFS panel. Historical outcomes remain immutable.
+
+\section{Scope of conclusions}
+We establish identities for the stated dimensionless model, exact symmetric-ring sums, and numerical predictive errors for a concrete Local15 panel. Full nonautonomous stability, global basins, MFS/FEM corrections, a universal collective-transition threshold, and electrode breakdown safety have not been established. The finite cases (N=1,2,3,6) are checks of formulas, not a proof for arbitrary (N).
+
+\end{document}

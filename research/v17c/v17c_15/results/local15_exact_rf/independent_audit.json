@@ -1,0 +1,170 @@
+{
+  "status": "completed exact ideal two-mode RF audit; leading averaging comparison",
+  "source_parameters": {
+    "A": 0.03716194907442204,
+    "B": 0.1626938199343468,
+    "nu": 3.1118029452860356,
+    "beta": 0.017273303124515367,
+    "species": {
+      "species1": {
+        "alpha": 1.0,
+        "lambda": 0.20975541409005094
+      },
+      "species2": {
+        "alpha": 0.34126014359705537,
+        "lambda": 0.12617311138613094
+      }
+    }
+  },
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "panel_size_per_species": 24,
+  "panel_seed": 15152026,
+  "panel_is_iid_probability_sample": false,
+  "protocol": {
+    "periods": 15000,
+    "steps_per_primary_rf_period": 96,
+    "secondary_frequency_ratio": 3.1118029452860356,
+    "escape_radius_over_R": 1.0,
+    "classification_windows": "last 500 primary periods at 5k, 10k, and final requested horizon",
+    "initial_panel": "24 frozen starts shared between species; no postselection"
+  },
+  "horizons": {
+    "5000": {
+      "species1": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.546317452719427,
+        "mean_late_omega": 0.0015868347120078605,
+        "relative_rho_error_percent": -0.736178665759987,
+        "relative_abs_omega_error_percent": 10.192710293965108
+      },
+      "species2": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.7656998998451242,
+        "mean_late_omega": -0.0010544143402085203,
+        "relative_rho_error_percent": -0.0889838823372912,
+        "relative_abs_omega_error_percent": -0.33167773277630563
+      }
+    },
+    "10000": {
+      "species1": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.5500077608808797,
+        "mean_late_omega": 0.001566347879229748,
+        "relative_rho_error_percent": -0.06566358669138357,
+        "relative_abs_omega_error_percent": 8.770067083505602
+      },
+      "species2": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.7659264306140479,
+        "mean_late_omega": -0.0010535821355330795,
+        "relative_rho_error_percent": -0.05942541000412886,
+        "relative_abs_omega_error_percent": -0.41034172720539863
+      }
+    },
+    "15000": {
+      "species1": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.5508577545439892,
+        "mean_late_omega": 0.0015608216064741784,
+        "relative_rho_error_percent": 0.08877705709576539,
+        "relative_abs_omega_error_percent": 8.38631257640297
+      },
+      "species2": {
+        "retained": 22,
+        "escaped_by_horizon": 2,
+        "mean_late_rho": 0.7656987649096684,
+        "mean_late_omega": -0.00105391965234957,
+        "relative_rho_error_percent": -0.08913197241101804,
+        "relative_abs_omega_error_percent": -0.37843801198285887
+      }
+    }
+  },
+  "leading_roots": {
+    "species1": {
+      "rho": 0.5503691530067869,
+      "omega": 0.001440054163088106
+    },
+    "species2": {
+      "rho": 0.7663818561742767,
+      "omega": -0.0010579232360122394
+    }
+  },
+  "species": {
+    "species1": {
+      "runs": 24,
+      "retained": 22,
+      "escaped": 2,
+      "escape_ids": [
+        "S08",
+        "S16"
+      ],
+      "rotation_signs": {
+        "positive": 22,
+        "negative": 0
+      },
+      "mean_late_rho": 0.5508577545439892,
+      "sd_across_retained_start_rho": 0.005917081064897597,
+      "mean_late_omega": 0.0015608216064741784,
+      "sd_across_retained_start_omega": 3.220700234980715e-05,
+      "mean_sampled_rho_std": 0.029341236472584784,
+      "max_late_rho_std": 0.03064483629043252,
+      "leading_rho": 0.5503691530067869,
+      "leading_omega": 0.001440054163088106,
+      "relative_rho_error_percent": 0.08877705709576539,
+      "relative_abs_omega_error_percent": 8.38631257640297,
+      "sign_agreement": true
+    },
+    "species2": {
+      "runs": 24,
+      "retained": 22,
+      "escaped": 2,
+      "escape_ids": [
+        "S08",
+        "S16"
+      ],
+      "rotation_signs": {
+        "positive": 0,
+        "negative": 22
+      },
+      "mean_late_rho": 0.7656987649096684,
+      "sd_across_retained_start_rho": 0.0008334334893195169,
+      "mean_late_omega": -0.00105391965234957,
+      "sd_across_retained_start_omega": 3.910188943916099e-06,
+      "mean_sampled_rho_std": 0.015659031452369524,
+      "max_late_rho_std": 0.015887596107181115,
+      "leading_rho": 0.7663818561742767,
+      "leading_omega": -0.0010579232360122394,
+      "relative_rho_error_percent": -0.08913197241101804,
+      "relative_abs_omega_error_percent": -0.37843801198285887,
+      "sign_agreement": true
+    }
+  },
+  "paired_start_outcomes": {
+    "both_retained": 22,
+    "species1_only_retained": 0,
+    "species2_only_retained": 0,
+    "both_escaped": 2,
+    "counterrotating_retained_pairs": 22,
+    "same_sign_retained_pairs": 0
+  },
+  "trajectory_accounting": {
+    "unique_frozen_initial_states": 24,
+    "species_runs_full_horizon": 48,
+    "full_horizon_primary_periods_per_run": 15000,
+    "full_horizon_integrations_primary_periods": 720000,
+    "separate_benchmark_runs": 48,
+    "benchmark_primary_periods_per_run": 100,
+    "benchmark_not_pooled_with_final_ensemble": true
+  },
+  "limitations": [
+    "The panel is a fixed coverage panel, not an iid draw; no capture probability or binomial CI is claimed.",
+    "Escape is defined by first crossing rho=1 in the ideal normalized aperture; it is a model classification.",
+    "The measured orbit radius and angular frequency are sampled at the primary RF phase once per primary period; high-frequency micromotion is audited separately.",
+    "No Coulomb interaction, MFS higher harmonics, field boundary solution, or physical Cunningham drag is included."
+  ]
+}
