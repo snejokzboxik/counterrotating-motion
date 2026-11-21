@@ -22,6 +22,7 @@
   },
   "compute_inventory": {
     "archived_trajectory_horizon_records": 584,
+    "archived_trajectory_horizon_records_definition": "initial-condition trajectory records from the campaigns through the QR panel; resumed sign-transition segments are counted separately",
     "conditional_qr_trajectories": 44,
     "conditional_qr_particle_periods": 940000,
     "conditional_qr_horizons": [
@@ -37,9 +38,9 @@
     "conditional_qr_panel_workers": 11,
     "conditional_qr_extension_workers": 8,
     "full_integrations_from_initial_state": 656,
-    "continuation_segments": 32,
-    "total_solver_job_segments": 688,
-    "total_particle_periods": 4451000,
+    "continuation_segments": 152,
+    "total_solver_job_segments": 808,
+    "total_particle_periods": 8939000,
     "archived_baseline_particle_periods": 1135000,
     "repeated_failed_export_runs": 96,
     "repeated_failed_export_periods": 288000,
@@ -52,6 +53,17 @@
       2.325,
       2.4
     ],
+    "distinct_exact_rf_sign_scan_nu_values": [
+      2.1,
+      2.175,
+      2.2125,
+      2.23125,
+      2.240625,
+      2.25,
+      2.325,
+      2.4
+    ],
+    "base_local15_nu": 3.1118029452860356,
     "coarse_sign_scan_species": [
       "species1",
       "species2"
@@ -66,7 +78,11 @@
     "long_species1_window_horizons": [
       5000,
       10000,
-      15000
+      15000,
+      20000,
+      30000,
+      40000,
+      50000
     ],
     "drag_conventions_in_paired_check": [
       "legacy_multiply",
@@ -82,7 +98,31 @@
       24,
       32
     ],
-    "ring_checks_are_trajectories": false
+    "ring_checks_are_trajectories": false,
+    "sign_transition_extension_frequency_species_ensembles": 5,
+    "sign_transition_extension_starts_per_ensemble": 24,
+    "sign_transition_extension_segments": 120,
+    "sign_transition_extension_particle_periods": 4488000,
+    "sign_transition_extension_source_horizons": {
+      "species1": 15000,
+      "species2_control": 3000
+    },
+    "sign_transition_extension_target_horizon": 50000,
+    "sign_transition_extension_windows": [
+      5000,
+      10000,
+      15000,
+      20000,
+      30000,
+      40000,
+      50000
+    ],
+    "sign_transition_extension_worker_count_history": [
+      5,
+      1,
+      2
+    ],
+    "inventory_policy": "continuation segments and particle-periods count nominal resumed intervals; unreconstructable repeated work during checkpoint recovery is excluded; static ring checks are not trajectories"
   },
   "artifacts": [
     {
@@ -112,8 +152,8 @@
     },
     {
       "path": "EXPERIMENT_LOG.md",
-      "bytes": 12502,
-      "sha256": "a367a9d15d048e32dc92fb05998b46339cf6d435b51ceb07d0e903e2d3db5ebb"
+      "bytes": 14069,
+      "sha256": "007402a7f809dcf78e11dcd4774eb83e245118d70418a66019cf60d9cbbbcf26"
     },
     {
       "path": "FIG01_AUDIT_RU.md",
@@ -147,8 +187,8 @@
     },
     {
       "path": "FIG08_AUDIT_RU.md",
-      "bytes": 5199,
-      "sha256": "de95e0ea5db0aad6b988bcdf8f6f56c3c92f93dd3c373f7eef2c028cd85b7366"
+      "bytes": 6127,
+      "sha256": "adde64ab201d7ac91ac92d3e3b8758775243cc4f5f66bba82249687d57afb500"
     },
     {
       "path": "FIG09_AUDIT_RU.md",
@@ -247,18 +287,18 @@
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.pdf",
-      "bytes": 20189,
-      "sha256": "53bbcde0751c716212140b3775b6bed1662533d4579e0bb0b9f6eb457b509bde"
+      "bytes": 25648,
+      "sha256": "ec5b61d84ae35f4262d0001d41ad2428dd2c6f4aaedf85c135b7e5c2aacfbf2e"
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.png",
-      "bytes": 395982,
-      "sha256": "62b03e54d29daf7163eff82eb43643e64f95a8aba369a7c1161f3b830db9274c"
+      "bytes": 441311,
+      "sha256": "9a336ef70d8ca429b1768af5a90f9b9611913a71691a79b061b2f5018fb83c98"
     },
     {
       "path": "figures/FIG08_LOCAL15_ROTATION_SIGN_SCREEN.svg",
-      "bytes": 82772,
-      "sha256": "9470582b436c1fc0c368b7f44ccace90745767238ea082860eca29a606d94126"
+      "bytes": 120211,
+      "sha256": "522cd11c1f84adb73624e8a285ad6b99b6a846d4b84a17ae65b8061394ec9eea"
     },
     {
       "path": "figures/FIG09_NONAUTONOMOUS_QR.pdf",
@@ -311,6 +351,11 @@
       "sha256": "ab3a14a5be7edc39439c155c631e86b1081ea0ba2129b88f2b90df43a2f99054"
     },
     {
+      "path": "numerical/audit_sign_transition_50000.py",
+      "bytes": 6756,
+      "sha256": "3902ad5c0fe8b78c58d239134466ccc667abca713a3e280061209850d3d5ed3d"
+    },
+    {
       "path": "numerical/check_collective_rings.py",
       "bytes": 1334,
       "sha256": "3a137f7e3f7dfb227646477f099cf6badcd87d1e0092fb15ab0929a77de008d1"
@@ -329,6 +374,11 @@
       "path": "numerical/cunningham_paired_local15.py",
       "bytes": 8293,
       "sha256": "7d56ffa28fb3c26c173fb836afb26fafca94e7466d504fb565b6771937f5ce04"
+    },
+    {
+      "path": "numerical/extend_rotation_transition.py",
+      "bytes": 10942,
+      "sha256": "7315639f208e3f479705bfbc2d3595e72bb18e2f64328f82d95c941c833f7b33"
     },
     {
       "path": "numerical/freeze_local15_panel.py",
@@ -377,8 +427,8 @@
     },
     {
       "path": "numerical/make_fig08_rotation_sign.py",
-      "bytes": 6051,
-      "sha256": "dc2f1655c619a20acb8a37e65fbae7629bdf9730fc9dcc014f975feaf215f929"
+      "bytes": 8583,
+      "sha256": "c3cf990e9429f207b5cf290adbaa5887f7fae48950722d5fa14b75af4cde9dc9"
     },
     {
       "path": "numerical/make_fig09_nonautonomous_stability.py",
@@ -432,8 +482,8 @@
     },
     {
       "path": "numerical/write_manifest.py",
-      "bytes": 4681,
-      "sha256": "1a1a93332e80c32d32bf9532145081cf0d37177327d619a165381ca66ae93db4"
+      "bytes": 5876,
+      "sha256": "4530abe8b3778f944abfddb8993756f5b6170376ecb7923371c6ae32a6b7a59d"
     },
     {
       "path": "NUMERICAL_CONVERGENCE_RU.md",
@@ -442,8 +492,8 @@
     },
     {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 7295,
-      "sha256": "27ba431fdd19ab2d89d9451b64ba2dc7b22bc947f968c71e7ce22c84e7289b28"
+      "bytes": 7763,
+      "sha256": "6be9c34b9c457d928a75cef809022b8260413077acacf15a755b104a198012bb"
     },
     {
       "path": "PHYSICAL_SCALING_RU.md",
@@ -452,13 +502,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4573,
-      "sha256": "3c8ae37b279ca00e3768402a08d72427dffa16286aa3c2f8b3068f46faafcc6e"
+      "bytes": 4782,
+      "sha256": "c5149e2c2ef38f09e1cd427ddad888d96d0ea500e9cc57483d21a5521c5d89f4"
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 18360,
-      "sha256": "ea96628812beafdebcf5e2d2e22cf168b6a2406663ecd0b6b7c4db96429c792a"
+      "bytes": 20272,
+      "sha256": "20ca12484b8f3378d9378e64569b1d93c385ddd19e8b88d3ef51d02a5f677934"
     },
     {
       "path": "requirements.txt",
@@ -537,8 +587,8 @@
     },
     {
       "path": "results/figure_data/fig08_rotation_sign.csv",
-      "bytes": 63320,
-      "sha256": "07eff105e8614e3420fe235356ba392a708958e1e0a706b8591e73e1087ba4bd"
+      "bytes": 95477,
+      "sha256": "983ed42d074219bcd89c18b75da936737924dfdfc4a131f83409bcf76ccae9dd"
     },
     {
       "path": "results/figure_data/fig09_conditional_qr.csv",
@@ -891,6 +941,31 @@
       "sha256": "df09d09e9da2cf27ad761c9a3ef5b698ca64e22af50c81aad19358e3f5ecaa89"
     },
     {
+      "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.212_species1.npz",
+      "bytes": 15850268,
+      "sha256": "159d6bf71a9047287ac20bd7c8bb887426ef921c64e77a0331ac820b4618c5e6"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.231_species1.npz",
+      "bytes": 16057257,
+      "sha256": "7c37c3f4e788ca041286733f362138917d768afc69046e3cfc98ff248ea3248e"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.241_species1.npz",
+      "bytes": 15962901,
+      "sha256": "1c276687e2cba20bd07c69c4c7e2fd8815535b580e6b44092bb5e4e2981966a2"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.250_species1.npz",
+      "bytes": 15604410,
+      "sha256": "91ed9810e5a4e86cbe0c049d3e1bb4a5e09a1003095cf47e62f452abcaab3883"
+    },
+    {
+      "path": "results/rotation_sign_scan/extended_sign_transition_50000_checkpoints/nu_2.250_species2.npz",
+      "bytes": 15673598,
+      "sha256": "9ac244f53b2e78eeafbf7ddd1e37165dee610803762c457d7ad50a9ca23a5599"
+    },
+    {
       "path": "results/rotation_sign_scan/local15_sign_refinement_15000p_species1_2p212500_2p231250_2p240625.csv",
       "bytes": 6496,
       "sha256": "9fc3442a3f71338b830caf0b66a4effde09856f244c5c85f618145ad0e00da5a"
@@ -924,6 +999,21 @@
       "path": "results/rotation_sign_scan/local15_sign_trajectory_windows.csv",
       "bytes": 22451,
       "sha256": "08ab3a6c215fc8fcd36f788210591b87fcc03ed53fff4b62f8579d82ed26089f"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_50000.csv",
+      "bytes": 82658,
+      "sha256": "ffd9eee1b39aacfe311f8208bdbc5308f132dac7812519b6699821575f9d3817"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_50000.json",
+      "bytes": 282325,
+      "sha256": "64d4ab9820f892caa01f19f62fc66857a632c3e6bf1dece0194cfd49ddbcb26d"
+    },
+    {
+      "path": "results/rotation_sign_scan/local15_sign_transition_50000_audit.json",
+      "bytes": 2215,
+      "sha256": "87adeb909913f33d14bb7787779937fdb71557efe0347cb785b0280b47191642"
     },
     {
       "path": "results/rotation_sign_scan/local15_sign_window_audit.csv",
@@ -1002,18 +1092,18 @@
     },
     {
       "path": "ROTATION_SIGN_TRANSITIONS_RU.md",
-      "bytes": 8777,
-      "sha256": "fcd3f0bb863c4e9560ba1c30025489e8541e3656468172f94c72ef276c70237d"
+      "bytes": 12555,
+      "sha256": "5ff2feb4589e8c4b62d28641cbec4c96291cf036f624dee058219aa6ead402b4"
     },
     {
       "path": "SCIENTIFIC_CLAIMS_RU.md",
-      "bytes": 4493,
-      "sha256": "24771c6a6f0e41b54d0e7397b471c12694ab028bd101a8c49a924abebc793e0b"
+      "bytes": 4659,
+      "sha256": "200c54f3f1a3bfaf9b29d935b4916addb0650209effdfaabe745ce90aa8e0fff"
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 11237,
-      "sha256": "13d99f15f501412b01ba039de8b81688f3cfbda2190c9bdb2ba20c73e94928ab"
+      "bytes": 12810,
+      "sha256": "972d39a58f318046b691379901e05ba18bea0981459ee388a2ec95125d66196c"
     },
     {
       "path": "tests/test_collective_rings.py",
@@ -1042,17 +1132,17 @@
     },
     {
       "path": "THEORY_VALIDATION_RU.md",
-      "bytes": 7807,
-      "sha256": "b0ee45b765299a586a8fb5079f2bf87b829a388b01d7e1db1e5f90badd88ccd3"
+      "bytes": 8077,
+      "sha256": "d2d4199dd371c80518d94dc790e213dbe1641a53fdb958f151b0b435e01b2093"
     },
     {
       "path": "theory_validation_ru.tex",
-      "bytes": 13493,
-      "sha256": "dd4e9bb46d37e627890ac33c9802d656a3455cd1f61d86ba1b191983b8bb29e2"
+      "bytes": 13863,
+      "sha256": "9b4a8406c2b7c2a386f16a0c623c551d5de0b2bf28d18e4872dc5ed4657c5fde"
     }
   ],
   "unresolved": [
-    "exact-RF continuation beyond 15,000 periods around the mixed-sign rotation-sign transition and long-term branch stability",
+    "exact-RF continuation beyond 50,000 periods around the mixed-sign rotation-sign transition, individual transition points, and long-term branch stability",
     "quantitative error map versus epsilon_mu over RF and drag parameters",
     "independent numerical validation of moving-orbit and higher-order averaging corrections",
     "full MFS higher-spatial-harmonic comparison and real-electrode transfer validation",

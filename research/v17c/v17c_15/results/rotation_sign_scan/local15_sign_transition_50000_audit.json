@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "input": "results/rotation_sign_scan/local15_sign_transition_50000.json",
+  "panel_sha256": "9aeefa9546dc320e5158a18ffdecd3a7d5fe55a8deaa4fe7e876015d188f8761",
+  "ensembles_checked": 5,
+  "trajectory_records_checked": 120,
+  "trajectory_window_rows_recomputed": 840,
+  "csv_rows_checked": 840,
+  "nominal_continuation_particle_periods": 4488000,
+  "checks": [
+    "panel SHA256 matches the archived fixed-start panel",
+    "all checkpoints reach the exact target step and have finite histories",
+    "JSON window means, rotation signs, escape counts, and cumulative means recompute from NPZ arrays",
+    "CSV row count and nominal trajectory/particle-period inventory match the raw ensembles"
+  ],
+  "ensembles": [
+    {
+      "species": "species1",
+      "nu": 2.2125,
+      "starts": 24,
+      "step": 4800000,
+      "checkpoint_sha256": "159d6bf71a9047287ac20bd7c8bb887426ef921c64e77a0331ac820b4618c5e6",
+      "recomputed_sign_counts_match": true,
+      "recomputed_cumulative_summary_match": true
+    },
+    {
+      "species": "species1",
+      "nu": 2.23125,
+      "starts": 24,
+      "step": 4800000,
+      "checkpoint_sha256": "7c37c3f4e788ca041286733f362138917d768afc69046e3cfc98ff248ea3248e",
+      "recomputed_sign_counts_match": true,
+      "recomputed_cumulative_summary_match": true
+    },
+    {
+      "species": "species1",
+      "nu": 2.240625,
+      "starts": 24,
+      "step": 4800000,
+      "checkpoint_sha256": "1c276687e2cba20bd07c69c4c7e2fd8815535b580e6b44092bb5e4e2981966a2",
+      "recomputed_sign_counts_match": true,
+      "recomputed_cumulative_summary_match": true
+    },
+    {
+      "species": "species1",
+      "nu": 2.25,
+      "starts": 24,
+      "step": 4800000,
+      "checkpoint_sha256": "91ed9810e5a4e86cbe0c049d3e1bb4a5e09a1003095cf47e62f452abcaab3883",
+      "recomputed_sign_counts_match": true,
+      "recomputed_cumulative_summary_match": true
+    },
+    {
+      "species": "species2",
+      "nu": 2.25,
+      "starts": 24,
+      "step": 4800000,
+      "checkpoint_sha256": "9ac244f53b2e78eeafbf7ddd1e37165dee610803762c457d7ad50a9ca23a5599",
+      "recomputed_sign_counts_match": true,
+      "recomputed_cumulative_summary_match": true
+    }
+  ]
+}
