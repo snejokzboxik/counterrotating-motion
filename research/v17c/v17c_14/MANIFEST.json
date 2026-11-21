@@ -1,6 +1,6 @@
 {
   "project": "V17C.14",
-  "created_utc": "2026-11-21T04:31:54+00:00",
+  "created_utc": "2026-11-21T04:34:20+00:00",
   "repository": "https://github.com/snejokzboxik/three-phase-12-electrode-trap",
   "publication_branch": "research/v17c-theory",
   "base_branch": "research/v17c",
@@ -395,8 +395,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 5623,
-      "sha256": "2302169f1295e919fb0607b92ec204039c6139405cbba4ae8a43ce6f1e88e019"
+      "bytes": 5751,
+      "sha256": "8b8818d0a3db910f5a3fae34f4db0ab0d63c213bb5bfe4a0eda54b9e525a6a49"
     },
     {
       "path": "SOURCE_MODEL_AUDIT_RU.md",

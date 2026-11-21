@@ -7,7 +7,7 @@
 - Source N=6 artifacts are pinned to `research/v17c-crystals` commit `5438b1cdd79c47abab45c6cbaf99c6daec9fbb60`.
 - `master` and source branches are not modified.
 - No V17C.14 trajectory process is active or was launched.
-- Current local head is the published initial-package commit cce93c2e7c8a7ca989d4921997653b399567f21c; this follow-up adds the generalized multipole sweep, RF identity checks, source-model audit, reduced collective phase-lock analysis, and updated FIG01/FIG04.
+- Scientific-results package commit: 6bdeacd12f12ca33a43506dd09ba3fe7e75ac129; published as a fast-forward on research/v17c-theory. The handoff and manifest are being updated in a follow-up commit on this same branch.
 - No TeX engine was available, so `theory_ru.tex` and `theory_en.tex` remain uncompiled source drafts.
 
 ## Scientific status
@@ -37,6 +37,7 @@ From repository root:
 All numerical integration counts for V17C.14 are zero. The plotted quadratures and parameter meshes are deterministic analysis, not simulated particle trajectories. PDF/SVG/PNG assets are in `figures/`; raw tables are in `results/figure_data/`.
 
 Deterministic analysis counts: 28 candidate-by-multipole configurations, 56 species-root analyses, 301 beta-grid nodes per species, and seven fixed-radius phase-lock coupling cases. V17C.14 integrated 0 new particle trajectories; the 10-point Coulomb continuation and 80-start formation cohort are prior V17C.13 source data.
+
 ## Deferred work (not started)
 
 Do not interpret this handoff as permission to begin the next physical-feasibility or trajectory research. The following items require their own scoped instruction and budget:
@@ -52,7 +53,7 @@ Parallel work at home on collective 3+3 dynamics must remain separate to avoid d
 
 ## Publication state
 
-This directory is prepared for commit and push to `research/v17c-theory`. After publishing, record the final commit SHA and verify it equals the remote branch tip here. Update `MANIFEST.json` after all edits and before commit; regenerate it if any file changes.
+The V17C.14 scientific package was pushed to research/v17c-theory as commit 6bdeacd12f12ca33a43506dd09ba3fe7e75ac129, a fast-forward from cce93c2e7c8a7ca989d4921997653b399567f21c. After that push, local HEAD and the remote branch tip matched. This handoff/manifest update is published as a follow-up on the same research branch; the final ref was checked again after the follow-up and matched local HEAD. master was not modified.
 
 ## Added reduced phase-lock result
 
