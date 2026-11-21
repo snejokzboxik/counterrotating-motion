@@ -1,14 +1,16 @@
 # V17C.14 theory package
 
-This directory contains the generalized model, analytical derivations, reproduced source data, numerical checks, eight figure sets, and Russian/English LaTeX theory drafts for V17C.14.
+This directory contains the generalized model, analytical derivations, pinned source summaries, numerical checks, eight figure sets, and Russian/English LaTeX theory drafts for V17C.14.
 
 ## Start here
 
 1. `REPORT_RU.md` — result and scope summary.
 2. `THEORY_STATUS_RU.md` — completed and unresolved claims.
-3. `FIGURE_AUDIT_RU.md` — per-figure scientific question, parameters, protocol and limitations.
-4. `NUMERICAL_VALIDATION_RU.md` — checks, errors and source-run provenance.
-5. `SESSION_HANDOFF.md` — reproducibility and follow-up state.
+3. `SOURCE_MODEL_AUDIT_RU.md` — equation/RHS and Cunningham convention audit.
+4. `GENERALIZED_MULTIPOLE_SWEEP_RU.md` — 7 order pairs × 4 legacy vectors.
+5. `FIGURE_AUDIT_RU.md` — per-figure scientific question, parameters, protocol and limitations.
+6. `NUMERICAL_VALIDATION_RU.md` — checks, errors and source-run provenance.
+7. `SESSION_HANDOFF.md` — reproducibility and follow-up state.
 
 ## Reproduce deterministic outputs
 
@@ -26,10 +28,15 @@ Then run:
 & '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/symbolic/derive_generalized_identities.py
 & '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/validate_averaged_harmonic.py
 & '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/compute_leading_branches.py
+& '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/generalized_multipole_sweep.py
+& '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/validate_mixed_frequency_average.py
+& '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/validate_power_torque_identity.py
+& '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/audit_cunningham_convention.py
+& '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/reduced_collective_locking.py
 & '.\research\v17c\v17c_14\.venv\Scripts\python.exe' research/v17c/v17c_14/numerical/make_figures.py
 ```
 
-The checks and plots are deterministic. V17C.14 did not integrate new trajectories. Figure inputs from V17C.13 are pinned by commit in `results/v17c13_reference_data.json`.
+The checks and plots are deterministic. V17C.14 did not integrate new trajectories. Figure inputs from V17C.13 are pinned by commit in `results/v17c13_reference_data.json`; cohort-level source outcomes are summarized with commit provenance in `results/v17c13_ensemble_reference.json`.
 
 The Russian and English LaTeX manuscripts are source drafts. No TeX engine was installed in the available environment, so they were not compiled to PDF; figure PDF assets themselves were generated and inspected.
 

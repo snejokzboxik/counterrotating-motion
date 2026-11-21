@@ -33,6 +33,7 @@ RF-потенциал представлен Fourier--MFS мультипольн
 \mathcal E'&=\sum_iQ_i\partial_\tau\phi(\bm x_i,\tau)-\sum_i\mu_i\lambda_i|\bm u_i|^2.
 \end{align}
 Попарные Coulomb torque взаимно сокращаются в сумме; внешнее RF-поле и сопротивление задают суммарный баланс момента.
+Для неизменной амплитуды отдельной знаковой гармоники \(\phi_k=\operatorname{Re}[a\rho^{|k|}e^{i(k\theta-\nu\tau)}]\), \(k\ne0\), точечно выполняется \(Q\partial_\tau\phi_k=(\nu/k)M_k\), где \(M_k=-Q\partial_\theta\phi_k\). При комплексной огибающей \(a(\tau)\) к правой части добавляется \(Q\operatorname{Re}[a'\rho^{|k|}e^{i(k\theta-\nu\tau)}]\). Явная RF-производная потенциальной энергии не равна мгновенной механической мощности \((-Q\nabla\phi)\cdot\bm u\).
 
 \section{Локальное RF-усреднение}
 Для медленно меняющегося положения и гармонического ускорения \(\operatorname{Re}[\bm f(\bm X)e^{-i\nu\tau}]\) быстрый отклик линейно затухающей системы равен \(\hat{\bm\xi}=\bm f/(-\nu^2-i\lambda\nu)\). Средняя поправка второго порядка:
@@ -46,6 +47,10 @@ RF-потенциал представлен Fourier--MFS мультипольн
 K_n=\frac{\alpha^2n^2(n-1)|a|^2}{\nu^2+\lambda^2},\quad \alpha=Q/\mu.
 \end{equation}
 Усреднённая схема требует малой локальной поправки micromotion и медленного изменения envelope; значение \(\epsilon_\mu=1\) не является универсальным порогом.
+Для конечного окна \(T\), центрированного в \(\tau_c\), cross term между частотами \(\nu_a,\nu_b\) пропорционален \(e^{-i(\nu_a-\nu_b)\tau_c}\operatorname{sinc}[(\nu_a-\nu_b)T/2]\), а также суммарно-частотному члену с \(\nu_a+\nu_b\). Поэтому near-beat компоненту нельзя отбросить на горизонте короче beat period; при равных частотах комплексные пространственные амплитуды складываются до усреднения. Точная finite-window формула проверена прямой квадратурой с максимальным относительным расхождением \(1.24\times10^{-8}\).
+
+\section{Порядки мультиполей и кандидатные параметры}
+Для мод \((n_j,\sigma_j,\nu_j,a_j)\) введём \(S(u)=\sum_jK_ju^{n_j-2}\) и \(T(u)=\sum_j(\sigma_jK_j/\nu_j)u^{n_j-2}\), где \(u=\rho^2\). В независимом multi-frequency усреднении circular roots удовлетворяют \(\bar\omega=T(u)\) и \(T(u)^2+\alpha\beta-S(u)=0\). Проверены семь заданных пар порядков на четырёх candidate vectors; при сохранении каждого вектора \(A,B\) на \(\rho=1\) встречные устойчивые корни получены для \((2,3),(2,4),(2,6)\), тогда как \((3,4),(3,6),(4,6)\) дали одинаковые знаки, а \((2,2)\) не выделил устойчивый радиус. Это результат данной нормировки и набора параметров, а не общее утверждение о мультипольных порядках. Полная таблица корней в `GENERALIZED_MULTIPOLE_SWEEP_RU.md`.
 
 \section{Круговые корни local15}
 Для противоположных ведущих гармоник \((n,\sigma)=(2,+1),(4,-1)\):
@@ -59,7 +64,7 @@ G(\rho)=\bar\omega^2+\alpha\beta-K_1-K_2\rho^4=0,\quad 0<\rho<1.
 
 \begin{figure}[ht]
 \centering\includegraphics[width=.82\linewidth]{figures/FIG01_ANALYTIC_COUNTERROTATION_MAP.pdf}
-\caption{Leading-only map of stable one-particle root signs. Fixed parameters and classification are given in the figure and `FIGURE_AUDIT_RU.md`.}
+\caption{Leading-only phase map and discrete multipole-order check on four legacy candidate vectors. Fixed parameters and classification are given in the figure and `FIGURE_AUDIT_RU.md`.}
 \end{figure}
 \begin{figure}[ht]
 \centering\includegraphics[width=\linewidth]{figures/FIG02_AVERAGED_RF_FORCE_TORQUE.pdf}
@@ -86,7 +91,7 @@ H_4=\zeta^4-3\rho^2\zeta^2+\frac38\rho^4
 
 \begin{figure}[ht]
 \centering\includegraphics[width=.9\linewidth]{figures/FIG04_COULOMB_ROTATIONAL_TRANSITION.pdf}
-\caption{One-way, one-start Coulomb sweep. The sign change is bracketed between \(2\) and \(5\); this is not a basin probability or hysteresis loop.}
+\caption{Однонаправленный Coulomb sweep с одним упорядоченным стартом на точку: смена знаков наблюдалась в интервале \(2<C/C_0\leq5\). Вертикальная штриховая и горизонтальная точечная линии — fold и общая скорость фиксированно-радиусной reduced phase-модели, калиброванной по \(C=0\); они не являются измеренной границей полной N-body системы. Это не вероятность бассейна и не проверка гистерезиса.}
 \end{figure}
 \begin{figure}[ht]
 \centering\includegraphics[width=.94\linewidth]{figures/FIG05_INTERNAL_PHASE_MODE_SPECTRUM.pdf}
@@ -106,7 +111,7 @@ H_4=\zeta^4-3\rho^2\zeta^2+\frac38\rho^4
 \end{figure}
 
 \section{Проверки и пределы утверждений}
-Пять тестов RHS/Jacobian прошли; фазовая квадратура локального среднего согласуется с комплексной формулой до \(1.5\times10^{-14}\), leading-mode formula до \(1.1\times10^{-15}\). Эти величины не измеряют точность орбитального усреднения. Новые интегрирования траекторий, случайные старты, RK4 step refinement, DOP853, обратное continuation и полный tangent/Floquet-Lyapunov расчёт не выполнялись. Размеры, заряд, пробой, газовая среда и drag не получили независимой физической квалификации в V17C.14. Рисунки должны читаться вместе с `FIGURE_AUDIT_RU.md` и `NUMERICAL_VALIDATION_RU.md`.
+Пять тестов RHS/Jacobian прошли; фазовая квадратура локального среднего согласуется с комплексной формулой до \(1.5\times10^{-14}\), leading-mode formula до \(1.1\times10^{-15}\), а power/torque identity — с нулевым символьным остатком и max scaled numerical residual \(8.99\times10^{-16}\). Эти величины не измеряют точность орбитального усреднения. Новые интегрирования траекторий, случайные старты, RK4 step refinement, DOP853, обратное continuation и полный tangent/Floquet-Lyapunov расчёт не выполнялись. Аудит исходника выявил, что V17C.12B RHS умножал drag на Cunningham \(C_c\) вместо физически стандартного деления; finalist drag коэффициент был завышен на 0.153–1.680%, старые захватные доли не пересчитывались. Размеры, заряд, пробой и газовая среда не получили независимой физической квалификации в V17C.14. Рисунки должны читаться вместе с `FIGURE_AUDIT_RU.md`, `NUMERICAL_VALIDATION_RU.md` и `SOURCE_MODEL_AUDIT_RU.md`.
 
 RF-trap micromotion and Floquet theory are discussed in \cite{Dehmelt1967Storage,Landa2012Modes,Kaufmann2012Eigenmodes}; Coulomb structural transitions in \cite{Dubin1993Structural,Fishman2008Structural}. Rotating-wall Penning plasma experiments \cite{Huang1997Steady,Huang1998PhaseLocked} are contextual analogies only.
 

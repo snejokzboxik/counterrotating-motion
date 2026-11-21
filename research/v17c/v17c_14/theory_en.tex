@@ -33,6 +33,7 @@ The dimensionless energy balance is
 \mathcal E'&=\sum_iQ_i\partial_\tau\phi(\bm x_i,\tau)-\sum_i\mu_i\lambda_i|\bm u_i|^2.
 \end{align}
 Pairwise Coulomb torques cancel in the total angular-momentum balance; RF forcing and drag set the external torque budget.
+For a constant-amplitude signed harmonic \(\phi_k=\operatorname{Re}[a\rho^{|k|}e^{i(k\theta-\nu\tau)}]\), \(k\ne0\), the pointwise identity \(Q\partial_\tau\phi_k=(\nu/k)M_k\) holds, where \(M_k=-Q\partial_\theta\phi_k\). A complex envelope \(a(\tau)\) adds \(Q\operatorname{Re}[a'\rho^{|k|}e^{i(k\theta-\nu\tau)}]\). Explicit RF work in the potential-energy balance is distinct from instantaneous mechanical power \((-Q\nabla\phi)\cdot\bm u\).
 
 \section{Local RF averaging}
 For a slowly varying position and harmonic acceleration \(\operatorname{Re}[\bm f(\bm X)e^{-i\nu\tau}]\), the linear damped fast response is \(\hat{\bm\xi}=\bm f/(-\nu^2-i\lambda\nu)\). The leading second-order averaged force is
@@ -46,6 +47,10 @@ For a multipole potential \(\phi=\operatorname{Re}[a\rho^ne^{i(k\theta-\nu\tau)}
 K_n=\frac{\alpha^2n^2(n-1)|a|^2}{\nu^2+\lambda^2},\quad \alpha=Q/\mu.
 \end{equation}
 This averaging requires a small local micromotion correction and a slowly varying envelope; \(\epsilon_\mu=1\) is not a universal threshold.
+For a finite window of length \(T\) centered at \(\tau_c\), cross terms carry difference- and sum-frequency sinc factors. Near-beat terms must be retained on windows shorter than the beat period, while equal-frequency complex spatial amplitudes must be combined before averaging. Direct finite-window quadrature agrees with the exact sinc expression to a maximum relative difference of \(1.24\times10^{-8}\).
+
+\section{General Multipole Orders and Legacy Candidates}
+For modes \((n_j,\sigma_j,\nu_j,a_j)\), define \(S(u)=\sum_jK_ju^{n_j-2}\), \(T(u)=\sum_j(\sigma_jK_j/\nu_j)u^{n_j-2}\), with \(u=\rho^2\). Independent multi-frequency averaging gives circular-root conditions \(\bar\omega=T(u)\) and \(T(u)^2+\alpha\beta-S(u)=0\). Seven requested order pairs were screened for four legacy candidate vectors, retaining each candidate's leading potential coefficients at \(\rho=1\). Stable opposite-sign roots occurred for \((2,3),(2,4),(2,6)\); tested \(p>2\) combinations gave same-sign branches, and \((2,2)\) produced no isolated stable radius. These findings are conditional on the stated amplitude normalization and parameters, not a general multipole-order theorem. Full roots are tabulated in `GENERALIZED_MULTIPOLE_SWEEP_RU.md`.
 
 \section{Local15 circular roots}
 For opposite leading harmonics \((n,\sigma)=(2,+1),(4,-1)\), the slow torque and radial balances give
@@ -59,7 +64,7 @@ The published full-MFS+C V17C.13 reference has group means \(\rho=(0.5480284,0.7
 
 \begin{figure}[ht]
 \centering\includegraphics[width=.82\linewidth]{figures/FIG01_ANALYTIC_COUNTERROTATION_MAP.pdf}
-\caption{Leading-only map of stable single-particle root signs. Fixed parameters and classification are documented in the figure and `FIGURE_AUDIT_RU.md`.}
+\caption{Leading-only phase map and discrete multipole-order check on four legacy candidate vectors. Fixed parameters and classification are documented in the figure and `FIGURE_AUDIT_RU.md`.}
 \end{figure}
 \begin{figure}[ht]
 \centering\includegraphics[width=\linewidth]{figures/FIG02_AVERAGED_RF_FORCE_TORQUE.pdf}
@@ -86,7 +91,7 @@ gives fixed-radius axial extrema at \(\zeta_*^2=3\rho^2/2-\beta_2/(2\beta_4)\). 
 
 \begin{figure}[ht]
 \centering\includegraphics[width=.9\linewidth]{figures/FIG04_COULOMB_ROTATIONAL_TRANSITION.pdf}
-\caption{One-way, one-start Coulomb sweep. The sign change is bracketed between \(2\) and \(5\); this is not a basin probability or hysteresis loop.}
+\caption{One-way Coulomb sweep with one ordered start per point: the observed sign change is bracketed by \(2<C/C_0\leq5\). The dashed vertical and dotted horizontal lines show the fold and common frequency predicted by the fixed-radius reduced phase model calibrated at \(C=0\); these are not measured boundaries of the full N-body system. This is neither a basin probability nor a hysteresis test.}
 \end{figure}
 \begin{figure}[ht]
 \centering\includegraphics[width=.94\linewidth]{figures/FIG05_INTERNAL_PHASE_MODE_SPECTRUM.pdf}
@@ -106,7 +111,7 @@ gives fixed-radius axial extrema at \(\zeta_*^2=3\rho^2/2-\beta_2/(2\beta_4)\). 
 \end{figure}
 
 \section{Validation and limits}
-Five RHS/Jacobian tests pass. Direct local RF-phase quadrature agrees with the complex-average formula to \(1.5\times10^{-14}\), and the leading-mode formula to \(1.1\times10^{-15}\). These figures measure local algebra, not trajectory-averaging accuracy. No new trajectory integrations, random starts, RK4 step refinement, DOP853 cross-check, reverse continuation or full tangent/Floquet-Lyapunov calculation were performed. Particle sizes, charges, breakdown, gas environment and drag have not received an independent physical qualification in V17C.14. Read all figures together with `FIGURE_AUDIT_RU.md` and `NUMERICAL_VALIDATION_RU.md`.
+Five RHS/Jacobian tests pass. Direct local RF-phase quadrature agrees with the complex-average formula to \(1.5\times10^{-14}\), the leading-mode formula to \(1.1\times10^{-15}\), and the power/torque identity has zero symbolic residual and maximum scaled numerical residual \(8.99\times10^{-16}\). These figures measure local algebra, not trajectory-averaging accuracy. No new trajectory integrations, random starts, RK4 step refinement, DOP853 cross-check, reverse continuation or full tangent/Floquet-Lyapunov calculation were performed. The source audit found the V17C.12B RHS multiplied drag by Cunningham \(C_c\) instead of dividing by it; finalist drag was overstated by 0.153--1.680%, and old capture fractions were not recomputed. Particle sizes, charges, breakdown and gas environment have not received independent qualification in V17C.14. Read all figures together with `FIGURE_AUDIT_RU.md`, `NUMERICAL_VALIDATION_RU.md` and `SOURCE_MODEL_AUDIT_RU.md`.
 
 RF-trap micromotion and Floquet theory are discussed in \cite{Dehmelt1967Storage,Landa2012Modes,Kaufmann2012Eigenmodes}; Coulomb structural transitions in \cite{Dubin1993Structural,Fishman2008Structural}. Rotating-wall Penning plasma experiments \cite{Huang1997Steady,Huang1998PhaseLocked} are contextual analogies only.
 

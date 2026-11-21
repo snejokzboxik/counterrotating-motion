@@ -1,0 +1,65 @@
+{
+  "seed": 1414,
+  "cases": [
+    {
+      "case": "distinct",
+      "frequencies": [
+        1.0,
+        3.1118029453
+      ],
+      "window_start": 0.731,
+      "window_length": 80.0,
+      "quadrature_samples": 131072,
+      "analytic_average": [
+        -0.1372264463589101,
+        0.05476926725095195
+      ],
+      "direct_average": [
+        -0.13722644470479897,
+        0.0547692680395385
+      ],
+      "relative_error": 1.2402314391218987e-08
+    },
+    {
+      "case": "equal",
+      "frequencies": [
+        2.4,
+        2.4
+      ],
+      "window_start": 0.731,
+      "window_length": 80.0,
+      "quadrature_samples": 131072,
+      "analytic_average": [
+        1.155052214439861,
+        0.9635877054393469
+      ],
+      "direct_average": [
+        1.155052215247156,
+        0.9635877019955524
+      ],
+      "relative_error": 2.351502030314566e-09
+    },
+    {
+      "case": "near_beat",
+      "frequencies": [
+        1.0,
+        1.02
+      ],
+      "window_start": 0.731,
+      "window_length": 80.0,
+      "quadrature_samples": 131072,
+      "analytic_average": [
+        0.7388172140028222,
+        0.06893008661146488
+      ],
+      "direct_average": [
+        0.7388172148315421,
+        0.0689300869369798
+      ],
+      "relative_error": 1.199901143878438e-09
+    }
+  ],
+  "max_relative_error": 1.2402314391218987e-08,
+  "status": "passed",
+  "scope": "Finite-window quadratic averaging identity; not trajectory averaging accuracy."
+}

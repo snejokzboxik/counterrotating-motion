@@ -1,0 +1,51 @@
+{
+  "source": {
+    "repository": "snejokzboxik/three-phase-12-electrode-trap",
+    "branch": "research/v17c-crystals",
+    "commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "files": [
+      "research/v17c/v17c_13/BASIN_ANALYSIS_RU.md",
+      "research/v17c/v17c_13/PHASE_SYNCHRONIZATION_RU.md",
+      "research/v17c/v17c_13/COULOMB_COUPLING_RU.md"
+    ]
+  },
+  "formation_screen": {
+    "protocol": "#505, constant local15 after loading",
+    "integrator": "full 3D N=6 RK4/96",
+    "post_load_periods": 15000,
+    "starts_per_ensemble": 16,
+    "total_starts": 80,
+    "ensemble_results": {
+      "ordered": {"retained": 16, "strict_3plus3_crystals": 16, "phase_slip": 0, "ring_exchange": 0, "wall_contact": 0},
+      "perturbed": {"retained": 16, "strict_3plus3_crystals": 12, "phase_slip": 3, "ring_exchange": 0, "wall_contact": 0},
+      "random_azimuth": {"retained": 16, "strict_3plus3_crystals": 0, "phase_slip": 16, "ring_exchange": 0, "wall_contact": 0},
+      "random_position_rest": {"retained": 16, "strict_3plus3_crystals": 0, "phase_slip": 11, "ring_exchange": 5, "wall_contact": 0},
+      "random_position_moving": {"retained": 8, "strict_3plus3_crystals": 0, "phase_slip": 2, "ring_exchange": 5, "wall_contact": 8, "axis_ambiguous": 1}
+    },
+    "aggregate": {
+      "retained": 72,
+      "strict_3plus3_crystals": 28,
+      "retained_noncrystal_outcomes": 44,
+      "counterrotating_among_retained": 72,
+      "particle_collisions": 0,
+      "all_eight_wall_losses_occurred_in_moving_ensemble_before_one_rf_period": true,
+      "all_retained_group_centers_relaxed_to_z_approximately_zero": true
+    },
+    "interpretation": "The 80 cases form a deliberately balanced mixture of five different initial-condition classes, not a single physical IID distribution. 28/80 and 72/80 are only that test-mixture summaries, not universal probabilities."
+  },
+  "selected_long_continuations": {
+    "count": 5,
+    "additional_periods_after_15000": 105000,
+    "final_periods_after_loading": 120000,
+    "integrator": "RK4/96",
+    "composition": "one ordered control and four outcome-selected retained random-start examples",
+    "random_examples_all_met_late_phase_crystal_thresholds": true,
+    "interpretation": "Outcome-selected continuations demonstrate slow phase ordering in these specific survivors, not an independent success rate or a causal Coulomb comparison."
+  },
+  "coulomb_role": {
+    "ordered_start_counterrotates_at_zero_coulomb": true,
+    "one_way_frequency_sign_transition_bracket_C_over_C0": [2.0, 5.0],
+    "reverse_continuation": false,
+    "matched_random_start_C0_vs_zero_coulomb_continuations": false
+  }
+}

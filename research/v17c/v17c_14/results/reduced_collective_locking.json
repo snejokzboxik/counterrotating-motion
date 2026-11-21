@@ -1,0 +1,242 @@
+{
+  "model": "two rigid fixed-radius 3-particle rings; collective angles only; exact 9-pair Coulomb phase torque",
+  "source_run": {
+    "source_branch": "research/v17c-crystals",
+    "source_commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "source_file": "research/v17c/v17c_13/p1_coulomb_scan/coulomb_runs.jsonl",
+    "task_id": "C_0",
+    "group_mean_frequency_Hz": [
+      157.29805890180182,
+      -100.47839308168994
+    ],
+    "group_mean_radius_R_each": [
+      [
+        0.5486779623572318,
+        0.5486456177184672,
+        0.5488988362808312
+      ],
+      [
+        0.7653965198646414,
+        0.7655284898631348,
+        0.7655379310651367
+      ]
+    ],
+    "frequency_normalization_Hz": 100000.0,
+    "post_load_periods": 15000
+  },
+  "parameters": {
+    "radii_R": [
+      0.5487408054521766,
+      0.7654876469309709
+    ],
+    "group_inertias": [
+      0.9033494147049107,
+      16.061408164234972
+    ],
+    "lambda": [
+      0.20975541409005094,
+      0.12617311138613094
+    ],
+    "C0": 9.463121589050818e-06,
+    "RF_torques_calibrated_from_C0": [
+      0.00029805218521421396,
+      -0.0020362125624762387
+    ],
+    "C0_group_angular_speeds": [
+      0.0015729805890180183,
+      -0.0010047839308168994
+    ]
+  },
+  "method": "Calibrate constant RF torque as drag torque at the C=0 measured mean speed. Solve the exact fixed-radius pair-torque balance for common group speed and relative phase. No trajectory is integrated.",
+  "required_lock": {
+    "common_omega_over_Omega1": -0.0007843683050600257,
+    "required_coulomb_torque_on_group1": -0.00044667619810292725
+  },
+  "fold_prediction": {
+    "Ccrit_over_C0": 3.078733591006216,
+    "relative_phase_rad": 1.865369706420251,
+    "unit_torque_per_C0_at_extremum": -15.331557655999534,
+    "reduced_jacobian_eigenvalues_real_imag": [
+      [
+        -0.209755414090051,
+        0.0
+      ],
+      [
+        -3.3880032800882644e-17,
+        0.0
+      ],
+      [
+        -0.12617311138613094,
+        0.0
+      ]
+    ]
+  },
+  "continuation_scales": [
+    {
+      "C_over_C0": 0.0,
+      "status": "no_phase_locked_co-rotation_equilibrium",
+      "equilibria": []
+    },
+    {
+      "C_over_C0": 2.0,
+      "status": "no_phase_locked_co-rotation_equilibrium",
+      "equilibria": []
+    },
+    {
+      "C_over_C0": 3.0,
+      "status": "no_phase_locked_co-rotation_equilibrium",
+      "equilibria": []
+    },
+    {
+      "C_over_C0": 3.078733591006216,
+      "status": "fold_threshold_one_neutral_phase_mode",
+      "equilibria": []
+    },
+    {
+      "C_over_C0": 3.1,
+      "status": "two_locked_equilibria_one_stable_one_unstable",
+      "equilibria": [
+        {
+          "relative_phase_rad": 1.841771131119962,
+          "coulomb_torque_on_group1": -0.00044667619810292715,
+          "torque_slope": -0.0002513697268146682,
+          "eigenvalues_real_imag": [
+            [
+              -0.20842152933842745,
+              0.0
+            ],
+            [
+              -0.0014614137480286928,
+              0.0
+            ],
+            [
+              -0.12604558238972577,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": true
+        },
+        {
+          "relative_phase_rad": 1.8873332572970076,
+          "coulomb_torque_on_group1": -0.00044667619810292693,
+          "torque_slope": 0.000290197029324373,
+          "eigenvalues_real_imag": [
+            [
+              -0.21127743529161672,
+              0.0
+            ],
+            [
+              0.0016608328336556663,
+              0.0
+            ],
+            [
+              -0.1263119230182209,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": false
+        }
+      ]
+    },
+    {
+      "C_over_C0": 4.0,
+      "status": "two_locked_equilibria_one_stable_one_unstable",
+      "equilibria": [
+        {
+          "relative_phase_rad": 1.6875411027096385,
+          "coulomb_torque_on_group1": -0.00044667619810292736,
+          "torque_slope": -0.0010524204891172932,
+          "eigenvalues_real_imag": [
+            [
+              -0.20406992212719316,
+              0.0
+            ],
+            [
+              -0.0062718685828557635,
+              0.0
+            ],
+            [
+              -0.12558673476613286,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": true
+        },
+        {
+          "relative_phase_rad": 1.9789889054969478,
+          "coulomb_torque_on_group1": -0.0004466761981029279,
+          "torque_slope": 0.002594121916290365,
+          "eigenvalues_real_imag": [
+            [
+              0.013987057667050051,
+              0.0
+            ],
+            [
+              -0.22274512728249124,
+              0.0
+            ],
+            [
+              -0.12717045586074074,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": false
+        }
+      ]
+    },
+    {
+      "C_over_C0": 5.0,
+      "status": "two_locked_equilibria_one_stable_one_unstable",
+      "equilibria": [
+        {
+          "relative_phase_rad": 1.6005457041610942,
+          "coulomb_torque_on_group1": -0.00044667619810292693,
+          "torque_slope": -0.0012251867625378487,
+          "eigenvalues_real_imag": [
+            [
+              -0.20311034265166755,
+              0.0
+            ],
+            [
+              -0.007342448948094063,
+              0.0
+            ],
+            [
+              -0.1254757338764203,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": true
+        },
+        {
+          "relative_phase_rad": 2.0088293640606345,
+          "coulomb_torque_on_group1": -0.0004466761981029292,
+          "torque_slope": 0.004227639622167923,
+          "eigenvalues_real_imag": [
+            [
+              0.021972660161124757,
+              0.0
+            ],
+            [
+              -0.23030191330082064,
+              0.0
+            ],
+            [
+              -0.12759927233648594,
+              0.0
+            ]
+          ],
+          "linearly_stable_reduced_phase_model": false
+        }
+      ]
+    }
+  ],
+  "comparison_to_source": "The predicted reduced-model phase-lock threshold is inside the one-way V17C.13 observed counter-to-co transition bracket (2,5]. The predicted common locked frequency is close to the C/C0=5 group frequencies; this is agreement of a calibrated reduced model, not proof of the full N-body transition mechanism.",
+  "trajectory_integrations": 0,
+  "limitations": [
+    "fixed radii and rigid ideal triangles",
+    "constant RF torques calibrated from one finite-horizon C=0 start",
+    "no radial response, internal modes, MFS angular modulation, or loading history",
+    "the static phase-lock criterion does not classify basin capture or establish full-system hysteresis"
+  ]
+}

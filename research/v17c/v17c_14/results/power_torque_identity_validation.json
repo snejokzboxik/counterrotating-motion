@@ -1,0 +1,7 @@
+{
+  "seed": 1415,
+  "random_point_cases": 1000,
+  "max_scaled_absolute_residual": 8.987572668066983e-16,
+  "status": "passed",
+  "scope": "Exact pointwise identity with complex amplitude derivative; no mechanical-orbit power inference."
+}

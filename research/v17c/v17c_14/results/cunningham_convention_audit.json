@@ -1,0 +1,58 @@
+{
+  "source_file": "research/v17c/v17c_12b/best_physical_configuration.json",
+  "old_rhs": "drag_factor = Cc * (1 + 0.15 Re^0.687)",
+  "standard_slip_convention": "drag_factor = (1/Cc) * (same finite-Re factor)",
+  "ratio_used_to_standard_for_same_Cc": "Cc^2",
+  "individual_Cc_range": [
+    1.0007639056387618,
+    1.0083661228712946
+  ],
+  "individual_drag_overstatement_percent_range": [
+    0.15283948293485228,
+    1.6802237754486748
+  ],
+  "configurations": [
+    {
+      "configuration": "best_discovery",
+      "Cc_particle1": 1.005032480210335,
+      "Cc_particle2": 1.0007639056387618,
+      "Cc_mean_used_in_additional_finalist_validation": 1.0028981929245484,
+      "implemented_over_standard_drag_ratio_for_mean_Cc": 1.0058047853713248,
+      "mean_drag_overstatement_percent": 0.5804785371324783
+    },
+    {
+      "configuration": "fresh_physical_screen_leader",
+      "Cc_particle1": 1.0065352952096167,
+      "Cc_particle2": 1.0035514622127548,
+      "Cc_mean_used_in_additional_finalist_validation": 1.0050433787111857,
+      "implemented_over_standard_drag_ratio_for_mean_Cc": 1.0101121930911958,
+      "mean_drag_overstatement_percent": 1.011219309119582
+    },
+    {
+      "configuration": "phys0352",
+      "Cc_particle1": 1.0070467049774159,
+      "Cc_particle2": 1.0046946958957166,
+      "Cc_mean_used_in_additional_finalist_validation": 1.0058707004365663,
+      "implemented_over_standard_drag_ratio_for_mean_Cc": 1.0117758659967486,
+      "mean_drag_overstatement_percent": 1.1775865996748625
+    },
+    {
+      "configuration": "phys0109",
+      "Cc_particle1": 1.0083661228712946,
+      "Cc_particle2": 1.0035321852018706,
+      "Cc_mean_used_in_additional_finalist_validation": 1.0059491540365826,
+      "implemented_over_standard_drag_ratio_for_mean_Cc": 1.0119337005069162,
+      "mean_drag_overstatement_percent": 1.1933700506916223
+    },
+    {
+      "configuration": "phys0526",
+      "Cc_particle1": 1.005758038164708,
+      "Cc_particle2": 1.002680149459729,
+      "Cc_mean_used_in_additional_finalist_validation": 1.0042190938122184,
+      "implemented_over_standard_drag_ratio_for_mean_Cc": 1.0084559883770332,
+      "mean_drag_overstatement_percent": 0.8455988377033208
+    }
+  ],
+  "trajectory_reruns": 0,
+  "interpretation": "Coefficient-level correction only; old capture outcomes are not recalculated and may be sensitive to the changed damping."
+}

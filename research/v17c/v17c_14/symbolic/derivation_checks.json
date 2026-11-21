@@ -5,6 +5,8 @@
   "averaged_force_radial": "-a**2*alpha**2*n**2*rho**(2*n - 3)*(n - 1)/(lambda**2 + nu**2)",
   "averaged_force_tangential_positive_chirality": "a**2*alpha**2*lambda*n**2*rho**(2*n - 3)*(n - 1)/(nu*(lambda**2 + nu**2))",
   "moment_split_identity": true,
+  "rf_explicit_power_torque_identity": true,
+  "rf_envelope_derivative_residual": "0",
   "coulomb_pair_torque_cancellation": true,
   "sympy_version": "1.14.0",
   "scope": "symbolic identities; no nonlinear-orbit stability theorem"

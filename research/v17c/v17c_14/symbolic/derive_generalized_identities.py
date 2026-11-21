@@ -40,6 +40,20 @@ Lmic = sig * Q**2 / mu * n**2 * amp**2 / (nu * (nu**2 + lam**2)) * r**(2*n - 2)
 Mrf = sig * Q**2 / mu * n**3 * amp**2 * lam / (nu * (nu**2 + lam**2)) * r**(2*n - 2)
 assert sp.simplify(Mrf - Mgc - lam * Lmic) == 0
 
+# Pointwise explicit RF-power / torque identity, including a time-varying
+# complex envelope. The envelope derivative is the additional term.
+theta, tau, k, phase0 = sp.symbols("theta tau k phase_0", real=True, nonzero=True)
+ar = sp.Function("a_r")(tau)
+ai = sp.Function("a_i")(tau)
+phase = k * theta - nu * tau + phase0
+phi_rf = r**n * (ar * sp.cos(phase) - ai * sp.sin(phase))
+M_rf = -Q * sp.diff(phi_rf, theta)
+envelope_term = Q * r**n * (sp.diff(ar, tau) * sp.cos(phase) -
+                              sp.diff(ai, tau) * sp.sin(phase))
+power_torque_residual = sp.simplify(Q * sp.diff(phi_rf, tau) -
+                                     (nu / k) * M_rf - envelope_term)
+assert power_torque_residual == 0
+
 # Coulomb pair action-reaction and torque cancellation.
 xi, yi, zi, xj, yj, zj = sp.symbols("x_i y_i z_i x_j y_j z_j", real=True)
 d = sp.Matrix([xi-xj, yi-yj, zi-zj])
@@ -58,6 +72,8 @@ checks = {
     "averaged_force_radial": sp.sstr(expected_real),
     "averaged_force_tangential_positive_chirality": sp.sstr(expected_imag),
     "moment_split_identity": True,
+    "rf_explicit_power_torque_identity": True,
+    "rf_envelope_derivative_residual": sp.sstr(power_torque_residual),
     "coulomb_pair_torque_cancellation": True,
     "sympy_version": sp.__version__,
     "scope": "symbolic identities; no nonlinear-orbit stability theorem",

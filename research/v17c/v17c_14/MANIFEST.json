@@ -1,14 +1,31 @@
 {
   "project": "V17C.14",
-  "created_utc": "2026-11-20T21:24:04+00:00",
+  "created_utc": "2026-11-21T04:31:54+00:00",
   "repository": "https://github.com/snejokzboxik/three-phase-12-electrode-trap",
   "publication_branch": "research/v17c-theory",
   "base_branch": "research/v17c",
   "base_commit": "fc1d29ecc1067e0191a4cf597189b4973546864f",
   "source_data_branch": "research/v17c-crystals",
   "source_data_commit": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+  "additional_source_audit": {
+    "V17C.12B_branch": "research/v17c",
+    "V17C.12B_commit": "801ceba8b8555443bd81a9591b2e532f7c36a0e6",
+    "V17C.13_summary_files": [
+      "research/v17c/v17c_13/BASIN_ANALYSIS_RU.md",
+      "research/v17c/v17c_13/PHASE_SYNCHRONIZATION_RU.md",
+      "research/v17c/v17c_13/COULOMB_COUPLING_RU.md"
+    ]
+  },
   "new_trajectory_integrations": 0,
+  "analytic_candidate_multipole_configurations": 28,
+  "individual_species_root_analyses": 56,
+  "leading_branch_beta_nodes_per_species": 301,
+  "reduced_phase_lock_model_cases": 7,
+  "source_coulomb_sweep_points": 10,
   "imported_n6_source_records": 11,
+  "referenced_n6_formation_starts": 80,
+  "referenced_n6_selected_long_continuations": 5,
+  "ensemble_outcomes_are_aggregate_source_summary": true,
   "figure_sets": [
     "FIG01_ANALYTIC_COUNTERROTATION_MAP",
     "FIG02_AVERAGED_RF_FORCE_TORQUE",
@@ -28,8 +45,8 @@
     },
     {
       "path": "AVERAGING_DERIVATION_RU.md",
-      "bytes": 2725,
-      "sha256": "7a4283abb19abb51a9b3b8f119abb182d33cd5c0db8a3c5eb9ebcadfafc8dfe1"
+      "bytes": 5725,
+      "sha256": "8dea39412f76eb9a264bcd45ea6f0185aedf7e041eedeced37c4863409470c44"
     },
     {
       "path": "AXIAL_MODES_RU.md",
@@ -38,13 +55,13 @@
     },
     {
       "path": "COLLECTIVE_PHASE_MODEL_RU.md",
-      "bytes": 4126,
-      "sha256": "b2295c1e3221e656a98228832732e2baeade3583924993b057929d2c95601370"
+      "bytes": 9371,
+      "sha256": "6204a411027b8338e19a0ae668a3f7db858d089009f8f39fe5e142e72850a6cb"
     },
     {
       "path": "COULOMB_TRANSITION_RU.md",
-      "bytes": 2590,
-      "sha256": "f2315f9b3ea4006567c9568b641bf71a9135c7e865ed812883427e9ee8772f6e"
+      "bytes": 6059,
+      "sha256": "92b642c9acf2d34dbb7635fb21e1f7e842c27e8b8e0e0c401b6f284d34104d60"
     },
     {
       "path": "COUNTERROTATION_CRITERION_RU.md",
@@ -53,38 +70,38 @@
     },
     {
       "path": "DIMENSIONLESS_FORMULATION_RU.md",
-      "bytes": 3678,
-      "sha256": "2dd3071c0e81698d9efc9fb809dda26440167ee8400483b8018cbb4700da3b2e"
+      "bytes": 4141,
+      "sha256": "983f9aa5934593bc7e161c2d8fadf3af28aa5df6ef1c1999c8d345914ec14936"
     },
     {
       "path": "EFFECTIVE_RF_TORQUE_RU.md",
-      "bytes": 2413,
-      "sha256": "915d51ba6913c9d0a1090d5133fc2c4f6abc3510e104b387ee8c88e6a73c435f"
+      "bytes": 4400,
+      "sha256": "53c19e9d070315e00c0483ab9924c38d977bede23e2d3a192f419af5704abe41"
     },
     {
       "path": "FIGURE_AUDIT_RU.md",
-      "bytes": 17984,
-      "sha256": "f21ec7359fd31496b56a3ec3f9b843d4a7470b091ecac6afdb5456397651ce40"
+      "bytes": 19922,
+      "sha256": "9a2f683f4513877d2229d1b7328934323c5d104183148759b574ecfb2cb79130"
     },
     {
       "path": "figures/FIG01_ANALYTIC_COUNTERROTATION_MAP.pdf",
-      "bytes": 15298,
-      "sha256": "b98c96f598e76c18101e6eefc6cb3c020b8d24cee8e27604bee28ffe104b5db3"
+      "bytes": 19564,
+      "sha256": "a5a19258c9f2e3cd8217c885977383cdb01cd2645eadefec0033ebd33340a3e1"
     },
     {
       "path": "figures/FIG01_ANALYTIC_COUNTERROTATION_MAP.png",
-      "bytes": 228304,
-      "sha256": "e09c0523e14f77720c7990cc0b43e649c262bd689e38a72990f83a9c9c4ea9aa"
+      "bytes": 496195,
+      "sha256": "65c6570f89ade444a2b896da62bc7b3194dafb092e19f554c69c0ca7d27395ba"
     },
     {
       "path": "figures/FIG01_ANALYTIC_COUNTERROTATION_MAP.svg",
-      "bytes": 34193,
-      "sha256": "238879f35cd08965abab264cc297df9d2b3ef220499331a13e05d456ec3f390a"
+      "bytes": 49519,
+      "sha256": "876775f79a6e6a5c88a8754c43e896f852b25e359170109dc435fe1a1362815f"
     },
     {
       "path": "figures/FIG02_AVERAGED_RF_FORCE_TORQUE.pdf",
       "bytes": 23924,
-      "sha256": "8a91d696ff3a0969773472c235ca3672e3e4aa3c6445ba34bd360e05bd71fad4"
+      "sha256": "6ec88067375a40898b63ff9bd4d0550d70a6db3991e735898b4b8664a97d132f"
     },
     {
       "path": "figures/FIG02_AVERAGED_RF_FORCE_TORQUE.png",
@@ -94,12 +111,12 @@
     {
       "path": "figures/FIG02_AVERAGED_RF_FORCE_TORQUE.svg",
       "bytes": 87590,
-      "sha256": "052200d1cfa96d5d9d780fcbcc8e02ecbce38d8ba0f53713e758f01309c8f659"
+      "sha256": "5a1c1e4f521b9c8ce80bfa168fc6ebed3ec0fe62433848a70a73b9a5c6b4bf69"
     },
     {
       "path": "figures/FIG03_ROTATIONAL_BRANCHES.pdf",
       "bytes": 23795,
-      "sha256": "f84582d56bcdf4b9f334ea6cc817e53c70b6b66fb4e1cf0a6ef47d4379a3e25d"
+      "sha256": "ae66bedb889a484a514b53aaab0565ece7ebbd4de372a6d4cc89a770d7c557b3"
     },
     {
       "path": "figures/FIG03_ROTATIONAL_BRANCHES.png",
@@ -109,27 +126,27 @@
     {
       "path": "figures/FIG03_ROTATIONAL_BRANCHES.svg",
       "bytes": 33829,
-      "sha256": "8c0964a3eaca98473db67a398135e7f273bc5b39c77482955c55eb4be7fe5cdf"
+      "sha256": "5a968a78602d61b5a742702d9c68c51116021ac4bb0bba1bc84acf79116d488e"
     },
     {
       "path": "figures/FIG04_COULOMB_ROTATIONAL_TRANSITION.pdf",
-      "bytes": 14610,
-      "sha256": "62888e74ce569fccb08c98d74cbc93eb23b0b406e092b8ab4def098e55a4b556"
+      "bytes": 15901,
+      "sha256": "10d5037f5a684e26f765e8090b3c777258b0f983d12c6e004cfea46daf7af700"
     },
     {
       "path": "figures/FIG04_COULOMB_ROTATIONAL_TRANSITION.png",
-      "bytes": 246504,
-      "sha256": "224cc27592220a1701fb530d6847ef0cc46e21ec6d52acfe4709d345e61b8582"
+      "bytes": 314673,
+      "sha256": "08ff7408c770d8cc1e5e9130ae16a20cef30ba8b7d66727c2d6dfbcb2a18daf7"
     },
     {
       "path": "figures/FIG04_COULOMB_ROTATIONAL_TRANSITION.svg",
-      "bytes": 21574,
-      "sha256": "127eddc6d15d12be49d3e22b568bff2e51a2004f3f32614068568e5e8fa578a0"
+      "bytes": 51251,
+      "sha256": "f0323b760a4aec4391e8b121094af5f484ce5fac8d6e0000b2dff76e061314e7"
     },
     {
       "path": "figures/FIG05_INTERNAL_PHASE_MODE_SPECTRUM.pdf",
       "bytes": 17659,
-      "sha256": "02b050bb0a133e6480ca1dd656ade2e80455649af6fceebd91c5f2e8a57b4d6e"
+      "sha256": "6f04ae5056acf106db05296797105398a800bd65082b557e41d36f06b0833b0a"
     },
     {
       "path": "figures/FIG05_INTERNAL_PHASE_MODE_SPECTRUM.png",
@@ -139,12 +156,12 @@
     {
       "path": "figures/FIG05_INTERNAL_PHASE_MODE_SPECTRUM.svg",
       "bytes": 39119,
-      "sha256": "32f58ded27114c05169cfe8ef533531bd37d07859c9ed6d248b129c6db013534"
+      "sha256": "e83d63140b09115be18303c6827c9eb684f5643f87e3a93888726338d741ba0f"
     },
     {
       "path": "figures/FIG06_AXIAL_COLLECTIVE_STIFFNESS.pdf",
       "bytes": 23750,
-      "sha256": "81e453e4a234f96c32d04feb647eb3d5cf15cc1e986d84dae2e3ee6afd345f70"
+      "sha256": "25e9be89f02479070b57a83fed230852f483ae440ab1f134b3681e74de5fe75c"
     },
     {
       "path": "figures/FIG06_AXIAL_COLLECTIVE_STIFFNESS.png",
@@ -154,12 +171,12 @@
     {
       "path": "figures/FIG06_AXIAL_COLLECTIVE_STIFFNESS.svg",
       "bytes": 32910,
-      "sha256": "96a8909bcd9f235a3f94acd58b6e5da4758e6f36045785dd963b533f791e3ac7"
+      "sha256": "3e84fa765e345c148c99da8a7ae65fea90c937c9aedb292fa1e08e7b5ad2b217"
     },
     {
       "path": "figures/FIG07_H4_AXIAL_STABILITY_MAP.pdf",
       "bytes": 29712,
-      "sha256": "e8ce681879382ca691781aa758186e00e55174b3399a24a93a886433a1b2fed1"
+      "sha256": "687f0aab364707328d27ce1faf7c9192c2a4d1caacce2183b4c2b9dc23b0e987"
     },
     {
       "path": "figures/FIG07_H4_AXIAL_STABILITY_MAP.png",
@@ -169,12 +186,12 @@
     {
       "path": "figures/FIG07_H4_AXIAL_STABILITY_MAP.svg",
       "bytes": 66564,
-      "sha256": "94a4146a4f5d19745bf37fafbcd09a3d1470a1787e16c4bebc0a9653a7f727ef"
+      "sha256": "b89a94c9b20ce5bb1faa20e50036e33f83a149252c72527c8955f1447f0f5bb9"
     },
     {
       "path": "figures/FIG08_AVERAGING_VALIDITY.pdf",
       "bytes": 21920,
-      "sha256": "843afbebe66db9543a03e4ebd2b9c7d213c95f22197b019690ff7b8ced5078ea"
+      "sha256": "eabe4425b387366895b37d25c8c3dbb94c4254a5aca20822cd8fafd72d538e15"
     },
     {
       "path": "figures/FIG08_AVERAGING_VALIDITY.png",
@@ -184,7 +201,7 @@
     {
       "path": "figures/FIG08_AVERAGING_VALIDITY.svg",
       "bytes": 53502,
-      "sha256": "f9957f7b0aff51ea5e7fdca2da5f20ee7a1b7ec73744217f74b33c89114c33c1"
+      "sha256": "f72f7a9a25903a60be341f95daa8249530276e9f81b43d988ed49270d99f18aa"
     },
     {
       "path": "GENERALIZED_EQUATIONS_RU.md",
@@ -192,14 +209,24 @@
       "sha256": "21a7eaee49610606a1950a304394c9474dfd13000bbfd0ef1a5b79e256d10f37"
     },
     {
+      "path": "GENERALIZED_MULTIPOLE_SWEEP_RU.md",
+      "bytes": 8719,
+      "sha256": "3be648e4f2881db80584debab489b38963df536e2442dbb1c4053cc413e6fbaf"
+    },
+    {
       "path": "LITERATURE_REVIEW_RU.md",
       "bytes": 6423,
       "sha256": "55ea9bbea5369a541a065dad5414b8470afb67c521f9f36e3f23a8ae0a4fd09c"
     },
     {
+      "path": "numerical/audit_cunningham_convention.py",
+      "bytes": 2240,
+      "sha256": "c146c0d97729d0dd5c82230628d310004fc8c0410446f0fd7e0f33e2d58b9f6e"
+    },
+    {
       "path": "numerical/build_manifest.py",
-      "bytes": 1829,
-      "sha256": "3fa7c3d766436e27114ff3704076ae595388136422dfaca17dc5eaeb8ceaf693"
+      "bytes": 2662,
+      "sha256": "de88253ccc53f8b4de4fff23b83e4f80c9df8c4018daf4007675f73fe4b93414"
     },
     {
       "path": "numerical/compute_leading_branches.py",
@@ -212,9 +239,19 @@
       "sha256": "8a0cff9e65c690a1d331befd78bec026abdd32e78fb6ba7feb9d731ce5286412"
     },
     {
+      "path": "numerical/generalized_multipole_sweep.py",
+      "bytes": 7634,
+      "sha256": "fac9a59932bfce325ee4397e8049e6e7b99f3658d7535d7a9dddb450f196a696"
+    },
+    {
       "path": "numerical/make_figures.py",
-      "bytes": 26460,
-      "sha256": "bcc387a1cd380d02643902f1bf7370bc482f2aa1b635d0a755a80a8fc73da90b"
+      "bytes": 29224,
+      "sha256": "937c0b2b6305448216c234da3ed41ba9f4b3c639b34f68ff341aa7d5e8d8764a"
+    },
+    {
+      "path": "numerical/reduced_collective_locking.py",
+      "bytes": 6434,
+      "sha256": "5f19c3b6d6908a114e961fabd2e8136b9e57efc33373ee4e2f8279419630e8ab"
     },
     {
       "path": "numerical/validate_averaged_harmonic.py",
@@ -222,19 +259,29 @@
       "sha256": "9a4bc091797a6266a5e5169167e8be0cbb7a015e72cc4226719ae3197a20b4d2"
     },
     {
+      "path": "numerical/validate_mixed_frequency_average.py",
+      "bytes": 2499,
+      "sha256": "dbb05340c5cfaff74e954d49c6cadceb7721ad5d40c66a0141fbbd471f71d580"
+    },
+    {
+      "path": "numerical/validate_power_torque_identity.py",
+      "bytes": 1536,
+      "sha256": "a472b9fed1153d65cf93662acb140651dbe5a59b14dce63cea9d2b6c206f3349"
+    },
+    {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 8285,
-      "sha256": "0c41132e6576fbf6304e1ded3ef16b8a124e50b7e8ab488ab15ba653409f7283"
+      "bytes": 14296,
+      "sha256": "8f923bac61f0ac937e6eb718d9e99ee94bceffd68d46c308d5757bf1515c88f0"
     },
     {
       "path": "PHYSICAL_CONSTRAINTS_RU.md",
-      "bytes": 2430,
-      "sha256": "f2f81632c45caaaed6ff7cff28d3e3b5fc1334ff8389841793b9063ac27db3c0"
+      "bytes": 3717,
+      "sha256": "5169d244bc27443b39abd4d246b2b6f85c579f498ff35834defcd1774794a4f1"
     },
     {
       "path": "README.md",
-      "bytes": 2467,
-      "sha256": "e5623b4f74d401ff0a81cba7dced3c292a7cada424d2b92ad721856b4016fc0f"
+      "bytes": 3374,
+      "sha256": "629110d6e45e518996caaa66a2377a8949fbba676c3ba08f020f389f81aa449c"
     },
     {
       "path": "references.bib",
@@ -243,8 +290,8 @@
     },
     {
       "path": "REPORT_RU.md",
-      "bytes": 13892,
-      "sha256": "a6c254346eb38dba6c742ce015bee919e2ea766211fa50d9ea91784d10508282"
+      "bytes": 20590,
+      "sha256": "f3651396b87476ee3b83270f610dc5e360107875362376964b552fdc732859e8"
     },
     {
       "path": "requirements.txt",
@@ -255,6 +302,11 @@
       "path": "results/averaging_validation.json",
       "bytes": 2667,
       "sha256": "24256f448d86b9d851b0784b0bf9d8aa00ba84f6749b6a3889f3df9ee22352d0"
+    },
+    {
+      "path": "results/cunningham_convention_audit.json",
+      "bytes": 2452,
+      "sha256": "40b8d752f643c6045c42a57b6456723e58315bb2b51b9064ff1e0e16796a23ed"
     },
     {
       "path": "results/figure_data/fig01_phase_map.csv",
@@ -297,9 +349,39 @@
       "sha256": "8d94f9a24d841c071db5c55236f8b30fe002cd3ae39bf3e1f3d3fff96847978c"
     },
     {
+      "path": "results/figure_data/generalized_multipole_sweep.csv",
+      "bytes": 14447,
+      "sha256": "98ebded46089612168eaadacdbc11f15d7984eda3750a983ba4dbd627bf7e432"
+    },
+    {
+      "path": "results/generalized_multipole_sweep.json",
+      "bytes": 37738,
+      "sha256": "e79e091a21a723969eb1fcd8ffd11e6ced1dea1e2aecb25fb712bff3fbd7a8dc"
+    },
+    {
       "path": "results/leading_branch.json",
       "bytes": 1839,
       "sha256": "b690ce3a032fe70f9fa462bedb880139031004557c13e5d5f46b857cff6eacb5"
+    },
+    {
+      "path": "results/mixed_frequency_average_validation.json",
+      "bytes": 1530,
+      "sha256": "7828e1886d97e2f252ff7fc57ff1e46200c4743792bc33d8e21a1e1f40173fbb"
+    },
+    {
+      "path": "results/power_torque_identity_validation.json",
+      "bytes": 246,
+      "sha256": "6bb245cf985d7c969ed0fff00d9ff02f5dc3460117d1f5c451bfd34f1c8eb859"
+    },
+    {
+      "path": "results/reduced_collective_locking.json",
+      "bytes": 7094,
+      "sha256": "d5301d39d9cacaf03208c0901d710884bbc1ffa14aecd20e1052c9e5a1f65401"
+    },
+    {
+      "path": "results/v17c13_ensemble_reference.json",
+      "bytes": 2652,
+      "sha256": "609e2dfd69ee6038b0ff623be087efd73130284f3bcb0f2403ec3d964387a182"
     },
     {
       "path": "results/v17c13_reference_data.json",
@@ -313,8 +395,13 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 3123,
-      "sha256": "aa1a0afeaa45c6d3a78022526bc34619658e9816c00b9dfc550dd3d970d2302e"
+      "bytes": 5623,
+      "sha256": "2302169f1295e919fb0607b92ec204039c6139405cbba4ae8a43ce6f1e88e019"
+    },
+    {
+      "path": "SOURCE_MODEL_AUDIT_RU.md",
+      "bytes": 6749,
+      "sha256": "8f90683d234fea2d1bac7c84b7f87ee670cd4d095a4b81244b979acf6f2eb56a"
     },
     {
       "path": "STABILITY_ANALYSIS_RU.md",
@@ -323,13 +410,13 @@
     },
     {
       "path": "symbolic/derivation_checks.json",
-      "bytes": 528,
-      "sha256": "d3935dada4b12601439371dc92732387164b8d2ea3eab314f50c50bbdf0afad7"
+      "bytes": 617,
+      "sha256": "bc2cad4be4f73767503cdde19a6a8e34e497be196e175ae47ad5b84b0deeb407"
     },
     {
       "path": "symbolic/derive_generalized_identities.py",
-      "bytes": 2857,
-      "sha256": "e0857f85d06b8af17fe1e216d46938db8c7975319e64496748649fbe63bcafbb"
+      "bytes": 3684,
+      "sha256": "0098f99e39738eb2c865bf128eff086ceafd511dd71b49822f1d34851d9ab70e"
     },
     {
       "path": "SYMMETRY_AND_MULTIPOLES_RU.md",
@@ -343,18 +430,18 @@
     },
     {
       "path": "theory_en.tex",
-      "bytes": 8553,
-      "sha256": "6266e826ca53dc6eb76eda9302e416de475782d9d3009ae40cfbcd88a6e448c6"
+      "bytes": 10846,
+      "sha256": "04e1257f64ccddc29d7d3625f5403b38f55fc4ba7023902cf7949f882613c829"
     },
     {
       "path": "theory_ru.tex",
-      "bytes": 11101,
-      "sha256": "8a4b1e915bfe4908f3a086a4a0299907b66ca8050b5ebcfaba2cece2acd9fd4b"
+      "bytes": 14754,
+      "sha256": "16a9acce83915d16bc2a47301b92459575af8f8d831b1936deeb33c46634c795"
     },
     {
       "path": "THEORY_STATUS_RU.md",
-      "bytes": 4144,
-      "sha256": "53d8bd3699f83be735017b41157ccbcfa06acff8658fa36c6f26f1ffc453498b"
+      "bytes": 7254,
+      "sha256": "d088d452160685b8dd4d210631a8457a36ccddc66887f92671e82a610797ab44"
     }
   ]
 }

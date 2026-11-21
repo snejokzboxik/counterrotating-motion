@@ -139,18 +139,45 @@ def fig01_phase_map():
             rows.append({"B_over_A": ratio, "nu": nu, "class_code": int(z[iy, ix]),
                          "class": {0:"no paired stable roots",1:"stable roots, same sign",
                                    2:"stable opposite-sign pair",3:"partial or unstable roots"}[int(z[iy,ix])]})
-    fig, ax = plt.subplots(figsize=(6.7, 4.9), constrained_layout=True)
+    multipole = json.loads((ROOT / "results/generalized_multipole_sweep.json").read_text(encoding="utf-8"))
+    candidate_names = ["candidate52", "local15", "refine12", "refine12_sobol17"]
+    order_pairs = [(2,2),(2,3),(2,4),(2,6),(3,4),(3,6),(4,6)]
+    matrix = np.zeros((len(order_pairs), len(candidate_names)), dtype=np.uint8)
+    for iy,(p,s) in enumerate(order_pairs):
+        for ix,candidate in enumerate(candidate_names):
+            key=f"{candidate}:{p},{s}"
+            q=multipole["stable_root_summary_by_candidate_and_orders"][key]
+            n1=q["species1_stable_root_count"]; n2=q["species2_stable_root_count"]
+            if n1==0 and n2==0: matrix[iy,ix]=0
+            elif n1==0 or n2==0: matrix[iy,ix]=3
+            elif q["stable_opposite_sign_pair_exists"]: matrix[iy,ix]=2
+            else: matrix[iy,ix]=1
+    fig, (ax, ax_order) = plt.subplots(1, 2, figsize=(11.0, 5.15),
+                                       gridspec_kw={"width_ratios":[1.25,1.0]},
+                                       constrained_layout=True)
     cmap = ListedColormap(["#f0f0f0", BLUE, ORANGE, "#999999"])
     mesh = ax.pcolormesh(ratios, nus, z, cmap=cmap, vmin=-0.5, vmax=3.5, shading="nearest", rasterized=True)
     ax.plot(P["B"] / P["A"], P["nu"], marker="*", markersize=12, color="black", label="local15 point")
     ax.set(xlabel=r"$B/A$", ylabel=r"$\nu=\Omega_2/\Omega_1$",
            title="Leading $p=2$, $s=4$ averaged model")
+    ax_order.imshow(matrix, cmap=cmap, vmin=-0.5, vmax=3.5, aspect="auto", interpolation="nearest")
+    ax_order.set_xticks(np.arange(len(candidate_names)), ["candidate52","local15","refine12","Sobol17"], rotation=28, ha="right")
+    ax_order.set_yticks(np.arange(len(order_pairs)), [f"({p},{s})" for p,s in order_pairs])
+    ax_order.set(xlabel="Legacy parameter set", ylabel=r"$(p,s)$",
+                 title="Stable-root signs under order changes")
+    for iy in range(len(order_pairs)):
+        for ix in range(len(candidate_names)):
+            label={0:"none",1:"same",2:"opposite",3:"partial"}[int(matrix[iy,ix])]
+            ax_order.text(ix,iy,label,ha="center",va="center",fontsize=7,
+                          color="white" if matrix[iy,ix] in (1,2,3) else "0.25")
     from matplotlib.patches import Patch
     handles=[Patch(color=cmap(i),label=l) for i,l in enumerate([
         "no paired stable roots", "same-sign stable pair", "counterrotating stable pair", "partial / unstable" ])]
-    ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5,-0.13), frameon=False, ncol=2)
-    ax.text(0.0, -0.38, r"Fixed: $A,\,\beta,\,\lambda_{1,2},\,\alpha_{1,2}$ at local15. Algebraic roots $0<\rho<1$; stability from reduced 3D averaged Jacobian; no trajectory starts or integration horizon.",
-            transform=ax.transAxes, fontsize=7.5)
+    fig.legend(handles=handles, loc="lower center", bbox_to_anchor=(0.5,-0.055), frameon=False, ncol=4)
+    ax.text(0.0, -0.22, r"Fixed: local15 $A,\beta,\lambda_i,\alpha_i$; roots $0<\rho<1$. Reduced 3D averaged Jacobian.",
+            transform=ax.transAxes, fontsize=7)
+    ax_order.text(0.0, -0.22, r"Each candidate keeps its own $A,B,\nu,\beta,\lambda_i,\alpha_i$; leading potential equal at $\rho=1$.",
+                  transform=ax_order.transAxes, fontsize=7)
     save_csv("fig01_phase_map", rows)
     save_figure(fig, "FIG01_ANALYTIC_COUNTERROTATION_MAP")
 
@@ -286,20 +313,35 @@ def fig04_coulomb_transition():
     c=np.asarray(COL["C_over_C0"]); x=np.log10(1.0+c)
     f1=np.asarray(COL["group1_mean_frequency_Hz"])/COL["f1_Hz"]
     f2=np.asarray(COL["group2_mean_frequency_Hz"])/COL["f1_Hz"]
+    reduced=json.loads((ROOT/"results/reduced_collective_locking.json").read_text(encoding="utf-8"))
+    c_lock=float(reduced["fold_prediction"]["Ccrit_over_C0"])
+    omega_lock=float(reduced["required_lock"]["common_omega_over_Omega1"])
     rows=[{"C_over_C0":float(x),"omega_group1":float(y1),"omega_group2":float(y2),
            "starts_per_point":COL["runs_per_point"],"horizon_periods":COL["horizon_after_loading_periods"]}
           for x,y1,y2 in zip(c,f1,f2)]
-    fig,ax=plt.subplots(figsize=(6.7,4.1),constrained_layout=True)
-    ax.axvspan(np.log10(3),np.log10(6),color="#e6e6e6",zorder=0,label="transition unresolved in $2<C/C_0<5$")
+    fig,ax=plt.subplots(figsize=(7.0,4.8))
+    ax.axvspan(np.log10(3),np.log10(6),color="#e6e6e6",zorder=0,
+               label=r"source sign-change bracket: $2<C/C_0\leq5$")
+    ax.axvline(np.log10(1.0+c_lock),color="#555555",ls="--",lw=1.0,
+               label=rf"reduced fold: $C/C_0={c_lock:.3f}$")
+    ax.axhline(omega_lock,color="#555555",ls=":",lw=1.0,
+               label=rf"model lock: $\bar{{\omega}}={omega_lock:+.2e}$")
     ax.scatter(x,f1,color=BLUE,marker="o",label="inner group")
     ax.scatter(x,f2,color=ORANGE,marker="s",label="outer group")
     ax.axhline(0,color="0.4",lw=.6)
     ticks=np.asarray([0,.5,1,2,5,10,20,50],dtype=float)
     ax.set_xticks(np.log10(1+ticks),[f"{v:g}" for v in ticks])
-    ax.set(xlim=(0,np.log10(51)),xlabel=r"$C/C_0$ (positions at $\log_{10}(1+C/C_0)$)",ylabel=r"$\bar\omega=\omega_{\rm orb}/\Omega_1$",
-        title="Discrete Coulomb continuation from a selected 3+3 state")
-    ax.legend(frameon=False,fontsize=7)
-    ax.text(.01,-.20,"One P2_505 ordered start per point; RK4/96, 15,000 post-loading RF periods. C was increased only; no reverse continuation or hysteresis inference.",transform=ax.transAxes,fontsize=7.3)
+    ax.set(xlim=(-.025,np.log10(55.0)),xlabel=r"$C/C_0$ (nonuniform positions)",
+           ylabel=r"$\bar\omega=\omega_{\rm orb}/\Omega_1$")
+    fig.suptitle("Discrete Coulomb continuation from one selected 3+3 state",y=.98)
+    handles,labels=ax.get_legend_handles_labels()
+    fig.legend(handles,labels,frameon=False,fontsize=7.1,loc="center",
+               bbox_to_anchor=(.5,.875),ncol=3,columnspacing=1.4,handlelength=2.0)
+    fig.subplots_adjust(left=.13,right=.98,bottom=.25,top=.79)
+    fig.text(.5,.12,r"$x=\log_{10}(1+C/C_0)$; ticks show raw $C/C_0$. Source: one ordered start per $C$; RK4/96, 15,000 post-loading periods; increasing $C$.",
+             ha="center",fontsize=7.2)
+    fig.text(.5,.065,r"Overlay: fixed-radius exact-torque phase model calibrated at $C=0$; predicted fold, not a full-system boundary.",
+             ha="center",fontsize=7.2)
     save_csv("fig04_coulomb_sweep",rows)
     save_figure(fig,"FIG04_COULOMB_ROTATIONAL_TRANSITION")
 
