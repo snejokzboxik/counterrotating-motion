@@ -1350,8 +1350,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 15066,
-      "sha256": "24a0a52989f6d5d71a109decf9bfdf3c377cfc81fdbab263edc91cde6e054028"
+      "bytes": 15193,
+      "sha256": "a518c28f6fbe0632587d1be418921e93ae561f84a4a102f12710750dab816768"
     },
     {
       "path": "tests/test_collective_rings.py",
