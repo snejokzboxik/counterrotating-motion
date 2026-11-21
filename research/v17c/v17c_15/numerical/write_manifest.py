@@ -14,7 +14,8 @@ FILES = []
 for path in sorted(ROOT.rglob("*")):
     if not path.is_file() or path.name == "MANIFEST.json":
         continue
-    if "__pycache__" in path.parts or path.suffix in {".pyc", ".pyo"}:
+    if ("__pycache__" in path.parts or ".pytest_cache" in path.parts or
+            path.suffix in {".pyc", ".pyo"}):
         continue
     data = path.read_bytes()
     FILES.append({
@@ -46,14 +47,19 @@ manifest = {
         "parallelism_note": "Long single-particle campaigns used bounded process pools; Cunningham pair used 4 workers, not a concurrent heavy campaign.",
     },
     "compute_inventory": {
-        "archived_trajectory_horizon_records": 542,
-        "conditional_qr_trajectories": 2,
-        "conditional_qr_particle_periods": 30000,
-        "conditional_qr_horizons": [5000, 10000, 15000],
-        "full_integrations_from_initial_state": 614,
-        "continuation_segments": 24,
-        "total_solver_job_segments": 638,
-        "total_particle_periods": 3541000,
+        "archived_trajectory_horizon_records": 584,
+        "conditional_qr_trajectories": 44,
+        "conditional_qr_particle_periods": 940000,
+        "conditional_qr_horizons": [5000, 10000, 15000, 30000, 50000],
+        "conditional_qr_panel_starts_per_species": 22,
+        "conditional_qr_new_panel_trajectories": 42,
+        "conditional_qr_extended_trajectories_to_50000": 8,
+        "conditional_qr_panel_workers": 11,
+        "conditional_qr_extension_workers": 8,
+        "full_integrations_from_initial_state": 656,
+        "continuation_segments": 32,
+        "total_solver_job_segments": 688,
+        "total_particle_periods": 4451000,
         "archived_baseline_particle_periods": 1135000,
         "repeated_failed_export_runs": 96,
         "repeated_failed_export_periods": 288000,
@@ -70,11 +76,12 @@ manifest = {
     },
     "artifacts": FILES,
     "unresolved": [
-        "exact-RF continuation beyond 15,000 periods around the mixed-sign transition and long-term branch stability",
+        "exact-RF continuation beyond 15,000 periods around the mixed-sign rotation-sign transition and long-term branch stability",
         "quantitative error map versus epsilon_mu over RF and drag parameters",
         "independent numerical validation of moving-orbit and higher-order averaging corrections",
         "full MFS higher-spatial-harmonic comparison and real-electrode transfer validation",
-        "full exact-RF stability beyond one conditional S01 QR trajectory per species: long-horizon sign, phase-augmented flow, additional starts, and basin measures",
+        "asymptotic classification beyond the conditional mechanical QR panel: substantially longer horizons, RF phase tangent directions, exact periodic Floquet analysis where applicable, and N-body variational spectra",
+        "basin measures under explicitly sampled initial coordinates, velocities, RF phases, and loading protocols; the retained QR panel is fixed and not an iid basin sample",
         "direct RF-N-body continuation of the conditional C/C0=3.0787336 collective threshold and stable multi-ring solutions",
         "paired rerun of the historical physical V17C.12B campaign with individual corrected Cunningham coefficients",
         "general 3D MFS/FEM field adapter, electrode breakdown and physical feasibility analysis",

@@ -9,7 +9,7 @@
 \maketitle
 
 \begin{abstract}
-The exact RF panel preserves both rotation signs and predicts mean radii within about 0.09%, while one species has an 8.386% frequency error. For one frozen start, RK4/128 agrees with independent DOP853 within 0.00089% in radius and 0.00014% in frequency magnitude. These are numerical checks of the stated models and protocols, not proof of a global attractor or high capture probability.
+The exact RF panel preserves both rotation signs and predicts mean radii within about 0.09%, while one species has an 8.386% frequency error. For one frozen start, RK4/128 agrees with independent DOP853 within 0.00089% in radius and 0.00014% in frequency magnitude. Conditional QR spectra were calculated for 22 retained starts per species through 15,000 periods and four selected starts per species through 50,000 periods. The leading finite-time estimates remain near zero and have both signs, so asymptotic stability is unresolved. These are numerical checks of stated models and protocols, not proof of a global attractor or high capture probability.
 \end{abstract}
 
 \section{Dimensionless N-body equations}
@@ -75,6 +75,8 @@ For each species, 22 of 24 starts remained within the boundary; S08 and S16 esca
 
 For S01, RK4/64, /96 and /128 were compared with DOP853 over 15,000 periods and the final 500-period window. DOP853 used rtol=2e-11, atol=2e-13 and maximum step T1/96. RK4/128 errors relative to DOP853 were -0.000405% in radius and +0.000883% in frequency for species 1; +0.000121% and -0.000139% for species 2. DOP853 was not run for the full 24-start panel.
 
+The conditional mechanical variational system was integrated with the RF field and QR-orthogonalized every primary RF period. Across the 22 fixed retained starts per species, the leading finite-time estimate has both signs at 15,000 periods. S01 and starts selected by the 15k minimum, median, and maximum were extended to 50,000 periods; all eight leading estimates decrease in magnitude but remain three positive and one negative per species. This is not an iid sample; RF phases are fixed, and it does not establish asymptotic stability or stability of a full N-body state. See `NONAUTONOMOUS_STABILITY_RU.md`.
+
 \section{Basins and physical drag}
 For a structural class (S), initial-state/loading measure \(\mu_\mathrm{load}\) and protocol \(\mathcal P_\mathrm{load}\),
 \[
@@ -88,6 +90,6 @@ Existence, local stability and (P_S) are distinct. With Cunningham slip factor (
 Archived V17C.12B multiplied the Stokes coefficient by C_c, so the old-to-corrected drag ratio is C_c^2. A paired Local15 test with C_c=1.0027476353, 24 frozen starts per species, RK4/96 and 3,000 periods retained the same 22/24 starts for both conventions; every retained rotation sign matched. This isolates the factor in the ideal model and is not a rerun of the physical V17C.12B/MFS panel. Historical outcomes remain immutable.
 
 \section{Scope of conclusions}
-We establish identities for the stated dimensionless model, exact symmetric-ring sums, and numerical predictive errors for a concrete Local15 panel. Full nonautonomous stability, global basins, MFS/FEM corrections, a universal collective-transition threshold, and electrode breakdown safety have not been established. The finite cases (N=1,2,3,6) are checks of formulas, not a proof for arbitrary (N).
+We establish identities for the stated dimensionless model, exact symmetric-ring sums, and numerical predictive errors for a concrete Local15 panel. The QR panel gives only conditional finite-time estimates for fixed phases. Full phase-augmented nonautonomous stability, global basins, MFS/FEM corrections, a universal collective-transition threshold, and electrode breakdown safety have not been established. The finite cases (N=1,2,3,6) are checks of formulas, not a proof for arbitrary (N).
 
 \end{document}
