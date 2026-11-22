@@ -1,0 +1,95 @@
+{
+  "selected_start": {
+    "ensemble": "rest",
+    "index": 68,
+    "common_CR_counts": {
+      "rest": 104,
+      "weak": 110,
+      "wide": 90,
+      "edge": 54
+    },
+    "initial": [
+      -0.09825335703264979,
+      -0.7288905341568627,
+      -0.06737187970429659,
+      0.0,
+      0.0,
+      0.0,
+      -0.8257854213602477,
+      0.09996201493048573,
+      0.24351216666400433,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "phase": [
+      5.237095616042188,
+      1.1158663192140346
+    ]
+  },
+  "force_field_checks": {
+    "source_rhs_vs_independent_force_decomposition_max_abs_acceleration_error": 2.7755575615628914e-17,
+    "finite_difference_MFS_potential_gradient_max_abs_error": 1.3025275302780415e-12,
+    "pair_force_action_reaction_max_abs_error": 0.0,
+    "DC_azimuthal_torque_analytic": "identically zero for axisymmetric harmonic DC potential",
+    "harmonics_count": 8,
+    "harmonic_k": [
+      -46,
+      -22,
+      2,
+      26,
+      -28,
+      -4,
+      20,
+      44
+    ],
+    "family": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "archived_exact_replays": {
+    "phys0570": {
+      "end_state_max_abs_diff": 1.3378187446733136e-14,
+      "turns_max_abs_diff": 4.547473508864641e-13,
+      "window_turns_max_abs_diff": 1.7053025658242404e-13,
+      "min_distance_abs_diff": 7.771561172376096e-16,
+      "retained_match": true,
+      "strict_label_reference": "STRICT_CR_PLUS_MINUS",
+      "replay_raw_category": "CR_screen",
+      "completed_periods": 15000,
+      "frequency_array_legacy_bug": [
+        322.09973950528484,
+        -521.6936078803021
+      ]
+    },
+    "scaled_refine12_sobol17_f50hz": {
+      "end_state_max_abs_diff": 2.3037127760971998e-14,
+      "turns_max_abs_diff": 2.1671553440683056e-13,
+      "window_turns_max_abs_diff": 4.884981308350689e-14,
+      "min_distance_abs_diff": 0.0,
+      "retained_match": true,
+      "strict_label_reference": "STRICT_CR_PLUS_MINUS",
+      "replay_raw_category": "CR_screen",
+      "completed_periods": 15000,
+      "frequency_array_legacy_bug": [
+        89.35871442235529,
+        -100.04502551896051
+      ]
+    }
+  },
+  "source_SHA256": {
+    "research\\v17c\\v17c_12b\\results\\rescaled_legacy_candidate_validation\\campaign_integrator_source.py": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "research\\v17c\\v17c_12b\\results\\updated_objective_validation\\campaign_runner_source.py": "1baebddba857884b9e7ead08c3b9e7d8b61bf1e17d0d9278f849db32d3a3c54d",
+    "research\\v17c\\v17c_12b\\results\\updated_objective_validation\\campaign_meta.json": "f171052d12f999ef89cac97ec7a584e19614451c0ac510b389358fdc9dd38669",
+    "research\\v17c\\v17c_12b\\results\\updated_objective_validation\\trajectories.jsonl": "456b7b28e7b3462aa30290e2dd479615445c86bf83ff68cc39e095bfe4973aad",
+    "research\\v17c\\v17c_12b\\model\\field_model.json": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "research\\v17c\\v17c_15\\numerical\\physical_drag.py": "df0460ab9f16651de2855f95d64d429a3257cee790b4cef88a4af02ca4ce50f9"
+  }
+}

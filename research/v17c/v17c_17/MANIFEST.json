@@ -1,0 +1,526 @@
+{
+  "study": "V17C.17",
+  "branch": "research/v17c-two-particle-coulomb-dynamics",
+  "base_branch": "research/v17c-theory-validation",
+  "base_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+  "scope": "Only research/v17c/v17c_17 artifacts. Historical branches/results are unchanged.",
+  "audit_summary": {
+    "scan_rows": 20,
+    "scan_unique_ids": 20,
+    "scan_cr_and_retained": 20,
+    "scan_status_counts": {
+      "COMPLETE": 20
+    },
+    "robustness_rows": 26,
+    "robustness_per_configuration": {
+      "phys0570": 11,
+      "scaled_refine12_sobol17_f50hz": 6
+    },
+    "long_horizon_rows": 2,
+    "balance_rows": 4,
+    "validation_rows": 6,
+    "passage_windows": 314,
+    "archive_replay_max_state_error": 2.3037127760971998e-14,
+    "MFS_gradient_fd_max_error": 1.3025275302780415e-12,
+    "files_checked": 98,
+    "file_groups": {
+      "scan_trajectory_npz": 20,
+      "stroboscopic_csv_rows": 60004,
+      "finite_npz": 26,
+      "long_npz": 2,
+      "dop853_npz": 2
+    }
+  },
+  "files": [
+    {
+      "path": "analyze_pair_dynamics.py",
+      "size_bytes": 15051,
+      "sha256": "29e25f4840860dd7c695bdce7c2e31d6405becb37345e6bdb574fd83287d350b"
+    },
+    {
+      "path": "finalize_v17c17.py",
+      "size_bytes": 5269,
+      "sha256": "baf5b808f47e0ab4ce6510fda5a037b315bef94c9a73180d628665c98a537b48"
+    },
+    {
+      "path": "README_RU.md",
+      "size_bytes": 1624,
+      "sha256": "52daae1f3dd4f0d9f550173f7222b2afb006f979a82a23e58790735ea05c9d81"
+    },
+    {
+      "path": "results/coulomb_scan_corrected_drag.csv",
+      "size_bytes": 35591,
+      "sha256": "2c1f217de49fa8a28fb5bcb5acfc513fc45e13114555fb1ac7444ee92925cad3"
+    },
+    {
+      "path": "results/coulomb_scan_corrected_drag.jsonl",
+      "size_bytes": 65662,
+      "sha256": "a5e8f3f5cb99ab3f43b9609d6d95935b689f12ad3897853f6c4fb5a03222b834"
+    },
+    {
+      "path": "results/figures/coulomb_scale_regime_map.png",
+      "size_bytes": 98765,
+      "sha256": "cb0b89a957ce124f64fb5f52f64c856c692115e3f2ca9602e6f89d885431b67c"
+    },
+    {
+      "path": "results/figures/coulomb_torque_vs_relative_phase_phys0570_C1.png",
+      "size_bytes": 206946,
+      "sha256": "c018c31e2b8780075cc44d693befec81f5594ee804773024c8903dff668fac33"
+    },
+    {
+      "path": "results/figures/distance_and_relative_phase_phys0570_C1.png",
+      "size_bytes": 206537,
+      "sha256": "067621f7098f0f3fc8c1c69b9567fbdf183a8d6764ac4e02053549e1dab183e3"
+    },
+    {
+      "path": "results/figures/joint_3d_trajectory_phys0570_C1.png",
+      "size_bytes": 220194,
+      "sha256": "009a742106ead0ebd463009b569c032f797ce06244ff99505fa14dd83b70b6a7"
+    },
+    {
+      "path": "results/figures/joint_xy_trajectories_phys0570.png",
+      "size_bytes": 207235,
+      "sha256": "3e61c2fc5ae37d42d13e6a14e8855eb36a317c3e3731e8aa69af17ad1414a19d"
+    },
+    {
+      "path": "results/figures/poincare_stroboscopic_phase_space_phys0570_C1.png",
+      "size_bytes": 631991,
+      "sha256": "5eb793c01dcfbf8464001098dd556a49a340af2600212d23da8eb65ad7c2b7ac"
+    },
+    {
+      "path": "results/figures/relative_motion_spectrum_phys0570_C1.png",
+      "size_bytes": 157850,
+      "sha256": "6e095cc1a5275e9478e75574bec83fc4080979dc0d8dd6c3b6e51ef3d2b8ae9c"
+    },
+    {
+      "path": "results/figures/torque_balance_phys0570_C1.png",
+      "size_bytes": 1188078,
+      "sha256": "eaad4361472283aa8c0c5632d33d2390b30d7f526aceb77b4ea0b71113526050"
+    },
+    {
+      "path": "results/finite_perturbation_robustness.json",
+      "size_bytes": 130556,
+      "sha256": "c5d0a7cf47e15c7af9886ec85f14d24ac2eeee442c218b2b027dc25da053b28f"
+    },
+    {
+      "path": "results/independent_dop853_phys0570_C1_3000p.npz",
+      "size_bytes": 4520269,
+      "sha256": "4f75ded397362ffb3a2717281e542c9af9aed421f71f51e9799346002eb02591"
+    },
+    {
+      "path": "results/independent_dop853_scaled_refine12_sobol17_f50hz_C1_3000p.npz",
+      "size_bytes": 4435504,
+      "sha256": "3c46934501bdef222d55fefe303a7b9b7ebf8f303085d3df53cc2c752d83a748"
+    },
+    {
+      "path": "results/input_configuration.json",
+      "size_bytes": 15686,
+      "sha256": "f8eb81ccc0c7d5d139f7f40a046eb41c27a48c7194da33b6fca3de135f7ee607"
+    },
+    {
+      "path": "results/long_horizon_50000p.json",
+      "size_bytes": 10281,
+      "sha256": "e2b3dfd1d3f363cba1e630be56a0f25754777f47a121d4257968ad84594651fa"
+    },
+    {
+      "path": "results/model_and_history_audit.json",
+      "size_bytes": 3185,
+      "sha256": "3c3d468e15e8d8aedb0ae588fe9d71228b8ca45894edbc02d7b55b0a337fb94b"
+    },
+    {
+      "path": "results/numerical_validation.json",
+      "size_bytes": 5440,
+      "sha256": "18599a5172820c37541f55e18b8b4b9b0c7dc4821eb37601df855dc77edf6115"
+    },
+    {
+      "path": "results/refined_energy_balance.json",
+      "size_bytes": 20653,
+      "sha256": "68dcf785d96b41d8e35b9b07197c70c61abc8da029490a0a316b0c31e5238383"
+    },
+    {
+      "path": "results/relative_motion_spectrum.csv",
+      "size_bytes": 267490,
+      "sha256": "f9176ac86927f4e2a7cbe9490cf82dcb0630f9ed512b33ea8e6d2dd29a82d250"
+    },
+    {
+      "path": "results/stokes_only_preliminary/coulomb_scan.jsonl",
+      "size_bytes": 42478,
+      "sha256": "bf2edc2bd807b2d50e10c13faec9e08cf0a458722d4cd6205ab3044d96f7dc83"
+    },
+    {
+      "path": "results/stokes_only_preliminary/README_RU.md",
+      "size_bytes": 1933,
+      "sha256": "4e2d73021b1a6c1ab706bae14b64e1b63f2c5a9824c692a0dc0b925c37b32113"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/phys0570_C0.1_rk464_15000p.npz",
+      "size_bytes": 1379071,
+      "sha256": "aa78465b912688a4101aab69d95efe553bdb96ce52f37d29edb00ff2367d36e9"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/phys0570_C0.25_rk464_15000p.npz",
+      "size_bytes": 1382595,
+      "sha256": "a4cc640aabae1060e93a9f58d8c0a14ff1b034750de10b954fc2332457f386c1"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/phys0570_C0.5_rk464_15000p.npz",
+      "size_bytes": 1385974,
+      "sha256": "8bdf558e300b6a0b6da5e4e827bb94afd3f4984507043afef25e220e8fe7273a"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/phys0570_C0.75_rk464_15000p.npz",
+      "size_bytes": 1388038,
+      "sha256": "0003f789181dc57f8f437e0b41dcc5923891f73ad960b8e78f6948759d65fbd3"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/phys0570_C0_rk464_15000p.npz",
+      "size_bytes": 999403,
+      "sha256": "f85f85b94d8f015d2290c57cfa3077dbbc95279b69686679aba5cae0304e2e73"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C0.1_rk464_15000p.npz",
+      "size_bytes": 2669,
+      "sha256": "70430acd3a5c696563183841c0d6c0380df2090aa82def319a07151af3e05f4f"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C0.25_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "a7e87951d1c64fa3a712b960e6c35fe6b9d00bd3a70e27fcd85899b42b27c371"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C0.5_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "fb0a3f1cfe62879f4d4214502b49b1e2cb0f7787d53a4dd92271027b113d8baa"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C0.75_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "058814a8b027587c47f328100198d78fcbde4b3860524ca41d2569e56acbf739"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C0_rk464_15000p.npz",
+      "size_bytes": 2660,
+      "sha256": "f0e3d10b1413a7c9af649b60ff77636df3873a96e3030920a0bdd5a21c55400c"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C1.5_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "c6538d5fbd01abbe662e87040ea5c6246d7b8f586313594c0a69ac83bf063129"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C1_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "6932e992a1071099331f7c18c0dceb1f35f017fe4237bffd25a63c5974e4b214"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C2_rk464_15000p.npz",
+      "size_bytes": 2667,
+      "sha256": "76ec04a16c13db3cde9bbfa01f0031eb186b570d8096cf7dcb75b668bc1a1b5c"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C3_rk464_15000p.npz",
+      "size_bytes": 2668,
+      "sha256": "9a86cecf812b59680becc6d8e3c4e1e556d08ef987ff53834801334dc7fa1c43"
+    },
+    {
+      "path": "results/stokes_only_preliminary/trajectories/scaled_refine12_sobol17_f50hz_C5_rk464_15000p.npz",
+      "size_bytes": 2667,
+      "sha256": "b556bb8067314eceb21d372e7421eb831363dac8fe950ebda362b8aea731ec05"
+    },
+    {
+      "path": "results/stroboscopic_minima.csv",
+      "size_bytes": 51060,
+      "sha256": "df4981f0d316c057d8669f67b04cb4d09b5353d3b8b53eaa3d287b7e5da52df9"
+    },
+    {
+      "path": "results/timeseries_phys0570_C0.csv",
+      "size_bytes": 6458346,
+      "sha256": "ed765adb4b078b9a254429d2d64d2aef7d5aca995915f8a31b757370e755bee3"
+    },
+    {
+      "path": "results/timeseries_phys0570_C1.csv",
+      "size_bytes": 8952523,
+      "sha256": "56990005d58aa941ec7123757e2068081933f0a11b2714322249bbe7fb0391ae"
+    },
+    {
+      "path": "results/timeseries_scaled_refine12_sobol17_f50hz_C0.csv",
+      "size_bytes": 6182233,
+      "sha256": "5803df9478b42696fa121360bf1b7b2fd1912100401d54b6a85b7c43daec9866"
+    },
+    {
+      "path": "results/timeseries_scaled_refine12_sobol17_f50hz_C1.csv",
+      "size_bytes": 8664188,
+      "sha256": "3fe047bbafc5a9cca0c1fbbfd5da9872c4509ca0d7391a4f8e9099954a3f53d0"
+    },
+    {
+      "path": "results/trajectories/phys0570_C0.1_rk464_15000p.npz",
+      "size_bytes": 3466680,
+      "sha256": "5291df167ca1a470034c124612e7f1424bb3d96b01d7c597694107f044e7deb2"
+    },
+    {
+      "path": "results/trajectories/phys0570_C0.25_rk464_15000p.npz",
+      "size_bytes": 3473018,
+      "sha256": "30a5eab8a926b4ae9f6982d33412cf7de543c249659fcb137a12ec0590dfa6d8"
+    },
+    {
+      "path": "results/trajectories/phys0570_C0.5_rk464_15000p.npz",
+      "size_bytes": 3478813,
+      "sha256": "dfa3eca07a34a5c0759f4ed6cf238fecc3b789fb78794a6839232b0ae7fce6f0"
+    },
+    {
+      "path": "results/trajectories/phys0570_C0.75_rk464_15000p.npz",
+      "size_bytes": 3482724,
+      "sha256": "0920528438d5cab3c2116d5d8acf650b40fae53cef5686e6cb2f0bb37652fbea"
+    },
+    {
+      "path": "results/trajectories/phys0570_C0_rk464_15000p.npz",
+      "size_bytes": 2674031,
+      "sha256": "00bf6392a79e517040198129be714b627f503f7f34f1ee1f90298d983199dda1"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1.5_rk464_15000p.npz",
+      "size_bytes": 3489280,
+      "sha256": "fbf9e90eca343f0ad26bf4720b3fa2b1bdd51f04772c749e283df574be24c352"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_both_radii_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1387858,
+      "sha256": "a162133f8384990a938697aa14bba109fbc479bbda788c96067a3456e0bcc0c4"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_opposite_axial_offset_0p02R_rk464_15000p.npz",
+      "size_bytes": 1387914,
+      "sha256": "668d444716d12f8e1decf06b9a7da8a944ccd26cae5bed997278dee97c624911"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_opposite_tangential_kick_0p05_rk464_15000p.npz",
+      "size_bytes": 1441,
+      "sha256": "1ef5e3ea837fb7ecf0c5f82f72a87075387a6ce992dd2bd18cddc51e9d93e926"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle1_radial_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1411,
+      "sha256": "94112d802b9137812418eec8fc6f308b5faddda34f4a11dbea6e3997b411f4c8"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle1_radius_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1388044,
+      "sha256": "4c53dfb94545a6916541ec4973c511bee746efaf2801c7999d227be73d867659"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle1_tangential_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1387888,
+      "sha256": "ee054bfbaded5977be891fd2c2abdfcb1b7a48133a5ffdad76da693a745b297c"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle2_azimuth_plus_5deg_rk464_15000p.npz",
+      "size_bytes": 1387963,
+      "sha256": "32d581207acd494bfedfda287b7d53e7a0ee9e9194c9038045e78548dbb2c38f"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle2_radial_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1387947,
+      "sha256": "bcc70e95f1ade84e8244d8e6a6ccdfead975839d96ea850768cb4722559e8595"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle2_radius_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1387884,
+      "sha256": "aa6c0fed2cdd6d539cbc298d9fc8be56e2319508ee87c11c2eb83dee353f5d56"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_particle2_tangential_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1387959,
+      "sha256": "3c1be5edd40845c678357e193dac03cece1b4da8c8fd348e1494b61352b7e08d"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_RF1_phase_plus_5deg_only_rk464_15000p.npz",
+      "size_bytes": 1387834,
+      "sha256": "a6644304021f988d597c9e9ace12c835847dd7ac5f09ecbb2829b705dd877ce5"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_RF2_phase_minus_5deg_only_rk464_15000p.npz",
+      "size_bytes": 1387992,
+      "sha256": "fde1c740c1d15506ae044e35c480d51e5af6fd531bd1742a6584b56a4f240f2f"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_RF_phases_plus_minus_5deg_rk464_15000p.npz",
+      "size_bytes": 1387906,
+      "sha256": "f6f3c6caaf3f5b844f36363936a6e7f191dd53e22c21b91d17fbc51b9c401cfc"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_rk4128_3000p_energy.npz",
+      "size_bytes": 707333,
+      "sha256": "566cd85a9c14e0441aa01bd523d795cf271a4173871fced29cb413649b0b76da"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_rk464_15000p.npz",
+      "size_bytes": 3486421,
+      "sha256": "355c6821913a4b24a088595501b1f88cd77d5ce19e3b31c71e32aeefd03375e6"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_rk464_50000p_long.npz",
+      "size_bytes": 11386603,
+      "sha256": "45065797d55406ef2a0d2ad57e22afa2fd729b4a4a608fcf5acee186f93cc151"
+    },
+    {
+      "path": "results/trajectories/phys0570_C1_rk496_3000p_energy.npz",
+      "size_bytes": 707539,
+      "sha256": "10e68a6e0ecbc40a6d8e08ac5c3be79bd3be27df57e3c2cd2739e99484b8fb84"
+    },
+    {
+      "path": "results/trajectories/phys0570_C2_rk464_15000p.npz",
+      "size_bytes": 3486486,
+      "sha256": "116b5031cbb3ec76647cd3fd8a09889b004c6842b7e48f6b00c3fc9ea8607934"
+    },
+    {
+      "path": "results/trajectories/phys0570_C3_rk464_15000p.npz",
+      "size_bytes": 3488513,
+      "sha256": "09bdb39892668a688f047983aedeba33a9fd7d10a2301f04e2c3b6eb0adea2cb"
+    },
+    {
+      "path": "results/trajectories/phys0570_C5_rk464_15000p.npz",
+      "size_bytes": 3493766,
+      "sha256": "6991d76af84b290015a7d475a35c9264b958e92ed6632c3d5ab175dd98315891"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C0.1_rk464_15000p.npz",
+      "size_bytes": 3435380,
+      "sha256": "74c74f21d09bf1cb6f643b7ab3d91592a37f1ce01a361f51d2d416c21edc95e1"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C0.25_rk464_15000p.npz",
+      "size_bytes": 3440109,
+      "sha256": "dde08634813f58059aa66cd88b30b1885e18e6115abdb2e86d41ea1ea4daa9d9"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C0.5_rk464_15000p.npz",
+      "size_bytes": 3448918,
+      "sha256": "b9c0674cacede5f46abf1913de2dae734b8084041104411ceb0445bd4f03d29e"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C0.75_rk464_15000p.npz",
+      "size_bytes": 3453500,
+      "sha256": "a7a87704cb785a85771851fbeaf7841f57d1f30a49f35fce4443ffd56f81f764"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C0_rk464_15000p.npz",
+      "size_bytes": 2551743,
+      "sha256": "2cee2024842dd91b7be165e63c2e1f4451da3d62b3a000ca095a982ccfaf3dec"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1.5_rk464_15000p.npz",
+      "size_bytes": 3441540,
+      "sha256": "7a4da7ca4f0139ba0673003ef267f52c34854b7bc07d5daaee06d8e298d6abfb"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_both_radii_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1376,
+      "sha256": "8d64b32026509b55c24f2ddec6f329d84d57ae4be7d2af0478c124e235018c3e"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_opposite_axial_offset_0p02R_rk464_15000p.npz",
+      "size_bytes": 1379709,
+      "sha256": "11f88387176b885636c97949e2a695d728645fcef478ff8e5672c552ab70bbf9"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_opposite_tangential_kick_0p05_rk464_15000p.npz",
+      "size_bytes": 1443,
+      "sha256": "2a1aa006900b41671087dd4741143e9d8a6ab8c148dc2228eb18654c232709bc"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle1_radial_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1411,
+      "sha256": "d76e49c0fe592b63fc265ff8f6a525824916647f13f1dc235073c3de11dbf106"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle1_radius_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1376,
+      "sha256": "7341dcbfc41686537b8eed667fc9078a99d30d543e841fc591a668f6cc7dfdf2"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle1_tangential_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1410,
+      "sha256": "b16416f55ee8b9434a2c37c548c1da4579fb076ff34da4571b29d7f674a275f5"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle2_azimuth_plus_5deg_rk464_15000p.npz",
+      "size_bytes": 1380028,
+      "sha256": "a747cb149bce5d6e8da9853472dcb73074bafdab1eb32d0d79f8864f56338524"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle2_radial_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1379988,
+      "sha256": "1db25846c58deb7d0fae801d2937e7b824fe23cbbe227687d5fd982f2f999d7e"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle2_radius_plus_1pct_rk464_15000p.npz",
+      "size_bytes": 1379990,
+      "sha256": "38b66fc39a0d4d5437c2374ad02fb55afff826519d5ec557be881cea0b45b053"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_particle2_tangential_kick_0p02_rk464_15000p.npz",
+      "size_bytes": 1379890,
+      "sha256": "03b80117e2cf276c64c1243f770f0319b07a62150b27decd3c550dfffa0bce4b"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_RF1_phase_plus_5deg_only_rk464_15000p.npz",
+      "size_bytes": 1375,
+      "sha256": "2969be2b71b03d5084d288286b4235bbb83abc1fbcbba614ded0e161e586d2bb"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_RF2_phase_minus_5deg_only_rk464_15000p.npz",
+      "size_bytes": 1379834,
+      "sha256": "8253d87f0cb6ee48a39b4027885685efc75ebe0212bd05af1fd7f216a2efeccd"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_RF_phases_plus_minus_5deg_rk464_15000p.npz",
+      "size_bytes": 1375,
+      "sha256": "d29d1dcbd344c1a21ea47d847275f18a5ce27084db1f8f4cab431c47b864ca94"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_rk4128_3000p_energy.npz",
+      "size_bytes": 699474,
+      "sha256": "f727255c3e61b02efa4a8385deacdfabdf14068a228ad2dc5cb7b032d7f06681"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_rk464_15000p.npz",
+      "size_bytes": 3457195,
+      "sha256": "9f64260fcf616b72575e69fa59222f0bebf57cfbb6ec0bf2e235504fdabff65c"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_rk464_50000p_long.npz",
+      "size_bytes": 11313015,
+      "sha256": "6eb20fd4bc885dee1e2aafd18f59b70184d57f22999e374967fbdd938d22085c"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C1_rk496_3000p_energy.npz",
+      "size_bytes": 701165,
+      "sha256": "4a44eb5bb87941a974412f73d0de0eefffd65bfba8d0228abacc6e0175980528"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C2_rk464_15000p.npz",
+      "size_bytes": 3453998,
+      "sha256": "6bdd20f24c6f3cfe70b1e59f5219f9edd8af30258446318120db6ad02e13fd0b"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C3_rk464_15000p.npz",
+      "size_bytes": 3446479,
+      "sha256": "b5d32167b7cfbdce701a670f51df053a60c092b426598d969093a4d6b178ce39"
+    },
+    {
+      "path": "results/trajectories/scaled_refine12_sobol17_f50hz_C5_rk464_15000p.npz",
+      "size_bytes": 3456834,
+      "sha256": "e489244f71f6f70060cf9322392ea4567075f19d39307cd0e9c243b844fe0063"
+    },
+    {
+      "path": "run_pair_coulomb_scan.py",
+      "size_bytes": 37460,
+      "sha256": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44"
+    },
+    {
+      "path": "TWO_PARTICLE_COUNTERROTATION_DYNAMICS_RU.md",
+      "size_bytes": 41011,
+      "sha256": "be70e7b83ad92e02e54b35249f87333798bfa3a7d41e3f7b3153669f853c8ff0"
+    }
+  ]
+}

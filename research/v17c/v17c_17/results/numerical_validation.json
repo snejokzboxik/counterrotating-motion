@@ -1,0 +1,201 @@
+{
+  "validation": [
+    {
+      "kind": "RK4_step_refinement",
+      "configuration": "scaled_refine12_sobol17_f50hz",
+      "steps": 96,
+      "periods": 15000,
+      "turns": [
+        16.186706298013995,
+        -14.346088146313184
+      ],
+      "frequency_Hz": [
+        0.0546848185743716,
+        -0.048466514007814814
+      ],
+      "window_turns": [
+        [
+          5.376725881922628,
+          -4.784999243359704
+        ],
+        [
+          5.401401741139213,
+          -4.775960551723068
+        ],
+        [
+          5.408578674951599,
+          -4.7851283512308775
+        ]
+      ],
+      "min_distance_over_R": 0.5603020697223203,
+      "completed_periods": 15000,
+      "retained": true,
+      "difference_from_RK4_64": {
+        "max_abs_turns": 0.003341662636842102,
+        "max_abs_min_distance": 5.471794838041166e-05
+      },
+      "wall_seconds": 16.529779500007862
+    },
+    {
+      "kind": "RK4_step_refinement",
+      "configuration": "scaled_refine12_sobol17_f50hz",
+      "steps": 128,
+      "periods": 15000,
+      "turns": [
+        16.187020736496248,
+        -14.345973681476853
+      ],
+      "frequency_Hz": [
+        0.05468588086654137,
+        -0.048466127302286666
+      ],
+      "window_turns": [
+        [
+          5.376769064065777,
+          -4.784957336055404
+        ],
+        [
+          5.401528573337679,
+          -4.775900053891906
+        ],
+        [
+          5.408723099092985,
+          -4.785116291530339
+        ]
+      ],
+      "min_distance_over_R": 0.5603194676385541,
+      "completed_periods": 15000,
+      "retained": true,
+      "difference_from_RK4_64": {
+        "max_abs_turns": 0.0036561011190947568,
+        "max_abs_min_distance": 7.211586461419728e-05
+      },
+      "wall_seconds": 21.62785829999484
+    },
+    {
+      "kind": "RK4_step_refinement",
+      "configuration": "phys0570",
+      "steps": 96,
+      "periods": 15000,
+      "turns": [
+        47.946784056406536,
+        -76.302269603867
+      ],
+      "frequency_Hz": [
+        0.2844806288703135,
+        -0.45272103371112155
+      ],
+      "window_turns": [
+        [
+          15.984821887345444,
+          -25.438122293838514
+        ],
+        [
+          15.97734006583795,
+          -25.437443617640238
+        ],
+        [
+          15.984622103222883,
+          -25.426703692390966
+        ]
+      ],
+      "min_distance_over_R": 0.28464693727058654,
+      "completed_periods": 15000,
+      "retained": true,
+      "difference_from_RK4_64": {
+        "max_abs_turns": 6.038019370890879e-05,
+        "max_abs_min_distance": 2.05443896949542e-05
+      },
+      "wall_seconds": 16.326498200010974
+    },
+    {
+      "kind": "RK4_step_refinement",
+      "configuration": "phys0570",
+      "steps": 128,
+      "periods": 15000,
+      "turns": [
+        47.9467938993647,
+        -76.30227568659316
+      ],
+      "frequency_Hz": [
+        0.28448068727112147,
+        -0.4527210698015038
+      ],
+      "window_turns": [
+        [
+          15.984824972352136,
+          -25.438123864598072
+        ],
+        [
+          15.977343380943484,
+          -25.437445099764947
+        ],
+        [
+          15.984625546070745,
+          -25.426706722234155
+        ]
+      ],
+      "min_distance_over_R": 0.2846279227049977,
+      "completed_periods": 15000,
+      "retained": true,
+      "difference_from_RK4_64": {
+        "max_abs_turns": 7.022315187299455e-05,
+        "max_abs_min_distance": 1.529824106116795e-06
+      },
+      "wall_seconds": 21.662847100000363
+    },
+    {
+      "kind": "independent_DOP853",
+      "configuration": "scaled_refine12_sobol17_f50hz",
+      "periods": 3000,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_RF_periods": 0.010416666666666666,
+      "output_samples_per_RF_period": 16,
+      "success": true,
+      "nfev": 3755453,
+      "DOP_turns_after_200p": [
+        3.071181157211963,
+        -2.7185581270559673
+      ],
+      "RK4_64_turns_after_200p": [
+        3.070703031372402,
+        -2.7189289249337776
+      ],
+      "turn_difference": [
+        0.00047812583956119425,
+        0.0003707978778102472
+      ],
+      "DOP_min_distance_over_R_sampled": 0.5603436579337837,
+      "RK4_segment_min_distance_over_R": 0.5602525002421853,
+      "wall_seconds": 471.20729270001175
+    },
+    {
+      "kind": "independent_DOP853",
+      "configuration": "phys0570",
+      "periods": 3000,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_RF_periods": 0.010416666666666666,
+      "output_samples_per_RF_period": 16,
+      "success": true,
+      "nfev": 3780281,
+      "DOP_turns_after_200p": [
+        9.063959274833739,
+        -14.426162703737484
+      ],
+      "RK4_64_turns_after_200p": [
+        9.063944792358816,
+        -14.426156255153145
+      ],
+      "turn_difference": [
+        1.4482474922417055e-05,
+        -6.448584338514252e-06
+      ],
+      "DOP_min_distance_over_R_sampled": 0.28499358083564424,
+      "RK4_segment_min_distance_over_R": 0.2846263928808916,
+      "wall_seconds": 478.23963090000325
+    }
+  ],
+  "DOP853_note": "Independent Python RHS with separately coded full MFS gradient, Coulomb force, DC, gravity and Cunningham-corrected Schiller-Naumann self-drag; 3000 RF periods per base configuration."
+}

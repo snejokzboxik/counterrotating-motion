@@ -1,0 +1,352 @@
+{
+  "rows": [
+    {
+      "configuration": "scaled_refine12_sobol17_f50hz",
+      "coulomb_scale": 1.0,
+      "periods_requested": 50000,
+      "periods_completed": 50000,
+      "steps_per_RF_period": 64,
+      "drag_model": "Schiller-Naumann empirical factor 1+0.15 Re^0.687 on individually Cunningham-corrected Stokes drag; no cross-hydrodynamic term",
+      "status": "COMPLETE",
+      "retained": true,
+      "counterrotating_screen": true,
+      "turns": [
+        54.42537043779133,
+        -48.26892578163534
+      ],
+      "late_window_turns": [
+        [
+          18.145781230623772,
+          -16.086154969708158
+        ],
+        [
+          18.131527875177255,
+          -16.09163493251657
+        ],
+        [
+          18.14806133198784,
+          -16.091135879409045
+        ]
+      ],
+      "frequency_Hz_corrected_from_cycles": [
+        0.05464394622268205,
+        -0.0484627768891921
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.054655967562119795,
+          -0.04845227400514505
+        ],
+        [
+          0.05461303576860619,
+          -0.04846877991721858
+        ],
+        [
+          0.05466283533731277,
+          -0.04846727674520796
+        ]
+      ],
+      "mean_radius_over_R": [
+        0.5557069859021735,
+        0.7515113907851033
+      ],
+      "mean_radius_windows_over_R": [
+        [
+          0.5557063055477586,
+          0.7515115182219672
+        ],
+        [
+          0.5557069848381275,
+          0.7515112786609224
+        ],
+        [
+          0.5557076673205658,
+          0.7515113754724734
+        ]
+      ],
+      "min_radius_over_R": [
+        0.5039830028878761,
+        0.7215412079667028
+      ],
+      "max_radius_over_R": [
+        0.9774996975888275,
+        0.8576161847855022
+      ],
+      "max_abs_z_over_R": [
+        0.3289026548594555,
+        0.8540227942486098
+      ],
+      "mean_separation_over_R": 1.0347113152326641,
+      "min_separation_over_R": 0.5602458961512927,
+      "mean_Coulomb_energy_over_m1R2Omega2": 1.0359907423731117e-05,
+      "max_speed_over_ROmega": [
+        0.4050372253274045,
+        0.080847952191089
+      ],
+      "max_Re_estimate": [
+        2.6909577936946754,
+        3.5385336578287037
+      ],
+      "completed_mechanical_work": [
+        210.48016027219484,
+        -0.003640078357386285,
+        9.641019349046655e-05,
+        -210.5025175850962,
+        0.0025377345962112456,
+        841.5055503793659,
+        -0.03859387500316351,
+        -9.534550002702635e-05,
+        -841.7266790481349,
+        0.09944470235657547
+      ],
+      "torque_integrals_by_particle_RF_DC_C_drag_g": [
+        [
+          121.79109510917402,
+          2.4021826517972673e-17,
+          -0.03275552476857572,
+          -121.76389424212896,
+          0.0
+        ],
+        [
+          -262.1367781322205,
+          -2.713753820413902e-17,
+          0.03275552476857573,
+          262.07380328602306,
+          0.0
+        ]
+      ],
+      "balances": {
+        "delta_total_energy": -0.27610052716846273,
+        "explicit_RF_work_plus_drag": -0.37812316262284185,
+        "energy_residual": 0.10202263545443202,
+        "energy_residual_relative_to_RF_work": 9.695856737378996e-05,
+        "delta_kinetic_energy": 0.0016281333752573518,
+        "sum_mechanical_work_RF_DC_C_drag_gravity": -0.18373643338461249,
+        "kinetic_work_residual": 0.18536456675986984,
+        "delta_total_Lz": -0.04736105538929531,
+        "integrated_total_torque": -0.03577397915239544,
+        "angular_momentum_residual": -0.01158707623689987,
+        "integrated_Coulomb_work_per_particle": [
+          9.641019349046655e-05,
+          -9.534550002702635e-05
+        ],
+        "integrated_Coulomb_torque_per_particle": [
+          -0.03275552476857572,
+          0.03275552476857573
+        ],
+        "internal_Coulomb_torque_sum": 1.3877787807814457e-17,
+        "RF_work_per_particle": [
+          210.48016027219484,
+          841.5055503793659
+        ],
+        "drag_work_per_particle": [
+          -210.5025175850962,
+          -841.7266790481349
+        ],
+        "DC_work_per_particle": [
+          -0.003640078357386285,
+          -0.03859387500316351
+        ],
+        "gravity_work_per_particle": [
+          0.0025377345962112456,
+          0.09944470235657547
+        ],
+        "RF_torque_per_particle": [
+          121.79109510917402,
+          -262.1367781322205
+        ],
+        "drag_torque_per_particle": [
+          -121.76389424212896,
+          262.07380328602306
+        ],
+        "DC_torque_per_particle": [
+          2.4021826517972673e-17,
+          -2.713753820413902e-17
+        ],
+        "Coulomb_potential_initial_final": [
+          8.506658023684308e-06,
+          7.445051479455904e-06
+        ],
+        "Coulomb_work_plus_delta_potential": 3.0869192117934983e-09
+      },
+      "sample_count": 50001,
+      "sample_stride_steps": 64,
+      "kind": "long_horizon_RK4",
+      "wall_seconds": 110.44493719999446
+    },
+    {
+      "configuration": "phys0570",
+      "coulomb_scale": 1.0,
+      "periods_requested": 50000,
+      "periods_completed": 50000,
+      "steps_per_RF_period": 64,
+      "drag_model": "Schiller-Naumann empirical factor 1+0.15 Re^0.687 on individually Cunningham-corrected Stokes drag; no cross-hydrodynamic term",
+      "status": "COMPLETE",
+      "retained": true,
+      "counterrotating_screen": true,
+      "turns": [
+        161.32095521831772,
+        -256.7393414806808
+      ],
+      "late_window_turns": [
+        [
+          53.77521660267063,
+          -85.57406271989625
+        ],
+        [
+          53.76269158904191,
+          -85.57949548642698
+        ],
+        [
+          53.78304702660775,
+          -85.58578327433702
+        ]
+      ],
+      "frequency_Hz_corrected_from_cycles": [
+        0.28445683522256804,
+        -0.45270783610155607
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.2844651131807866,
+          -0.4526775896937267
+        ],
+        [
+          0.2843988572055515,
+          -0.45270632844446884
+        ],
+        [
+          0.28450653528137954,
+          -0.4527395901663639
+        ]
+      ],
+      "mean_radius_over_R": [
+        0.5138184579388223,
+        0.8031521709436698
+      ],
+      "mean_radius_windows_over_R": [
+        [
+          0.5138181390099897,
+          0.8031529242190434
+        ],
+        [
+          0.5138184644838177,
+          0.8031516460952974
+        ],
+        [
+          0.5138187703227609,
+          0.8031519425165986
+        ]
+      ],
+      "min_radius_over_R": [
+        0.4269120784437408,
+        0.7131527543287063
+      ],
+      "max_radius_over_R": [
+        0.9617772328829572,
+        0.9223593092845703
+      ],
+      "max_abs_z_over_R": [
+        0.29146480803911623,
+        0.24351216666400433
+      ],
+      "mean_separation_over_R": 0.9130578851798092,
+      "min_separation_over_R": 0.2846263928808916,
+      "mean_Coulomb_energy_over_m1R2Omega2": 6.396065877486443e-07,
+      "max_speed_over_ROmega": [
+        0.1724540900603893,
+        0.11507348957169557
+      ],
+      "max_Re_estimate": [
+        1.5494845092193503,
+        1.902597996092307
+      ],
+      "completed_mechanical_work": [
+        102.1356232034916,
+        -0.0012967558270882379,
+        0.00011404183195224484,
+        -102.13506567467266,
+        0.0007218873523942998,
+        882.8563873617591,
+        -8.109917243927158e-05,
+        -0.00011491125109114532,
+        -882.8618791710621,
+        0.00020519669613998717
+      ],
+      "torque_integrals_by_particle_RF_DC_C_drag_g": [
+        [
+          158.16504442285068,
+          6.002548413422965e-20,
+          -0.00012474974029061083,
+          -158.17027129928098,
+          0.0
+        ],
+        [
+          -433.9948571186411,
+          -8.883879569491396e-18,
+          0.0001247497402906109,
+          433.9965732574341,
+          0.0
+        ]
+      ],
+      "balances": {
+        "delta_total_energy": -0.020803934532518328,
+        "explicit_RF_work_plus_drag": -0.028543314883449966,
+        "energy_residual": 0.0077393803509266945,
+        "energy_residual_relative_to_RF_work": 7.857263305663142e-06,
+        "delta_kinetic_energy": 0.00040895132491086667,
+        "sum_mechanical_work_RF_DC_C_drag_gravity": -0.005385920854326164,
+        "kinetic_work_residual": 0.005794872179237031,
+        "delta_total_Lz": -0.004882400241890613,
+        "integrated_total_torque": -0.0035107376373275656,
+        "angular_momentum_residual": -0.0013716626045630472,
+        "integrated_Coulomb_work_per_particle": [
+          0.00011404183195224484,
+          -0.00011491125109114532
+        ],
+        "integrated_Coulomb_torque_per_particle": [
+          -0.00012474974029061083,
+          0.0001247497402906109
+        ],
+        "internal_Coulomb_torque_sum": 8.131516293641283e-20,
+        "RF_work_per_particle": [
+          102.1356232034916,
+          882.8563873617591
+        ],
+        "drag_work_per_particle": [
+          -102.13506567467266,
+          -882.8618791710621
+        ],
+        "DC_work_per_particle": [
+          -0.0012967558270882379,
+          -8.109917243927158e-05
+        ],
+        "gravity_work_per_particle": [
+          0.0007218873523942998,
+          0.00020519669613998717
+        ],
+        "RF_torque_per_particle": [
+          158.16504442285068,
+          -433.9948571186411
+        ],
+        "drag_torque_per_particle": [
+          -158.17027129928098,
+          433.9965732574341
+        ],
+        "DC_torque_per_particle": [
+          6.002548413422965e-20,
+          -8.883879569491396e-18
+        ],
+        "Coulomb_potential_initial_final": [
+          4.2139604420770555e-07,
+          1.2907202546646648e-06
+        ],
+        "Coulomb_work_plus_delta_potential": -9.49284435293529e-11
+      },
+      "sample_count": 50001,
+      "sample_stride_steps": 64,
+      "kind": "long_horizon_RK4",
+      "wall_seconds": 102.50294459998258
+    }
+  ]
+}
