@@ -1,0 +1,392 @@
+{
+  "particle_1": {
+    "stokes": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.5518150528953163,
+      "omega": 0.0012705926826995957,
+      "residual": [
+        -3.469446951953614e-18,
+        -2.6834003769016235e-18
+      ],
+      "oseen": false,
+      "unsteady_stokes_control": false,
+      "phase_samples": 128,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          0.00033169742791882504,
+          -0.0002496082966680927
+        ],
+        "RF_net_mean_torque_dimensionless": 8.208913125073232e-05,
+        "absolute_net_over_sum_absolute_modes": 0.1412150745789847,
+        "mode_response": [
+          {
+            "sigma": 0.9974588146346008,
+            "mean_RF_force_xy_dimensionless": [
+              -0.0028784626427556166,
+              0.0006011025363995475
+            ],
+            "micromotion_amplitude_dimensionless": 0.05595205211202576
+          },
+          {
+            "sigma": 3.116885316016834,
+            "mean_RF_force_xy_dimensionless": [
+              -0.006654096887978456,
+              -0.00045234049951777124
+            ],
+            "micromotion_amplitude_dimensionless": 0.015865943142426144
+          }
+        ]
+      }
+    },
+    "oseen": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.5517953130114899,
+      "omega": 0.001160421383007311,
+      "residual": [
+        5.082311328013224e-18,
+        4.0657581468206416e-19
+      ],
+      "oseen": true,
+      "unsteady_stokes_control": false,
+      "phase_samples": 192,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          0.0003315694011898504,
+          -0.00024963373300394284
+        ],
+        "RF_net_mean_torque_dimensionless": 8.193566818590759e-05,
+        "absolute_net_over_sum_absolute_modes": 0.14097595722632048,
+        "mode_response": [
+          {
+            "sigma": 0.9976791572339854,
+            "mean_RF_force_xy_dimensionless": [
+              -0.0028777611742867868,
+              0.0006008920216815004
+            ],
+            "micromotion_amplitude_dimensionless": 0.05593816781347802
+          },
+          {
+            "sigma": 3.116444630818065,
+            "mean_RF_force_xy_dimensionless": [
+              -0.006654309565358509,
+              -0.00045240277892455525
+            ],
+            "micromotion_amplitude_dimensionless": 0.015867593195004664
+          }
+        ]
+      }
+    },
+    "unsteady_stokes_control": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.5556606700165139,
+      "omega": 0.000778855935486017,
+      "residual": [
+        4.666406150377611e-16,
+        3.699704388335223e-16
+      ],
+      "oseen": false,
+      "unsteady_stokes_control": true,
+      "phase_samples": 128,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          0.0003532872085768867,
+          -0.0003022638933548845
+        ],
+        "RF_net_mean_torque_dimensionless": 5.1023315222002176e-05,
+        "absolute_net_over_sum_absolute_modes": 0.07783270453157227,
+        "mode_response": [
+          {
+            "sigma": 0.998442288129028,
+            "mean_RF_force_xy_dimensionless": [
+              -0.0028085644169373166,
+              0.0006357966788730742
+            ],
+            "micromotion_amplitude_dimensionless": 0.05479277233381967
+          },
+          {
+            "sigma": 3.1149183690279796,
+            "mean_RF_force_xy_dimensionless": [
+              -0.00678986784359752,
+              -0.0005439720852402626
+            ],
+            "micromotion_amplitude_dimensionless": 0.01598063369025535
+          }
+        ]
+      }
+    },
+    "oseen_torus_quadrature_128": {
+      "samples_per_RF_phase": 128,
+      "mean_speed_dimensionless": 0.047728947723015204,
+      "mean_speed_m_s": 0.07122383297684302,
+      "G_vector_dimensionless": [
+        8.320837256339357e-19,
+        5.04480314132385e-05
+      ],
+      "G_r_dimensionless": 8.320837256339357e-19,
+      "G_theta_dimensionless": 5.04480314132385e-05,
+      "stokes_drag_r_dimensionless": -0.0,
+      "stokes_drag_theta_dimensionless": -0.00014951457371509643,
+      "oseen_drag_r_dimensionless": -2.2924755706241095e-19,
+      "oseen_drag_theta_dimensionless": -1.389894743017796e-05,
+      "diameter_Re_phase_rms": 0.36529632926504374,
+      "diameter_Re_mean_speed": 0.33054154530689583,
+      "oseen_linear_factor_at_mean_speed": 0.06197653974504297,
+      "response": [
+        {
+          "sigma": 0.9974456365922881,
+          "mean_rf": [
+            -0.002878134406603345,
+            0.0006010378219117459
+          ],
+          "condition_number": 1.0049429759647666,
+          "micromotion_amplitude": 0.0559456866995875
+        },
+        {
+          "sigma": 3.1169116721014594,
+          "mean_rf": [
+            -0.006649806460583121,
+            -0.0004520459816682738
+          ],
+          "condition_number": 1.0016337057422038,
+          "micromotion_amplitude": 0.015859723879668258
+        }
+      ]
+    },
+    "oseen_torus_quadrature_256": {
+      "samples_per_RF_phase": 256,
+      "mean_speed_dimensionless": 0.04772894772214335,
+      "mean_speed_m_s": 0.07122383297554201,
+      "G_vector_dimensionless": [
+        -2.540988413151125e-18,
+        5.044803141226548e-05
+      ],
+      "G_r_dimensionless": -2.540988413151125e-18,
+      "G_theta_dimensionless": 5.044803141226548e-05,
+      "stokes_drag_r_dimensionless": -0.0,
+      "stokes_drag_theta_dimensionless": -0.00014951457371509643,
+      "oseen_drag_r_dimensionless": 7.000682362763306e-19,
+      "oseen_drag_theta_dimensionless": -1.389894742990988e-05,
+      "diameter_Re_phase_rms": 0.3652963292650437,
+      "diameter_Re_mean_speed": 0.3305415453008579,
+      "oseen_linear_factor_at_mean_speed": 0.06197653974391086,
+      "response": [
+        {
+          "sigma": 0.9974456365922881,
+          "mean_rf": [
+            -0.002878134406603345,
+            0.0006010378219117459
+          ],
+          "condition_number": 1.0049429759647666,
+          "micromotion_amplitude": 0.0559456866995875
+        },
+        {
+          "sigma": 3.1169116721014594,
+          "mean_rf": [
+            -0.006649806460583121,
+            -0.0004520459816682738
+          ],
+          "condition_number": 1.0016337057422038,
+          "micromotion_amplitude": 0.015859723879668258
+        }
+      ]
+    }
+  },
+  "particle_2": {
+    "stokes": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.7663063641231859,
+      "omega": -0.001069923827459852,
+      "residual": [
+        -1.734723475976807e-18,
+        -8.131516293641283e-20
+      ],
+      "oseen": false,
+      "unsteady_stokes_control": false,
+      "phase_samples": 128,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          4.70056213209575e-05,
+          -0.00012764756897006385
+        ],
+        "RF_net_mean_torque_dimensionless": -8.064194764910635e-05,
+        "absolute_net_over_sum_absolute_modes": 0.46172616437600816,
+        "mode_response": [
+          {
+            "sigma": 1.0021398476549197,
+            "mean_RF_force_xy_dimensionless": [
+              -0.00048123319196788003,
+              6.134050755893399e-05
+            ],
+            "micromotion_amplitude_dimensionless": 0.027049301069079944
+          },
+          {
+            "sigma": 3.1075232499761962,
+            "mean_RF_force_xy_dimensionless": [
+              -0.004036784464218389,
+              -0.00016657511270458945
+            ],
+            "micromotion_amplitude_dimensionless": 0.014604175995964164
+          }
+        ]
+      }
+    },
+    "oseen": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.7663279904770252,
+      "omega": -0.0009832747999840167,
+      "residual": [
+        -2.3142126532323203e-19,
+        -5.421010862427522e-20
+      ],
+      "oseen": true,
+      "unsteady_stokes_control": false,
+      "phase_samples": 192,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          4.7020259376749076e-05,
+          -0.0001276372246906696
+        ],
+        "RF_net_mean_torque_dimensionless": -8.061696531392053e-05,
+        "absolute_net_over_sum_absolute_modes": 0.4615717771521429,
+        "mode_response": [
+          {
+            "sigma": 1.0019665495999681,
+            "mean_RF_force_xy_dimensionless": [
+              -0.00048132828986443025,
+              6.135787803794015e-05
+            ],
+            "micromotion_amplitude_dimensionless": 0.027054683366392614
+          },
+          {
+            "sigma": 3.1078698460860994,
+            "mean_RF_force_xy_dimensionless": [
+              -0.004036680536162927,
+              -0.00016655691332795734
+            ],
+            "micromotion_amplitude_dimensionless": 0.014602973685874878
+          }
+        ]
+      }
+    },
+    "unsteady_stokes_control": {
+      "success": true,
+      "message": "The solution converged.",
+      "rho": 0.7689817907843124,
+      "omega": -0.0014177646357700665,
+      "residual": [
+        3.469446951953614e-18,
+        8.131516293641283e-19
+      ],
+      "oseen": false,
+      "unsteady_stokes_control": true,
+      "phase_samples": 128,
+      "diagnostics": {
+        "RF_mode_mean_torques_dimensionless": [
+          5.181345470148835e-05,
+          -0.00015942020977671397
+        ],
+        "RF_net_mean_torque_dimensionless": -0.00010760675507522562,
+        "absolute_net_over_sum_absolute_modes": 0.5094204815365962,
+        "mode_response": [
+          {
+            "sigma": 1.00283552927154,
+            "mean_RF_force_xy_dimensionless": [
+              -0.000471842167462344,
+              6.737929990337214e-05
+            ],
+            "micromotion_amplitude_dimensionless": 0.02657547413561484
+          },
+          {
+            "sigma": 3.1061318867429555,
+            "mean_RF_force_xy_dimensionless": [
+              -0.004062614784055037,
+              -0.00020731337424013062
+            ],
+            "micromotion_amplitude_dimensionless": 0.014602095404979016
+          }
+        ]
+      }
+    },
+    "oseen_torus_quadrature_128": {
+      "samples_per_RF_phase": 128,
+      "mean_speed_dimensionless": 0.03502976891944637,
+      "mean_speed_m_s": 0.05227340072978337,
+      "G_vector_dimensionless": [
+        1.840918784172743e-18,
+        -4.305794445382133e-05
+      ],
+      "G_r_dimensionless": 1.840918784172743e-18,
+      "G_theta_dimensionless": -4.305794445382133e-05,
+      "stokes_drag_r_dimensionless": -0.0,
+      "stokes_drag_theta_dimensionless": 0.00010518750086967189,
+      "oseen_drag_r_dimensionless": -3.94482596608445e-19,
+      "oseen_drag_theta_dimensionless": 9.226702382961713e-06,
+      "diameter_Re_phase_rms": 0.3328727291212722,
+      "diameter_Re_mean_speed": 0.31190758446500577,
+      "oseen_linear_factor_at_mean_speed": 0.05848267208718858,
+      "response": [
+        {
+          "sigma": 1.00213895418809,
+          "mean_rf": [
+            -0.00048121913329540067,
+            6.133874261942078e-05
+          ],
+          "condition_number": 1.0042190892928413,
+          "micromotion_amplitude": 0.027048511045680214
+        },
+        {
+          "sigma": 3.1075250369098555,
+          "mean_rf": [
+            -0.004036173754683569,
+            -0.0001665498404822849
+          ],
+          "condition_number": 1.0013755648296787,
+          "micromotion_amplitude": 0.014602845274594252
+        }
+      ]
+    },
+    "oseen_torus_quadrature_256": {
+      "samples_per_RF_phase": 256,
+      "mean_speed_dimensionless": 0.03502976891944637,
+      "mean_speed_m_s": 0.05227340072978337,
+      "G_vector_dimensionless": [
+        2.45676777831312e-19,
+        -4.305794445382158e-05
+      ],
+      "G_r_dimensionless": 2.45676777831312e-19,
+      "G_theta_dimensionless": -4.305794445382158e-05,
+      "stokes_drag_r_dimensionless": -0.0,
+      "stokes_drag_theta_dimensionless": 0.00010518750086967189,
+      "oseen_drag_r_dimensionless": -5.264502382099543e-20,
+      "oseen_drag_theta_dimensionless": 9.226702382961767e-06,
+      "diameter_Re_phase_rms": 0.3328727291212722,
+      "diameter_Re_mean_speed": 0.31190758446500577,
+      "oseen_linear_factor_at_mean_speed": 0.05848267208718858,
+      "response": [
+        {
+          "sigma": 1.00213895418809,
+          "mean_rf": [
+            -0.00048121913329540067,
+            6.133874261942078e-05
+          ],
+          "condition_number": 1.0042190892928413,
+          "micromotion_amplitude": 0.027048511045680214
+        },
+        {
+          "sigma": 3.1075250369098555,
+          "mean_rf": [
+            -0.004036173754683569,
+            -0.0001665498404822849
+          ],
+          "condition_number": 1.0013755648296787,
+          "micromotion_amplitude": 0.014602845274594252
+        }
+      ]
+    }
+  }
+}

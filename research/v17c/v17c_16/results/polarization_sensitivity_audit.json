@@ -1,0 +1,59 @@
+{
+  "comparison": "same nominal MFS/Oseen/Coulomb/epsilon_r=2.6 start; 250 primary RF periods",
+  "step16_classification": "retained-not-counterrotating",
+  "step32_classification": "retained-not-counterrotating",
+  "step16_retained": true,
+  "step32_retained": true,
+  "step_refinement": [
+    {
+      "metric": "mean_radius_dimensionless_last_80pct",
+      "steps16": [
+        0.5594440161804718,
+        0.9391914013409518
+      ],
+      "steps32": [
+        0.5594440141870778,
+        0.9391914017257256
+      ],
+      "absolute_change_by_particle": [
+        1.993394005417315e-09,
+        3.8477376840262423e-10
+      ],
+      "relative_change_percent_by_particle": [
+        3.563169780829445e-07,
+        4.0968621273109855e-08
+      ]
+    },
+    {
+      "metric": "mean_angular_velocity_dimensionless_last_80pct",
+      "steps16": [
+        0.0008357624876352244,
+        1.6544236119827876e-07
+      ],
+      "steps32": [
+        0.000835763975431652,
+        1.6544220132377109e-07
+      ],
+      "absolute_change_by_particle": [
+        1.4877964276153663e-09,
+        1.598745076729447e-13
+      ],
+      "relative_change_percent_by_particle": [
+        0.00017801633850597057,
+        9.663465935155785e-05
+      ]
+    }
+  ],
+  "long_1000_period_result": {
+    "classification": "retained-not-counterrotating",
+    "mean_radius_dimensionless_last_80pct": [
+      0.5594841249766503,
+      0.9391140776304691
+    ],
+    "mean_angular_velocity_dimensionless_last_80pct": [
+      0.0008726367939399932,
+      1.0464658463707059e-08
+    ],
+    "limitation": "single initial condition; constant real illustrative polarizability"
+  }
+}

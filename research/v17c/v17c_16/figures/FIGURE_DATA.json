@@ -1,0 +1,808 @@
+{
+  "figures": [
+    {
+      "question": "Does the finite-horizon MFS trajectory remain in opposite rotation and what are its radial/axial excursions?",
+      "conditions": {
+        "case": "oseen_coulomb_nominal_start01",
+        "integrator": "SciPy DOP853",
+        "oseen_quasisteady": true,
+        "RF_field_model": "mfs",
+        "mfs_order_per_rod": 24,
+        "mfs_leading_transfer_check": {
+          "h_plus2_complex": [
+            0.8703167270606971,
+            1.3227266504323154e-17
+          ],
+          "h_minus4_complex": [
+            0.7982169778197363,
+            6.7220534694101275e-18
+          ],
+          "expected_h_plus2": 0.870316891091623,
+          "expected_h_minus4": 0.7982172624273378,
+          "boundary_residual": 1.667050864592712e-15
+        },
+        "coulomb_scale": 1.0,
+        "gravity_buoyancy": true,
+        "gravity_orientation_relative_to_trap_axis": "vertical",
+        "rf_phases_rad": [
+          0.0,
+          0.0
+        ],
+        "initial": {
+          "angles": [
+            0.0,
+            1.5707963267948966
+          ]
+        },
+        "primary_RF_periods_requested": 1000,
+        "primary_RF_periods_reached": 999.9999999999999,
+        "max_step_tau": 0.12619664181937054,
+        "steps_per_fast_RF_period_bound": 16,
+        "solver_nfev": 674744,
+        "mean_radius_dimensionless_last_80pct": [
+          0.5493650546276199,
+          0.7656863482487007
+        ],
+        "radius_std_dimensionless_last_80pct": [
+          0.030000943043393735,
+          0.0156450632034062
+        ],
+        "mean_angular_velocity_dimensionless_last_80pct": [
+          0.0011812985652222298,
+          -0.001036773435207716
+        ],
+        "mean_angular_velocity_rad_s_last_80pct": [
+          0.35256009494884044,
+          -0.30942638171113335
+        ],
+        "mean_axial_position_over_R_last_80pct": [
+          -0.6365235874780112,
+          -1.8657650950389688
+        ],
+        "axial_std_over_R_last_80pct": [
+          4.7806092124446095e-05,
+          6.592742036461953e-05
+        ],
+        "minimum_center_distance_over_R": 1.24430080228819,
+        "minimum_surface_gap_over_R": 1.22830080228819,
+        "minimum_rod_clearance_over_R_by_particle": [
+          0.3775591579126975,
+          0.15861888502328025
+        ],
+        "minimum_shield_clearance_over_R_by_particle": [
+          0.5343688220540812,
+          0.3116958904182717
+        ],
+        "diameter_Re_rms_last_80pct": [
+          0.367024344486499,
+          0.33317800911708895
+        ],
+        "diameter_Re_max_sampled_last_80pct": [
+          0.5545961411325094,
+          0.47637666726838523
+        ],
+        "retained_contact_free_screen": true,
+        "counterrotating_by_mean_omega": true,
+        "classification": "counterrotating-retained",
+        "trajectory_file": "oseen_coulomb_nominal_start01.npz",
+        "limitations": [
+          "RF field is the ideal infinite-rod leading-harmonic field, not the full MFS 3D field.",
+          "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+          "The run horizon and fixed start set do not estimate a capture probability or prove an attractor."
+        ]
+      },
+      "display": "Full sampled trajectory; dashed horizontal lines are radius/axial means, dashed sloped lines are last-80% angle-fit guides; vertical dotted line marks averaging-window start."
+    },
+    {
+      "question": "How do Stokes, Oseen and linear unsteady-Stokes averaged predictions compare with exact Stokes/Oseen trajectories?",
+      "categorical_models": [
+        "Stokes avg.",
+        "Oseen avg.",
+        "unsteady Stokes\ncontrol",
+        "exact Stokes\nideal",
+        "exact Oseen\nideal",
+        "exact Oseen\nMFS"
+      ],
+      "particle_values": [
+        {
+          "rho": [
+            0.5518150528953163,
+            0.5517953130114899,
+            0.5556606700165139,
+            0.5488416761640521,
+            0.5493641807321824,
+            0.5493650546276199
+          ],
+          "omega": [
+            0.0012705926826995957,
+            0.001160421383007311,
+            0.000778855935486017,
+            0.0015633849610525719,
+            0.0011808505253462279,
+            0.0011812985652222298
+          ],
+          "radius_std_exact_ideal": 0.03000090046862838,
+          "radius_std_exact_mfs": 0.030000943043393735
+        },
+        {
+          "rho": [
+            0.7663063641231859,
+            0.7663279904770252,
+            0.7689817907843124,
+            0.7658929142352708,
+            0.7660023911710967,
+            0.7656863482487007
+          ],
+          "omega": [
+            -0.001069923827459852,
+            -0.0009832747999840167,
+            -0.0014177646357700665,
+            -0.0010542039109935782,
+            -0.0010777914141132392,
+            -0.001036773435207716
+          ],
+          "radius_std_exact_ideal": 0.015581193743707748,
+          "radius_std_exact_mfs": 0.0156450632034062
+        }
+      ],
+      "fixed_parameters": "35/45 um PS in air; 47.5/147.811 Hz; frozen Local15 A,B,beta; Coulomb=1 for coupled exact cases; ideal vs full 2D MFS RF field.",
+      "initial_conditions": "The exact ODE runs use the nominal analytic Oseen/Stokes branch radii and velocities, gravity-set z offsets, angles (0, pi/2), RF phases (0,0).",
+      "horizon_and_classifier": "1000 primary RF periods; mean over last 80%; DOP853; opposite signs classify counterrotation; uncertainty bars show radial standard deviation, not confidence intervals."
+    },
+    {
+      "question": "What transverse RF field does the 24-rod geometry produce at one phase snapshot, and do the MFS surface maxima converge with basis order?",
+      "phase_snapshot": [
+        0.0,
+        0.0
+      ],
+      "field_map": "Dimensionless RF gradient; electrodes/shield masked, dashed circles show mean radii of the full-MFS exact run.",
+      "surface_data": [
+        {
+          "p_collocation_per_rod": 16,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 256,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.5550683900048382e-15,
+          "rf_only_max_surface_field_V_m_all": 8122592.335917589,
+          "rf_only_rod_max_surface_field_V_m": 8122592.335917589,
+          "rf_only_shield_max_surface_field_V_m": 5310415.044533543,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8147609.413811812,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8147609.413811812,
+          "rod_max_point_index": 799,
+          "rod_max_electrode_index": 3,
+          "rod_max_angle_within_rod_deg": 44.296875,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5336625.410864571,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26210.366331029672,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 333.08558420371264,
+          "support_vs_direct_torus_max_rel_diff": 6.191092921434408e-05,
+          "rod_to_shield_voltage_bound_V": 1615.296307968423,
+          "adjacent_rod_voltage_bound_V": 1480.3401523309751,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        },
+        {
+          "p_collocation_per_rod": 24,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 256,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 1.667050864592712e-15,
+          "rf_only_max_surface_field_V_m_all": 8111879.9497799305,
+          "rf_only_rod_max_surface_field_V_m": 8111879.9497799305,
+          "rf_only_shield_max_surface_field_V_m": 5311025.47306567,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8136898.736468196,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8136898.736468196,
+          "rod_max_point_index": 6133,
+          "rod_max_electrode_index": 23,
+          "rod_max_angle_within_rod_deg": 345.234375,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5337235.839396699,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26210.366331029672,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 332.40460293367505,
+          "support_vs_direct_torus_max_rel_diff": 6.183000623113506e-05,
+          "rod_to_shield_voltage_bound_V": 1615.296307968423,
+          "adjacent_rod_voltage_bound_V": 1480.3401523309751,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        },
+        {
+          "p_collocation_per_rod": 32,
+          "n_rods": 24,
+          "n_surface_samples_per_rod": 256,
+          "n_shield_samples": 720,
+          "max_boundary_potential_residual_V": 2.1117728819589778e-15,
+          "rf_only_max_surface_field_V_m_all": 8111468.149791628,
+          "rf_only_rod_max_surface_field_V_m": 8111468.149791628,
+          "rf_only_shield_max_surface_field_V_m": 5311038.241697359,
+          "max_surface_field_ideal_DC_analytically_added_V_m_not_a_conductor_BVP": 8136486.936479894,
+          "rod_max_surface_field_ideal_DC_added_V_m": 8136486.936479894,
+          "rod_max_point_index": 3466,
+          "rod_max_electrode_index": 13,
+          "rod_max_angle_within_rod_deg": 194.765625,
+          "shield_max_surface_field_ideal_DC_added_V_m": 5337248.608028389,
+          "maximum_ideal_DC_field_evaluated_at_boundary_V_m_not_physical_conductor_solution": 26210.366331029672,
+          "shield_max_angle_deg": 45.0,
+          "support_vs_direct_torus_max_abs_diff_V_m": 332.3578930478543,
+          "support_vs_direct_torus_max_rel_diff": 6.182267977961685e-05,
+          "rod_to_shield_voltage_bound_V": 1615.296307968423,
+          "adjacent_rod_voltage_bound_V": 1480.3401523309751,
+          "assumptions": [
+            "Two independent RF electrode bases solved separately by MFS and combined over independent phase torus.",
+            "Infinite rods and 2D grounded circular shield; no rod ends or endcaps.",
+            "RF-only surface field is the conductor-boundary result. The separate ideal DC addition is not a physical conductor-boundary solution.",
+            "Surface field is computed from MFS gradients and sampled densely along each conductor boundary."
+          ]
+        }
+      ],
+      "dimensionless_field_scale_V_m": 1310474.6269160686,
+      "caveat": "The 3 MV/m line is a familiar reference scale only; this figure does not establish corona or breakdown. Surface values use independent phase-torus maxima, while panel (a) is a single phase snapshot."
+    },
+    {
+      "question": "Does a dielectric-sphere induced-dipole force materially change the two-particle counterrotating trajectory?",
+      "fixed_parameters": "35/45 um polystyrene pair in air; same charges, RF/DC drive, Coulomb scale=1, MFS order=24, nominal initial state and RF phases in both runs.",
+      "comparison": "Point-charge Oseen baseline versus point charge plus instantaneous real-sphere polarizability with illustrative epsilon_r=2.6.",
+      "window_and_classifier": "Non-overlapping 50-primary-period windows; markers are window means, not capture statistics. Hollow squares identify induced-dipole sensitivity case.",
+      "scope": "A real, frequency-independent epsilon_r is a sensitivity model only; complex dielectric response, surface charging, and mutual dipole effects are not included.",
+      "series": [
+        {
+          "case": "point-charge baseline",
+          "window_periods": 50.0,
+          "window_centers_primary_periods": [
+            25.0,
+            75.0,
+            125.0,
+            175.0,
+            225.0,
+            275.0,
+            325.0,
+            375.0,
+            425.0,
+            475.0,
+            525.0,
+            575.0,
+            625.0,
+            675.0,
+            725.0,
+            775.0,
+            825.0,
+            875.0,
+            925.0,
+            975.0
+          ],
+          "mean_radius_over_R_by_window": [
+            [
+              0.5494040282880661,
+              0.7675535717088824
+            ],
+            [
+              0.5492917563798307,
+              0.7658625491854432
+            ],
+            [
+              0.5493253224808037,
+              0.7654783721467687
+            ],
+            [
+              0.5493819359923232,
+              0.7653948928652735
+            ],
+            [
+              0.5494437155693654,
+              0.765884801245873
+            ],
+            [
+              0.5494636743436077,
+              0.7658642230518145
+            ],
+            [
+              0.549400852006494,
+              0.765626159434181
+            ],
+            [
+              0.5493599132344725,
+              0.7655102658884252
+            ],
+            [
+              0.5493075169133217,
+              0.7657296365179914
+            ],
+            [
+              0.5493084646307532,
+              0.7659062435750162
+            ],
+            [
+              0.5493040236107283,
+              0.765613287554313
+            ],
+            [
+              0.5493331642681204,
+              0.7653415268909755
+            ],
+            [
+              0.5493953501553163,
+              0.7656387355807679
+            ],
+            [
+              0.5494790473253348,
+              0.7659920665468346
+            ],
+            [
+              0.5494296023563997,
+              0.7656545535176702
+            ],
+            [
+              0.5493866142409741,
+              0.7654201583789193
+            ],
+            [
+              0.5492964591725271,
+              0.7657839791323505
+            ],
+            [
+              0.549302075163474,
+              0.7659844632410413
+            ],
+            [
+              0.5493171820615783,
+              0.7655905441323594
+            ],
+            [
+              0.5493416417207714,
+              0.7654387065767144
+            ]
+          ],
+          "mean_omega_over_Omega1_by_window": [
+            [
+              0.0009919070592642218,
+              0.00042304535262394967
+            ],
+            [
+              0.0010418909610316056,
+              -0.0011052947963845624
+            ],
+            [
+              0.0010653812246683725,
+              -0.0010269202785071771
+            ],
+            [
+              0.0012775453363033764,
+              -0.00100551064464105
+            ],
+            [
+              0.0013698251247612181,
+              -0.0011296885627210677
+            ],
+            [
+              0.0014352263895589781,
+              -0.0009339305204614476
+            ],
+            [
+              0.001234907251240802,
+              -0.000967435588523307
+            ],
+            [
+              0.0011049949351207076,
+              -0.0010384596370622968
+            ],
+            [
+              0.0009013113182206552,
+              -0.0010210576875728673
+            ],
+            [
+              0.001021073035779085,
+              -0.0011221842852060908
+            ],
+            [
+              0.0011171029604136278,
+              -0.0009936404290455947
+            ],
+            [
+              0.0012959139182731443,
+              -0.0010547815628655496
+            ],
+            [
+              0.001338171084763466,
+              -0.0011892147658480352
+            ],
+            [
+              0.0013558845305859403,
+              -0.0009691380404188158
+            ],
+            [
+              0.0012217025840483783,
+              -0.0009894457162378004
+            ],
+            [
+              0.0011324981190710087,
+              -0.0009948120547440024
+            ],
+            [
+              0.0010874251849845998,
+              -0.0009995737348756576
+            ],
+            [
+              0.0010869301827171316,
+              -0.001078021340596534
+            ],
+            [
+              0.0010716188922290765,
+              -0.0009455016228467748
+            ],
+            [
+              0.001086481139216191,
+              -0.0011103388255240957
+            ]
+          ],
+          "within_window_omega_std_not_statistical_error": [
+            [
+              0.06387499026547047,
+              0.03260910834239426
+            ],
+            [
+              0.06383112275930607,
+              0.031959821966930556
+            ],
+            [
+              0.06387683271896634,
+              0.03182504396294743
+            ],
+            [
+              0.06390189188580657,
+              0.031781916490825776
+            ],
+            [
+              0.06381978021969102,
+              0.031882873786771355
+            ],
+            [
+              0.06376840594179359,
+              0.031966249869374366
+            ],
+            [
+              0.06390267360979657,
+              0.03182858706051347
+            ],
+            [
+              0.06389674751495851,
+              0.03178486797047301
+            ],
+            [
+              0.06372377774768001,
+              0.03190710330688497
+            ],
+            [
+              0.06383907030145589,
+              0.03195976513550774
+            ],
+            [
+              0.06390222754485919,
+              0.03181350101905763
+            ],
+            [
+              0.06385284546246324,
+              0.03178302565352702
+            ],
+            [
+              0.06380041781846496,
+              0.031904963892376015
+            ],
+            [
+              0.06385569394814103,
+              0.03194703494364492
+            ],
+            [
+              0.06388798043989435,
+              0.03182144670664646
+            ],
+            [
+              0.06387485197550427,
+              0.031802526095813875
+            ],
+            [
+              0.06388193415316505,
+              0.03193351715091665
+            ],
+            [
+              0.0638518791890879,
+              0.03190844868219039
+            ],
+            [
+              0.06385441454400344,
+              0.03182197412178004
+            ],
+            [
+              0.0638643799170729,
+              0.03183408465639332
+            ]
+          ]
+        },
+        {
+          "case": "induced dipole, $\\epsilon_r=2.6$",
+          "window_periods": 50.0,
+          "window_centers_primary_periods": [
+            25.0,
+            75.0,
+            125.0,
+            175.0,
+            225.0,
+            275.0,
+            325.0,
+            375.0,
+            425.0,
+            475.0,
+            525.0,
+            575.0,
+            625.0,
+            675.0,
+            725.0,
+            775.0,
+            825.0,
+            875.0,
+            925.0,
+            975.0
+          ],
+          "mean_radius_over_R_by_window": [
+            [
+              0.5593663162168906,
+              0.9334206735535326
+            ],
+            [
+              0.5594482647659799,
+              0.9399157472563745
+            ],
+            [
+              0.5594415653056997,
+              0.9382034806545885
+            ],
+            [
+              0.5594491772575165,
+              0.9400194951919529
+            ],
+            [
+              0.5594594572467813,
+              0.9386216356697354
+            ],
+            [
+              0.5595169053870789,
+              0.9392240404054294
+            ],
+            [
+              0.5594840303573986,
+              0.9396844183169407
+            ],
+            [
+              0.5594618192118894,
+              0.9383065449966254
+            ],
+            [
+              0.5594452964869204,
+              0.9401103696260823
+            ],
+            [
+              0.5594317622644754,
+              0.9383706104796755
+            ],
+            [
+              0.5594364346069186,
+              0.9394852066790574
+            ],
+            [
+              0.5593905671804243,
+              0.9394250445267901
+            ],
+            [
+              0.5594092367371709,
+              0.9384989885243106
+            ],
+            [
+              0.5594264413101775,
+              0.940116016453956
+            ],
+            [
+              0.5594986694811457,
+              0.9382252608323622
+            ],
+            [
+              0.5595188749547099,
+              0.9397314613798327
+            ],
+            [
+              0.5595539328214185,
+              0.939103222168512
+            ],
+            [
+              0.5595656332643354,
+              0.9387648880504003
+            ],
+            [
+              0.5595783489591695,
+              0.9400024866005546
+            ],
+            [
+              0.5595720475941456,
+              0.9381899680012421
+            ]
+          ],
+          "mean_omega_over_Omega1_by_window": [
+            [
+              0.0007204449095785227,
+              0.001345410747396633
+            ],
+            [
+              0.0006976490019239666,
+              -3.0485455778805543e-05
+            ],
+            [
+              0.0006945275987917003,
+              -7.024515519830847e-06
+            ],
+            [
+              0.0008924628790980346,
+              4.622142805459496e-05
+            ],
+            [
+              0.0009245813055089934,
+              -0.00011289118954788738
+            ],
+            [
+              0.0009105649959229356,
+              0.00012013322916973554
+            ],
+            [
+              0.0009050269595528735,
+              -6.814120826506634e-05
+            ],
+            [
+              0.0009698422352093716,
+              -2.743323869023789e-05
+            ],
+            [
+              0.0010406196066300528,
+              7.341382824637865e-05
+            ],
+            [
+              0.0008572144343745908,
+              -9.162500167695932e-05
+            ],
+            [
+              0.0007589204192313645,
+              9.877036124960611e-05
+            ],
+            [
+              0.0007403336823464536,
+              -7.053936432542372e-05
+            ],
+            [
+              0.0008618288023525889,
+              2.1316207642225155e-05
+            ],
+            [
+              0.0007541204177995901,
+              2.49084590830876e-05
+            ],
+            [
+              0.000771217576242011,
+              -5.779782550574992e-05
+            ],
+            [
+              0.000870311653000631,
+              9.639162473958863e-05
+            ],
+            [
+              0.0010666943761342292,
+              -9.178786187224159e-05
+            ],
+            [
+              0.0009880516610680972,
+              5.866069884362127e-05
+            ],
+            [
+              0.0009186449087576125,
+              2.0758524541108745e-06
+            ],
+            [
+              0.0008621311499633916,
+              -0.00011792431183244624
+            ]
+          ],
+          "within_window_omega_std_not_statistical_error": [
+            [
+              0.06479624805952808,
+              0.05434448652803643
+            ],
+            [
+              0.06469233095786558,
+              0.05518109677088944
+            ],
+            [
+              0.06473823655774287,
+              0.05484066769752637
+            ],
+            [
+              0.06478207202964806,
+              0.05520233057223575
+            ],
+            [
+              0.06475516075292521,
+              0.05492970712751489
+            ],
+            [
+              0.06480362449452819,
+              0.055027715463937546
+            ],
+            [
+              0.06477788000381941,
+              0.055134063857584424
+            ],
+            [
+              0.06473054373170421,
+              0.05488132897766613
+            ],
+            [
+              0.06471909816868436,
+              0.055199235141437236
+            ],
+            [
+              0.06479680693109406,
+              0.054884542940014096
+            ],
+            [
+              0.064713656435454,
+              0.05506610315310966
+            ],
+            [
+              0.06474338204184271,
+              0.05509457473313044
+            ],
+            [
+              0.06479409284731892,
+              0.054899428256963916
+            ],
+            [
+              0.06476529310023382,
+              0.055214309369444145
+            ],
+            [
+              0.06474441495254872,
+              0.05485553127382032
+            ],
+            [
+              0.06480735924271704,
+              0.05511833790862179
+            ],
+            [
+              0.06469139476173838,
+              0.05503455340741646
+            ],
+            [
+              0.06472369289341827,
+              0.05493583283825056
+            ],
+            [
+              0.06478632668282676,
+              0.05519395754560106
+            ],
+            [
+              0.06480733777867242,
+              0.054891539703089035
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "formats": [
+    "PDF",
+    "SVG",
+    "PNG at 600 dpi"
+  ],
+  "style": "DejaVu Sans, minimal grid, mathematical labels, no decorative effects"
+}

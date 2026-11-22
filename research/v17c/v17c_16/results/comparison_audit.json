@@ -1,0 +1,221 @@
+{
+  "analytical_vs_exact_errors": {
+    "particle_1": {
+      "ideal_leading_harmonic": {
+        "analytical_radius_R": 0.5517953130114899,
+        "numerical_radius_R": 0.5493641807321824,
+        "radius_relative_error_percent": 0.4425356374831902,
+        "analytical_omega_Omega1": 0.001160421383007311,
+        "numerical_omega_Omega1": 0.0011808505253462279,
+        "omega_relative_error_percent": 1.7300362662689268,
+        "omega_absolute_error_Omega1": 2.042914233891689e-05
+      },
+      "full_2d_MFS": {
+        "analytical_radius_R": 0.5517953130114899,
+        "numerical_radius_R": 0.5493650546276199,
+        "radius_relative_error_percent": 0.4423758598037019,
+        "analytical_omega_Omega1": 0.001160421383007311,
+        "numerical_omega_Omega1": 0.0011812985652222298,
+        "omega_relative_error_percent": 1.7673078449046729,
+        "omega_absolute_error_Omega1": 2.087718221491881e-05
+      }
+    },
+    "particle_2": {
+      "ideal_leading_harmonic": {
+        "analytical_radius_R": 0.7663279904770252,
+        "numerical_radius_R": 0.7660023911710967,
+        "radius_relative_error_percent": 0.04250630411618808,
+        "analytical_omega_Omega1": -0.0009832747999840167,
+        "numerical_omega_Omega1": -0.0010777914141132392,
+        "omega_relative_error_percent": 8.769471800532644,
+        "omega_absolute_error_Omega1": 9.451661412922252e-05
+      },
+      "full_2d_MFS": {
+        "analytical_radius_R": 0.7663279904770252,
+        "numerical_radius_R": 0.7656863482487007,
+        "radius_relative_error_percent": 0.08379961713983733,
+        "analytical_omega_Omega1": -0.0009832747999840167,
+        "numerical_omega_Omega1": -0.001036773435207716,
+        "omega_relative_error_percent": 5.160108602992989,
+        "omega_absolute_error_Omega1": 5.349863522369929e-05
+      }
+    }
+  },
+  "DOP853_max_step_refinement_1000_periods": {
+    "mean_radius_dimensionless_last_80pct": [
+      {
+        "particle": 1,
+        "steps16": 0.5493641807321824,
+        "steps32": 0.5493643883769029,
+        "relative_change_percent": 3.779726624481766e-05
+      },
+      {
+        "particle": 2,
+        "steps16": 0.7660023911710967,
+        "steps32": 0.7660029116812686,
+        "relative_change_percent": 6.795146126933314e-05
+      }
+    ],
+    "mean_angular_velocity_dimensionless_last_80pct": [
+      {
+        "particle": 1,
+        "steps16": 0.0011808505253462279,
+        "steps32": 0.0011809412149192903,
+        "relative_change_percent": 0.007679431619176226
+      },
+      {
+        "particle": 2,
+        "steps16": -0.0010777914141132392,
+        "steps32": -0.0010778273753983653,
+        "relative_change_percent": 0.003336460545258488
+      }
+    ]
+  },
+  "leading_harmonic_vs_full_MFS_1000_periods": {
+    "mean_radius_dimensionless_last_80pct": [
+      {
+        "particle": 1,
+        "ideal": 0.5493641807321824,
+        "MFS": 0.5493650546276199,
+        "relative_change_percent": 0.00015907397462536376
+      },
+      {
+        "particle": 2,
+        "ideal": 0.7660023911710967,
+        "MFS": 0.7656863482487007,
+        "relative_change_percent": 0.04125873835886779
+      }
+    ],
+    "mean_angular_velocity_dimensionless_last_80pct": [
+      {
+        "particle": 1,
+        "ideal": 0.0011808505253462279,
+        "MFS": 0.0011812985652222298,
+        "relative_change_percent": 0.03794213292749773
+      },
+      {
+        "particle": 2,
+        "ideal": -0.0010777914141132392,
+        "MFS": -0.001036773435207716,
+        "relative_change_percent": 3.8057437059165173
+      }
+    ]
+  },
+  "finite_start_spread_ideal_field": {
+    "mean_radius_dimensionless_last_80pct": {
+      "cases": [
+        "oseen_coulomb_nominal_start01",
+        "oseen_coulomb_phase_start02",
+        "oseen_coulomb_rest_broad_start03",
+        "oseen_kappa0_independent_control"
+      ],
+      "min_by_particle": [
+        0.5493314351006255,
+        0.7659468547354595
+      ],
+      "max_by_particle": [
+        0.5493729396855725,
+        0.7660032420004473
+      ],
+      "max_abs_spread_by_particle": [
+        4.150458494700526e-05,
+        5.6387264987800556e-05
+      ]
+    },
+    "mean_angular_velocity_dimensionless_last_80pct": {
+      "cases": [
+        "oseen_coulomb_nominal_start01",
+        "oseen_coulomb_phase_start02",
+        "oseen_coulomb_rest_broad_start03",
+        "oseen_kappa0_independent_control"
+      ],
+      "min_by_particle": [
+        0.0011808505253462279,
+        -0.0010786900162296628
+      ],
+      "max_by_particle": [
+        0.0011832404519654285,
+        -0.001077536899577298
+      ],
+      "max_abs_spread_by_particle": [
+        2.389926619200634e-06,
+        1.1531166523646823e-06
+      ]
+    }
+  },
+  "finite_time_Lyapunov_spectra": {
+    "qrf100": {
+      "periods": 100,
+      "largest_per_tau": -0.0015227643642590958,
+      "spectrum_per_tau": [
+        -0.0015227643642590958,
+        -0.01587812362161937,
+        -0.08253512900598656,
+        -0.08381092507374682,
+        -0.08142516858664894,
+        -0.08521845784107913,
+        -0.09876783582958255,
+        -0.10173636856406694,
+        -0.09909223345943965,
+        -0.09902770883145114,
+        -0.13924502190515206,
+        -0.21647580683582324
+      ]
+    },
+    "qrf200": {
+      "periods": 200,
+      "largest_per_tau": -0.0007202136350074658,
+      "spectrum_per_tau": [
+        -0.0007202136350074658,
+        -0.007932745554273313,
+        -0.07517611686867394,
+        -0.07697857546675363,
+        -0.0753532804085279,
+        -0.0767188824137456,
+        -0.10529002820881675,
+        -0.10775014995223825,
+        -0.10688101811558236,
+        -0.1079975698275818,
+        -0.1394476026712465,
+        -0.22440177213157536
+      ]
+    },
+    "qrf400": {
+      "periods": 400,
+      "largest_per_tau": -0.0003867679354346897,
+      "spectrum_per_tau": [
+        -0.0003867679354346897,
+        -0.0039576673445203886,
+        -0.07131450262020272,
+        -0.0727051323201925,
+        -0.07224413177203558,
+        -0.07358407775104472,
+        -0.1091671035305973,
+        -0.11008016889171425,
+        -0.11180008098933168,
+        -0.1115229045071991,
+        -0.13955183454219572,
+        -0.22829233958120237
+      ]
+    }
+  },
+  "MFS_two_phase_transfer_checks": {
+    "h_plus2_complex": [
+      0.8703167270606971,
+      1.3227266504323154e-17
+    ],
+    "h_minus4_complex": [
+      0.7982169778197363,
+      6.7220534694101275e-18
+    ],
+    "expected_h_plus2": 0.870316891091623,
+    "expected_h_minus4": 0.7982172624273378,
+    "boundary_residual": 1.667050864592712e-15
+  },
+  "interpretation": [
+    "Numerical step refinement is distinct from physical drag/model validity.",
+    "Initial-condition spread is a fixed deterministic panel, not a basin probability.",
+    "Finite-time QR exponents for the quasiperiodic drive are not Floquet multipliers.",
+    "The MFS field is 2D infinite rods with ideal DC added separately, not a 3D FEM validation."
+  ]
+}

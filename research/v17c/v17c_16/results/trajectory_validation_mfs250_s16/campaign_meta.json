@@ -1,0 +1,46 @@
+{
+  "campaign": "V17C.16 initial two-particle DOP853 validation; no optimization",
+  "run_tag": "mfs250_s16",
+  "RF_field_model": "mfs",
+  "MFS_order_per_rod": 24,
+  "primary_periods": 250,
+  "steps_per_fast_period_bound": 16,
+  "workers": 2,
+  "rtol": 1e-08,
+  "atol": 1e-10,
+  "sample_dt_tau": 0.25,
+  "cases": [
+    {
+      "name": "oseen_coulomb_nominal_start01",
+      "oseen": true,
+      "coulomb_scale": 1.0,
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "rf_phases": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "oseen_kappa0_independent_control",
+      "oseen": true,
+      "coulomb_scale": 0.0,
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "rf_phases": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "start_values": "fixed deterministic starts; RF phase changes included",
+  "note": "Exploratory finite-horizon test. Follow-on step convergence and longer verification are required for quantitative error claims."
+}

@@ -1,0 +1,92 @@
+{
+  "model": "ideal leading-harmonic RF + ideal DC; full two-particle Coulomb; Oseen drag; vertical gravity/buoyancy",
+  "initial_condition": "nominal Oseen branch, angles 0 and pi/2, vertical gravity-set z, RF phases zero",
+  "horizon_primary_RF_periods": 10,
+  "reference": {
+    "integrator": "DOP853",
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "max_step_fast_period_fraction": 0.001953125,
+    "nfev": 191222,
+    "final_state": [
+      0.5962201893182685,
+      0.013681014652801294,
+      -0.6365488218666759,
+      -0.04088993949578022,
+      0.014577657029668891,
+      -1.5695241815421677e-07,
+      -0.27544936034741213,
+      0.691526437487375,
+      -1.8657300716428156,
+      0.00830037809928102,
+      -0.03297077081080008,
+      2.1328904725381968e-07
+    ]
+  },
+  "results": [
+    {
+      "steps_per_fast_RF_period": 64,
+      "rk4_step_tau": 0.03154209491556017,
+      "final_state_max_abs_error": 1.1933225918525636e-07,
+      "final_state_rms_abs_error": 4.636953236419141e-08,
+      "final_state_scaled_rms_error": 2.519484017865331e-07,
+      "final_state": [
+        0.5962202936184366,
+        0.013681014230064395,
+        -0.6365488218837894,
+        -0.04088995795227863,
+        0.014577650493053011,
+        -1.569526311326801e-07,
+        -0.2754493515732484,
+        0.6915265568196342,
+        -1.8657300716182725,
+        0.008300380672900835,
+        -0.03297078549856599,
+        2.1328891077441156e-07
+      ]
+    },
+    {
+      "steps_per_fast_RF_period": 96,
+      "rk4_step_tau": 0.021028063277040116,
+      "final_state_max_abs_error": 2.2104569619152414e-08,
+      "final_state_rms_abs_error": 9.04291993248161e-09,
+      "final_state_scaled_rms_error": 1.54599705968639e-07,
+      "final_state": [
+        0.5962202095335036,
+        0.013681021668552232,
+        -0.6365488218698436,
+        -0.04088994432602546,
+        0.014577656844123993,
+        -1.569525175868999e-07,
+        -0.27544936215776306,
+        0.6915264595919446,
+        -1.8657300716386087,
+        0.008300378108648521,
+        -0.03297077366757053,
+        2.1328903147863807e-07
+      ]
+    },
+    {
+      "steps_per_fast_RF_period": 128,
+      "rk4_step_tau": 0.015771047457780085,
+      "final_state_max_abs_error": 6.763316684477161e-09,
+      "final_state_rms_abs_error": 2.73015219300079e-09,
+      "final_state_scaled_rms_error": 5.8823354178998024e-08,
+      "final_state": [
+        0.5962201949607239,
+        0.013681017351016083,
+        -0.6365488218677448,
+        -0.040889941069957685,
+        0.014577657188759054,
+        -1.5695242186013367e-07,
+        -0.27544936147494353,
+        0.6915264442506917,
+        -1.865730071641515,
+        0.008300378024044621,
+        -0.03297077170763826,
+        2.1328904258959845e-07
+      ]
+    }
+  ],
+  "interpretation": "short-horizon local integrator convergence only; not a long-time branch or physical-model validation"
+}

@@ -1,0 +1,617 @@
+{
+  "study": "V17C.16",
+  "branch": "research/v17c-two-particle-oseen",
+  "source_branch": "research/v17c-theory-validation",
+  "source_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+  "generated_utc": "2026-11-22T08:32:42.413473+00:00",
+  "file_count": 121,
+  "total_bytes": 29813295,
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 51,
+      "sha256": "cd99fb1a2a820b208495d96dd98bda65b4b5cad4fa5c2e7d3c211bb56085be11"
+    },
+    {
+      "path": "figures/fig01_mfs_trajectory.pdf",
+      "size_bytes": 45043,
+      "sha256": "f05e109b4e071ff5ae9c4d910d5d19c3c1a42ea8455abf3d94c04c14afe73563"
+    },
+    {
+      "path": "figures/fig01_mfs_trajectory.png",
+      "size_bytes": 598157,
+      "sha256": "9cbc0a54688ff6e729f71428aadade7bcef5f63b3efff50dd717c154fabb5ec9"
+    },
+    {
+      "path": "figures/fig01_mfs_trajectory.svg",
+      "size_bytes": 99267,
+      "sha256": "aa34df6dce700a2d162e54f90d7fcb2b90aa6e69b5dc68bc53edaf77c038fafd"
+    },
+    {
+      "path": "figures/fig02_averaging_vs_trajectories.pdf",
+      "size_bytes": 24998,
+      "sha256": "f0fe859a3d5c28fda0ab3a2c3fb756561c0d8beb605f148573e0084dd533f87d"
+    },
+    {
+      "path": "figures/fig02_averaging_vs_trajectories.png",
+      "size_bytes": 726056,
+      "sha256": "fe52fb362699f308a674c4ddba3a6aec0d0523b07e4de5621592a2bc50bcb86e"
+    },
+    {
+      "path": "figures/fig02_averaging_vs_trajectories.svg",
+      "size_bytes": 98508,
+      "sha256": "a5ac7a366ea5a032cdf311f48dfe5899bf951a14aabea1d891c9261934e32906"
+    },
+    {
+      "path": "figures/fig03_mfs_field_and_surface.pdf",
+      "size_bytes": 92533,
+      "sha256": "8b27f1b7397c10067741f7958228324b863f5ccfcaa57f4a584df79ad57ca1d1"
+    },
+    {
+      "path": "figures/fig03_mfs_field_and_surface.png",
+      "size_bytes": 730917,
+      "sha256": "fd9ad8182fb353763e42fdee7b81f71a54371fe7d23cbb097eeed86fa52174cc"
+    },
+    {
+      "path": "figures/fig03_mfs_field_and_surface.svg",
+      "size_bytes": 400417,
+      "sha256": "5d056607efd848e4b58ba053a01d8902b69bbd4bb24a10c876ee599d6f3db87e"
+    },
+    {
+      "path": "figures/fig04_polarization_sensitivity.pdf",
+      "size_bytes": 26457,
+      "sha256": "462235733ee2c742edcaa6f344b9dba443bf8de55ca67495f2b0e6f523ac250e"
+    },
+    {
+      "path": "figures/fig04_polarization_sensitivity.png",
+      "size_bytes": 361362,
+      "sha256": "61b6822dfe80dfbfc51d2c0372935976e7d9135f169d7f6e51139df94200657f"
+    },
+    {
+      "path": "figures/fig04_polarization_sensitivity.svg",
+      "size_bytes": 81879,
+      "sha256": "69b16e47d3abe2bc4c6f99d31e60b5fd0f5c856324416891f22f765e19333a3c"
+    },
+    {
+      "path": "figures/FIGURE_AUDIT_RU.md",
+      "size_bytes": 12275,
+      "sha256": "4266ed46101819873803d4211f9d0060ade9b481e8fef6866852acdfd89dbbbf"
+    },
+    {
+      "path": "figures/FIGURE_DATA.json",
+      "size_bytes": 26612,
+      "sha256": "003770be689fad601fd09a0711c6e40a2a6de608348d97d57a122ed181b32194"
+    },
+    {
+      "path": "numerical/audit_polarization_sensitivity.py",
+      "size_bytes": 2164,
+      "sha256": "29b38c4c8054a4a28ee22f1da1c67bfc6c23af3e88abae5293dd1eb526395aa1"
+    },
+    {
+      "path": "numerical/audit_results.py",
+      "size_bytes": 4942,
+      "sha256": "52ea8132c0ca74a4222a63eea4556415400eb8ba8ccf09a5ef1d73215ff8fa85"
+    },
+    {
+      "path": "numerical/averaged_coulomb_screen.py",
+      "size_bytes": 5871,
+      "sha256": "bb7000243a2eda3d4cce61f7cd2a8dc8467287568d8c92c295409b3c972ed154"
+    },
+    {
+      "path": "numerical/averaged_theory.py",
+      "size_bytes": 11206,
+      "sha256": "8071f308bf732e4aa1100b11670a5bb5eb64984a9937936a1bc9b4759f49831c"
+    },
+    {
+      "path": "numerical/build_manifest.py",
+      "size_bytes": 1447,
+      "sha256": "100f7f73fcb68edfe8866261426593b18780845b17c42de80adca553d5fc0e37"
+    },
+    {
+      "path": "numerical/make_figures.py",
+      "size_bytes": 17064,
+      "sha256": "adca621587ce8be1946c78aabdaa5c0a34e65730a0c75e86cbfdd16229c35f44"
+    },
+    {
+      "path": "numerical/mfs_breakdown.py",
+      "size_bytes": 9174,
+      "sha256": "58d9b0485eae79f971c99dc19454f18e3c526689e18603d14abf5879891d7a14"
+    },
+    {
+      "path": "numerical/mfs_two_particle_dynamics.py",
+      "size_bytes": 7350,
+      "sha256": "aa48ac9ed43662ff8e7292461b65ecaaebc32fdf56eedaa6e565f3fbcb35f45e"
+    },
+    {
+      "path": "numerical/physical_force_screen.py",
+      "size_bytes": 5110,
+      "sha256": "bc36a24a43b597dbda145ea0f78527b67f64024edaae8a058f1797650316733f"
+    },
+    {
+      "path": "numerical/physical_screen.py",
+      "size_bytes": 12701,
+      "sha256": "391b2a47108e8798caca7f5ef0feb87179dc4fc04a7c7df2e52cb94750e8c714"
+    },
+    {
+      "path": "numerical/run_lyapunov.py",
+      "size_bytes": 4055,
+      "sha256": "c7b5520cc196d99f90400efea9ab8b58ab43a500740b01320b9c2f82d7e36142"
+    },
+    {
+      "path": "numerical/run_mfs_audit.py",
+      "size_bytes": 3060,
+      "sha256": "579be89585885816d000b72a2984794993131f756c161f461d77591577a12468"
+    },
+    {
+      "path": "numerical/run_rk4_convergence.py",
+      "size_bytes": 2885,
+      "sha256": "37ccbdbbdc4ff3d9cb3169e11f8a11af65829078e53143005afa34623a4b3b1f"
+    },
+    {
+      "path": "numerical/run_trajectory_validation.py",
+      "size_bytes": 17859,
+      "sha256": "32bea77f65438e6c5cd7b1028064557268052fcbe5e3d1139b5dd13cedad06aa"
+    },
+    {
+      "path": "numerical/two_particle_oseen.py",
+      "size_bytes": 12153,
+      "sha256": "bb6049fc0f4c39e2c15e4ec6d521ad85d00dcf818653bfd7bd245a67df3728d3"
+    },
+    {
+      "path": "PHYSICAL_SCALING_RU.md",
+      "size_bytes": 17377,
+      "sha256": "0845edba81c98ef56c8091d3153b584599d2ea713ef2c57a59e0807931f3c0bf"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3970,
+      "sha256": "8a94bbb8578ba08f9c1c0476e6965c5fc416bfc12dcdac3c04ac154c9d33ff4e"
+    },
+    {
+      "path": "REPORT_RU.md",
+      "size_bytes": 40241,
+      "sha256": "dba7e923b905fd9e9e71cd854936bd9a46842c9f8ccd6a59c4f1fc9440e90948"
+    },
+    {
+      "path": "results/analytic_screen.json",
+      "size_bytes": 13213,
+      "sha256": "ecd46cb2152ecf4b95faba81faeddb4d88916b682bcfe5083792aed6cd8a04ec"
+    },
+    {
+      "path": "results/averaged_coulomb_screen.json",
+      "size_bytes": 44395,
+      "sha256": "b8e3c13e770cbc4155a198b24c8f2701c305c6cca829e40620af01a6440b52ae"
+    },
+    {
+      "path": "results/comparison_audit.json",
+      "size_bytes": 7165,
+      "sha256": "cc1e7c25631dbd852e9ff33ebed50f042d8d1e1d2f68eeb39afc667a681a6df9"
+    },
+    {
+      "path": "results/dimensional_screen.json",
+      "size_bytes": 8301,
+      "sha256": "16d4a58091a7eb1e2667c6181297ce293e6aa1fd8c0966129e64711c8be96aa4"
+    },
+    {
+      "path": "results/lyapunov_qrf100.json",
+      "size_bytes": 1879,
+      "sha256": "ad65978160d96515a35c3f99da204a3a4d2c65b3e4f1f79215241e61ce193cc3"
+    },
+    {
+      "path": "results/lyapunov_qrf200.json",
+      "size_bytes": 1876,
+      "sha256": "8c3bcb0ce58a4ca9ed50a1f1d245404a19cdc466909994f9b0cfaa0ddeccb9ea"
+    },
+    {
+      "path": "results/lyapunov_qrf400.json",
+      "size_bytes": 1886,
+      "sha256": "79e207363af2cbba90abea8605b87c443f645a205039e0d9444b596d6279a65d"
+    },
+    {
+      "path": "results/mfs_surface_audit.json",
+      "size_bytes": 6130,
+      "sha256": "10b0d84f7cf9e9ee1b59d0d0b67ab0f07ef634adcc7f23a488eaca2fc1a670a6"
+    },
+    {
+      "path": "results/polarization_sensitivity_audit.json",
+      "size_bytes": 1705,
+      "sha256": "90fefaee923061ba76893fa43423906366f3fbab1bd6cf2e1f33b649334783ac"
+    },
+    {
+      "path": "results/rk4_convergence.json",
+      "size_bytes": 2994,
+      "sha256": "996a78f12b62b7f12114af61e20b4a28b5699e44149a34dfa78bc95509c23bf0"
+    },
+    {
+      "path": "results/secondary_force_screen.json",
+      "size_bytes": 3792,
+      "sha256": "1bb80719db5f3be0da5e00872c6ee9ee569e5528ec687d7f546b24ab6b893b3b"
+    },
+    {
+      "path": "results/trajectory_validation/campaign_meta.json",
+      "size_bytes": 2333,
+      "sha256": "b37f94400ae45ac2fb98f97f32967c7bc12fe6afbdc317f96a02b8e79e9e54bf"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2138,
+      "sha256": "c787729e58b8920077d72eb75ec0672652827c0317968cf895e6b113bd9ba840"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 115004,
+      "sha256": "af4b38e364add6286711f73504da1df418a206c977ae072186c9e8f5134a7392"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_phase_start02.json",
+      "size_bytes": 2319,
+      "sha256": "3e0b7f09c622e82948881405a4d2db354ff6162da75118ed2c3a2f44884139b9"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_phase_start02.npz",
+      "size_bytes": 115063,
+      "sha256": "edd2cff0728b5a19d391dffa7b4936f708aa138226b78eb744094148241f7e33"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_rest_broad_start03.json",
+      "size_bytes": 2347,
+      "sha256": "9d2dcc65e87ba38e75b20d97247464671cf1b3a6548b9620caa1a9b95fe16bf7"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_coulomb_rest_broad_start03.npz",
+      "size_bytes": 115044,
+      "sha256": "932e2b37e72c9f98c23b30d4123cb2abec61adf33485d96c9101c065b1082627"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_kappa0_independent_control.json",
+      "size_bytes": 2147,
+      "sha256": "68b06876f5078cd2215dd17fe8c3b64866423eb9961d65bcbfc1d0b7d8bd282e"
+    },
+    {
+      "path": "results/trajectory_validation/oseen_kappa0_independent_control.npz",
+      "size_bytes": 107837,
+      "sha256": "cd40a0d1ad0785d787df518525500e04c3428fd258c0180dd9e2bf1c47d68dab"
+    },
+    {
+      "path": "results/trajectory_validation/stokes_coulomb_nominal_control.json",
+      "size_bytes": 2144,
+      "sha256": "1ed5cab045b8f4c36f03be9273825344ed7acd607d55aab852f8be7de764c16a"
+    },
+    {
+      "path": "results/trajectory_validation/stokes_coulomb_nominal_control.npz",
+      "size_bytes": 115140,
+      "sha256": "d93f76bc5a48d6dd0a91c072804ab0a56181fcc13016539c318d38cdde6d19f8"
+    },
+    {
+      "path": "results/trajectory_validation/summary.json",
+      "size_bytes": 15233,
+      "sha256": "b41c1d3581c08d11829131caf58d73c3e2ec6a062a8424e792a6f77c1e403ea9"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/campaign_meta.json",
+      "size_bytes": 2362,
+      "sha256": "f38f3e058d27482cede359e16a614fc6c9c55de442c092f14f75b72388a0062f"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2159,
+      "sha256": "207af7e5b748b3e14561c7f43a8bd4575ec2d4f9c3067df14af199752856271f"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2269493,
+      "sha256": "cb3628ffb754fa68b9d885e60160c0f4f1fdd9417d79375fd906ccf75ec7b994"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_phase_start02.json",
+      "size_bytes": 2329,
+      "sha256": "94aaed4ff38e5a427e097da05992bc3661c9bbd85013c1e9933c4fc8bddc77fb"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_phase_start02.npz",
+      "size_bytes": 2269926,
+      "sha256": "6ec257e0ffd7870e58736a6d2d14243614901195d5e6fd2e6baa506f4c07548c"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_rest_broad_start03.json",
+      "size_bytes": 2360,
+      "sha256": "a8cbe6991e31b2828938456fc0e07a656024be6a0e5ec76be16df672d5516407"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_coulomb_rest_broad_start03.npz",
+      "size_bytes": 2269537,
+      "sha256": "2cdb9e6eaa90c285d12e928cca00123375caa8baa9e2cdf6b704027fde3c6d8b"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_kappa0_independent_control.json",
+      "size_bytes": 2161,
+      "sha256": "17bc24931c3ec009904ce48b3fcc08e0df010b6e1f57ba7d3b7857b45a0e5b36"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/oseen_kappa0_independent_control.npz",
+      "size_bytes": 1985454,
+      "sha256": "fe81010295b7c7684d9e64fa070f86331db82fc1077f7230db6a858fe2f18acb"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/stokes_coulomb_nominal_control.json",
+      "size_bytes": 2156,
+      "sha256": "baa2232ea1f2daa30eb3c382020d0c87635710cf167c62329ce5b74ddce4a528"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/stokes_coulomb_nominal_control.npz",
+      "size_bytes": 2270929,
+      "sha256": "20f99cfa62f329151586a200e670ed2c374bb22ae3a75d7d26e6f11b6a620d96"
+    },
+    {
+      "path": "results/trajectory_validation_1000p_s16/summary.json",
+      "size_bytes": 15334,
+      "sha256": "95c3016e0716fece3a891e4e39ba8e84395177541d9902e1dc3ba3a148eeec7a"
+    },
+    {
+      "path": "results/trajectory_validation_ideal1000_s32/campaign_meta.json",
+      "size_bytes": 900,
+      "sha256": "2c90fa249f67478f88120f4a0cc784d0d63f62d6c7c74bacbaa4bc9c4f0c380a"
+    },
+    {
+      "path": "results/trajectory_validation_ideal1000_s32/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2316,
+      "sha256": "d14b2866a908090839928b95ceb2ed0d87668b1cec77f8bc8fb53d84051732fc"
+    },
+    {
+      "path": "results/trajectory_validation_ideal1000_s32/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2268175,
+      "sha256": "8cc0b71c1669a59efe251dc91adbc724ddaaeda190fed99036431a7b8dc05c04"
+    },
+    {
+      "path": "results/trajectory_validation_ideal1000_s32/summary.json",
+      "size_bytes": 3633,
+      "sha256": "58b879f6626005cc012830b1a83167ae6c3e43692b59000c6b7c8ef344fe1ac6"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_dep_eps26/campaign_meta.json",
+      "size_bytes": 936,
+      "sha256": "b542895896803e9acf72a6209c9725bbc2ff8696da147a7477967745c0d47797"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_dep_eps26/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 3041,
+      "sha256": "80f96ca23114ff5833bc407fb7b801f0ed3325640787eca0661595b30cd51339"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_dep_eps26/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2274755,
+      "sha256": "296800860e5de3e5f49343690adfa84106fb33f2e32951bf0c8dd3db6e6bec62"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_dep_eps26/summary.json",
+      "size_bytes": 4476,
+      "sha256": "0088d7b23223b345d471209f86abb2701876246245cdffa917d160fe501efc2f"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/campaign_meta.json",
+      "size_bytes": 1177,
+      "sha256": "888f4b624287a2018487fa05919ffbfe472212bb1a73e1c475e779de444c81f8"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2629,
+      "sha256": "2e2ed26b5db82a393a5b2bbe5babc2a2dd4339a06e1be4120ec82bc7dcd6ff09"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2268212,
+      "sha256": "d3408b965a30d7a0d3eb330b38cd3934ee6ee38ba599767f27a1e90552c43be4"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/oseen_kappa0_independent_control.json",
+      "size_bytes": 2640,
+      "sha256": "23dd4dca7b14133ced04abdf9395d9dd1715146e1317a409ca172de9e4e89450"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/oseen_kappa0_independent_control.npz",
+      "size_bytes": 1653126,
+      "sha256": "1c840109e25e204ba7a539be3c70117592c66ab68b29703a70fec077c0423d31"
+    },
+    {
+      "path": "results/trajectory_validation_mfs1000_s16/summary.json",
+      "size_bytes": 7298,
+      "sha256": "378155874e0340f510888373040ba46f38fdfc2129df56fae752ceb4134ade1e"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/campaign_meta.json",
+      "size_bytes": 1217,
+      "sha256": "4529988ec9a7f1c0922ce52a99ffabaf332130c005571547d2cf2420543fd93c"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 3042,
+      "sha256": "42f000e360236903907cc3f038279cafeb06e4500a44674dccf6fcf065c1544d"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 570278,
+      "sha256": "49fe705522444244a74a84532ae1f1755cd50917ceff522713cb96054ef18c7b"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/oseen_kappa0_independent_control.json",
+      "size_bytes": 3044,
+      "sha256": "15e2af5420fe024c3965641c1d6901443d9c1b58711a82a82c85eb4a06283689"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/oseen_kappa0_independent_control.npz",
+      "size_bytes": 455343,
+      "sha256": "325eaf94fbe393cb601a6eca989649ff073de58881cb646c36aa4dc6773885da"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26/summary.json",
+      "size_bytes": 8221,
+      "sha256": "7ba07c9c683e394c7bc625f9fa3874df7b1f6f8d5571879c7e65205084c07da1"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26_s32/campaign_meta.json",
+      "size_bytes": 938,
+      "sha256": "c3460b2f51c528733aa95c86692e6b34c3096b7fc9150aff29297784592917fa"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26_s32/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 3039,
+      "sha256": "fd18c134fe4c72e2b9dc57be8ba77e5ddbe44892d04b7a183f86eaa1f30cc385"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26_s32/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 570225,
+      "sha256": "86227a3dbae62e956fe697516fc021cd901b75ee2a11d107c1f8139ca4ca5c7e"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_dep_eps26_s32/summary.json",
+      "size_bytes": 4476,
+      "sha256": "a2af06ab20a9e8c5e85c6bad594a43a8c95839ec2fce9a7f2d31cce2197ce9aa"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/campaign_meta.json",
+      "size_bytes": 1115,
+      "sha256": "e09b4b9eddab732f200385599d17146f02d582756730781cee40c6d34cebb5b4"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2572,
+      "sha256": "c2e9cae70149ad19bb2d83bcb1dd71b89c3172169b82f6e16de8044ab931dfc7"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 568622,
+      "sha256": "ab0309ea225ddafcd537bab6ffadcb919ad8114063a983b3019d1c6ca0b6bff4"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/oseen_kappa0_independent_control.json",
+      "size_bytes": 2561,
+      "sha256": "1b1dcedc1937c23e26fe8b934d6ff6513fe83f0e2eb869e7a2eea635bc115b19"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/oseen_kappa0_independent_control.npz",
+      "size_bytes": 414679,
+      "sha256": "668cdc955346ee0b8ee8f55a166657f89bdecbb1f7c188121ed2b0261b26e4b2"
+    },
+    {
+      "path": "results/trajectory_validation_mfs250_s16/summary.json",
+      "size_bytes": 7090,
+      "sha256": "c66e37b3f6260dfcb0b523b81a8f0590b346fec031840cb2b1822b7955979c8a"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/campaign_meta.json",
+      "size_bytes": 1188,
+      "sha256": "afcd8566533acee84f2470639f3dd35bb4cffe66851d51d8b694306b4ea1bb14"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2211,
+      "sha256": "971882ba9a88ddbc75ce160c73a7b44a7e395579ec4967c0478f5dbe31c28d77"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2720,
+      "sha256": "69a6c5a27cca48d0c5141b985eda60e29dd6a25c3ce474c4874bd07d94b45d3b"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/oseen_kappa0_independent_control.json",
+      "size_bytes": 2218,
+      "sha256": "b41777d84787c18d797d07e0fe76bee75251e6ab0fe89639ebf3d7b528a2c0d7"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/oseen_kappa0_independent_control.npz",
+      "size_bytes": 2721,
+      "sha256": "2d287149cd47ffe528d4eb6a9fad417794dbff6fed5a9388c43d3c0b476161b8"
+    },
+    {
+      "path": "results/trajectory_validation_transverse-final/summary.json",
+      "size_bytes": 6389,
+      "sha256": "115ce26e300bf66bebe217a1b005f98b137bcb2a46b082f0eb05376423ec964d"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/campaign_meta.json",
+      "size_bytes": 1190,
+      "sha256": "c7904fbea67783cb2e3aa187796486801072c5dfadb4a34d3a4aac48e743f84b"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2251,
+      "sha256": "724019155ed44d01f23c1c0424295790e1d5f3dd69f83be1950fb7b9594bd9b8"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 1652347,
+      "sha256": "07d03db4bd347e730396821c29ea0987fbbf1cb999f317e55611b1c0bf2d2c16"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/oseen_kappa0_independent_control.json",
+      "size_bytes": 2262,
+      "sha256": "88134c096748db94f949dc36868a088e28d3295d372d554af37aa4f4813ecf13"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/oseen_kappa0_independent_control.npz",
+      "size_bytes": 1652338,
+      "sha256": "a796256c85981d2dce31ea86a565adc32ddfeda67b23ee413077fa77ae1c0724"
+    },
+    {
+      "path": "results/trajectory_validation_transverse1000_s16/summary.json",
+      "size_bytes": 6459,
+      "sha256": "1ac1df05052de418e5cc416513d2cb323c6c862b887d9686adbbbdb192eb946b"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/campaign_meta.json",
+      "size_bytes": 1194,
+      "sha256": "a16e738e34f7985e2b732bfe8b82326bd30812021192743ffd97e97728de79f0"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/oseen_coulomb_nominal_start01.json",
+      "size_bytes": 2301,
+      "sha256": "2af11434899e2f6f687703aff1f30b1e6931bcd83a6dd8e64eb284b7845a8f09"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/oseen_coulomb_nominal_start01.npz",
+      "size_bytes": 2720,
+      "sha256": "69a6c5a27cca48d0c5141b985eda60e29dd6a25c3ce474c4874bd07d94b45d3b"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/oseen_kappa0_independent_control.json",
+      "size_bytes": 2299,
+      "sha256": "11f724ed0193d00bcd3b48b0861bebc63cdd2f8524ef3cf1ea8cbfd94894c168"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/oseen_kappa0_independent_control.npz",
+      "size_bytes": 2721,
+      "sha256": "2d287149cd47ffe528d4eb6a9fad417794dbff6fed5a9388c43d3c0b476161b8"
+    },
+    {
+      "path": "results/trajectory_validation_transversewall1000_s16/summary.json",
+      "size_bytes": 6558,
+      "sha256": "dfa8b1ddd3823627f18198c18e8e9ecb6c72002e0d53e0642f9501423f624458"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "size_bytes": 6875,
+      "sha256": "6faec42b400bfd2091b2f71feac2ff597c3d4253c9540a4d4a324ca51c64e01c"
+    },
+    {
+      "path": "sources/REFERENCES_RU.md",
+      "size_bytes": 13445,
+      "sha256": "dc4917c03575db3c9adae4ee903873d4f40c92883acbbad9bf272bdd35e17543"
+    },
+    {
+      "path": "tests/test_v17c16_models.py",
+      "size_bytes": 8697,
+      "sha256": "2a41ce217d7ca3dfa66f23808c9c16a7efe6b465af5c89cfadee66cea01d94c9"
+    },
+    {
+      "path": "theory/ANALYTICAL_THEORY_EN.md",
+      "size_bytes": 13848,
+      "sha256": "2a65979f66b2f42fd7133adc3d3b74695efaa97975ce5436953e569749d66680"
+    },
+    {
+      "path": "theory/ANALYTICAL_THEORY_RU.md",
+      "size_bytes": 21121,
+      "sha256": "00f7b1092ff7ba2a61e70dc66e6c4e933ff7aedd8c74197cfd883353d23d90de"
+    }
+  ]
+}

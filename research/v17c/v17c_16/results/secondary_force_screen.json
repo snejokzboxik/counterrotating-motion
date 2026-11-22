@@ -1,0 +1,65 @@
+{
+  "status": "order-of-magnitude controls at the full-MFS mean orbit; not a coupled force simulation",
+  "method": "RF-torus mean square field from independent complex MFS phasors; central finite differences in dimensionless coordinates; real-dielectric dipole estimate",
+  "horizon_s": 21.05263157894737,
+  "particles": [
+    {
+      "particle": 1,
+      "dielectric_assumption": "epsilon_r=2.6, real Clausius-Mossotti contrast, zero loss; estimate only",
+      "polarizability_C_m2_V": 1.659299865298346e-24,
+      "mean_RF_E2_at_mean_orbit_V2_m2": 22856438988.100693,
+      "mean_RF_field_rms_V_m": 151183.46135771828,
+      "dielectrophoretic_force_estimate_N": [
+        3.79622855744099e-11,
+        -4.747294994254148e-23,
+        0.0
+      ],
+      "dielectrophoretic_force_magnitude_N": 3.79622855744099e-11,
+      "DEP_to_weight_ratio": 0.02052814160623983,
+      "DEP_to_coulomb_force_at_R_ratio": 35.44794065220583,
+      "thermal_diffusivity_m2_s": 3.3894203990131136e-13,
+      "Brownian_rms_displacement_over_1000_primary_periods_m": 3.7777299778197984e-06,
+      "Brownian_rms_displacement_over_R": 0.0007555459955639597,
+      "thermal_rms_speed_m_s": 8.02428226629172e-06,
+      "orbit_mean_speed_m_s": 0.35256009494884044,
+      "thermal_to_orbit_speed_ratio": 2.2760041142648644e-05,
+      "minimum_rod_surface_gap_m": 0.0018877957895634876,
+      "minimum_rod_gap_over_particle_radius": 53.93702255895679,
+      "leading_planar_wall_parallel_drag_increment_estimate": 0.010238996833079942,
+      "particle_radius_over_rod_radius": 0.13299999999999995,
+      "wall_model_status": "not applied to Oseen RHS: flat-wall Stokes asymptotic, curved rod, RF-unsteady and finite-Re corrections are not controlled here"
+    },
+    {
+      "particle": 2,
+      "dielectric_assumption": "epsilon_r=2.6, real Clausius-Mossotti contrast, zero loss; estimate only",
+      "polarizability_C_m2_V": 3.526616914876078e-24,
+      "mean_RF_E2_at_mean_orbit_V2_m2": 152305734443.5633,
+      "mean_RF_field_rms_V_m": 390263.67297452025,
+      "dielectrophoretic_force_estimate_N": [
+        4.127157535810131e-10,
+        -1.0762380721667718e-22,
+        0.0
+      ],
+      "dielectrophoretic_force_magnitude_N": 4.127157535810131e-10,
+      "DEP_to_weight_ratio": 0.10500619487481191,
+      "DEP_to_coulomb_force_at_R_ratio": 385.3804721660932,
+      "thermal_diffusivity_m2_s": 2.6362158658990877e-13,
+      "Brownian_rms_displacement_over_1000_primary_periods_m": 3.3316446805549123e-06,
+      "Brownian_rms_displacement_over_R": 0.0006663289361109825,
+      "thermal_rms_speed_m_s": 5.504140269805763e-06,
+      "orbit_mean_speed_m_s": 0.30942638171113335,
+      "thermal_to_orbit_speed_ratio": 1.7788206161891466e-05,
+      "minimum_rod_surface_gap_m": 0.0007930944251164013,
+      "minimum_rod_gap_over_particle_radius": 17.62432055814225,
+      "leading_planar_wall_parallel_drag_increment_estimate": 0.03020244407005141,
+      "particle_radius_over_rod_radius": 0.17099999999999999,
+      "wall_model_status": "not applied to Oseen RHS: flat-wall Stokes asymptotic, curved rod, RF-unsteady and finite-Re corrections are not controlled here"
+    }
+  ],
+  "limits": [
+    "Polarizability uses a real low-frequency bulk-polystyrene epsilon and neglects dielectric loss/charge redistribution.",
+    "The DEP estimate samples the mean orbit at one azimuth; its magnitude is an order estimate, not a resolved orbit-averaged force.",
+    "Brownian values are free-air diffusion screens without electric-field response or wall modification.",
+    "The planar-wall correction is only a leading Stokes estimate; rod curvature a/Rrod is not asymptotically negligible and the wall term is not added to the Oseen integrator."
+  ]
+}

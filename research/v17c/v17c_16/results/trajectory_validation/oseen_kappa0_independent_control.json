@@ -1,0 +1,73 @@
+{
+  "case": "oseen_kappa0_independent_control",
+  "integrator": "SciPy DOP853",
+  "oseen_quasisteady": true,
+  "coulomb_scale": 0.0,
+  "gravity_buoyancy": true,
+  "rf_phases_rad": [
+    0.0,
+    0.0
+  ],
+  "initial": {
+    "angles": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "primary_RF_periods_requested": 100,
+  "primary_RF_periods_reached": 100.0,
+  "max_step_tau": 0.06309832090968527,
+  "steps_per_fast_RF_period_bound": 32,
+  "solver_nfev": 123284,
+  "mean_radius_dimensionless_last_80pct": [
+    0.5492909880536231,
+    0.7658806241274858
+  ],
+  "radius_std_dimensionless_last_80pct": [
+    0.029973137819630194,
+    0.015592232243767599
+  ],
+  "mean_angular_velocity_dimensionless_last_80pct": [
+    0.0011795978383462634,
+    -0.0010767093178627302
+  ],
+  "mean_angular_velocity_rad_s_last_80pct": [
+    0.35205251079820704,
+    -0.3213452978896769
+  ],
+  "mean_axial_position_over_R_last_80pct": [
+    -0.6366513982120542,
+    -1.865597498216741
+  ],
+  "axial_std_over_R_last_80pct": [
+    7.423636097349896e-08,
+    7.76000499026219e-05
+  ],
+  "minimum_center_distance_over_R": 1.0925426018835451,
+  "minimum_surface_gap_over_R": 1.0765426018835451,
+  "minimum_rod_clearance_over_R_by_particle": [
+    0.3794519131400075,
+    0.16022254600241922
+  ],
+  "minimum_shield_clearance_over_R_by_particle": [
+    0.536487207046745,
+    0.31413286450153555
+  ],
+  "diameter_Re_rms_last_80pct": [
+    0.3671088294625851,
+    0.3334554666819786
+  ],
+  "diameter_Re_max_sampled_last_80pct": [
+    0.5538815507039824,
+    0.46407236343606184
+  ],
+  "retained_contact_free_screen": true,
+  "counterrotating_by_mean_omega": true,
+  "classification": "counterrotating-retained",
+  "trajectory_file": "oseen_kappa0_independent_control.npz",
+  "limitations": [
+    "RF field is the ideal infinite-rod leading-harmonic field, not the full MFS 3D field.",
+    "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+    "The run horizon and fixed start set do not estimate a capture probability or prove an attractor."
+  ]
+}

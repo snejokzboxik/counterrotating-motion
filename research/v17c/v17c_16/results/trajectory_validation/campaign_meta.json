@@ -1,0 +1,108 @@
+{
+  "campaign": "V17C.16 initial two-particle DOP853 validation; no optimization",
+  "primary_periods": 100,
+  "steps_per_fast_period_bound": 32,
+  "workers": 4,
+  "rtol": 1e-08,
+  "atol": 1e-10,
+  "sample_dt_tau": 0.5,
+  "cases": [
+    {
+      "name": "oseen_coulomb_nominal_start01",
+      "oseen": true,
+      "coulomb_scale": 1.0,
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "rf_phases": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "oseen_coulomb_phase_start02",
+      "oseen": true,
+      "coulomb_scale": 1.0,
+      "initial": {
+        "angles": [
+          1.0471975511965976,
+          -0.7853981633974483
+        ],
+        "radii": [
+          0.5573132661416048,
+          0.7586647105722549
+        ],
+        "radial_speeds": [
+          0.01,
+          -0.008
+        ]
+      },
+      "rf_phases": [
+        1.0471975511965976,
+        -1.5707963267948966
+      ]
+    },
+    {
+      "name": "oseen_coulomb_rest_broad_start03",
+      "oseen": true,
+      "coulomb_scale": 1.0,
+      "initial": {
+        "angles": [
+          -0.6283185307179586,
+          1.5707963267948966
+        ],
+        "radii": [
+          0.38,
+          0.88
+        ],
+        "omegas": [
+          0.0,
+          0.0
+        ],
+        "radial_speeds": [
+          0.0,
+          0.0
+        ]
+      },
+      "rf_phases": [
+        3.141592653589793,
+        0.7853981633974483
+      ]
+    },
+    {
+      "name": "oseen_kappa0_independent_control",
+      "oseen": true,
+      "coulomb_scale": 0.0,
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "rf_phases": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "stokes_coulomb_nominal_control",
+      "oseen": false,
+      "coulomb_scale": 1.0,
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "rf_phases": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "start_values": "fixed deterministic starts; RF phase changes included",
+  "note": "Exploratory finite-horizon test. Follow-on step convergence and longer verification are required for quantitative error claims."
+}

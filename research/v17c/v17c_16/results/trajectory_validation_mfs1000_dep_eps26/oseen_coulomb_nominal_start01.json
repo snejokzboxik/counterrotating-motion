@@ -1,0 +1,97 @@
+{
+  "case": "oseen_coulomb_nominal_start01",
+  "integrator": "SciPy DOP853",
+  "oseen_quasisteady": true,
+  "RF_field_model": "mfs",
+  "mfs_order_per_rod": 24,
+  "mfs_leading_transfer_check": {
+    "h_plus2_complex": [
+      0.8703167270606971,
+      1.3227266504323154e-17
+    ],
+    "h_minus4_complex": [
+      0.7982169778197363,
+      6.7220534694101275e-18
+    ],
+    "expected_h_plus2": 0.870316891091623,
+    "expected_h_minus4": 0.7982172624273378,
+    "boundary_residual": 1.667050864592712e-15
+  },
+  "coulomb_scale": 1.0,
+  "induced_dipole_epsilon_r": 2.6,
+  "polarizabilities_SI_C_m2_V": [
+    1.659299865298346e-24,
+    3.526616914876078e-24
+  ],
+  "gravity_buoyancy": true,
+  "gravity_orientation_relative_to_trap_axis": "vertical",
+  "rf_phases_rad": [
+    0.0,
+    0.0
+  ],
+  "initial": {
+    "angles": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "primary_RF_periods_requested": 1000,
+  "primary_RF_periods_reached": 999.9999999999999,
+  "termination_event": "horizon_complete",
+  "last_80pct_means_valid": true,
+  "max_step_tau": 0.12619664181937054,
+  "steps_per_fast_RF_period_bound": 16,
+  "solver_nfev": 712976,
+  "mean_radius_dimensionless_last_80pct": [
+    0.5594841249766503,
+    0.9391140776304691
+  ],
+  "radius_std_dimensionless_last_80pct": [
+    0.030577665461658365,
+    0.02088497446446909
+  ],
+  "mean_angular_velocity_dimensionless_last_80pct": [
+    0.0008726367939399932,
+    1.0464658463707059e-08
+  ],
+  "mean_angular_velocity_rad_s_last_80pct": [
+    0.2604395874039331,
+    3.123190944431293e-06
+  ],
+  "mean_axial_position_over_R_last_80pct": [
+    -0.6366698055797662,
+    -1.8670519982037945
+  ],
+  "axial_std_over_R_last_80pct": [
+    5.587472823311799e-05,
+    7.700259227186039e-05
+  ],
+  "minimum_center_distance_over_R": 1.2779370143631954,
+  "minimum_surface_gap_over_R": 1.2619370143631954,
+  "minimum_rod_clearance_over_R_by_particle": [
+    0.3659321276894631,
+    0.035601565498938545
+  ],
+  "minimum_shield_clearance_over_R_by_particle": [
+    0.5225987060948598,
+    0.17040681169669047
+  ],
+  "diameter_Re_rms_last_80pct": [
+    0.3795632105202089,
+    0.5792299585938704
+  ],
+  "diameter_Re_max_sampled_last_80pct": [
+    0.5735413910750206,
+    1.0713599334741597
+  ],
+  "retained_contact_free_screen": true,
+  "counterrotating_by_mean_omega": false,
+  "classification": "retained-not-counterrotating",
+  "trajectory_file": "oseen_coulomb_nominal_start01.npz",
+  "limitations": [
+    "RF field is the full MFS solution for a 2D infinite-rod cross-section; it is not a finite 3D electrode model.",
+    "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+    "The run horizon and fixed start set do not estimate a capture probability or prove an attractor.",
+    "Induced-dipole sensitivity uses a constant real sphere polarizability; complex dispersion/loss, mutual dipoles, and charge-polarization coupling are omitted."
+  ]
+}

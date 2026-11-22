@@ -1,0 +1,59 @@
+{
+  "model": "ideal leading-harmonic RF plus ideal DC, two-particle Coulomb, quasi-steady Oseen, vertical gravity/buoyancy",
+  "method": "DOP853 state plus variational matrix; QR once per primary RF period",
+  "classification": "finite-time Lyapunov spectrum; quasiperiodic drive; no Floquet claim",
+  "primary_RF_periods": 400,
+  "steps_per_fast_period_bound": 16,
+  "rtol": 1e-08,
+  "atol": 1e-10,
+  "finite_time_exponents_per_tau": [
+    -0.0003867679354346897,
+    -0.0039576673445203886,
+    -0.07131450262020272,
+    -0.0727051323201925,
+    -0.07224413177203558,
+    -0.07358407775104472,
+    -0.1091671035305973,
+    -0.11008016889171425,
+    -0.11180008098933168,
+    -0.1115229045071991,
+    -0.13955183454219572,
+    -0.22829233958120237
+  ],
+  "finite_time_exponents_per_primary_period": [
+    -0.0024301346092114253,
+    -0.024866757309794953,
+    -0.44808223505207784,
+    -0.4568198191507812,
+    -0.4539232672799999,
+    -0.4623423961677245,
+    -0.6859171409308017,
+    -0.6916540997922663,
+    -0.7024606262136566,
+    -0.7007190750136254,
+    -0.8768300363854808,
+    -1.4344030737982634
+  ],
+  "largest_exponent_per_tau": -0.0003867679354346897,
+  "largest_exponent_per_primary_period": -0.0024301346092114253,
+  "final_state": [
+    -0.5650313024350146,
+    0.09057570296503896,
+    -0.6365700704767272,
+    -0.013510793000067155,
+    -0.06011958717015629,
+    -1.6409499220218363e-07,
+    0.5911999629405922,
+    -0.4838774453218518,
+    -1.8657007301839281,
+    -0.033283337496232135,
+    0.03883400372515524,
+    4.524838716865835e-08
+  ],
+  "nfev_total": 305876,
+  "limitations": [
+    "finite horizon only; exponent convergence versus horizon not established",
+    "ideal 2D infinite-rod RF field and ideal DC quadrupole",
+    "quasi-steady Oseen closure remains a hydrodynamic screening model"
+  ]
+}

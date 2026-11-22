@@ -1,0 +1,226 @@
+{
+  "campaign_meta": {
+    "campaign": "V17C.16 initial two-particle DOP853 validation; no optimization",
+    "run_tag": "mfs250_s16",
+    "RF_field_model": "mfs",
+    "MFS_order_per_rod": 24,
+    "primary_periods": 250,
+    "steps_per_fast_period_bound": 16,
+    "workers": 2,
+    "rtol": 1e-08,
+    "atol": 1e-10,
+    "sample_dt_tau": 0.25,
+    "cases": [
+      {
+        "name": "oseen_coulomb_nominal_start01",
+        "oseen": true,
+        "coulomb_scale": 1.0,
+        "initial": {
+          "angles": [
+            0.0,
+            1.5707963267948966
+          ]
+        },
+        "rf_phases": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "name": "oseen_kappa0_independent_control",
+        "oseen": true,
+        "coulomb_scale": 0.0,
+        "initial": {
+          "angles": [
+            0.0,
+            1.5707963267948966
+          ]
+        },
+        "rf_phases": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "start_values": "fixed deterministic starts; RF phase changes included",
+    "note": "Exploratory finite-horizon test. Follow-on step convergence and longer verification are required for quantitative error claims."
+  },
+  "results": [
+    {
+      "case": "oseen_coulomb_nominal_start01",
+      "integrator": "SciPy DOP853",
+      "oseen_quasisteady": true,
+      "RF_field_model": "mfs",
+      "mfs_order_per_rod": 24,
+      "mfs_leading_transfer_check": {
+        "h_plus2_complex": [
+          0.8703167270606971,
+          1.3227266504323154e-17
+        ],
+        "h_minus4_complex": [
+          0.7982169778197363,
+          6.7220534694101275e-18
+        ],
+        "expected_h_plus2": 0.870316891091623,
+        "expected_h_minus4": 0.7982172624273378,
+        "boundary_residual": 1.667050864592712e-15
+      },
+      "coulomb_scale": 1.0,
+      "gravity_buoyancy": true,
+      "rf_phases_rad": [
+        0.0,
+        0.0
+      ],
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "primary_RF_periods_requested": 250,
+      "primary_RF_periods_reached": 249.99999999999997,
+      "max_step_tau": 0.12619664181937054,
+      "steps_per_fast_RF_period_bound": 16,
+      "solver_nfev": 168746,
+      "mean_radius_dimensionless_last_80pct": [
+        0.5493540589104134,
+        0.7656592232441184
+      ],
+      "radius_std_dimensionless_last_80pct": [
+        0.030001618089135033,
+        0.01564537330017745
+      ],
+      "mean_angular_velocity_dimensionless_last_80pct": [
+        0.001182464008207899,
+        -0.0010360487479088398
+      ],
+      "mean_angular_velocity_rad_s_last_80pct": [
+        0.3529079229254263,
+        -0.3092100978431749
+      ],
+      "mean_axial_position_over_R_last_80pct": [
+        -0.6364598155404863,
+        -1.8658530219843756
+      ],
+      "axial_std_over_R_last_80pct": [
+        3.165418517326196e-05,
+        4.363832751908049e-05
+      ],
+      "minimum_center_distance_over_R": 1.2444904277689235,
+      "minimum_surface_gap_over_R": 1.2284904277689235,
+      "minimum_rod_clearance_over_R_by_particle": [
+        0.3775591579126975,
+        0.15861888502328025
+      ],
+      "minimum_shield_clearance_over_R_by_particle": [
+        0.5343688220540812,
+        0.3116958904182717
+      ],
+      "diameter_Re_rms_last_80pct": [
+        0.36701630718187445,
+        0.3331246665984524
+      ],
+      "diameter_Re_max_sampled_last_80pct": [
+        0.5545246263860153,
+        0.47644858394037753
+      ],
+      "retained_contact_free_screen": true,
+      "counterrotating_by_mean_omega": true,
+      "classification": "counterrotating-retained",
+      "trajectory_file": "oseen_coulomb_nominal_start01.npz",
+      "limitations": [
+        "RF field is the ideal infinite-rod leading-harmonic field, not the full MFS 3D field.",
+        "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+        "The run horizon and fixed start set do not estimate a capture probability or prove an attractor."
+      ]
+    },
+    {
+      "case": "oseen_kappa0_independent_control",
+      "integrator": "SciPy DOP853",
+      "oseen_quasisteady": true,
+      "RF_field_model": "mfs",
+      "mfs_order_per_rod": 24,
+      "mfs_leading_transfer_check": {
+        "h_plus2_complex": [
+          0.8703167270606971,
+          1.3227266504323154e-17
+        ],
+        "h_minus4_complex": [
+          0.7982169778197363,
+          6.7220534694101275e-18
+        ],
+        "expected_h_plus2": 0.870316891091623,
+        "expected_h_minus4": 0.7982172624273378,
+        "boundary_residual": 1.667050864592712e-15
+      },
+      "coulomb_scale": 0.0,
+      "gravity_buoyancy": true,
+      "rf_phases_rad": [
+        0.0,
+        0.0
+      ],
+      "initial": {
+        "angles": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "primary_RF_periods_requested": 250,
+      "primary_RF_periods_reached": 249.99999999999997,
+      "max_step_tau": 0.12619664181937054,
+      "steps_per_fast_RF_period_bound": 16,
+      "solver_nfev": 168545,
+      "mean_radius_dimensionless_last_80pct": [
+        0.5493573374116425,
+        0.7656168412423938
+      ],
+      "radius_std_dimensionless_last_80pct": [
+        0.030001700682145686,
+        0.01564395838539298
+      ],
+      "mean_angular_velocity_dimensionless_last_80pct": [
+        0.0011823787245639923,
+        -0.0010361101365849747
+      ],
+      "mean_angular_velocity_rad_s_last_80pct": [
+        0.35288246991085526,
+        -0.309228419373501
+      ],
+      "mean_axial_position_over_R_last_80pct": [
+        -0.6366514093641327,
+        -1.8655888552962678
+      ],
+      "axial_std_over_R_last_80pct": [
+        0.0,
+        4.440892098500626e-16
+      ],
+      "minimum_center_distance_over_R": 1.2438494489333463,
+      "minimum_surface_gap_over_R": 1.2278494489333462,
+      "minimum_rod_clearance_over_R_by_particle": [
+        0.3776043053240333,
+        0.15865380533401466
+      ],
+      "minimum_shield_clearance_over_R_by_particle": [
+        0.5344211513171856,
+        0.31173505315879046
+      ],
+      "diameter_Re_rms_last_80pct": [
+        0.36702068885584554,
+        0.3330786873708274
+      ],
+      "diameter_Re_max_sampled_last_80pct": [
+        0.5544134485981588,
+        0.4763142298644219
+      ],
+      "retained_contact_free_screen": true,
+      "counterrotating_by_mean_omega": true,
+      "classification": "counterrotating-retained",
+      "trajectory_file": "oseen_kappa0_independent_control.npz",
+      "limitations": [
+        "RF field is the ideal infinite-rod leading-harmonic field, not the full MFS 3D field.",
+        "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+        "The run horizon and fixed start set do not estimate a capture probability or prove an attractor."
+      ]
+    }
+  ]
+}

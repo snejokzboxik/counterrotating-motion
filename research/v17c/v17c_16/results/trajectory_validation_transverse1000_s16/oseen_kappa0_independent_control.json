@@ -1,0 +1,77 @@
+{
+  "case": "oseen_kappa0_independent_control",
+  "integrator": "SciPy DOP853",
+  "oseen_quasisteady": true,
+  "RF_field_model": "ideal",
+  "mfs_order_per_rod": null,
+  "mfs_leading_transfer_check": null,
+  "coulomb_scale": 0.0,
+  "gravity_buoyancy": true,
+  "gravity_orientation_relative_to_trap_axis": "transverse",
+  "rf_phases_rad": [
+    0.0,
+    0.0
+  ],
+  "initial": {
+    "angles": [
+      0.0,
+      1.5707963267948966
+    ]
+  },
+  "primary_RF_periods_requested": 1000,
+  "primary_RF_periods_reached": 999.9999999999999,
+  "max_step_tau": 0.12619664181937054,
+  "steps_per_fast_RF_period_bound": 16,
+  "solver_nfev": 672932,
+  "mean_radius_dimensionless_last_80pct": [
+    0.7466255731449236,
+    1.1282137699498993
+  ],
+  "radius_std_dimensionless_last_80pct": [
+    0.048634421481455366,
+    0.03201785168645114
+  ],
+  "mean_angular_velocity_dimensionless_last_80pct": [
+    -2.661482604213051e-08,
+    -8.69251358590473e-09
+  ],
+  "mean_angular_velocity_rad_s_last_80pct": [
+    -7.943229487200115e-06,
+    -2.5942919981572384e-06
+  ],
+  "mean_axial_position_over_R_last_80pct": [
+    0.0,
+    0.0
+  ],
+  "axial_std_over_R_last_80pct": [
+    0.0,
+    0.0
+  ],
+  "minimum_center_distance_over_R": 0.29206805547692993,
+  "minimum_surface_gap_over_R": 0.2760680554769299,
+  "minimum_rod_clearance_over_R_by_particle": [
+    0.12492457907852428,
+    -0.05784008393334694
+  ],
+  "minimum_shield_clearance_over_R_by_particle": [
+    0.2673590306333681,
+    -0.15097304591646032
+  ],
+  "diameter_Re_rms_last_80pct": [
+    0.7262663047792994,
+    0.9486564594687716
+  ],
+  "diameter_Re_max_sampled_last_80pct": [
+    1.0957999434980266,
+    1.216674426008515
+  ],
+  "retained_contact_free_screen": false,
+  "counterrotating_by_mean_omega": false,
+  "classification": "contact-or-wall-loss",
+  "trajectory_file": "oseen_kappa0_independent_control.npz",
+  "limitations": [
+    "RF field is the ideal infinite-rod leading-harmonic field, not the full MFS 3D field.",
+    "Oseen drag is quasi-steady; the unsteady Stokes/Basset result is a separate linear-response control.",
+    "The run horizon and fixed start set do not estimate a capture probability or prove an attractor."
+  ]
+}

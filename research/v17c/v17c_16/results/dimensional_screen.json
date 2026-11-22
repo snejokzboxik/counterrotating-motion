@@ -1,0 +1,188 @@
+{
+  "status": "dimensional screen; no coupled orbit or breakdown clearance is claimed",
+  "input": {
+    "radii_m": [
+      3.5e-05,
+      4.5e-05
+    ],
+    "particle_densities_kg_m3": [
+      1050.0,
+      1050.0
+    ],
+    "charges_e": [
+      400000.0,
+      290121.0
+    ],
+    "temperature_K": 293.15,
+    "air_pressure_Pa": 101325.0,
+    "air_density_kg_m3": 1.2,
+    "air_dynamic_viscosity_Pa_s": 1.81e-05,
+    "air_mean_free_path_m": 6.51e-08,
+    "f1_Hz": 47.5,
+    "frequency_ratio_nu": 3.1118,
+    "radial_scale_R_m": 0.005
+  },
+  "constants": {
+    "epsilon0_F_m": 8.8541878128e-12,
+    "elementary_charge_C": 1.602176634e-19,
+    "gravity_m_s2": 9.80665,
+    "air_kinematic_viscosity_m2_s": 1.5083333333333333e-05
+  },
+  "charging_screen": {
+    "polystyrene_relative_permittivity_illustrative": 2.6,
+    "Pauthenier_dielectric_factor_3epsilon_over_epsilon_plus_2": 1.6956521739130437,
+    "caveat": "Equivalent uniform charger field from the Pauthenier saturation relation; not a measured charging protocol for these 70-90 um beads."
+  },
+  "particles": [
+    {
+      "radius_m": 3.5e-05,
+      "diameter_m": 7e-05,
+      "density_kg_m3": 1050.0,
+      "mass_kg": 1.8857409903172726e-10,
+      "charge_C": 6.408706535999999e-14,
+      "charge_e": 400000.0,
+      "q_over_m_C_kg": 0.000339850836827901,
+      "isolated_surface_field_V_m": 470192.5054179811,
+      "field_fraction_of_3MV_m_reference": 0.15673083513932703,
+      "illustrative_Pauthenier_charger_field_for_target_charge_V_m": 277293.0160157324,
+      "lambda_stokes_at_Omega1": 0.21217402878354874,
+      "particle_velocity_relaxation_time_s": 0.015791896869244933,
+      "particle_Stokes_number_at_omega1": 4.713112183113416,
+      "particle_Stokes_number_at_omega2": 14.666262491412327,
+      "Kn_mean_free_path_over_radius": 0.0018599999999999999,
+      "Cunningham_slip_factor": 1.0021669,
+      "unsteady_Stokes_parameter_a_sqrt_omega_over_nu": [
+        0.15568835106073883,
+        0.274638840685322
+      ],
+      "added_mass_over_Stokes_drag_fraction_alpha2_over_9": [
+        0.002693206961779095,
+        0.008380721423664188
+      ],
+      "gravity_terminal_speed_Stokes_m_s": 0.15468861616942908,
+      "uniform_field_required_to_balance_weight_V_m": 28855.747690761298,
+      "gravity_equilibrium_z_over_R_in_Local15_DC_quad": -0.6366514093641327,
+      "local15_RF_micromotion_screen": {
+        "source": "V17C.15 frozen Local15 moving-orbit linear response; screening only",
+        "dimensionless_RF_velocity_amplitudes": [
+          0.0558292295220253,
+          0.04943593593172259
+        ],
+        "dimensionless_slow_velocity": 0.0007046789589296297,
+        "physical_RMS_speed_m_s": 0.07869306700242867,
+        "diameter_Re_RMS_proxy": 0.3652053938234258,
+        "Oseen_fraction_3Re_over_16_RMS_proxy": 0.06847601134189234,
+        "diameter_Re_conservative_phase_bound": 0.7338824298279532,
+        "Oseen_fraction_conservative_bound": 0.13760295559274122
+      }
+    },
+    {
+      "radius_m": 4.5e-05,
+      "diameter_m": 9e-05,
+      "density_kg_m3": 1050.0,
+      "mass_kg": 4.007886827817179e-10,
+      "charge_C": 4.64825087232714e-14,
+      "charge_e": 290121.0,
+      "q_over_m_C_kg": 0.00011597759797171527,
+      "isolated_surface_field_V_m": 206303.18744920165,
+      "field_fraction_of_3MV_m_reference": 0.06876772914973388,
+      "illustrative_Pauthenier_charger_field_for_target_charge_V_m": 121665.98234183686,
+      "lambda_stokes_at_Omega1": 0.12835219025177635,
+      "particle_velocity_relaxation_time_s": 0.026104972375690608,
+      "particle_Stokes_number_at_omega1": 7.79106299657524,
+      "particle_Stokes_number_at_omega2": 24.244229832742832,
+      "Kn_mean_free_path_over_radius": 0.0014466666666666664,
+      "Cunningham_slip_factor": 1.0016853666666667,
+      "unsteady_Stokes_parameter_a_sqrt_omega_over_nu": [
+        0.20017073707809283,
+        0.35310708088112835
+      ],
+      "added_mass_over_Stokes_drag_fraction_alpha2_over_9": [
+        0.004452035998042995,
+        0.013853845618710193
+      ],
+      "gravity_terminal_speed_Stokes_m_s": 0.25570975325966855,
+      "uniform_field_required_to_balance_weight_V_m": 84556.41582085236,
+      "gravity_equilibrium_z_over_R_in_Local15_DC_quad": -1.865588855296268,
+      "local15_RF_micromotion_screen": {
+        "source": "V17C.15 frozen Local15 moving-orbit linear response; screening only",
+        "dimensionless_RF_velocity_amplitudes": [
+          0.027113652257240113,
+          0.0453799852522504
+        ],
+        "dimensionless_slow_velocity": 0.0008195224457279265,
+        "physical_RMS_speed_m_s": 0.055793597435052675,
+        "diameter_Re_RMS_proxy": 0.332912073093132,
+        "Oseen_fraction_3Re_over_16_RMS_proxy": 0.062421013704962246,
+        "diameter_Re_conservative_phase_bound": 0.6527856545018332,
+        "Oseen_fraction_conservative_bound": 0.12239731021909372
+      }
+    }
+  ],
+  "ratios": {
+    "mass2_over_mass1": 2.1253644314868816,
+    "charge2_over_charge1": 0.7253025000000001,
+    "(q2/m2)/(q1/m1)": 0.34126029835390936,
+    "lambda2_over_lambda1_from_same_air": 0.6049382716049381,
+    "Local15_lambda2_over_lambda1": 0.6015249329009599,
+    "dimensionless_mass2": 2.1253644314868816,
+    "dimensionless_charge2": 0.7253025000000001,
+    "dimensionless_Coulomb_C12": 1.275153126978901e-05,
+    "dimensionless_Coulomb_acceleration_particle2": 5.999691667404154e-06
+  },
+  "field_and_electrodes": {
+    "f1_Hz": 47.5,
+    "f2_Hz": 147.81050000000002,
+    "omega1_rad_s": 298.45130209103036,
+    "omega2_rad_s": 928.7207618468683,
+    "R_m": 0.005,
+    "D_m": 0.005263157894736843,
+    "Local15_A_B_beta": {
+      "A": 0.03716194907442204,
+      "B": 0.1626938199343468,
+      "beta": 0.017273303124515367,
+      "lambda1_abstract": 0.20975541409005094,
+      "lambda2_abstract": 0.12617311138613094,
+      "nu": 3.1118029452860356
+    },
+    "leading_transfer_h_plus2": 0.870316891091623,
+    "leading_transfer_h_minus4": 0.7982172624273378,
+    "U1_electrode_peak_V": 279.7819498119465,
+    "U2_electrode_peak_V": 1335.5143581564764,
+    "V2_DC_ideal_quadrupole_coefficient_V_not_electrode_voltage": 113.18112733853718,
+    "U2_over_U1": 4.7734114336329885,
+    "rod_to_shield_gap_m": 0.0002631578947368426,
+    "neighbor_rod_gap_m": 0.0008476441286321219,
+    "conservative_RF_surface_E_rod_family_1_V_m": 1401426.1372139025,
+    "conservative_RF_surface_E_rod_family_2_V_m": 6709850.670316095,
+    "conservative_RF_surface_E_rod_sum_V_m": 8111276.807529998,
+    "conservative_RF_surface_E_shield_family_1_V_m": 922211.3839509704,
+    "conservative_RF_surface_E_shield_family_2_V_m": 4388827.160099313,
+    "conservative_RF_surface_E_shield_sum_V_m": 5311038.544050283,
+    "rod_shield_pd_Torr_cm": 20.000000000000036,
+    "adjacent_rod_pd_Torr_cm": 64.42095377604127,
+    "rod_shield_parallel_plate_Paschen_V_screen_only": 1748.7356730803788,
+    "adjacent_rod_parallel_plate_Paschen_V_screen_only": 4399.884544044563,
+    "RF_electrode_difference_upper_bound_V": 1408.5521032781862,
+    "single_rod_to_ground_peak_upper_bound_V": 1615.296307968423
+  },
+  "gravity_and_coulomb": {
+    "dimensionless_g_over_R_Omega1_squared": 0.02201931048345998,
+    "weight_N": [
+      1.849280188269488e-09,
+      3.930394336001334e-09
+    ],
+    "Coulomb_force_at_separation_R_N": 1.0709306345006988e-12,
+    "Coulomb_force_at_sphere_contact_N": 4.183322791018356e-09,
+    "charge_at_3MV_m_uniform_sphere_reference_e": [
+      2552146.1660331036,
+      4218853.866299622
+    ]
+  },
+  "caveats": [
+    "The 3 MV/m comparison and Paschen voltage are reference screens, not breakdown criteria for this geometry.",
+    "The MFS surface bounds use a conservative sum of independent family maxima; exact two-phase maxima require the full complex surface-field bases.",
+    "The micromotion velocity estimate comes from the frozen Local15 linear response and must be replaced by velocity statistics from the new exact two-particle trajectories.",
+    "A Cunningham factor is small at these Kn values; it is not multiplied into Oseen as though that product were a controlled composite theory."
+  ]
+}
