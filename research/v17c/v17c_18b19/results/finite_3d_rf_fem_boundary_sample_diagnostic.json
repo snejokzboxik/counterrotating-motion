@@ -1,0 +1,143 @@
+{
+  "source_mfs_infinite_rod_transfer": {
+    "+2": 0.8703168911,
+    "-4": 0.7982172624
+  },
+  "finite_geometry": "24 finite cylindrical rods in grounded shield; rod ends stop 1 mm short of grounded end plates; no axial rod segmentation in these RF solves",
+  "mesh_levels": [
+    {
+      "mesh_hmax_mm": 0.55,
+      "mesh_file": "finite_24rod_rf_h0.55mm.msh",
+      "vertices": 48573,
+      "tetrahedra": 256747,
+      "boundary_nodes": 18378,
+      "driven_rod_nodes": 10449,
+      "R_mm": 5.0,
+      "rod_center_radius_mm": 5.2631578947368425,
+      "rod_radius_mm": 0.26315789473684215,
+      "shield_radius_mm": 5.789473684210527,
+      "shield_length_mm": 50.0,
+      "rod_active_length_mm": 48.0,
+      "endcap_rod_gap_mm": 1.0000000000000009,
+      "end_boundary_grounded": true,
+      "drive": "24 rod phasors exp(+i 2 theta_j) and exp(-i 4 theta_j); 1 V peak complex amplitude per rod; shield/end plates grounded",
+      "midplane_leading_transfer_at_r_equals_R": [
+        {
+          "m": 2,
+          "complex_coefficient_V_per_Vrod": [
+            0.9342672918122217,
+            -0.00030051274160394705
+          ],
+          "transfer_magnitude": 0.9342673401430935
+        },
+        {
+          "m": -4,
+          "complex_coefficient_V_per_Vrod": [
+            0.8605351483538919,
+            0.000938137184597114
+          ],
+          "transfer_magnitude": 0.86053565972238
+        }
+      ],
+      "limitation": "linear P1 tetra FEM; preliminary two RF basis solves; no segmented-DC basis, no rounded ends, no validated surface-field maxima"
+    },
+    {
+      "mesh_hmax_mm": 0.42000000000000004,
+      "mesh_file": "finite_24rod_rf_h0.42mm.msh",
+      "vertices": 81903,
+      "tetrahedra": 465201,
+      "boundary_nodes": 28954,
+      "driven_rod_nodes": 15384,
+      "R_mm": 5.0,
+      "rod_center_radius_mm": 5.2631578947368425,
+      "rod_radius_mm": 0.26315789473684215,
+      "shield_radius_mm": 5.789473684210527,
+      "shield_length_mm": 50.0,
+      "rod_active_length_mm": 48.0,
+      "endcap_rod_gap_mm": 1.0000000000000009,
+      "end_boundary_grounded": true,
+      "drive": "24 rod phasors exp(+i 2 theta_j) and exp(-i 4 theta_j); 1 V peak complex amplitude per rod; shield/end plates grounded",
+      "midplane_leading_transfer_at_r_equals_R": [
+        {
+          "m": 2,
+          "complex_coefficient_V_per_Vrod": [
+            0.9120027304552346,
+            -0.0023218053324370476
+          ],
+          "transfer_magnitude": 0.9120056859130896
+        },
+        {
+          "m": -4,
+          "complex_coefficient_V_per_Vrod": [
+            0.8389629864288688,
+            0.004314677066769452
+          ],
+          "transfer_magnitude": 0.838974081265826
+        }
+      ],
+      "limitation": "linear P1 tetra FEM; preliminary two RF basis solves; no segmented-DC basis, no rounded ends, no validated surface-field maxima"
+    },
+    {
+      "mesh_hmax_mm": 0.32,
+      "mesh_file": "finite_24rod_rf_h0.32mm.msh",
+      "vertices": 208720,
+      "tetrahedra": 1175924,
+      "boundary_nodes": 51762,
+      "driven_rod_nodes": 28579,
+      "R_mm": 5.0,
+      "rod_center_radius_mm": 5.2631578947368425,
+      "rod_radius_mm": 0.26315789473684215,
+      "shield_radius_mm": 5.789473684210527,
+      "shield_length_mm": 50.0,
+      "rod_active_length_mm": 48.0,
+      "endcap_rod_gap_mm": 1.0000000000000009,
+      "end_boundary_grounded": true,
+      "drive": "24 rod phasors exp(+i 2 theta_j) and exp(-i 4 theta_j); 1 V peak complex amplitude per rod; shield/end plates grounded",
+      "midplane_leading_transfer_at_r_equals_R": [
+        {
+          "m": 2,
+          "complex_coefficient_V_per_Vrod": [
+            0.8860163589869077,
+            -0.0009014023888804533
+          ],
+          "transfer_magnitude": 0.8860168175145907
+        },
+        {
+          "m": -4,
+          "complex_coefficient_V_per_Vrod": [
+            0.8141260705294726,
+            0.0015089871047736128
+          ],
+          "transfer_magnitude": 0.8141274689861792
+        }
+      ],
+      "limitation": "linear P1 tetra FEM; preliminary two RF basis solves; no segmented-DC basis, no rounded ends, no validated surface-field maxima"
+    }
+  ],
+  "mesh_refinement_relative_change": [
+    {
+      "mode": "+2",
+      "coarse_hmax_mm": 0.55,
+      "fine_hmax_mm": 0.42000000000000004,
+      "relative_change_using_fine_denominator": 0.02440955640283735
+    },
+    {
+      "mode": "-4",
+      "coarse_hmax_mm": 0.55,
+      "fine_hmax_mm": 0.42000000000000004,
+      "relative_change_using_fine_denominator": 0.025699933928855584
+    },
+    {
+      "mode": "+2",
+      "coarse_hmax_mm": 0.42000000000000004,
+      "fine_hmax_mm": 0.32,
+      "relative_change_using_fine_denominator": 0.02933225180917169
+    },
+    {
+      "mode": "-4",
+      "coarse_hmax_mm": 0.42000000000000004,
+      "fine_hmax_mm": 0.32,
+      "relative_change_using_fine_denominator": 0.030519314512981503
+    }
+  ]
+}

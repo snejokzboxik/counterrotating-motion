@@ -1,0 +1,89 @@
+{
+  "case": "V17C.16 PS benchmark; alpha=(1,0.3412603); Coulomb on; P0; common leading-harmonic field",
+  "horizon_RF1_periods": 1000,
+  "pair_initial_state": "r1/R=.55 theta1=0; r2/R=.766 theta2=pi/2; zero velocities",
+  "single_particle_refinement": [
+    {
+      "steps_per_RF1_period": 64,
+      "mean_radius_R_last_200": 0.5637077527256463,
+      "std_radius_R_last_200": 0.02550800641781229,
+      "turns_per_period_last_200": 0.0014550278910076798
+    },
+    {
+      "steps_per_RF1_period": 128,
+      "mean_radius_R_last_200": 0.5637381359264204,
+      "std_radius_R_last_200": 0.025464461856356323,
+      "turns_per_period_last_200": 0.0014550582093366472
+    },
+    {
+      "steps_per_RF1_period": 256,
+      "mean_radius_R_last_200": 0.5637379639154885,
+      "std_radius_R_last_200": 0.025464087330283054,
+      "turns_per_period_last_200": 0.001455058509148449
+    }
+  ],
+  "pair_RK4_refinement": [
+    {
+      "steps_per_RF1_period": 64,
+      "mean_radius_R_last_200_periods": [
+        0.5756322559826913,
+        0.7640903635337887
+      ],
+      "std_radius_R_last_200_periods": [
+        0.016805711472634266,
+        0.014392481434244719
+      ],
+      "turns_per_RF1_period_last_200": [
+        0.0010162460274474694,
+        -0.0010536857010597107
+      ]
+    },
+    {
+      "steps_per_RF1_period": 128,
+      "mean_radius_R_last_200_periods": [
+        0.5756551292599589,
+        0.764118265599194
+      ],
+      "std_radius_R_last_200_periods": [
+        0.016762853282069695,
+        0.01439406578184511
+      ],
+      "turns_per_RF1_period_last_200": [
+        0.0010164029166815592,
+        -0.0010534267294380361
+      ]
+    },
+    {
+      "steps_per_RF1_period": 256,
+      "mean_radius_R_last_200_periods": [
+        0.5756549585454649,
+        0.7641183161028218
+      ],
+      "std_radius_R_last_200_periods": [
+        0.016762377481021443,
+        0.014394086617227572
+      ],
+      "turns_per_RF1_period_last_200": [
+        0.0010164056316295162,
+        -0.0010534227217011245
+      ]
+    }
+  ],
+  "pair_DOP853": {
+    "method": "DOP853; 3-D pair_rhs with z=0 invariant; max_step=2pi/128; rtol=2e-10; atol=2e-12",
+    "n_output_periods": 1000,
+    "mean_radius_R_last_200_periods": [
+      0.5755196195166856,
+      0.7641784452568718
+    ],
+    "std_radius_R_last_200_periods": [
+      0.01682975375846633,
+      0.01438343942156041
+    ],
+    "turns_per_RF1_period_last_200": [
+      0.0010164055687448823,
+      -0.001053422874609775
+    ]
+  },
+  "warning": "method convergence applies only to the planar leading-harmonic model; not finite-length FEM or physical validation"
+}

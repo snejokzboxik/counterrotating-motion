@@ -1,0 +1,30 @@
+[
+  {
+    "dz_mm": 2.0,
+    "dz_over_R": 0.4,
+    "kD": 8.267349088394193,
+    "axis_wall_amplitude": 0.0018208842719221994,
+    "model": "infinite cylindrical Dirichlet wall; k=pi/dz"
+  },
+  {
+    "dz_mm": 5.0,
+    "dz_over_R": 1.0,
+    "kD": 3.306939635357677,
+    "axis_wall_amplitude": 0.15926870992400957,
+    "model": "infinite cylindrical Dirichlet wall; k=pi/dz"
+  },
+  {
+    "dz_mm": 10.0,
+    "dz_over_R": 2.0,
+    "kD": 1.6534698176788385,
+    "axis_wall_amplitude": 0.552626840604984,
+    "model": "infinite cylindrical Dirichlet wall; k=pi/dz"
+  },
+  {
+    "dz_mm": 15.0,
+    "dz_over_R": 3.0,
+    "kD": 1.1023132117858923,
+    "axis_wall_amplitude": 0.7532180322973819,
+    "model": "infinite cylindrical Dirichlet wall; k=pi/dz"
+  }
+]

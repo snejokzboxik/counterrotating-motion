@@ -1,0 +1,468 @@
+{
+  "study": "V17C.18B-19",
+  "algorithm": "SHA-256",
+  "scope": "All regular files under this study directory except MANIFEST.json and __pycache__.",
+  "file_count": 92,
+  "files": [
+    {
+      "path": "AXIAL_ELECTRODE_DESIGN_RU.md",
+      "bytes": 7758,
+      "sha256": "06e56dc16dfb9a087a235dd71951822bbea8662fd7692897014e01da0bc5530f"
+    },
+    {
+      "path": "code/audit_outputs.py",
+      "bytes": 2390,
+      "sha256": "be3726365468c74659304f14842471c253e6c5860928ace73051a672a39bbdec"
+    },
+    {
+      "path": "code/finite_3d_rf_fem.py",
+      "bytes": 8851,
+      "sha256": "5f26b4a5aa537941b349aefa6d58e9312fdda2b6221629a5580de983dc7440d8"
+    },
+    {
+      "path": "code/make_aux_figures.py",
+      "bytes": 12335,
+      "sha256": "10ae0f349b1e1c07e744c34fbee7853a9ebc4b8d32cc10ae7b5071ad11da97d4"
+    },
+    {
+      "path": "code/make_manifest.py",
+      "bytes": 1062,
+      "sha256": "9639a4f31b48706d2b5f1ea314665736654583eec4ecd80c4805978f76124c71"
+    },
+    {
+      "path": "code/mfs_breakdown.py",
+      "bytes": 9174,
+      "sha256": "58d9b0485eae79f971c99dc19454f18e3c526689e18603d14abf5879891d7a14"
+    },
+    {
+      "path": "code/mfs_two_particle_dynamics.py",
+      "bytes": 7350,
+      "sha256": "aa48ac9ed43662ff8e7292461b65ecaaebc32fdf56eedaa6e565f3fbcb35f45e"
+    },
+    {
+      "path": "code/model.py",
+      "bytes": 8221,
+      "sha256": "ff1e5a41adbfd74ddb176918308acb8680d313a1a41c48f8b6bc0da096cc1d0b"
+    },
+    {
+      "path": "code/physical_screen.py",
+      "bytes": 12701,
+      "sha256": "391b2a47108e8798caca7f5ef0feb87179dc4fc04a7c7df2e52cb94750e8c714"
+    },
+    {
+      "path": "code/publish_figures.py",
+      "bytes": 5012,
+      "sha256": "1e05fb18fc0f3144854261f5c35ab34384d0685d93d80aa47b651e091fc7c7e1"
+    },
+    {
+      "path": "code/run_screening_maps.py",
+      "bytes": 17478,
+      "sha256": "8cf596e8a70dbe83f68ac3f047706e21ee2d0e675bf7ebf0083d484cacb1d0f9"
+    },
+    {
+      "path": "code/two_particle_oseen.py",
+      "bytes": 12153,
+      "sha256": "bb6049fc0f4c39e2c15e4ec6d521ad85d00dcf818653bfd7bd245a67df3728d3"
+    },
+    {
+      "path": "code/validate_selected.py",
+      "bytes": 4636,
+      "sha256": "a15031ea8dac54b0cfc7f31771ccb890e7f99177062219b43a59b186f926d05a"
+    },
+    {
+      "path": "data/alpha_b_over_a.csv",
+      "bytes": 45837,
+      "sha256": "9f1e36c2d554b98d88294dba7e7d41644199003e4f1d210c450d1cfa3523ef19"
+    },
+    {
+      "path": "data/alpha_lambda.csv",
+      "bytes": 47232,
+      "sha256": "3a56a87772f8d7352d764e3b9b44e3a905aa62574921ee1c59aaf392fc85034c"
+    },
+    {
+      "path": "data/alpha_nu.csv",
+      "bytes": 45193,
+      "sha256": "56ba8ece42702b6d5a22f343764c2c7b993c4b56a9fb2c3df6948d0b392756eb"
+    },
+    {
+      "path": "data/alpha_pair_starts.csv",
+      "bytes": 66574,
+      "sha256": "e4844a980e4f98167f7191d312d3d36b0d25c8129ede0b36d8b5aa18df0c2712"
+    },
+    {
+      "path": "data/alpha_pair_summary.csv",
+      "bytes": 7683,
+      "sha256": "0f0444249e9a620763dcef55a9981b6c37506103a45b1999131d1cd986bed308"
+    },
+    {
+      "path": "data/alpha_pol_PS2.csv",
+      "bytes": 50945,
+      "sha256": "2557cb7b93907b47efe6231c2d4be436caeb820fdd875eae526d396de7a905da"
+    },
+    {
+      "path": "data/fig05_axial_DC_transfer.json",
+      "bytes": 780,
+      "sha256": "f07ee9b8b4b1c2f99527a7d5339a5982cc483ac568ca9384affc2d6f1a0f4700"
+    },
+    {
+      "path": "data/fig08_linked_physical_parameter_curves.csv",
+      "bytes": 10504,
+      "sha256": "3411bbe0377af03a42532ebe8853de146e5e2fef0c41c35e2f712f61cc628dee"
+    },
+    {
+      "path": "data/figure_index.json",
+      "bytes": 798,
+      "sha256": "a2ff8688c2f11517e0bec127cbd4aa45557c4c6dd4e23b840f57713731f742d1"
+    },
+    {
+      "path": "data/ps_mfs1000_p0_source_v17c16.npz",
+      "bytes": 2268212,
+      "sha256": "d3408b965a30d7a0d3eb330b38cd3934ee6ee38ba599767f27a1e90552c43be4"
+    },
+    {
+      "path": "data/ps_mfs1000_p1_eps26_source_v17c16.npz",
+      "bytes": 2274755,
+      "sha256": "296800860e5de3e5f49343690adfa84106fb33f2e32951bf0c8dd3db6e6bec62"
+    },
+    {
+      "path": "data/source_benchmarks.json",
+      "bytes": 5075,
+      "sha256": "2a502cdacd0175601f51bb517f64c94360cc13263efbbe1cb727ce7d42b5df93"
+    },
+    {
+      "path": "DIMENSIONLESS_MODEL_RU.md",
+      "bytes": 7467,
+      "sha256": "b78d2d8350b2becbb43ddb5f59d8b65cd505afea2c5e3ec0968f57ec05b08fad"
+    },
+    {
+      "path": "FIGURE_AUDIT_RU.md",
+      "bytes": 5178,
+      "sha256": "96cc70f97edd825301af010e8d356505a67c0c882d0085be9d5d7ecd2add2085"
+    },
+    {
+      "path": "figures/alpha_b_over_a.pdf",
+      "bytes": 22780,
+      "sha256": "9dde5afaf459c4555848f3c7543975a39c2813dc24e074b43eb1dd63f29c2c96"
+    },
+    {
+      "path": "figures/alpha_b_over_a.png",
+      "bytes": 193918,
+      "sha256": "7ac424c674d0f801ef25ae5c79ee77dec773a07827a3de70562dc27cd5c93282"
+    },
+    {
+      "path": "figures/alpha_b_over_a.svg",
+      "bytes": 47431,
+      "sha256": "55fbc07d95e3ab35425b74cc8c6b9a7df25b895552f6ef877d42bc92668e9564"
+    },
+    {
+      "path": "figures/alpha_lambda.pdf",
+      "bytes": 24225,
+      "sha256": "e6aa49cf5292b368578d6dda673c1454f14151428e7f4f65770236b5e7ba178b"
+    },
+    {
+      "path": "figures/alpha_lambda.png",
+      "bytes": 220011,
+      "sha256": "1a9b6c2da493018003856f3397063c04fade0230ea65aca8b3bc8ca1cb958f1d"
+    },
+    {
+      "path": "figures/alpha_lambda.svg",
+      "bytes": 50357,
+      "sha256": "6b365210fef489ea65b20dba5b2f25a6b11c2ae22d432d60af69ef12841d2a27"
+    },
+    {
+      "path": "figures/alpha_nu.pdf",
+      "bytes": 23677,
+      "sha256": "5388005bc0da382ba3f95795b3bc83b2ec2d20f45cd38d3eb87603c937bf4527"
+    },
+    {
+      "path": "figures/alpha_nu.png",
+      "bytes": 208414,
+      "sha256": "f0de08e1153127cbe53bcd2815fbf645b83746d1fdf38c335ee152d4d2d568e8"
+    },
+    {
+      "path": "figures/alpha_nu.svg",
+      "bytes": 48426,
+      "sha256": "1bfc72266a17f87adfb8646fbb787b788ffad0f46f2d22fbfcf4fa80b6066d9e"
+    },
+    {
+      "path": "figures/alpha_pair_panel_fraction.pdf",
+      "bytes": 31506,
+      "sha256": "f88b319bd7ad10b8e8293fb1d4b42d1541a84f82d993452100494ea4cffdfc89"
+    },
+    {
+      "path": "figures/alpha_pair_panel_fraction.png",
+      "bytes": 602500,
+      "sha256": "e29e8c168a1add880f1fbb31d75e170276b7d68c03920c8b8a15dd9721328fed"
+    },
+    {
+      "path": "figures/alpha_pair_panel_fraction.svg",
+      "bytes": 107970,
+      "sha256": "84297c851587d309bb4bd44c848c02b254e1882b2ea9b809aa4ebc856e32e3af"
+    },
+    {
+      "path": "figures/alpha_pol_PS2.pdf",
+      "bytes": 22346,
+      "sha256": "a2d5af29de551a835c9d14822b8f0acda565c856335475538fe6d235af32815b"
+    },
+    {
+      "path": "figures/alpha_pol_PS2.png",
+      "bytes": 213779,
+      "sha256": "f53a11b2a3e3deaf1d960a67765598d41039488f1affa8c657397f078aa45ce3"
+    },
+    {
+      "path": "figures/alpha_pol_PS2.svg",
+      "bytes": 48448,
+      "sha256": "41b02e185c4575da44cecb6fb1ce753c155d399df711a7537afcd8bb080456fb"
+    },
+    {
+      "path": "figures/FIG01_single_particle_alpha_lambda.pdf",
+      "bytes": 24225,
+      "sha256": "e6aa49cf5292b368578d6dda673c1454f14151428e7f4f65770236b5e7ba178b"
+    },
+    {
+      "path": "figures/FIG01_single_particle_alpha_lambda.png",
+      "bytes": 220011,
+      "sha256": "1a9b6c2da493018003856f3397063c04fade0230ea65aca8b3bc8ca1cb958f1d"
+    },
+    {
+      "path": "figures/FIG01_single_particle_alpha_lambda.svg",
+      "bytes": 50357,
+      "sha256": "6b365210fef489ea65b20dba5b2f25a6b11c2ae22d432d60af69ef12841d2a27"
+    },
+    {
+      "path": "figures/FIG02_RF_parameter_alpha_b_over_a.pdf",
+      "bytes": 22780,
+      "sha256": "9dde5afaf459c4555848f3c7543975a39c2813dc24e074b43eb1dd63f29c2c96"
+    },
+    {
+      "path": "figures/FIG02_RF_parameter_alpha_b_over_a.png",
+      "bytes": 193918,
+      "sha256": "7ac424c674d0f801ef25ae5c79ee77dec773a07827a3de70562dc27cd5c93282"
+    },
+    {
+      "path": "figures/FIG02_RF_parameter_alpha_b_over_a.svg",
+      "bytes": 47431,
+      "sha256": "55fbc07d95e3ab35425b74cc8c6b9a7df25b895552f6ef877d42bc92668e9564"
+    },
+    {
+      "path": "figures/FIG03_two_particle_stability.pdf",
+      "bytes": 31506,
+      "sha256": "f88b319bd7ad10b8e8293fb1d4b42d1541a84f82d993452100494ea4cffdfc89"
+    },
+    {
+      "path": "figures/FIG03_two_particle_stability.png",
+      "bytes": 602500,
+      "sha256": "e29e8c168a1add880f1fbb31d75e170276b7d68c03920c8b8a15dd9721328fed"
+    },
+    {
+      "path": "figures/FIG03_two_particle_stability.svg",
+      "bytes": 107970,
+      "sha256": "84297c851587d309bb4bd44c848c02b254e1882b2ea9b809aa4ebc856e32e3af"
+    },
+    {
+      "path": "figures/FIG04_polarization_sensitivity.pdf",
+      "bytes": 22346,
+      "sha256": "a2d5af29de551a835c9d14822b8f0acda565c856335475538fe6d235af32815b"
+    },
+    {
+      "path": "figures/FIG04_polarization_sensitivity.png",
+      "bytes": 213779,
+      "sha256": "f53a11b2a3e3deaf1d960a67765598d41039488f1affa8c657397f078aa45ce3"
+    },
+    {
+      "path": "figures/FIG04_polarization_sensitivity.svg",
+      "bytes": 48448,
+      "sha256": "41b02e185c4575da44cecb6fb1ce753c155d399df711a7537afcd8bb080456fb"
+    },
+    {
+      "path": "figures/FIG05_axial_DC_transfer.pdf",
+      "bytes": 25464,
+      "sha256": "55b876c30612da0cf4d5f2b502b583c7adfad34e9c946344b381c8277612c23f"
+    },
+    {
+      "path": "figures/FIG05_axial_DC_transfer.png",
+      "bytes": 321958,
+      "sha256": "4bc89e201611ec51a4a6e2cdbf40f733cafbaa788538a31ecc02a14b5e2c00c2"
+    },
+    {
+      "path": "figures/FIG05_axial_DC_transfer.svg",
+      "bytes": 61606,
+      "sha256": "229699e7a4f0293f0dde2ed3607501e987415931598494a331a6c4488d155c20"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry.pdf",
+      "bytes": 37456,
+      "sha256": "2d3cfb77a0dadc30bd117a1561c31c6b1bbc3b16740920bd5bfa641a9e6b65fa"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry.png",
+      "bytes": 702800,
+      "sha256": "93747a5e8b3ac23e19a234fd631d307645306d46359a45996933b983ea5faf9c"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry.svg",
+      "bytes": 181968,
+      "sha256": "1c5bde6c22722542ad473df308cf62902b2c1d8bdb7467ac2cf893fe53a4b37e"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry_schematic.pdf",
+      "bytes": 37456,
+      "sha256": "2d3cfb77a0dadc30bd117a1561c31c6b1bbc3b16740920bd5bfa641a9e6b65fa"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry_schematic.png",
+      "bytes": 702800,
+      "sha256": "93747a5e8b3ac23e19a234fd631d307645306d46359a45996933b983ea5faf9c"
+    },
+    {
+      "path": "figures/FIG06_segmented_geometry_schematic.svg",
+      "bytes": 181968,
+      "sha256": "1c5bde6c22722542ad473df308cf62902b2c1d8bdb7467ac2cf893fe53a4b37e"
+    },
+    {
+      "path": "figures/FIG07_inherited_pair_trajectories.pdf",
+      "bytes": 148355,
+      "sha256": "dd7548cc92372f1cd92ca592915557faccd17e2c5b98d685ca9ef6e6f562b13a"
+    },
+    {
+      "path": "figures/FIG07_inherited_pair_trajectories.png",
+      "bytes": 1347867,
+      "sha256": "fbff131876d579218d6226c3953d60f954d4fae4f5183d185d8f3665556837e8"
+    },
+    {
+      "path": "figures/FIG07_inherited_pair_trajectories.svg",
+      "bytes": 415048,
+      "sha256": "8d87e1f0a723ddd6e187b860d792fc111f9b2cbbedbc2811e43a01441530c101"
+    },
+    {
+      "path": "figures/FIG07_representative_trajectories.pdf",
+      "bytes": 148355,
+      "sha256": "dd7548cc92372f1cd92ca592915557faccd17e2c5b98d685ca9ef6e6f562b13a"
+    },
+    {
+      "path": "figures/FIG07_representative_trajectories.png",
+      "bytes": 1347867,
+      "sha256": "fbff131876d579218d6226c3953d60f954d4fae4f5183d185d8f3665556837e8"
+    },
+    {
+      "path": "figures/FIG07_representative_trajectories.svg",
+      "bytes": 415048,
+      "sha256": "8d87e1f0a723ddd6e187b860d792fc111f9b2cbbedbc2811e43a01441530c101"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility.pdf",
+      "bytes": 35583,
+      "sha256": "c6ed68513abecfcbf905ce0198457d1b7df2819ae8ac8abc54e2bb0d75fba673"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility.png",
+      "bytes": 593311,
+      "sha256": "d8168b5a031836bde833f2f14987fda5cd2cf60c536e81c8a6fcf1828b9e6d37"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility.svg",
+      "bytes": 142635,
+      "sha256": "e5d00757776dbe415d7cb41bca5fd95e374ec608dd485395ee120ecb0a21a556"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility_linked_parameters.pdf",
+      "bytes": 35583,
+      "sha256": "c6ed68513abecfcbf905ce0198457d1b7df2819ae8ac8abc54e2bb0d75fba673"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility_linked_parameters.png",
+      "bytes": 593311,
+      "sha256": "d8168b5a031836bde833f2f14987fda5cd2cf60c536e81c8a6fcf1828b9e6d37"
+    },
+    {
+      "path": "figures/FIG08_physical_feasibility_linked_parameters.svg",
+      "bytes": 142635,
+      "sha256": "e5d00757776dbe415d7cb41bca5fd95e374ec608dd485395ee120ecb0a21a556"
+    },
+    {
+      "path": "figures/FIGS01_frequency_ratio_alpha_nu.pdf",
+      "bytes": 23677,
+      "sha256": "5388005bc0da382ba3f95795b3bc83b2ec2d20f45cd38d3eb87603c937bf4527"
+    },
+    {
+      "path": "figures/FIGS01_frequency_ratio_alpha_nu.png",
+      "bytes": 208414,
+      "sha256": "f0de08e1153127cbe53bcd2815fbf645b83746d1fdf38c335ee152d4d2d568e8"
+    },
+    {
+      "path": "figures/FIGS01_frequency_ratio_alpha_nu.svg",
+      "bytes": 48426,
+      "sha256": "1bfc72266a17f87adfb8646fbb787b788ffad0f46f2d22fbfcf4fa80b6066d9e"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "bytes": 6276,
+      "sha256": "ca523b74e3b62a4de0b2b5339db10b532fbba88d72947a1973f0636a64d76b13"
+    },
+    {
+      "path": "PHYSICAL_FEASIBILITY_RU.md",
+      "bytes": 12516,
+      "sha256": "7c5cd647f53cee10414df79f8dd42397b7e838dbaf7c27b56e13e5d6d7a9aa0d"
+    },
+    {
+      "path": "results/finite_24rod_rf_h0.32mm.msh",
+      "bytes": 59535648,
+      "sha256": "b8b9827763cfc0d94e8cfe859c691b1c785d50b1db15d253304ee395f9c99f73"
+    },
+    {
+      "path": "results/finite_24rod_rf_h0.42mm.msh",
+      "bytes": 22489402,
+      "sha256": "005153f7d31f91a5661132a2647b9c3a670e06baa1651d7c9afafd905de531cc"
+    },
+    {
+      "path": "results/finite_24rod_rf_h0.55mm.msh",
+      "bytes": 12630495,
+      "sha256": "fc0404517601b8b0ea04b0d0d9b4a6a978aeb7558107dca5f0276a9d6866b769"
+    },
+    {
+      "path": "results/finite_3d_rf_fem.json",
+      "bytes": 7055,
+      "sha256": "f64bf80eac76fa2f053d1d7377416fba0f87af46b8bad32fe85d2abca3fb7703"
+    },
+    {
+      "path": "results/finite_3d_rf_fem_boundary_sample_diagnostic.json",
+      "bytes": 5068,
+      "sha256": "a8d4284206a2d7b969d75240570112cc8e3f9646986728e558a836415eba1ebf"
+    },
+    {
+      "path": "results/output_audit.json",
+      "bytes": 1365,
+      "sha256": "2180ce4f203a35f0e01b4ab581490a8c268e4d61513b300332bb9515740ac211"
+    },
+    {
+      "path": "results/screening_summary.json",
+      "bytes": 7321,
+      "sha256": "6df33ccb6b896a3c6e4e7f6e8975c8f50605286b30a79be7d87fc82dee5224e5"
+    },
+    {
+      "path": "results/selected_numerical_validation.json",
+      "bytes": 2708,
+      "sha256": "972a5876528dc76e55131872ff7361425f0bae6be94feffa473dc88f92fcfb8c"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 7112,
+      "sha256": "3bea498c6d374e9a3006b853eaec999c3feff1ad90e0dcc7164d6b2d124c8fc6"
+    },
+    {
+      "path": "sources/REFERENCES_RU.md",
+      "bytes": 5558,
+      "sha256": "7835692caaf0fcb7d573121d34326ef23df01a555e69dd748f82b453073d389d"
+    },
+    {
+      "path": "STABILITY_DIAGRAMS_AND_AXIAL_TRAP_RU.md",
+      "bytes": 11981,
+      "sha256": "8b485507b57e7f16a8823bc8dbd569ac528dee010348a4203d927eb3102b46e6"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 1570,
+      "sha256": "53f6520728ec45e9551c415cac02cde882e1d970d5d64203bb0956adcbfe76cc"
+    }
+  ]
+}

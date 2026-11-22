@@ -1,0 +1,58 @@
+{
+  "trajectory_total": 1000,
+  "csv_checks": [
+    {
+      "file": "alpha_lambda.csv",
+      "rows": 169,
+      "expected": 169
+    },
+    {
+      "file": "alpha_nu.csv",
+      "rows": 169,
+      "expected": 169
+    },
+    {
+      "file": "alpha_b_over_a.csv",
+      "rows": 169,
+      "expected": 169
+    },
+    {
+      "file": "alpha_pol_PS2.csv",
+      "rows": 169,
+      "expected": 169
+    },
+    {
+      "file": "alpha_pair_starts.csv",
+      "rows": 324,
+      "expected": 324
+    },
+    {
+      "file": "alpha_pair_summary.csv",
+      "rows": 81,
+      "expected": 81
+    }
+  ],
+  "pair_outcome_counts": {
+    "CO_MINUS_MINUS_SCREEN": 66,
+    "UNRESOLVED": 22,
+    "CR_MINUS_PLUS_SCREEN": 35,
+    "ELECTRODE_CONTACT": 18,
+    "BOUND_NONROTATING": 35,
+    "CO_PLUS_PLUS_SCREEN": 108,
+    "CR_PLUS_MINUS_SCREEN": 40
+  },
+  "fem_mesh_levels": 3,
+  "selected_validation": "RK4 64/128/256 and DOP853; 1000 periods",
+  "figure_stems": [
+    "FIG01_single_particle_alpha_lambda",
+    "FIG02_RF_parameter_alpha_b_over_a",
+    "FIG03_two_particle_stability",
+    "FIG04_polarization_sensitivity",
+    "FIG05_axial_DC_transfer",
+    "FIG06_segmented_geometry",
+    "FIG07_representative_trajectories",
+    "FIG08_physical_feasibility",
+    "FIGS01_frequency_ratio_alpha_nu"
+  ],
+  "all_assertions": "PASS"
+}

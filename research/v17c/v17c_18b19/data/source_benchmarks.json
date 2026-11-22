@@ -1,0 +1,43 @@
+{
+  "study": "V17C.18B-19",
+  "source_commit_shas": {
+    "v17c17_two_particle_dynamics": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+    "v17c16_two_particle_oseen": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+    "v17c15_theory_validation": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+    "v17c12b_source_family": "fc1d29ecc1067e0191a4cf597189b4973546864f"
+  },
+  "v17c16_polystyrene_pair": {
+    "R_m": 0.005,
+    "f1_Hz": 47.5,
+    "f2_Hz": 147.8105,
+    "Omega1_rad_s": 298.45130209103036,
+    "temperature_K": 293.15,
+    "pressure_Pa": 101325.0,
+    "air_density_kg_m3": 1.2,
+    "dynamic_viscosity_Pa_s": 1.81e-5,
+    "mean_free_path_m": 6.51e-8,
+    "particles": [
+      {"material": "solid polystyrene", "radius_m": 3.5e-5, "density_kg_m3": 1050.0, "mass_kg": 1.8857409903172726e-10, "charge_e": 400000.0, "charge_C": 6.408706535999999e-14, "q_over_m_C_kg": 0.000339850836827901, "lambda_Stokes": 0.21217402878354874, "Kn_lambda_over_radius": 0.00186, "Cunningham": 1.0021669, "surface_field_V_m": 470192.5054179811},
+      {"material": "solid polystyrene", "radius_m": 4.5e-5, "density_kg_m3": 1050.0, "mass_kg": 4.007886827817179e-10, "charge_e": 290121.0, "charge_C": 4.64825087232714e-14, "q_over_m_C_kg": 0.00011597759797171527, "lambda_Stokes": 0.12835219025177635, "Kn_lambda_over_radius": 0.0014466666666666666, "Cunningham": 1.0016853666666667, "surface_field_V_m": 206303.18744920165}
+    ],
+    "dimensionless_reference": {"alpha1": 1.0, "alpha2": 0.34126029835390936, "mass_ratio_m2_m1": 2.1253644314868816, "charge_ratio_q2_q1": 0.7253025000000001, "A": 0.03716194907442204, "B": 0.1626938199343468, "nu": 3.1118029452860356, "beta": 0.017273303124515367, "kappa0": 1.7580955e-5, "C12": 1.275153126978901e-5},
+    "MFS_transfers": {"electrodes": 24, "R_over_D": 0.95, "rod_radius_over_D": 0.05, "shield_radius_over_D": 1.1, "h_plus2": 0.870316891091623, "h_minus4": 0.7982172624273378},
+    "electrode_peak_voltages_V": {"U1": 279.7819498119465, "U2": 1335.5143581564764, "ideal_DC_V2_coefficient_not_terminal_voltage": 113.18112733853718},
+    "V16_inherited_MFS_DOP853_1000p_P0": {"classification": "counterrotating-retained", "mean_r_over_R": [0.5493650546276199, 0.7656863482487007], "mean_omega_over_Omega1": [0.0011812985652222298, -0.001036773435207716], "coulomb_scale": 1.0, "polarization": false, "field": "2D infinite rods MFS + ideal DC quadrupole"},
+    "V16_inherited_MFS_DOP853_1000p_P1": {"classification": "retained-not-counterrotating", "mean_r_over_R": [0.5594841249766503, 0.9391140776304691], "mean_omega_over_Omega1": [0.0008726367939399932, 1.0464658463707059e-8], "coulomb_scale": 1.0, "epsilon_r_assumed": 2.6, "polarization": "instantaneous real quasistatic dielectric sphere"},
+    "surface_breakdown_screen": {"rod_shield_gap_m": 0.0002631578947368426, "adjacent_rod_gap_m": 0.0008476441286321219, "rf_max_rod_field_conservative_sum_V_m": 8111276.807529998, "adjacent_rod_deltaU_upper_bound_V": 1408.5521032781862, "parallel_plate_paschen_screen_rod_shield_V": 1748.7356730803788, "warning": "2D MFS surface fields and static uniform-gap Paschen proxy; no 3D/FEM/corona safety claim"}
+  },
+  "v17c17_phys0570_separate_pair": {
+    "R_m": 0.01,
+    "f1_Hz": 87.81221494078636,
+    "f2_Hz": 119.90278327837586,
+    "nu": 1.3654453809100346,
+    "particles": [
+      {"material": "Al2O3", "radius_m": 1.2521347142755985e-5, "density_kg_m3": 3800.0, "mass_kg": 3.1248226528595604e-11, "charge_e": 192795.14428304567, "charge_C": 3.0889187531895444e-14, "q_over_m_C_kg": 0.0009885101000413064, "lambda_Stokes": 0.24778247102208867, "surface_field_V_m": 1770703.2287255847},
+      {"material": "hollow soda-lime-borosilicate glass; K1 density branch", "radius_m": 2.3041410860605536e-5, "density_kg_m3": 112.92373165488243, "mass_kg": 5.786301175962543e-12, "charge_e": 103264.48025277398, "charge_C": 1.654479373831489e-14, "q_over_m_C_kg": 0.0028593039379016913, "lambda_Stokes": 2.462367843800668, "surface_field_V_m": 280081.6312492243}
+    ],
+    "dimensionless_reference": {"A": 0.03371398785291692, "B": 0.027359330748129077, "beta": 0.005529908740943492, "kappa0": 4.828522662985279e-7, "C12": 4.828522662985279e-7, "mass_ratio_m1_m2": 5.400380239177147, "charge_ratio_q2_q1": 0.5356176403549341},
+    "inherited_v17c17": {"source_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f", "selected_seed": 20261750, "selected_start_index": 68, "15k_periods_turns": [47.95, -76.30], "50k_periods_turns": [161.32, -256.74], "classification": "STRICT_CR_PLUS_MINUS", "limitations": "one matched successful start; 2D infinite-rod MFS RF + ideal DC quadrupole; no finite 3D segmented electrodes; Re_d exceeds strict Oseen limit"}
+  },
+  "inherited_model_limits": ["Cunningham factors near unity for PS pair; low-Kn slip only.", "P1 polarization assumes a real frequency-independent epsilon_r=2.6.", "No P2 complex dielectric response, 3D FEM, finite rods or segmented DC field in the inherited pair orbit data.", "No independent proof of experimental charging, charge retention, or corona-free operation for the requested spheres."]
+}

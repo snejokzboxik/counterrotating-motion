@@ -1,0 +1,57 @@
+material_assumption,radius_m,density_kg_m3,sphere_surface_field_assumption_V_m,alpha_vs_PS35,lambda_Stokes_at_47p5Hz,charge_e,status
+PS,5e-06,1050.0,100000.0,1.4887519301859768,10.396527410393883,1736.153854444289,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,5e-06,1050.0,500000.0,7.443759650929885,10.396527410393883,8680.769272221445,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,5e-06,1050.0,1000000.0,14.88751930185977,10.396527410393883,17361.53854444289,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,5e-06,1050.0,3000000.0,44.66255790557931,10.396527410393883,52084.61563332866,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,1e-05,1050.0,100000.0,0.7443759650929884,2.599131852598471,6944.615417777156,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,1e-05,1050.0,500000.0,3.7218798254649426,2.599131852598471,34723.07708888578,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,1e-05,1050.0,1000000.0,7.443759650929885,2.599131852598471,69446.15417777156,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,1e-05,1050.0,3000000.0,22.331278952789656,2.599131852598471,208338.46253331465,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,2e-05,1050.0,100000.0,0.3721879825464942,0.6497829631496177,27778.461671108624,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,2e-05,1050.0,500000.0,1.8609399127324713,0.6497829631496177,138892.30835554312,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,2e-05,1050.0,1000000.0,3.7218798254649426,0.6497829631496177,277784.61671108624,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,2e-05,1050.0,3000000.0,11.165639476394828,0.6497829631496177,833353.8501332586,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,3.5e-05,1050.0,100000.0,0.2126788471694253,0.2121740287835487,85071.53886777011,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,3.5e-05,1050.0,500000.0,1.0633942358471264,0.2121740287835487,425357.69433885056,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,3.5e-05,1050.0,1000000.0,2.126788471694253,0.2121740287835487,850715.3886777011,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,3.5e-05,1050.0,3000000.0,6.38036541508276,0.2121740287835487,2552146.1660331036,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,4.5e-05,1050.0,100000.0,0.16541688113177522,0.12835219025177635,140628.4622099874,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,4.5e-05,1050.0,500000.0,0.8270844056588761,0.12835219025177635,703142.3110499369,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,4.5e-05,1050.0,1000000.0,1.6541688113177522,0.12835219025177635,1406284.6220998738,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,4.5e-05,1050.0,3000000.0,4.962506433953257,0.12835219025177635,4218853.866299622,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,6.5e-05,1050.0,100000.0,0.11451937924507517,0.061517913670969745,293410.0014010847,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,6.5e-05,1050.0,500000.0,0.5725968962253759,0.061517913670969745,1467050.0070054238,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,6.5e-05,1050.0,1000000.0,1.1451937924507518,0.061517913670969745,2934100.0140108475,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,6.5e-05,1050.0,3000000.0,3.4355813773522548,0.061517913670969745,8802300.042032542,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,0.0001,1050.0,100000.0,0.07443759650929885,0.02599131852598471,694461.5417777154,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,0.0001,1050.0,500000.0,0.3721879825464942,0.02599131852598471,3472307.7088885778,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,0.0001,1050.0,1000000.0,0.7443759650929884,0.02599131852598471,6944615.4177771555,linked dimensional screen; surface-field contour not a validated charge-stability limit
+PS,0.0001,1050.0,3000000.0,2.2331278952789653,0.02599131852598471,20833846.253331464,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,5e-06,112.9237,100000.0,13.842882642840038,96.67017447102403,1736.153854444289,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,5e-06,112.9237,500000.0,69.21441321420019,96.67017447102403,8680.769272221445,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,5e-06,112.9237,1000000.0,138.42882642840038,96.67017447102403,17361.53854444289,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,5e-06,112.9237,3000000.0,415.2864792852012,96.67017447102403,52084.61563332866,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,1e-05,112.9237,100000.0,6.921441321420019,24.167543617756007,6944.615417777156,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,1e-05,112.9237,500000.0,34.607206607100096,24.167543617756007,34723.07708888578,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,1e-05,112.9237,1000000.0,69.21441321420019,24.167543617756007,69446.15417777156,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,1e-05,112.9237,3000000.0,207.6432396426006,24.167543617756007,208338.46253331465,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,2e-05,112.9237,100000.0,3.4607206607100096,6.041885904439002,27778.461671108624,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,2e-05,112.9237,500000.0,17.303603303550048,6.041885904439002,138892.30835554312,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,2e-05,112.9237,1000000.0,34.607206607100096,6.041885904439002,277784.61671108624,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,2e-05,112.9237,3000000.0,103.8216198213003,6.041885904439002,833353.8501332586,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,3.5e-05,112.9237,100000.0,1.9775546632628629,1.9728607034902874,85071.53886777011,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,3.5e-05,112.9237,500000.0,9.887773316314314,1.9728607034902874,425357.69433885056,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,3.5e-05,112.9237,1000000.0,19.77554663262863,1.9728607034902874,850715.3886777011,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,3.5e-05,112.9237,3000000.0,59.3266398978859,1.9728607034902874,2552146.1660331036,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,4.5e-05,112.9237,100000.0,1.5380980714266712,1.1934589440867167,140628.4622099874,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,4.5e-05,112.9237,500000.0,7.690490357133356,1.1934589440867167,703142.3110499369,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,4.5e-05,112.9237,1000000.0,15.380980714266713,1.1934589440867167,1406284.6220998738,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,4.5e-05,112.9237,3000000.0,46.14294214280014,1.1934589440867167,4218853.866299622,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,6.5e-05,112.9237,100000.0,1.0648371263723109,0.5720128666924501,293410.0014010847,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,6.5e-05,112.9237,500000.0,5.324185631861555,0.5720128666924501,1467050.0070054238,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,6.5e-05,112.9237,1000000.0,10.64837126372311,0.5720128666924501,2934100.0140108475,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,6.5e-05,112.9237,3000000.0,31.94511379116933,0.5720128666924501,8802300.042032542,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,0.0001,112.9237,100000.0,0.6921441321420021,0.24167543617756013,694461.5417777154,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,0.0001,112.9237,500000.0,3.4607206607100105,0.24167543617756013,3472307.7088885778,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,0.0001,112.9237,1000000.0,6.921441321420021,0.24167543617756013,6944615.4177771555,linked dimensional screen; surface-field contour not a validated charge-stability limit
+hollow glass density branch,0.0001,112.9237,3000000.0,20.76432396426006,0.24167543617756013,20833846.253331464,linked dimensional screen; surface-field contour not a validated charge-stability limit

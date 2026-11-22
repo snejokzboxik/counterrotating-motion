@@ -1,0 +1,265 @@
+{
+  "study": "V17C.18B-19 preliminary mathematical screening",
+  "base_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+  "physical_benchmark_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+  "maps": [
+    {
+      "map": "alpha_lambda",
+      "n_grid": 169,
+      "x_values": [
+        0.25,
+        0.39583333333333337,
+        0.5416666666666667,
+        0.6875,
+        0.8333333333333334,
+        0.9791666666666667,
+        1.125,
+        1.2708333333333335,
+        1.4166666666666667,
+        1.5625,
+        1.7083333333333335,
+        1.8541666666666667,
+        2.0
+      ],
+      "y_values": [
+        0.04,
+        0.10333333333333333,
+        0.16666666666666669,
+        0.23,
+        0.29333333333333333,
+        0.3566666666666667,
+        0.42,
+        0.48333333333333334,
+        0.5466666666666667,
+        0.6100000000000001,
+        0.6733333333333335,
+        0.7366666666666668,
+        0.8
+      ],
+      "outcome_counts": {
+        "UNRESOLVED": 0,
+        "ROT_POS_SCREEN": 95,
+        "ROT_NEG_SCREEN": 56,
+        "BOUND_NONROTATING": 18,
+        "ELECTRODE_CONTACT": 0,
+        "NUMERICAL_FAILURE": 0
+      },
+      "horizon_RF1_periods": 1000,
+      "steps_per_RF1_period": 64,
+      "workers": 10,
+      "starting_state": "r/R=0.55; theta=0.71 rad; v=0",
+      "field": "2-D leading k=+2,-4; ideal DC quadrupole; no Coulomb; no 3-D end correction",
+      "classification": "bounded if center radius stays below 1-a/R; sign if >=0.10 turn in final 20%; short/ambiguous is UNRESOLVED; screening only"
+    },
+    {
+      "map": "alpha_nu",
+      "n_grid": 169,
+      "x_values": [
+        0.25,
+        0.39583333333333337,
+        0.5416666666666667,
+        0.6875,
+        0.8333333333333334,
+        0.9791666666666667,
+        1.125,
+        1.2708333333333335,
+        1.4166666666666667,
+        1.5625,
+        1.7083333333333335,
+        1.8541666666666667,
+        2.0
+      ],
+      "y_values": [
+        1.25,
+        1.5208333333333333,
+        1.7916666666666665,
+        2.0625,
+        2.333333333333333,
+        2.6041666666666665,
+        2.875,
+        3.145833333333333,
+        3.4166666666666665,
+        3.6875,
+        3.958333333333333,
+        4.229166666666666,
+        4.5
+      ],
+      "outcome_counts": {
+        "UNRESOLVED": 2,
+        "ROT_POS_SCREEN": 80,
+        "ROT_NEG_SCREEN": 46,
+        "BOUND_NONROTATING": 14,
+        "ELECTRODE_CONTACT": 27,
+        "NUMERICAL_FAILURE": 0
+      },
+      "horizon_RF1_periods": 1000,
+      "steps_per_RF1_period": 64,
+      "workers": 10,
+      "starting_state": "r/R=0.55; theta=0.71 rad; v=0",
+      "field": "2-D leading k=+2,-4; ideal DC quadrupole; no Coulomb; no 3-D end correction",
+      "classification": "bounded if center radius stays below 1-a/R; sign if >=0.10 turn in final 20%; short/ambiguous is UNRESOLVED; screening only"
+    },
+    {
+      "map": "alpha_b_over_a",
+      "n_grid": 169,
+      "x_values": [
+        0.25,
+        0.39583333333333337,
+        0.5416666666666667,
+        0.6875,
+        0.8333333333333334,
+        0.9791666666666667,
+        1.125,
+        1.2708333333333335,
+        1.4166666666666667,
+        1.5625,
+        1.7083333333333335,
+        1.8541666666666667,
+        2.0
+      ],
+      "y_values": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5
+      ],
+      "outcome_counts": {
+        "UNRESOLVED": 40,
+        "ROT_POS_SCREEN": 86,
+        "ROT_NEG_SCREEN": 24,
+        "BOUND_NONROTATING": 19,
+        "ELECTRODE_CONTACT": 0,
+        "NUMERICAL_FAILURE": 0
+      },
+      "horizon_RF1_periods": 1000,
+      "steps_per_RF1_period": 64,
+      "workers": 10,
+      "starting_state": "r/R=0.55; theta=0.71 rad; v=0",
+      "field": "2-D leading k=+2,-4; ideal DC quadrupole; no Coulomb; no 3-D end correction",
+      "classification": "bounded if center radius stays below 1-a/R; sign if >=0.10 turn in final 20%; short/ambiguous is UNRESOLVED; screening only"
+    },
+    {
+      "map": "alpha_pol_PS2",
+      "n_grid": 169,
+      "x_values": [
+        0.25,
+        0.39583333333333337,
+        0.5416666666666667,
+        0.6875,
+        0.8333333333333334,
+        0.9791666666666667,
+        1.125,
+        1.2708333333333335,
+        1.4166666666666667,
+        1.5625,
+        1.7083333333333335,
+        1.8541666666666667,
+        2.0
+      ],
+      "y_values": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        1.75,
+        2.0,
+        2.25,
+        2.5,
+        2.75,
+        3.0
+      ],
+      "outcome_counts": {
+        "UNRESOLVED": 19,
+        "ROT_POS_SCREEN": 103,
+        "ROT_NEG_SCREEN": 35,
+        "BOUND_NONROTATING": 12,
+        "ELECTRODE_CONTACT": 0,
+        "NUMERICAL_FAILURE": 0
+      },
+      "horizon_RF1_periods": 1000,
+      "steps_per_RF1_period": 64,
+      "workers": 10,
+      "starting_state": "r/R=0.55; theta=0.71 rad; v=0",
+      "field": "2-D leading k=+2,-4; ideal DC quadrupole; no Coulomb; no 3-D end correction",
+      "classification": "bounded if center radius stays below 1-a/R; sign if >=0.10 turn in final 20%; short/ambiguous is UNRESOLVED; screening only"
+    },
+    {
+      "map": "alpha_pair_panel_fraction",
+      "n_grid": 81,
+      "starts_per_cell": 4,
+      "total_trajectories": 324,
+      "x_values": [
+        0.25,
+        0.40625,
+        0.5625,
+        0.71875,
+        0.875,
+        1.03125,
+        1.1875,
+        1.34375,
+        1.5
+      ],
+      "y_values": [
+        0.25,
+        0.40625,
+        0.5625,
+        0.71875,
+        0.875,
+        1.03125,
+        1.1875,
+        1.34375,
+        1.5
+      ],
+      "fixed_particle_masses_kg": [
+        1.8857409903172726e-10,
+        4.007886827817179e-10
+      ],
+      "charge_scan": "q_i=alpha_i*M_i*q_ref; masses/radii/material/drag fixed; Coulomb recomputed from q1*q2",
+      "initial_conditions": [
+        "zero_v_90deg",
+        "zero_v_phase2",
+        "branch_velocity",
+        "radial_offset"
+      ],
+      "RF_phases_rad": [
+        [
+          0,
+          0
+        ]
+      ],
+      "horizon_RF1_periods": 1000,
+      "steps_per_RF1_period": 64,
+      "outcome_counts": {
+        "UNRESOLVED": 22,
+        "CR_PLUS_MINUS_SCREEN": 40,
+        "CR_MINUS_PLUS_SCREEN": 35,
+        "CO_PLUS_PLUS_SCREEN": 108,
+        "CO_MINUS_MINUS_SCREEN": 66,
+        "BOUND_NONROTATING": 35,
+        "ONE_LOST": 0,
+        "BOTH_LOST": 0,
+        "COLLISION": 0,
+        "ELECTRODE_CONTACT": 18,
+        "NUMERICAL_FAILURE": 0
+      },
+      "interval": "Wilson 95% interval reported for finite four-start panel; not a calibrated basin probability",
+      "field": "planar leading-harmonic model; gravity and axial force omitted; ideal DC quadrupole transverse component retained"
+    }
+  ],
+  "workers": 10,
+  "cpu_logical": 12,
+  "interpretation": "Short finite-horizon screening only. No cell is called an attractor or a 3-D physical operating point.",
+  "total_trajectories": 1000
+}
