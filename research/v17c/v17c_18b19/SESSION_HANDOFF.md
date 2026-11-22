@@ -40,7 +40,7 @@
 - Output audit: `results/output_audit.json`; all stored CSV row counts, pair-outcome totals, selected trajectory validation, three FEM mesh records, and indexed PNG/PDF/SVG figure files passed integrity assertions.
 - Reproduction tests: `4 passed` using `$env:PYTHONPATH = (Resolve-Path code).Path; python -m pytest -q tests` from this directory.
 - The SHA-256 file manifest is `MANIFEST.json` and covers every regular study artifact except itself and Python cache files.
-- The locally reviewed package is committed only on `research/v17c18b19-axial-stability-diagrams`. Remote branch SHA comparison is reported in the completion record for this session.
+- Publication audit: package commit `4cd85093a1d5d3f663d61fac939e72541e7320eb` was pushed with a normal fast-forward. `git ls-remote` matched that local and remote branch SHA; remote `master` remained `e5e6b2473bf519c5670ee1c48882183fbcfc8f2d`. A small follow-up commit adds this publication record to the handoff and manifest.
 
 ## Reproduction
 
