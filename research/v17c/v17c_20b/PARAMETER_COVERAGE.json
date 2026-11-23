@@ -1,0 +1,565 @@
+{
+  "study": "V17C.20B",
+  "source_base_sha": "45866d0559db1615a5e2aebc521ddae90f3a0101",
+  "mathematical_scan": {
+    "nominal_multipliers": [
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ],
+    "central_point": "excluded from the off-centre grid; separately covered by the three nominal baselines",
+    "runs": 504,
+    "unique_ids": 504,
+    "per_candidate": {
+      "scaled_candidate52_f45hz": 168,
+      "scaled_local15_f50hz": 168,
+      "scaled_refine12_sobol17_f50hz": 168
+    },
+    "horizon_periods": 3000,
+    "RK4_steps_per_period": 32,
+    "frozen_starts": "single shared rest start index 7; classifications are short-screen signs only",
+    "all_retained": true,
+    "strict_ten_turn_cases": 0,
+    "covered_pairwise_slices": [
+      {
+        "x": "alpha1",
+        "y": "alpha2",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "alpha1",
+        "y": "lambda1",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "alpha2",
+        "y": "lambda2",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "lambda1",
+        "y": "lambda2",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "mu",
+        "y": "C12",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "alpha1",
+        "y": "C12",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      },
+      {
+        "x": "alpha2",
+        "y": "C12",
+        "coverage": "5x5 multiplier grid excluding central nominal point"
+      }
+    ],
+    "outcome_counts": {
+      "scaled_candidate52_f45hz": {
+        "alpha1__C12": {
+          "SCREEN_CO": 5,
+          "SCREEN_CR": 19
+        },
+        "alpha1__alpha2": {
+          "SCREEN_CO": 4,
+          "UNRESOLVED": 5,
+          "SCREEN_CR": 15
+        },
+        "alpha1__lambda1": {
+          "SCREEN_CO": 5,
+          "SCREEN_CR": 19
+        },
+        "alpha2__C12": {
+          "UNRESOLVED": 5,
+          "SCREEN_CR": 19
+        },
+        "alpha2__lambda2": {
+          "UNRESOLVED": 4,
+          "SCREEN_CR": 20
+        },
+        "lambda1__lambda2": {
+          "SCREEN_CR": 24
+        },
+        "mu__C12": {
+          "SCREEN_CR": 24
+        }
+      },
+      "scaled_local15_f50hz": {
+        "alpha1__C12": {
+          "SCREEN_CO": 10,
+          "SCREEN_CR": 14
+        },
+        "alpha1__alpha2": {
+          "UNRESOLVED": 4,
+          "SCREEN_CO": 8,
+          "NONROTATING_OR_SLOW": 1,
+          "SCREEN_CR": 11
+        },
+        "alpha1__lambda1": {
+          "SCREEN_CO": 8,
+          "UNRESOLVED": 2,
+          "SCREEN_CR": 14
+        },
+        "alpha2__C12": {
+          "UNRESOLVED": 5,
+          "SCREEN_CR": 19
+        },
+        "alpha2__lambda2": {
+          "UNRESOLVED": 6,
+          "SCREEN_CR": 18
+        },
+        "lambda1__lambda2": {
+          "SCREEN_CR": 24
+        },
+        "mu__C12": {
+          "SCREEN_CR": 24
+        }
+      },
+      "scaled_refine12_sobol17_f50hz": {
+        "alpha1__C12": {
+          "SCREEN_CO": 8,
+          "UNRESOLVED": 2,
+          "SCREEN_CR": 14
+        },
+        "alpha1__alpha2": {
+          "UNRESOLVED": 5,
+          "SCREEN_CO": 7,
+          "NONROTATING_OR_SLOW": 1,
+          "SCREEN_CR": 11
+        },
+        "alpha1__lambda1": {
+          "SCREEN_CO": 8,
+          "UNRESOLVED": 2,
+          "SCREEN_CR": 14
+        },
+        "alpha2__C12": {
+          "UNRESOLVED": 5,
+          "SCREEN_CR": 19
+        },
+        "alpha2__lambda2": {
+          "UNRESOLVED": 5,
+          "SCREEN_CR": 19
+        },
+        "lambda1__lambda2": {
+          "SCREEN_CR": 24
+        },
+        "mu__C12": {
+          "SCREEN_CR": 24
+        }
+      }
+    }
+  },
+  "univariate_scan": {
+    "runs": 72,
+    "unique_ids": 72,
+    "nominal_multipliers": [
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ],
+    "off_nominal_runs_per_candidate": 24,
+    "off_nominal_parameters": [
+      "alpha1",
+      "alpha2",
+      "lambda1",
+      "lambda2",
+      "mu",
+      "C12"
+    ],
+    "horizon_periods": 3000,
+    "RK4_steps_per_period": 32,
+    "frozen_start_index": 7,
+    "Q_handling": "Derived algebraically as mu*alpha2/alpha1; a separate Q-only axis would violate the selected independent-acceleration/C12 parameterization.",
+    "per_candidate_counts": {
+      "scaled_candidate52_f45hz": 24,
+      "scaled_local15_f50hz": 24,
+      "scaled_refine12_sobol17_f50hz": 24
+    },
+    "outcome_counts": {
+      "scaled_candidate52_f45hz": {
+        "alpha1": {
+          "SCREEN_CR": 3,
+          "SCREEN_CO": 1
+        },
+        "alpha2": {
+          "UNRESOLVED": 1,
+          "SCREEN_CR": 3
+        },
+        "lambda1": {
+          "SCREEN_CR": 4
+        },
+        "lambda2": {
+          "SCREEN_CR": 4
+        },
+        "mu": {
+          "SCREEN_CR": 4
+        },
+        "C12": {
+          "SCREEN_CR": 4
+        }
+      },
+      "scaled_local15_f50hz": {
+        "alpha1": {
+          "SCREEN_CO": 2,
+          "SCREEN_CR": 2
+        },
+        "alpha2": {
+          "UNRESOLVED": 1,
+          "SCREEN_CR": 3
+        },
+        "lambda1": {
+          "SCREEN_CR": 4
+        },
+        "lambda2": {
+          "SCREEN_CR": 4
+        },
+        "mu": {
+          "SCREEN_CR": 4
+        },
+        "C12": {
+          "SCREEN_CR": 4
+        }
+      },
+      "scaled_refine12_sobol17_f50hz": {
+        "alpha1": {
+          "SCREEN_CO": 2,
+          "SCREEN_CR": 2
+        },
+        "alpha2": {
+          "UNRESOLVED": 1,
+          "SCREEN_CR": 3
+        },
+        "lambda1": {
+          "SCREEN_CR": 4
+        },
+        "lambda2": {
+          "SCREEN_CR": 4
+        },
+        "mu": {
+          "SCREEN_CR": 4
+        },
+        "C12": {
+          "SCREEN_CR": 4
+        }
+      }
+    }
+  },
+  "multivariate_sobol": {
+    "runs": 96,
+    "unique_ids": 96,
+    "points_per_candidate": 32,
+    "seed_base": 20261123,
+    "parameters": [
+      "alpha1",
+      "alpha2",
+      "lambda1",
+      "lambda2",
+      "mu",
+      "C12"
+    ],
+    "multiplier_range": [
+      0.6,
+      1.4
+    ],
+    "horizon_periods": 3000,
+    "RK4_steps_per_period": 32,
+    "mathematical_only": true,
+    "per_candidate_outcomes": {
+      "scaled_candidate52_f45hz": {
+        "SCREEN_CO": 4,
+        "SCREEN_CR": 25,
+        "NONROTATING_OR_SLOW": 1,
+        "UNRESOLVED": 2,
+        "retained": 32,
+        "ten_turn": 0
+      },
+      "scaled_local15_f50hz": {
+        "SCREEN_CR": 17,
+        "SCREEN_CO": 7,
+        "UNRESOLVED": 7,
+        "NONROTATING_OR_SLOW": 1,
+        "retained": 32,
+        "ten_turn": 0
+      },
+      "scaled_refine12_sobol17_f50hz": {
+        "SCREEN_CR": 20,
+        "SCREEN_CO": 8,
+        "UNRESOLVED": 4,
+        "retained": 32,
+        "ten_turn": 0
+      }
+    }
+  },
+  "coulomb_sensitivity": {
+    "multipliers": [
+      0,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1,
+      1.5,
+      2,
+      3,
+      5
+    ],
+    "runs": 30,
+    "runs_per_candidate": {
+      "scaled_candidate52_f45hz": 10,
+      "scaled_local15_f50hz": 10,
+      "scaled_refine12_sobol17_f50hz": 10
+    },
+    "horizon_periods": 5000,
+    "RK4_steps_per_period": 32,
+    "strict_ten_turn_cases": 0,
+    "all_screen_counterrotating": true,
+    "mathematical_only": true,
+    "note": "C varied independently; not a physical pair scan."
+  },
+  "physical_linked_scan": {
+    "status": "NOT_PERFORMED",
+    "reason": "The source candidate dimensional mappings are legacy assumptions; no joint material/charge/size distribution was specified or independently validated."
+  },
+  "uncovered_parameter_pairs": [
+    "alpha1-lambda2",
+    "alpha2-lambda1",
+    "alpha1-mu",
+    "alpha2-mu",
+    "lambda1-mu",
+    "lambda2-mu",
+    "Q with lambda/mu/C separately",
+    "size/drag/C linked through material density, charge and common gas"
+  ],
+  "basin_subsample": {
+    "runs": 96,
+    "N_per_candidate_ensemble": 8,
+    "systematic_indices": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      80,
+      96,
+      112
+    ],
+    "periods": 15000,
+    "steps_per_RF_period": 64,
+    "source_starts_sha256": "4ed17640108ed779c622a391a99ea04cd08d0dc608d8632c6d844b74779ff10e",
+    "sampling_note": "deterministic subset, descriptive only; not IID probability estimate",
+    "candidate_ensemble_results": [
+      {
+        "candidate": "scaled_candidate52_f45hz",
+        "ensemble": "rest",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 7,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 1,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 7,
+          "NOT_STRICT_CR": 1
+        },
+        "strict_cr_fraction": 0.875,
+        "retained_fraction": 0.875
+      },
+      {
+        "candidate": "scaled_candidate52_f45hz",
+        "ensemble": "weak",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 6,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 2,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 6,
+          "NOT_STRICT_CR": 2
+        },
+        "strict_cr_fraction": 0.75,
+        "retained_fraction": 0.75
+      },
+      {
+        "candidate": "scaled_candidate52_f45hz",
+        "ensemble": "wide",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 8,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 0,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 8,
+          "NOT_STRICT_CR": 0
+        },
+        "strict_cr_fraction": 1.0,
+        "retained_fraction": 1.0
+      },
+      {
+        "candidate": "scaled_candidate52_f45hz",
+        "ensemble": "edge",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 4,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 4,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 4,
+          "NOT_STRICT_CR": 4
+        },
+        "strict_cr_fraction": 0.5,
+        "retained_fraction": 0.5
+      },
+      {
+        "candidate": "scaled_local15_f50hz",
+        "ensemble": "rest",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 7,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 1,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 7,
+          "NOT_STRICT_CR": 1
+        },
+        "strict_cr_fraction": 0.875,
+        "retained_fraction": 0.875
+      },
+      {
+        "candidate": "scaled_local15_f50hz",
+        "ensemble": "weak",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 7,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 1,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 7,
+          "NOT_STRICT_CR": 1
+        },
+        "strict_cr_fraction": 0.875,
+        "retained_fraction": 0.875
+      },
+      {
+        "candidate": "scaled_local15_f50hz",
+        "ensemble": "wide",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 8,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 0,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 8,
+          "NOT_STRICT_CR": 0
+        },
+        "strict_cr_fraction": 1.0,
+        "retained_fraction": 1.0
+      },
+      {
+        "candidate": "scaled_local15_f50hz",
+        "ensemble": "edge",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 5,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 3,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 5,
+          "NOT_STRICT_CR": 3
+        },
+        "strict_cr_fraction": 0.625,
+        "retained_fraction": 0.625
+      },
+      {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "ensemble": "rest",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 7,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 1,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 7,
+          "NOT_STRICT_CR": 1
+        },
+        "strict_cr_fraction": 0.875,
+        "retained_fraction": 0.875
+      },
+      {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "ensemble": "weak",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 7,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 1,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 7,
+          "NOT_STRICT_CR": 1
+        },
+        "strict_cr_fraction": 0.875,
+        "retained_fraction": 0.875
+      },
+      {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "ensemble": "wide",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 8,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 0,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 8,
+          "NOT_STRICT_CR": 0
+        },
+        "strict_cr_fraction": 1.0,
+        "retained_fraction": 1.0
+      },
+      {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "ensemble": "edge",
+        "n": 8,
+        "counts": {
+          "SCREEN_CR": 5,
+          "SCREEN_CO": 0,
+          "PARTICLE_CONTACT": 0,
+          "WALL_CONTACT": 3,
+          "ESCAPE": 0,
+          "UNRESOLVED": 0,
+          "STRICT_CR": 5,
+          "NOT_STRICT_CR": 3
+        },
+        "strict_cr_fraction": 0.625,
+        "retained_fraction": 0.625
+      }
+    ]
+  },
+  "global_limiter": "No full 12D basin map; the surface scans use one shared rest start. The N=8 frozen-start panel is small and deterministic."
+}

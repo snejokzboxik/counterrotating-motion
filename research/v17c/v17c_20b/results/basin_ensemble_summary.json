@@ -1,0 +1,224 @@
+{
+  "source_frozen_starts_sha256": "4ed17640108ed779c622a391a99ea04cd08d0dc608d8632c6d844b74779ff10e",
+  "indices_per_ensemble": [
+    0,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96,
+    112
+  ],
+  "n_per_ensemble": 8,
+  "periods": 15000,
+  "steps_per_rf": 64,
+  "transient_skip": 1000,
+  "denominator": "all scheduled starts; contacts, escapes and unresolved cases remain failures",
+  "candidate_ensemble_results": [
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "ensemble": "rest",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 7,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 1,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 7,
+        "NOT_STRICT_CR": 1
+      },
+      "strict_cr_fraction": 0.875,
+      "retained_fraction": 0.875
+    },
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "ensemble": "weak",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 6,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 2,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 6,
+        "NOT_STRICT_CR": 2
+      },
+      "strict_cr_fraction": 0.75,
+      "retained_fraction": 0.75
+    },
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "ensemble": "wide",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 8,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 0,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 8,
+        "NOT_STRICT_CR": 0
+      },
+      "strict_cr_fraction": 1.0,
+      "retained_fraction": 1.0
+    },
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "ensemble": "edge",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 4,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 4,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 4,
+        "NOT_STRICT_CR": 4
+      },
+      "strict_cr_fraction": 0.5,
+      "retained_fraction": 0.5
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "ensemble": "rest",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 7,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 1,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 7,
+        "NOT_STRICT_CR": 1
+      },
+      "strict_cr_fraction": 0.875,
+      "retained_fraction": 0.875
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "ensemble": "weak",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 7,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 1,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 7,
+        "NOT_STRICT_CR": 1
+      },
+      "strict_cr_fraction": 0.875,
+      "retained_fraction": 0.875
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "ensemble": "wide",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 8,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 0,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 8,
+        "NOT_STRICT_CR": 0
+      },
+      "strict_cr_fraction": 1.0,
+      "retained_fraction": 1.0
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "ensemble": "edge",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 5,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 3,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 5,
+        "NOT_STRICT_CR": 3
+      },
+      "strict_cr_fraction": 0.625,
+      "retained_fraction": 0.625
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "ensemble": "rest",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 7,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 1,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 7,
+        "NOT_STRICT_CR": 1
+      },
+      "strict_cr_fraction": 0.875,
+      "retained_fraction": 0.875
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "ensemble": "weak",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 7,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 1,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 7,
+        "NOT_STRICT_CR": 1
+      },
+      "strict_cr_fraction": 0.875,
+      "retained_fraction": 0.875
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "ensemble": "wide",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 8,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 0,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 8,
+        "NOT_STRICT_CR": 0
+      },
+      "strict_cr_fraction": 1.0,
+      "retained_fraction": 1.0
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "ensemble": "edge",
+      "n": 8,
+      "counts": {
+        "SCREEN_CR": 5,
+        "SCREEN_CO": 0,
+        "PARTICLE_CONTACT": 0,
+        "WALL_CONTACT": 3,
+        "ESCAPE": 0,
+        "UNRESOLVED": 0,
+        "STRICT_CR": 5,
+        "NOT_STRICT_CR": 3
+      },
+      "strict_cr_fraction": 0.625,
+      "retained_fraction": 0.625
+    }
+  ]
+}

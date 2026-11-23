@@ -1,0 +1,105 @@
+{
+  "rows": [
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "method": "independent Python RHS + SciPy DOP853",
+      "periods": 3000,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_RF_periods": 0.010416666666666666,
+      "nfev": 3456917,
+      "turns_after_200p": [
+        6.929536857338775,
+        -2.635277556331801
+      ],
+      "frequency_Hz": [
+        0.11136755663580175,
+        -0.04235267501247537
+      ],
+      "window_turns": [
+        [
+          2.288757416670482,
+          -0.8712189256494921
+        ],
+        [
+          2.30367408703728,
+          -0.8619871271086756
+        ],
+        [
+          2.291623747454334,
+          -0.8819429736212874
+        ]
+      ],
+      "rk4_64_final_state_max_abs_difference_at_3000p": 0.0023972526192831134,
+      "success": true
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "method": "independent Python RHS + SciPy DOP853",
+      "periods": 3000,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_RF_periods": 0.010416666666666666,
+      "nfev": 3587201,
+      "turns_after_200p": [
+        3.5486731317164733,
+        -2.973432607583692
+      ],
+      "frequency_Hz": [
+        0.06336916306636559,
+        -0.05309701084970878
+      ],
+      "window_turns": [
+        [
+          1.1810916930995958,
+          -0.9856815407112917
+        ],
+        [
+          1.1745188132115016,
+          -0.9770179666350752
+        ],
+        [
+          1.1612026661794614,
+          -0.9890571859142281
+        ]
+      ],
+      "rk4_64_final_state_max_abs_difference_at_3000p": 0.002086564165250937,
+      "success": true
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "method": "independent Python RHS + SciPy DOP853",
+      "periods": 3000,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_RF_periods": 0.010416666666666666,
+      "nfev": 3612269,
+      "turns_after_200p": [
+        3.065614461209596,
+        -2.7070840581535047
+      ],
+      "frequency_Hz": [
+        0.05474311537874279,
+        -0.04834078675274116
+      ],
+      "window_turns": [
+        [
+          1.0230437042556528,
+          -0.9014412220667867
+        ],
+        [
+          1.0050604660797127,
+          -0.8873498558808715
+        ],
+        [
+          1.021977569757986,
+          -0.898643702952536
+        ]
+      ],
+      "rk4_64_final_state_max_abs_difference_at_3000p": 0.0020195571484514785,
+      "success": true
+    }
+  ],
+  "field": "full 8-mode complex MFS",
+  "drag": "lambda_Stokes/Cc with Schiller-Naumann factor"
+}

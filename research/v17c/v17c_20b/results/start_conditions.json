@@ -1,0 +1,57 @@
+{
+  "shared_three_candidate_start": {
+    "ensemble": "rest",
+    "start_index": 7,
+    "source": "V12B rescaled_legacy_candidate_validation; shared frozen start with strict CR in all candidates",
+    "initial": [
+      -0.43198942081431174,
+      0.5283981626447145,
+      -0.2081263903528452,
+      0.0,
+      0.0,
+      0.0,
+      0.46002277668273484,
+      -0.6197711870406251,
+      0.35629591811448336,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "phase": [
+      6.131576903852475,
+      1.3781272771727673
+    ],
+    "seed": 20261850,
+    "selection_rule": "maximize minimum radial-wall, axial, and finite-body pair clearance among shared strict-CR rest starts"
+  },
+  "refine12_240k_replay_start": {
+    "ensemble": "rest",
+    "start_index": 54,
+    "source": "V12B 240000-period refine12_sobol17 selected start; archived record has initial/phase and metrics only, not a sampled state history",
+    "initial": [
+      0.2004677020124007,
+      -0.379391682147845,
+      0.11302470043301582,
+      0.0,
+      0.0,
+      0.0,
+      0.6974832987283117,
+      0.40951547790547216,
+      -0.348290266469121,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "phase": [
+      2.306674444032225,
+      5.2344800999183
+    ],
+    "seed": 20261850,
+    "source_turns": [
+      129.636695920867,
+      -116.2101400709859
+    ],
+    "source_min_pair_distance_over_R": 0.5602484012463732,
+    "source_completed_periods": 240000
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "steps": 128,
+      "periods": 3000,
+      "status": 0,
+      "turns_after_200p": [
+        6.9295290430150045,
+        -2.635284964963408
+      ],
+      "frequency_Hz": [
+        0.11136743104845542,
+        -0.04235279407976906
+      ],
+      "rmin_R": [
+        0.4161601542487117,
+        0.6666169731742543
+      ],
+      "rmax_R": [
+        0.7099197618033171,
+        0.8001564740113045
+      ],
+      "minimum_pair_distance_R": 0.6058376569187779,
+      "max_abs_state_difference_rk4_64_vs_128": 0.002359835895398829,
+      "max_abs_state_difference_rk4_128_vs_dop853": 3.74167238842843e-05,
+      "rms_state_difference_rk4_128_vs_dop853": 1.335071586361343e-05
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "steps": 128,
+      "periods": 3000,
+      "status": 0,
+      "turns_after_200p": [
+        3.5486673496817067,
+        -2.973436087447933
+      ],
+      "frequency_Hz": [
+        0.06336905981574475,
+        -0.05309707299014166
+      ],
+      "rmin_R": [
+        0.4648717070796706,
+        0.7310549389297103
+      ],
+      "rmax_R": [
+        0.700799101310048,
+        0.798259097147271
+      ],
+      "minimum_pair_distance_R": 0.5885645393119365,
+      "max_abs_state_difference_rk4_64_vs_128": 0.002069800586762316,
+      "max_abs_state_difference_rk4_128_vs_dop853": 1.676357848862109e-05,
+      "rms_state_difference_rk4_128_vs_dop853": 8.490985871032572e-06
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "steps": 128,
+      "periods": 3000,
+      "status": 0,
+      "turns_after_200p": [
+        3.065613732881917,
+        -2.707083998006333
+      ],
+      "frequency_Hz": [
+        0.05474310237289137,
+        -0.048340785678684516
+      ],
+      "rmin_R": [
+        0.4834341925774856,
+        0.7197237895604278
+      ],
+      "rmax_R": [
+        0.7017423858738868,
+        0.7938923573389786
+      ],
+      "minimum_pair_distance_R": 0.5602431471915456,
+      "max_abs_state_difference_rk4_64_vs_128": 0.002017602564504173,
+      "max_abs_state_difference_rk4_128_vs_dop853": 2.1686185206482023e-06,
+      "rms_state_difference_rk4_128_vs_dop853": 9.024555970871098e-07
+    }
+  ],
+  "note": "Same initial condition, full complex MFS, corrected drag; DOP853 states sampled at matching 10-period grid."
+}

@@ -1,0 +1,1927 @@
+{
+  "schema_version": "1.0",
+  "study": "V17C.20B",
+  "source_base_sha": "45866d0559db1615a5e2aebc521ddae90f3a0101",
+  "code_sha256": {
+    "attractor_search.py": "180b7beccbbe67ee573d79798f96f8010b984cf9d015256e9e38b338b9184376",
+    "audit_reproducibility.py": "a3c3c13e05f4ce31630215d0d68574eba539af81336bacef913f27785dd3f764",
+    "basin_scan.py": "ef71d73f0ccdac9b22afd9d48e37ac3ae0e363fc514cf7f8c5b9a8096e7a450d",
+    "build_manifest.py": "671fe3fa5ea015095301a3d2b77007441742bbf83c3d45c4443b17d894254eed",
+    "build_registries.py": "7ccb8527efc6b0cac343202c9f0be0280ea634a13877898a10908ae1596aadee",
+    "dop853_independent.py": "f1118f98768e72f06d3ab4343fa4ed118efe8e689499d65fd464963204eea0d7",
+    "full_phase_qr.py": "bea0b73fe990b06c5bac9a78fb4b155d693b0f223c8a0c3b451d15353cab5383",
+    "long_replay.py": "d830f79b28d8bfb513877b8456f580f11cd9fba7442191eee4dadbac75b2ea70",
+    "multivariate_sobol_scan.py": "84afee9df468a2eb5cd78c4101acb4006257e8423de2e137cc12f483f54a9ea2",
+    "plot_results.py": "67f877cad74483abf0722255c5adf7e0aecaf9bbd416c9e43832799b8c7596ca",
+    "stability_analysis.py": "59199e6cb3b70af56a8e281486c53f09ab3ff3cbd7ace996d1f6da9e8ebc4189",
+    "step_refinement.py": "98efc5c508277ccf8876f9dd7c41df6bac1cbba6a49634e6d00b2364c2e48a0a",
+    "univariate_scan.py": "d2c1385ddb82536f15118964daed1ea95efcdc9856390279f5aa96cbc07af626",
+    "variational_qr.py": "45a1920a3d4c60ec6a01ab878ba14dc3071966883fc8032ada6c4609d2edbb85"
+  },
+  "candidates": [
+    {
+      "id": "scaled_candidate52_f45hz",
+      "legacy_name": "candidate52",
+      "evidence_status": "LONG_LIVED_COUNTERROTATION; ATTRACTOR_NOT_ESTABLISHED",
+      "field_parameters": {
+        "A": 0.03956095746691348,
+        "B": 0.15032976498886072,
+        "nu": 2.8996277751401065,
+        "beta": 0.015917322789905167,
+        "RF_frequencies_Hz": [
+          45.0,
+          130.4832498813048
+        ],
+        "MFS_modes": [
+          -46,
+          -22,
+          2,
+          26,
+          -28,
+          -4,
+          20,
+          44
+        ],
+        "MFS_families": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MFS_complex_coefficients": [
+          [
+            0.01195544657862462,
+            -1.0842155436372173e-16
+          ],
+          [
+            0.09570557011088898,
+            -4.2872248166624126e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.03864580974495959,
+            1.7793248982720981e-16
+          ],
+          [
+            0.044100519066165626,
+            -2.0091592851606255e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.17652762769656,
+            8.03012740525487e-16
+          ],
+          [
+            0.02491992749735757,
+            2.3153021498709014e-16
+          ]
+        ]
+      },
+      "particle_parameters": {
+        "alpha1": 1.0,
+        "alpha2": 0.39886769875950645,
+        "lambda1_corrected": 0.18609211263873252,
+        "lambda2_corrected": 0.1035039256093252,
+        "mu_m2_over_m1": 8.843599013984203,
+        "Q_q2_over_q1": 3.5274259874597194,
+        "C12": 9.281679945656495e-06,
+        "particle_radius_over_R": [
+          0.001965607441470929,
+          0.009636493923663192
+        ],
+        "diameters_um": [
+          39.31214882941858,
+          192.72987847326385
+        ],
+        "charges_e": [
+          340190.01208470704,
+          1199995.0893018316
+        ],
+        "gravity_z": -0.012266930686001626,
+        "Re_per_unit_dimensionless_speed": [
+          7.227981851177806,
+          35.435561404417335
+        ],
+        "polarization": "disabled",
+        "interparticle_hydrodynamic_coupling": "disabled"
+      },
+      "initial_condition": {
+        "selection": "shared frozen rest start, V12B start index 7, seed 20261850",
+        "state": [
+          -0.43198942081431174,
+          0.5283981626447145,
+          -0.2081263903528452,
+          0.0,
+          0.0,
+          0.0,
+          0.46002277668273484,
+          -0.6197711870406251,
+          0.35629591811448336,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RF_phases_rad": [
+          6.131576903852475,
+          1.3781272771727673
+        ],
+        "long_replay_start": null
+      },
+      "integration": {
+        "method": "Numba RK4 FP64, full 8-complex MFS, finite-sphere event/contact checks",
+        "steps_per_RF_period": 64,
+        "periods": 50000,
+        "transient_periods": 5000,
+        "trajectory_file": "candidate52_50000_common_corrected_trajectory.npz",
+        "baseline_15k_file": "baseline_scaled_candidate52_f45hz_15000p_rk464.npz",
+        "trajectory_initial_condition": "matched_common_start (rest index 7)",
+        "source_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+        "pair_integrator_sha256": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44"
+      },
+      "late_observables": {
+        "turns": [
+          111.45931617143565,
+          -42.40640220823516
+        ],
+        "frequency_Hz": [
+          0.11145931617143565,
+          -0.04240640220823516
+        ],
+        "mean_radius_over_R": [
+          0.5255999700277031,
+          0.7148553318463543
+        ],
+        "minimum_pair_distance_over_R": 0.605739558334161,
+        "retained": true,
+        "consistent_counterrotation_all_chunks": true
+      },
+      "independent_DOP853": {
+        "candidate": "scaled_candidate52_f45hz",
+        "method": "independent Python RHS + SciPy DOP853",
+        "periods": 3000,
+        "rtol": 1e-09,
+        "atol": 1e-11,
+        "max_step_RF_periods": 0.010416666666666666,
+        "nfev": 3456917,
+        "turns_after_200p": [
+          6.929536857338775,
+          -2.635277556331801
+        ],
+        "frequency_Hz": [
+          0.11136755663580175,
+          -0.04235267501247537
+        ],
+        "window_turns": [
+          [
+            2.288757416670482,
+            -0.8712189256494921
+          ],
+          [
+            2.30367408703728,
+            -0.8619871271086756
+          ],
+          [
+            2.291623747454334,
+            -0.8819429736212874
+          ]
+        ],
+        "rk4_64_final_state_max_abs_difference_at_3000p": 0.0023972526192831134,
+        "success": true
+      },
+      "step_refinement_RK4_128": {
+        "candidate": "scaled_candidate52_f45hz",
+        "steps": 128,
+        "periods": 3000,
+        "status": 0,
+        "turns_after_200p": [
+          6.9295290430150045,
+          -2.635284964963408
+        ],
+        "frequency_Hz": [
+          0.11136743104845542,
+          -0.04235279407976906
+        ],
+        "rmin_R": [
+          0.4161601542487117,
+          0.6666169731742543
+        ],
+        "rmax_R": [
+          0.7099197618033171,
+          0.8001564740113045
+        ],
+        "minimum_pair_distance_R": 0.6058376569187779,
+        "max_abs_state_difference_rk4_64_vs_128": 0.002359835895398829,
+        "max_abs_state_difference_rk4_128_vs_dop853": 3.74167238842843e-05,
+        "rms_state_difference_rk4_128_vs_dop853": 1.335071586361343e-05
+      },
+      "basin_subsample_N8_per_ensemble": {
+        "rest": {
+          "n": 8,
+          "strict_counterrotating": 7,
+          "wall_contact": 1,
+          "strict_fraction_among_all_starts": 0.875,
+          "retained_fraction": 0.875
+        },
+        "weak": {
+          "n": 8,
+          "strict_counterrotating": 6,
+          "wall_contact": 2,
+          "strict_fraction_among_all_starts": 0.75,
+          "retained_fraction": 0.75
+        },
+        "wide": {
+          "n": 8,
+          "strict_counterrotating": 8,
+          "wall_contact": 0,
+          "strict_fraction_among_all_starts": 1.0,
+          "retained_fraction": 1.0
+        },
+        "edge": {
+          "n": 8,
+          "strict_counterrotating": 4,
+          "wall_contact": 4,
+          "strict_fraction_among_all_starts": 0.5,
+          "retained_fraction": 0.5
+        }
+      },
+      "attraction_tests": {
+        "conditional_mechanical_QR_periods": 2000,
+        "conditional_top_exponent_per_tau": -0.0001416879924248798,
+        "mechanical_perturbations": [
+          {
+            "particle": 1,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 5.20292435482285e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.605770810754636,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 1.7543491797306658e-07,
+                "distance_over_initial": 0.3371852174065287,
+                "finite_time_exponent_per_tau": -0.0017302098217895235
+              },
+              {
+                "periods": 500.0,
+                "distance": 1.790819102423438e-07,
+                "distance_over_initial": 0.34419472210151175,
+                "finite_time_exponent_per_tau": -0.0003394926862706753
+              },
+              {
+                "periods": 1000.0,
+                "distance": 1.8284537682585533e-07,
+                "distance_over_initial": 0.35142808996707176,
+                "finite_time_exponent_per_tau": -0.00016643630865533027
+              },
+              {
+                "periods": 2500.0,
+                "distance": 1.8382774058392538e-07,
+                "distance_over_initial": 0.3533161892187156,
+                "finite_time_exponent_per_tau": -6.623340563338822e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 1.6318675525608106e-07,
+                "distance_over_initial": 0.3136442971822474,
+                "finite_time_exponent_per_tau": -3.690789591662751e-05
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 5.20292435482285e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.6057708108900631,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 2.7286339443251673e-07,
+                "distance_over_initial": 0.5244423632251851,
+                "finite_time_exponent_per_tau": -0.0010272174297257853
+              },
+              {
+                "periods": 500.0,
+                "distance": 2.785354565994522e-07,
+                "distance_over_initial": 0.5353440442417038,
+                "finite_time_exponent_per_tau": -0.0001988945526423433
+              },
+              {
+                "periods": 1000.0,
+                "distance": 2.843893131443638e-07,
+                "distance_over_initial": 0.5465951333325636,
+                "finite_time_exponent_per_tau": -9.613705143533012e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 2.859170929413157e-07,
+                "distance_over_initial": 0.549531520050421,
+                "finite_time_exponent_per_tau": -3.8113734749806616e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 2.5381303510974415e-07,
+                "distance_over_initial": 0.4878276480696326,
+                "finite_time_exponent_per_tau": -2.2848064496101397e-05
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 1.3018447386453803e-06,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.6057708080196563,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 1.7954765395020895e-06,
+                "distance_over_initial": 1.379178704036821,
+                "finite_time_exponent_per_tau": 0.0005116643299253929
+              },
+              {
+                "periods": 500.0,
+                "distance": 1.8328029241980556e-06,
+                "distance_over_initial": 1.4078506213461044,
+                "finite_time_exponent_per_tau": 0.00010888240361868266
+              },
+              {
+                "periods": 1000.0,
+                "distance": 1.8713189257221751e-06,
+                "distance_over_initial": 1.4374363318235281,
+                "finite_time_exponent_per_tau": 5.775115392323322e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 1.8813730441607367e-06,
+                "distance_over_initial": 1.4451593099484183,
+                "finite_time_exponent_per_tau": 2.3441585538845046e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 1.6701247156679927e-06,
+                "distance_over_initial": 1.282890859478237,
+                "finite_time_exponent_per_tau": 7.929609049499812e-06
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 6.896022821751847e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.6057708095310884,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 3.357809046817396e-07,
+                "distance_over_initial": 0.48691965406871834,
+                "finite_time_exponent_per_tau": -0.0011453683374045114
+              },
+              {
+                "periods": 500.0,
+                "distance": 3.6813528758234586e-07,
+                "distance_over_initial": 0.5338371074137858,
+                "finite_time_exponent_per_tau": -0.0001997918247408292
+              },
+              {
+                "periods": 1000.0,
+                "distance": 3.764596582110796e-07,
+                "distance_over_initial": 0.5459083705808341,
+                "finite_time_exponent_per_tau": -9.633714544084072e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 3.417697113882505e-07,
+                "distance_over_initial": 0.495604089809883,
+                "finite_time_exponent_per_tau": -4.468929962766491e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 3.8109257349836814e-07,
+                "distance_over_initial": 0.5526266129750952,
+                "finite_time_exponent_per_tau": -1.887809062103322e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 6.89602282226533e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.6057708112640501,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 2.5805612101098515e-07,
+                "distance_over_initial": 0.37421007392521105,
+                "finite_time_exponent_per_tau": -0.001564394325834735
+              },
+              {
+                "periods": 500.0,
+                "distance": 2.8291738473457766e-07,
+                "distance_over_initial": 0.41026167114922607,
+                "finite_time_exponent_per_tau": -0.00028360140819904696
+              },
+              {
+                "periods": 1000.0,
+                "distance": 2.893187813890823e-07,
+                "distance_over_initial": 0.41954440819852395,
+                "finite_time_exponent_per_tau": -0.00013823973930157882
+              },
+              {
+                "periods": 2500.0,
+                "distance": 2.6265686788373596e-07,
+                "distance_over_initial": 0.3808816685404381,
+                "finite_time_exponent_per_tau": -6.145077607381712e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 2.9287744411127695e-07,
+                "distance_over_initial": 0.4247048649051125,
+                "finite_time_exponent_per_tau": -2.7258810458083995e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 6.736542827328411e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.605770809040263,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 5.040028444019055e-07,
+                "distance_over_initial": 0.7481624585793418,
+                "finite_time_exponent_per_tau": -0.00046176440736915016
+              },
+              {
+                "periods": 500.0,
+                "distance": 5.525657061452734e-07,
+                "distance_over_initial": 0.8202511589530126,
+                "finite_time_exponent_per_tau": -6.307141506361391e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 5.650614037668134e-07,
+                "distance_over_initial": 0.8388002841375928,
+                "finite_time_exponent_per_tau": -2.797667625855489e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 5.129918646060026e-07,
+                "distance_over_initial": 0.7615061282248919,
+                "finite_time_exponent_per_tau": -1.7345155094982285e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 5.720147628305761e-07,
+                "distance_over_initial": 0.8491221350364763,
+                "finite_time_exponent_per_tau": -5.206029664859759e-06
+              }
+            ]
+          }
+        ],
+        "one_degree_RF_phase_trials": [
+          {
+            "phase_channel": 1,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              37.1704935094825,
+              -14.135632207236888
+            ],
+            "window_turns": [
+              [
+                12.396892566043427,
+                -4.703954807284312
+              ],
+              [
+                12.398077700164,
+                -4.713126010201782
+              ],
+              [
+                12.37552324327511,
+                -4.7185513897510125
+              ]
+            ],
+            "min_pair_distance_R": 0.6057642674760658
+          },
+          {
+            "phase_channel": 2,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              37.1709673697038,
+              -14.135888959249103
+            ],
+            "window_turns": [
+              [
+                12.396883287238524,
+                -4.704236959213649
+              ],
+              [
+                12.398283631410903,
+                -4.7130138443744904
+              ],
+              [
+                12.375800451052942,
+                -4.718638155661497
+              ]
+            ],
+            "min_pair_distance_R": 0.6057495323762324
+          }
+        ],
+        "interpretation": "Finite-time evidence only; no global basin fraction and no asymptotic attraction claim."
+      },
+      "Coulomb_scale_diagnostic": [
+        {
+          "sC": 0,
+          "frequency_Hz": [
+            0.11102023847418342,
+            -0.04276848234630185
+          ],
+          "pair_min_R": 0.6047730827729406,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.1,
+          "frequency_Hz": [
+            0.11102114414697192,
+            -0.04277045012197841
+          ],
+          "pair_min_R": 0.6048590843126116,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.25,
+          "frequency_Hz": [
+            0.11102070835235757,
+            -0.04277320855970469
+          ],
+          "pair_min_R": 0.6050130871841869,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.5,
+          "frequency_Hz": [
+            0.1110152399151312,
+            -0.042777294201698644
+          ],
+          "pair_min_R": 0.6052932856966965,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.75,
+          "frequency_Hz": [
+            0.1110039098022025,
+            -0.042780744676597725
+          ],
+          "pair_min_R": 0.605536213216226,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1,
+          "frequency_Hz": [
+            0.11098678072791253,
+            -0.04278356347983603
+          ],
+          "pair_min_R": 0.6057983588387047,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1.5,
+          "frequency_Hz": [
+            0.11093536214801267,
+            -0.04278731058117263
+          ],
+          "pair_min_R": 0.6063313473231094,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 2,
+          "frequency_Hz": [
+            0.1108610676164238,
+            -0.04278852408658245
+          ],
+          "pair_min_R": 0.6067618647032716,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 3,
+          "frequency_Hz": [
+            0.11064069831719095,
+            -0.04278312822958619
+          ],
+          "pair_min_R": 0.6077392926390072,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 5,
+          "frequency_Hz": [
+            0.10989474367125104,
+            -0.042736916508679716
+          ],
+          "pair_min_R": 0.6096324147293509,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        }
+      ],
+      "source_note": "The dimensional map is a legacy candidate mapping, not a jointly identified physical particle pair."
+    },
+    {
+      "id": "scaled_local15_f50hz",
+      "legacy_name": "local15",
+      "evidence_status": "LONG_LIVED_COUNTERROTATION; ATTRACTOR_NOT_ESTABLISHED",
+      "field_parameters": {
+        "A": 0.03716194907442204,
+        "B": 0.1626938199343468,
+        "nu": 3.1118029452860356,
+        "beta": 0.017273303124515367,
+        "RF_frequencies_Hz": [
+          50.0,
+          155.59014726430178
+        ],
+        "MFS_modes": [
+          -46,
+          -22,
+          2,
+          26,
+          -28,
+          -4,
+          20,
+          44
+        ],
+        "MFS_families": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MFS_complex_coefficients": [
+          [
+            0.01195544657862462,
+            -1.0842155436372173e-16
+          ],
+          [
+            0.09570557011088898,
+            -4.2872248166624126e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.03864580974495959,
+            1.7793248982720981e-16
+          ],
+          [
+            0.044100519066165626,
+            -2.0091592851606255e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.17652762769656,
+            8.03012740525487e-16
+          ],
+          [
+            0.02491992749735757,
+            2.3153021498709014e-16
+          ]
+        ]
+      },
+      "particle_parameters": {
+        "alpha1": 1.0,
+        "alpha2": 0.34126014359705537,
+        "lambda1_corrected": 0.2087847088276075,
+        "lambda2_corrected": 0.12606646438577526,
+        "mu_m2_over_m1": 9.136629008688033,
+        "Q_q2_over_q1": 3.1179673274978996,
+        "C12": 9.463121589050818e-06,
+        "particle_radius_over_R": [
+          0.0017600603946096752,
+          0.009673133789798376
+        ],
+        "diameters_um": [
+          35.2012078921935,
+          193.46267579596756
+        ],
+        "charges_e": [
+          343971.38427479565,
+          1072491.5377630377
+        ],
+        "gravity_z": -0.009936213855661315,
+        "Re_per_unit_dimensionless_speed": [
+          7.191265560406395,
+          39.52254939479341
+        ],
+        "polarization": "disabled",
+        "interparticle_hydrodynamic_coupling": "disabled"
+      },
+      "initial_condition": {
+        "selection": "shared frozen rest start, V12B start index 7, seed 20261850",
+        "state": [
+          -0.43198942081431174,
+          0.5283981626447145,
+          -0.2081263903528452,
+          0.0,
+          0.0,
+          0.0,
+          0.46002277668273484,
+          -0.6197711870406251,
+          0.35629591811448336,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RF_phases_rad": [
+          6.131576903852475,
+          1.3781272771727673
+        ],
+        "long_replay_start": null
+      },
+      "integration": {
+        "method": "Numba RK4 FP64, full 8-complex MFS, finite-sphere event/contact checks",
+        "steps_per_RF_period": 64,
+        "periods": 50000,
+        "transient_periods": 5000,
+        "trajectory_file": "local15_50000_common_corrected_trajectory.npz",
+        "baseline_15k_file": "baseline_scaled_local15_f50hz_15000p_rk464.npz",
+        "trajectory_initial_condition": "matched_common_start (rest index 7)",
+        "source_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+        "pair_integrator_sha256": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44"
+      },
+      "late_observables": {
+        "turns": [
+          57.02655078293588,
+          -47.73397644924214
+        ],
+        "frequency_Hz": [
+          0.06336283420326208,
+          -0.05303775161026905
+        ],
+        "mean_radius_over_R": [
+          0.5492974235948056,
+          0.7658947732809188
+        ],
+        "minimum_pair_distance_over_R": 0.5882232585575116,
+        "retained": true,
+        "consistent_counterrotation_all_chunks": true
+      },
+      "independent_DOP853": {
+        "candidate": "scaled_local15_f50hz",
+        "method": "independent Python RHS + SciPy DOP853",
+        "periods": 3000,
+        "rtol": 1e-09,
+        "atol": 1e-11,
+        "max_step_RF_periods": 0.010416666666666666,
+        "nfev": 3587201,
+        "turns_after_200p": [
+          3.5486731317164733,
+          -2.973432607583692
+        ],
+        "frequency_Hz": [
+          0.06336916306636559,
+          -0.05309701084970878
+        ],
+        "window_turns": [
+          [
+            1.1810916930995958,
+            -0.9856815407112917
+          ],
+          [
+            1.1745188132115016,
+            -0.9770179666350752
+          ],
+          [
+            1.1612026661794614,
+            -0.9890571859142281
+          ]
+        ],
+        "rk4_64_final_state_max_abs_difference_at_3000p": 0.002086564165250937,
+        "success": true
+      },
+      "step_refinement_RK4_128": {
+        "candidate": "scaled_local15_f50hz",
+        "steps": 128,
+        "periods": 3000,
+        "status": 0,
+        "turns_after_200p": [
+          3.5486673496817067,
+          -2.973436087447933
+        ],
+        "frequency_Hz": [
+          0.06336905981574475,
+          -0.05309707299014166
+        ],
+        "rmin_R": [
+          0.4648717070796706,
+          0.7310549389297103
+        ],
+        "rmax_R": [
+          0.700799101310048,
+          0.798259097147271
+        ],
+        "minimum_pair_distance_R": 0.5885645393119365,
+        "max_abs_state_difference_rk4_64_vs_128": 0.002069800586762316,
+        "max_abs_state_difference_rk4_128_vs_dop853": 1.676357848862109e-05,
+        "rms_state_difference_rk4_128_vs_dop853": 8.490985871032572e-06
+      },
+      "basin_subsample_N8_per_ensemble": {
+        "rest": {
+          "n": 8,
+          "strict_counterrotating": 7,
+          "wall_contact": 1,
+          "strict_fraction_among_all_starts": 0.875,
+          "retained_fraction": 0.875
+        },
+        "weak": {
+          "n": 8,
+          "strict_counterrotating": 7,
+          "wall_contact": 1,
+          "strict_fraction_among_all_starts": 0.875,
+          "retained_fraction": 0.875
+        },
+        "wide": {
+          "n": 8,
+          "strict_counterrotating": 8,
+          "wall_contact": 0,
+          "strict_fraction_among_all_starts": 1.0,
+          "retained_fraction": 1.0
+        },
+        "edge": {
+          "n": 8,
+          "strict_counterrotating": 5,
+          "wall_contact": 3,
+          "strict_fraction_among_all_starts": 0.625,
+          "retained_fraction": 0.625
+        }
+      },
+      "attraction_tests": {
+        "conditional_mechanical_QR_periods": 2000,
+        "conditional_top_exponent_per_tau": -6.3720000438663e-05,
+        "mechanical_perturbations": [
+          {
+            "particle": 1,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 5.407316608089025e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861676350372,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 5.741368830707184e-07,
+                "distance_over_initial": 1.0617778182469353,
+                "finite_time_exponent_per_tau": 9.540493764106072e-05
+              },
+              {
+                "periods": 500.0,
+                "distance": 5.927299527702536e-07,
+                "distance_over_initial": 1.096162839593237,
+                "finite_time_exponent_per_tau": 2.922586212943604e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 4.7574949015878777e-07,
+                "distance_over_initial": 0.8798254747042086,
+                "finite_time_exponent_per_tau": -2.0376880375021727e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 5.354783690230677e-07,
+                "distance_over_initial": 0.990284845207739,
+                "finite_time_exponent_per_tau": -6.21509908004621e-07
+              },
+              {
+                "periods": 5000.0,
+                "distance": 5.269255055880995e-07,
+                "distance_over_initial": 0.9744676403816455,
+                "finite_time_exponent_per_tau": -8.232756381507196e-07
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 5.407316608089025e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861681041633,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 6.728269032689625e-07,
+                "distance_over_initial": 1.24428982438804,
+                "finite_time_exponent_per_tau": 0.0003478569138109256
+              },
+              {
+                "periods": 500.0,
+                "distance": 6.946160495086452e-07,
+                "distance_over_initial": 1.2845854974897173,
+                "finite_time_exponent_per_tau": 7.97162852979037e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 5.575275186022551e-07,
+                "distance_over_initial": 1.031061354477056,
+                "finite_time_exponent_per_tau": 4.868344867420423e-06
+              },
+              {
+                "periods": 2500.0,
+                "distance": 6.275236994574397e-07,
+                "distance_over_initial": 1.160508520101637,
+                "finite_time_exponent_per_tau": 9.476612971192515e-06
+              },
+              {
+                "periods": 5000.0,
+                "distance": 6.175005304378164e-07,
+                "distance_over_initial": 1.1419722113442965,
+                "finite_time_exponent_per_tau": 4.225779477244711e-06
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 6.961008315897023e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861614884898,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 7.187242064951461e-07,
+                "distance_over_initial": 1.0325001406100582,
+                "finite_time_exponent_per_tau": 5.0902815170151285e-05
+              },
+              {
+                "periods": 500.0,
+                "distance": 7.419987229243743e-07,
+                "distance_over_initial": 1.0659356938704612,
+                "finite_time_exponent_per_tau": 2.0325040915696845e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 5.955578280022675e-07,
+                "distance_over_initial": 0.855562586589902,
+                "finite_time_exponent_per_tau": -2.4827539343779153e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 6.703225660108094e-07,
+                "distance_over_initial": 0.962967627089279,
+                "finite_time_exponent_per_tau": -2.4023155539065856e-06
+              },
+              {
+                "periods": 5000.0,
+                "distance": 6.596177166644242e-07,
+                "distance_over_initial": 0.9475893243196382,
+                "finite_time_exponent_per_tau": -1.7135917579656185e-06
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 7.377029785837898e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861684406206,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 3.5947556480397116e-07,
+                "distance_over_initial": 0.4872903800579425,
+                "finite_time_exponent_per_tau": -0.00114415704056915
+              },
+              {
+                "periods": 500.0,
+                "distance": 4.2508982482748046e-07,
+                "distance_over_initial": 0.5762343885930209,
+                "finite_time_exponent_per_tau": -0.00017546538880114775
+              },
+              {
+                "periods": 1000.0,
+                "distance": 3.4648000076149174e-07,
+                "distance_over_initial": 0.4696741247089026,
+                "finite_time_exponent_per_tau": -0.00012027596505503821
+              },
+              {
+                "periods": 2500.0,
+                "distance": 3.9444083952612017e-07,
+                "distance_over_initial": 0.5346878770685604,
+                "finite_time_exponent_per_tau": -3.985698839520207e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 3.7869614164478456e-07,
+                "distance_over_initial": 0.5133450082739113,
+                "finite_time_exponent_per_tau": -2.122513013736916e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 7.377029785511708e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861604201118,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 4.562992198189732e-07,
+                "distance_over_initial": 0.6185405686108694,
+                "finite_time_exponent_per_tau": -0.0007645684058024254
+              },
+              {
+                "periods": 500.0,
+                "distance": 5.395916211052233e-07,
+                "distance_over_initial": 0.7314483427530236,
+                "finite_time_exponent_per_tau": -9.95446303021611e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 4.398106720113403e-07,
+                "distance_over_initial": 0.5961893672642028,
+                "finite_time_exponent_per_tau": -8.231444829143013e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 5.006966917532329e-07,
+                "distance_over_initial": 0.6787239665706488,
+                "finite_time_exponent_per_tau": -2.4671611259792214e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 4.807106581958653e-07,
+                "distance_over_initial": 0.6516317165208798,
+                "finite_time_exponent_per_tau": -1.3632439842794921e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 8.124267348978483e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5882861667319915,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 1.851825487721914e-07,
+                "distance_over_initial": 0.22793753678659479,
+                "finite_time_exponent_per_tau": -0.002353398120113781
+              },
+              {
+                "periods": 500.0,
+                "distance": 2.1894435216158142e-07,
+                "distance_over_initial": 0.26949427284555166,
+                "finite_time_exponent_per_tau": -0.0004173705137734938
+              },
+              {
+                "periods": 1000.0,
+                "distance": 1.784447131262496e-07,
+                "distance_over_initial": 0.219644068149341,
+                "finite_time_exponent_per_tau": -0.00024123861397411415
+              },
+              {
+                "periods": 2500.0,
+                "distance": 2.0309946273456356e-07,
+                "distance_over_initial": 0.24999111182634898,
+                "finite_time_exponent_per_tau": -8.825650345613036e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 1.9500928686239683e-07,
+                "distance_over_initial": 0.24003307435090332,
+                "finite_time_exponent_per_tau": -4.542213815368622e-05
+              }
+            ]
+          }
+        ],
+        "one_degree_RF_phase_trials": [
+          {
+            "phase_channel": 1,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              19.011004598009933,
+              -15.908552930773618
+            ],
+            "window_turns": [
+              [
+                6.351144129026601,
+                -5.308285045352875
+              ],
+              [
+                6.34792347705307,
+                -5.305277781705657
+              ],
+              [
+                6.311936991930214,
+                -5.294990103714825
+              ]
+            ],
+            "min_pair_distance_R": 0.5882879169780786
+          },
+          {
+            "phase_channel": 2,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              19.011611188860073,
+              -15.908812447750218
+            ],
+            "window_turns": [
+              [
+                6.351516690402159,
+                -5.308503243200556
+              ],
+              [
+                6.3481889635344055,
+                -5.305215489147312
+              ],
+              [
+                6.311905534923159,
+                -5.295093715402764
+              ]
+            ],
+            "min_pair_distance_R": 0.5882792101063428
+          }
+        ],
+        "interpretation": "Finite-time evidence only; no global basin fraction and no asymptotic attraction claim."
+      },
+      "Coulomb_scale_diagnostic": [
+        {
+          "sC": 0,
+          "frequency_Hz": [
+            0.06288330509474152,
+            -0.053459529856294596
+          ],
+          "pair_min_R": 0.587276462346818,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.1,
+          "frequency_Hz": [
+            0.06287486956227176,
+            -0.05346024946444731
+          ],
+          "pair_min_R": 0.5874351012628333,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.25,
+          "frequency_Hz": [
+            0.06285932960687025,
+            -0.053461082044845815
+          ],
+          "pair_min_R": 0.5876634137486582,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.5,
+          "frequency_Hz": [
+            0.06282556973703977,
+            -0.05346179975619415
+          ],
+          "pair_min_R": 0.5877390313430789,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.75,
+          "frequency_Hz": [
+            0.06278165222979602,
+            -0.05346165518830155
+          ],
+          "pair_min_R": 0.588113541974152,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1,
+          "frequency_Hz": [
+            0.06272726325644302,
+            -0.053460611515362834
+          ],
+          "pair_min_R": 0.5883731357309288,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1.5,
+          "frequency_Hz": [
+            0.06258649258573526,
+            -0.053455639838502225
+          ],
+          "pair_min_R": 0.5887455835981684,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 2,
+          "frequency_Hz": [
+            0.06240475178519327,
+            -0.053446489261970966
+          ],
+          "pair_min_R": 0.5894384102185821,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 3,
+          "frequency_Hz": [
+            0.061955904818943905,
+            -0.05341567154361429
+          ],
+          "pair_min_R": 0.5902852093290338,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 5,
+          "frequency_Hz": [
+            0.060954726049773644,
+            -0.05333330128997782
+          ],
+          "pair_min_R": 0.5922194062395284,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        }
+      ],
+      "source_note": "The dimensional map is a legacy candidate mapping, not a jointly identified physical particle pair."
+    },
+    {
+      "id": "scaled_refine12_sobol17_f50hz",
+      "legacy_name": "refine12_sobol17",
+      "evidence_status": "LONG_LIVED_COUNTERROTATION; ATTRACTOR_NOT_ESTABLISHED",
+      "field_parameters": {
+        "A": 0.03492413282400757,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825,
+        "RF_frequencies_Hz": [
+          50.0,
+          160.98386819008738
+        ],
+        "MFS_modes": [
+          -46,
+          -22,
+          2,
+          26,
+          -28,
+          -4,
+          20,
+          44
+        ],
+        "MFS_families": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "MFS_complex_coefficients": [
+          [
+            0.01195544657862462,
+            -1.0842155436372173e-16
+          ],
+          [
+            0.09570557011088898,
+            -4.2872248166624126e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.03864580974495959,
+            1.7793248982720981e-16
+          ],
+          [
+            0.044100519066165626,
+            -2.0091592851606255e-16
+          ],
+          [
+            1.0,
+            0.0
+          ],
+          [
+            0.17652762769656,
+            8.03012740525487e-16
+          ],
+          [
+            0.02491992749735757,
+            2.3153021498709014e-16
+          ]
+        ]
+      },
+      "particle_parameters": {
+        "alpha1": 1.0,
+        "alpha2": 0.37814609618000145,
+        "lambda1_corrected": 0.24452307123064748,
+        "lambda2_corrected": 0.17736598731050257,
+        "mu_m2_over_m1": 9.120955253392458,
+        "Q_q2_over_q1": 3.4490536225028334,
+        "C12": 9.747265456858355e-06,
+        "particle_radius_over_R": [
+          0.001626051103627725,
+          0.010712147659054478
+        ],
+        "diameters_um": [
+          32.5210220725545,
+          214.24295318108958
+        ],
+        "charges_e": [
+          294742.1436869616,
+          1016581.4583877656
+        ],
+        "gravity_z": -0.009936213855661315,
+        "Re_per_unit_dimensionless_speed": [
+          6.643729577002431,
+          43.76775863741318
+        ],
+        "polarization": "disabled",
+        "interparticle_hydrodynamic_coupling": "disabled"
+      },
+      "initial_condition": {
+        "selection": "shared frozen rest start, V12B start index 7, seed 20261850",
+        "state": [
+          -0.43198942081431174,
+          0.5283981626447145,
+          -0.2081263903528452,
+          0.0,
+          0.0,
+          0.0,
+          0.46002277668273484,
+          -0.6197711870406251,
+          0.35629591811448336,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "RF_phases_rad": [
+          6.131576903852475,
+          1.3781272771727673
+        ],
+        "long_replay_start": [
+          0.2004677020124007,
+          -0.379391682147845,
+          0.11302470043301582,
+          0.0,
+          0.0,
+          0.0,
+          0.6974832987283117,
+          0.40951547790547216,
+          -0.348290266469121,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "integration": {
+        "method": "Numba RK4 FP64, full 8-complex MFS, finite-sphere event/contact checks",
+        "steps_per_RF_period": 64,
+        "periods": 240000,
+        "transient_periods": 20000,
+        "trajectory_file": "refine12_240k_corrected_drag_trajectory.npz",
+        "baseline_15k_file": "baseline_scaled_refine12_sobol17_f50hz_15000p_rk464.npz",
+        "trajectory_initial_condition": "refine12_240k_seed (V12B long rest-start index 54)",
+        "source_integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+        "pair_integrator_sha256": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44"
+      },
+      "late_observables": {
+        "turns": [
+          240.44999059026028,
+          -213.1970818117407
+        ],
+        "frequency_Hz": [
+          0.05464772513415006,
+          -0.04845388222994107
+        ],
+        "mean_radius_over_R": [
+          0.5557208179250963,
+          0.751515785539555
+        ],
+        "minimum_pair_distance_over_R": 0.5602404183189543,
+        "retained": true,
+        "consistent_counterrotation_all_chunks": true
+      },
+      "independent_DOP853": {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "method": "independent Python RHS + SciPy DOP853",
+        "periods": 3000,
+        "rtol": 1e-09,
+        "atol": 1e-11,
+        "max_step_RF_periods": 0.010416666666666666,
+        "nfev": 3612269,
+        "turns_after_200p": [
+          3.065614461209596,
+          -2.7070840581535047
+        ],
+        "frequency_Hz": [
+          0.05474311537874279,
+          -0.04834078675274116
+        ],
+        "window_turns": [
+          [
+            1.0230437042556528,
+            -0.9014412220667867
+          ],
+          [
+            1.0050604660797127,
+            -0.8873498558808715
+          ],
+          [
+            1.021977569757986,
+            -0.898643702952536
+          ]
+        ],
+        "rk4_64_final_state_max_abs_difference_at_3000p": 0.0020195571484514785,
+        "success": true
+      },
+      "step_refinement_RK4_128": {
+        "candidate": "scaled_refine12_sobol17_f50hz",
+        "steps": 128,
+        "periods": 3000,
+        "status": 0,
+        "turns_after_200p": [
+          3.065613732881917,
+          -2.707083998006333
+        ],
+        "frequency_Hz": [
+          0.05474310237289137,
+          -0.048340785678684516
+        ],
+        "rmin_R": [
+          0.4834341925774856,
+          0.7197237895604278
+        ],
+        "rmax_R": [
+          0.7017423858738868,
+          0.7938923573389786
+        ],
+        "minimum_pair_distance_R": 0.5602431471915456,
+        "max_abs_state_difference_rk4_64_vs_128": 0.002017602564504173,
+        "max_abs_state_difference_rk4_128_vs_dop853": 2.1686185206482023e-06,
+        "rms_state_difference_rk4_128_vs_dop853": 9.024555970871098e-07
+      },
+      "basin_subsample_N8_per_ensemble": {
+        "rest": {
+          "n": 8,
+          "strict_counterrotating": 7,
+          "wall_contact": 1,
+          "strict_fraction_among_all_starts": 0.875,
+          "retained_fraction": 0.875
+        },
+        "weak": {
+          "n": 8,
+          "strict_counterrotating": 7,
+          "wall_contact": 1,
+          "strict_fraction_among_all_starts": 0.875,
+          "retained_fraction": 0.875
+        },
+        "wide": {
+          "n": 8,
+          "strict_counterrotating": 8,
+          "wall_contact": 0,
+          "strict_fraction_among_all_starts": 1.0,
+          "retained_fraction": 1.0
+        },
+        "edge": {
+          "n": 8,
+          "strict_counterrotating": 5,
+          "wall_contact": 3,
+          "strict_fraction_among_all_starts": 0.625,
+          "retained_fraction": 0.625
+        }
+      },
+      "attraction_tests": {
+        "conditional_mechanical_QR_periods": 2000,
+        "conditional_top_exponent_per_tau": -6.668249417225201e-05,
+        "mechanical_perturbations": [
+          {
+            "particle": 1,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 5.967215573438438e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602523987519951,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 2.3419645482070875e-07,
+                "distance_over_initial": 0.392471919169764,
+                "finite_time_exponent_per_tau": -0.0014885607253487068
+              },
+              {
+                "periods": 500.0,
+                "distance": 2.081957752850637e-07,
+                "distance_over_initial": 0.34889936976936936,
+                "finite_time_exponent_per_tau": -0.00033517131379965677
+              },
+              {
+                "periods": 1000.0,
+                "distance": 2.102119052195283e-07,
+                "distance_over_initial": 0.3522780476630237,
+                "finite_time_exponent_per_tau": -0.00016605184409753193
+              },
+              {
+                "periods": 2500.0,
+                "distance": 2.3542952084392957e-07,
+                "distance_over_initial": 0.39453832017044094,
+                "finite_time_exponent_per_tau": -5.920812211628638e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 2.2852395310007618e-07,
+                "distance_over_initial": 0.3829658075657484,
+                "finite_time_exponent_per_tau": -3.055168746894275e-05
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 5.967215573438438e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602523979812812,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 4.855692143005763e-07,
+                "distance_over_initial": 0.8137282930785436,
+                "finite_time_exponent_per_tau": -0.0003280641122455947
+              },
+              {
+                "periods": 500.0,
+                "distance": 4.3166079943361965e-07,
+                "distance_over_initial": 0.72338730538754,
+                "finite_time_exponent_per_tau": -0.00010307208599632014
+              },
+              {
+                "periods": 1000.0,
+                "distance": 4.358409568981126e-07,
+                "distance_over_initial": 0.7303925114389184,
+                "finite_time_exponent_per_tau": -5.000221815515838e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 4.881257092020369e-07,
+                "distance_over_initial": 0.8180125272745398,
+                "finite_time_exponent_per_tau": -1.2788266979843332e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 4.738081670909722e-07,
+                "distance_over_initial": 0.7940188539526044,
+                "finite_time_exponent_per_tau": -7.3417561701107485e-06
+              }
+            ]
+          },
+          {
+            "particle": 1,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 6.073775701857612e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602523997816687,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 1.0156497048285862e-07,
+                "distance_over_initial": 0.16721883630275622,
+                "finite_time_exponent_per_tau": -0.002846409647221696
+              },
+              {
+                "periods": 500.0,
+                "distance": 9.028919406242541e-08,
+                "distance_over_initial": 0.14865414611015557,
+                "finite_time_exponent_per_tau": -0.0006067409267680556
+              },
+              {
+                "periods": 1000.0,
+                "distance": 9.116352982009443e-08,
+                "distance_over_initial": 0.15009367203371185,
+                "finite_time_exponent_per_tau": -0.000301836665138733
+              },
+              {
+                "periods": 2500.0,
+                "distance": 1.020997317313868e-07,
+                "distance_over_initial": 0.16809927916857462,
+                "finite_time_exponent_per_tau": -0.0001135220713385586
+              },
+              {
+                "periods": 5000.0,
+                "distance": 9.910496099132079e-08,
+                "distance_over_initial": 0.16316862172076982,
+                "finite_time_exponent_per_tau": -5.77086632073184e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_position_1e-6_orbit_radius",
+            "initial_separation": 7.272381891872073e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602523990485713,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 4.1168426557973953e-07,
+                "distance_over_initial": 0.5660927488418279,
+                "finite_time_exponent_per_tau": -0.0009055874037995262
+              },
+              {
+                "periods": 500.0,
+                "distance": 4.0992982030551224e-07,
+                "distance_over_initial": 0.5636802720215607,
+                "finite_time_exponent_per_tau": -0.00018247689787303741
+              },
+              {
+                "periods": 1000.0,
+                "distance": 4.0886700834262587e-07,
+                "distance_over_initial": 0.5622188361691968,
+                "finite_time_exponent_per_tau": -9.16516207187012e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 3.604468703662735e-07,
+                "distance_over_initial": 0.4956379845358842,
+                "finite_time_exponent_per_tau": -4.468494588737922e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 4.149841200247951e-07,
+                "distance_over_initial": 0.5706302641897824,
+                "finite_time_exponent_per_tau": -1.785762395800107e-05
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "tangential_position_1e-6_orbit_radius",
+            "initial_separation": 7.272381892130682e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602524000672111,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 5.830603165909139e-07,
+                "distance_over_initial": 0.8017460100958578,
+                "finite_time_exponent_per_tau": -0.0003516742004455367
+              },
+              {
+                "periods": 500.0,
+                "distance": 5.805741737972787e-07,
+                "distance_over_initial": 0.7983274014054568,
+                "finite_time_exponent_per_tau": -7.169500093059197e-05
+              },
+              {
+                "periods": 1000.0,
+                "distance": 5.790675358351932e-07,
+                "distance_over_initial": 0.7962556758216893,
+                "finite_time_exponent_per_tau": -3.6261057535630114e-05
+              },
+              {
+                "periods": 2500.0,
+                "distance": 5.104932629154845e-07,
+                "distance_over_initial": 0.7019615725459637,
+                "finite_time_exponent_per_tau": -2.2528485098999966e-05
+              },
+              {
+                "periods": 5000.0,
+                "distance": 5.877335844824284e-07,
+                "distance_over_initial": 0.8081720586186552,
+                "finite_time_exponent_per_tau": -6.779373482810613e-06
+              }
+            ]
+          },
+          {
+            "particle": 2,
+            "direction": "radial_velocity_1e-3_secular_speed",
+            "initial_separation": 7.282771473296793e-07,
+            "classification": "PROVISIONAL_CR",
+            "minimum_pair_distance_R": 0.5602523993743358,
+            "checkpoints": [
+              {
+                "periods": 100.0,
+                "distance": 9.273308764500729e-08,
+                "distance_over_initial": 0.12733213994840417,
+                "finite_time_exponent_per_tau": -0.003280113876102867
+              },
+              {
+                "periods": 500.0,
+                "distance": 9.23432226779731e-08,
+                "distance_over_initial": 0.12679681494409273,
+                "finite_time_exponent_per_tau": -0.0006573638226687764
+              },
+              {
+                "periods": 1000.0,
+                "distance": 9.210320863584478e-08,
+                "distance_over_initial": 0.12646725078983034,
+                "finite_time_exponent_per_tau": -0.000329096117697776
+              },
+              {
+                "periods": 2500.0,
+                "distance": 8.119261469036091e-08,
+                "distance_over_initial": 0.11148587455759658,
+                "finite_time_exponent_per_tau": -0.0001396652986938014
+              },
+              {
+                "periods": 5000.0,
+                "distance": 9.347670526201384e-08,
+                "distance_over_initial": 0.1283532040031162,
+                "finite_time_exponent_per_tau": -6.534804589050082e-05
+              }
+            ]
+          }
+        ],
+        "one_degree_RF_phase_trials": [
+          {
+            "phase_channel": 1,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              16.400708251007565,
+              -14.538372362849113
+            ],
+            "window_turns": [
+              [
+                5.457466152081609,
+                -4.8449952883712015
+              ],
+              [
+                5.475750257484189,
+                -4.853300649969757
+              ],
+              [
+                5.46749184144152,
+                -4.840076424508338
+              ]
+            ],
+            "min_pair_distance_R": 0.5602343019857454
+          },
+          {
+            "phase_channel": 2,
+            "delta_degrees": 1.0,
+            "classification": "STRICT_CR",
+            "turns": [
+              16.400429233058624,
+              -14.538747990583358
+            ],
+            "window_turns": [
+              [
+                5.457076170522629,
+                -4.84554889408848
+              ],
+              [
+                5.47583513429976,
+                -4.853267697618509
+              ],
+              [
+                5.467517928236222,
+                -4.839931398876712
+              ]
+            ],
+            "min_pair_distance_R": 0.5602423982927821
+          }
+        ],
+        "interpretation": "Finite-time evidence only; no global basin fraction and no asymptotic attraction claim."
+      },
+      "Coulomb_scale_diagnostic": [
+        {
+          "sC": 0,
+          "frequency_Hz": [
+            0.05405106955350178,
+            -0.04873410162106085
+          ],
+          "pair_min_R": 0.5590098103296032,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.1,
+          "frequency_Hz": [
+            0.05403983038489793,
+            -0.04873516934698988
+          ],
+          "pair_min_R": 0.5591448689607398,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.25,
+          "frequency_Hz": [
+            0.054020075684740945,
+            -0.04873661032278041
+          ],
+          "pair_min_R": 0.5594656023879794,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.5,
+          "frequency_Hz": [
+            0.053979551538940115,
+            -0.0487385872310311
+          ],
+          "pair_min_R": 0.5596636070416265,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 0.75,
+          "frequency_Hz": [
+            0.053929716880706836,
+            -0.048740039268869995
+          ],
+          "pair_min_R": 0.5600184080141498,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1,
+          "frequency_Hz": [
+            0.053870851404857964,
+            -0.048740973289374705
+          ],
+          "pair_min_R": 0.5603608619958982,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 1.5,
+          "frequency_Hz": [
+            0.053727390553817735,
+            -0.048741312387699104
+          ],
+          "pair_min_R": 0.5609311596104696,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 2,
+          "frequency_Hz": [
+            0.05355314105732957,
+            -0.04873964705189365
+          ],
+          "pair_min_R": 0.5614878310211036,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 3,
+          "frequency_Hz": [
+            0.05313726708843451,
+            -0.0487304185960825
+          ],
+          "pair_min_R": 0.562709351916109,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        },
+        {
+          "sC": 5,
+          "frequency_Hz": [
+            0.05218295170632686,
+            -0.04868845596140486
+          ],
+          "pair_min_R": 0.5651437058683806,
+          "screen_class": "SCREEN_CR",
+          "ten_turn_requirement_met": false
+        }
+      ],
+      "source_note": "The dimensional map is a legacy candidate mapping, not a jointly identified physical particle pair."
+    }
+  ],
+  "global_interpretation": "These are reproducible finite-horizon counterrotating trajectories. They are not labeled proven attractors."
+}

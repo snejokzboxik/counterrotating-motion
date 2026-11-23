@@ -1,0 +1,61 @@
+{
+  "parameter_grid_checkpoint.jsonl": {
+    "rows": 504,
+    "unique": 504,
+    "duplicates": 0
+  },
+  "coulomb_sensitivity_checkpoint.jsonl": {
+    "rows": 30,
+    "unique": 30,
+    "duplicates": 0
+  },
+  "univariate_scan_checkpoint.jsonl": {
+    "rows": 72,
+    "unique": 72,
+    "duplicates": 0
+  },
+  "multivariate_sobol_checkpoint.jsonl": {
+    "rows": 96,
+    "unique": 96,
+    "duplicates": 0
+  },
+  "basin_ensemble_checkpoint.jsonl": {
+    "rows": 96,
+    "unique": 96,
+    "duplicates": 0
+  },
+  "baseline": {
+    "rows": 3,
+    "all_retained": true,
+    "all_ten_turn_CR": true
+  },
+  "long_runs": {
+    "candidate52_periods": 50000,
+    "Local15_periods": 50000,
+    "refine12_periods": 240000,
+    "all_retained": true
+  },
+  "independent_integrators": {
+    "DOP853_runs": 3,
+    "RK4_128_runs": 3,
+    "all_opposite_signs": true
+  },
+  "variational_jacobian": {
+    "candidates": 3,
+    "max_error": 6.225499449285924e-09
+  },
+  "basin_panel": {
+    "groups": 12,
+    "total": 96
+  },
+  "checkpoint_chunks": {
+    "candidate52_50000_common_corrected": 10,
+    "local15_50000_common_corrected": 10,
+    "refine12_240k_corrected_drag": 48
+  },
+  "source_integrity": {
+    "frozen_starts_sha256": "4ed17640108ed779c622a391a99ea04cd08d0dc608d8632c6d844b74779ff10e",
+    "field_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f"
+  }
+}

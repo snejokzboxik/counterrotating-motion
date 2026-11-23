@@ -1,0 +1,19 @@
+{
+  "n": 504,
+  "unique_ids": 504,
+  "candidate_counts": {
+    "scaled_candidate52_f45hz": 168,
+    "scaled_local15_f50hz": 168,
+    "scaled_refine12_sobol17_f50hz": 168
+  },
+  "periods": 3000,
+  "steps_per_rf": 32,
+  "grid_multipliers": [
+    0.6,
+    0.8,
+    1.0,
+    1.2,
+    1.4
+  ],
+  "short_scan_interpretation": "Signs and retention only; this horizon does not satisfy ten-turn stability criterion for these slow orbits."
+}

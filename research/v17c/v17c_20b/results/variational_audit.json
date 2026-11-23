@@ -1,0 +1,250 @@
+{
+  "rows": [
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "seed": 20261123,
+      "samples": 8,
+      "max_relative_jacobian_error": 3.142494472974023e-09,
+      "errors": [
+        4.5876458187875657e-10,
+        2.8673324825586125e-10,
+        4.0017211766495553e-10,
+        3.142494472974023e-09,
+        2.2333325466749608e-10,
+        5.085781313462548e-10,
+        4.314640112717918e-10,
+        2.7556129600369455e-10
+      ],
+      "method": "analytic MFS Hessian + analytic central Coulomb derivative + Schiller-Naumann drag derivative vs central-difference independent calls to audited RHS",
+      "augmented_base_vs_audited_RK4_20p_max_abs_error": 1.8447396388232562e-13,
+      "lyapunov_qr_file": "lyapunov_candidate52_2000p.json"
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "seed": 20261123,
+      "samples": 8,
+      "max_relative_jacobian_error": 4.125398134213653e-09,
+      "errors": [
+        6.020000331563433e-10,
+        3.7552153053783134e-10,
+        4.473863779441591e-10,
+        4.125398134213653e-09,
+        2.9305138871115585e-10,
+        5.431203047252987e-10,
+        5.826056358344629e-10,
+        3.5811173471066674e-10
+      ],
+      "method": "analytic MFS Hessian + analytic central Coulomb derivative + Schiller-Naumann drag derivative vs central-difference independent calls to audited RHS",
+      "augmented_base_vs_audited_RK4_20p_max_abs_error": 2.13166290174982e-13,
+      "lyapunov_qr_file": "lyapunov_local15_2000p.json"
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "seed": 20261123,
+      "samples": 8,
+      "max_relative_jacobian_error": 6.225499449285924e-09,
+      "errors": [
+        9.082249119440666e-10,
+        5.652744661243463e-10,
+        4.961938082636997e-10,
+        6.225499449285924e-09,
+        4.412763765504372e-10,
+        5.635088821214981e-10,
+        6.474928816080078e-10,
+        5.409246384146949e-10
+      ],
+      "method": "analytic MFS Hessian + analytic central Coulomb derivative + Schiller-Naumann drag derivative vs central-difference independent calls to audited RHS",
+      "augmented_base_vs_audited_RK4_20p_max_abs_error": 1.9201307210892082e-13,
+      "lyapunov_qr_file": "lyapunov_refine12_sobol17_2000p.json"
+    }
+  ],
+  "phase_perturbation_rows": [
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "phase_channel": 1,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        37.1704935094825,
+        -14.135632207236888
+      ],
+      "window_turns": [
+        [
+          12.396892566043427,
+          -4.703954807284312
+        ],
+        [
+          12.398077700164,
+          -4.713126010201782
+        ],
+        [
+          12.37552324327511,
+          -4.7185513897510125
+        ]
+      ],
+      "min_pair_distance_R": 0.6057642674760658,
+      "mean_radius_R": [
+        0.5256445915598955,
+        0.7148697432354734
+      ]
+    },
+    {
+      "candidate": "scaled_candidate52_f45hz",
+      "phase_channel": 2,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        37.1709673697038,
+        -14.135888959249103
+      ],
+      "window_turns": [
+        [
+          12.396883287238524,
+          -4.704236959213649
+        ],
+        [
+          12.398283631410903,
+          -4.7130138443744904
+        ],
+        [
+          12.375800451052942,
+          -4.718638155661497
+        ]
+      ],
+      "min_pair_distance_R": 0.6057495323762324,
+      "mean_radius_R": [
+        0.5256447270347626,
+        0.7148697272601511
+      ]
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "phase_channel": 1,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        19.011004598009933,
+        -15.908552930773618
+      ],
+      "window_turns": [
+        [
+          6.351144129026601,
+          -5.308285045352875
+        ],
+        [
+          6.34792347705307,
+          -5.305277781705657
+        ],
+        [
+          6.311936991930214,
+          -5.294990103714825
+        ]
+      ],
+      "min_pair_distance_R": 0.5882879169780786,
+      "mean_radius_R": [
+        0.5492967362949412,
+        0.7658705796716391
+      ]
+    },
+    {
+      "candidate": "scaled_local15_f50hz",
+      "phase_channel": 2,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        19.011611188860073,
+        -15.908812447750218
+      ],
+      "window_turns": [
+        [
+          6.351516690402159,
+          -5.308503243200556
+        ],
+        [
+          6.3481889635344055,
+          -5.305215489147312
+        ],
+        [
+          6.311905534923159,
+          -5.295093715402764
+        ]
+      ],
+      "min_pair_distance_R": 0.5882792101063428,
+      "mean_radius_R": [
+        0.5492969555732754,
+        0.7658704362311496
+      ]
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "phase_channel": 1,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        16.400708251007565,
+        -14.538372362849113
+      ],
+      "window_turns": [
+        [
+          5.457466152081609,
+          -4.8449952883712015
+        ],
+        [
+          5.475750257484189,
+          -4.853300649969757
+        ],
+        [
+          5.46749184144152,
+          -4.840076424508338
+        ]
+      ],
+      "min_pair_distance_R": 0.5602343019857454,
+      "mean_radius_R": [
+        0.5557072535712227,
+        0.7515114548473003
+      ]
+    },
+    {
+      "candidate": "scaled_refine12_sobol17_f50hz",
+      "phase_channel": 2,
+      "delta_degrees": 1.0,
+      "classification": "STRICT_CR",
+      "retained": true,
+      "completed_periods": 15000,
+      "turns": [
+        16.400429233058624,
+        -14.538747990583358
+      ],
+      "window_turns": [
+        [
+          5.457076170522629,
+          -4.84554889408848
+        ],
+        [
+          5.47583513429976,
+          -4.853267697618509
+        ],
+        [
+          5.467517928236222,
+          -4.839931398876712
+        ]
+      ],
+      "min_pair_distance_R": 0.5602423982927821,
+      "mean_radius_R": [
+        0.5557072646389021,
+        0.7515113638271536
+      ]
+    }
+  ],
+  "phase_note": "RF phase shifts change the forcing point on its phase torus and are reported as basin sensitivity, not mechanical Lyapunov directions."
+}

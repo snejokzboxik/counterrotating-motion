@@ -1,0 +1,199 @@
+{
+  "candidate": "scaled_local15_f50hz",
+  "source_start": {
+    "ensemble": "rest",
+    "start_index": 7,
+    "source": "V12B rescaled_legacy_candidate_validation; shared frozen start with strict CR in all candidates",
+    "initial": [
+      -0.43198942081431174,
+      0.5283981626447145,
+      -0.2081263903528452,
+      0.0,
+      0.0,
+      0.0,
+      0.46002277668273484,
+      -0.6197711870406251,
+      0.35629591811448336,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "phase": [
+      6.131576903852475,
+      1.3781272771727673
+    ],
+    "seed": 20261850,
+    "selection_rule": "maximize minimum radial-wall, axial, and finite-body pair clearance among shared strict-CR rest starts"
+  },
+  "requested_periods": 50000,
+  "completed_periods": 50000,
+  "steps_per_period": 64,
+  "transient_periods": 5000,
+  "status": 0,
+  "retained": true,
+  "late_turns": [
+    57.02655078293588,
+    -47.73397644924214
+  ],
+  "late_frequency_Hz": [
+    0.06336283420326208,
+    -0.05303775161026905
+  ],
+  "late_mean_radius_R": [
+    0.5492974235948056,
+    0.7658947732809188
+  ],
+  "late_consistent_sign_each_chunk": [
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "all_late_chunks_counterrotating": true,
+  "minimum_pair_distance_R": 0.5882232585575116,
+  "number_of_checkpoints": 10,
+  "energy_angular_momentum": {
+    "delta_total_energy": -0.11138606929954942,
+    "explicit_RF_work": 815.7238651706942,
+    "drag_work": -815.8819382720757,
+    "energy_residual": 0.04668703208187708,
+    "relative_energy_residual": 5.7222779291760905e-05,
+    "delta_total_Lz": 0.05311568310844821,
+    "integrated_total_torque": 0.05419161090415514,
+    "angular_momentum_residual": -0.0010759277957069283,
+    "Coulomb_torque_particles": [
+      -0.030088311741545415,
+      0.030088311741545415
+    ],
+    "internal_Coulomb_torque_sum": 0.0,
+    "RF_torque_particles": [
+      117.95440684769915,
+      -235.88105517501833
+    ],
+    "drag_torque_particles": [
+      -117.94825567314385,
+      235.92909561136722
+    ],
+    "Coulomb_work_particles": [
+      0.00012102564920850111,
+      -0.00012745761760368733
+    ],
+    "DC_work_particles": [
+      -0.0021643222600517577,
+      -0.032791929910739495
+    ],
+    "gravity_work_particles": [
+      0.0007862049373854478,
+      0.1088694846520887
+    ],
+    "Coulomb_potential_start_end": [
+      6.067411200960545e-06,
+      1.2502083658188685e-05
+    ]
+  },
+  "scope_note": "The inherited 240k archive stores initial conditions and summaries only. This is a corrected-drag replay that generates the missing state checkpoint; finite time does not prove an attractor."
+}
