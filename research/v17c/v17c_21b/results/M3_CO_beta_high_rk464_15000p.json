@@ -1,0 +1,120 @@
+{
+  "label": "M3_CO_beta_high",
+  "parameter": "beta",
+  "factor": 1.3,
+  "m3_classification": "CO_MINUS_MINUS",
+  "m3_root": {
+    "radii_R": [
+      0.6062949660192534,
+      0.8063763313551007
+    ],
+    "omega_over_Omega1": [
+      -0.0003527824101410044,
+      -0.0014569162155895546
+    ],
+    "frequency_Hz": [
+      -0.01763912050705022,
+      -0.07284581077947773
+    ],
+    "mean_z_R": [
+      -0.24811244615096098,
+      -0.6568012237157793
+    ]
+  },
+  "initial_state_from_m3_circular_mean": [
+    0.6062949660192534,
+    0.0,
+    -0.24811244615096098,
+    0.0,
+    -0.00021389019936863055,
+    0.0,
+    0.8063763313551007,
+    0.0,
+    -0.6568012237157793,
+    0.0,
+    -0.001174822753018862,
+    0.0
+  ],
+  "initial_rf_phases_rad": [
+    2.306674444032225,
+    5.2344800999183
+  ],
+  "field_parameters": {
+    "A": 0.03492413282400757,
+    "B": 0.15631667332941065,
+    "nu": 3.2196773638017477,
+    "beta": 0.020005126882621172
+  },
+  "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+  "numerics": {
+    "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+    "periods_requested": 15000,
+    "periods_completed": 15000,
+    "steps_per_RF1_period": 64,
+    "skip_periods": 1000,
+    "saved_stride_steps": 640,
+    "wall_time_s": 59.28059649991337
+  },
+  "status_code": 0,
+  "classification": "UNRESOLVED",
+  "turns_late": [
+    -4.998955414178216,
+    -17.99365626551615
+  ],
+  "window_turns_late": [
+    [
+      -1.6350650255582795,
+      -5.997740422076121
+    ],
+    [
+      -1.6926835614831561,
+      -5.996329158418448
+    ],
+    [
+      -1.6712068271367384,
+      -5.999586685021915
+    ]
+  ],
+  "window_signs": [
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "frequency_Hz_from_turns": [
+    -0.017853412193493626,
+    -0.06426305809112912
+  ],
+  "mean_radius_R": [
+    0.6070349432625421,
+    0.8067651306715646
+  ],
+  "r_min_R": [
+    0.5516785465071027,
+    0.7380457245178317
+  ],
+  "r_max_R": [
+    0.6869101142551661,
+    0.8457717982831532
+  ],
+  "max_abs_z_R": [
+    0.24831082710079763,
+    0.6570431965425791
+  ],
+  "max_speed_dimensionless": [
+    0.11449594682199993,
+    0.06772511577181486
+  ],
+  "minimum_center_distance_R": 0.4284866671065962,
+  "mean_center_distance_R": 1.031536736038063,
+  "mean_Coulomb_potential_proxy": 1.0958053256657145e-05,
+  "M3_prediction_is_not_retargeted": true
+}

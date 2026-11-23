@@ -1,0 +1,845 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "label": "M3_CR_nominal",
+      "parameter": "A",
+      "factor": 1.0,
+      "m3_classification": "CR_PLUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5550374732496791,
+          0.7513382758992039
+        ],
+        "omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "frequency_Hz": [
+          0.054722002400505655,
+          -0.0487398517347922
+        ],
+        "mean_z_R": [
+          -0.3225715212699762,
+          -0.8538342435183225
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5550374732496791,
+        0.0,
+        -0.3225715212699762,
+        0.0,
+        0.0006074552388707907,
+        0.0,
+        0.7513382758992039,
+        0.0,
+        -0.8538342435183225,
+        0.0,
+        -0.0007324023234000319,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03492413282400757,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 31.930886800051667
+      },
+      "status_code": 0,
+      "classification": "CR_PLUS_MINUS",
+      "turns_late": [
+        15.293876594415591,
+        -13.569881536123445
+      ],
+      "window_turns_late": [
+        [
+          5.095175008346813,
+          -4.521471133037746
+        ],
+        [
+          5.09324881844308,
+          -4.524669655930405
+        ],
+        [
+          5.105452767625074,
+          -4.523740747155631
+        ]
+      ],
+      "window_signs": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        0.05462098783719854,
+        -0.0484638626290123
+      ],
+      "mean_radius_R": [
+        0.5557077243775507,
+        0.7515110255398632
+      ],
+      "r_min_R": [
+        0.5061560858520654,
+        0.6978989802060325
+      ],
+      "r_max_R": [
+        0.6389315396947378,
+        0.7818966211917205
+      ],
+      "max_abs_z_R": [
+        0.3227843671352056,
+        0.854022789676917
+      ],
+      "max_speed_dimensionless": [
+        0.10067357673142432,
+        0.06057990564410373
+      ],
+      "minimum_center_distance_R": 0.546996909072177,
+      "mean_center_distance_R": 1.0367077059723457,
+      "mean_Coulomb_potential_proxy": 1.0330442585564253e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_CO_A_low",
+      "parameter": "A",
+      "factor": 0.8,
+      "m3_classification": "CO_MINUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5754536134790601,
+          0.7599603726925079
+        ],
+        "omega_over_Omega1": [
+          -0.001022191714874765,
+          -0.001242041838123395
+        ],
+        "frequency_Hz": [
+          -0.05110958574373825,
+          -0.062102091906169755
+        ],
+        "mean_z_R": [
+          -0.32257422280732767,
+          -0.8538334602491573
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5754536134790601,
+        0.0,
+        -0.32257422280732767,
+        0.0,
+        -0.0005882239159930407,
+        0.0,
+        0.7599603726925079,
+        0.0,
+        -0.8538334602491573,
+        0.0,
+        -0.0009439025781999429,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.027939306259206056,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 59.14222600008361
+      },
+      "status_code": 0,
+      "classification": "CO_MINUS_MINUS",
+      "turns_late": [
+        -14.561809083916735,
+        -17.28313455095664
+      ],
+      "window_turns_late": [
+        [
+          -4.858318083985398,
+          -5.757416791183845
+        ],
+        [
+          -4.860468086510163,
+          -5.76660620336194
+        ],
+        [
+          -4.843022913420888,
+          -5.7591115564114395
+        ]
+      ],
+      "window_signs": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        -0.05200646101398834,
+        -0.06172548053913085
+      ],
+      "mean_radius_R": [
+        0.57591953970515,
+        0.7600963767489556
+      ],
+      "r_min_R": [
+        0.532950833592737,
+        0.6968340170459445
+      ],
+      "r_max_R": [
+        0.6255418148761784,
+        0.7871349614824599
+      ],
+      "max_abs_z_R": [
+        0.32278769601223267,
+        0.8540287883918682
+      ],
+      "max_speed_dimensionless": [
+        0.087996179973867,
+        0.054950925232709676
+      ],
+      "minimum_center_distance_R": 0.5475962822295234,
+      "mean_center_distance_R": 1.0470340518109553,
+      "mean_Coulomb_potential_proxy": 1.0295956176410677e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_A_sign_before",
+      "parameter": "A",
+      "factor": 0.90234375,
+      "m3_classification": "CO_MINUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5658316776564778,
+          0.7558243580334805
+        ],
+        "omega_over_Omega1": [
+          -4.242382976890334e-06,
+          -0.0011131588309465218
+        ],
+        "frequency_Hz": [
+          -0.0002121191488445167,
+          -0.05565794154732609
+        ],
+        "mean_z_R": [
+          -0.3225729136272023,
+          -0.85383383982578
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5658316776564778,
+        0.0,
+        -0.3225729136272023,
+        0.0,
+        -2.40047467707514e-06,
+        0.0,
+        0.7558243580334805,
+        0.0,
+        -0.85383383982578,
+        0.0,
+        -0.0008413525587894545,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03151357297791308,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 59.4257167999167
+      },
+      "status_code": 0,
+      "classification": "UNRESOLVED",
+      "turns_late": [
+        -0.0934827844498735,
+        -15.49726226534032
+      ],
+      "window_turns_late": [
+        [
+          -0.027276242338589603,
+          -5.1649021705131135
+        ],
+        [
+          -0.031071554373641105,
+          -5.163482795981334
+        ],
+        [
+          -0.035134987737647325,
+          -5.1688772988455565
+        ]
+      ],
+      "window_signs": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        -0.0003338670873209768,
+        -0.05534736523335828
+      ],
+      "mean_radius_R": [
+        0.5664004006332682,
+        0.7559777968226452
+      ],
+      "r_min_R": [
+        0.5199913758680925,
+        0.6976002558392128
+      ],
+      "r_max_R": [
+        0.6331951489909542,
+        0.7847573748143223
+      ],
+      "max_abs_z_R": [
+        0.3227861463993355,
+        0.8540261203891659
+      ],
+      "max_speed_dimensionless": [
+        0.09466081192575984,
+        0.05784231270638614
+      ],
+      "minimum_center_distance_R": 0.5471406886251268,
+      "mean_center_distance_R": 1.046212579081977,
+      "mean_Coulomb_potential_proxy": 1.0261804235528443e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_A_sign_after",
+      "parameter": "A",
+      "factor": 0.903125,
+      "m3_classification": "CR_PLUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5657518816579079,
+          0.7557905960596617
+        ],
+        "omega_over_Omega1": [
+          4.0507463725839895e-06,
+          -0.0011121119780618054
+        ],
+        "frequency_Hz": [
+          0.00020253731862919947,
+          -0.05560559890309027
+        ],
+        "mean_z_R": [
+          -0.32257290303305536,
+          -0.8538338428973898
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5657518816579079,
+        0.0,
+        -0.32257290303305536,
+        0.0,
+        2.291717382408337e-06,
+        0.0,
+        0.7557905960596617,
+        0.0,
+        -0.8538338428973898,
+        0.0,
+        -0.0008405237747844213,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03154085745668183,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 58.43837079999503
+      },
+      "status_code": 0,
+      "classification": "UNRESOLVED",
+      "turns_late": [
+        0.022257002922147124,
+        -15.482859662190295
+      ],
+      "window_turns_late": [
+        [
+          0.015016165716739575,
+          -5.160444576406008
+        ],
+        [
+          0.0036017538408099877,
+          -5.159442602686641
+        ],
+        [
+          0.003639083364598211,
+          -5.162972483097343
+        ]
+      ],
+      "window_signs": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        7.948929615052543e-05,
+        -0.05529592736496534
+      ],
+      "mean_radius_R": [
+        0.5663230594204265,
+        0.7559439013577585
+      ],
+      "r_min_R": [
+        0.5198841318213888,
+        0.6976042760110165
+      ],
+      "r_max_R": [
+        0.6332476055318719,
+        0.7847375909049196
+      ],
+      "max_abs_z_R": [
+        0.32278613669296363,
+        0.8540260256272068
+      ],
+      "max_speed_dimensionless": [
+        0.09471044897494614,
+        0.05786431733137894
+      ],
+      "minimum_center_distance_R": 0.5471383408916066,
+      "mean_center_distance_R": 1.0485824575307325,
+      "mean_Coulomb_potential_proxy": 1.0238574808746602e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_CO_beta_high",
+      "parameter": "beta",
+      "factor": 1.3,
+      "m3_classification": "CO_MINUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.6062949660192534,
+          0.8063763313551007
+        ],
+        "omega_over_Omega1": [
+          -0.0003527824101410044,
+          -0.0014569162155895546
+        ],
+        "frequency_Hz": [
+          -0.01763912050705022,
+          -0.07284581077947773
+        ],
+        "mean_z_R": [
+          -0.24811244615096098,
+          -0.6568012237157793
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.6062949660192534,
+        0.0,
+        -0.24811244615096098,
+        0.0,
+        -0.00021389019936863055,
+        0.0,
+        0.8063763313551007,
+        0.0,
+        -0.6568012237157793,
+        0.0,
+        -0.001174822753018862,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03492413282400757,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.020005126882621172
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 59.28059649991337
+      },
+      "status_code": 0,
+      "classification": "UNRESOLVED",
+      "turns_late": [
+        -4.998955414178216,
+        -17.99365626551615
+      ],
+      "window_turns_late": [
+        [
+          -1.6350650255582795,
+          -5.997740422076121
+        ],
+        [
+          -1.6926835614831561,
+          -5.996329158418448
+        ],
+        [
+          -1.6712068271367384,
+          -5.999586685021915
+        ]
+      ],
+      "window_signs": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        -0.017853412193493626,
+        -0.06426305809112912
+      ],
+      "mean_radius_R": [
+        0.6070349432625421,
+        0.8067651306715646
+      ],
+      "r_min_R": [
+        0.5516785465071027,
+        0.7380457245178317
+      ],
+      "r_max_R": [
+        0.6869101142551661,
+        0.8457717982831532
+      ],
+      "max_abs_z_R": [
+        0.24831082710079763,
+        0.6570431965425791
+      ],
+      "max_speed_dimensionless": [
+        0.11449594682199993,
+        0.06772511577181486
+      ],
+      "minimum_center_distance_R": 0.4284866671065962,
+      "mean_center_distance_R": 1.031536736038063,
+      "mean_Coulomb_potential_proxy": 1.0958053256657145e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_CR_nominal",
+      "parameter": "A",
+      "factor": 1.0,
+      "m3_classification": "CR_PLUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5550374732496791,
+          0.7513382758992039
+        ],
+        "omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "frequency_Hz": [
+          0.054722002400505655,
+          -0.0487398517347922
+        ],
+        "mean_z_R": [
+          -0.3225715212699762,
+          -0.8538342435183225
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5550374732496791,
+        0.0,
+        -0.3225715212699762,
+        0.0,
+        0.0006074552388707907,
+        0.0,
+        0.7513382758992039,
+        0.0,
+        -0.8538342435183225,
+        0.0,
+        -0.0007324023234000319,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03492413282400757,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 15000,
+        "periods_completed": 15000,
+        "steps_per_RF1_period": 96,
+        "skip_periods": 1000,
+        "saved_stride_steps": 960,
+        "wall_time_s": 87.75717720005196
+      },
+      "status_code": 0,
+      "classification": "CR_PLUS_MINUS",
+      "turns_late": [
+        15.297449348413672,
+        -13.568079225388171
+      ],
+      "window_turns_late": [
+        [
+          5.096198270204037,
+          -4.520854359836628
+        ],
+        [
+          5.0943088066682485,
+          -4.524243042444303
+        ],
+        [
+          5.106942271541173,
+          -4.52298182310753
+        ]
+      ],
+      "window_signs": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        0.05463374767290597,
+        -0.04845742580495775
+      ],
+      "mean_radius_R": [
+        0.5557002871187828,
+        0.7515016702455651
+      ],
+      "r_min_R": [
+        0.5061380178318599,
+        0.6978003598078039
+      ],
+      "r_max_R": [
+        0.6389647692175755,
+        0.7818941552568995
+      ],
+      "max_abs_z_R": [
+        0.32278436445176373,
+        0.8540227907153272
+      ],
+      "max_speed_dimensionless": [
+        0.10072344549427045,
+        0.060520991825243974
+      ],
+      "minimum_center_distance_R": 0.5469879043503093,
+      "mean_center_distance_R": 1.0366758220097554,
+      "mean_Coulomb_potential_proxy": 1.0330820020625212e-05,
+      "M3_prediction_is_not_retargeted": true
+    },
+    {
+      "label": "M3_CR_A095_long",
+      "parameter": "A",
+      "factor": 0.95,
+      "m3_classification": "CR_PLUS_MINUS",
+      "m3_root": {
+        "radii_R": [
+          0.5607755224494112,
+          0.7537026580665799
+        ],
+        "omega_over_Omega1": [
+          0.0005163287463770858,
+          -0.001047535330710707
+        ],
+        "frequency_Hz": [
+          0.02581643731885429,
+          -0.05237676653553534
+        ],
+        "mean_z_R": [
+          -0.3225722511156788,
+          -0.8538340319107969
+        ]
+      },
+      "initial_state_from_m3_circular_mean": [
+        0.5607755224494112,
+        0.0,
+        -0.3225722511156788,
+        0.0,
+        0.00028954452250525985,
+        0.0,
+        0.7537026580665799,
+        0.0,
+        -0.8538340319107969,
+        0.0,
+        -0.0007895301631753136,
+        0.0
+      ],
+      "initial_rf_phases_rad": [
+        2.306674444032225,
+        5.2344800999183
+      ],
+      "field_parameters": {
+        "A": 0.03317792618280719,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825
+      },
+      "model": "V20B corrected refine12; complete 8-mode 2D MFS transverse field; 3D 12-state RK4; Coulomb, gravity, ideal DC quadrupole, Cunningham-corrected Stokes x Schiller-Naumann; polarization off; infinite rods",
+      "numerics": {
+        "integrator": "published V17C.17 Numba RK4 _integrate_trace",
+        "periods_requested": 26000,
+        "periods_completed": 26000,
+        "steps_per_RF1_period": 64,
+        "skip_periods": 1000,
+        "saved_stride_steps": 640,
+        "wall_time_s": 104.53985229996033
+      },
+      "status_code": 0,
+      "classification": "CR_PLUS_MINUS",
+      "turns_late": [
+        12.841669672979656,
+        -26.045963613324787
+      ],
+      "window_turns_late": [
+        [
+          4.264266504246434,
+          -8.687366578470415
+        ],
+        [
+          4.29961222857503,
+          -8.67246826748501
+        ],
+        [
+          4.277790940158094,
+          -8.686128767368785
+        ]
+      ],
+      "window_signs": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "frequency_Hz_from_turns": [
+        0.025683339345959313,
+        -0.05209192722664958
+      ],
+      "mean_radius_R": [
+        0.5613917913664486,
+        0.7538657418514587
+      ],
+      "r_min_R": [
+        0.513348783254386,
+        0.6977978901276831
+      ],
+      "r_max_R": [
+        0.6362091966869705,
+        0.7834373389755536
+      ],
+      "max_abs_z_R": [
+        0.32278532317868447,
+        0.854024588719173
+      ],
+      "max_speed_dimensionless": [
+        0.09764639921046482,
+        0.05918183362131927
+      ],
+      "minimum_center_distance_R": 0.547031654337497,
+      "mean_center_distance_R": 1.037644313285525,
+      "mean_Coulomb_potential_proxy": 1.0342232780274887e-05,
+      "M3_prediction_is_not_retargeted": true
+    }
+  ]
+}

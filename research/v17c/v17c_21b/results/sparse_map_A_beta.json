@@ -1,0 +1,726 @@
+{
+  "study": "V17C.21.2 sparse transition-focused M3 map",
+  "source_commit": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+  "map_id": "A_beta",
+  "x_parameter": "A",
+  "y_parameter": "beta",
+  "x_factors": [
+    0.9,
+    0.95,
+    1.0
+  ],
+  "y_factors": [
+    1.0,
+    1.2,
+    1.3
+  ],
+  "rows": [
+    {
+      "study": "V17C.21.2 sparse transition-focused M3 map",
+      "source_commit": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "map_id": "A_beta",
+      "x_parameter": "A",
+      "y_parameter": "beta",
+      "y_factor": 1.0,
+      "y_value": 0.015388559140477825,
+      "x_factors": [
+        0.9,
+        0.95,
+        1.0
+      ],
+      "fixed_particle_parameters": true,
+      "grid": [
+        96,
+        12,
+        12
+      ],
+      "cutoff": 0.05,
+      "method": "newton_krylov",
+      "points": [
+        {
+          "x_factor": 1.0,
+          "x_value": 0.03492413282400757,
+          "status": "VERIFIED_ROOT",
+          "classification": "CR_PLUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5550374732496791,
+              0.7513382758992039
+            ],
+            "omega_over_Omega1": [
+              0.0010944400480101132,
+              -0.000974797034695844
+            ],
+            "frequency_Hz": [
+              0.054722002400505655,
+              -0.0487398517347922
+            ],
+            "mean_z_R": [
+              -0.3225715212699762,
+              -0.8538342435183225
+            ]
+          },
+          "scaled_balance_residual": [
+            -2.362082663525441e-14,
+            2.596664203102783e-13,
+            1.1485766764768313e-16,
+            2.3658636068437473e-15,
+            -2.846030702774449e-15,
+            -8.999725064576941e-18
+          ],
+          "scaled_balance_max_norm": 2.596664203102783e-13,
+          "outer_nfev": 3,
+          "balance_evaluations": 22,
+          "wall_time_s": 0.0,
+          "geometry": {
+            "radial_wall_clearance_R": 0.23794957644174164,
+            "ideal_axial_envelope_clearance_R": 1.1354536088226233,
+            "pair_surface_clearance_R": 0.5540310140054301,
+            "omega_zero_tolerance": 1e-06
+          },
+          "seed_source": "continuation_beta factor 1.000000",
+          "inner": [
+            {
+              "mean_speed": 0.045583625457961637,
+              "rms_micromotion": 0.039087675616442816,
+              "max_micromotion": 0.05019107673362611,
+              "max_speed": 0.07593785907738004,
+              "mean_Re_estimate": 0.30284528068206074,
+              "max_Re_estimate": 0.5045106003666323,
+              "rms_unresolved_fast_force": 1.030629714753607e-15,
+              "relative_original_fast_equation_residual": 8.885117004719852e-15,
+              "rms_unresolved_slow_force": 1.0625133355301573e-06,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.00047279101863256383,
+              "number_of_fast_modes": 13452,
+              "number_of_excluded_rf_combination_modes": 276,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 3.5262650592950787e-15
+            },
+            {
+              "mean_speed": 0.03424729578275619,
+              "rms_micromotion": 0.021677925418140367,
+              "max_micromotion": 0.030130419268151163,
+              "max_speed": 0.052081230490041076,
+              "mean_Re_estimate": 1.4989273758037713,
+              "max_Re_estimate": 2.279478725627602,
+              "rms_unresolved_fast_force": 6.9920049623749e-16,
+              "relative_original_fast_equation_residual": 6.823925665295468e-15,
+              "rms_unresolved_slow_force": 1.890512393870842e-05,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.0022502640512369718,
+              "number_of_fast_modes": 13440,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 4.808889403621135e-15
+            }
+          ]
+        },
+        {
+          "x_factor": 0.95,
+          "x_value": 0.03317792618280719,
+          "status": "VERIFIED_ROOT",
+          "classification": "CR_PLUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5607755224494066,
+              0.753702658066582
+            ],
+            "omega_over_Omega1": [
+              0.0005163287463767824,
+              -0.001047535330710729
+            ],
+            "frequency_Hz": [
+              0.02581643731883912,
+              -0.052376766535536454
+            ],
+            "mean_z_R": [
+              -0.32257225111567883,
+              -0.8538340319107969
+            ]
+          },
+          "scaled_balance_residual": [
+            8.88381919365703e-15,
+            2.585822181377928e-13,
+            -7.284483346386983e-18,
+            -1.085287433449174e-15,
+            -2.574980159653073e-15,
+            -9.17971956586848e-17
+          ],
+          "scaled_balance_max_norm": 2.585822181377928e-13,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 187.51635109994095,
+          "geometry": {
+            "radial_wall_clearance_R": 0.23558519427436353,
+            "ideal_axial_envelope_clearance_R": 1.1354538204301488,
+            "pair_surface_clearance_R": 0.5528696916555674,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 9.219575528789498e-16,
+              "rms_unresolved_slow_force": 1.2727394558569468e-06,
+              "minimum_fast_mode_denominator": 0.005153246696502048,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 2.285857616818713e-15
+            },
+            {
+              "rms_unresolved_fast_force": 7.363721271923655e-16,
+              "rms_unresolved_slow_force": 1.9823067996748555e-05,
+              "minimum_fast_mode_denominator": 0.002129752426844963,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 5.366897059897592e-15
+            }
+          ]
+        },
+        {
+          "x_factor": 0.9,
+          "x_value": 0.03143171954160681,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5660704621721916,
+              0.7559254416867516
+            ],
+            "omega_over_Omega1": [
+              -2.9073588949896767e-05,
+              -0.0011162936221029475
+            ],
+            "frequency_Hz": [
+              -0.0014536794474948383,
+              -0.055814681105147375
+            ],
+            "mean_z_R": [
+              -0.32257294535580083,
+              -0.8538338306265614
+            ]
+          },
+          "scaled_balance_residual": [
+            -3.772144763566779e-15,
+            3.117081245895825e-13,
+            -1.2485265642528387e-16,
+            4.495225026902253e-15,
+            -5.421010862427522e-16,
+            1.9118592410713627e-16
+          ],
+          "scaled_balance_max_norm": 3.117081245895825e-13,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 182.73987030005082,
+          "geometry": {
+            "radial_wall_clearance_R": 0.23336241065419394,
+            "ideal_axial_envelope_clearance_R": 1.1354540217143843,
+            "pair_surface_clearance_R": 0.5518275937709898,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 9.142634960766249e-16,
+              "rms_unresolved_slow_force": 1.3129765368044538e-06,
+              "minimum_fast_mode_denominator": 0.006824720332271848,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 3.0598410952555983e-15
+            },
+            {
+              "rms_unresolved_fast_force": 6.536634797987962e-16,
+              "rms_unresolved_slow_force": 2.0697412808609258e-05,
+              "minimum_fast_mode_denominator": 0.00014895413189293792,
+              "number_of_excluded_rf_combination_modes": 270,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 9.557898304605995e-15
+            }
+          ]
+        }
+      ],
+      "status": "ROW_COMPLETE",
+      "scope": "Sparse branch-tracked local equilibria near selected 1-D sign transitions. No global completeness or capture-probability claim."
+    },
+    {
+      "study": "V17C.21.2 sparse transition-focused M3 map",
+      "source_commit": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "map_id": "A_beta",
+      "x_parameter": "A",
+      "y_parameter": "beta",
+      "y_factor": 1.2,
+      "y_value": 0.018466270968573388,
+      "x_factors": [
+        0.9,
+        0.95,
+        1.0
+      ],
+      "fixed_particle_parameters": true,
+      "grid": [
+        96,
+        12,
+        12
+      ],
+      "cutoff": 0.05,
+      "method": "newton_krylov",
+      "points": [
+        {
+          "x_factor": 1.0,
+          "x_value": 0.03492413282400757,
+          "status": "VERIFIED_ROOT",
+          "classification": "CR_PLUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5906864188768938,
+              0.789773340156367
+            ],
+            "omega_over_Omega1": [
+              0.0001265058019184329,
+              -0.0013063374752121941
+            ],
+            "frequency_Hz": [
+              0.006325290095921645,
+              -0.06531687376060971
+            ],
+            "mean_z_R": [
+              -0.26879414117334793,
+              -0.7115330186209111
+            ]
+          },
+          "scaled_balance_residual": [
+            -4.705966824179123e-15,
+            -3.252606517456513e-14,
+            7.979050363135509e-17,
+            1.0962353342924358e-15,
+            -5.746271514173174e-14,
+            -1.0636616235145877e-16
+          ],
+          "scaled_balance_max_norm": 5.746271514173174e-14,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 0.0,
+          "geometry": {
+            "radial_wall_clearance_R": 0.1995145121845785,
+            "ideal_axial_envelope_clearance_R": 1.2777548337200344,
+            "pair_surface_clearance_R": 0.47310316312160094,
+            "omega_zero_tolerance": 1e-06
+          },
+          "seed_source": "continuation_beta factor 1.200000",
+          "inner": [
+            {
+              "mean_speed": 0.051335548327091,
+              "rms_micromotion": 0.04201365022544217,
+              "max_micromotion": 0.05542432182874598,
+              "max_speed": 0.08554359452844908,
+              "mean_Re_estimate": 0.34105950077233216,
+              "max_Re_estimate": 0.5683285090917605,
+              "rms_unresolved_fast_force": 1.2555890708810215e-15,
+              "relative_original_fast_equation_residual": 9.091156884896534e-15,
+              "rms_unresolved_slow_force": 1.7452725842317236e-06,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.00684624404971258,
+              "number_of_fast_modes": 13440,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 2.631556156441222e-15
+            },
+            {
+              "mean_speed": 0.03912241665361705,
+              "rms_micromotion": 0.023300732622447248,
+              "max_micromotion": 0.034030922358313155,
+              "max_speed": 0.05927611396681467,
+              "mean_Re_estimate": 1.7123004894078249,
+              "max_Re_estimate": 2.594382649063341,
+              "rms_unresolved_fast_force": 7.24367143550188e-16,
+              "relative_original_fast_equation_residual": 6.1058915541737866e-15,
+              "rms_unresolved_slow_force": 7.515666853199937e-05,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.0001733766657814758,
+              "number_of_fast_modes": 13494,
+              "number_of_excluded_rf_combination_modes": 234,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 1.1170047786047066e-14
+            }
+          ]
+        },
+        {
+          "x_factor": 0.95,
+          "x_value": 0.03317792618280719,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5954841202984072,
+              0.7917846091242289
+            ],
+            "omega_over_Omega1": [
+              -0.0004455938120865407,
+              -0.001377604876945384
+            ],
+            "frequency_Hz": [
+              -0.022279690604327034,
+              -0.0688802438472692
+            ],
+            "mean_z_R": [
+              -0.26879434963648036,
+              -0.7115329581802352
+            ]
+          },
+          "scaled_balance_residual": [
+            -5.0378872724725614e-15,
+            8.348356728138384e-14,
+            -1.345088320239829e-16,
+            2.3919792207943735e-14,
+            2.5715378177554316e-11,
+            1.5797164466292701e-16
+          ],
+          "scaled_balance_max_norm": 2.5715378177554316e-11,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 193.8518717000261,
+          "geometry": {
+            "radial_wall_clearance_R": 0.19750324321671664,
+            "ideal_axial_envelope_clearance_R": 1.2777548941607104,
+            "pair_surface_clearance_R": 0.4719668264110369,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 1.2667499989141307e-15,
+              "rms_unresolved_slow_force": 1.6443532528536416e-06,
+              "minimum_fast_mode_denominator": 0.005721024494903936,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 3.668436065582895e-15
+            },
+            {
+              "rms_unresolved_fast_force": 7.464256227854782e-16,
+              "rms_unresolved_slow_force": 7.78901500278914e-05,
+              "minimum_fast_mode_denominator": 0.00017349857630330072,
+              "number_of_excluded_rf_combination_modes": 222,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 2.0686335574507087e-14
+            }
+          ]
+        },
+        {
+          "x_factor": 0.9,
+          "x_value": 0.03143171954160681,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.5999391484560784,
+              0.7936793725105149
+            ],
+            "omega_over_Omega1": [
+              -0.0009850478578026316,
+              -0.0014449673688171063
+            ],
+            "frequency_Hz": [
+              -0.04925239289013158,
+              -0.07224836844085532
+            ],
+            "mean_z_R": [
+              -0.26879456038698013,
+              -0.7115328970763722
+            ]
+          },
+          "scaled_balance_residual": [
+            8.944932620801429e-15,
+            1.7103289270958832e-13,
+            -1.1079190950086248e-16,
+            2.6847254540684844e-14,
+            -6.031823261351543e-11,
+            -5.293955920339377e-18
+          ],
+          "scaled_balance_max_norm": 6.031823261351543e-11,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 179.55503009993117,
+          "geometry": {
+            "radial_wall_clearance_R": 0.19560847983043061,
+            "ideal_axial_envelope_clearance_R": 1.2777549552645733,
+            "pair_surface_clearance_R": 0.4709345080925185,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 1.1514318776627127e-15,
+              "rms_unresolved_slow_force": 1.3714675734221296e-06,
+              "minimum_fast_mode_denominator": 0.004152159836997724,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 3.4453510283102565e-15
+            },
+            {
+              "rms_unresolved_fast_force": 4.362822264515677e-15,
+              "rms_unresolved_slow_force": 8.046867294542725e-05,
+              "minimum_fast_mode_denominator": 0.0001714544520332668,
+              "number_of_excluded_rf_combination_modes": 210,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 6.523372193926593e-14
+            }
+          ]
+        }
+      ],
+      "status": "ROW_COMPLETE",
+      "scope": "Sparse branch-tracked local equilibria near selected 1-D sign transitions. No global completeness or capture-probability claim."
+    },
+    {
+      "study": "V17C.21.2 sparse transition-focused M3 map",
+      "source_commit": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "map_id": "A_beta",
+      "x_parameter": "A",
+      "y_parameter": "beta",
+      "y_factor": 1.3,
+      "y_value": 0.020005126882621172,
+      "x_factors": [
+        0.9,
+        0.95,
+        1.0
+      ],
+      "fixed_particle_parameters": true,
+      "grid": [
+        96,
+        12,
+        12
+      ],
+      "cutoff": 0.05,
+      "method": "newton_krylov",
+      "points": [
+        {
+          "x_factor": 1.0,
+          "x_value": 0.03492413282400757,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.6062949660192534,
+              0.8063763313551007
+            ],
+            "omega_over_Omega1": [
+              -0.0003527824101410044,
+              -0.0014569162155895546
+            ],
+            "frequency_Hz": [
+              -0.01763912050705022,
+              -0.07284581077947773
+            ],
+            "mean_z_R": [
+              -0.24811244615096098,
+              -0.6568012237157793
+            ]
+          },
+          "scaled_balance_residual": [
+            3.259139259062212e-15,
+            2.710505431213761e-15,
+            -6.454391058077769e-17,
+            -1.1627993125732966e-13,
+            -8.210527526961164e-11,
+            -2.814266967252413e-17
+          ],
+          "scaled_balance_max_norm": 8.210527526961164e-11,
+          "outer_nfev": 6,
+          "balance_evaluations": 43,
+          "wall_time_s": 0.0,
+          "geometry": {
+            "radial_wall_clearance_R": 0.18291152098584484,
+            "ideal_axial_envelope_clearance_R": 1.3324866286251662,
+            "pair_surface_clearance_R": 0.4426992388862242,
+            "omega_zero_tolerance": 1e-06
+          },
+          "seed_source": "continuation_beta factor 1.300000",
+          "inner": [
+            {
+              "mean_speed": 0.054188863763878235,
+              "rms_micromotion": 0.04333861583242562,
+              "max_micromotion": 0.05790424813656471,
+              "max_speed": 0.08999534847250211,
+              "mean_Re_estimate": 0.3600161569322331,
+              "max_Re_estimate": 0.5979047584394028,
+              "rms_unresolved_fast_force": 1.0439202087558602e-15,
+              "relative_original_fast_equation_residual": 7.020020856302835e-15,
+              "rms_unresolved_slow_force": 1.9374462725227362e-06,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.0062182560630729905,
+              "number_of_fast_modes": 13440,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 2.2812290725629664e-15
+            },
+            {
+              "mean_speed": 0.04140419815295942,
+              "rms_micromotion": 0.024067528233352346,
+              "max_micromotion": 0.03631167524300616,
+              "max_speed": 0.06302906472526033,
+              "mean_Re_estimate": 1.8121689513343564,
+              "max_Re_estimate": 2.7586408920370875,
+              "rms_unresolved_fast_force": 7.504382443107578e-14,
+              "relative_original_fast_equation_residual": 5.948061520100604e-13,
+              "rms_unresolved_slow_force": 0.00013442927521008116,
+              "rms_nonlinear_force_tail": null,
+              "relative_nonlinear_force_tail": null,
+              "minimum_fast_mode_denominator": 0.00018509898959254468,
+              "number_of_fast_modes": 13518,
+              "number_of_excluded_rf_combination_modes": 210,
+              "converged": true,
+              "status": "CONVERGED",
+              "iterations": 1,
+              "relative_nonlinear_residual": 7.770825485321949e-13
+            }
+          ]
+        },
+        {
+          "x_factor": 0.95,
+          "x_value": 0.03317792618280719,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.6107471976048644,
+              0.8082459529232214
+            ],
+            "omega_over_Omega1": [
+              -0.0009221281879909563,
+              -0.0015278332449035821
+            ],
+            "frequency_Hz": [
+              -0.04610640939954781,
+              -0.07639166224517911
+            ],
+            "mean_z_R": [
+              -0.24811246846831628,
+              -0.6568012172452058
+            ]
+          },
+          "scaled_balance_residual": [
+            8.88645558370536e-15,
+            1.8973538018496328e-15,
+            -3.3881317890172014e-18,
+            8.85862366924536e-14,
+            7.207233941597391e-13,
+            5.209252625613947e-18
+          ],
+          "scaled_balance_max_norm": 7.207233941597391e-13,
+          "outer_nfev": 7,
+          "balance_evaluations": 50,
+          "wall_time_s": 229.80423020001035,
+          "geometry": {
+            "radial_wall_clearance_R": 0.18104189941772408,
+            "ideal_axial_envelope_clearance_R": 1.3324866350957398,
+            "pair_surface_clearance_R": 0.4415695580878918,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 1.0296123604582922e-15,
+              "rms_unresolved_slow_force": 1.713763276200303e-06,
+              "minimum_fast_mode_denominator": 0.004470350615965019,
+              "number_of_excluded_rf_combination_modes": 288,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 2.715024292029837e-15
+            },
+            {
+              "rms_unresolved_fast_force": 8.199127117901018e-14,
+              "rms_unresolved_slow_force": 0.00013868626690348543,
+              "minimum_fast_mode_denominator": 0.00018208830502022542,
+              "number_of_excluded_rf_combination_modes": 198,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 1.1787678164434523e-12
+            }
+          ]
+        },
+        {
+          "x_factor": 0.9,
+          "x_value": 0.03143171954160681,
+          "status": "VERIFIED_ROOT",
+          "classification": "CO_MINUS_MINUS",
+          "root": {
+            "radii_R": [
+              0.6148906438367611,
+              0.8100097796274995
+            ],
+            "omega_over_Omega1": [
+              -0.0014595014335238778,
+              -0.0015948151706022757
+            ],
+            "frequency_Hz": [
+              -0.0729750716761939,
+              -0.07974075853011378
+            ],
+            "mean_z_R": [
+              -0.24811250528557247,
+              -0.6568012065706091
+            ]
+          },
+          "scaled_balance_residual": [
+            -4.586194989008826e-13,
+            -7.817504239435169e-11,
+            -3.6253010142484055e-17,
+            4.0885051107400375e-13,
+            2.6335270769672903e-12,
+            2.8693241088239424e-17
+          ],
+          "scaled_balance_max_norm": 7.817504239435169e-11,
+          "outer_nfev": 8,
+          "balance_evaluations": 57,
+          "wall_time_s": 303.3481393000111,
+          "geometry": {
+            "radial_wall_clearance_R": 0.17927807271344598,
+            "ideal_axial_envelope_clearance_R": 1.3324866457703364,
+            "pair_surface_clearance_R": 0.44053919271295167,
+            "omega_zero_tolerance": 1e-06
+          },
+          "inner": [
+            {
+              "rms_unresolved_fast_force": 1.2933378291912864e-12,
+              "rms_unresolved_slow_force": 1.423162785429063e-06,
+              "minimum_fast_mode_denominator": 0.0006675019488969643,
+              "number_of_excluded_rf_combination_modes": 210,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 1.4562461576811063e-11
+            },
+            {
+              "rms_unresolved_fast_force": 5.97699404180785e-14,
+              "rms_unresolved_slow_force": 0.00014268804275280672,
+              "minimum_fast_mode_denominator": 0.00018531541375723837,
+              "number_of_excluded_rf_combination_modes": 192,
+              "converged": true,
+              "status": "CONVERGED",
+              "relative_nonlinear_residual": 1.2701171628319309e-12
+            }
+          ]
+        }
+      ],
+      "status": "ROW_COMPLETE",
+      "scope": "Sparse branch-tracked local equilibria near selected 1-D sign transitions. No global completeness or capture-probability claim."
+    }
+  ],
+  "status": "COMPLETE",
+  "interpretation": "Discrete branch-tracked mesh only; stability spectra are reported separately at selected roots; no interpolation through unresolved cells."
+}
