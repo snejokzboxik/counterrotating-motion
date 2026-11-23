@@ -52,6 +52,7 @@ The FEM checkpoint records values and limitations; `AXIAL_ELECTRODE_DESIGN_RU.md
 - Reproduction tests: `4 passed` using `$env:PYTHONPATH = (Resolve-Path code).Path; python -m pytest -q tests` from this directory.
 - The SHA-256 file manifest is `MANIFEST.json` and covers every regular study artifact except itself and Python cache files.
 - Publication audit: package commit `4cd85093a1d5d3f663d61fac939e72541e7320eb` was pushed with a normal fast-forward. `git ls-remote` matched that local and remote branch SHA; remote `master` remained `e5e6b2473bf519c5670ee1c48882183fbcfc8f2d`. A small follow-up commit adds this publication record to the handoff and manifest.
+- Continuous-rod/endcap architecture update: commit `076e18a0cb4345eacaeaee17e0638628b1f9148a` was pushed normally. Remote research SHA matched the local SHA; `master` remained `e5e6b2473bf519c5670ee1c48882183fbcfc8f2d`. GitHub accepted the push and warned that the 0.24 mm and 0.27 mm `.msh` files (98.48 MB and 81.84 MB) exceed its 50 MB recommended size; both remain below the per-file hard limit and are tracked in the manifest.
 
 ## Reproduction
 
