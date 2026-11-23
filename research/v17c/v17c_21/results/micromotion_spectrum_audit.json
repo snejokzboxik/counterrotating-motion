@@ -1,0 +1,243 @@
+{
+  "study": "V17C.21 short full-RHS micromotion audit",
+  "source_240k_npz_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "rhs": "V17C.17 pair RK4, full eight-mode RF, Coulomb, common V20B gravity, Cunningham-corrected Stokes × Schiller–Naumann; polarization off.",
+  "method": "1000 RF1-period, 64-step/period replay from the archived late state; external RF phases continued at absolute time. Rotating-frame displacement high-pass filtered above 0.05 cycles per RF1 period.",
+  "rows": [
+    {
+      "particle": 1,
+      "status": 0,
+      "completed_periods": 1000,
+      "sample_count": 64001,
+      "steps_per_period": 64,
+      "absolute_start_RF_phases_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "late_reference_radius_R": 0.5557208179250963,
+      "late_reference_frequency_Hz": 0.05464772513415006,
+      "highpass_cutoff_cycles_per_RF1_period": 0.05,
+      "full_RK4_highpass_micromotion_RMS_R": 0.039088270423561625,
+      "M3_phase_torus_micromotion_RMS_R": 0.03908767572090405,
+      "relative_difference_percent": 0.0015214582259223568,
+      "dominant_highpass_spectral_peaks": [
+        {
+          "cycles_per_RF1_period": 0.9979844064936485,
+          "amplitude_R": 0.07400929661638216
+        },
+        {
+          "cycles_per_RF1_period": 0.9969844221184043,
+          "amplitude_R": 0.04700271297195569
+        },
+        {
+          "cycles_per_RF1_period": 0.9989843908688926,
+          "amplitude_R": 0.028811442681355857
+        },
+        {
+          "cycles_per_RF1_period": 0.9959844377431601,
+          "amplitude_R": 0.002015382984016718
+        },
+        {
+          "cycles_per_RF1_period": 0.9949844533679161,
+          "amplitude_R": 0.0012079710578115081
+        },
+        {
+          "cycles_per_RF1_period": 0.9999843752441367,
+          "amplitude_R": 0.0007607003648170972
+        },
+        {
+          "cycles_per_RF1_period": 1.0009843596193808,
+          "amplitude_R": 0.0007296054275432954
+        },
+        {
+          "cycles_per_RF1_period": 1.001984343994625,
+          "amplitude_R": 0.000494901858411712
+        },
+        {
+          "cycles_per_RF1_period": 0.9939844689926719,
+          "amplitude_R": 0.0004947915632463958
+        },
+        {
+          "cycles_per_RF1_period": 1.0039843127451133,
+          "amplitude_R": 0.00013569151339549388
+        },
+        {
+          "cycles_per_RF1_period": 0.9929844846174278,
+          "amplitude_R": 0.00013401295729106893
+        },
+        {
+          "cycles_per_RF1_period": 0.9919845002421837,
+          "amplitude_R": 0.00012444362092885164
+        }
+      ],
+      "M3_linear_RF_carrier_offsets": [
+        {
+          "family": 1,
+          "k": -46,
+          "absolute_cycles_per_RF1_period": 1.050275907123418,
+          "signed_rotating_cycles_per_RF1_period": 1.050275907123418
+        },
+        {
+          "family": 1,
+          "k": -22,
+          "absolute_cycles_per_RF1_period": 1.0240449990590261,
+          "signed_rotating_cycles_per_RF1_period": 1.0240449990590261
+        },
+        {
+          "family": 1,
+          "k": 2,
+          "absolute_cycles_per_RF1_period": 0.997814090994634,
+          "signed_rotating_cycles_per_RF1_period": 0.997814090994634
+        },
+        {
+          "family": 1,
+          "k": 26,
+          "absolute_cycles_per_RF1_period": 0.9715831829302419,
+          "signed_rotating_cycles_per_RF1_period": 0.9715831829302419
+        },
+        {
+          "family": 2,
+          "k": -28,
+          "absolute_cycles_per_RF1_period": 3.250280089876872,
+          "signed_rotating_cycles_per_RF1_period": 3.250280089876872
+        },
+        {
+          "family": 2,
+          "k": -4,
+          "absolute_cycles_per_RF1_period": 3.2240491818124797,
+          "signed_rotating_cycles_per_RF1_period": 3.2240491818124797
+        },
+        {
+          "family": 2,
+          "k": 20,
+          "absolute_cycles_per_RF1_period": 3.1978182737480876,
+          "signed_rotating_cycles_per_RF1_period": 3.1978182737480876
+        },
+        {
+          "family": 2,
+          "k": 44,
+          "absolute_cycles_per_RF1_period": 3.1715873656836955,
+          "signed_rotating_cycles_per_RF1_period": 3.1715873656836955
+        }
+      ]
+    },
+    {
+      "particle": 2,
+      "status": 0,
+      "completed_periods": 1000,
+      "sample_count": 64001,
+      "steps_per_period": 64,
+      "absolute_start_RF_phases_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "late_reference_radius_R": 0.751515785539555,
+      "late_reference_frequency_Hz": -0.04845388222994107,
+      "highpass_cutoff_cycles_per_RF1_period": 0.05,
+      "full_RK4_highpass_micromotion_RMS_R": 0.02167874083376781,
+      "M3_phase_torus_micromotion_RMS_R": 0.02167792572395586,
+      "relative_difference_percent": 0.003760091358963365,
+      "dominant_highpass_spectral_peaks": [
+        {
+          "cycles_per_RF1_period": 1.001984343994625,
+          "amplitude_R": 0.038738679995489946
+        },
+        {
+          "cycles_per_RF1_period": 1.0009843596193808,
+          "amplitude_R": 0.020756885876883326
+        },
+        {
+          "cycles_per_RF1_period": 1.0029843283698692,
+          "amplitude_R": 0.018042871081145228
+        },
+        {
+          "cycles_per_RF1_period": 0.23299635943188385,
+          "amplitude_R": 0.0004936298204360185
+        },
+        {
+          "cycles_per_RF1_period": 0.9999843752441367,
+          "amplitude_R": 0.00035758936649433646
+        },
+        {
+          "cycles_per_RF1_period": 0.233996343807128,
+          "amplitude_R": 0.00034990918161471245
+        },
+        {
+          "cycles_per_RF1_period": 1.0039843127451133,
+          "amplitude_R": 0.000306948385706298
+        },
+        {
+          "cycles_per_RF1_period": 2.236965047421134,
+          "amplitude_R": 0.0001834927731525084
+        },
+        {
+          "cycles_per_RF1_period": 3.2389493914157588,
+          "amplitude_R": 0.0001734799150870632
+        },
+        {
+          "cycles_per_RF1_period": 0.23199637505663973,
+          "amplitude_R": 0.00016853109914037555
+        },
+        {
+          "cycles_per_RF1_period": 1.2349807034265088,
+          "amplitude_R": 0.00014435104223094696
+        },
+        {
+          "cycles_per_RF1_period": 2.237965031796378,
+          "amplitude_R": 0.00011404183386196722
+        }
+      ],
+      "M3_linear_RF_carrier_offsets": [
+        {
+          "family": 1,
+          "k": -46,
+          "absolute_cycles_per_RF1_period": 0.9554224283484543,
+          "signed_rotating_cycles_per_RF1_period": 0.9554224283484543
+        },
+        {
+          "family": 1,
+          "k": -22,
+          "absolute_cycles_per_RF1_period": 0.9786802918188259,
+          "signed_rotating_cycles_per_RF1_period": 0.9786802918188259
+        },
+        {
+          "family": 1,
+          "k": 2,
+          "absolute_cycles_per_RF1_period": 1.0019381552891977,
+          "signed_rotating_cycles_per_RF1_period": 1.0019381552891977
+        },
+        {
+          "family": 1,
+          "k": 26,
+          "absolute_cycles_per_RF1_period": 1.0251960187595694,
+          "signed_rotating_cycles_per_RF1_period": 1.0251960187595694
+        },
+        {
+          "family": 2,
+          "k": -28,
+          "absolute_cycles_per_RF1_period": 3.1925431897529806,
+          "signed_rotating_cycles_per_RF1_period": 3.1925431897529806
+        },
+        {
+          "family": 2,
+          "k": -4,
+          "absolute_cycles_per_RF1_period": 3.2158010532233523,
+          "signed_rotating_cycles_per_RF1_period": 3.2158010532233523
+        },
+        {
+          "family": 2,
+          "k": 20,
+          "absolute_cycles_per_RF1_period": 3.239058916693724,
+          "signed_rotating_cycles_per_RF1_period": 3.239058916693724
+        },
+        {
+          "family": 2,
+          "k": 44,
+          "absolute_cycles_per_RF1_period": 3.2623167801640958,
+          "signed_rotating_cycles_per_RF1_period": 3.2623167801640958
+        }
+      ]
+    }
+  ],
+  "qualification": "Short-window high-pass RMS is not identical to full torus RMS: it samples a finite segment and removes sub-cutoff modulation. Spectral lines are resolved numerically but do not prove quasiperiodicity."
+}

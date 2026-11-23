@@ -1,0 +1,883 @@
+{
+  "study": "V17C.21",
+  "base_commit": "43c84bf72ce0807d244475518588770fbaf0fb69",
+  "source_input": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    0.10963763906505944,
+    9.747265456858355e-06,
+    0.24452307123064748,
+    0.17736598731050257
+  ],
+  "alpha": [
+    1.0,
+    0.37814609618000145
+  ],
+  "lambda": [
+    0.24452307123064748,
+    0.17736598731050257
+  ],
+  "full_modes": [
+    {
+      "family": 1,
+      "k": -46,
+      "coefficient": [
+        0.01195544657862462,
+        -1.0842155436372173e-16
+      ],
+      "amplitude": 0.03492413282400757,
+      "carrier_frequency_over_Omega1": 1.0
+    },
+    {
+      "family": 1,
+      "k": -22,
+      "coefficient": [
+        0.09570557011088898,
+        -4.2872248166624126e-16
+      ],
+      "amplitude": 0.03492413282400757,
+      "carrier_frequency_over_Omega1": 1.0
+    },
+    {
+      "family": 1,
+      "k": 2,
+      "coefficient": [
+        1.0,
+        0.0
+      ],
+      "amplitude": 0.03492413282400757,
+      "carrier_frequency_over_Omega1": 1.0
+    },
+    {
+      "family": 1,
+      "k": 26,
+      "coefficient": [
+        0.03864580974495959,
+        1.7793248982720981e-16
+      ],
+      "amplitude": 0.03492413282400757,
+      "carrier_frequency_over_Omega1": 1.0
+    },
+    {
+      "family": 2,
+      "k": -28,
+      "coefficient": [
+        0.044100519066165626,
+        -2.0091592851606255e-16
+      ],
+      "amplitude": 0.15631667332941065,
+      "carrier_frequency_over_Omega1": 3.2196773638017477
+    },
+    {
+      "family": 2,
+      "k": -4,
+      "coefficient": [
+        1.0,
+        0.0
+      ],
+      "amplitude": 0.15631667332941065,
+      "carrier_frequency_over_Omega1": 3.2196773638017477
+    },
+    {
+      "family": 2,
+      "k": 20,
+      "coefficient": [
+        0.17652762769656,
+        8.03012740525487e-16
+      ],
+      "amplitude": 0.15631667332941065,
+      "carrier_frequency_over_Omega1": 3.2196773638017477
+    },
+    {
+      "family": 2,
+      "k": 44,
+      "coefficient": [
+        0.02491992749735757,
+        2.3153021498709014e-16
+      ],
+      "amplitude": 0.15631667332941065,
+      "carrier_frequency_over_Omega1": 3.2196773638017477
+    }
+  ],
+  "numerical_reference": {
+    "radii_R": [
+      0.5557208179250963,
+      0.751515785539555
+    ],
+    "frequency_Hz": [
+      0.05464772513415006,
+      -0.04845388222994107
+    ],
+    "horizon_periods": 240000,
+    "turns": [
+      240.44999059026028,
+      -213.1970818117407
+    ],
+    "source": "V20B refine12_240k_corrected_drag_summary.json"
+  },
+  "models": {
+    "M1_leading_modes_linear_Stokes": {
+      "success": true,
+      "cost": 3.41609488536372e-31,
+      "solver_residual_scaled": [
+        0.0,
+        0.0,
+        -5.55653613398821e-17,
+        -8.673617379884035e-17,
+        -8.131516293641283e-16,
+        1.0673673926588252e-16
+      ],
+      "radii_R": [
+        0.5576723399609762,
+        0.751459598223606
+      ],
+      "omega_over_Omega1": [
+        0.0011281079780529745,
+        -0.0009328931845798041
+      ],
+      "orbital_frequency_Hz": [
+        0.05640539890264872,
+        -0.04664465922899021
+      ],
+      "mean_z_R": [
+        -0.32257136254362595,
+        -0.8538342895385842
+      ],
+      "mean_RF_force_rotating_xy": [
+        [
+          -0.008584176983984218,
+          0.0001538330380235959
+        ],
+        [
+          -0.004374213053279181,
+          -0.00012433915081461812
+        ]
+      ],
+      "mode_torque_contributions": [
+        [
+          {
+            "family": 1,
+            "k": 2,
+            "n": 2,
+            "sigma_rf_over_Omega1": 0.9977437840438941,
+            "micromotion_amplitude_R": 0.052858585381892004,
+            "mean_rf_force_rotating_xy": [
+              -0.002537982936358261,
+              0.0006118593579885627
+            ],
+            "mean_rf_torque_about_mean_orbit": 0.0003412170398965024,
+            "micromotion_RF_torque": 0.0003412170398965024,
+            "mean_total_RF_torque": 0.0006824340797930048,
+            "micromotion_angular_momentum": 0.0013954390404930252,
+            "response_condition_number": 1.0043425144138363
+          },
+          {
+            "family": 2,
+            "k": -4,
+            "n": 4,
+            "sigma_rf_over_Omega1": 3.2241897957139596,
+            "micromotion_amplitude_R": 0.01469924099738073,
+            "mean_rf_force_rotating_xy": [
+              -0.0060461940476259565,
+              -0.0004580263199649668
+            ],
+            "mean_rf_torque_about_mean_orbit": -0.0002554286096185778,
+            "micromotion_RF_torque": -8.514286987285926e-05,
+            "mean_total_RF_torque": -0.0003405714794914371,
+            "micromotion_angular_momentum": -0.00034819974018953764,
+            "response_condition_number": 1.0013944796416814
+          }
+        ],
+        [
+          {
+            "family": 1,
+            "k": 2,
+            "n": 2,
+            "sigma_rf_over_Omega1": 1.0018657863691596,
+            "micromotion_amplitude_R": 0.027433000810296482,
+            "mean_rf_force_rotating_xy": [
+              -0.0005045870857778627,
+              8.889683586580833e-05
+            ],
+            "mean_rf_torque_about_mean_orbit": 6.680238056307017e-05,
+            "micromotion_RF_torque": 6.680238056307018e-05,
+            "mean_total_RF_torque": 0.00013360476112614036,
+            "micromotion_angular_momentum": 0.0003766358002232062,
+            "response_condition_number": 1.0036544988782314
+          },
+          {
+            "family": 2,
+            "k": -4,
+            "n": 4,
+            "sigma_rf_over_Omega1": 3.2159457910634286,
+            "micromotion_amplitude_R": 0.013683113412267923,
+            "mean_rf_force_rotating_xy": [
+              -0.0038696259675013176,
+              -0.00021323598668042645
+            ],
+            "mean_rf_torque_about_mean_orbit": -0.00016023822887768747,
+            "micromotion_RF_torque": -5.341274295922914e-05,
+            "mean_total_RF_torque": -0.00021365097183691662,
+            "micromotion_angular_momentum": -0.0003011442259542304,
+            "response_condition_number": 1.001158597232635
+          }
+        ]
+      ],
+      "ring_averaged_Coulomb_acceleration": [
+        [
+          1.6934902688319526e-06,
+          0.0,
+          8.396876607111788e-06
+        ],
+        [
+          7.228097122999142e-07,
+          0.0,
+          -9.206137267243631e-07
+        ]
+      ],
+      "used_MFS_indices": [
+        2,
+        5
+      ],
+      "radius_relative_error_percent": [
+        0.35116950327078306,
+        -0.0074765317016847535
+      ],
+      "frequency_absolute_error_Hz": [
+        0.0017576737684986618,
+        0.001809223000950863
+      ],
+      "frequency_relative_error_percent": [
+        3.2163713387591115,
+        3.73390720761048
+      ]
+    },
+    "M2_full_MFS_linear_Stokes": {
+      "success": true,
+      "cost": 2.5738038850393164e-30,
+      "solver_residual_scaled": [
+        3.469446951953614e-16,
+        2.168404344971009e-15,
+        3.235665858511427e-17,
+        -1.734723475976807e-16,
+        -5.421010862427522e-16,
+        1.5701873259726593e-17
+      ],
+      "radii_R": [
+        0.557672365423962,
+        0.7513558269425017
+      ],
+      "omega_over_Omega1": [
+        0.0011281074764569097,
+        -0.0009313513580794504
+      ],
+      "orbital_frequency_Hz": [
+        0.05640537382284548,
+        -0.04656756790397252
+      ],
+      "mean_z_R": [
+        -0.32257130940504486,
+        -0.8538343049452977
+      ],
+      "mean_RF_force_rotating_xy": [
+        [
+          -0.008584178719477522,
+          0.00015383297664799578
+        ],
+        [
+          -0.004373606908709585,
+          -0.0001241165089937603
+        ]
+      ],
+      "mode_torque_contributions": [
+        [
+          {
+            "family": 1,
+            "k": -46,
+            "n": 46,
+            "sigma_rf_over_Omega1": 1.051892943917018,
+            "micromotion_amplitude_R": 9.138089017384653e-14,
+            "mean_rf_force_rotating_xy": [
+              -3.77169388312232e-25,
+              -8.656444228635411e-26
+            ],
+            "mean_rf_torque_about_mean_orbit": -4.827459729143714e-26,
+            "micromotion_RF_torque": -1.072768828698603e-27,
+            "mean_total_RF_torque": -4.934736612013574e-26,
+            "micromotion_angular_momentum": -4.3871885924690876e-27,
+            "response_condition_number": 1.004135325114299
+          },
+          {
+            "family": 1,
+            "k": -22,
+            "n": 22,
+            "sigma_rf_over_Omega1": 1.024818364482052,
+            "micromotion_amplitude_R": 4.4934712620801333e-07,
+            "mean_rf_force_rotating_xy": [
+              -4.042428078910952e-12,
+              -9.516177271693598e-13
+            ],
+            "mean_rf_torque_about_mean_orbit": -5.306909088899114e-13,
+            "micromotion_RF_torque": -2.5270995661424358e-14,
+            "mean_total_RF_torque": -5.559619045513358e-13,
+            "micromotion_angular_momentum": -1.0334810344986784e-13,
+            "response_condition_number": 1.0042364845416367
+          },
+          {
+            "family": 1,
+            "k": 2,
+            "n": 2,
+            "sigma_rf_over_Omega1": 0.9977437850470862,
+            "micromotion_amplitude_R": 0.05285858774451627,
+            "mean_rf_force_rotating_xy": [
+              -0.0025379830498665572,
+              0.0006118593850553324
+            ],
+            "mean_rf_torque_about_mean_orbit": 0.00034121707057065804,
+            "micromotion_RF_torque": 0.00034121707057065804,
+            "mean_total_RF_torque": 0.0006824341411413161,
+            "micromotion_angular_momentum": 0.0013954391659378575,
+            "response_condition_number": 1.004342512474793
+          },
+          {
+            "family": 1,
+            "k": 26,
+            "n": 26,
+            "sigma_rf_over_Omega1": 0.9706692056121203,
+            "micromotion_amplitude_R": 2.291419966447886e-08,
+            "mean_rf_force_rotating_xy": [
+              -1.1295652588921898e-14,
+              2.7966351425531394e-15
+            ],
+            "mean_rf_torque_about_mean_orbit": 1.5596061351753885e-15,
+            "micromotion_RF_torque": 6.238424540701554e-17,
+            "mean_total_RF_torque": 1.621990380582404e-15,
+            "micromotion_angular_momentum": 2.5512621403389507e-16,
+            "response_condition_number": 1.0044537533888327
+          },
+          {
+            "family": 2,
+            "k": -28,
+            "n": 28,
+            "sigma_rf_over_Omega1": 3.2512643731425412,
+            "micromotion_amplitude_R": 3.653431304058666e-09,
+            "mean_rf_force_rotating_xy": [
+              -3.4181560613514692e-15,
+              -2.5678990531562107e-16
+            ],
+            "mean_rf_torque_about_mean_orbit": -1.4320463391435763e-16,
+            "micromotion_RF_torque": -5.303875330161395e-18,
+            "mean_total_RF_torque": -1.4850850924451902e-16,
+            "micromotion_angular_momentum": -2.1690694883995183e-17,
+            "response_condition_number": 1.0013829574098405
+          },
+          {
+            "family": 2,
+            "k": -4,
+            "n": 4,
+            "sigma_rf_over_Omega1": 3.224189793707575,
+            "micromotion_amplitude_R": 0.01469924302452277,
+            "mean_rf_force_rotating_xy": [
+              -0.006046195433559364,
+              -0.00045802642516885064
+            ],
+            "mean_rf_torque_about_mean_orbit": -0.0002554286799505943,
+            "micromotion_RF_torque": -8.514289331686475e-05,
+            "mean_total_RF_torque": -0.000340571573267459,
+            "micromotion_angular_momentum": -0.00034819983606599366,
+            "response_condition_number": 1.001394479022076
+          },
+          {
+            "family": 2,
+            "k": 20,
+            "n": 20,
+            "sigma_rf_over_Omega1": 3.1971152142726096,
+            "micromotion_amplitude_R": 1.1529981881848618e-06,
+            "mean_rf_force_rotating_xy": [
+              -2.3199445955729506e-10,
+              1.771059183989556e-11
+            ],
+            "mean_rf_torque_about_mean_orbit": 9.876707644412876e-12,
+            "micromotion_RF_torque": 5.198267181269935e-13,
+            "mean_total_RF_torque": 1.039653436253987e-11,
+            "micromotion_angular_momentum": 2.125880046863408e-12,
+            "response_condition_number": 1.0014061933752352
+          },
+          {
+            "family": 2,
+            "k": 44,
+            "n": 44,
+            "sigma_rf_over_Omega1": 3.1700406348376435,
+            "micromotion_amplitude_R": 2.981508010494306e-13,
+            "mean_rf_force_rotating_xy": [
+              -3.451708143680717e-23,
+              2.6574829735233763e-24
+            ],
+            "mean_rf_torque_about_mean_orbit": 1.4820048159186855e-24,
+            "micromotion_RF_torque": 3.446522827717873e-26,
+            "mean_total_RF_torque": 1.5164700441958641e-24,
+            "micromotion_angular_momentum": 1.409487787950661e-25,
+            "response_condition_number": 1.0014181053247058
+          }
+        ],
+        [
+          {
+            "family": 1,
+            "k": -46,
+            "n": 46,
+            "sigma_rf_over_Omega1": 0.9571578375283453,
+            "micromotion_amplitude_R": 2.8307099418518806e-08,
+            "mean_rf_force_rotating_xy": [
+              -2.2165827028209984e-14,
+              -4.077593047312771e-15
+            ],
+            "mean_rf_torque_about_mean_orbit": -3.0637232959986823e-15,
+            "micromotion_RF_torque": -6.808273991108183e-17,
+            "mean_total_RF_torque": -3.1318060359097643e-15,
+            "micromotion_angular_momentum": -3.8385454248279306e-16,
+            "response_condition_number": 1.003811821750649
+          },
+          {
+            "family": 1,
+            "k": -22,
+            "n": 22,
+            "sigma_rf_over_Omega1": 0.9795102701222521,
+            "micromotion_amplitude_R": 9.886540156735662e-05,
+            "mean_rf_force_rotating_xy": [
+              -1.3209820322589351e-07,
+              -2.3753323852037987e-08
+            ],
+            "mean_rf_torque_about_mean_orbit": -1.784719828548105e-08,
+            "micromotion_RF_torque": -8.498665850229072e-10,
+            "mean_total_RF_torque": -1.8697064870503958e-08,
+            "micromotion_angular_momentum": -4.79159842261698e-09,
+            "response_condition_number": 1.0037283893210285
+          },
+          {
+            "family": 1,
+            "k": 2,
+            "n": 2,
+            "sigma_rf_over_Omega1": 1.0018627027161588,
+            "micromotion_amplitude_R": 0.027429295264265685,
+            "mean_rf_force_rotating_xy": [
+              -0.0005045189049366518,
+              8.888495927927652e-05
+            ],
+            "mean_rf_torque_about_mean_orbit": 6.67842320820314e-05,
+            "micromotion_RF_torque": 6.67842320820314e-05,
+            "mean_total_RF_torque": 0.0001335684641640628,
+            "micromotion_angular_momentum": 0.0003765334780062244,
+            "response_condition_number": 1.003648458742322
+          },
+          {
+            "family": 1,
+            "k": 26,
+            "n": 26,
+            "sigma_rf_over_Omega1": 1.0242151353100657,
+            "micromotion_amplitude_R": 1.3828037071942669e-05,
+            "mean_rf_force_rotating_xy": [
+              -3.3495343823457777e-09,
+              5.773668663766418e-10
+            ],
+            "mean_rf_torque_about_mean_orbit": 4.338079593356226e-10,
+            "micromotion_RF_torque": 1.7352318373424898e-11,
+            "mean_total_RF_torque": 4.511602777090475e-10,
+            "micromotion_angular_momentum": 9.78334044567822e-11,
+            "response_condition_number": 1.00357181834019
+          },
+          {
+            "family": 2,
+            "k": -28,
+            "n": 28,
+            "sigma_rf_over_Omega1": 3.193599525775523,
+            "micromotion_amplitude_R": 4.486266694020585e-06,
+            "mean_rf_force_rotating_xy": [
+              -3.6924960406496502e-09,
+              -2.0489705461094444e-10
+            ],
+            "mean_rf_torque_about_mean_orbit": -1.539505959052891e-10,
+            "micromotion_RF_torque": -5.7018739224181145e-12,
+            "mean_total_RF_torque": -1.596524698277072e-10,
+            "micromotion_angular_momentum": -3.21475047661547e-11,
+            "response_condition_number": 1.0011647456187471
+          },
+          {
+            "family": 2,
+            "k": -4,
+            "n": 4,
+            "sigma_rf_over_Omega1": 3.21595195836943,
+            "micromotion_amplitude_R": 0.013677406318743736,
+            "mean_rf_force_rotating_xy": [
+              -0.0038669437842639345,
+              -0.00021308787875140467
+            ],
+            "mean_rf_torque_about_mean_orbit": -0.0001601048193506852,
+            "micromotion_RF_torque": -5.3368273116895054e-05,
+            "mean_total_RF_torque": -0.00021347309246758024,
+            "micromotion_angular_momentum": -0.00030089350233462083,
+            "response_condition_number": 1.001156679059443
+          },
+          {
+            "family": 2,
+            "k": 20,
+            "n": 20,
+            "sigma_rf_over_Omega1": 3.2383043909633367,
+            "micromotion_amplitude_R": 0.00012297404779978,
+            "mean_rf_force_rotating_xy": [
+              -2.005078779165146e-06,
+              1.0979131070780658e-07
+            ],
+            "mean_rf_torque_about_mean_orbit": 8.249234104796516e-08,
+            "micromotion_RF_torque": 4.3417021604192186e-09,
+            "mean_total_RF_torque": 8.683404320838438e-08,
+            "micromotion_angular_momentum": 2.4478775363049155e-08,
+            "response_condition_number": 1.0011487232364515
+          },
+          {
+            "family": 2,
+            "k": 44,
+            "n": 44,
+            "sigma_rf_over_Omega1": 3.2606568235572437,
+            "micromotion_amplitude_R": 3.947313731658869e-08,
+            "mean_rf_force_rotating_xy": [
+              -4.74019181843049e-13,
+              2.5777895501741807e-14
+            ],
+            "mean_rf_torque_about_mean_orbit": 1.936837199154861e-14,
+            "micromotion_RF_torque": 4.504272556174097e-16,
+            "mean_total_RF_torque": 1.981879924716602e-14,
+            "micromotion_angular_momentum": 2.5395356936664364e-15,
+            "response_condition_number": 1.001140875889639
+          }
+        ]
+      ],
+      "ring_averaged_Coulomb_acceleration": [
+        [
+          1.6948345221921879e-06,
+          0.0,
+          8.398512059507706e-06
+        ],
+        [
+          7.2277301434457e-07,
+          0.0,
+          -9.207930338638549e-07
+        ]
+      ],
+      "used_MFS_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "radius_relative_error_percent": [
+        0.3511740852452223,
+        -0.02128479536041523
+      ],
+      "frequency_absolute_error_Hz": [
+        0.0017576486886954207,
+        0.0018863143259685508
+      ],
+      "frequency_relative_error_percent": [
+        3.2163254451685193,
+        3.893009680869167
+      ]
+    },
+    "M3_full_MFS_Schiller_Nauman_HB": {
+      "success": true,
+      "message": "`gtol` termination condition is satisfied.",
+      "cost": 8.74270449822875e-26,
+      "solver_residual_scaled": [
+        -4.807937199862965e-14,
+        -5.149960319306146e-14,
+        8.470329472543003e-17,
+        -2.855841226553138e-13,
+        -2.972069205325889e-13,
+        -5.40724657703464e-17
+      ],
+      "radii_R": [
+        0.5581886814783541,
+        0.7520375395496618
+      ],
+      "omega_over_Omega1": [
+        0.001066299739471567,
+        -0.0008937083562741611
+      ],
+      "orbital_frequency_Hz": [
+        0.05331498697357835,
+        -0.04468541781370806
+      ],
+      "mean_z_R": [
+        -0.3225716155582107,
+        -0.8538342161809004
+      ],
+      "inner_harmonic_balance": {
+        "particles": [
+          {
+            "xi_hat_real_imag": [
+              [
+                [
+                  1.8075042019858272e-08,
+                  -1.4170738257955024e-08
+                ],
+                [
+                  1.1563709308472753e-08,
+                  1.7645019454746727e-08
+                ]
+              ],
+              [
+                [
+                  1.2596986447400585e-07,
+                  -1.5983687774495572e-07
+                ],
+                [
+                  -7.825367061927095e-08,
+                  -5.333003721236199e-07
+                ]
+              ],
+              [
+                [
+                  0.036765193828814415,
+                  -0.009702179972682634
+                ],
+                [
+                  0.009052857286855892,
+                  0.03534736985758952
+                ]
+              ],
+              [
+                [
+                  -2.1298111321807244e-08,
+                  8.811778727943764e-08
+                ],
+                [
+                  -1.2682480785143814e-07,
+                  -2.9060356271340835e-08
+                ]
+              ],
+              [
+                [
+                  -3.181995956029868e-09,
+                  -3.1411145374885623e-09
+                ],
+                [
+                  -5.294963897167315e-09,
+                  5.744671076305496e-09
+                ]
+              ],
+              [
+                [
+                  0.01040062110924484,
+                  -0.0008530374818058835
+                ],
+                [
+                  -0.0008469808966021955,
+                  -0.010379488197760085
+                ]
+              ],
+              [
+                [
+                  8.361596720084178e-07,
+                  -5.170382285457805e-08
+                ],
+                [
+                  9.564443457565809e-08,
+                  8.661397647996207e-07
+                ]
+              ],
+              [
+                [
+                  2.9212208420665974e-09,
+                  2.833196711516236e-11
+                ],
+                [
+                  -1.710851555507601e-10,
+                  -2.655083449511363e-09
+                ]
+              ]
+            ],
+            "sigma": [
+              1.0490497880156922,
+              1.0234585942683745,
+              0.9978674005210568,
+              0.9722762067737393,
+              3.2495337565069518,
+              3.223942562759634,
+              3.1983513690123164,
+              3.1727601752649988
+            ],
+            "converged": true,
+            "iterations": 23,
+            "relative_fixed_point_residual": 1.0150459262656745e-09,
+            "mean_rf_force_rotating_xy": [
+              -0.00859205488736926,
+              0.00015792601640461716
+            ],
+            "mean_drag_force_rotating_xy": [
+              1.0065503433939212e-08,
+              -0.00015792601567991358
+            ],
+            "mean_total_RF_torque": 0.00036085146608746683,
+            "mean_total_drag_torque": -0.000360851466087472,
+            "mean_angular_momentum": 0.0013678910945239652,
+            "mean_speed": 0.045318252549438415,
+            "rms_micromotion": 0.03869466565631146,
+            "max_micromotion": 0.048439413668668746,
+            "rms_omitted_harmonic_force_residual": 0.02184201213424131,
+            "phase_grid": [
+              96,
+              12,
+              12
+            ]
+          },
+          {
+            "xi_hat_real_imag": [
+              [
+                [
+                  2.0889352720265992e-08,
+                  -7.2621057096098375e-09
+                ],
+                [
+                  -6.348104211757468e-09,
+                  -1.991009293436665e-08
+                ]
+              ],
+              [
+                [
+                  7.746229309561126e-05,
+                  -2.2676193238225566e-05
+                ],
+                [
+                  -2.156160775039096e-05,
+                  -7.614829106491176e-05
+                ]
+              ],
+              [
+                [
+                  0.018975933597913684,
+                  -0.004227688150633856
+                ],
+                [
+                  0.004087896792460128,
+                  0.018615663160619886
+                ]
+              ],
+              [
+                [
+                  9.905042427229948e-06,
+                  -2.310008877639367e-06
+                ],
+                [
+                  2.192982800216596e-06,
+                  9.609034586964498e-06
+                ]
+              ],
+              [
+                [
+                  3.2545541249491523e-06,
+                  -2.3775444554442497e-07
+                ],
+                [
+                  -2.3599717547233203e-07,
+                  -3.2478008186803825e-06
+                ]
+              ],
+              [
+                [
+                  0.009673501914309187,
+                  -0.0006498664949602254
+                ],
+                [
+                  -0.0006475668529569412,
+                  -0.009663762860669795
+                ]
+              ],
+              [
+                [
+                  8.9041892677445e-05,
+                  -6.254895162917746e-06
+                ],
+                [
+                  6.204470743674605e-06,
+                  8.855902986438754e-05
+                ]
+              ],
+              [
+                [
+                  2.9675708169545556e-08,
+                  -2.330252690078399e-09
+                ],
+                [
+                  2.315719469882626e-09,
+                  2.9292356196068496e-08
+                ]
+              ]
+            ],
+            "sigma": [
+              0.9588894156113886,
+              0.9803384161619685,
+              1.0017874167125482,
+              1.023236417263128,
+              3.194653529826071,
+              3.2161025303766513,
+              3.237551530927231,
+              3.259000531477811
+            ],
+            "converged": true,
+            "iterations": 23,
+            "relative_fixed_point_residual": 1.0652746187722107e-09,
+            "mean_rf_force_rotating_xy": [
+              -0.00437752084009175,
+              -0.00015033371687242758
+            ],
+            "mean_drag_force_rotating_xy": [
+              -1.4722860028008564e-09,
+              0.0001503337168353228
+            ],
+            "mean_total_RF_torque": -9.572708938827667e-05,
+            "mean_total_drag_torque": 9.572708938824695e-05,
+            "mean_angular_momentum": -0.00043665007524523085,
+            "mean_speed": 0.03423518042336902,
+            "rms_micromotion": 0.02155282682174117,
+            "max_micromotion": 0.029170592967041484,
+            "rms_omitted_harmonic_force_residual": 0.007752985781392551,
+            "phase_grid": [
+              96,
+              12,
+              12
+            ]
+          }
+        ]
+      },
+      "phase_grid": [
+        96,
+        12
+      ],
+      "radius_relative_error_percent": [
+        0.4440833371101858,
+        0.0694268863204508
+      ],
+      "frequency_absolute_error_Hz": [
+        -0.0013327381605717087,
+        0.0037684644162330125
+      ],
+      "frequency_relative_error_percent": [
+        -2.438780676231413,
+        7.7774251366475
+      ]
+    }
+  },
+  "interpretation": {
+    "M0": "Stationary leading pseudopotential has zero secular azimuthal torque and cannot predict nonzero counterrotation.",
+    "M1": "Moving-orbit susceptibility for k=+2/-4, linear Stokes drag, phase-averaged Coulomb.",
+    "M2": "Same closure with all eight complex MFS modes; spatial truncation effect is measured by M1-to-M2 difference.",
+    "M3": "Full MFS polynomial and self-consistent retained-mode Fourier-Galerkin response with Schiller-Naumann drag; Coulomb enters slow torus-averaged balance, not fast response.",
+    "torus_assumption": "RF phases and orbital phase are averaged on a nonresonant torus; V20A found phase drift, no locking. This is a conditional averaging hypothesis, not a proof of rational independence.",
+    "stability": "The averaged slow vector-field Jacobian and its numerical spectrum are stored separately by stability_analysis.py."
+  }
+}

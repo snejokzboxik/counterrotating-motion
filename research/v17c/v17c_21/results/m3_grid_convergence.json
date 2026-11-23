@@ -1,0 +1,267 @@
+{
+  "method": "M3 full MFS Schiller\u2013Naumann phase-torus collocation, evaluated at frozen M3 slow roots",
+  "source_240k_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "rows": [
+    {
+      "grid": [
+        96,
+        8,
+        8
+      ],
+      "particles": [
+        {
+          "converged": true,
+          "iterations": 44,
+          "relative_fixed_point_residual": 4.7942961738381454e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.00854413431897984,
+            0.00018763874022964118
+          ],
+          "mean_drag_force_rotating_xy": [
+            5.689671559367734e-07,
+            -0.00018763858102219797
+          ],
+          "mean_total_RF_torque": 0.00038672205913350944,
+          "mean_total_drag_torque": -0.0003867219661645698,
+          "mean_angular_momentum": 0.0014106556626567034,
+          "mean_speed": 0.045585330281240295,
+          "rms_micromotion": 0.03908767645920314,
+          "rms_rf_force": 0.11641753886838324,
+          "rms_unresolved_force": 5.6283756603530813e-05,
+          "rms_slow_mode_residual": 5.414523683684389e-07,
+          "rms_fast_mode_equation_residual": 5.628115214473035e-05,
+          "phase_grid": [
+            96,
+            8,
+            8
+          ],
+          "slow_mode_cutoff": 0.05
+        },
+        {
+          "converged": true,
+          "iterations": 28,
+          "relative_fixed_point_residual": 4.996808138731851e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.004373910879761306,
+            -0.0001476066099509865
+          ],
+          "mean_drag_force_rotating_xy": [
+            3.4080537388778126e-07,
+            0.00014760613976853564
+          ],
+          "mean_total_RF_torque": -9.218986474299609e-05,
+          "mean_total_drag_torque": 9.218952842957903e-05,
+          "mean_angular_momentum": -0.0004749828492472983,
+          "mean_speed": 0.03424730052731296,
+          "rms_micromotion": 0.02167789860623725,
+          "rms_rf_force": 0.10266197239490324,
+          "rms_unresolved_force": 0.00015525765191687894,
+          "rms_slow_mode_residual": 1.8904556826237595e-05,
+          "rms_fast_mode_equation_residual": 0.00015410242116834603,
+          "phase_grid": [
+            96,
+            8,
+            8
+          ],
+          "slow_mode_cutoff": 0.05
+        }
+      ]
+    },
+    {
+      "grid": [
+        96,
+        12,
+        12
+      ],
+      "particles": [
+        {
+          "converged": true,
+          "iterations": 47,
+          "relative_fixed_point_residual": 4.723823452908909e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.008544133972849748,
+            0.00018763885519202511
+          ],
+          "mean_drag_force_rotating_xy": [
+            5.705528089960248e-07,
+            -0.00018763884095623443
+          ],
+          "mean_total_RF_torque": 0.000386722124777118,
+          "mean_total_drag_torque": -0.00038672211695377434,
+          "mean_angular_momentum": 0.0014106555813479008,
+          "mean_speed": 0.04558362999675297,
+          "rms_micromotion": 0.03908767598551832,
+          "rms_rf_force": 0.11641753846598338,
+          "rms_unresolved_force": 1.3631873457325032e-05,
+          "rms_slow_mode_residual": 1.2733854944973667e-07,
+          "rms_fast_mode_equation_residual": 1.3631278694618004e-05,
+          "phase_grid": [
+            96,
+            12,
+            12
+          ],
+          "slow_mode_cutoff": 0.05
+        },
+        {
+          "converged": true,
+          "iterations": 29,
+          "relative_fixed_point_residual": 3.817972032772037e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.004373911230085141,
+            -0.00014760594136874276
+          ],
+          "mean_drag_force_rotating_xy": [
+            3.405129730745639e-07,
+            0.0001476059569445806
+          ],
+          "mean_total_RF_torque": -9.218926610310275e-05,
+          "mean_total_drag_torque": 9.218927185993015e-05,
+          "mean_angular_momentum": -0.00047498239099753674,
+          "mean_speed": 0.03424729584371435,
+          "rms_micromotion": 0.02167792617842931,
+          "rms_rf_force": 0.10266197482208594,
+          "rms_unresolved_force": 2.0860500410927746e-05,
+          "rms_slow_mode_residual": 1.8903506949726465e-05,
+          "rms_fast_mode_equation_residual": 8.821445595590307e-06,
+          "phase_grid": [
+            96,
+            12,
+            12
+          ],
+          "slow_mode_cutoff": 0.05
+        }
+      ]
+    },
+    {
+      "grid": [
+        128,
+        12,
+        12
+      ],
+      "particles": [
+        {
+          "converged": true,
+          "iterations": 49,
+          "relative_fixed_point_residual": 4.826283672754553e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.0085441340133998,
+            0.00018763883288195325
+          ],
+          "mean_drag_force_rotating_xy": [
+            5.701051809304774e-07,
+            -0.00018763813523411387
+          ],
+          "mean_total_RF_torque": 0.0003867221033877126,
+          "mean_total_drag_torque": -0.0003867217164526309,
+          "mean_angular_momentum": 0.0014106556047180144,
+          "mean_speed": 0.04558434917609602,
+          "rms_micromotion": 0.03908767632640079,
+          "rms_rf_force": 0.11641753853180449,
+          "rms_unresolved_force": 1.3718447874861186e-05,
+          "rms_slow_mode_residual": 1.272079742490491e-07,
+          "rms_fast_mode_equation_residual": 1.3717858077213468e-05,
+          "phase_grid": [
+            128,
+            12,
+            12
+          ],
+          "slow_mode_cutoff": 0.05
+        },
+        {
+          "converged": true,
+          "iterations": 29,
+          "relative_fixed_point_residual": 3.988678579373961e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.004373911230085511,
+            -0.00014760594136865323
+          ],
+          "mean_drag_force_rotating_xy": [
+            3.405129761826481e-07,
+            0.00014760595694205997
+          ],
+          "mean_total_RF_torque": -9.218926610299247e-05,
+          "mean_total_drag_torque": 9.218927185799478e-05,
+          "mean_angular_momentum": -0.00047498239099740686,
+          "mean_speed": 0.034247295843760975,
+          "rms_micromotion": 0.021677926178435832,
+          "rms_rf_force": 0.102661974822087,
+          "rms_unresolved_force": 2.0860279394256717e-05,
+          "rms_slow_mode_residual": 1.8903506843627718e-05,
+          "rms_fast_mode_equation_residual": 8.820923161402741e-06,
+          "phase_grid": [
+            128,
+            12,
+            12
+          ],
+          "slow_mode_cutoff": 0.05
+        }
+      ]
+    },
+    {
+      "grid": [
+        192,
+        16,
+        16
+      ],
+      "particles": [
+        {
+          "converged": false,
+          "iterations": 160,
+          "relative_fixed_point_residual": 0.005660381416107018,
+          "mean_rf_force_rotating_xy": [
+            -0.008544145221669764,
+            0.00018763672674181053
+          ],
+          "mean_drag_force_rotating_xy": [
+            5.702755967904817e-07,
+            -0.00018763804397627809
+          ],
+          "mean_total_RF_torque": 0.0003867204755135647,
+          "mean_total_drag_torque": -0.00038672130677021174,
+          "mean_angular_momentum": 0.001410654150171135,
+          "mean_speed": 0.045584554267566836,
+          "rms_micromotion": 0.03908864454317519,
+          "rms_rf_force": 0.11641772652964005,
+          "rms_unresolved_force": 7.895352589553544e-05,
+          "rms_slow_mode_residual": 8.059093348697501e-08,
+          "rms_fast_mode_equation_residual": 7.89534847643752e-05,
+          "phase_grid": [
+            192,
+            16,
+            16
+          ],
+          "slow_mode_cutoff": 0.05
+        },
+        {
+          "converged": true,
+          "iterations": 29,
+          "relative_fixed_point_residual": 4.012801092834479e-06,
+          "mean_rf_force_rotating_xy": [
+            -0.004373911226169172,
+            -0.00014760592333477025
+          ],
+          "mean_drag_force_rotating_xy": [
+            3.404770336228336e-07,
+            0.0001476059619065106
+          ],
+          "mean_total_RF_torque": -9.218924919201229e-05,
+          "mean_total_drag_torque": 9.21892722302979e-05,
+          "mean_angular_momentum": -0.0004749823940695997,
+          "mean_speed": 0.03424729189889645,
+          "rms_micromotion": 0.021677926013935804,
+          "rms_rf_force": 0.1026619748130039,
+          "rms_unresolved_force": 1.8906047357992234e-05,
+          "rms_slow_mode_residual": 1.8904614103777667e-05,
+          "rms_fast_mode_equation_residual": 2.3279237508064388e-07,
+          "phase_grid": [
+            192,
+            16,
+            16
+          ],
+          "slow_mode_cutoff": 0.05
+        }
+      ]
+    }
+  ],
+  "interpretation": "Mean torque and force are grid-stable; fixed-point convergence and unresolved residuals are reported separately, especially at the largest grid."
+}

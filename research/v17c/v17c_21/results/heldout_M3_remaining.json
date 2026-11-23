@@ -1,0 +1,172 @@
+{
+  "study": "V17C.21 M3 held-out checks",
+  "method": "Predeclared full-RHS RK4 holds; M3 roots evaluated without fitted coefficients.",
+  "workers": 3,
+  "rows": [
+    {
+      "heldout_parameter": "B",
+      "factor": 0.95,
+      "M3_radii_R": [
+        0.5694653608803062,
+        0.7706317212643239
+      ],
+      "M3_mean_z_R": [
+        -0.32258003107534183,
+        -0.8538317762312644
+      ],
+      "M3_frequency_Hz": [
+        0.05450960646036422,
+        -0.0485796449991976
+      ],
+      "RK4_radii_R": [
+        0.5701516336936283,
+        0.7708280219987275
+      ],
+      "RK4_frequency_Hz": [
+        0.054461089109307005,
+        -0.04762834769483145
+      ],
+      "radius_relative_error_percent": [
+        -0.12036671874045514,
+        -0.025466216691834298
+      ],
+      "frequency_relative_error_percent": [
+        0.08908626663678798,
+        -1.9973342566099146
+      ],
+      "solver_residual_scaled": [
+        -5.774033019019433e-15,
+        3.7947076036992655e-15,
+        -5.082197683525802e-19,
+        2.584466928662321e-15,
+        5.014435047745458e-15,
+        1.0080750863510242e-16
+      ],
+      "phase_grid": [
+        96,
+        12
+      ],
+      "HB_status": [
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.7778831914213301e-06
+        },
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.58048857314971e-06
+        }
+      ],
+      "qualification": "Local finite-horizon validation point; not a global accuracy guarantee."
+    },
+    {
+      "heldout_parameter": "nu",
+      "factor": 1.02,
+      "M3_radii_R": [
+        0.5604943151397289,
+        0.7587243710714847
+      ],
+      "M3_mean_z_R": [
+        -0.32257483186820357,
+        -0.8538332836613328
+      ],
+      "M3_frequency_Hz": [
+        0.05797449192663873,
+        -0.04721690392815121
+      ],
+      "RK4_radii_R": [
+        0.5611701856220502,
+        0.758903363754352
+      ],
+      "RK4_frequency_Hz": [
+        0.05787229704719891,
+        -0.046748349030926874
+      ],
+      "radius_relative_error_percent": [
+        -0.12043948513981062,
+        -0.023585701607878165
+      ],
+      "frequency_relative_error_percent": [
+        0.17658687256956881,
+        -1.0022918604341768
+      ],
+      "solver_residual_scaled": [
+        -3.897516227672256e-15,
+        0.0,
+        -4.489274620447792e-17,
+        3.605083396588629e-15,
+        5.692061405548898e-15,
+        -9.550296480292236e-18
+      ],
+      "phase_grid": [
+        96,
+        12
+      ],
+      "HB_status": [
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.8673200575681955e-06
+        },
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.754329663728763e-06
+        }
+      ],
+      "qualification": "Local finite-horizon validation point; not a global accuracy guarantee."
+    },
+    {
+      "heldout_parameter": "beta",
+      "factor": 1.05,
+      "M3_radii_R": [
+        0.5646064706106195,
+        0.761619384837506
+      ],
+      "M3_mean_z_R": [
+        -0.3072058347124039,
+        -0.8131769596798997
+      ],
+      "M3_frequency_Hz": [
+        0.04256455245351764,
+        -0.0530048235303582
+      ],
+      "RK4_radii_R": [
+        0.5652875478365047,
+        0.7618033991958947
+      ],
+      "RK4_frequency_Hz": [
+        0.04239865620663661,
+        -0.05248001208770784
+      ],
+      "radius_relative_error_percent": [
+        -0.12048332366276683,
+        -0.024155098097868116
+      ],
+      "frequency_relative_error_percent": [
+        0.3912771340499718,
+        -1.0000215734959503
+      ],
+      "solver_residual_scaled": [
+        -3.077238933639351e-15,
+        1.0842021724855044e-15,
+        4.336808689942018e-17,
+        6.546675297681125e-15,
+        2.574980159653073e-15,
+        -6.385569631113357e-17
+      ],
+      "phase_grid": [
+        96,
+        12
+      ],
+      "HB_status": [
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.8853708534923549e-06
+        },
+        {
+          "converged": true,
+          "relative_fixed_point_residual": 1.5589697769916599e-06
+        }
+      ],
+      "qualification": "Local finite-horizon validation point; not a global accuracy guarantee."
+    }
+  ]
+}

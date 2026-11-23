@@ -1,0 +1,83 @@
+{
+  "heldout_case": "A*1.05, all other V20B parameters held fixed",
+  "analytical_M3": {
+    "radii_R": [
+      0.5488185445280522,
+      0.7488283469237059
+    ],
+    "mean_z_R": [
+      -0.3225707575287202,
+      -0.8538344649533419
+    ],
+    "frequency_Hz": [
+      0.0852248958195875,
+      -0.04490149763210849
+    ],
+    "solver_residual_scaled": [
+      -5.643547593494908e-15,
+      5.421010862427522e-16,
+      5.607358110823468e-17,
+      7.257320058559722e-15,
+      1.8973538018496328e-15,
+      -1.2769021679858578e-17
+    ],
+    "torus_grid": [
+      96,
+      12
+    ],
+    "particle_hb": [
+      {
+        "converged": true,
+        "relative_fixed_point_residual": 1.9841295069740695e-06,
+        "rms_unresolved_force": 9.717067892646776e-06,
+        "rms_rf_force": 0.11374506250792815,
+        "mean_total_RF_torque": 0.00046818833777193463,
+        "mean_total_drag_torque": -0.0004681883377719346,
+        "rms_micromotion": 0.04040797817692854
+      },
+      {
+        "converged": true,
+        "relative_fixed_point_residual": 1.6436704056367845e-06,
+        "rms_unresolved_force": 2.0925395062997802e-05,
+        "rms_rf_force": 0.10189355929768164,
+        "mean_total_RF_torque": -7.16517265479454e-05,
+        "mean_total_drag_torque": 7.16517265479456e-05,
+        "rms_micromotion": 0.022448248561743656
+      }
+    ]
+  },
+  "full_RK4_reference": {
+    "horizon_periods": 15000,
+    "frequency_Hz": [
+      0.08520016500410293,
+      -0.044626968607001355
+    ],
+    "mean_radius_R": [
+      0.5495439373236413,
+      0.7490127261357815
+    ],
+    "late_window_frequency_Hz": [
+      [
+        0.08515700594660594,
+        -0.04465708879738131
+      ],
+      [
+        0.08521314153684419,
+        -0.04467544786881909
+      ],
+      [
+        0.08523033828115935,
+        -0.04454837560866505
+      ]
+    ]
+  },
+  "frequency_relative_error_percent": [
+    0.02902672252263643,
+    -0.6151639550620617
+  ],
+  "radius_relative_error_percent": [
+    -0.1319990534554523,
+    -0.024616298981569938
+  ],
+  "qualification": "One continued-state finite-horizon hold-out. Good agreement is a numerical validation point, not a general accuracy guarantee."
+}

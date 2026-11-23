@@ -1,0 +1,122 @@
+{
+  "source": "V20B corrected 240k refine12 NPZ, sampled every 100 RF1 periods",
+  "source_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "mass_ratio_m2_m1": 9.120955253392458,
+  "sampling_caveat": "Torque averages are integrated from RK4 work ledger; orbit/radius/z moments use sparse 100-period samples.",
+  "windows": [
+    {
+      "period_bounds": [
+        200000,
+        220000
+      ],
+      "mean_torques": {
+        "particle1": {
+          "RF": 0.0003868574799237049,
+          "DC": 6.099744833111966e-23,
+          "Coulomb": -8.692740439781783e-08,
+          "drag": -0.0003865829774544257,
+          "gravity": 0.0
+        },
+        "particle2_own_mass_units": {
+          "RF": -9.16431618959598e-05,
+          "DC": -5.653000714563194e-23,
+          "Coulomb": 9.530515388230387e-09,
+          "drag": 9.147858455336466e-05,
+          "gravity": 0.0
+        }
+      },
+      "observables_from_100_period_samples": [
+        {
+          "mean_radius_R": 0.5556246709814352,
+          "std_radius_R": 0.02824095896619679,
+          "mean_z_R": -0.3225715295562543,
+          "std_z_R": 0.0002679197704401017,
+          "frequency_Hz": 0.05466822497204144
+        },
+        {
+          "mean_radius_R": 0.7515814471445736,
+          "std_radius_R": 0.01546227503228333,
+          "mean_z_R": -0.8538342305598582,
+          "std_z_R": 7.758296756434146e-05,
+          "frequency_Hz": -0.04843425991077786
+        }
+      ]
+    },
+    {
+      "period_bounds": [
+        220000,
+        240000
+      ],
+      "mean_torques": {
+        "particle1": {
+          "RF": 0.00038681544522167207,
+          "DC": 1.667866535920344e-23,
+          "Coulomb": -1.0475308900379791e-07,
+          "drag": -0.00038665528875682267,
+          "gravity": 0.0
+        },
+        "particle2_own_mass_units": {
+          "RF": -9.143802723255706e-05,
+          "DC": 8.525889787381077e-23,
+          "Coulomb": 1.1484881363148442e-08,
+          "drag": 9.144133509159257e-05,
+          "gravity": 0.0
+        }
+      },
+      "observables_from_100_period_samples": [
+        {
+          "mean_radius_R": 0.5554905701316211,
+          "std_radius_R": 0.028126262395723384,
+          "mean_z_R": -0.3225726791674577,
+          "std_z_R": 0.00026849241976919093,
+          "frequency_Hz": 0.054697971994097656
+        },
+        {
+          "mean_radius_R": 0.7516121027820808,
+          "std_radius_R": 0.015467493504996054,
+          "mean_z_R": -0.853833923769756,
+          "std_z_R": 7.780904986849582e-05,
+          "frequency_Hz": -0.04843181061227788
+        }
+      ]
+    },
+    {
+      "period_bounds": [
+        200000,
+        240000
+      ],
+      "mean_torques": {
+        "particle1": {
+          "RF": 0.0003868364625726885,
+          "DC": 3.8838056845161543e-23,
+          "Coulomb": -9.584024670080787e-08,
+          "drag": -0.00038661913310562417,
+          "gravity": 0.0
+        },
+        "particle2_own_mass_units": {
+          "RF": -9.154059456425843e-05,
+          "DC": 1.4364445364089416e-23,
+          "Coulomb": 1.0507698375689415e-08,
+          "drag": 9.145995982247861e-05,
+          "gravity": 0.0
+        }
+      },
+      "observables_from_100_period_samples": [
+        {
+          "mean_radius_R": 0.5555576205565281,
+          "std_radius_R": 0.028183748785447747,
+          "mean_z_R": -0.322572104361856,
+          "std_z_R": 0.00026820686388415914,
+          "frequency_Hz": 0.054668438168553296
+        },
+        {
+          "mean_radius_R": 0.7515967749633272,
+          "std_radius_R": 0.015464892084737012,
+          "mean_z_R": -0.8538340771648071,
+          "std_z_R": 7.769624237249554e-05,
+          "frequency_Hz": -0.048442757702166515
+        }
+      ]
+    }
+  ]
+}

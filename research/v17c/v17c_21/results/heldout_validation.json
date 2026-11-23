@@ -1,0 +1,351 @@
+{
+  "study": "V17C.21 held-out validation",
+  "selection": "four one-factor points selected before full-model runs; none used to estimate a fitted coefficient",
+  "source_240k_trajectory_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "rows": [
+    {
+      "parameter": "A",
+      "factor": 1.05,
+      "p": [
+        0.036670339465207945,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "initial_state_source": "terminal state of archived nominal 240k run; RF phases continued at absolute time then translated to local t=0",
+      "initial_RF_phases_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "horizon_periods": 15000,
+      "steps_per_RF1_period": 64,
+      "skip_periods": 1000,
+      "status": 0,
+      "turns": [
+        23.85604620114882,
+        -12.495551209960379
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.08515700594660594,
+          -0.04465708879738131
+        ],
+        [
+          0.08521314153684419,
+          -0.04467544786881909
+        ],
+        [
+          0.08523033828115935,
+          -0.04454837560866505
+        ]
+      ],
+      "window_period_bounds": [
+        1000,
+        5666,
+        10333,
+        15000
+      ],
+      "frequency_Hz": [
+        0.08520016500410293,
+        -0.044626968607001355
+      ],
+      "mean_radius_R": [
+        0.5495439373236413,
+        0.7490127261357815
+      ],
+      "r_min_R": [
+        0.5000266293363007,
+        0.7182954133263081
+      ],
+      "r_max_R": [
+        0.6061793897108274,
+        0.7802047595136045
+      ],
+      "max_abs_z_R": [
+        0.3227833191287299,
+        0.8540207294726534
+      ],
+      "min_pair_distance_R": 0.5613260732524901,
+      "analytical_M2_radii_R": [
+        0.5516782186419542,
+        0.7488636038070382
+      ],
+      "analytical_M2_frequency_Hz": [
+        0.08721355248912772,
+        -0.042068594622559505
+      ],
+      "radius_error_percent": [
+        0.3883731897229559,
+        -0.019909184923018103
+      ],
+      "frequency_error_percent": [
+        2.3631262743773234,
+        5.73279804633756
+      ],
+      "classification": "finite-horizon held-out CR check",
+      "qualification": "Finite horizon and one continued late nominal state; not an attractor or basin/broad-window proof."
+    },
+    {
+      "parameter": "B",
+      "factor": 0.95,
+      "p": [
+        0.03492413282400757,
+        0.14850083966294012,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "initial_state_source": "terminal state of archived nominal 240k run; RF phases continued at absolute time then translated to local t=0",
+      "initial_RF_phases_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "horizon_periods": 15000,
+      "steps_per_RF1_period": 64,
+      "skip_periods": 1000,
+      "status": 0,
+      "turns": [
+        15.249104950605961,
+        -13.335937354552806
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.05432691493692099,
+          -0.047584441909112714
+        ],
+        [
+          0.05452445195819285,
+          -0.047633926200819195
+        ],
+        [
+          0.05453187168324986,
+          -0.04766666556685182
+        ]
+      ],
+      "window_period_bounds": [
+        1000,
+        5666,
+        10333,
+        15000
+      ],
+      "frequency_Hz": [
+        0.054461089109307005,
+        -0.04762834769483145
+      ],
+      "mean_radius_R": [
+        0.5701516336936283,
+        0.7708280219987275
+      ],
+      "r_min_R": [
+        0.5123323437706924,
+        0.7247407492754855
+      ],
+      "r_max_R": [
+        0.6211631469439699,
+        0.8027375787163503
+      ],
+      "max_abs_z_R": [
+        0.32278828299098294,
+        0.8540207145676584
+      ],
+      "min_pair_distance_R": 0.5613452289342018,
+      "analytical_M2_radii_R": [
+        0.572156033301746,
+        0.7707355303514737
+      ],
+      "analytical_M2_frequency_Hz": [
+        0.05640987313312179,
+        -0.046472830503115306
+      ],
+      "radius_error_percent": [
+        0.35155553183853183,
+        -0.011998999078153797
+      ],
+      "frequency_error_percent": [
+        3.5783052738872834,
+        2.4261122790147507
+      ],
+      "classification": "finite-horizon held-out CR check",
+      "qualification": "Finite horizon and one continued late nominal state; not an attractor or basin/broad-window proof."
+    },
+    {
+      "parameter": "nu",
+      "factor": 1.02,
+      "p": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.284070911077783,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "initial_state_source": "terminal state of archived nominal 240k run; RF phases continued at absolute time then translated to local t=0",
+      "initial_RF_phases_rad": [
+        2.3066744441521223,
+        5.3517159675610415
+      ],
+      "horizon_periods": 15000,
+      "steps_per_RF1_period": 64,
+      "skip_periods": 1000,
+      "status": 0,
+      "turns": [
+        16.204243173215694,
+        -13.089537728659524
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.05799501091405812,
+          -0.046824561038163584
+        ],
+        [
+          0.05781664129012621,
+          -0.046723096858420556
+        ],
+        [
+          0.05780526523136743,
+          -0.04669740552617815
+        ]
+      ],
+      "window_period_bounds": [
+        1000,
+        5666,
+        10333,
+        15000
+      ],
+      "frequency_Hz": [
+        0.05787229704719891,
+        -0.046748349030926874
+      ],
+      "mean_radius_R": [
+        0.5611701856220502,
+        0.758903363754352
+      ],
+      "r_min_R": [
+        0.5125145646863895,
+        0.6586379221717517
+      ],
+      "r_max_R": [
+        0.6514007237646967,
+        0.7901297633372425
+      ],
+      "max_abs_z_R": [
+        0.32278588944602243,
+        0.8540219087665174
+      ],
+      "min_pair_distance_R": 0.5608003547088122,
+      "analytical_M2_radii_R": [
+        0.5631867648549901,
+        0.758779241398423
+      ],
+      "analytical_M2_frequency_Hz": [
+        0.05974602184002197,
+        -0.04496673683753313
+      ],
+      "radius_error_percent": [
+        0.3593525252423201,
+        -0.016355488966989767
+      ],
+      "frequency_error_percent": [
+        3.2376886497090496,
+        3.8110697603782664
+      ],
+      "classification": "finite-horizon held-out CR check",
+      "qualification": "Finite horizon and one continued late nominal state; not an attractor or basin/broad-window proof."
+    },
+    {
+      "parameter": "beta",
+      "factor": 1.05,
+      "p": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.016157987097501717,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "initial_state_source": "terminal state of archived nominal 240k run; RF phases continued at absolute time then translated to local t=0",
+      "initial_RF_phases_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "horizon_periods": 15000,
+      "steps_per_RF1_period": 64,
+      "skip_periods": 1000,
+      "status": 0,
+      "turns": [
+        11.87162373785825,
+        -14.694403384558196
+      ],
+      "late_window_frequency_Hz": [
+        [
+          0.042445374687175595,
+          -0.052473697448833734
+        ],
+        [
+          0.04238584630362812,
+          -0.05245217420229942
+        ],
+        [
+          0.04236475763949117,
+          -0.05251416325894955
+        ]
+      ],
+      "window_period_bounds": [
+        1000,
+        5666,
+        10333,
+        15000
+      ],
+      "frequency_Hz": [
+        0.04239865620663661,
+        -0.05248001208770784
+      ],
+      "mean_radius_R": [
+        0.5652875478365047,
+        0.7618033991958947
+      ],
+      "r_min_R": [
+        0.51150276442905,
+        0.7248283917082399
+      ],
+      "r_max_R": [
+        0.6163528827309132,
+        0.793237342065032
+      ],
+      "max_abs_z_R": [
+        0.3227667546699153,
+        0.8537774057837884
+      ],
+      "min_pair_distance_R": 0.5362957939234672,
+      "analytical_M2_radii_R": [
+        0.5673125387300365,
+        0.7616842045666181
+      ],
+      "analytical_M2_frequency_Hz": [
+        0.04390961224167,
+        -0.05107941855507578
+      ],
+      "radius_error_percent": [
+        0.3582231558579257,
+        -0.015646376663897506
+      ],
+      "frequency_error_percent": [
+        3.5636884991578546,
+        2.668813281314234
+      ],
+      "classification": "finite-horizon held-out CR check",
+      "qualification": "Finite horizon and one continued late nominal state; not an attractor or basin/broad-window proof."
+    }
+  ]
+}

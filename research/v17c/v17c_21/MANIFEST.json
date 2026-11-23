@@ -1,0 +1,248 @@
+{
+  "study": "V17C.21 analytical counterrotation theory",
+  "branch": "research/v17c21-analytical-counterrotation",
+  "base_commit": "43c84bf72ce0807d244475518588770fbaf0fb69",
+  "source_commits": {
+    "V20A": "43c84bf72ce0807d244475518588770fbaf0fb69",
+    "V20B": "d1bf252649e174166becf464269318b5f97acd5d"
+  },
+  "remote_master_sha_before_publication": "e5e6b2473bf519c5670ee1c48882183fbcfc8f2d",
+  "baseline": {
+    "candidate": "refine12_sobol17_frequency_rescaled",
+    "A": 0.03492413282400757,
+    "B": 0.15631667332941065,
+    "nu": 3.2196773638017477,
+    "beta": 0.015388559140477825,
+    "m1_over_m2": 0.10963763906505944,
+    "C12": 9.747265456858355e-06,
+    "lambda1": 0.24452307123064748,
+    "lambda2": 0.17736598731050257
+  },
+  "trajectory_accounting": {
+    "new_joint_pair_integrations": 5,
+    "new_RF1_periods": 61000,
+    "reused_archived_pair_trajectories": 2,
+    "reused_archived_RF1_periods": 245000,
+    "pair_trajectory_records_considered": 7,
+    "total_RF1_period_horizon_considered": 306000,
+    "distinct_pair_parameter_sets": 6
+  },
+  "manifest_self_hash_excluded": true,
+  "files": [
+    {
+      "path": "ANALYTICAL_COUNTERROTATION_THEORY_RU.md",
+      "bytes": 24692,
+      "sha256": "a2f497d32c996661f3c185fcab76a44f75c1ab2d7656153a77268e9ec0e68a77"
+    },
+    {
+      "path": "ANALYTICAL_VS_FULL_NUMERICAL_RU.md",
+      "bytes": 6179,
+      "sha256": "63debee5810cc7c43edf8d681ead2c9ce49a49d457c25d6203756b522a312ff4"
+    },
+    {
+      "path": "AVERAGING_AND_ERROR_CONTROL_RU.md",
+      "bytes": 7824,
+      "sha256": "289b585306fc15b91e94bd36f96fd64f6631af9fc844aabcf7a18cf206557ab9"
+    },
+    {
+      "path": "code/analytical_model.py",
+      "bytes": 25253,
+      "sha256": "f40177740369d087e2579f1c94ed2994c73a0c8eca5e015d76918060ea19b396"
+    },
+    {
+      "path": "code/audit_model.py",
+      "bytes": 4769,
+      "sha256": "461f3d92839fc91ce09fe41958ee015895eb67b9a3b857da7cc0393dd2debb47"
+    },
+    {
+      "path": "code/build_manifest.py",
+      "bytes": 2720,
+      "sha256": "e28d5d9cba149e379ae4952624dd9c78c96e2d85b83065a94335042f73e0ed17"
+    },
+    {
+      "path": "code/grid_convergence.py",
+      "bytes": 2016,
+      "sha256": "258cd67bf9e1944a812943ff6b716269794ebad2bcea96cd76e2b52c65ac6c7e"
+    },
+    {
+      "path": "code/heldout_m3_case.py",
+      "bytes": 2139,
+      "sha256": "f4f2a86a6d64ec3910082804faf9dd618d98db53a273fe7b83494ec8b218d7cb"
+    },
+    {
+      "path": "code/heldout_m3_sweep.py",
+      "bytes": 3903,
+      "sha256": "efcdfb3c928548edbee94fd717daad2ef6bf55bb16adf050dd0f73174e534ce8"
+    },
+    {
+      "path": "code/heldout_validation.py",
+      "bytes": 5725,
+      "sha256": "ac61ab6e9c4cf76a3d5270dd9446e16422d9b6090cb05b7882e70c263c9af412"
+    },
+    {
+      "path": "code/micromotion_spectrum_audit.py",
+      "bytes": 5728,
+      "sha256": "2798102b9d57862c6c075e92a8394c0fbb1b4adbec57524c38560395f9504e62"
+    },
+    {
+      "path": "code/plot_analysis.py",
+      "bytes": 4409,
+      "sha256": "54f6704487df67d451c2df082dd312068927b7131d53f505506349bee92e5182"
+    },
+    {
+      "path": "code/plot_micromotion.py",
+      "bytes": 3986,
+      "sha256": "ba4f09872a76a68cf3b7dedac731cd1d1705efe79f657693f1300d8e41d571f1"
+    },
+    {
+      "path": "code/reference_torque_audit.py",
+      "bytes": 2257,
+      "sha256": "c5fec93280e6f69ee016a631c26461e29291622da2f340f6fac4d18fc41fa9f1"
+    },
+    {
+      "path": "code/stability_analysis.py",
+      "bytes": 4970,
+      "sha256": "6863ee1dca6dc2c18af3d89aca11872e1cedd93ddcca20ede4fd796f60057321"
+    },
+    {
+      "path": "COUPLED_ORBIT_EQUATIONS_RU.md",
+      "bytes": 5725,
+      "sha256": "ba9fcf5fd196e5915ebe43ad45f9de5a87b7c46ecf9b34c966a13306d3d33308"
+    },
+    {
+      "path": "DERIVATIONS.tex",
+      "bytes": 12244,
+      "sha256": "d02422a6e8944edef788e4b5305b0f77c3ca5b6a31918b3363799b9e77ff13fe"
+    },
+    {
+      "path": "figures/FIG01_model_accuracy_torque.pdf",
+      "bytes": 27761,
+      "sha256": "eb8e69f982298c3345787f04bc4e59144ffae08ee728ad5f33224fde73fa8435"
+    },
+    {
+      "path": "figures/FIG01_model_accuracy_torque.png",
+      "bytes": 351631,
+      "sha256": "92c832e9f29ac20b00121f135f725f200fe7c545e5ecb1459b08e39ac787cc69"
+    },
+    {
+      "path": "figures/FIG01_model_accuracy_torque.svg",
+      "bytes": 28633,
+      "sha256": "51b090bdea37101b90af87b132284ae210bfdb524048ef8a9d650bded2ee5649"
+    },
+    {
+      "path": "figures/FIG02_micromotion_spectrum.pdf",
+      "bytes": 92875,
+      "sha256": "669db140777d976e6a970250ebe649e642d446e9e5f175005855c5030ed258b2"
+    },
+    {
+      "path": "figures/FIG02_micromotion_spectrum.png",
+      "bytes": 822510,
+      "sha256": "9f9bc54830c2959f219d27fb3d49c93f9def74cdb45218f2945cc607f1bd677c"
+    },
+    {
+      "path": "figures/FIG02_micromotion_spectrum.svg",
+      "bytes": 1644701,
+      "sha256": "f9a436f220b3d17e93b78d3cdc867d907b6ecec38cbb7adbe5f78f344f7a2cf8"
+    },
+    {
+      "path": "NUMERICAL_VALIDATION_RU.md",
+      "bytes": 9357,
+      "sha256": "1fff1cbaaa037124b7d9310457740eeeb022db89749ff2a4d0d9eb6e2787af84"
+    },
+    {
+      "path": "PARAMETER_GENERALIZATION_RU.md",
+      "bytes": 4473,
+      "sha256": "fe26ab54252303924e3c9bd60da29af16a2f827cde8e5c9214406af3cd5c38a4"
+    },
+    {
+      "path": "results/analytical_predictions.json",
+      "bytes": 25525,
+      "sha256": "686c994af2d6d3c5437d4dd167b50232c8ab975e516b1d4220621376e16c518a"
+    },
+    {
+      "path": "results/heldout_A_1.050.npz",
+      "bytes": 38532,
+      "sha256": "69d202c515117912f1bb01284c0214b0aae5a04dfeba9a80c34c14ba4b9de6b9"
+    },
+    {
+      "path": "results/heldout_B_0.950.npz",
+      "bytes": 38454,
+      "sha256": "a0fce1ffa1bc5b47dc87b8f1c1db993e5ac0a28dc58a8e16d36f13204700d3d6"
+    },
+    {
+      "path": "results/heldout_beta_1.050.npz",
+      "bytes": 38373,
+      "sha256": "bdc1cec4f60e887f8aeabcff54611e1efe2f32d44ffa55a86708edec01a0d580"
+    },
+    {
+      "path": "results/heldout_M3_A105.json",
+      "bytes": 2266,
+      "sha256": "404fbb542d1551dff09cdd431f011ff5248ad6d1ccb9b075859619169bd352da"
+    },
+    {
+      "path": "results/heldout_M3_all.json",
+      "bytes": 6513,
+      "sha256": "f9aeeb26fdc0d2365652e19eae7454a6fca2cdd95864807cedecadf9e4fd2ca6"
+    },
+    {
+      "path": "results/heldout_M3_remaining.json",
+      "bytes": 4469,
+      "sha256": "231b2fa0d0c60f1326f7bc0208ed899103a4c2dfe004b3a94e202b3dc255a903"
+    },
+    {
+      "path": "results/heldout_nu_1.020.npz",
+      "bytes": 38507,
+      "sha256": "078ef740754b1f0fbb5f92f7d7084abdd625a034fa160662255f634f1efbb3ff"
+    },
+    {
+      "path": "results/heldout_validation.json",
+      "bytes": 9461,
+      "sha256": "496ef6892e3a108588e9e15e75657e88f73c8b38ba2b48d7c1beea7e114b4cbf"
+    },
+    {
+      "path": "results/legacy_force_closure_predictions.json",
+      "bytes": 29011,
+      "sha256": "3ca026a18ce811a5ea126ede9e0daa2a297c1e49cfc3e7c5211db05d2d8a1741"
+    },
+    {
+      "path": "results/m3_grid_convergence.json",
+      "bytes": 9214,
+      "sha256": "6d1cd80c0b89744104af1799b3c8b689bec9fd75a29a784e50c7ac437e4dd51a"
+    },
+    {
+      "path": "results/micromotion_spectrum.csv",
+      "bytes": 669168,
+      "sha256": "80c84deea2d8601fb50a360dcb015609e010754dca0398f4565c05267cb1f97b"
+    },
+    {
+      "path": "results/micromotion_spectrum_audit.json",
+      "bytes": 8491,
+      "sha256": "3a1132fb7ccd0c9857cbc019718e2d8761a2af631f68ec56f65229c1e26cfeb7"
+    },
+    {
+      "path": "results/micromotion_spectrum_audit.npz",
+      "bytes": 8030150,
+      "sha256": "654343e15be14c75f3f7e506e768941f00c54ab1f2782bf2c6ddeee2e6820bc2"
+    },
+    {
+      "path": "results/reference_torque_audit.json",
+      "bytes": 3866,
+      "sha256": "680f589d0062a1d1b56f8b235cab93152cb6eb59344b1548c2c1d4bd31375d9d"
+    },
+    {
+      "path": "results/sensitivity_and_stability.json",
+      "bytes": 8550,
+      "sha256": "a60f30e838673e74d19fc7ddf4018d0c00ef54264b43342278ce4d2174901902"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 6919,
+      "sha256": "a3a83df4fd2e5a816b71bb7abed73f97f9e4bdae918804f8af8383605a56f26b"
+    },
+    {
+      "path": "STABILITY_THEORY_RU.md",
+      "bytes": 5712,
+      "sha256": "5f1a485ca0e94f2e4e58d990cb814ccba6f12484f2ae270ea52894c8c54116fa"
+    }
+  ]
+}

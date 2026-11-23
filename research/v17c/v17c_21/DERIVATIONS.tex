@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath,amssymb,bm,siunitx}
+\usepackage[margin=25mm]{geometry}
+\usepackage{hyperref}
+\title{Вывод усреднённых уравнений встречного вращения двух частиц}
+\author{V17C.21}
+\date{23 ноября 2026 г.}
+\begin{document}
+\maketitle
+
+\section{Размерная система}
+Для $i=1,2$ и $j\ne i$ исходная размерная модель имеет вид
+\begin{align}
+ m_i\ddot{\bm r}_i={}&q_i\bm E_{RF}(\bm r_i,t)
+ +q_i\bm E_{DC}(\bm r_i)
+ +\frac{q_iq_j}{4\pi\varepsilon_0}
+ \frac{\bm r_i-\bm r_j}{|\bm r_i-\bm r_j|^3}
+ -\frac{6\pi\eta a_i}{C_{c,i}}
+ \left[1+0.15\operatorname{Re}_{d,i}^{0.687}\right]
+ \bm v_i +m_i\bm g,\\
+ \operatorname{Re}_{d,i}={}&\frac{2\rho_g a_i|\bm v_i|}{\eta},
+ \qquad V_i=\frac{4\pi a_i^3}{3}.
+\end{align}
+Здесь $C_c$ — Cunningham slip factor в принятой V20B-конвенции; формула сопротивления — Cunningham-corrected Stokes prefactor с квазистационарной Schiller--Naumann-поправкой. Это эмпирическое замыкание, а не точное общее решение нестационарной задачи обтекания. Воспроизводимый V20B RHS задаёт одинаковое ускорение тяжести для обеих частиц и не вычитает вытесненную массу газа. Физически уточнённая модель плавучести потребовала бы заменить $m_i\bm g$ на $(m_i-\rho_gV_i)\bm g$ и использовать индивидуальные $g_{z,i}=(1-\rho_g/\rho_{p,i})(\bm g\cdot\bm e_z)/(R\Omega_1^2)$; это отдельно не подменяется в V21.
+
+Положим $\tau=\Omega_1t$, $\bm\xi_i=\bm r_i/R$, $\alpha_i=(q_i/m_i)/(q_1/m_1)$, $s=m_1/m_2$, $Q=q_2/q_1$, $\nu=\Omega_2/\Omega_1$. Тогда $\alpha_1=1$, $\alpha_2=sQ$. При $A=q_1U_1T_1/(m_1R^2\Omega_1^2)$, $B=q_1U_2T_2/(m_1R^2\Omega_1^2)$, $\beta=q_1V_2/(m_1R^2\Omega_1^2)$,
+\begin{align}
+ \bm\xi_i''={}&\alpha_i\bm E_{RF}(\bm\xi_i,\tau)
+ +\alpha_i\beta(\xi_{ix},\xi_{iy},-2\xi_{iz})
+ +\chi_iC_{12}\frac{\bm\xi_i-\bm\xi_j}{|\bm\xi_i-\bm\xi_j|^3}
+ -\lambda_i[1+0.15(Re_{*,i}|\bm\xi_i'|)^{0.687}]\bm\xi_i'
+ +g_z\bm e_z,\\
+ \chi_1={}&1,\quad \chi_2=s,\quad
+ C_{12}=\frac{q_1q_2}{4\pi\varepsilon_0m_1R^3\Omega_1^2},\\
+ \lambda_i={}&\frac{6\pi\eta a_i}{C_{c,i}m_i\Omega_1},\quad
+ Re_{*,i}=\frac{2\rho_ga_iR\Omega_1}{\eta},\quad
+ g_z=\frac{\bm g\cdot\bm e_z}{R\Omega_1^2}.
+\end{align}
+Вторая частица использует собственную нормировку силы по $m_2$, поэтому коэффициент её парного ускорения равен $-sC_{12}$.
+
+\section{Комплексный MFS-спектр}
+В поперечной плоскости $w=\xi_x+i\xi_y$ каждая сохранённая комплексная MFS-мода $h$ задаётся семейством $j(h)$, целым $k_h$, коэффициентом $c_h$ и безразмерной амплитудой $A_1=A$, $A_2=B$. Потенциал и поле записываются как
+\begin{align}
+ \phi_{RF}={}&\operatorname{Re}\sum_h A_{j(h)}c_he^{-i\psi_{j(h)}}
+ \begin{cases}w^{|k_h|},&k_h>0,\\
+ \bar w^{|k_h|},&k_h<0,\end{cases}\quad
+ (k_h\in\{-46,-22,2,26,-28,-4,20,44\}),\\
+ \psi_1'={}&1,\qquad \psi_2'=\nu,\qquad
+ E_x+iE_y=-2\frac{\partial\phi_{RF}}{\partial\bar w}.
+\end{align}
+Амплитуды $A,B$ включают MFS transfer factors: их нельзя отождествлять с амплитудами электродных напряжений. Для $k>0$ гармоника пропорциональна $w^k$, для $k<0$ — $\bar w^{|k|}$; RF-знак в коде проверен против независимого RHS V20B.
+
+\section{Moving-orbit линейный отклик}
+Для одной частицы вводим локальную вращающуюся систему $\bm\xi=Q(\omega\tau)[(r,0)+\bm\xi_{loc}]$, $\omega=d\theta/d\tau$, $J=\begin{psmallmatrix}0&-1\\1&0\end{psmallmatrix}$. Производные в инерциальной системе равны
+\[
+ \bm v_{loc}=\dot{\bm\xi}_{loc}+\omega J[(r,0)+\bm\xi_{loc}],\qquad
+ \bm a_{loc}=\ddot{\bm\xi}_{loc}
+ +2\omega J\dot{\bm\xi}_{loc}
+ -\omega^2[(r,0)+\bm\xi_{loc}].
+\]
+Линеаризуем по малому быстрому смещению, оставляя ненулевой $\omega$. Для phasor-конвенции $\bm\xi=\operatorname{Re}(\hat\xi e^{-i\sigma\tau})$ относительная частота бегущей моды есть $\sigma_h=\nu_{j(h)}-k_h\omega$. Перенос кориолисова, центробежного, DC и линейного drag-членов в левую часть даёт
+\begin{align}
+ D_h\hat{\bm\xi}_h={}&\hat{\bm f}_h,\\
+ D_h={}&(-\sigma_h^2-\omega^2-\alpha\beta-i\lambda\sigma_h)I
+ +(\lambda\omega-2i\sigma_h\omega)J,\\
+ \hat{\bm f}_h={}&-\alpha n_hA_{j(h)}c_hr^{n_h-1}
+ \begin{pmatrix}1\\i\operatorname{sgn}(k_h)\end{pmatrix}.
+\end{align}
+При невырожденном $D_h$ это даёт явную комплексную восприимчивость. Квадратичное взаимодействие локального градиента RF-поля с микродвижением порождает усреднённую силу
+\[
+ \bar{\bm F}_{RF,h}=\frac12\operatorname{Re}
+ (H_h\overline{\hat{\bm\xi}_h}),\qquad
+ H_h=-\alpha n_h(n_h-1)A_{j(h)}c_hr^{n_h-2}
+ \begin{pmatrix}1&i\operatorname{sgn}(k_h)\\
+ i\operatorname{sgn}(k_h)&-1\end{pmatrix}.
+\]
+Отклик пропорционален $A_jr^{n_h-1}/D_h$. Таким образом, зависимость от $\omega$ не теряется в ведущем неподвижном псевдопотенциале. Усреднение допустимо только если быстрые знаменатели отделены от нуля и поперечная амплитуда отклика мала относительно $r$.
+
+\section{Моменты и Coulomb}
+Момент RF включает момент на средней орбите и момент силы на микросмещении:
+\begin{align}
+ \bar M_{RF,h}={}&r\bar F_{RF,\theta,h}
+ +\frac12\operatorname{Re}(\hat\xi_x\overline{\hat f_y}
+ -\hat\xi_y\overline{\hat f_x}),\\
+ L_{\mu,h}={}&\frac{\omega}{2}|\hat\bm\xi_h|^2
+ +\frac12\operatorname{Re}[\hat\xi_x(-i\sigma_h\hat\xi_y)^*
+ -\hat\xi_y(-i\sigma_h\hat\xi_x)^*],\\
+ \bar M_{St}={}&-\lambda(r^2\omega+\sum_hL_{\mu,h}).
+\end{align}
+Для M3 это заменяется прямым тороидальным усреднением полного произведения $\bm\xi\times\bm F_{RF}$ и нелинейного сопротивления по полученным коллокационным полям.
+
+При равномерной относительной фазе двух невзаимодействующих круговых опор $\varphi=\theta_2-\theta_1$:
+\begin{align}
+ \bar F_{C,r,1}={}&C_{12}\left\langle
+ \frac{r_1-r_2\cos\varphi}
+ {(r_1^2+r_2^2-2r_1r_2\cos\varphi+\Delta z^2)^{3/2}}
+ \right\rangle,\\
+ \bar F_{C,z,1}={}&C_{12}\Delta z\langle d^{-3}\rangle,\quad
+ \bar F_{C,\theta,i}=0.
+\end{align}
+Для частицы 2 сила ускорения имеет коэффициент $-sC_{12}$ относительно вектора $\bm\xi_1-\bm\xi_2$. Равенство среднего тангенциального Coulomb-момента нулю не означает нулевую мгновенную передачу момента: двухчастичные внутренние моменты равны и противоположны в общей массе-нормировке.
+
+\section{Стационарная медленная система}
+Средние корни определяются не шестью независимыми одночастичными уравнениями, а совместной системой для $x=(r_1,\omega_1,r_2,\omega_2,z_1,z_2)$:
+\begin{align}
+ 0={}&r_i\omega_i^2+\alpha_i\beta r_i
+ +\bar F_{RF,r,i}+\bar F_{drag,r,i}+\bar F_{C,r,i},\\
+ 0={}&\bar M_{RF,i}+\bar M_{C,i}+\bar M_{drag,i},\\
+ 0={}&-2\alpha_i\beta z_i+g_z+\bar F_{C,z,i}.
+\end{align}
+Первая строка следует из $a_r=-r\omega^2=F_r$: то есть $r\omega^2+F_r=0$. В коде решение — корень этих средних остатков. Критерий встречного вращения — существование локализованного корня с $r_i>0$, допустимыми $z_i$, и $\omega_1\omega_2<0$; знак решения выбирается балансом двух бегущих мод с drag, а не Coulomb. Устойчивость корня проверяется отдельно спектром Якобиана редуцированного медленного поля.
+
+\section{M3 тороидальное коллокационное замыкание}
+Пусть $\vartheta=(\theta,\psi_1,\psi_2)$ и $\xi=\xi(\vartheta)$. Дифференцирование по времени задаётся оператором $\mathcal D=\omega\partial_\theta+\partial_\psi_1+\nu\partial_\psi_2$. В плоскости вращающейся системы быстрое смещение находится из проекции на разрешённые быстрые Fourier-моды:
+\begin{align}
+ &\mathcal P_f\{[\mathcal D^2+2\omega J\mathcal D-\omega^2I
+ +\lambda\mathcal D+\lambda\omega J-\alpha\beta I]\bm\xi
+ -\bm E_{RF}(\bm R+\bm\xi,\psi)-\bm F_{SN}(\bm v)\}
+ =\mathcal R_f,\\
+ \bm v={}&\omega r\bm e_\theta
+ +\mathcal D\bm\xi+\omega J\bm\xi,\qquad
+ \bm F_{SN}=-0.15\lambda(Re_*|\bm v|)^{0.687}\bm v.
+\end{align}
+Fourier collocation решает это уравнение для всех разрешённых комбинаций фаз. Чисто орбитальные и почти резонансные modes ($|k_1+\nu k_2+\omega k_0|<0.05$ в используемой нормировке) не обращаются как быстрые моды, а остаются в slow residual. Член $\mathcal R_f$ — сохранённая невязка collocation; отброшенные медленные коэффициенты не объявляются нулём. Это численный тороидальный closure, но не строгое асимптотическое разложение.
+
+\section{Параметризация и вычисленные величины}
+Независимые математические координаты локального анализа: $A,B,\nu,\beta,\alpha_2,\lambda_1,\lambda_2,C_{12},g_z$, плюс спектр $c_h,k_h$. Физические изменения связаны: $\alpha_2=(q_2/m_2)/(q_1/m_1)$, $s=m_1/m_2$, $Q=q_2/q_1$, $\lambda_i$ и $Re_{*,i}$ зависят от размера, плотности, среды и частоты, а $C_{12}$ зависит от тех же зарядов и массы. Их нельзя независимо варьировать как экспериментальные ручки.
+
+Для refine12 V20B M3 даёт $r/R=(0.5550375,0.7513383)$ и $f_{orb}=(+0.0547220,-0.0487398)$ Hz. Ошибки против независимого 240k RK4 эталона: $(-0.123,-0.024)\%$ по радиусам и $(+0.136,-0.590)\%$ по частотам. Четыре коротких локальных hold-out подтверждают переносимость только в проверенной окрестности; для A$\times1.05$ M2 ошибается по второй частоте на 5.73%, а M3 на 0.62%. Номинальные решения не доказывают точности на всей области параметров.
+
+\end{document}
