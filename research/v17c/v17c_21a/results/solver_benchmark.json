@@ -1,0 +1,421 @@
+{
+  "study": "V17C.21.1 inner M3 solver benchmark",
+  "source_commit": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+  "frozen_reference_root_only_for_diagnostic": true,
+  "grid": [
+    192,
+    16,
+    16
+  ],
+  "rows": [
+    {
+      "converged": false,
+      "status": "NONFINITE_OR_DIVERGENT",
+      "iterations": 60,
+      "wall_time_s": 5.890546999988146,
+      "relative_nonlinear_residual": 0.9998104069948041,
+      "relative_original_fast_equation_residual": 0.9999312453904299,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 0.13919078503139,
+      "minimum_fast_mode_denominator": 0.00047279093040219697,
+      "rms_rf_force": 296.84578925660156,
+      "rms_unresolved_fast_force": 294.63162091977676,
+      "rms_unresolved_slow_force": 33.06397272666397,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.46695620713204833,
+      "mean_total_RF_torque": 6.321013017027372,
+      "mean_total_drag_torque": -0.0001675585713589832,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": false,
+        "iterations": 160,
+        "relative_fixed_point_residual": 0.005660381416107018,
+        "rms_rf_force": 0.11641772652964005,
+        "rms_micromotion": 0.03908864454317519,
+        "mean_total_RF_torque": 0.0003867204755135647,
+        "mean_total_drag_torque": -0.00038672130677021174,
+        "rms_fast_mode_equation_residual": 7.89534847643752e-05,
+        "rms_slow_mode_residual": 8.059093348697501e-08
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": 296.72937153007194,
+        "rms_micromotion": 0.42786756258887315,
+        "mean_total_RF_torque": 6.3206262965518585,
+        "mean_total_drag_torque": 0.00021916273541122854
+      },
+      "particle": 1,
+      "method": "fixed_point",
+      "oversample": 1,
+      "tolerance": 2e-09,
+      "max_iter": 160
+    },
+    {
+      "converged": false,
+      "status": "ITERATION_LIMIT_OR_STALL",
+      "iterations": 320,
+      "wall_time_s": 31.036830500001088,
+      "relative_nonlinear_residual": 0.30509358141265025,
+      "relative_original_fast_equation_residual": 0.0904983259810879,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 0.001092810400476787,
+      "minimum_fast_mode_denominator": 0.00047279093040219697,
+      "rms_rf_force": 0.11916453078555497,
+      "rms_unresolved_fast_force": 0.010745920476181147,
+      "rms_unresolved_slow_force": 3.9886657091536683e-05,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.051522414314905056,
+      "mean_total_RF_torque": 0.0003784789465634795,
+      "mean_total_drag_torque": -0.0003850415529674578,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": false,
+        "iterations": 160,
+        "relative_fixed_point_residual": 0.005660381416107018,
+        "rms_rf_force": 0.11641772652964005,
+        "rms_micromotion": 0.03908864454317519,
+        "mean_total_RF_torque": 0.0003867204755135647,
+        "mean_total_drag_torque": -0.00038672130677021174,
+        "rms_fast_mode_equation_residual": 7.89534847643752e-05,
+        "rms_slow_mode_residual": 8.059093348697501e-08
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": 0.0027468042559149197,
+        "rms_micromotion": 0.012433769771729865,
+        "mean_total_RF_torque": -8.241528950085153e-06,
+        "mean_total_drag_torque": 1.6797538027539223e-06
+      },
+      "particle": 1,
+      "method": "adaptive",
+      "oversample": 1,
+      "tolerance": 1e-05,
+      "max_iter": 320
+    },
+    {
+      "converged": true,
+      "status": "CONVERGED",
+      "iterations": 260,
+      "wall_time_s": 32.11100239993539,
+      "relative_nonlinear_residual": 9.957343614218208e-06,
+      "relative_original_fast_equation_residual": 7.008301918678173e-07,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 1.399024409649759e-07,
+      "minimum_fast_mode_denominator": 0.00047279093040219697,
+      "rms_rf_force": 0.11641753857260226,
+      "rms_unresolved_fast_force": 8.129284423760041e-08,
+      "rms_unresolved_slow_force": 4.981413076739044e-07,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.03908767648507593,
+      "mean_total_RF_torque": 0.00038672209569912494,
+      "mean_total_drag_torque": -0.000386721655076428,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": false,
+        "iterations": 160,
+        "relative_fixed_point_residual": 0.005660381416107018,
+        "rms_rf_force": 0.11641772652964005,
+        "rms_micromotion": 0.03908864454317519,
+        "mean_total_RF_torque": 0.0003867204755135647,
+        "mean_total_drag_torque": -0.00038672130677021174,
+        "rms_fast_mode_equation_residual": 7.89534847643752e-05,
+        "rms_slow_mode_residual": 8.059093348697501e-08
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": -1.879570377949502e-07,
+        "rms_micromotion": -9.680580992585397e-07,
+        "mean_total_RF_torque": 1.6201855602580514e-09,
+        "mean_total_drag_torque": -3.4830621628003863e-10
+      },
+      "particle": 1,
+      "method": "anderson",
+      "oversample": 1,
+      "tolerance": 1e-05,
+      "max_iter": 320
+    },
+    {
+      "converged": true,
+      "status": "CONVERGED",
+      "iterations": 12,
+      "wall_time_s": 40.66376549995039,
+      "relative_nonlinear_residual": 2.736747534538377e-08,
+      "relative_original_fast_equation_residual": 9.998112985647339e-09,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 5.719244377907822e-10,
+      "minimum_fast_mode_denominator": 0.00047279093040219697,
+      "rms_rf_force": 0.11641753857927979,
+      "rms_unresolved_fast_force": 1.1597317739761626e-09,
+      "rms_unresolved_slow_force": 4.981412609995118e-07,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.03908767647932392,
+      "mean_total_RF_torque": 0.000386722098860571,
+      "mean_total_drag_torque": -0.00038672165579694585,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": false,
+        "iterations": 160,
+        "relative_fixed_point_residual": 0.005660381416107018,
+        "rms_rf_force": 0.11641772652964005,
+        "rms_micromotion": 0.03908864454317519,
+        "mean_total_RF_torque": 0.0003867204755135647,
+        "mean_total_drag_torque": -0.00038672130677021174,
+        "rms_fast_mode_equation_residual": 7.89534847643752e-05,
+        "rms_slow_mode_residual": 8.059093348697501e-08
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": -1.879503602614241e-07,
+        "rms_micromotion": -9.680638512685191e-07,
+        "mean_total_RF_torque": 1.6233470062979038e-09,
+        "mean_total_drag_torque": -3.4902673410946647e-10
+      },
+      "particle": 1,
+      "method": "newton_krylov",
+      "oversample": 1,
+      "tolerance": 1e-07,
+      "max_iter": 30
+    },
+    {
+      "converged": false,
+      "status": "NONFINITE_OR_DIVERGENT",
+      "iterations": 140,
+      "wall_time_s": 13.573487299960107,
+      "relative_nonlinear_residual": 1.0000000224639696,
+      "relative_original_fast_equation_residual": 1.0000000068815076,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 0.21665293843339714,
+      "minimum_fast_mode_denominator": 0.00015117870534688655,
+      "rms_rf_force": 1294866.2873469396,
+      "rms_unresolved_fast_force": 1270786.9878408455,
+      "rms_unresolved_slow_force": 247947.18939964773,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.42712007988562817,
+      "mean_total_RF_torque": 1316.0159939613495,
+      "mean_total_drag_torque": -0.00011096665611216902,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": true,
+        "iterations": 56,
+        "relative_fixed_point_residual": 1.5755769241567035e-09,
+        "rms_rf_force": 0.1026619747993221,
+        "rms_micromotion": 0.021677925568464994,
+        "mean_total_RF_torque": -9.218925504468975e-05,
+        "mean_total_drag_torque": 9.218927147899596e-05,
+        "rms_fast_mode_equation_residual": 2.2960292175620383e-07,
+        "rms_slow_mode_residual": 1.8904617659168976e-05
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": 1294866.1846849648,
+        "rms_micromotion": 0.4054421543171632,
+        "mean_total_RF_torque": 1316.0160861506047,
+        "mean_total_drag_torque": -0.000203155927591165
+      },
+      "particle": 2,
+      "method": "fixed_point",
+      "oversample": 1,
+      "tolerance": 2e-09,
+      "max_iter": 160
+    },
+    {
+      "converged": true,
+      "status": "CONVERGED",
+      "iterations": 19,
+      "wall_time_s": 1.8807749000843614,
+      "relative_nonlinear_residual": 6.822686738692742e-06,
+      "relative_original_fast_equation_residual": 8.39514506744633e-07,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 7.92379136017477e-08,
+      "minimum_fast_mode_denominator": 0.00015117870534688655,
+      "rms_rf_force": 0.10266197480981396,
+      "rms_unresolved_fast_force": 8.601924978779344e-08,
+      "rms_unresolved_slow_force": 1.8904701275422027e-05,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.021677926389135405,
+      "mean_total_RF_torque": -9.218923840550654e-05,
+      "mean_total_drag_torque": 9.218927003609087e-05,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": true,
+        "iterations": 56,
+        "relative_fixed_point_residual": 1.5755769241567035e-09,
+        "rms_rf_force": 0.1026619747993221,
+        "rms_micromotion": 0.021677925568464994,
+        "mean_total_RF_torque": -9.218925504468975e-05,
+        "mean_total_drag_torque": 9.218927147899596e-05,
+        "rms_fast_mode_equation_residual": 2.2960292175620383e-07,
+        "rms_slow_mode_residual": 1.8904617659168976e-05
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": 1.049185738288827e-11,
+        "rms_micromotion": 8.20670410101032e-10,
+        "mean_total_RF_torque": 1.6639183208892218e-11,
+        "mean_total_drag_torque": -1.4429050944515798e-12
+      },
+      "particle": 2,
+      "method": "adaptive",
+      "oversample": 1,
+      "tolerance": 1e-05,
+      "max_iter": 320
+    },
+    {
+      "converged": true,
+      "status": "CONVERGED",
+      "iterations": 12,
+      "wall_time_s": 1.3737467000028118,
+      "relative_nonlinear_residual": 7.396576704111573e-06,
+      "relative_original_fast_equation_residual": 3.643546694842762e-06,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 8.14256935311713e-08,
+      "minimum_fast_mode_denominator": 0.00015117870534688655,
+      "rms_rf_force": 0.10266197520455474,
+      "rms_unresolved_fast_force": 3.7332905024015604e-07,
+      "rms_unresolved_slow_force": 1.8904589511498377e-05,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.021677923255158885,
+      "mean_total_RF_torque": -9.219210898441228e-05,
+      "mean_total_drag_torque": 9.218873376536567e-05,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": true,
+        "iterations": 56,
+        "relative_fixed_point_residual": 1.5755769241567035e-09,
+        "rms_rf_force": 0.1026619747993221,
+        "rms_micromotion": 0.021677925568464994,
+        "mean_total_RF_torque": -9.218925504468975e-05,
+        "mean_total_drag_torque": 9.218927147899596e-05,
+        "rms_fast_mode_equation_residual": 2.2960292175620383e-07,
+        "rms_slow_mode_residual": 1.8904617659168976e-05
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": 4.0523263911129703e-10,
+        "rms_micromotion": -2.3133061091695772e-09,
+        "mean_total_RF_torque": -2.8539397225270423e-09,
+        "mean_total_drag_torque": -5.37713630295155e-10
+      },
+      "particle": 2,
+      "method": "anderson",
+      "oversample": 1,
+      "tolerance": 1e-05,
+      "max_iter": 320
+    },
+    {
+      "converged": true,
+      "status": "CONVERGED",
+      "iterations": 4,
+      "wall_time_s": 8.119842599960975,
+      "relative_nonlinear_residual": 1.5453889079735821e-09,
+      "relative_original_fast_equation_residual": 1.6757145457273515e-10,
+      "equation_tolerance": 5e-05,
+      "fixed_point_change_rms": 1.1433154697275377e-09,
+      "minimum_fast_mode_denominator": 0.00015117870534688655,
+      "rms_rf_force": 0.10266197479893337,
+      "rms_unresolved_fast_force": 1.716988889479384e-11,
+      "rms_unresolved_slow_force": 1.8904708495994028e-05,
+      "rms_nonlinear_force_tail": null,
+      "relative_nonlinear_force_tail": null,
+      "rms_micromotion": 0.021677925558564057,
+      "mean_total_RF_torque": -9.21892552932329e-05,
+      "mean_total_drag_torque": 9.21892713955814e-05,
+      "phase_grid": [
+        192,
+        16,
+        16
+      ],
+      "evaluation_grid": [
+        192,
+        16,
+        16
+      ],
+      "legacy": {
+        "converged": true,
+        "iterations": 56,
+        "relative_fixed_point_residual": 1.5755769241567035e-09,
+        "rms_rf_force": 0.1026619747993221,
+        "rms_micromotion": 0.021677925568464994,
+        "mean_total_RF_torque": -9.218925504468975e-05,
+        "mean_total_drag_torque": 9.218927147899596e-05,
+        "rms_fast_mode_equation_residual": 2.2960292175620383e-07,
+        "rms_slow_mode_residual": 1.8904617659168976e-05
+      },
+      "new_minus_legacy": {
+        "rms_rf_force": -3.8873071428469075e-13,
+        "rms_micromotion": -9.900937708584578e-12,
+        "mean_total_RF_torque": -2.4854315654188053e-13,
+        "mean_total_drag_torque": -8.341455781310514e-14
+      },
+      "particle": 2,
+      "method": "newton_krylov",
+      "oversample": 1,
+      "tolerance": 1e-07,
+      "max_iter": 30
+    }
+  ],
+  "qualification": "This compares the inner solve at the archived V21 M3 roots; it is not the required full-root grid convergence campaign."
+}

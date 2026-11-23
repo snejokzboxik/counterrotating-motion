@@ -1,0 +1,895 @@
+{
+  "study": "V17C.21.1 p1 inner solver residual traces",
+  "grid": [
+    192,
+    16,
+    16
+  ],
+  "particle": 1,
+  "frozen_root": {
+    "r": 0.5550374649008335,
+    "omega": 0.0010944455997807332
+  },
+  "rows": [
+    {
+      "status": "NONFINITE_OR_DIVERGENT",
+      "converged": false,
+      "iterations": 60,
+      "wall_time_s": 6.030793700017966,
+      "relative_nonlinear_residual": 0.9998095598241832,
+      "fixed_point_change_rms": 0.13916080496757696,
+      "minimum_fast_mode_denominator": 0.0004727934774370327,
+      "rms_unresolved_fast_force": 293.4182580663575,
+      "relative_original_fast_equation_residual": 0.9999309925837176,
+      "equation_tolerance": 5e-05,
+      "rms_unresolved_slow_force": 32.92515332445644,
+      "residual_trace": [
+        {
+          "iteration": 1,
+          "relative_nonlinear_residual": 1.0,
+          "rms_map_residual": 0.02728265574385132,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 5,
+          "relative_nonlinear_residual": 0.07705422088428157,
+          "rms_map_residual": 0.0018681206286203472,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 10,
+          "relative_nonlinear_residual": 0.0045665217020203885,
+          "rms_map_residual": 9.201010946556667e-05,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 15,
+          "relative_nonlinear_residual": 0.00044708977374121624,
+          "rms_map_residual": 6.492116510358949e-06,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 20,
+          "relative_nonlinear_residual": 0.00017477394752372122,
+          "rms_map_residual": 2.4685358090260864e-06,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 25,
+          "relative_nonlinear_residual": 0.0003587433140434563,
+          "rms_map_residual": 7.077204613181698e-06,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 30,
+          "relative_nonlinear_residual": 0.0013129145723115214,
+          "rms_map_residual": 3.0498146332996015e-05,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 35,
+          "relative_nonlinear_residual": 0.0053691321928535365,
+          "rms_map_residual": 0.00013318661346069807,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 40,
+          "relative_nonlinear_residual": 0.021275986863021366,
+          "rms_map_residual": 0.0005820203476976052,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 45,
+          "relative_nonlinear_residual": 0.07492656797773327,
+          "rms_map_residual": 0.002544104883634969,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 50,
+          "relative_nonlinear_residual": 0.18451416158555914,
+          "rms_map_residual": 0.01115644259160781,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 55,
+          "relative_nonlinear_residual": 0.3597647319395249,
+          "rms_map_residual": 0.051593737158020535,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 60,
+          "relative_nonlinear_residual": 0.9998095598241832,
+          "rms_map_residual": 815.2463127925226,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 60,
+          "status": "DIVERGENT_UPDATE"
+        }
+      ],
+      "method": "fixed_point",
+      "tolerance": 2e-09,
+      "max_iter": 160
+    },
+    {
+      "status": "ITERATION_LIMIT_OR_STALL",
+      "converged": false,
+      "iterations": 320,
+      "wall_time_s": 33.026519499951974,
+      "relative_nonlinear_residual": 0.3050817503048228,
+      "fixed_point_change_rms": 0.001092717186688955,
+      "minimum_fast_mode_denominator": 0.0004727934774370327,
+      "rms_unresolved_fast_force": 0.010745020846211305,
+      "relative_original_fast_equation_residual": 0.09049109500713814,
+      "equation_tolerance": 5e-05,
+      "rms_unresolved_slow_force": 3.9882076800476686e-05,
+      "residual_trace": [
+        {
+          "iteration": 1,
+          "relative_nonlinear_residual": 1.0,
+          "rms_map_residual": 0.02728265574385132,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 5,
+          "relative_nonlinear_residual": 0.06745865659011142,
+          "rms_map_residual": 0.001615616814874726,
+          "relaxation": 0.575
+        },
+        {
+          "iteration": 10,
+          "relative_nonlinear_residual": 0.0015889043276315804,
+          "rms_map_residual": 2.7869038031170935e-05,
+          "relaxation": 0.6612499999999999
+        },
+        {
+          "iteration": 15,
+          "relative_nonlinear_residual": 0.0001610136695261294,
+          "rms_map_residual": 2.52606795110523e-06,
+          "relaxation": 0.85
+        },
+        {
+          "iteration": 20,
+          "relative_nonlinear_residual": 0.00019880744500509924,
+          "rms_map_residual": 3.526839109481856e-06,
+          "relaxation": 0.053125
+        },
+        {
+          "iteration": 25,
+          "relative_nonlinear_residual": 0.0001974319034394907,
+          "rms_map_residual": 3.966598388579586e-06,
+          "relaxation": 0.053125
+        },
+        {
+          "iteration": 30,
+          "relative_nonlinear_residual": 0.0002346454525749851,
+          "rms_map_residual": 4.513139565534374e-06,
+          "relaxation": 0.053125
+        },
+        {
+          "iteration": 35,
+          "relative_nonlinear_residual": 0.000274993162850506,
+          "rms_map_residual": 5.17827889218897e-06,
+          "relaxation": 0.053125
+        },
+        {
+          "iteration": 40,
+          "relative_nonlinear_residual": 0.00031690777257951594,
+          "rms_map_residual": 5.976572071966429e-06,
+          "relaxation": 0.053125
+        },
+        {
+          "iteration": 45,
+          "relative_nonlinear_residual": 0.0003576046163887284,
+          "rms_map_residual": 6.913705513956068e-06,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 50,
+          "relative_nonlinear_residual": 0.0003929161322806507,
+          "rms_map_residual": 7.962098081147034e-06,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 55,
+          "relative_nonlinear_residual": 0.00042314170532025005,
+          "rms_map_residual": 9.184858268146966e-06,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 60,
+          "relative_nonlinear_residual": 0.00044302114165810125,
+          "rms_map_residual": 1.0607592086799157e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 65,
+          "relative_nonlinear_residual": 0.00044676988646016663,
+          "rms_map_residual": 1.2260366459511905e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 70,
+          "relative_nonlinear_residual": 0.0005062083131587133,
+          "rms_map_residual": 1.4178330606895342e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 75,
+          "relative_nonlinear_residual": 0.0006405124783865469,
+          "rms_map_residual": 1.6402448443880198e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 80,
+          "relative_nonlinear_residual": 0.0007850648776410182,
+          "rms_map_residual": 1.898035950148093e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 85,
+          "relative_nonlinear_residual": 0.0009435587563091938,
+          "rms_map_residual": 2.196738730971599e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 90,
+          "relative_nonlinear_residual": 0.0011035033820827973,
+          "rms_map_residual": 2.542771673704432e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 95,
+          "relative_nonlinear_residual": 0.0012515191302517258,
+          "rms_map_residual": 2.9435765186420735e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 100,
+          "relative_nonlinear_residual": 0.0013733317869962342,
+          "rms_map_residual": 3.407777666866073e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 105,
+          "relative_nonlinear_residual": 0.0014529600580756154,
+          "rms_map_residual": 3.9453672598051456e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 110,
+          "relative_nonlinear_residual": 0.0014718556136346158,
+          "rms_map_residual": 4.5679198740623114e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 115,
+          "relative_nonlinear_residual": 0.0017791215182328883,
+          "rms_map_residual": 5.288841420621633e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 120,
+          "relative_nonlinear_residual": 0.0022949324435126675,
+          "rms_map_residual": 6.12365758482422e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 125,
+          "relative_nonlinear_residual": 0.0028444552421116034,
+          "rms_map_residual": 7.090348007561512e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 130,
+          "relative_nonlinear_residual": 0.003406023934240868,
+          "rms_map_residual": 8.209733402629173e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 135,
+          "relative_nonlinear_residual": 0.0039487107180043324,
+          "rms_map_residual": 9.505923943097706e-05,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 140,
+          "relative_nonlinear_residual": 0.00443314409032809,
+          "rms_map_residual": 0.00011006838545757969,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 145,
+          "relative_nonlinear_residual": 0.004810466608237768,
+          "rms_map_residual": 0.00012744806165376234,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 150,
+          "relative_nonlinear_residual": 0.005022107064731236,
+          "rms_map_residual": 0.00014757261934505943,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 155,
+          "relative_nonlinear_residual": 0.005000406973617919,
+          "rms_map_residual": 0.0001708755304269349,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 160,
+          "relative_nonlinear_residual": 0.006638642578446169,
+          "rms_map_residual": 0.00019785871759017077,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 165,
+          "relative_nonlinear_residual": 0.008497136622952319,
+          "rms_map_residual": 0.00022910336057966615,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 170,
+          "relative_nonlinear_residual": 0.01047015051407162,
+          "rms_map_residual": 0.0002652824189049431,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 175,
+          "relative_nonlinear_residual": 0.012438817298757777,
+          "rms_map_residual": 0.00030717515030406853,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 180,
+          "relative_nonlinear_residual": 0.01429255720243565,
+          "rms_map_residual": 0.0003556839421841842,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 185,
+          "relative_nonlinear_residual": 0.015886127260836696,
+          "rms_map_residual": 0.0004118538068315715,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 190,
+          "relative_nonlinear_residual": 0.017045729192697222,
+          "rms_map_residual": 0.0004768949230582646,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 195,
+          "relative_nonlinear_residual": 0.017566471444938576,
+          "rms_map_residual": 0.0005522086525529178,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 200,
+          "relative_nonlinear_residual": 0.01863643453640115,
+          "rms_map_residual": 0.0006394175494201819,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 205,
+          "relative_nonlinear_residual": 0.02470416870824592,
+          "rms_map_residual": 0.0007404000527373569,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 210,
+          "relative_nonlinear_residual": 0.0313426957190571,
+          "rms_map_residual": 0.000857330817119952,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 215,
+          "relative_nonlinear_residual": 0.037798064725349974,
+          "rms_map_residual": 0.0009927279392097147,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 220,
+          "relative_nonlinear_residual": 0.0439316269281255,
+          "rms_map_residual": 0.0011495085200684694,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 225,
+          "relative_nonlinear_residual": 0.04937971574757513,
+          "rms_map_residual": 0.0013310538330094785,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 230,
+          "relative_nonlinear_residual": 0.053673099585008405,
+          "rms_map_residual": 0.0015412846891251317,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 235,
+          "relative_nonlinear_residual": 0.056287834765555815,
+          "rms_map_residual": 0.001784746612367773,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 240,
+          "relative_nonlinear_residual": 0.05664280002758077,
+          "rms_map_residual": 0.00206670400810897,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 245,
+          "relative_nonlinear_residual": 0.06478276707346545,
+          "rms_map_residual": 0.002393244150533457,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 250,
+          "relative_nonlinear_residual": 0.0843440594332085,
+          "rms_map_residual": 0.0027713970100498434,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 255,
+          "relative_nonlinear_residual": 0.10591762511803993,
+          "rms_map_residual": 0.0032092855147449616,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 260,
+          "relative_nonlinear_residual": 0.12282556259466189,
+          "rms_map_residual": 0.003716328883853313,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 265,
+          "relative_nonlinear_residual": 0.1365667041379856,
+          "rms_map_residual": 0.0043035206024010985,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 270,
+          "relative_nonlinear_residual": 0.14693375115409169,
+          "rms_map_residual": 0.004983781638741491,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 275,
+          "relative_nonlinear_residual": 0.1531610274533329,
+          "rms_map_residual": 0.005772344224135218,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 280,
+          "relative_nonlinear_residual": 0.15442002979184566,
+          "rms_map_residual": 0.006687068283002671,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 285,
+          "relative_nonlinear_residual": 0.14983940381016428,
+          "rms_map_residual": 0.007748580456130109,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 290,
+          "relative_nonlinear_residual": 0.18283418110464175,
+          "rms_map_residual": 0.008980228530571713,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 295,
+          "relative_nonlinear_residual": 0.23359214564443023,
+          "rms_map_residual": 0.010408118196549503,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 300,
+          "relative_nonlinear_residual": 0.28454954450323144,
+          "rms_map_residual": 0.012061898169547823,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 305,
+          "relative_nonlinear_residual": 0.3015318651256642,
+          "rms_map_residual": 0.013977259508469607,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 310,
+          "relative_nonlinear_residual": 0.31060441778517117,
+          "rms_map_residual": 0.016200890995877775,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 315,
+          "relative_nonlinear_residual": 0.31227213019781397,
+          "rms_map_residual": 0.018797271382132556,
+          "relaxation": 0.05
+        },
+        {
+          "iteration": 320,
+          "relative_nonlinear_residual": 0.30696147154779435,
+          "rms_map_residual": 0.021854343733779102,
+          "relaxation": 0.05
+        }
+      ],
+      "method": "adaptive",
+      "tolerance": 1e-05,
+      "max_iter": 320
+    },
+    {
+      "status": "CONVERGED",
+      "converged": true,
+      "iterations": 212,
+      "wall_time_s": 25.693010300048627,
+      "relative_nonlinear_residual": 9.845234664867348e-06,
+      "fixed_point_change_rms": 1.242862158159478e-07,
+      "minimum_fast_mode_denominator": 0.0004727934774370327,
+      "rms_unresolved_fast_force": 7.862487628881304e-08,
+      "relative_original_fast_equation_residual": 6.778295256367138e-07,
+      "equation_tolerance": 5e-05,
+      "rms_unresolved_slow_force": 4.981408953341931e-07,
+      "residual_trace": [
+        {
+          "iteration": 1,
+          "relative_nonlinear_residual": 1.0,
+          "rms_map_residual": 0.02728265574385132,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 5,
+          "relative_nonlinear_residual": 0.00350794867736827,
+          "rms_map_residual": 6.257731318551739e-05,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 10,
+          "relative_nonlinear_residual": 0.00018243983609299552,
+          "rms_map_residual": 3.20701307281889e-06,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 15,
+          "relative_nonlinear_residual": 0.00011405469011807035,
+          "rms_map_residual": 1.5334372193261232e-06,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 20,
+          "relative_nonlinear_residual": 4.540634515393335e-05,
+          "rms_map_residual": 6.953677356967661e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 25,
+          "relative_nonlinear_residual": 4.044424580162707e-05,
+          "rms_map_residual": 5.885245834275396e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 30,
+          "relative_nonlinear_residual": 4.0479546465379515e-05,
+          "rms_map_residual": 5.776446282161938e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 35,
+          "relative_nonlinear_residual": 3.9919443362178265e-05,
+          "rms_map_residual": 4.966258127734089e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 40,
+          "relative_nonlinear_residual": 3.381568395784185e-05,
+          "rms_map_residual": 4.004377129978918e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 45,
+          "relative_nonlinear_residual": 3.0040458153715714e-05,
+          "rms_map_residual": 3.9042448035429056e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 50,
+          "relative_nonlinear_residual": 3.0541632160367704e-05,
+          "rms_map_residual": 3.9733738515388823e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 55,
+          "relative_nonlinear_residual": 2.7321908682514336e-05,
+          "rms_map_residual": 4.128856684085749e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 60,
+          "relative_nonlinear_residual": 3.2491417908925216e-05,
+          "rms_map_residual": 4.1281378112334696e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 65,
+          "relative_nonlinear_residual": 3.460755068918831e-05,
+          "rms_map_residual": 4.060911586853501e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 70,
+          "relative_nonlinear_residual": 3.297041196141968e-05,
+          "rms_map_residual": 3.733629181289707e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 75,
+          "relative_nonlinear_residual": 3.0215522819515824e-05,
+          "rms_map_residual": 3.697906907615975e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 80,
+          "relative_nonlinear_residual": 2.9771266599878e-05,
+          "rms_map_residual": 3.3393725829367404e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 85,
+          "relative_nonlinear_residual": 2.967699069885084e-05,
+          "rms_map_residual": 3.274990463824096e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 90,
+          "relative_nonlinear_residual": 3.108630467169813e-05,
+          "rms_map_residual": 3.342153237566622e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 95,
+          "relative_nonlinear_residual": 3.100756897395627e-05,
+          "rms_map_residual": 3.5565955573013464e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 100,
+          "relative_nonlinear_residual": 1.9301013737617286e-05,
+          "rms_map_residual": 2.308723014054802e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 105,
+          "relative_nonlinear_residual": 1.637980773544155e-05,
+          "rms_map_residual": 2.309965904585974e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 110,
+          "relative_nonlinear_residual": 1.723127328932048e-05,
+          "rms_map_residual": 2.3399707986382386e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 115,
+          "relative_nonlinear_residual": 1.9349802748176038e-05,
+          "rms_map_residual": 2.2994603902906093e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 120,
+          "relative_nonlinear_residual": 2.0621645534246833e-05,
+          "rms_map_residual": 2.4822617296870963e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 125,
+          "relative_nonlinear_residual": 1.610404908150588e-05,
+          "rms_map_residual": 2.3308378864909116e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 130,
+          "relative_nonlinear_residual": 1.9037230810852917e-05,
+          "rms_map_residual": 2.3944870274362673e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 135,
+          "relative_nonlinear_residual": 1.6727442783884856e-05,
+          "rms_map_residual": 2.0683662900821788e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 140,
+          "relative_nonlinear_residual": 1.790268067386214e-05,
+          "rms_map_residual": 2.140198856188654e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 145,
+          "relative_nonlinear_residual": 1.5493095579666827e-05,
+          "rms_map_residual": 1.8396342578426235e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 150,
+          "relative_nonlinear_residual": 1.8269513776435056e-05,
+          "rms_map_residual": 1.8664165166302726e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 155,
+          "relative_nonlinear_residual": 1.5829023072733466e-05,
+          "rms_map_residual": 1.7710392830445125e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 160,
+          "relative_nonlinear_residual": 1.830731608997436e-05,
+          "rms_map_residual": 1.897254334964617e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 165,
+          "relative_nonlinear_residual": 1.5702521462692627e-05,
+          "rms_map_residual": 1.864513216842339e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 170,
+          "relative_nonlinear_residual": 1.600904328484216e-05,
+          "rms_map_residual": 1.913470477245211e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 175,
+          "relative_nonlinear_residual": 1.630374142548109e-05,
+          "rms_map_residual": 1.992505161939584e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 180,
+          "relative_nonlinear_residual": 1.3917949164515416e-05,
+          "rms_map_residual": 2.069307205060744e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 185,
+          "relative_nonlinear_residual": 1.5278583455649136e-05,
+          "rms_map_residual": 1.8980839247868822e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 190,
+          "relative_nonlinear_residual": 1.57934272010784e-05,
+          "rms_map_residual": 1.9524800209229828e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 195,
+          "relative_nonlinear_residual": 1.4006961393786552e-05,
+          "rms_map_residual": 1.6497546584417035e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 200,
+          "relative_nonlinear_residual": 1.0904302974278982e-05,
+          "rms_map_residual": 1.44440367174448e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 205,
+          "relative_nonlinear_residual": 1.1182299941586642e-05,
+          "rms_map_residual": 1.524869977862998e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 210,
+          "relative_nonlinear_residual": 1.1166692752711767e-05,
+          "rms_map_residual": 1.630947462676046e-07,
+          "relaxation": 0.5
+        },
+        {
+          "iteration": 212,
+          "relative_nonlinear_residual": 9.845234664867348e-06,
+          "rms_map_residual": 1.242862158159478e-07,
+          "relaxation": 0.5
+        }
+      ],
+      "method": "anderson",
+      "tolerance": 1e-05,
+      "max_iter": 240
+    },
+    {
+      "status": "CONVERGED",
+      "converged": true,
+      "iterations": 12,
+      "wall_time_s": 41.127166100079194,
+      "relative_nonlinear_residual": 1.2506762073983829e-08,
+      "fixed_point_change_rms": 5.215246098430822e-10,
+      "minimum_fast_mode_denominator": 0.0004727934774370327,
+      "rms_unresolved_fast_force": 4.731265043671885e-10,
+      "relative_original_fast_equation_residual": 4.078850474511155e-09,
+      "equation_tolerance": 5e-05,
+      "rms_unresolved_slow_force": 4.981408898844547e-07,
+      "residual_trace": [
+        {
+          "iteration": 1,
+          "relative_nonlinear_residual": 0.05221055811799496,
+          "residual_l2": 7.280542841508469,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 2,
+          "relative_nonlinear_residual": 0.00044288237286676206,
+          "residual_l2": 0.05128131985797507,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 3,
+          "relative_nonlinear_residual": 1.1298383035917126e-05,
+          "residual_l2": 0.0008212323736858739,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 4,
+          "relative_nonlinear_residual": 2.5503101961122082e-06,
+          "residual_l2": 0.00016552299931828955,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 5,
+          "relative_nonlinear_residual": 6.714874458260509e-07,
+          "residual_l2": 3.812119377183428e-05,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 6,
+          "relative_nonlinear_residual": 1.289829762199019e-07,
+          "residual_l2": 8.91824621914657e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 7,
+          "relative_nonlinear_residual": 6.539110765845865e-08,
+          "residual_l2": 4.796405789758138e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 8,
+          "relative_nonlinear_residual": 7.114306431381861e-08,
+          "residual_l2": 4.3458509566248254e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 9,
+          "relative_nonlinear_residual": 5.834858414939987e-08,
+          "residual_l2": 3.848377026801894e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 10,
+          "relative_nonlinear_residual": 5.241571341897343e-08,
+          "residual_l2": 3.283279186425842e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 11,
+          "relative_nonlinear_residual": 3.981130024692045e-08,
+          "residual_l2": 2.3790798745899854e-06,
+          "method": "newton_krylov"
+        },
+        {
+          "iteration": 12,
+          "relative_nonlinear_residual": 1.2506762073983829e-08,
+          "residual_l2": 8.066350831435678e-07,
+          "method": "newton_krylov"
+        }
+      ],
+      "method": "newton_krylov",
+      "tolerance": 1e-07,
+      "max_iter": 30
+    }
+  ]
+}

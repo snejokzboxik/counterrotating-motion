@@ -1,0 +1,85 @@
+{
+  "study": "V17C.21.1 independent root re-solve",
+  "grid": [
+    96,
+    8,
+    8
+  ],
+  "method": "fresh JFNK harmonic-balance solves and fresh outer six-balance solve from a perturbed slow-root seed; converged xi checkpoint used only as warm start",
+  "slow_root_seed_perturbation": [
+    0.001,
+    0.0001,
+    -0.001,
+    -0.0001,
+    0.001,
+    -0.001
+  ],
+  "status": "VERIFIED_ROOT",
+  "fresh_root": {
+    "radii_R": [
+      0.5550374099175897,
+      0.7513382753673492
+    ],
+    "omega_over_Omega1": [
+      0.0010944424399210687,
+      -0.0009748048696387741
+    ],
+    "frequency_Hz": [
+      0.05472212199605343,
+      -0.04874024348193871
+    ],
+    "mean_z_R": [
+      -0.3225715212750869,
+      -0.8538342435168407
+    ]
+  },
+  "original_root": {
+    "radii_R": [
+      0.5550374099175707,
+      0.7513382753673494
+    ],
+    "omega_over_Omega1": [
+      0.001094442439865692,
+      -0.0009748048696387789
+    ],
+    "frequency_Hz": [
+      0.0547221219932846,
+      -0.04874024348193894
+    ],
+    "mean_z_R": [
+      -0.3225715212750869,
+      -0.8538342435168407
+    ]
+  },
+  "relative_root_change_percent": {
+    "radii_R": [
+      3.419486915845482e-12,
+      -3.3306690738754696e-14
+    ],
+    "frequency_Hz": [
+      5.059797025808166e-09,
+      -4.884981308350689e-13
+    ],
+    "mean_z_R": [
+      0.0,
+      0.0
+    ]
+  },
+  "scaled_balance_max_norm": 4.689445446542928e-11,
+  "inner_all_converged": true,
+  "inner_residuals": [
+    {
+      "map": 7.350150033351045e-15,
+      "original_fast_equation": 4.993041799323903e-15,
+      "slow_unresolved_rms": 3.4430224578027445e-06
+    },
+    {
+      "map": 6.277380715447886e-15,
+      "original_fast_equation": 2.4178295617935807e-15,
+      "slow_unresolved_rms": 1.929657613989647e-05
+    }
+  ],
+  "outer_nfev": 5,
+  "balance_evaluations": 36,
+  "wall_time_s": 49.492314200033434
+}

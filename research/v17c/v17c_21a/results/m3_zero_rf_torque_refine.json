@@ -1,0 +1,236 @@
+{
+  "study": "V17C.21.1 refined M3 zero-RF-torque slice",
+  "scope": "Single-particle diagnostic with omega=0 and Coulomb off. This is not the zero of total torque, a full orbital branch, or a stability boundary.",
+  "grid": [
+    96,
+    12,
+    12
+  ],
+  "cutoff": 0.05,
+  "leading_estimate_rcr_over_R": 0.610413482917315,
+  "particles": [
+    {
+      "particle": 1,
+      "status": "BRACKET_REFINED",
+      "samples": [
+        {
+          "r_R": 0.64,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 0.00017614858655019442,
+          "mean_drag_torque": -0.0003322686196154022,
+          "relative_fast_residual": 2.8537632609240154e-12,
+          "inner_map_residual": 2.7246542103916064e-12,
+          "micromotion_rms": 0.04674622050048928
+        },
+        {
+          "r_R": 0.7,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -0.0001863399693792837,
+          "mean_drag_torque": -0.00031882039808569493,
+          "relative_fast_residual": 1.312420007725333e-09,
+          "inner_map_residual": 1.8497353457674757e-09,
+          "micromotion_rms": 0.05314959488078365
+        },
+        {
+          "r_R": 0.6699999999999999,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 2.1967448944217053e-05,
+          "mean_drag_torque": -0.00033088402670029376,
+          "relative_fast_residual": 1.3139671988030377e-11,
+          "inner_map_residual": 8.541894597131488e-12,
+          "micromotion_rms": 0.049808311760100275
+        },
+        {
+          "r_R": 0.6849999999999999,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -7.534394876383442e-05,
+          "mean_drag_torque": -0.00032630807166664997,
+          "relative_fast_residual": 3.1945921272099992e-12,
+          "inner_map_residual": 2.9091424005517016e-12,
+          "micromotion_rms": 0.051434162416562144
+        },
+        {
+          "r_R": 0.6775,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -2.4946189889768445e-05,
+          "mean_drag_torque": -0.0003289468411422237,
+          "relative_fast_residual": 1.4156114470452752e-09,
+          "inner_map_residual": 1.8493798550435326e-09,
+          "micromotion_rms": 0.050611783479107
+        },
+        {
+          "r_R": 0.67375,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -1.0549576426209932e-06,
+          "mean_drag_torque": -0.0003300012130531095,
+          "relative_fast_residual": 5.347726843843257e-10,
+          "inner_map_residual": 1.1415037210736776e-09,
+          "micromotion_rms": 0.05020784246956053
+        },
+        {
+          "r_R": 0.671875,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 1.056449411290784e-05,
+          "mean_drag_torque": -0.00033046381464617276,
+          "relative_fast_residual": 4.8623178607894e-11,
+          "inner_map_residual": 3.3215986299611925e-11,
+          "micromotion_rms": 0.05000754290081632
+        },
+        {
+          "r_R": 0.6728125,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 4.781883005425602e-06,
+          "mean_drag_torque": -0.0003302378441598451,
+          "relative_fast_residual": 1.2670389637735374e-11,
+          "inner_map_residual": 7.312572121944247e-12,
+          "micromotion_rms": 0.05010755710789742
+        },
+        {
+          "r_R": 0.67328125,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 1.8702472352398035e-06,
+          "mean_drag_torque": -0.0003301208651179599,
+          "relative_fast_residual": 3.4963652508678208e-12,
+          "inner_map_residual": 1.879456560138583e-12,
+          "micromotion_rms": 0.05015766563559479
+        },
+        {
+          "r_R": 0.6735156250000001,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 4.0934158873166555e-07,
+          "mean_drag_torque": -0.00033006137371304064,
+          "relative_fast_residual": 1.0661754360257414e-12,
+          "inner_map_residual": 8.404721439472188e-13,
+          "micromotion_rms": 0.05018274548439926
+        }
+      ],
+      "zero_torque_bracket_R": [
+        0.6735156250000001,
+        0.67375
+      ],
+      "linear_interpolant_r_R": 0.6735811440092331,
+      "iterations": 8
+    },
+    {
+      "particle": 2,
+      "status": "BRACKET_REFINED",
+      "samples": [
+        {
+          "r_R": 0.64,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 1.9278993225557556e-05,
+          "mean_drag_torque": -3.949984021695482e-05,
+          "relative_fast_residual": 3.8191253742243006e-10,
+          "inner_map_residual": 5.163253605132881e-10,
+          "micromotion_rms": 0.01756917081398436
+        },
+        {
+          "r_R": 0.7,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -2.492202472080625e-05,
+          "mean_drag_torque": -3.8096730269300315e-05,
+          "relative_fast_residual": 1.1253806546814302e-13,
+          "inner_map_residual": 6.941253821820217e-14,
+          "micromotion_rms": 0.019700527249965
+        },
+        {
+          "r_R": 0.6699999999999999,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 8.562747941860061e-07,
+          "mean_drag_torque": -3.9497169934547524e-05,
+          "relative_fast_residual": 6.122808178702964e-09,
+          "inner_map_residual": 7.480707246398424e-09,
+          "micromotion_rms": 0.0186099264514708
+        },
+        {
+          "r_R": 0.6849999999999999,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -1.1013414773055624e-05,
+          "mean_drag_torque": -3.8994306506843086e-05,
+          "relative_fast_residual": 6.993089750906592e-10,
+          "inner_map_residual": 8.164769989980845e-10,
+          "micromotion_rms": 0.019148607734350318
+        },
+        {
+          "r_R": 0.6775,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -4.836762374236789e-06,
+          "mean_drag_torque": -3.929210213680817e-05,
+          "relative_fast_residual": 2.774283636082802e-11,
+          "inner_map_residual": 2.0612294003771068e-11,
+          "micromotion_rms": 0.018877663224727042
+        },
+        {
+          "r_R": 0.67375,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -1.9313776578122174e-06,
+          "mean_drag_torque": -3.94058674998579e-05,
+          "relative_fast_residual": 1.502684374470641e-11,
+          "inner_map_residual": 1.6496630326191338e-11,
+          "micromotion_rms": 0.01874339998740768
+        },
+        {
+          "r_R": 0.671875,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -5.230312511354483e-07,
+          "mean_drag_torque": -3.945428234622783e-05,
+          "relative_fast_residual": 1.8923397250466245e-12,
+          "inner_map_residual": 9.610730167787884e-13,
+          "micromotion_rms": 0.018676565266413835
+        },
+        {
+          "r_R": 0.6709375,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": 1.7022629485018601e-07,
+          "mean_drag_torque": -3.947641147370951e-05,
+          "relative_fast_residual": 8.7356887080302e-13,
+          "inner_map_residual": 4.818385707581798e-13,
+          "micromotion_rms": 0.018643221472604235
+        },
+        {
+          "r_R": 0.67140625,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -1.75497886770144e-07,
+          "mean_drag_torque": -3.946551896035404e-05,
+          "relative_fast_residual": 1.0878828314402308e-13,
+          "inner_map_residual": 4.5452590059891423e-14,
+          "micromotion_rms": 0.018659887258386756
+        },
+        {
+          "r_R": 0.671171875,
+          "omega_over_Omega1": 0.0,
+          "mean_RF_torque": -2.4100254579639254e-09,
+          "mean_drag_torque": -3.94710081443669e-05,
+          "relative_fast_residual": 4.48851094664611e-14,
+          "inner_map_residual": 2.2738757651986763e-14,
+          "micromotion_rms": 0.018651552839168386
+        }
+      ],
+      "zero_torque_bracket_R": [
+        0.6709375,
+        0.671171875
+      ],
+      "linear_interpolant_r_R": 0.6711686030945533,
+      "iterations": 8
+    }
+  ],
+  "parameterization": {
+    "alpha": [
+      1.0,
+      0.37814609618000145
+    ],
+    "lambda": [
+      0.24452307123064748,
+      0.17736598731050257
+    ],
+    "Re_per_speed": [
+      6.643729577002431,
+      43.76775863741318
+    ],
+    "beta": 0.015388559140477825,
+    "A": 0.03492413282400757,
+    "B": 0.15631667332941065,
+    "nu": 3.2196773638017477,
+    "mode_count": 8
+  }
+}

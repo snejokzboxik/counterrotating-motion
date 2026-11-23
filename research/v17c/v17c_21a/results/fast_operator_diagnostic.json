@@ -1,0 +1,292 @@
+{
+  "study": "V17C.21.1 fast-operator resonance and mask diagnostic",
+  "grid": [
+    192,
+    16,
+    16
+  ],
+  "nu": 3.2196773638017477,
+  "cutoff_rows": [
+    {
+      "particle": 1,
+      "cutoff": 0.02,
+      "number_fast_modes": 48846,
+      "number_excluded_rf_modes": 114,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.00027623774886907215,
+      "min_determinant_mode": [
+        19,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": 0.020794466395833933,
+      "min_determinant_d0_real_imag": [
+        -0.01582216678433617,
+        0.005084726787711806
+      ],
+      "min_determinant_dJ_real_imag": [
+        0.0002676171993532529,
+        4.551682449341754e-05
+      ],
+      "min_mode_singular_values": [
+        0.016495673030878802,
+        0.016746073249146818
+      ],
+      "min_mode_inverse_gain": 60.621958141875545
+    },
+    {
+      "particle": 1,
+      "cutoff": 0.035,
+      "number_fast_modes": 48768,
+      "number_excluded_rf_modes": 192,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.00034944450307242,
+      "min_determinant_mode": [
+        32,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": 0.03502225919298346,
+      "min_determinant_d0_real_imag": [
+        -0.01661631559062922,
+        0.008563750379304094
+      ],
+      "min_determinant_dJ_real_imag": [
+        0.0002676171993532529,
+        7.665991493628217e-05
+      ],
+      "min_mode_singular_values": [
+        0.01850367627283732,
+        0.01888513925124117
+      ],
+      "min_mode_inverse_gain": 54.04331470433048
+    },
+    {
+      "particle": 1,
+      "cutoff": 0.05,
+      "number_fast_modes": 48684,
+      "number_excluded_rf_modes": 276,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.0004727934774370327,
+      "min_determinant_mode": [
+        46,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": 0.05034449758991373,
+      "min_determinant_d0_real_imag": [
+        -0.017924325389229535,
+        0.012310391170249636
+      ],
+      "min_determinant_dJ_real_imag": [
+        0.0002676171993532529,
+        0.00011019862772090563
+      ],
+      "min_mode_singular_values": [
+        0.02150282579544366,
+        0.021987504430102167
+      ],
+      "min_mode_inverse_gain": 46.505515577952316
+    },
+    {
+      "particle": 1,
+      "cutoff": 0.075,
+      "number_fast_modes": 48546,
+      "number_excluded_rf_modes": 414,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.000785791129427422,
+      "min_determinant_mode": [
+        69,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": 0.07551674638487059,
+      "min_determinant_d0_real_imag": [
+        -0.02109253593620557,
+        0.018465586755374453
+      ],
+      "min_determinant_dJ_real_imag": [
+        0.0002676171993532529,
+        0.00016529794158135841
+      ],
+      "min_mode_singular_values": [
+        0.02773292963329907,
+        0.02833422720994895
+      ],
+      "min_mode_inverse_gain": 36.05821718882865
+    },
+    {
+      "particle": 1,
+      "cutoff": 0.1,
+      "number_fast_modes": 48408,
+      "number_excluded_rf_modes": 552,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.0012577462213856445,
+      "min_determinant_mode": [
+        92,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": 0.10068899517982746,
+      "min_determinant_d0_real_imag": [
+        -0.025528030701972022,
+        0.024620782340499272
+      ],
+      "min_determinant_dJ_real_imag": [
+        0.0002676171993532529,
+        0.00022039725544181126
+      ],
+      "min_mode_singular_values": [
+        0.03512197265325318,
+        0.03581080806032533
+      ],
+      "min_mode_inverse_gain": 28.472204846596927
+    },
+    {
+      "particle": 2,
+      "cutoff": 0.02,
+      "number_fast_modes": 48834,
+      "number_excluded_rf_modes": 126,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 5.211146435959685e-05,
+      "min_determinant_mode": [
+        21,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": -0.020470733615306328,
+      "min_determinant_d0_real_imag": [
+        -0.006239124728432582,
+        -0.003630811878649101
+      ],
+      "min_determinant_dJ_real_imag": [
+        -0.00017289580374519527,
+        3.9909612833222144e-05
+      ],
+      "min_mode_singular_values": [
+        0.007098411909050814,
+        0.007341284927851573
+      ],
+      "min_mode_inverse_gain": 140.87658096101077
+    },
+    {
+      "particle": 2,
+      "cutoff": 0.035,
+      "number_fast_modes": 48744,
+      "number_excluded_rf_modes": 216,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 8.844557996113547e-05,
+      "min_determinant_mode": [
+        36,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": -0.03509268619766799,
+      "min_determinant_d0_real_imag": [
+        -0.007051570418251747,
+        -0.00622424893482703
+      ],
+      "min_determinant_dJ_real_imag": [
+        -0.00017289580374519527,
+        6.841647914266653e-05
+      ],
+      "min_mode_singular_values": [
+        0.009240309175257536,
+        0.009571712188804595
+      ],
+      "min_mode_inverse_gain": 108.22148707725779
+    },
+    {
+      "particle": 2,
+      "cutoff": 0.05,
+      "number_fast_modes": 48648,
+      "number_excluded_rf_modes": 312,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.0001511786681268543,
+      "min_determinant_mode": [
+        52,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": -0.050689435618853765,
+      "min_determinant_d0_real_imag": [
+        -0.008389492677041671,
+        -0.008990581794750154
+      ],
+      "min_determinant_dJ_real_imag": [
+        -0.00017289580374519527,
+        9.882380320607388e-05
+      ],
+      "min_mode_singular_values": [
+        0.012103172171441317,
+        0.012490830171248489
+      ],
+      "min_mode_inverse_gain": 82.6229674200292
+    },
+    {
+      "particle": 2,
+      "cutoff": 0.075,
+      "number_fast_modes": 48498,
+      "number_excluded_rf_modes": 462,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.00030837772967463943,
+      "min_determinant_mode": [
+        77,
+        0,
+        -8
+      ],
+      "min_determinant_kappa": -0.07505935658945653,
+      "min_determinant_d0_real_imag": [
+        -0.011453980805306942,
+        -0.013312976888380035
+      ],
+      "min_determinant_dJ_real_imag": [
+        -0.00017289580374519527,
+        0.00014633524705514784
+      ],
+      "min_mode_singular_values": [
+        0.017335644752412005,
+        0.017788650729689943
+      ],
+      "min_mode_inverse_gain": 57.68461538535303
+    },
+    {
+      "particle": 2,
+      "cutoff": 0.1,
+      "number_fast_modes": 48384,
+      "number_excluded_rf_modes": 576,
+      "minimum_excluded_abs_kappa": 0.0,
+      "minimum_abs_kappa_any_rf_mode": 0.0,
+      "minimum_fast_abs_determinant": 0.0009904466930351786,
+      "min_determinant_mode": [
+        95,
+        -3,
+        1
+      ],
+      "min_determinant_kappa": 0.12707166411345705,
+      "min_determinant_d0_real_imag": [
+        -0.021967281614247,
+        0.02253819116467187
+      ],
+      "min_determinant_dJ_real_imag": [
+        -0.00017289580374519527,
+        -0.0002477381129638343
+      ],
+      "min_mode_singular_values": [
+        0.03117603256486656,
+        0.03176949122613345
+      ],
+      "min_mode_inverse_gain": 32.07592235860497
+    }
+  ],
+  "scope": "The determinant is the 2x2 fast Fourier response denominator, not a nonlinear HB Jacobian condition number."
+}

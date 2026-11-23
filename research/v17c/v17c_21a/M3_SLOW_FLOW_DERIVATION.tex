@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,bm}
+\usepackage[margin=25mm]{geometry}
+\title{V17C.21.1: A Quasi-Steady Adiabatic M3 Slow Flow}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\section{State, forcing torus, and harmonic closure}
+Let the slow mechanical state of particle $i\in\{1,2\}$ be
+\begin{equation}
+ X_i=(r_i,u_i,\omega_i,z_i,w_i),\qquad
+ u_i=\dot r_i,\quad w_i=\dot z_i,
+\end{equation}
+and $X=(X_1,X_2)\in\mathbb R^{10}$. The independently driven RF phases are
+$\psi_1,\psi_2\in\mathbb T$ with $\dot\psi_1=1$ and
+$\dot\psi_2=\nu$ in $\tau=\Omega_1t$. The orbit phase is $\theta_i$.
+
+At a frozen slow state, the retained M3 micromotion coefficients
+$\xi_i(\theta_i,\psi_1,\psi_2;X)$ solve the collocation closure
+\begin{equation}
+ \mathcal G_i(\xi_i;X)=0.
+ \label{eq:G}
+\end{equation}
+The Fourier derivative for index $(n_\theta,n_1,n_2)$ is formed with
+$\kappa=n_\theta\omega_i+n_1+n_2\nu$. The fast/slow mask retains RF-dependent
+modes with $|\kappa|\ge\kappa_c$ in the fast inverse; the mean and excluded
+near-resonant modes remain in the averaged slow residual. The full eight-mode
+MFS RF field and the nonlinear Cunningham-corrected Stokes--Schiller--Naumann
+drag are evaluated on the phase torus.
+
+\section{Averaged force balance and radial/axial accelerations}
+Write $\bar f_{r,i}(X)$ and $\bar f_{z,i}(X)$ for the normalized mean radial
+and axial force per unit mass after solving \eqref{eq:G}; these include RF,
+DC, drag, gravity, and the ring-averaged Coulomb force. In the rotating frame,
+the radial kinematic equation contains centrifugal acceleration. Define
+\begin{align}
+ a_{r,i}(X)&=r_i\omega_i^2+\bar f_{r,i}(X),\\
+ a_{z,i}(X)&=\bar f_{z,i}(X).
+\end{align}
+The radial and axial components of the slow flow are
+\begin{equation}
+ \dot r_i=u_i,\quad \dot u_i=a_{r,i}(X),\qquad
+ \dot z_i=w_i,\quad \dot w_i=a_{z,i}(X).
+ \label{eq:radialaxial}
+\end{equation}
+The corresponding equilibrium residuals are precisely the radial and axial
+M3 force-balance equations used to compute the steady roots.
+
+\section{Angular dynamics from averaged angular momentum}
+Let $\mathcal L_i(X)$ be the torus-averaged specific angular momentum returned
+by the converged micromotion solution, and let $\mathcal T_i(X)$ be the sum
+of mean RF, drag, and Coulomb torques per unit mass. Exact balance of angular
+momentum for the reduced description requires
+\begin{equation}
+ \frac{d\mathcal L_i(X)}{d\tau}=\mathcal T_i(X).
+ \label{eq:torque}
+\end{equation}
+Because $\mathcal L_i$ includes micromotion, it is generally not replaced by
+$r_i^2\omega_i$. Applying the chain rule to $X_i=(r_i,u_i,\omega_i,z_i,w_i)$,
+\begin{align}
+ \dot\omega_i={1\over \partial_{\omega_i}\mathcal L_i}\big[\mathcal T_i
+ &-(\partial_{r_i}\mathcal L_i)u_i
+ -(\partial_{u_i}\mathcal L_i)a_{r,i}
+ -(\partial_{z_i}\mathcal L_i)w_i
+ -(\partial_{w_i}\mathcal L_i)a_{z,i}\big].
+ \label{eq:omega}
+\end{align}
+This construction is defined only if $\partial_{\omega_i}\mathcal L_i\ne0$.
+On the nominal root, $\partial_{\omega_i}\mathcal L_i$ was positive for both
+particles (approximately $0.31305$ and $0.56644$ in the code normalization).
+For the ideal infinite-rod field and independent ring-phase Coulomb average,
+$\partial_{z_i}\mathcal L_i=0$ at the tested state; it remains explicit in
+\eqref{eq:omega} for a nonuniform 3D field.
+
+\section{Implicit dependence of micromotion}
+The slow-flow derivative includes how the fast solution changes with $X$.
+If $\mathcal G_{i,\xi}$ is invertible on the retained fast subspace and the
+HB root is differentiable, then
+\begin{equation}
+ {\partial\xi_i\over\partial X}
+ =-\mathcal G_{i,\xi}^{-1}\mathcal G_{i,X}.
+ \label{eq:implicit}
+\end{equation}
+Rather than form or invert a large dense matrix, this study used central
+finite differences of the complete closure: each perturbed slow state triggered
+a fresh converged JFNK harmonic solve. Thus the resulting finite-difference
+Jacobian includes the numerical response of $\xi_i(X)$, up to inner-solve and
+finite-difference errors. The discretized Fourier residual and its convergence
+status were checked at every state used in the Jacobian.
+
+\section{Coulomb and averaging assumptions}
+The two particles interact through the Coulomb force averaged over independent
+uniform ring phases. This yields radial and axial mean forces used in
+\eqref{eq:radialaxial}; the phase-averaged tangential Coulomb torque is zero.
+It does not describe a phase-locked pair, a close encounter, or a collision.
+The RF phases are torus-averaged and therefore are not coordinates of this
+autonomous reduced flow.
+
+\section{Local linear stability}
+Let $X_*$ be a root of the six circular-orbit balances with $u_i=w_i=0$.
+The ten-dimensional slow-flow Jacobian is
+\begin{equation}
+ J_{M3}=\left.{\partial F_{M3}(X)\over\partial X}\right|_{X_*},
+\end{equation}
+where $F_{M3}$ is defined by \eqref{eq:radialaxial} and \eqref{eq:omega}.
+Eigenvalues are local exponential rates per $\tau$. For the nominal
+192$\times$16$\times$16 root, all ten had negative real parts; the largest
+was $-0.1059257$. Finite-difference step factors $1/2,1,2$ changed the nearest
+matched eigenvalues by less than $1.7\times10^{-6}$ in the reported norm.
+
+\section{Scope and non-claims}
+This is a quasi-steady adiabatic closure: the fast equation omits slow
+accelerations, the Coulomb term uses independent-phase ring averaging, and the
+Fourier fast/slow partition presumes a useful frequency gap. It is not an exact
+nonstationary M3 derivation. Orbital angle phases and the two external RF phases
+are omitted by averaging, so their neutral directions are not eigenvalues of
+$J_{M3}$. Negative eigenvalues establish conditional local stability of this
+reduced flow only. They do not prove a full-system attracting torus, global
+basin, or Floquet stability.
+
+\end{document}

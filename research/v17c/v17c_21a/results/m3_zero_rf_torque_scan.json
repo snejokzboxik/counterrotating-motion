@@ -1,0 +1,102 @@
+{
+  "study": "M3 zero mean RF torque radial diagnostic",
+  "scope": "Single particle, omega=0, Coulomb off; diagnostic torque locus only, not a full orbital branch or stability boundary.",
+  "grid": [
+    96,
+    12,
+    12
+  ],
+  "cutoff": 0.05,
+  "radii_R": [
+    0.45,
+    0.52,
+    0.58,
+    0.610413482917315,
+    0.64,
+    0.7,
+    0.78,
+    0.86
+  ],
+  "particles": [
+    {
+      "particle": 1,
+      "status": "UNRESOLVED_INNER_HB",
+      "rows": [
+        {
+          "r_R": 0.45,
+          "mean_RF_torque": 0.0003708328421155417,
+          "mean_drag_torque": -0.000214360010509469,
+          "relative_fast_residual": 1.24899206512346e-10,
+          "inner_map_residual": 8.146211815070846e-11,
+          "micromotion_rms": 0.03072227128414223
+        },
+        {
+          "r_R": 0.52,
+          "mean_RF_torque": 0.00040117479614879025,
+          "mean_drag_torque": -0.00027059039235762325,
+          "relative_fast_residual": 7.790240518569012e-12,
+          "inner_map_residual": 1.834362477518775e-12,
+          "micromotion_rms": 0.036127746393529794
+        },
+        {
+          "r_R": 0.58,
+          "mean_RF_torque": 0.0003505825083940536,
+          "mean_drag_torque": -0.0003110930647222602,
+          "relative_fast_residual": 1.1882096802219168e-11,
+          "inner_map_residual": 3.3685009409421402e-12,
+          "micromotion_rms": 0.04116864786405739
+        },
+        {
+          "r_R": 0.610413482917315,
+          "mean_RF_torque": 0.00028155730660960824,
+          "mean_drag_torque": -0.0003251726851858293,
+          "relative_fast_residual": 1.716898013856938e-12,
+          "inner_map_residual": 5.649257654686456e-13,
+          "micromotion_rms": 0.043916953297885974
+        },
+        {
+          "r_R": 0.64,
+          "mean_RF_torque": 0.00017614858654408836,
+          "mean_drag_torque": -0.0003322686196150567,
+          "relative_fast_residual": 3.746881915330782e-12,
+          "inner_map_residual": 1.2045908077557511e-12,
+          "micromotion_rms": 0.046746220500487067
+        },
+        {
+          "r_R": 0.7,
+          "mean_RF_torque": -0.00018633996938511403,
+          "mean_drag_torque": -0.00031882039808469936,
+          "relative_fast_residual": 1.3079454015941263e-09,
+          "inner_map_residual": 1.8474761275148258e-09,
+          "micromotion_rms": 0.05314959488066301
+        },
+        {
+          "r_R": 0.78,
+          "omega_over_Omega1": 0.0,
+          "status": "INNER_SOLVER_NONCONVERGENCE",
+          "error": "M3 inner solve failed: method=newton_krylov, grid=(96, 12, 12), cutoff=0.05, residual=2.295e-04, iterations=30/30",
+          "grid": [
+            96,
+            12,
+            12
+          ],
+          "cutoff": 0.05,
+          "iteration_cap": 30,
+          "map_residual_reported": 0.0002295,
+          "relative_fast_equation_tolerance": 5e-05
+        }
+      ],
+      "zero_torque_brackets_R": [
+        [
+          0.64,
+          0.7
+        ]
+      ]
+    }
+  ],
+  "status": "TORQUE_BRACKET_FOUND_SCAN_INCOMPLETE",
+  "completed_particles": [
+    1
+  ],
+  "abort_reason": "Inner HB failed at r/R=0.78 after a sign-changing interval was observed; particle 2 and higher-radius points were not evaluated in this coarse scan."
+}

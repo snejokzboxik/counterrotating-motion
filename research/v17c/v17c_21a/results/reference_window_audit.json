@@ -1,0 +1,122 @@
+{
+  "study": "V17C.21.1 reference finite-window sensitivity",
+  "source": "archived V20B corrected-drag nominal trajectory; not reintegrated",
+  "requested_periods": 240000,
+  "completed_periods": 240000,
+  "transient_periods": 20000,
+  "steps_per_period": 64,
+  "sample_stride_periods": 100.0,
+  "f1_Hz": 50.0,
+  "windows": [
+    {
+      "window_periods": 20000,
+      "samples": 201,
+      "particles": [
+        {
+          "frequency_Hz": 0.05464472354349971,
+          "frequency_endpoint_Hz": 0.05468052628733339,
+          "mean_radius_R": 0.555695699421117,
+          "radius_std_R": 0.02827621473005731,
+          "frequency_delta_from_220k_Hz": 1.2312229074121217e-06,
+          "endpoint_frequency_delta_from_220k_Hz": 3.280115318334692e-05
+        },
+        {
+          "frequency_Hz": -0.048454056377669044,
+          "frequency_endpoint_Hz": -0.04843778502065214,
+          "mean_radius_R": 0.7514908395305175,
+          "radius_std_R": 0.015562744466809718,
+          "frequency_delta_from_220k_Hz": 5.724974911427982e-07,
+          "endpoint_frequency_delta_from_220k_Hz": 1.609720928891223e-05
+        }
+      ]
+    },
+    {
+      "window_periods": 50000,
+      "samples": 501,
+      "particles": [
+        {
+          "frequency_Hz": 0.05464355936249171,
+          "frequency_endpoint_Hz": 0.054639912203561805,
+          "mean_radius_R": 0.5557426731658792,
+          "radius_std_R": 0.02824421986106633,
+          "frequency_delta_from_220k_Hz": 6.704189941392213e-08,
+          "endpoint_frequency_delta_from_220k_Hz": -7.812930588241285e-06
+        },
+        {
+          "frequency_Hz": -0.04845455052423052,
+          "frequency_endpoint_Hz": -0.048452116689217645,
+          "mean_radius_R": 0.7514710189062968,
+          "radius_std_R": 0.015513541625636734,
+          "frequency_delta_from_220k_Hz": 7.835092966784751e-08,
+          "endpoint_frequency_delta_from_220k_Hz": 1.7655407234043463e-06
+        }
+      ]
+    },
+    {
+      "window_periods": 100000,
+      "samples": 1001,
+      "particles": [
+        {
+          "frequency_Hz": 0.05464351557096854,
+          "frequency_endpoint_Hz": 0.054651806791921664,
+          "mean_radius_R": 0.5556941116733368,
+          "radius_std_R": 0.02820703076788616,
+          "frequency_delta_from_220k_Hz": 2.3250376242345272e-08,
+          "endpoint_frequency_delta_from_220k_Hz": 4.0816577716179525e-06
+        },
+        {
+          "frequency_Hz": -0.048454606934548956,
+          "frequency_endpoint_Hz": -0.04845203102746642,
+          "mean_radius_R": 0.7515021531061403,
+          "radius_std_R": 0.015490700108064153,
+          "frequency_delta_from_220k_Hz": 2.1940611230619744e-08,
+          "endpoint_frequency_delta_from_220k_Hz": 1.8512024746314415e-06
+        }
+      ]
+    },
+    {
+      "window_periods": 200000,
+      "samples": 2001,
+      "particles": [
+        {
+          "frequency_Hz": 0.05464348252180121,
+          "frequency_endpoint_Hz": 0.054643312167448124,
+          "mean_radius_R": 0.5557131855166931,
+          "radius_std_R": 0.028190247102022885,
+          "frequency_delta_from_220k_Hz": -9.798791091031323e-09,
+          "endpoint_frequency_delta_from_220k_Hz": -4.41296670192215e-06
+        },
+        {
+          "frequency_Hz": -0.04845462469954424,
+          "frequency_endpoint_Hz": -0.04845264851963648,
+          "mean_radius_R": 0.7515173506169538,
+          "radius_std_R": 0.015474971338942718,
+          "frequency_delta_from_220k_Hz": 4.175615950230416e-09,
+          "endpoint_frequency_delta_from_220k_Hz": 1.233710304568425e-06
+        }
+      ]
+    },
+    {
+      "window_periods": 220000,
+      "samples": 2201,
+      "particles": [
+        {
+          "frequency_Hz": 0.0546434923205923,
+          "frequency_endpoint_Hz": 0.054647725134150046,
+          "mean_radius_R": 0.5557208179250963,
+          "radius_std_R": 0.028197900497886185,
+          "frequency_delta_from_220k_Hz": 0.0,
+          "endpoint_frequency_delta_from_220k_Hz": 0.0
+        },
+        {
+          "frequency_Hz": -0.04845462887516019,
+          "frequency_endpoint_Hz": -0.04845388222994105,
+          "mean_radius_R": 0.751515785539555,
+          "radius_std_R": 0.015480699115343693,
+          "frequency_delta_from_220k_Hz": 0.0,
+          "endpoint_frequency_delta_from_220k_Hz": 0.0
+        }
+      ]
+    }
+  ]
+}

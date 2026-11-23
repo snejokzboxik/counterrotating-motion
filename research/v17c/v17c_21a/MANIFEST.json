@@ -1,0 +1,498 @@
+{
+  "study": "V17C.21.1 M3 convergence and stability",
+  "branch": "research/v17c21a-m3-convergence-stability",
+  "source_commit": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+  "source_commit_verified": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+  "generated_utc": "2026-11-23T20:22:06Z",
+  "manifest_excludes_itself": true,
+  "file_count": 92,
+  "files": [
+    {
+      "path": "research/v17c/v17c_21a/ANALYTICAL_VALIDATION_RU.md",
+      "bytes": 8363,
+      "sha256": "dcbaac0540e7941eca65b81ecb1e1a4876fd986c09e7666fa1d6d6305ca41a39"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/build_manifest.py",
+      "bytes": 2258,
+      "sha256": "3bd623d8db5850468ccdfb485f4974449f4a4488eb46f3ff163b9b73b7e2eb58"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/cutoff_campaign.py",
+      "bytes": 3982,
+      "sha256": "74fead43ab8fea3262ac792d836ae1130d4cc2a5295f62727245814b94aac548"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/fast_operator_diagnostic.py",
+      "bytes": 3956,
+      "sha256": "ee260fb2c51ea4562cbd490d16d57aab26577478410b751744e5a03f66432e3f"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/full_grid_campaign.py",
+      "bytes": 5865,
+      "sha256": "05357e1b22bc666fc7207a1c55d6c118ce3ef2897b127cada5293fab350f15cf"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/heldout_campaign.py",
+      "bytes": 4291,
+      "sha256": "b9c9ae7c29d6411f43f20debe474987c7d4ec8a568aac8c7031a615cb546c0be"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_adiabatic_slow_flow.py",
+      "bytes": 7676,
+      "sha256": "102fc27dc202e22639912066eea6f2462f964ec36c090d5ccda801ecd189ac48"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_harmonic_balance.py",
+      "bytes": 21766,
+      "sha256": "cba9613561d3a75cc8c48155bce75799c7b5198d693d2dfea79d43df37303327"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_stability_campaign.py",
+      "bytes": 3270,
+      "sha256": "1995889629964933209c27d77629340a9cb11e5cc303a96dc71256d0bd817c92"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_system.py",
+      "bytes": 5211,
+      "sha256": "cd82723a0d5db7f3fd9f9e8bd3fc1a8ff514d56b7249dd232d19575ee6131cab"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_zero_rf_torque_refine.py",
+      "bytes": 3225,
+      "sha256": "2054200177e90b90124f1272c7a8a7a70f7cd1f6e2929667012577b40f1b6dd1"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_zero_rf_torque_scan.py",
+      "bytes": 3683,
+      "sha256": "55e61a0ddde76a0209e44fa4c19724f4daf395ea224425c6daa601b08707dce2"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/oversampling_validation.py",
+      "bytes": 3512,
+      "sha256": "648bbec3b25d556c0b13b9e4e1420ad3214ff0c18d6754f26693445831c77b1f"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/postprocess_figures.py",
+      "bytes": 16743,
+      "sha256": "6ae80cba5eb84165f1ec769d19ce9146e284e3fe348783fcf91571ad4b3095e8"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/reference_window_audit.py",
+      "bytes": 3325,
+      "sha256": "d5f5583a299849c0c03797aaa1aa548e64a0dad003be65c8f26984f2a0060688"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/reproducibility_check.py",
+      "bytes": 2626,
+      "sha256": "92ae7e41c145151a6b6374bec18be4139a42c8908943890e70b537d33d6c41d8"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/solver_benchmark.py",
+      "bytes": 4347,
+      "sha256": "f2858200e099b3e2b8c6dfc01f132c3fd007f0a521fb008ff77b7e06b9444449"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/solver_residual_trace.py",
+      "bytes": 2418,
+      "sha256": "3243deba861e40f1d8a3ba39939fda7518c988371279e0c4b8b533f33626a248"
+    },
+    {
+      "path": "research/v17c/v17c_21a/FAST_SLOW_SEPARATION_RU.md",
+      "bytes": 3978,
+      "sha256": "547cec63f808b35cfeb78a6949fb60d594e1edd520e9e4c7f7da5971d614101a"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG01_full_root_grid_convergence.pdf",
+      "bytes": 21942,
+      "sha256": "b118403ae95c139bdf869ec77f8193a6316875ea35583a0ff172ca0f80d2114c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG01_full_root_grid_convergence.png",
+      "bytes": 250669,
+      "sha256": "4a057b4e28a16a0eddff9e986660e33174afebe10b8d7ef519e80fe3c628720b"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG01_full_root_grid_convergence.svg",
+      "bytes": 56419,
+      "sha256": "a5485f45f3e81ddfdc1c2d3d829965c2c0b2d00ffc13bdc95674477b7501eeeb"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG02_inner_solver_comparison.pdf",
+      "bytes": 20299,
+      "sha256": "17cf0421256507d6e7462cae744dd6adfbfac620bbc2eb56f7836d24ee485db8"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG02_inner_solver_comparison.png",
+      "bytes": 294857,
+      "sha256": "cce45704648e5dd7584f2a4e8299f34ed0720e4aacc2f8c4084e21d40c49d2fa"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG02_inner_solver_comparison.svg",
+      "bytes": 52991,
+      "sha256": "6e8001ca4791099a77d2631f9f5a7f7f6347556811b470f1c19e810a04adae95"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG03_micromotion_fourier_spectrum.pdf",
+      "bytes": 36093,
+      "sha256": "f036aa84832311b7c4d844dfad8b43a243b8b5f97111aaf61335f069fe0717a4"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG03_micromotion_fourier_spectrum.png",
+      "bytes": 240980,
+      "sha256": "b774edac67aadc759165ea21374db9feeb9b60514d732471a10df7bcba5285ef"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG03_micromotion_fourier_spectrum.svg",
+      "bytes": 87780,
+      "sha256": "21c2cb0aac76271569541e2aeeb7233c7d18ce6a03a70ff694829a595ef105b1"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG04_cutoff_sensitivity.pdf",
+      "bytes": 22858,
+      "sha256": "20636663afb7e246e75ce57a3d80c29fe498097e237897f59a2ccb1c534dcaf0"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG04_cutoff_sensitivity.png",
+      "bytes": 306782,
+      "sha256": "ae3ee36c4790b9552e38a9b4f4e1b56b9d9e69e14910eaeea037e38ef41bae44"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG04_cutoff_sensitivity.svg",
+      "bytes": 73112,
+      "sha256": "ad2239c4916e6e5fbbebf895380663c61e422a2ca2107ffb21d75980ceda42b6"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG05_M2_M3_reference_errors.pdf",
+      "bytes": 19673,
+      "sha256": "fcb2ba884e320dd5d414efa48a738091b1d40992260a619c14d7ae5ce8c7e579"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG05_M2_M3_reference_errors.png",
+      "bytes": 207883,
+      "sha256": "34ed508dbc8f2ec9aba491ed34d4c93289887f12b823fddc79c6d3b54d5fc327"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG05_M2_M3_reference_errors.svg",
+      "bytes": 52923,
+      "sha256": "8be140de424f3909df0416c108293387a771b76b8376a129ebc62085d6bfad27"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG06_adiabatic_M3_slowflow_spectrum.pdf",
+      "bytes": 19978,
+      "sha256": "31b895eb87c1eae436c6a6b477f102d5560450af9fea89cbb3f2196c0fdc2d0a"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG06_adiabatic_M3_slowflow_spectrum.png",
+      "bytes": 193697,
+      "sha256": "fa8d7ba7f8a0ed0bcd1130a2b155be1dea40c1908c25b99dc029d4024fec82e3"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG06_adiabatic_M3_slowflow_spectrum.svg",
+      "bytes": 47448,
+      "sha256": "5d4710a8e644fd4c0c0916340d3540ba9507f80dd695faf2c199d062af2acc6a"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG07_reference_window_sensitivity.pdf",
+      "bytes": 20240,
+      "sha256": "6adec26f1f45d3bafcd6bab4afc4ea9d715aec44c023a257f8d4e7ece6cd6acc"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG07_reference_window_sensitivity.png",
+      "bytes": 249654,
+      "sha256": "de88f9bdd38ce8ae79af39858804da3e1f4e3f1c28ddb370c1ae285773206411"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG07_reference_window_sensitivity.svg",
+      "bytes": 60973,
+      "sha256": "e343721ad8d86208186a907db128e66dadc104c54ce81158b0e45f84fef24df4"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG08_inner_nonlinear_residual_history.pdf",
+      "bytes": 22597,
+      "sha256": "77f91f897375fc9b256f27c35a9f42f7c9e34b27f5ed2c26e98255e14f6e0a77"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG08_inner_nonlinear_residual_history.png",
+      "bytes": 326876,
+      "sha256": "de15133a7a2c6e2be648c9d8689b814ce835e738d5bb9c4896045fe8a159e385"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG08_inner_nonlinear_residual_history.svg",
+      "bytes": 81093,
+      "sha256": "745c830a2215b2d65c7696a0c91124e08dd92c007e7df4122d82ed020b88e001"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG09_M3_zero_RF_torque_slice.pdf",
+      "bytes": 27937,
+      "sha256": "076e825579b10de244bdd8cecee020e347586bd296e255c95041e12c2601231c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG09_M3_zero_RF_torque_slice.png",
+      "bytes": 373735,
+      "sha256": "38d5d6331a48b8f6b1287b1e56caa651bc4956f0ece143806e84ee05d400b50a"
+    },
+    {
+      "path": "research/v17c/v17c_21a/figures/FIG09_M3_zero_RF_torque_slice.svg",
+      "bytes": 78934,
+      "sha256": "d8cfe5d1e42c0afd05a98cb12080a216039e3b19bd75d69cabf2b7ec1a671caa"
+    },
+    {
+      "path": "research/v17c/v17c_21a/FOURIER_CONVERGENCE_RU.md",
+      "bytes": 5735,
+      "sha256": "8dffc24b40c282126ac15db7ef94058c6183276e0f28d5d042beddd8ea6de3f4"
+    },
+    {
+      "path": "research/v17c/v17c_21a/M3_CONVERGENCE_AND_STABILITY_RU.md",
+      "bytes": 26132,
+      "sha256": "8d3c89928ad83bad3e6df51fa71bbf613b797bc5783757dbdb8b8125bd2938da"
+    },
+    {
+      "path": "research/v17c/v17c_21a/M3_SLOW_FLOW_DERIVATION.tex",
+      "bytes": 5806,
+      "sha256": "2cfe4cf49d6f18d0f6f65320441a620628e2f5824f61aa1cba914167ba3c5fff"
+    },
+    {
+      "path": "research/v17c/v17c_21a/M3_STABILITY_RU.md",
+      "bytes": 4967,
+      "sha256": "6a33a3ae4683882beed1c4483a8459346fd38dfdb9a43b8128b3726d7b5784b2"
+    },
+    {
+      "path": "research/v17c/v17c_21a/NONLINEAR_SOLVER_COMPARISON_RU.md",
+      "bytes": 6965,
+      "sha256": "69a1fd5fe9a65ac60bdf6165fe08bdda7e84687de452f7158a4633b79396e67a"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/cutoff_sensitivity.json",
+      "bytes": 559746,
+      "sha256": "29f20151b947be7dd9bffb95a8cd11fc807e5bdee0bd4c1936b73a53ff886add"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/fast_operator_diagnostic.json",
+      "bytes": 8332,
+      "sha256": "7a7b05c6a8abb9c7a3ba97b2eafc13b5846b4b6e11547ef57d38e3915df1b482"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/full_grid_campaign.json",
+      "bytes": 403601,
+      "sha256": "51a9133f9426a943b4e1d8726b6304ed4db79e77fb6a0a592d8a9e1657b0d0e0"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/heldout_A_1.05_xi.npz",
+      "bytes": 564574,
+      "sha256": "7aed7fb96bba9126d34552f85443e903fc8b26436b35999f91eeaf061f3d046b"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/heldout_B_0.95_xi.npz",
+      "bytes": 564530,
+      "sha256": "8cb8a0b792ce11fb5e29278c572d663a7b42b726c70da9d3d40b27e815e4110e"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/heldout_beta_1.05_xi.npz",
+      "bytes": 564647,
+      "sha256": "fcebcf5a5ba682fe6c0c0f4adc626180872322010dbf71a5b7e11943f1cbb1be"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/heldout_m3_resolved.json",
+      "bytes": 406242,
+      "sha256": "15286a6e0ee1ac3be860251be4c393788356622314367c9fac60a55484660280"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/heldout_nu_1.02_xi.npz",
+      "bytes": 564772,
+      "sha256": "6eac0e9dddc641eb615c17080db7150b6f7b2f631ecf3ab4e0f665c0ddebc5ae"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_slowflow_jacobian_progress_h0.5.json",
+      "bytes": 3073,
+      "sha256": "b4bbf61108ac1315a13449e2099dc01b97b50c0701e2a71e486a2360cf33f2f7"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_slowflow_jacobian_progress_h1.json",
+      "bytes": 3086,
+      "sha256": "455857cf485a251fce100c71c8ac2c4bb52faa523e9bd277a910273567462095"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_slowflow_jacobian_progress_h2.json",
+      "bytes": 3081,
+      "sha256": "56249b38310cba28f98e29fc6a0e3ad3f71a53c88eb730109c4926502b2a21a9"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_slowflow_stability.json",
+      "bytes": 22700,
+      "sha256": "e380a9515376ff175a5adf4d55914b9e74bc5c4215bce5a66a5d73edebc6267d"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_zero_rf_torque_refine.json",
+      "bytes": 8597,
+      "sha256": "1033ea954ed28e052645ac43cf1897fca94789f9e0e9f0ab36cbbc83b1450806"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_zero_rf_torque_scan.json",
+      "bytes": 3330,
+      "sha256": "1164f4c80bbde9b6dec9f9368e9f7ca3704361d5542b0575bf001c29ce5fc02f"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/oversampling_validation.json",
+      "bytes": 185592,
+      "sha256": "5970a842568a31791441183e684910f4841d86cae57c19df4a0682b489f8b457"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/reference_window_audit.json",
+      "bytes": 4447,
+      "sha256": "5744eed9917c3134078d4453cd0507321c1655180e7482da244d0e60dd0ff356"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/reproducibility_check.json",
+      "bytes": 1944,
+      "sha256": "531d166daf342e8df986e1f509b3a57a5c566be8aa8c7df325b6a04556b8b011"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/solver_benchmark.json",
+      "bytes": 15174,
+      "sha256": "48dd494c742c30b38cc31ebd65c90b7c44a57d8ce06ea5792f2b09a9e0d0b393"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/solver_residual_trace.json",
+      "bytes": 29726,
+      "sha256": "c76446547775b791ed95a3d2641bcce139b6c522d40712533122b6a2161cb658"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_cutoff_0.02.npz",
+      "bytes": 1505096,
+      "sha256": "32264abc981550936fc34d755d28eeb9632ed96158cab7f1efdf82cd44673dda"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_cutoff_0.035.npz",
+      "bytes": 1505048,
+      "sha256": "51f64f72e8c28bf6f90c9e2d596830c326e1bf40ae20826779ee3a7566b46dfd"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_cutoff_0.075.npz",
+      "bytes": 1505497,
+      "sha256": "9ee9e1c1d535f4b3c0b0e174e3cf8e6e830efb8663878f607d548cbe832d5e68"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_cutoff_0.1.npz",
+      "bytes": 1505202,
+      "sha256": "17834f957301fe5327eb8eba4be14c977cc1995b1b7205876e95a4a409d34b77"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_oversample1_reference.npz",
+      "bytes": 1505107,
+      "sha256": "15548a5a6e8c5192beb758ea643164ee520b8de4d8021f686208263eec81fd3c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_oversample2_192_16.npz",
+      "bytes": 1504826,
+      "sha256": "f40dadeefacd2f2336acaf332a7090c1e61a70af467d34a25a3e8885419cc3b5"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_seed_128_12.npz",
+      "bytes": 1687519,
+      "sha256": "915e87ed5c90d229d1b958d175297e89eefcf64634123fd9cda270fcf2931a2c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_seed_192_16.npz",
+      "bytes": 4524055,
+      "sha256": "14c087f4b94e1fd828891ffd7b2617cc9e86a0a3c88a7e57a9ad3ef625024286"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_seed_96_12.npz",
+      "bytes": 1010524,
+      "sha256": "b23395c0979684f43f3caeaf33bf63841114f1d799c6e9ec64c582ce7675a6c0"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/xi_seed_96_8.npz",
+      "bytes": 454853,
+      "sha256": "925bac529a0aa41694589a8f8243f6edd3918c5372d4c5dbf42dca8647f550c8"
+    },
+    {
+      "path": "research/v17c/v17c_21a/SESSION_HANDOFF.md",
+      "bytes": 5963,
+      "sha256": "066fb4cea112c4ef165cb41f3287ea9bd5669477cd4e6c9d2746cca02ca1e06c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/fast_slow_cutoff.csv",
+      "bytes": 1465,
+      "sha256": "05910837db5c219b11e89ee621584b66eeaec9b129afc14d50dd91dbc143918c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/full_root_grid_convergence.csv",
+      "bytes": 1216,
+      "sha256": "a0efaa9c4736891d02b6c865f94afdc2ec3d47cb6bb015cfaa2f8662c132cdae"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/holdout_m3_errors.csv",
+      "bytes": 564,
+      "sha256": "6e3b48502b3c69c4c8ac90bb40935d7a263d5ef8dca16923c72a3126f3c39c7b"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/inner_solver_benchmark.csv",
+      "bytes": 1126,
+      "sha256": "f641f4f0cbca5e165a3bb2a2d1d099a5e150b6353484a873d047c60c48ba0e5c"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/inner_solver_residual_trace.csv",
+      "bytes": 4778,
+      "sha256": "949c2571887e51d403efd6c7b307559540a697ef1aacff35a50e864c74a30315"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/M2_M3_reference_comparison.csv",
+      "bytes": 597,
+      "sha256": "364e79564707820d5fccd638bdaa314d80520f7621456e91c93ffab380b25bcd"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/M3_slowflow_eigenvalues.csv",
+      "bytes": 443,
+      "sha256": "6cba73b5b5eeb6f0b7c538525d5b1d42e962be234e8d486accb89060f902f005"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/M3_zero_RF_torque_samples.csv",
+      "bytes": 3512,
+      "sha256": "fbeeaebd6e86717dcebb9a051931f7749060fad7c54a09a09b8b9f202f88cc48"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/micromotion_mode_power.csv",
+      "bytes": 23279,
+      "sha256": "d1baad226ffe73897190a3eb096a8f08824b657b1c6154c78c2d1d68c815a23b"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tables/reference_window_sensitivity.csv",
+      "bytes": 1437,
+      "sha256": "29ff06a949f2ee5ce56880bac4a29c8cd2a60e937676bcc1e953726e474a3ba1"
+    },
+    {
+      "path": "research/v17c/v17c_21a/tests/test_m3_regression.py",
+      "bytes": 3283,
+      "sha256": "01b2bf7f267c7419ab1aacb9c9d2461bc30a923633045334d0fba63910021b29"
+    }
+  ],
+  "external_input_files": {
+    "v21_analytical_model": {
+      "path": "research/v17c/v17c_21/code/analytical_model.py",
+      "bytes": 25253,
+      "sha256": "f40177740369d087e2579f1c94ed2994c73a0c8eca5e015d76918060ea19b396"
+    },
+    "v21_m2_stability_record": {
+      "path": "research/v17c/v17c_21/results/sensitivity_and_stability.json",
+      "bytes": 8550,
+      "sha256": "a60f30e838673e74d19fc7ddf4018d0c00ef54264b43342278ce4d2174901902"
+    },
+    "v20b_reference_trajectory": {
+      "path": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "bytes": 570799,
+      "sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435"
+    },
+    "v20b_reference_summary": {
+      "path": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_summary.json",
+      "bytes": 7386,
+      "sha256": "7d37646cedf45815e6404b1b7518a6dfef2fa00d385d50f527861c39aea31ca6"
+    }
+  },
+  "notes": [
+    "Historical V20A/V20B/V21 files are inputs and remain unmodified.",
+    "Generated PNG figures are saved at 600 dpi; vector counterparts are PDF and SVG.",
+    "MANIFEST.json does not hash itself to avoid recursive content."
+  ]
+}
