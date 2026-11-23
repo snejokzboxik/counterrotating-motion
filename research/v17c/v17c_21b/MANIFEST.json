@@ -3,7 +3,7 @@
   "source_branch": "research/v17c21a-m3-convergence-stability",
   "source_commit": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
   "output_branch": "research/v17c21b-m3-bifurcation-diagrams",
-  "generated_utc": "2026-11-23T22:54:22.206710+00:00",
+  "generated_utc": "2026-11-23T22:55:23.850272+00:00",
   "hash_algorithm": "SHA-256",
   "manifest_self_hash": "excluded to avoid recursive hashing",
   "file_count": 98,
@@ -103,7 +103,7 @@
     "results/sparse_map_A_B.json": "5b7e1693b6eced0f8e972a98777ad66a17c5bb85de2168dec1d58cfed6009eee",
     "results/sparse_map_A_beta.json": "4035703a820bda01f5fe7ddb3f31f6934f880b7b8d674c7d6b498e7ed03fbf94",
     "results/sparse_map_B_nu.json": "ecea49c5e614d440509da87a20899bef61595b14d75a05bf066644283f380315",
-    "SESSION_HANDOFF.md": "ce2cb477970a59320c0d57483a8a9085be2f9ba10dae72e980ba6a4e9f4eee06",
+    "SESSION_HANDOFF.md": "2baa3a23f9e5d13463528afd7f35d12ee5c93e6ce03b14c4bc089ae8fb372e08",
     "tables/m3_1d_continuation.csv": "a65776d411afa6fb5b074a248312e85e9eec1ce577903f06f06be1c919b96be3",
     "tests/test_v21b_guards.py": "fa6ec43998e9f1c57cb9ebc321590700469822566efe1868ba416b74628ba158"
   }
