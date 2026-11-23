@@ -1,0 +1,823 @@
+{
+  "study": "V17C.20A",
+  "base_commit": "d1bf252649e174166becf464269318b5f97acd5d",
+  "model_scope": "Two particles, 3D mechanics; eight-harmonic transverse MFS field for infinite electrodes; ideal DC quadrupole; Cunningham-corrected Stokes plus Schiller-Naumann drag; gravity and Coulomb; polarization disabled.",
+  "shared_field_basis": {
+    "MFS_family_index": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "azimuthal_modes_k": [
+      -46,
+      -22,
+      2,
+      26,
+      -28,
+      -4,
+      20,
+      44
+    ],
+    "complex_coefficients_real_imag": [
+      [
+        0.01195544657862462,
+        -1.0842155436372173e-16
+      ],
+      [
+        0.09570557011088898,
+        -4.2872248166624126e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.03864580974495959,
+        1.7793248982720981e-16
+      ],
+      [
+        0.044100519066165626,
+        -2.0091592851606255e-16
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.17652762769656,
+        8.03012740525487e-16
+      ],
+      [
+        0.02491992749735757,
+        2.3153021498709014e-16
+      ]
+    ],
+    "note": "V20B full 8-complex-harmonic basis; A/B scale the corresponding RF family; phases are independent."
+  },
+  "forcing_phase_policy": "Two independent RF phases carry their absolute phase from the archived state and advance continuously; identical phases are used for paired perturbations/multistarts.",
+  "code_sha256": {
+    "field_basis": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "campaign_integrator": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "pair_integrator": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44",
+    "two_particle_rhs_and_field_diagnostics": "180b7beccbbe67ee573d79798f96f8010b984cf9d015256e9e38b338b9184376",
+    "variational_rhs": "45a1920a3d4c60ec6a01ab878ba14dc3071966883fc8032ada6c4609d2edbb85",
+    "qr_driver": "15e4f8d353c9b1010d131e75c5c948a76d1fd0ef31eceb1e3c8f023dbcfaa6fa",
+    "extended_qr_driver": "17622ee8d124081442ba35bf22bc9700976e9ec22cd603a2841af356de02ad66",
+    "rf_screen_driver": "c8beea5c32da9e6fe3ff0928e4a686d5b541aaeeec69a94bc06dae22b3132d1b",
+    "adaptive_refinement_driver": "3192ec88530a87c10fbbba417f273d4f9118127554822cf3b1253dd0a86dc72b",
+    "multistart_driver": "1c5ca9e67a9bda7b32743a512fe416b65c882e0d603c0e40c39e1a0f26731720"
+  },
+  "candidates": [
+    {
+      "id": "candidate52",
+      "classification": "LONG_LIVED_ONLY; near-neutral conditional modes; attractor type unresolved",
+      "parameters": {
+        "vector_definition": [
+          "A",
+          "B",
+          "nu",
+          "beta",
+          "m1/m2",
+          "C",
+          "lambda1_Cunningham_corrected",
+          "lambda2_Cunningham_corrected"
+        ],
+        "p_corrected": [
+          0.03956095746691348,
+          0.15032976498886072,
+          2.8996277751401065,
+          0.015917322789905167,
+          0.11307613545330587,
+          9.281679945656495e-06,
+          0.18609211263873252,
+          0.1035039256093252
+        ],
+        "q2_over_q1": 3.5274259874597194,
+        "alpha1": 1.0,
+        "alpha2": 0.39886769875950645,
+        "mu_m2_over_m1": 8.843599013984203,
+        "gravity_z": -0.012266930686001626,
+        "a1_over_R": 0.001965607441470929,
+        "a2_over_R": 0.009636493923663192,
+        "re1_per_speed": 7.227981851177806,
+        "re2_per_speed": 35.435561404417335,
+        "f1_Hz": 45.0,
+        "f2_Hz": 130.4832498813048
+      },
+      "initial_condition": {
+        "source_trajectory": "research/v17c/v17c_20b/results/candidate52_50000_common_corrected_trajectory.npz",
+        "source_sha256": "8be31d2460f4e82adcc181c20668f30c115c90de4e5db35ad07e22a4b0d47742",
+        "source_period": 50000,
+        "mechanical_state_at_seed_12D": [
+          0.3467247392731881,
+          0.38792547432261076,
+          -0.38526466659039477,
+          0.02400773921798023,
+          -0.00018588695980781018,
+          2.011960898403858e-07,
+          -0.2620112814717153,
+          -0.637888231612341,
+          -0.9660858371307469,
+          0.004536322487253427,
+          0.00378298223817901,
+          -1.558767354244779e-08
+        ],
+        "rf_phases_at_archived_period_rad": [
+          6.1315769038411645,
+          3.8207595809342436
+        ],
+        "discarded_transition_periods": 100,
+        "mechanical_state_after_transition_12D": [
+          -0.43911069824503407,
+          0.3107248224128375,
+          -0.3851446382925538,
+          0.05722073934268523,
+          -0.03929209786812504,
+          7.989793103011766e-07,
+          -0.6087177744478752,
+          -0.40844450927687426,
+          -0.966119209543251,
+          -0.03786552433136362,
+          0.002424747553097741,
+          -2.0338884420604602e-07
+        ],
+        "rf_phases_after_transition_rad": [
+          6.131576903841193,
+          3.5868838038692985
+        ],
+        "initial_state_sha256": "ead39765f33eb55f824cc6a1d65b7f1ea9ca612309c48f8696664081c2d6d03e"
+      },
+      "physical_parameter_mapping_from_V20B": {
+        "trap_radius_m": 0.01,
+        "medium": "dry air, 300 K, 1 atm; eta=1.81e-5 Pa s; rho_gas=1.177 kg/m3",
+        "frequency_f1_Hz": 45.0,
+        "frequency_f2_Hz": 130.4832498813048,
+        "omega1_rad_s": 282.7433388230814,
+        "omega2_rad_s": 819.8504384872568,
+        "particle1": {
+          "material": "solid spherical Al2O3 (legacy map assumption)",
+          "radius_m": 1.965607441470929e-05,
+          "diameter_um": 39.31214882941858,
+          "density_kg_m3": 3990.0,
+          "mass_kg": 1.2692637239399088e-10,
+          "charge_C": 5.450444884822952e-14,
+          "charge_e": 340190.01208470704,
+          "specific_charge_C_kg": 0.00042941784138478967,
+          "surface_charge_field_V_m": 1267884.7645372062,
+          "Kn": 0.0033119532734004866,
+          "Cunningham": 1.0041631252646643,
+          "lambda_Stokes": 0.18686683741441362,
+          "Re_per_dimensionless_speed": 7.227981851177806
+        },
+        "particle2": {
+          "material": "unidentified low-density hollow/glass sphere (legacy target density)",
+          "radius_m": 9.636493923663192e-05,
+          "diameter_um": 192.72987847326385,
+          "density_kg_m3": 299.45746617498537,
+          "mass_kg": 1.1224859417520895e-09,
+          "charge_C": 1.9226040929941379e-13,
+          "charge_e": 1199995.0893018316,
+          "specific_charge_C_kg": 0.0001712809061994258,
+          "surface_charge_field_V_m": 186077.20105576966,
+          "Kn": 0.0006755569039496996,
+          "Cunningham": 1.0008491750282649,
+          "lambda_Stokes": 0.10359181855828001,
+          "Re_per_dimensionless_speed": 35.435561404417335
+        },
+        "dimensionless_parameters": [
+          0.03956095746691348,
+          0.15032976498886072,
+          2.8996277751401065,
+          0.015917322789905167,
+          0.11307613545330587,
+          9.281679945656495e-06,
+          0.1868668374144136,
+          0.10359181855828002
+        ],
+        "mass_ratio_m1_over_m2": 0.11307613545330587,
+        "charge_ratio_q2_over_q1": 3.5274259874597194,
+        "A": 0.03956095746691348,
+        "B": 0.15032976498886072,
+        "nu": 2.8996277751401065,
+        "beta": 0.015917322789905167,
+        "C": 9.281679945656495e-06,
+        "lambda1": 0.1868668374144136,
+        "lambda2": 0.10359181855828002,
+        "U1_peak_electrode_V": 846.2409971112463,
+        "U2_peak_electrode_V": 3506.134261257152,
+        "U1_plus_U2_peak_bound_V": 4352.375258368398,
+        "V2_ideal_DC_coefficient_V_not_endcap": 296.32937380734023,
+        "a1_over_R": 0.001965607441470929,
+        "a2_over_R": 0.009636493923663192,
+        "gravity_z_dimensionless": -0.012266930686001626,
+        "Cunningham_mean": 1.0025061501464645,
+        "max_relative_mean_Cunningham_error": 0.0016555692501347696,
+        "MFS_triangle_surface_field_bound_V_m": 10927113.208629806,
+        "physical_mapping_status": "dimensional mapping of old dimensionless candidate; not an identified joint particle pair",
+        "frequency_scaling": {
+          "f1_old_Hz": 167.15162725343575,
+          "f1_new_Hz": 45.0,
+          "size_scale": 1.9272987847326384,
+          "charge_and_voltage_scale": 0.7203200048114494,
+          "A_B_nu_beta_s_qratio_C_lambda_Stokes_preserved": true
+        }
+      },
+      "qr": {
+        "conditional_spectrum_per_tau_descending_50k": [
+          -5.834791609078527e-06,
+          -2.9673497865026443e-05,
+          -0.060489258807402364,
+          -0.060491321183701756,
+          -0.06345007007375084,
+          -0.06345710238491056,
+          -0.09947354405239674,
+          -0.09948142093475405,
+          -0.10162344383703337,
+          -0.10162842396903274,
+          -0.1269598092752367,
+          -0.2035374484863947
+        ],
+        "horizon_RF1_periods": 50000.0,
+        "steps_per_RF1_period": 32,
+        "qr_interval_periods": 20,
+        "volume_balance_abs_error_per_tau": 1.1714715118182895e-05
+      },
+      "published_long_replay_observables": {
+        "source_summary": "research/v17c/v17c_20b/results/candidate52_50000_common_corrected_summary.json",
+        "periods": 50000,
+        "late_turns": [
+          111.45931617143565,
+          -42.40640220823516
+        ],
+        "late_frequency_Hz": [
+          0.11145931617143565,
+          -0.04240640220823516
+        ],
+        "late_mean_radius_R": [
+          0.5255999700277031,
+          0.7148553318463543
+        ],
+        "minimum_pair_distance_R": 0.605739558334161,
+        "all_late_chunks_counterrotating": true
+      },
+      "evidence_source": {
+        "stroboscopic_data": "results/stroboscopic/candidate52_..._every_rf1.npz",
+        "fixed_phase_multistart": "results/multistart/same_phase_multistart_summary.json",
+        "classification_limit": "Finite starts and windows; not a basin probability or asymptotic proof."
+      },
+      "scientific_note": "External RF phases are carried continuously from the archived absolute time; no phase reset. Conditional QR holds phase perturbations fixed."
+    },
+    {
+      "id": "local15",
+      "classification": "LONG_LIVED_ONLY; near-neutral conditional modes; attractor type unresolved",
+      "parameters": {
+        "vector_definition": [
+          "A",
+          "B",
+          "nu",
+          "beta",
+          "m1/m2",
+          "C",
+          "lambda1_Cunningham_corrected",
+          "lambda2_Cunningham_corrected"
+        ],
+        "p_corrected": [
+          0.03716194907442204,
+          0.1626938199343468,
+          3.1118029452860356,
+          0.017273303124515367,
+          0.10944955727644175,
+          9.463121589050818e-06,
+          0.2087847088276075,
+          0.12606646438577526
+        ],
+        "q2_over_q1": 3.1179673274978996,
+        "alpha1": 1.0,
+        "alpha2": 0.34126014359705537,
+        "mu_m2_over_m1": 9.136629008688033,
+        "gravity_z": -0.009936213855661315,
+        "a1_over_R": 0.0017600603946096752,
+        "a2_over_R": 0.009673133789798376,
+        "re1_per_speed": 7.191265560406395,
+        "re2_per_speed": 39.52254939479341,
+        "f1_Hz": 50.0,
+        "f2_Hz": 155.59014726430178
+      },
+      "initial_condition": {
+        "source_trajectory": "research/v17c/v17c_20b/results/local15_50000_common_corrected_trajectory.npz",
+        "source_sha256": "3b4f8d3ab3974d0e1312cdc38488f66e646b329f0a76bddd6f8d31a42cf1c575",
+        "source_period": 50000,
+        "mechanical_state_at_seed_12D": [
+          -0.29408919185968047,
+          -0.4537645603520306,
+          -0.287251593252641,
+          -0.05697641970481924,
+          -0.0024875244480357167,
+          1.177946096051651e-06,
+          0.1433158488690615,
+          -0.7236478784744423,
+          -0.842925140246382,
+          0.009982982626656055,
+          0.009342660070070582,
+          -4.0835889123146767e-07
+        ],
+        "rf_phases_at_archived_period_rad": [
+          6.1315769038411645,
+          2.303416174325193
+        ],
+        "discarded_transition_periods": 100,
+        "mechanical_state_after_transition_12D": [
+          0.1718895640684935,
+          -0.4838060659338406,
+          -0.2872743148471868,
+          -0.0297585825724853,
+          -0.019134796050564874,
+          -1.6324579665048613e-06,
+          -0.3706921492297511,
+          -0.6566813381527784,
+          -0.8429224991562212,
+          -0.004663110476650606,
+          0.019303797364593887,
+          3.9937709400839226e-07
+        ],
+        "rf_phases_after_transition_rad": [
+          6.131576903841193,
+          3.436240107411969
+        ],
+        "initial_state_sha256": "b6a324c7d4c08903384d312b83ce50d3739228387d4b27edeabb70301eec4e00"
+      },
+      "physical_parameter_mapping_from_V20B": {
+        "trap_radius_m": 0.01,
+        "medium": "dry air, 300 K, 1 atm; eta=1.81e-5 Pa s; rho_gas=1.177 kg/m3",
+        "frequency_f1_Hz": 50.0,
+        "frequency_f2_Hz": 155.59014726430178,
+        "omega1_rad_s": 314.1592653589793,
+        "omega2_rad_s": 977.601727232969,
+        "particle1": {
+          "material": "solid spherical Al2O3 (legacy map assumption)",
+          "radius_m": 1.760060394609675e-05,
+          "diameter_um": 35.2012078921935,
+          "density_kg_m3": 3990.0,
+          "mass_kg": 9.112640056697206e-11,
+          "charge_C": 5.511029146497126e-14,
+          "charge_e": 343971.38427479565,
+          "specific_charge_C_kg": 0.0006047675659532798,
+          "surface_charge_field_V_m": 1598891.4242244845,
+          "Kn": 0.0036987367137726592,
+          "Cunningham": 1.0046493120492122,
+          "lambda_Stokes": 0.20975541409005088,
+          "Re_per_dimensionless_speed": 7.191265560406395
+        },
+        "particle2": {
+          "material": "unidentified low-density hollow/glass sphere (legacy target density)",
+          "radius_m": 9.673133789798377e-05,
+          "diameter_um": 193.46267579596756,
+          "density_kg_m3": 219.60388253931848,
+          "mass_kg": 8.325881148775222e-10,
+          "charge_C": 1.7183208819666675e-13,
+          "charge_e": 1072491.5377630377,
+          "specific_charge_C_kg": 0.00020638306640005798,
+          "surface_charge_field_V_m": 165048.3871831155,
+          "Kn": 0.0006729980316064347,
+          "Cunningham": 1.0008459585257292,
+          "lambda_Stokes": 0.1261731113861309,
+          "Re_per_dimensionless_speed": 39.52254939479341
+        },
+        "dimensionless_parameters": [
+          0.03716194907442204,
+          0.1626938199343468,
+          3.1118029452860356,
+          0.017273303124515367,
+          0.10944955727644175,
+          9.463121589050818e-06,
+          0.20975541409005094,
+          0.12617311138613094
+        ],
+        "mass_ratio_m1_over_m2": 0.10944955727644175,
+        "charge_ratio_q2_over_q1": 3.1179673274978996,
+        "A": 0.03716194907442204,
+        "B": 0.1626938199343468,
+        "nu": 3.1118029452860356,
+        "beta": 0.017273303124515367,
+        "C": 9.463121589050818e-06,
+        "lambda1": 0.20975541409005094,
+        "lambda2": 0.12617311138613094,
+        "U1_peak_electrode_V": 696.8388016221224,
+        "U2_peak_electrode_V": 3326.29830306215,
+        "U1_plus_U2_peak_bound_V": 4023.1371046842723,
+        "V2_ideal_DC_coefficient_V_not_endcap": 281.8945296286567,
+        "a1_over_R": 0.0017600603946096752,
+        "a2_over_R": 0.009673133789798376,
+        "gravity_z_dimensionless": -0.009936213855661315,
+        "Cunningham_mean": 1.0027476352874707,
+        "max_relative_mean_Cunningham_error": 0.0019000693818485015,
+        "MFS_triangle_surface_field_bound_V_m": 10101173.018697077,
+        "physical_mapping_status": "dimensional mapping of old dimensionless candidate; not an identified joint particle pair",
+        "frequency_scaling": {
+          "f1_old_Hz": 187.1390346306782,
+          "f1_new_Hz": 50.0,
+          "size_scale": 1.9346267579596754,
+          "charge_and_voltage_scale": 0.7189544975797812,
+          "A_B_nu_beta_s_qratio_C_lambda_Stokes_preserved": true
+        }
+      },
+      "qr": {
+        "conditional_spectrum_per_tau_descending_50k": [
+          1.0362154976870815e-06,
+          -3.182796983999245e-05,
+          -0.07468403389528047,
+          -0.07469139193755348,
+          -0.07865605579401896,
+          -0.07865641711861734,
+          -0.11168912546238155,
+          -0.1117004958340878,
+          -0.11411035633769512,
+          -0.11412306987864203,
+          -0.15733361220617664,
+          -0.2285949849529084
+        ],
+        "horizon_RF1_periods": 50000.0,
+        "steps_per_RF1_period": 32,
+        "qr_interval_periods": 20,
+        "volume_balance_abs_error_per_tau": 1.7442382333809903e-05
+      },
+      "published_long_replay_observables": {
+        "source_summary": "research/v17c/v17c_20b/results/local15_50000_common_corrected_summary.json",
+        "periods": 50000,
+        "late_turns": [
+          57.02655078293588,
+          -47.73397644924214
+        ],
+        "late_frequency_Hz": [
+          0.06336283420326208,
+          -0.05303775161026905
+        ],
+        "late_mean_radius_R": [
+          0.5492974235948056,
+          0.7658947732809188
+        ],
+        "minimum_pair_distance_R": 0.5882232585575116,
+        "all_late_chunks_counterrotating": true
+      },
+      "evidence_source": {
+        "stroboscopic_data": "results/stroboscopic/local15_..._every_rf1.npz",
+        "fixed_phase_multistart": "results/multistart/same_phase_multistart_summary.json",
+        "classification_limit": "Finite starts and windows; not a basin probability or asymptotic proof."
+      },
+      "scientific_note": "External RF phases are carried continuously from the archived absolute time; no phase reset. Conditional QR holds phase perturbations fixed."
+    },
+    {
+      "id": "refine12_sobol17",
+      "classification": "ATTRACTOR_CANDIDATE; two near-neutral conditional modes, ten contracting modes; invariant-set attraction not fully resolved",
+      "parameters": {
+        "vector_definition": [
+          "A",
+          "B",
+          "nu",
+          "beta",
+          "m1/m2",
+          "C",
+          "lambda1_Cunningham_corrected",
+          "lambda2_Cunningham_corrected"
+        ],
+        "p_corrected": [
+          0.03492413282400757,
+          0.15631667332941065,
+          3.2196773638017477,
+          0.015388559140477825,
+          0.10963763906505944,
+          9.747265456858355e-06,
+          0.24452307123064748,
+          0.17736598731050257
+        ],
+        "q2_over_q1": 3.449053622502834,
+        "alpha1": 1.0,
+        "alpha2": 0.37814609618000145,
+        "mu_m2_over_m1": 9.120955253392458,
+        "gravity_z": -0.009936213855661315,
+        "a1_over_R": 0.001626051103627725,
+        "a2_over_R": 0.010712147659054478,
+        "re1_per_speed": 6.643729577002431,
+        "re2_per_speed": 43.76775863741318,
+        "f1_Hz": 50.0,
+        "f2_Hz": 160.98386819008738
+      },
+      "initial_condition": {
+        "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+        "source_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+        "source_period": 240000,
+        "mechanical_state_at_seed_12D": [
+          0.3310457978051866,
+          0.49647285598135615,
+          -0.3227667546699153,
+          -0.012560940280336472,
+          -0.029632048623907364,
+          -1.6918208723088743e-07,
+          -0.7261979097256975,
+          -0.03888418401987378,
+          -0.8537774057837884,
+          0.02351824455142045,
+          -0.011550349254138123,
+          3.240636243586892e-09
+        ],
+        "rf_phases_at_archived_period_rad": [
+          2.3066744441521223,
+          2.515823851502823
+        ],
+        "discarded_transition_periods": 100,
+        "mechanical_state_after_transition_12D": [
+          0.011742203519340456,
+          0.5781789220325756,
+          -0.3225538279878094,
+          -0.058432092326253016,
+          -0.0038091213716595924,
+          -1.665449877022284e-08,
+          -0.6200935575393659,
+          0.40916498455693584,
+          -0.8538369990105991,
+          0.018849867097051762,
+          0.043407160864574974,
+          -1.4796166688519847e-07
+        ],
+        "rf_phases_after_transition_rad": [
+          2.3066744441521507,
+          2.3131055494606727
+        ],
+        "initial_state_sha256": "5dad571ce9addc5cf9d3443d73cf45330618540d2508a0a3fc2ce5d2e375e520"
+      },
+      "physical_parameter_mapping_from_V20B": {
+        "trap_radius_m": 0.01,
+        "medium": "dry air, 300 K, 1 atm; eta=1.81e-5 Pa s; rho_gas=1.177 kg/m3",
+        "frequency_f1_Hz": 50.0,
+        "frequency_f2_Hz": 160.98386819008738,
+        "omega1_rad_s": 314.1592653589793,
+        "omega2_rad_s": 1011.4914753048922,
+        "particle1": {
+          "material": "solid spherical Al2O3 (legacy map assumption)",
+          "radius_m": 1.626051103627725e-05,
+          "diameter_um": 32.5210220725545,
+          "density_kg_m3": 3990.0,
+          "mass_kg": 7.185617187176753e-11,
+          "charge_C": 4.7222897567032047e-14,
+          "charge_e": 294742.1436869616,
+          "specific_charge_C_kg": 0.000657186381307714,
+          "surface_charge_field_V_m": 1605187.0844242438,
+          "Kn": 0.004003564208699326,
+          "Cunningham": 1.005032480210335,
+          "lambda_Stokes": 0.24575362874758608,
+          "Re_per_dimensionless_speed": 6.643729577002431
+        },
+        "particle2": {
+          "material": "unidentified low-density hollow/glass sphere (legacy target density)",
+          "radius_m": 0.00010712147659054479,
+          "diameter_um": 214.24295318108958,
+          "density_kg_m3": 127.28761258280191,
+          "mass_kg": 6.553969283224693e-10,
+          "charge_C": 1.6287430591865212e-13,
+          "charge_e": 1016581.4583877656,
+          "specific_charge_C_kg": 0.00024851246455417393,
+          "surface_charge_field_V_m": 127567.74632764571,
+          "Kn": 0.0006077212718868191,
+          "Cunningham": 1.0007639056387618,
+          "lambda_Stokes": 0.17750147818833362,
+          "Re_per_dimensionless_speed": 43.76775863741318
+        },
+        "dimensionless_parameters": [
+          0.03492413282400757,
+          0.15631667332941065,
+          3.2196773638017477,
+          0.015388559140477825,
+          0.10963763906505944,
+          9.747265456858355e-06,
+          0.24575362874758605,
+          0.17750147818833362
+        ],
+        "mass_ratio_m1_over_m2": 0.10963763906505944,
+        "charge_ratio_q2_over_q1": 3.4490536225028334,
+        "A": 0.03492413282400757,
+        "B": 0.15631667332941065,
+        "nu": 3.2196773638017477,
+        "beta": 0.015388559140477825,
+        "C": 9.747265456858355e-06,
+        "lambda1": 0.24575362874758605,
+        "lambda2": 0.17750147818833362,
+        "U1_peak_electrode_V": 602.6420186673314,
+        "U2_peak_electrode_V": 2941.0023977714923,
+        "U1_plus_U2_peak_bound_V": 3543.6444164388236,
+        "V2_ideal_DC_coefficient_V_not_endcap": 231.104897087284,
+        "a1_over_R": 0.001626051103627725,
+        "a2_over_R": 0.010712147659054478,
+        "gravity_z_dimensionless": -0.009936213855661315,
+        "Cunningham_mean": 1.0028981929245484,
+        "max_relative_mean_Cunningham_error": 0.0021326581362106634,
+        "MFS_triangle_surface_field_bound_V_m": 8897361.629627027,
+        "physical_mapping_status": "dimensional mapping of old dimensionless candidate; not an identified joint particle pair",
+        "frequency_scaling": {
+          "f1_old_Hz": 229.50021493877264,
+          "f1_new_Hz": 50.0,
+          "size_scale": 2.1424295318108957,
+          "charge_and_voltage_scale": 0.6831982211897811,
+          "A_B_nu_beta_s_qratio_C_lambda_Stokes_preserved": true
+        }
+      },
+      "qr": {
+        "conditional_spectrum_per_tau_descending_50k": [
+          -5.269317969719926e-07,
+          -3.2050145214091145e-05,
+          -0.10595962874628251,
+          -0.1059712624975629,
+          -0.11186182946808318,
+          -0.11186375509998224,
+          -0.13006197869792352,
+          -0.13007250277226612,
+          -0.13267416459050252,
+          -0.13268112788725506,
+          -0.2237822629528863,
+          -0.265706262406506
+        ],
+        "horizon_RF1_periods": 50000.0,
+        "steps_per_RF1_period": 32,
+        "qr_interval_periods": 20,
+        "volume_balance_abs_error_per_tau": 3.3006830308268675e-05
+      },
+      "published_long_replay_observables": {
+        "source_summary": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_summary.json",
+        "periods": 240000,
+        "late_turns": [
+          240.44999059026028,
+          -213.1970818117407
+        ],
+        "late_frequency_Hz": [
+          0.05464772513415006,
+          -0.04845388222994107
+        ],
+        "late_mean_radius_R": [
+          0.5557208179250963,
+          0.751515785539555
+        ],
+        "minimum_pair_distance_R": 0.5602404183189543,
+        "all_late_chunks_counterrotating": true
+      },
+      "evidence_source": {
+        "stroboscopic_data": "results/stroboscopic/refine12_sobol17_..._every_rf1.npz",
+        "fixed_phase_multistart": "results/multistart/same_phase_multistart_summary.json",
+        "classification_limit": "Finite starts and windows; not a basin probability or asymptotic proof."
+      },
+      "scientific_note": "External RF phases are carried continuously from the archived absolute time; no phase reset. Conditional QR holds phase perturbations fixed."
+    },
+    {
+      "id": "refine12_B115",
+      "classification": "ATTRACTOR_CANDIDATE; same near-neutral signature, start-panel escapes; no evidence of stronger attraction",
+      "parameters": {
+        "vector_definition": [
+          "A",
+          "B",
+          "nu",
+          "beta",
+          "m1/m2",
+          "C",
+          "lambda1_Cunningham_corrected",
+          "lambda2_Cunningham_corrected"
+        ],
+        "p_corrected": [
+          0.03492413282400757,
+          0.17976417432882225,
+          3.2196773638017477,
+          0.015388559140477825,
+          0.10963763906505944,
+          9.747265456858355e-06,
+          0.24452307123064748,
+          0.17736598731050257
+        ],
+        "q2_over_q1": 3.449053622502834,
+        "alpha1": 1.0,
+        "alpha2": 0.37814609618000145,
+        "mu_m2_over_m1": 9.120955253392458,
+        "gravity_z": -0.009936213855661315,
+        "a1_over_R": 0.001626051103627725,
+        "a2_over_R": 0.010712147659054478,
+        "re1_per_speed": 6.643729577002431,
+        "re2_per_speed": 43.76775863741318,
+        "f1_Hz": 50.0,
+        "f2_Hz": 160.98386819008738,
+        "B_multiplier": 1.15,
+        "field_multipliers_A_B_nu_beta": [
+          1.0,
+          1.15,
+          1.0,
+          1.0
+        ]
+      },
+      "initial_condition": {
+        "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+        "source_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+        "source_period": 240000,
+        "mechanical_state_at_seed_12D": [
+          0.3310457978051866,
+          0.49647285598135615,
+          -0.3227667546699153,
+          -0.012560940280336472,
+          -0.029632048623907364,
+          -1.6918208723088743e-07,
+          -0.7261979097256975,
+          -0.03888418401987378,
+          -0.8537774057837884,
+          0.02351824455142045,
+          -0.011550349254138123,
+          3.240636243586892e-09
+        ],
+        "rf_phases_at_archived_period_rad": [
+          2.3066744441521223,
+          2.515823851502823
+        ],
+        "discarded_transition_periods": 100,
+        "mechanical_state_after_transition_12D": [
+          0.011742203519340456,
+          0.5781789220325756,
+          -0.3225538279878094,
+          -0.058432092326253016,
+          -0.0038091213716595924,
+          -1.665449877022284e-08,
+          -0.6200935575393659,
+          0.40916498455693584,
+          -0.8538369990105991,
+          0.018849867097051762,
+          0.043407160864574974,
+          -1.4796166688519847e-07
+        ],
+        "rf_phases_after_transition_rad": [
+          2.3066744441521507,
+          2.3131055494606727
+        ],
+        "initial_state_sha256": "5dad571ce9addc5cf9d3443d73cf45330618540d2508a0a3fc2ce5d2e375e520"
+      },
+      "evidence": {
+        "fixed_phase_multistart": {
+          "n": 8,
+          "CR_retained": 6,
+          "escapes": 2,
+          "horizon_periods": 15000,
+          "seed": 20261123
+        },
+        "conditional_qr_top2_20k_per_tau": [
+          -7.354079127931971e-07,
+          -7.996449307282078e-05
+        ],
+        "conditional_qr_horizon_periods": 20000,
+        "event_resolved_turns": [
+          21.874675555044135,
+          -19.628075092147842
+        ],
+        "minimum_pair_distance_R": 0.5569331732149616,
+        "volume_balance_abs_error_per_tau": 4.91038980314773e-05,
+        "multistart_outcomes": [
+          {
+            "candidate": "candidate52",
+            "n": 0,
+            "outcomes": {},
+            "counterrotation_count": 0,
+            "counterrotation_fraction": null,
+            "wilson95_descriptive": [
+              null,
+              null
+            ],
+            "note": "Exploratory fixed-phase start panel, not a universal basin probability."
+          },
+          {
+            "candidate": "local15",
+            "n": 0,
+            "outcomes": {},
+            "counterrotation_count": 0,
+            "counterrotation_fraction": null,
+            "wilson95_descriptive": [
+              null,
+              null
+            ],
+            "note": "Exploratory fixed-phase start panel, not a universal basin probability."
+          },
+          {
+            "candidate": "refine12_sobol17",
+            "n": 8,
+            "outcomes": {
+              "CR(+−)": 6,
+              "ESCAPE": 2
+            },
+            "counterrotation_count": 6,
+            "counterrotation_fraction": 0.75,
+            "wilson95_descriptive": [
+              0.40927543031016883,
+              0.9285207872478909
+            ],
+            "note": "Exploratory fixed-phase start panel, not a universal basin probability."
+          }
+        ]
+      },
+      "scientific_note": "Same-phase fixed-start panel; a finite panel does not estimate a universal basin probability."
+    }
+  ]
+}

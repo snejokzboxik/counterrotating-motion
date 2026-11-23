@@ -1,0 +1,570 @@
+{
+  "selected_by": "local CR neighborhood; six parameter points incl baseline",
+  "results": [
+    {
+      "run_id": "refine12_e9dbaf68429c",
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        3.2523101902900318,
+        -2.9234956079774927
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        -4.964561365366401e-06,
+        -0.0003197934567086959,
+        -0.10617022065947204,
+        -0.10628502115806837,
+        -0.11206284934935237,
+        -0.11214039809020761,
+        -0.12983333395817964,
+        -0.12985681197976176,
+        -0.1323460508147691,
+        -0.13243735305304108,
+        -0.22376127032376697,
+        -0.26546039590867554
+      ],
+      "sum_exponents_per_tau": -1.4506784633133685,
+      "integrated_divergence_per_tau": -1.4506339206659074,
+      "volume_balance_abs_error_per_tau": 4.454264746112102e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        5.419729214550823,
+        -4.868495377115758
+      ],
+      "event_resolved_min_pair_distance_R": 0.5603190521571071,
+      "event_resolved_mean_radius_R": [
+        0.5558416269421005,
+        0.751686072604682
+      ],
+      "event_resolved_rmax_R": [
+        0.6055398431118432,
+        0.7820663554317567
+      ],
+      "event_resolved_zmax_R": [
+        0.32278440509017275,
+        0.8540227699690096
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 2.8460561298199e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.5152362323382559,
+            0.7229088754288632
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.5782890273506501,
+            0.7492876437730706
+          ]
+        }
+      ],
+      "elapsed_seconds": 17.1670869999798,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    },
+    {
+      "run_id": "refine12_c789f45a0917",
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.15,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.17976417432882225,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        3.2940911739375602,
+        -2.9429046955245193
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        -3.974141039159938e-06,
+        -0.000318003556136446,
+        -0.10536037339203674,
+        -0.10546656145532829,
+        -0.11102052226346226,
+        -0.11102222296201522,
+        -0.12942765637677558,
+        -0.12954300532601054,
+        -0.13185542659623414,
+        -0.13195435380204648,
+        -0.22160602597131845,
+        -0.26451926043695906
+      ],
+      "sum_exponents_per_tau": -1.4420973862793625,
+      "integrated_divergence_per_tau": -1.4420080135207118,
+      "volume_balance_abs_error_per_tau": 8.937275865061878e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        5.474667438651589,
+        -4.900139996994834
+      ],
+      "event_resolved_min_pair_distance_R": 0.5569331732149616,
+      "event_resolved_mean_radius_R": [
+        0.5183042645583015,
+        0.7010639570586311
+      ],
+      "event_resolved_rmax_R": [
+        0.5646317787840579,
+        0.7288043669051378
+      ],
+      "event_resolved_zmax_R": [
+        0.322772650366802,
+        0.8540287496862076
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 1.6050072620845932e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.4737902593874315,
+            0.6742194779751256
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.5470103634726592,
+            0.686230666966437
+          ]
+        }
+      ],
+      "elapsed_seconds": 16.980313000036404,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    },
+    {
+      "run_id": "refine12_b3ca0a4e35c2",
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 0.85
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.01308027526940615,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        5.456791413598417,
+        -2.1555531964485444
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        1.6937213179883584e-05,
+        -0.0003596495351039162,
+        -0.07264387607660501,
+        -0.11012885584230685,
+        -0.11021669272824061,
+        -0.12936440428667348,
+        -0.12955930373749938,
+        -0.13181675377178073,
+        -0.13188306696814575,
+        -0.13660433705179517,
+        -0.21996348456864678,
+        -0.2640722036303514
+      ],
+      "sum_exponents_per_tau": -1.4365956909839692,
+      "integrated_divergence_per_tau": -1.436573673664052,
+      "volume_balance_abs_error_per_tau": 2.201731991724465e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        9.093174940201251,
+        -3.5940667763905862
+      ],
+      "event_resolved_min_pair_distance_R": 0.6501139157162046,
+      "event_resolved_mean_radius_R": [
+        0.5235955330520188,
+        0.7177355744166617
+      ],
+      "event_resolved_rmax_R": [
+        0.5689486574452602,
+        0.7453504028768779
+      ],
+      "event_resolved_zmax_R": [
+        0.3797299073030384,
+        1.0046575204089094
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 1.0542182399685226e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.4801662770079782,
+            0.701140873674906
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.48409277015316393,
+            0.7197085104591059
+          ]
+        }
+      ],
+      "elapsed_seconds": 17.087260799948126,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    },
+    {
+      "run_id": "refine12_5471914085ed",
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.15,
+        "nu": 1.0,
+        "beta": 0.85
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.17976417432882225,
+        3.2196773638017477,
+        0.01308027526940615,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        5.486655765000928,
+        -2.1517179841213725
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        1.7199649591438974e-05,
+        -0.000356412431632566,
+        -0.07438626589674595,
+        -0.10917486997853244,
+        -0.10918463664610618,
+        -0.1290334520519604,
+        -0.12920711992737183,
+        -0.1313382295068069,
+        -0.13145760751925586,
+        -0.1333577138751554,
+        -0.21797011737498445,
+        -0.2632047958461811
+      ],
+      "sum_exponents_per_tau": -1.4286540214051417,
+      "integrated_divergence_per_tau": -1.4285730726108226,
+      "volume_balance_abs_error_per_tau": 8.094879431919111e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        9.152946423992264,
+        -3.587487201209448
+      ],
+      "event_resolved_min_pair_distance_R": 0.6469873731343364,
+      "event_resolved_mean_radius_R": [
+        0.4882364123115129,
+        0.6692930958841585
+      ],
+      "event_resolved_rmax_R": [
+        0.5305452762213129,
+        0.694884496161372
+      ],
+      "event_resolved_zmax_R": [
+        0.37971432721766113,
+        1.0046616990236537
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 1.9534772787345696e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.4536142202927672,
+            0.6534876018870499
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.4514477047861964,
+            0.6701322888124456
+          ]
+        }
+      ],
+      "elapsed_seconds": 17.021924300002865,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    },
+    {
+      "run_id": "refine12_554ccecf2da0",
+      "multipliers": {
+        "A": 1.15,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.0401627527476087,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        9.026333668931056,
+        -2.1987181119619943
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        -4.429235226621126e-06,
+        -0.0003000711944785688,
+        -0.1060866007559039,
+        -0.10618076405390042,
+        -0.11189520384237397,
+        -0.11197963510737523,
+        -0.13018355083073144,
+        -0.1301988227677222,
+        -0.13279152689160398,
+        -0.1327987314324747,
+        -0.22363492704950969,
+        -0.2661102664337151
+      ],
+      "sum_exponents_per_tau": -1.4521645295950159,
+      "integrated_divergence_per_tau": -1.452131367269241,
+      "volume_balance_abs_error_per_tau": 3.316232577477152e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        15.046700541281684,
+        -3.6626925664202634
+      ],
+      "event_resolved_min_pair_distance_R": 0.5640278439806202,
+      "event_resolved_mean_radius_R": [
+        0.5357229556610781,
+        0.7437321627226493
+      ],
+      "event_resolved_rmax_R": [
+        0.5882791394295084,
+        0.7764604198372375
+      ],
+      "event_resolved_zmax_R": [
+        0.3227809216115904,
+        0.8540159087608131
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 4.2843649293872735e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.48532303221899287,
+            0.7156474857900641
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.49089739272833766,
+            0.7641895694312121
+          ]
+        }
+      ],
+      "elapsed_seconds": 17.160933100036345,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    },
+    {
+      "run_id": "refine12_11dcbb1a2ecb",
+      "multipliers": {
+        "A": 1.15,
+        "B": 1.15,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.0401627527476087,
+        0.17976417432882225,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "screen_outcome": "CR(+−)",
+      "screen_turns": [
+        9.076070986436035,
+        -2.2107636188900206
+      ],
+      "source_state_period": 240000,
+      "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "fixed_phase_at_seed_rad": [
+        2.3066744441521223,
+        2.515823851502823
+      ],
+      "phase_after_100p_transient_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "periods_after_transient": 5000,
+      "steps_per_rf_period": 32,
+      "qr_interval_periods": 20,
+      "conditional_spectrum_per_tau_descending": [
+        -1.205190499661333e-05,
+        -0.0003063200210211055,
+        -0.10524537669537071,
+        -0.10541638229894093,
+        -0.11084229627984551,
+        -0.11087320871387259,
+        -0.12974038453207845,
+        -0.12989385607440407,
+        -0.13227071610049776,
+        -0.13228326652759612,
+        -0.2214777209802046,
+        -0.2651076565002187
+      ],
+      "sum_exponents_per_tau": -1.4434692366290474,
+      "integrated_divergence_per_tau": -1.4434275840770183,
+      "volume_balance_abs_error_per_tau": 4.165255202903673e-05,
+      "event_resolved_replay_status": 0,
+      "event_resolved_replay_completed_periods": 5000,
+      "event_resolved_turns": [
+        15.117965582856687,
+        -3.6810040873477847
+      ],
+      "event_resolved_min_pair_distance_R": 0.5602502525808699,
+      "event_resolved_mean_radius_R": [
+        0.4995365811651097,
+        0.6936181610676935
+      ],
+      "event_resolved_rmax_R": [
+        0.5485373530936261,
+        0.7236152519223943
+      ],
+      "event_resolved_zmax_R": [
+        0.3227685812182361,
+        0.8540225807698199
+      ],
+      "QR_base_vs_event_replay_final_state_norm": 4.0963865681918466e-10,
+      "late_state_samples": [
+        {
+          "periods": 2000,
+          "state_sample_step": 64000,
+          "state_mean_radius_R": [
+            0.46203858169361545,
+            0.6648405107300558
+          ]
+        },
+        {
+          "periods": 5000,
+          "state_sample_step": 160000,
+          "state_mean_radius_R": [
+            0.49277101886054625,
+            0.7107305446719228
+          ]
+        }
+      ],
+      "elapsed_seconds": 16.983006699942052,
+      "scope": "5000-period conditional QR at one frozen refine12 late state; phase fixed in tangent perturbations; independent event-resolving RK4 replay. It does not prove a global attractor or basin size."
+    }
+  ],
+  "elapsed_seconds": 23.412372900056653
+}

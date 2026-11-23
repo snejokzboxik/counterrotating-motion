@@ -1,0 +1,1008 @@
+{
+  "candidate": "refine12_sobol17",
+  "source_period": 240000,
+  "source_trajectory": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+  "rf_phase_rad_fixed": [
+    2.3066744441521223,
+    2.515823851502823
+  ],
+  "horizon_rf1_periods": 5000,
+  "steps_per_rf1_period": 64,
+  "distance_metric": "sqrt(sum(delta_position/R)^2 + sum(delta_velocity/v_orbit_scale)^2); v_orbit_scale from V20B late mean angular rate and radius.",
+  "velocity_scales_dimensionless": [
+    0.0038162658249025747,
+    0.004575900271655408
+  ],
+  "perturbation_directions": [
+    "azimuth_position_p1",
+    "azimuth_position_p2",
+    "radial_position_p1",
+    "tangential_velocity_p1",
+    "random_full_state"
+  ],
+  "perturbation_amplitudes": [
+    1e-08,
+    1e-07,
+    1e-06,
+    1e-05,
+    0.0001
+  ],
+  "rows": [
+    {
+      "direction": "azimuth_position_p1",
+      "epsilon_metric": 1e-08,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000005415959e-08,
+      "final_distance_metric": 5.00094597935612e-07,
+      "max_distance_metric": 5.384587826941881e-07,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.2279982986235797e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791331084019,
+          "radius_std_R": 0.02839128648004192,
+          "frequency_Hz": 0.05465401305528183,
+          "turns": 5.457198231282297
+        },
+        {
+          "mean_radius_R": 0.7512997397331056,
+          "radius_std_R": 0.015560929347419594,
+          "frequency_Hz": -0.04845474678046628,
+          "turns": -4.845367561159027
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p1",
+      "epsilon_metric": 1e-07,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.000000000079921e-07,
+      "final_distance_metric": 5.0009464699947705e-06,
+      "max_distance_metric": 5.384590464111762e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.2280060689828635e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791329310775,
+          "radius_std_R": 0.028391286430932257,
+          "frequency_Hz": 0.05465401305197789,
+          "turns": 5.457198226663479
+        },
+        {
+          "mean_radius_R": 0.7512997397377925,
+          "radius_std_R": 0.015560929346906553,
+          "frequency_Hz": -0.04845474678042792,
+          "turns": -4.845367561116454
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p1",
+      "epsilon_metric": 1e-06,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000000029574e-06,
+      "final_distance_metric": 5.0009363895914705e-05,
+      "max_distance_metric": 5.384577720049054e-05,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.2280068182703918e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791311578579,
+          "radius_std_R": 0.02839128593986361,
+          "frequency_Hz": 0.05465401301893825,
+          "turns": 5.4571981804748315
+        },
+        {
+          "mean_radius_R": 0.7512997397846598,
+          "radius_std_R": 0.015560929341776691,
+          "frequency_Hz": -0.04845474678004413,
+          "turns": -4.845367560690709
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p1",
+      "epsilon_metric": 1e-05,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999983387e-06,
+      "final_distance_metric": 0.0005000823215126978,
+      "max_distance_metric": 0.000538445132440548,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.2279990941043444e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791134278811,
+          "radius_std_R": 0.028391281031954638,
+          "frequency_Hz": 0.0546540126884703,
+          "turns": 5.457197718536902
+        },
+        {
+          "mean_radius_R": 0.751299740253323,
+          "radius_std_R": 0.015560929290482702,
+          "frequency_Hz": -0.04845474677620593,
+          "turns": -4.845367556433421
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p1",
+      "epsilon_metric": 0.0001,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 0.00010000000000003404,
+      "final_distance_metric": 0.004999691049516276,
+      "max_distance_metric": 0.005383187587420013,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.22792162717846e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559789363500525,
+          "radius_std_R": 0.02839123223055678,
+          "frequency_Hz": 0.05465400937672956,
+          "turns": 5.457193094016343
+        },
+        {
+          "mean_radius_R": 0.7512997449385871,
+          "radius_std_R": 0.015560928777985466,
+          "frequency_Hz": -0.048454746737838734,
+          "turns": -4.8453675138805545
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p2",
+      "epsilon_metric": 1e-08,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000003427701e-08,
+      "final_distance_metric": 2.389641651058509e-07,
+      "max_distance_metric": 2.7561078627291106e-07,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.0118971813552964e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791331207404,
+          "radius_std_R": 0.028391286486237916,
+          "frequency_Hz": 0.05465401305574211,
+          "turns": 5.457198231834103
+        },
+        {
+          "mean_radius_R": 0.7512997397198907,
+          "radius_std_R": 0.015560929359633257,
+          "frequency_Hz": -0.04845474678125039,
+          "turns": -4.845367561670659
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p2",
+      "epsilon_metric": 1e-07,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999667437e-08,
+      "final_distance_metric": 2.3896438730089313e-06,
+      "max_distance_metric": 2.7561080920247536e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.0118960311284948e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791330544644,
+          "radius_std_R": 0.028391286492892062,
+          "frequency_Hz": 0.05465401305658064,
+          "turns": 5.457198232181549
+        },
+        {
+          "mean_radius_R": 0.7512997396056443,
+          "radius_std_R": 0.015560929469043052,
+          "frequency_Hz": -0.04845474678826925,
+          "turns": -4.845367566232768
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p2",
+      "epsilon_metric": 1e-06,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.99999999999403e-07,
+      "final_distance_metric": 2.38964681020986e-05,
+      "max_distance_metric": 2.7561121617661447e-05,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.0118964413239767e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791323917035,
+          "radius_std_R": 0.02839128655943325,
+          "frequency_Hz": 0.0546540130649659,
+          "turns": 5.457198235656061
+        },
+        {
+          "mean_radius_R": 0.7512997384631913,
+          "radius_std_R": 0.015560930563130059,
+          "frequency_Hz": -0.0484547468584575,
+          "turns": -4.845367611853704
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p2",
+      "epsilon_metric": 1e-05,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000000001952e-05,
+      "final_distance_metric": 0.00023896743562287366,
+      "max_distance_metric": 0.0002756154329605957,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.0119009728399268e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791257639661,
+          "radius_std_R": 0.028391287224850133,
+          "frequency_Hz": 0.054654013148820256,
+          "turns": 5.457198270402381
+        },
+        {
+          "mean_radius_R": 0.7512997270398057,
+          "radius_std_R": 0.015560941502737286,
+          "frequency_Hz": -0.04845474756032172,
+          "turns": -4.845368068047498
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "azimuth_position_p2",
+      "epsilon_metric": 0.0001,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999999873e-05,
+      "final_distance_metric": 0.002389949726240187,
+      "max_distance_metric": 0.0027565753460570865,
+      "finite_time_separation_rate_per_tau_below_0p1": 1.0119464399838007e-05,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559790594737773,
+          "radius_std_R": 0.028391293879522484,
+          "frequency_Hz": 0.05465401398755622,
+          "turns": 5.457198617990553
+        },
+        {
+          "mean_radius_R": 0.751299612920414,
+          "radius_std_R": 0.015561050772681311,
+          "frequency_Hz": -0.04845475457713499,
+          "turns": -4.845372628428943
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "radial_position_p1",
+      "epsilon_metric": 1e-08,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000005415959e-08,
+      "final_distance_metric": 2.412008663615594e-07,
+      "max_distance_metric": 2.597056125772341e-07,
+      "finite_time_separation_rate_per_tau_below_0p1": 9.654309865283574e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.55597913331468,
+          "radius_std_R": 0.028391286764245776,
+          "frequency_Hz": 0.05465401305692708,
+          "turns": 5.457198232834374
+        },
+        {
+          "mean_radius_R": 0.7512997397328359,
+          "radius_std_R": 0.015560929347448954,
+          "frequency_Hz": -0.048454746780468516,
+          "turns": -4.845367561161488
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "radial_position_p1",
+      "epsilon_metric": 1e-07,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.000000000079921e-07,
+      "final_distance_metric": 2.412018617334629e-06,
+      "max_distance_metric": 2.597055167407798e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": 9.654497342395072e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791349938606,
+          "radius_std_R": 0.02839128927297329,
+          "frequency_Hz": 0.05465401306843044,
+          "turns": 5.457198242184286
+        },
+        {
+          "mean_radius_R": 0.7512997397350972,
+          "radius_std_R": 0.015560929347200847,
+          "frequency_Hz": -0.04845474678045008,
+          "turns": -4.8453675611410505
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "radial_position_p1",
+      "epsilon_metric": 1e-06,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000000029574e-06,
+      "final_distance_metric": 2.412021195633763e-05,
+      "max_distance_metric": 2.5970580233852434e-05,
+      "finite_time_separation_rate_per_tau_below_0p1": 9.654512435962545e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791517856659,
+          "radius_std_R": 0.028391314360539197,
+          "frequency_Hz": 0.05465401318346389,
+          "turns": 5.457198335683477
+        },
+        {
+          "mean_radius_R": 0.7512997397577096,
+          "radius_std_R": 0.015560929344719539,
+          "frequency_Hz": -0.048454746780265914,
+          "turns": -4.845367560936677
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "radial_position_p1",
+      "epsilon_metric": 1e-05,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999983387e-06,
+      "final_distance_metric": 0.00024120467517925524,
+      "max_distance_metric": 0.00025970843704817146,
+      "finite_time_separation_rate_per_tau_below_0p1": 9.654555639494441e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559793197036929,
+          "radius_std_R": 0.028391565265303214,
+          "frequency_Hz": 0.05465401433380977,
+          "turns": 5.4571992706855434
+        },
+        {
+          "mean_radius_R": 0.7512997399838349,
+          "radius_std_R": 0.015560929319907631,
+          "frequency_Hz": -0.048454746778424505,
+          "turns": -4.845367558892966
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "radial_position_p1",
+      "epsilon_metric": 0.0001,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 0.00010000000000003404,
+      "final_distance_metric": 0.0024123009391203813,
+      "max_distance_metric": 0.002597347660870216,
+      "finite_time_separation_rate_per_tau_below_0p1": 9.654954881039505e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559809988813581,
+          "radius_std_R": 0.028394077223138033,
+          "frequency_Hz": 0.05465402583834048,
+          "turns": 5.457208621716908
+        },
+        {
+          "mean_radius_R": 0.7512997422453027,
+          "radius_std_R": 0.0155609290718317,
+          "frequency_Hz": -0.04845474676000918,
+          "turns": -4.845367538455708
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "tangential_velocity_p1",
+      "epsilon_metric": 1e-08,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.99999992661289e-09,
+      "final_distance_metric": 7.910904574709388e-09,
+      "max_distance_metric": 9.99999992661289e-09,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.6600692363610774e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791331277927,
+          "radius_std_R": 0.02839128648541223,
+          "frequency_Hz": 0.054654013055690814,
+          "turns": 5.4571982318295715
+        },
+        {
+          "mean_radius_R": 0.751299739732593,
+          "radius_std_R": 0.015560929347475605,
+          "frequency_Hz": -0.04845474678047047,
+          "turns": -4.845367561163682
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "tangential_velocity_p1",
+      "epsilon_metric": 1e-07,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.000000001489725e-07,
+      "final_distance_metric": 7.91220133696602e-08,
+      "max_distance_metric": 1.000000001489725e-07,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.650795690797767e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791331249873,
+          "radius_std_R": 0.028391286484635243,
+          "frequency_Hz": 0.054654013056068214,
+          "turns": 5.457198232136284
+        },
+        {
+          "mean_radius_R": 0.7512997397326673,
+          "radius_std_R": 0.015560929347467523,
+          "frequency_Hz": -0.04845474678046992,
+          "turns": -4.84536756116302
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "tangential_velocity_p1",
+      "epsilon_metric": 1e-06,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000002286866e-06,
+      "final_distance_metric": 7.912301945517944e-07,
+      "max_distance_metric": 1.0000000002286866e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.6501853233542337e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791330969317,
+          "radius_std_R": 0.028391286476865247,
+          "frequency_Hz": 0.05465401305984177,
+          "turns": 5.4571982352034
+        },
+        {
+          "mean_radius_R": 0.751299739733409,
+          "radius_std_R": 0.015560929347386072,
+          "frequency_Hz": -0.04845474678046381,
+          "turns": -4.845367561156315
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "tangential_velocity_p1",
+      "epsilon_metric": 1e-05,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999891243e-06,
+      "final_distance_metric": 7.912298191576789e-06,
+      "max_distance_metric": 9.999999999891243e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.6501738297103615e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791328163779,
+          "radius_std_R": 0.028391286399165445,
+          "frequency_Hz": 0.05465401309757685,
+          "turns": 5.457198265874499
+        },
+        {
+          "mean_radius_R": 0.7512997397408271,
+          "radius_std_R": 0.015560929346571583,
+          "frequency_Hz": -0.048454746780403506,
+          "turns": -4.845367561089341
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "tangential_velocity_p1",
+      "epsilon_metric": 0.0001,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999979528e-05,
+      "final_distance_metric": 7.91230199214934e-05,
+      "max_distance_metric": 9.999999999979528e-05,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.6501653731648137e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.555979130010846,
+          "radius_std_R": 0.028391285622180896,
+          "frequency_Hz": 0.05465401347492809,
+          "turns": 5.4571985725855825
+        },
+        {
+          "mean_radius_R": 0.7512997398150083,
+          "radius_std_R": 0.01556092933842788,
+          "frequency_Hz": -0.04845474677980012,
+          "turns": -4.845367560419559
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "random_full_state",
+      "epsilon_metric": 1e-08,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.000000030426913e-08,
+      "final_distance_metric": 9.432600220359609e-09,
+      "max_distance_metric": 1.000000030426913e-08,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.096471878206128e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.555979133128969,
+          "radius_std_R": 0.02839128648729629,
+          "frequency_Hz": 0.05465401305568541,
+          "turns": 5.4571982318238845
+        },
+        {
+          "mean_radius_R": 0.7512997397325761,
+          "radius_std_R": 0.01556092934739591,
+          "frequency_Hz": -0.04845474678043623,
+          "turns": -4.845367561130817
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "random_full_state",
+      "epsilon_metric": 1e-07,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.0000000016182289e-07,
+      "final_distance_metric": 9.434271557180644e-08,
+      "max_distance_metric": 1.0000000016182289e-07,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.0898123724388354e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791331367495,
+          "radius_std_R": 0.028391286503476224,
+          "frequency_Hz": 0.05465401305601416,
+          "turns": 5.457198232079434
+        },
+        {
+          "mean_radius_R": 0.7512997397324983,
+          "radius_std_R": 0.015560929346669913,
+          "frequency_Hz": -0.048454746780127726,
+          "turns": -4.845367560834379
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "random_full_state",
+      "epsilon_metric": 1e-06,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 1.000000000126462e-06,
+      "final_distance_metric": 9.434441787743031e-07,
+      "max_distance_metric": 1.000000000126462e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.0890213104304687e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791332145556,
+          "radius_std_R": 0.028391286665275437,
+          "frequency_Hz": 0.05465401305930154,
+          "turns": 5.4571982346349115
+        },
+        {
+          "mean_radius_R": 0.751299739731719,
+          "radius_std_R": 0.015560929339409574,
+          "frequency_Hz": -0.048454746777042076,
+          "turns": -4.845367557869925
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "random_full_state",
+      "epsilon_metric": 1e-05,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 9.999999999649307e-06,
+      "final_distance_metric": 9.434449127342554e-06,
+      "max_distance_metric": 9.999999999649307e-06,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.088980587771501e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791339926164,
+          "radius_std_R": 0.02839128828326888,
+          "frequency_Hz": 0.05465401309217508,
+          "turns": 5.457198260189655
+        },
+        {
+          "mean_radius_R": 0.7512997397239275,
+          "radius_std_R": 0.01556092926680713,
+          "frequency_Hz": -0.04845474674618581,
+          "turns": -4.845367528225435
+        }
+      ],
+      "same_initial_RF_phases": true
+    },
+    {
+      "direction": "random_full_state",
+      "epsilon_metric": 0.0001,
+      "status": 0,
+      "completed_periods": 5000,
+      "initial_distance_metric": 0.00010000000000002001,
+      "final_distance_metric": 9.434433653285637e-05,
+      "max_distance_metric": 0.00010000000000002001,
+      "finite_time_separation_rate_per_tau_below_0p1": -2.0889801790050534e-06,
+      "nominal_late_observables": [
+        {
+          "mean_radius_R": 0.5559791331281044,
+          "radius_std_R": 0.028391286485498626,
+          "frequency_Hz": 0.054654013055649,
+          "turns": 5.457198231795499
+        },
+        {
+          "mean_radius_R": 0.7512997397325848,
+          "radius_std_R": 0.015560929347476599,
+          "frequency_Hz": -0.04845474678047053,
+          "turns": -4.845367561163757
+        }
+      ],
+      "perturbed_observables": [
+        {
+          "mean_radius_R": 0.5559791417732417,
+          "radius_std_R": 0.02839130446335489,
+          "frequency_Hz": 0.05465401342090894,
+          "turns": 5.457198515736327
+        },
+        {
+          "mean_radius_R": 0.7512997396460146,
+          "radius_std_R": 0.015560928540793193,
+          "frequency_Hz": -0.04845474643762277,
+          "turns": -4.845367231780595
+        }
+      ],
+      "same_initial_RF_phases": true
+    }
+  ],
+  "interpretation_limit": "Direct phase-locked distances can preserve internal phase offsets on an invariant torus; nonconvergence of pointwise states is therefore not a test against attraction to a set. Finite-time output is supplementary to QR and phase-conditioned diagnostics."
+}

@@ -1,0 +1,1798 @@
+{
+  "source_commit": "d1bf252649e174166becf464269318b5f97acd5d",
+  "method": "Conditional 12D mechanical QR, RK4 tangent and base integration; continuous RF phases reconstructed from archived absolute period; 100p discarded transition; conditional tangent phase fixed.",
+  "fits": {
+    "candidate52": {
+      "horizons_periods": [
+        2000,
+        5000,
+        10000,
+        20000
+      ],
+      "exponents_at_horizons_per_tau": [
+        [
+          -0.00014805589698127917,
+          -0.000733780728941436,
+          -0.061050584688540674,
+          -0.06135560132518389,
+          -0.06405281301389552,
+          -0.06410651051376465,
+          -0.09883742823368388,
+          -0.09891431212677178,
+          -0.10074774015407055,
+          -0.1008666506117227,
+          -0.12701620214933615,
+          -0.20279655205963612
+        ],
+        [
+          -5.7777479578740624e-05,
+          -0.0002977067135773096,
+          -0.06074426760492281,
+          -0.0607709924138231,
+          -0.06368703650194976,
+          -0.06368967706002943,
+          -0.0992322180594764,
+          -0.0992714835762855,
+          -0.10129994062091822,
+          -0.101337872040516,
+          -0.12697718778677594,
+          -0.2032608407553993
+        ],
+        [
+          -3.1485540019944866e-05,
+          -0.00014819952658865588,
+          -0.060602845774178564,
+          -0.060615349312813274,
+          -0.06354083354180616,
+          -0.06357505466255077,
+          -0.09937171919651186,
+          -0.09938268869598055,
+          -0.10147480903767943,
+          -0.10150416713323275,
+          -0.12696805245049325,
+          -0.20341195010563626
+        ],
+        [
+          -1.4292312213654034e-05,
+          -7.328900784684748e-05,
+          -0.060532041270363705,
+          -0.06053763642895439,
+          -0.06349144692067149,
+          -0.06349396927864154,
+          -0.09943612241835659,
+          -0.09944362988354498,
+          -0.10156689032952415,
+          -0.10158261675049256,
+          -0.12696373345878512,
+          -0.2034915731563764
+        ]
+      ],
+      "per_exponent": [
+        {
+          "c_over_T": {
+            "c": -0.29569128601343775,
+            "rss": 5.8108673181711276e-12,
+            "aic_no_constant": -107.03034254835924,
+            "max_abs_residual": 1.916411418601088e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.6979444895282514e-07,
+            "c": -0.2952141776444795,
+            "rss": 5.764405498298704e-12,
+            "aic_no_constant": -105.0624538049188,
+            "max_abs_residual": 1.7943278065440893e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.4707970586359933,
+            "rss": 1.651755018711094e-11,
+            "aic_no_constant": -102.85156805484253,
+            "max_abs_residual": 3.547301850110945e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.736490926934732e-06,
+            "c": -1.4659176626429546,
+            "rss": 1.1658020070015006e-11,
+            "aic_no_constant": -102.24528446344274,
+            "max_abs_residual": 2.7866901217838943e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -171.11085126013538,
+            "rss": 0.005896998539719171,
+            "aic_no_constant": -24.078424562859322,
+            "max_abs_residual": 0.05197649870735693
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.060491012347660425,
+            "c": -1.1361058204284233,
+            "rss": 1.0017461428300561e-09,
+            "aic_no_constant": -84.43126231188515,
+            "max_abs_residual": 2.6034093176703632e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -171.63773850606816,
+            "rss": 0.005885146562612569,
+            "aic_no_constant": -24.08647198105103,
+            "max_abs_residual": 0.051955749503650984
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.060430193393972466,
+            "c": -1.833889299864607,
+            "rss": 9.976669704091331e-10,
+            "aic_no_constant": -84.44758381364416,
+            "max_abs_residual": 2.5978840122287128e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -179.47923804149391,
+            "rss": 0.0064830317740552515,
+            "aic_no_constant": -23.69944549114654,
+            "max_abs_residual": 0.054517485018596795
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.0634255799733817,
+            "c": -1.2586000997602318,
+            "rss": 2.201943602207238e-10,
+            "aic_no_constant": -90.49121946065797,
+            "max_abs_residual": 1.0606441551569423e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -179.58146974900947,
+            "rss": 0.006483816320508293,
+            "aic_no_constant": -23.698961458975713,
+            "max_abs_residual": 0.054514895791191065
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.06342941758783452,
+            "c": -1.3500484278215403,
+            "rss": 2.2109739704776108e-10,
+            "aic_no_constant": -90.47484864796695,
+            "max_abs_residual": 1.0632231934093461e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -278.26160584894626,
+            "rss": 0.01595572114840651,
+            "aic_no_constant": -20.09692872998382,
+            "max_abs_residual": 0.08552304212590928
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.09950240961696083,
+            "c": 1.3319418350759413,
+            "rss": 2.1808299016946214e-11,
+            "aic_no_constant": -99.74009956338507,
+            "max_abs_residual": 3.803190469248152e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -278.4195145203911,
+            "rss": 0.015955801546911313,
+            "aic_no_constant": -20.09690857462976,
+            "max_abs_residual": 0.08552265415752543
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.09950266030651442,
+            "c": 1.1747375805584412,
+            "rss": 2.1503464942359654e-11,
+            "aic_no_constant": -99.79640557915987,
+            "max_abs_residual": 3.7707858827756846e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -283.8336648643408,
+            "rss": 0.016654886530024098,
+            "aic_no_constant": -19.9253839257889,
+            "max_abs_residual": 0.08737520708630711
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.10165909008157867,
+            "c": 1.819976687202557,
+            "rss": 3.1992438019705836e-11,
+            "aic_no_constant": -98.20726365623584,
+            "max_abs_residual": 4.8458767800685365e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -284.0675942638429,
+            "rss": 0.016655514058084745,
+            "aic_no_constant": -19.925233215368216,
+            "max_abs_residual": 0.08737923703730041
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.10166100523495089,
+            "c": 1.591428710399165,
+            "rss": 3.2058000209403576e-11,
+            "aic_no_constant": -98.1990748332509,
+            "max_abs_residual": 4.847452355058457e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -356.8546464463202,
+            "rss": 0.025975063079719557,
+            "aic_no_constant": -18.147650698566203,
+            "max_abs_residual": 0.10912100113646911
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.12695613277070888,
+            "c": -0.11840560300614647,
+            "rss": 1.0477411626742818e-11,
+            "aic_no_constant": -102.67237524336677,
+            "max_abs_residual": 2.626104534164675e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -570.4668358653897,
+            "rss": 0.06678334842956674,
+            "aic_no_constant": -14.370383462560369,
+            "max_abs_residual": 0.1749682313631069
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.20356798346957702,
+            "c": 1.5423738838347505,
+            "rss": 5.561487187150043e-12,
+            "aic_no_constant": -105.20579969939608,
+            "max_abs_residual": 1.7959755573004887e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "top_two_models": [
+        {
+          "c_over_T": {
+            "c": -0.29569128601343775,
+            "rss": 5.8108673181711276e-12,
+            "aic_no_constant": -107.03034254835924,
+            "max_abs_residual": 1.916411418601088e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.6979444895282514e-07,
+            "c": -0.2952141776444795,
+            "rss": 5.764405498298704e-12,
+            "aic_no_constant": -105.0624538049188,
+            "max_abs_residual": 1.7943278065440893e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.4707970586359933,
+            "rss": 1.651755018711094e-11,
+            "aic_no_constant": -102.85156805484253,
+            "max_abs_residual": 3.547301850110945e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.736490926934732e-06,
+            "c": -1.4659176626429546,
+            "rss": 1.1658020070015006e-11,
+            "aic_no_constant": -102.24528446344274,
+            "max_abs_residual": 2.7866901217838943e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "all_horizons_model_comparison_including_50k": {
+        "horizons_periods": [
+          2000,
+          5000,
+          10000,
+          20000,
+          50000
+        ],
+        "top_two_models": [
+          {
+            "c_over_T": {
+              "c": -0.29568606751814625,
+              "rss": 5.817105460120008e-12,
+              "aic_no_constant": -135.39828116978828,
+              "max_abs_residual": 1.91693326813024e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -7.961986456253854e-08,
+              "c": -0.29545738055159143,
+              "rss": 5.801249827969993e-12,
+              "aic_no_constant": -133.41192823221678,
+              "max_abs_residual": 1.8601821002231816e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.470814064690289,
+              "rss": 1.658379803640106e-11,
+              "aic_no_constant": -130.16016415761618,
+              "max_abs_residual": 3.54390063925182e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -1.215933412591891e-06,
+              "c": -1.4673216181107078,
+              "rss": 1.2885854481504169e-11,
+              "aic_no_constant": -129.4216443523461,
+              "max_abs_residual": 3.026456542576145e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ],
+        "all_exponent_models": [
+          {
+            "c_over_T": {
+              "c": -0.29568606751814625,
+              "rss": 5.817105460120008e-12,
+              "aic_no_constant": -135.39828116978828,
+              "max_abs_residual": 1.91693326813024e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -7.961986456253854e-08,
+              "c": -0.29545738055159143,
+              "rss": 5.801249827969993e-12,
+              "aic_no_constant": -133.41192823221678,
+              "max_abs_residual": 1.8601821002231816e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.470814064690289,
+              "rss": 1.658379803640106e-11,
+              "aic_no_constant": -130.16016415761618,
+              "max_abs_residual": 3.54390063925182e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -1.215933412591891e-06,
+              "c": -1.4673216181107078,
+              "rss": 1.2885854481504169e-11,
+              "aic_no_constant": -129.4216443523461,
+              "max_abs_residual": 3.026456542576145e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -174.87889627711786,
+              "rss": 0.009149345173842065,
+              "aic_no_constant": -29.517554401950374,
+              "max_abs_residual": 0.056991680881860005
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.06048178874684425,
+              "c": -1.160982081823905,
+              "rss": 1.3872274819466553e-09,
+              "aic_no_constant": -106.02698305720365,
+              "max_abs_residual": 3.0282441713783137e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -175.40522390808735,
+              "rss": 0.009136527217465069,
+              "aic_no_constant": -29.524564162382987,
+              "max_abs_residual": 0.05698321670554001
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.060439407327533015,
+              "c": -1.8090391112773216,
+              "rss": 1.3823406870365992e-09,
+              "aic_no_constant": -106.04462768511416,
+              "max_abs_residual": 3.0222735965382275e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -183.4317296435356,
+              "rss": 0.010061577514643809,
+              "aic_no_constant": -29.042346142186826,
+              "max_abs_residual": 0.05978143548088012
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.06342532300015803,
+              "c": -1.2592931623948995,
+              "rss": 2.2049357160004194e-10,
+              "aic_no_constant": -115.22295243821017,
+              "max_abs_residual": 1.0418774591361424e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -183.53429067934496,
+              "rss": 0.010062958426923597,
+              "aic_no_constant": -29.041659958770737,
+              "max_abs_residual": 0.059786416571323664
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.06342967528720404,
+              "c": -1.3493534067548083,
+              "rss": 2.2139830181863206e-10,
+              "aic_no_constant": -115.20247839156704,
+              "max_abs_residual": 1.0444034671250324e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -284.46222070107024,
+              "rss": 0.02476284641349175,
+              "aic_no_constant": -24.53924395025038,
+              "max_abs_residual": 0.09378429963837533
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.09950157047915094,
+              "c": 1.329678661298053,
+              "rss": 2.4998873891276838e-11,
+              "aic_no_constant": -126.1081412442895,
+              "max_abs_residual": 3.4166874149366144e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -284.6204409412789,
+              "rss": 0.024763811915857463,
+              "aic_no_constant": -24.539049004255958,
+              "max_abs_residual": 0.09378901211592848
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.09950351024176704,
+              "c": 1.1770298752854942,
+              "rss": 2.4776676277346287e-11,
+              "aic_no_constant": -126.15278145200637,
+              "max_abs_residual": 3.379309575557432e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -290.1688758606925,
+              "rss": 0.025848512446315117,
+              "aic_no_constant": -24.32470068857352,
+              "max_abs_residual": 0.09582006631981951
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.10165937395706208,
+              "c": 1.8207423058444536,
+              "rss": 3.2357576946267726e-11,
+              "aic_no_constant": -124.8180540851346,
+              "max_abs_residual": 4.71512502503435e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -290.4028251706607,
+              "rss": 0.025849197762400515,
+              "aic_no_constant": -24.324568126399555,
+              "max_abs_residual": 0.09582036746561952
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.10166072158462978,
+              "c": 1.5906636990253848,
+              "rss": 3.242256012897132e-11,
+              "aic_no_constant": -124.80802273796019,
+              "max_abs_residual": 4.716804308704803e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -364.7663477567402,
+              "rss": 0.04031358640148919,
+              "aic_no_constant": -22.10252323864536,
+              "max_abs_residual": 0.11966448232010189
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.12695662583571612,
+              "c": -0.11707579545574402,
+              "rss": 1.1578978138551581e-11,
+              "aic_no_constant": -129.95633901879947,
+              "max_abs_residual": 2.8532080313392605e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -583.1527461835864,
+              "rss": 0.10364781336161136,
+              "aic_no_constant": -17.380972245617446,
+              "max_abs_residual": 0.19187439356272298
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.2035681012324837,
+              "c": 1.5426914930756819,
+              "rss": 5.6243247588741426e-12,
+              "aic_no_constant": -133.56679065172352,
+              "max_abs_residual": 1.881977539863744e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ]
+      },
+      "divergence_check": [
+        {
+          "horizon_periods": 2000,
+          "sum_exponents_per_tau": -0.9806262315025287,
+          "integrated_divergence_per_tau": -0.9806144920178759,
+          "volume_balance_abs_error_per_tau": 1.173948465282848e-05
+        },
+        {
+          "horizon_periods": 5000,
+          "sum_exponents_per_tau": -0.9806270006132525,
+          "integrated_divergence_per_tau": -0.9806152868440963,
+          "volume_balance_abs_error_per_tau": 1.1713769156207476e-05
+        },
+        {
+          "horizon_periods": 10000,
+          "sum_exponents_per_tau": -0.9806271549774915,
+          "integrated_divergence_per_tau": -0.9806154178141341,
+          "volume_balance_abs_error_per_tau": 1.1737163357450342e-05
+        },
+        {
+          "horizon_periods": 20000,
+          "sum_exponents_per_tau": -0.9806272412157713,
+          "integrated_divergence_per_tau": -0.980615512581481,
+          "volume_balance_abs_error_per_tau": 1.1728634290220086e-05
+        },
+        {
+          "horizon_periods": 50000,
+          "sum_exponents_per_tau": -0.980627351294088,
+          "integrated_divergence_per_tau": -0.9806156365789698,
+          "volume_balance_abs_error_per_tau": 1.1714715118182895e-05
+        }
+      ],
+      "extra_50k": [
+        -5.834791609078527e-06,
+        -2.9673497865026443e-05,
+        -0.060489258807402364,
+        -0.060491321183701756,
+        -0.06345007007375084,
+        -0.06345710238491056,
+        -0.09947354405239674,
+        -0.09948142093475405,
+        -0.10162344383703337,
+        -0.10162842396903274,
+        -0.1269598092752367,
+        -0.2035374484863947
+      ]
+    },
+    "local15": {
+      "horizons_periods": [
+        2000,
+        5000,
+        10000,
+        20000
+      ],
+      "exponents_at_horizons_per_tau": [
+        [
+          3.808464256063646e-05,
+          -0.0008045710111932628,
+          -0.07543160015399314,
+          -0.07546022018182387,
+          -0.07914853751107141,
+          -0.0793413134460153,
+          -0.11107010748728852,
+          -0.11138250843964033,
+          -0.11311240513986194,
+          -0.11340714751776815,
+          -0.15724285587047077,
+          -0.22790569086612805
+        ],
+        [
+          1.0109301915621868e-05,
+          -0.0003247932908728209,
+          -0.0749568458446078,
+          -0.07498730630597931,
+          -0.0788649776570795,
+          -0.07888899883475238,
+          -0.11147837951923506,
+          -0.11155981106724926,
+          -0.11372018577766121,
+          -0.11387038672523192,
+          -0.15729661592050037,
+          -0.22833126072060353
+        ],
+        [
+          6.363962552552165e-06,
+          -0.00015938504338560162,
+          -0.07479737898571766,
+          -0.07483082392352151,
+          -0.0787519052951663,
+          -0.07875683296720683,
+          -0.11158699985318861,
+          -0.11164637953523208,
+          -0.11393690111027044,
+          -0.11401073103046096,
+          -0.15731980182534352,
+          -0.22847891950139315
+        ],
+        [
+          3.12184802444888e-06,
+          -8.288506839128671e-05,
+          -0.0747262992722435,
+          -0.07474394452602068,
+          -0.07868861262936895,
+          -0.07869743296001659,
+          -0.1116503393409532,
+          -0.11168070815169456,
+          -0.11404426834996403,
+          -0.11408201684258558,
+          -0.15732530902179578,
+          -0.22855154992528873
+        ]
+      ],
+      "per_exponent": [
+        {
+          "c_over_T": {
+            "c": 0.0722534556030422,
+            "rss": 2.366398005999081e-11,
+            "aic_no_constant": -101.41344565484357,
+            "max_abs_residual": 4.341389204986571e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -2.318038704248744e-06,
+            "c": 0.07876695278853457,
+            "rss": 1.5004524111998527e-11,
+            "aic_no_constant": -101.2358548558162,
+            "max_abs_residual": 3.3260499378363046e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.610998087700232,
+            "rss": 1.5981797229144862e-11,
+            "aic_no_constant": -102.98346030251393,
+            "max_abs_residual": 2.5936733327745266e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.4185166924656812e-06,
+            "c": -1.607012173027189,
+            "rss": 1.2739012325618854e-11,
+            "aic_no_constant": -101.89058542148521,
+            "max_abs_residual": 2.734690609582953e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -211.3164367209986,
+            "rss": 0.008979095227213085,
+            "aic_no_constant": -22.39660206828745,
+            "max_abs_residual": 0.06416047743619357
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.07464344368353495,
+            "c": -1.5745288499087262,
+            "rss": 3.247982219348322e-11,
+            "aic_no_constant": -98.14678574443407,
+            "max_abs_residual": 4.129146213116552e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -211.39785444879672,
+            "rss": 0.00898521189746777,
+            "aic_no_constant": -22.393878146702896,
+            "max_abs_residual": 0.06417405180358084
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.07466886337107725,
+            "c": -1.584519356513555,
+            "rss": 3.267375213213601e-11,
+            "aic_no_constant": -98.1229736342466,
+            "max_abs_residual": 4.144812882259097e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -222.00623288574113,
+            "rss": 0.009968688885511185,
+            "aic_no_constant": -21.978402282970922,
+            "max_abs_residual": 0.0675883009850819
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.07864921513803363,
+            "c": -1.0084382830020495,
+            "rss": 3.470269227980148e-10,
+            "aic_no_constant": -88.67165245118862,
+            "max_abs_residual": 1.4074862445465075e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -222.34383945348645,
+            "rss": 0.009959816009776617,
+            "aic_no_constant": -21.981964166360566,
+            "max_abs_residual": 0.06758024098734226
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.07861420551474797,
+            "c": -1.4444189988228313,
+            "rss": 3.46971413364703e-10,
+            "aic_no_constant": -88.67229233091787,
+            "max_abs_residual": 1.4090479760156538e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -312.63453421440596,
+            "rss": 0.02011499821366174,
+            "aic_no_constant": -19.170335694026228,
+            "max_abs_residual": 0.0960186126302329
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11172114423758395,
+            "c": 1.292647940788614,
+            "rss": 3.326515673475496e-10,
+            "aic_no_constant": -88.84087951668002,
+            "max_abs_residual": 1.576486980883751e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -313.2293877500098,
+            "rss": 0.020110072839806557,
+            "aic_no_constant": -19.17131525702031,
+            "max_abs_residual": 0.09601923876419408
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11170746533519625,
+            "c": 0.6593578199631737,
+            "rss": 3.3348637766605955e-10,
+            "aic_no_constant": -88.83085383642215,
+            "max_abs_residual": 1.578270395435899e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -318.6649363768214,
+            "rss": 0.02099633857091701,
+            "aic_no_constant": -18.998806285383385,
+            "max_abs_residual": 0.09811102153112297
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11414244256078261,
+            "c": 2.065893959261833,
+            "rss": 1.181930355569293e-10,
+            "aic_no_constant": -92.979985178602,
+            "max_abs_residual": 9.077991269035302e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -319.28206627803587,
+            "rss": 0.02100363548939425,
+            "aic_no_constant": -18.997416395277227,
+            "max_abs_residual": 0.09811791352868379
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11416227497100342,
+            "c": 1.5044914917257541,
+            "rss": 1.1602051707864677e-10,
+            "aic_no_constant": -93.0541937208573,
+            "max_abs_residual": 9.010052573643623e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -441.91403885275906,
+            "rss": 0.03989368864262671,
+            "aic_no_constant": -16.43132603240271,
+            "max_abs_residual": 0.13522960707915782
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.15733577232412876,
+            "c": 0.186478421652318,
+            "rss": 1.2032805703371281e-11,
+            "aic_no_constant": -102.11871499481722,
+            "max_abs_residual": 2.6773433799975876e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -640.9737752845901,
+            "rss": 0.08423326354892272,
+            "aic_no_constant": -13.441838971367329,
+            "max_abs_residual": 0.19650286116105922
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.22862156489539984,
+            "c": 1.4339277272770268,
+            "rss": 1.6954226953067114e-11,
+            "aic_no_constant": -100.74719318619749,
+            "max_abs_residual": 3.518629340892865e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "top_two_models": [
+        {
+          "c_over_T": {
+            "c": 0.0722534556030422,
+            "rss": 2.366398005999081e-11,
+            "aic_no_constant": -101.41344565484357,
+            "max_abs_residual": 4.341389204986571e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -2.318038704248744e-06,
+            "c": 0.07876695278853457,
+            "rss": 1.5004524111998527e-11,
+            "aic_no_constant": -101.2358548558162,
+            "max_abs_residual": 3.3260499378363046e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.610998087700232,
+            "rss": 1.5981797229144862e-11,
+            "aic_no_constant": -102.98346030251393,
+            "max_abs_residual": 2.5936733327745266e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -1.4185166924656812e-06,
+            "c": -1.607012173027189,
+            "rss": 1.2739012325618854e-11,
+            "aic_no_constant": -101.89058542148521,
+            "max_abs_residual": 2.734690609582953e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "all_horizons_model_comparison_including_50k": {
+        "horizons_periods": [
+          2000,
+          5000,
+          10000,
+          20000,
+          50000
+        ],
+        "top_two_models": [
+          {
+            "c_over_T": {
+              "c": 0.0722264596562364,
+              "rss": 2.3830920590168782e-11,
+              "aic_no_constant": -128.34737553217116,
+              "max_abs_residual": 4.335990015625413e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -1.647658194441263e-06,
+              "c": 0.07695892129098021,
+              "rss": 1.704083985897869e-11,
+              "aic_no_constant": -128.0242311033866,
+              "max_abs_residual": 3.6348241481329116e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.6109722051043909,
+              "rss": 1.6135251974430378e-11,
+              "aic_no_constant": -130.29726293172067,
+              "max_abs_residual": 2.598849851942757e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -7.66271926934604e-07,
+              "c": -1.60877129200953,
+              "rss": 1.4666641833236146e-11,
+              "aic_no_constant": -128.77441688151188,
+              "max_abs_residual": 2.272760543980273e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ],
+        "all_exponent_models": [
+          {
+            "c_over_T": {
+              "c": 0.0722264596562364,
+              "rss": 2.3830920590168782e-11,
+              "aic_no_constant": -128.34737553217116,
+              "max_abs_residual": 4.335990015625413e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -1.647658194441263e-06,
+              "c": 0.07695892129098021,
+              "rss": 1.704083985897869e-11,
+              "aic_no_constant": -128.0242311033866,
+              "max_abs_residual": 3.6348241481329116e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.6109722051043909,
+              "rss": 1.6135251974430378e-11,
+              "aic_no_constant": -130.29726293172067,
+              "max_abs_residual": 2.598849851942757e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -7.66271926934604e-07,
+              "c": -1.60877129200953,
+              "rss": 1.4666641833236146e-11,
+              "aic_no_constant": -128.77441688151188,
+              "max_abs_residual": 2.272760543980273e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -215.96864571148132,
+              "rss": 0.01393682776435987,
+              "aic_no_constant": -27.413291877563296,
+              "max_abs_residual": 0.07036466098105085
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.07464687286215213,
+              "c": -1.5652802771057175,
+              "rss": 8.576207451804982e-11,
+              "aic_no_constant": -119.94441070761688,
+              "max_abs_residual": 6.0219041450454425e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -216.0504417613472,
+              "rss": 0.013943750802467996,
+              "aic_no_constant": -27.41080877333581,
+              "max_abs_residual": 0.07037038310232653
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.07466541075782916,
+              "c": -1.5938311330493793,
+              "rss": 8.668674299393377e-11,
+              "aic_no_constant": -119.89079031455964,
+              "max_abs_residual": 6.030052387417939e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -226.9065914949392,
+              "rss": 0.01546941962639815,
+              "aic_no_constant": -26.8916402180247,
+              "max_abs_residual": 0.07411792396412017
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.07864419246734708,
+              "c": -1.021984540195108,
+              "rss": 4.6133364455923014e-10,
+              "aic_no_constant": -111.5316875311538,
+              "max_abs_residual": 1.63882816933969e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -227.24377608798943,
+              "rss": 0.01545959944479356,
+              "aic_no_constant": -26.894815288631364,
+              "max_abs_residual": 0.07411154159685755
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.0786192263442377,
+              "c": -1.4308777073792982,
+              "rss": 4.611943460004757e-10,
+              "aic_no_constant": -111.53319749682683,
+              "max_abs_residual": 1.640305096117789e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -319.59633248301566,
+              "rss": 0.031217159448595155,
+              "aic_no_constant": -23.38112632729441,
+              "max_abs_residual": 0.10529719881272123
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.11171882066237489,
+              "c": 1.2863812055488235,
+              "rss": 3.5711491173755215e-10,
+              "aic_no_constant": -112.81200708378995,
+              "max_abs_residual": 1.6835097969930546e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -320.1911512415309,
+              "rss": 0.031212123155157166,
+              "aic_no_constant": -23.38193304703215,
+              "max_abs_residual": 0.10529667280925718
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.1117098084457896,
+              "c": 0.6656772425792501,
+              "rss": 3.5836280083291737e-10,
+              "aic_no_constant": -112.7945657248377,
+              "max_abs_residual": 1.6861930024480998e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -325.7786410721109,
+              "rss": 0.0325882839611601,
+              "aic_no_constant": -23.166201776666426,
+              "max_abs_residual": 0.1075947835162529
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.11414592149137383,
+              "c": 2.0752767142716677,
+              "rss": 1.7303258640836015e-10,
+              "aic_no_constant": -116.43489545430279,
+              "max_abs_residual": 1.0680370858273669e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -326.3957954660901,
+              "rss": 0.03259566070282167,
+              "aic_no_constant": -23.16507009589272,
+              "max_abs_residual": 0.10759515396932022
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.11415883990308968,
+              "c": 1.4952270353561201,
+              "rss": 1.694859412204356e-10,
+              "aic_no_constant": -116.53844523817187,
+              "max_abs_residual": 1.0592229213457482e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -451.7189468375146,
+              "rss": 0.06191543243765478,
+              "aic_no_constant": -19.95711865198664,
+              "max_abs_residual": 0.14829923326942634
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.15733636376831078,
+              "c": 0.18807356007681786,
+              "rss": 1.361780797498443e-11,
+              "aic_no_constant": -129.14540341112436,
+              "max_abs_residual": 2.245413040419253e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -655.2210852513923,
+              "rss": 0.13073084961480178,
+              "aic_no_constant": -16.2202628242976,
+              "max_abs_residual": 0.21549056324788055
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.22862235575303105,
+              "c": 1.4360606883145297,
+              "rss": 1.9788221303844077e-11,
+              "aic_no_constant": -127.2768607565994,
+              "max_abs_residual": 3.882894764606348e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ]
+      },
+      "divergence_check": [
+        {
+          "horizon_periods": 2000,
+          "sum_exponents_per_tau": -1.1442688729826942,
+          "integrated_divergence_per_tau": -1.1442523021660034,
+          "volume_balance_abs_error_per_tau": 1.6570816690819612e-05
+        },
+        {
+          "horizon_periods": 5000,
+          "sum_exponents_per_tau": -1.1442694523618575,
+          "integrated_divergence_per_tau": -1.1442527627914818,
+          "volume_balance_abs_error_per_tau": 1.6689570375705287e-05
+        },
+        {
+          "horizon_periods": 10000,
+          "sum_exponents_per_tau": -1.1442696951083342,
+          "integrated_divergence_per_tau": -1.144252685650322,
+          "volume_balance_abs_error_per_tau": 1.700945801230702e-05
+        },
+        {
+          "horizon_periods": 20000,
+          "sum_exponents_per_tau": -1.1442702442402983,
+          "integrated_divergence_per_tau": -1.1442529753445578,
+          "volume_balance_abs_error_per_tau": 1.7268895740496504e-05
+        },
+        {
+          "horizon_periods": 50000,
+          "sum_exponents_per_tau": -1.144270335171704,
+          "integrated_divergence_per_tau": -1.1442528927893703,
+          "volume_balance_abs_error_per_tau": 1.7442382333809903e-05
+        }
+      ],
+      "extra_50k": [
+        1.0362154976870815e-06,
+        -3.182796983999245e-05,
+        -0.07468403389528047,
+        -0.07469139193755348,
+        -0.07865605579401896,
+        -0.07865641711861734,
+        -0.11168912546238155,
+        -0.1117004958340878,
+        -0.11411035633769512,
+        -0.11412306987864203,
+        -0.15733361220617664,
+        -0.2285949849529084
+      ]
+    },
+    "refine12_sobol17": {
+      "horizons_periods": [
+        2000,
+        5000,
+        10000,
+        20000
+      ],
+      "exponents_at_horizons_per_tau": [
+        [
+          -1.2507424474295315e-05,
+          -0.000803154817720558,
+          -0.10647774384089569,
+          -0.10685172124851587,
+          -0.1124364628300383,
+          -0.11256290210110134,
+          -0.129344112974729,
+          -0.12960575777392613,
+          -0.13181667090800522,
+          -0.13201336662165275,
+          -0.22372425268177434,
+          -0.26498755252570744
+        ],
+        [
+          -4.964561365366401e-06,
+          -0.0003197934567086959,
+          -0.10617022065947204,
+          -0.10628502115806837,
+          -0.11206284934935237,
+          -0.11214039809020761,
+          -0.12983333395817964,
+          -0.12985681197976176,
+          -0.1323460508147691,
+          -0.13243735305304108,
+          -0.22376127032376697,
+          -0.26546039590867554
+        ],
+        [
+          -2.3569554742336304e-06,
+          -0.00016011221090238406,
+          -0.1060441439607378,
+          -0.10611985794842232,
+          -0.11196314290640533,
+          -0.11197478361396121,
+          -0.12994217405197397,
+          -0.12999487408211546,
+          -0.1325304978127701,
+          -0.13257071086252295,
+          -0.22377295277303652,
+          -0.2655860113601082
+        ],
+        [
+          -1.1310851880532029e-06,
+          -7.931488245422926e-05,
+          -0.10599550890934682,
+          -0.10602275014125484,
+          -0.11189800738839911,
+          -0.11190714668666146,
+          -0.13001709862111285,
+          -0.13004333725089437,
+          -0.13262513559404598,
+          -0.13263480565417082,
+          -0.22377953300586934,
+          -0.2656582748076863
+        ]
+      ],
+      "per_exponent": [
+        {
+          "c_over_T": {
+            "c": -0.02492189856875029,
+            "rss": 3.406828884243882e-14,
+            "aic_no_constant": -127.58681500151462,
+            "max_abs_residual": 1.3523438264139875e-07
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": 1.3873877466765248e-07,
+            "c": -0.025311743059551965,
+            "rss": 3.0480633773568725e-15,
+            "aic_no_constant": -135.24225730130505,
+            "max_abs_residual": 4.09515281236605e-08
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.6050018691403904,
+            "rss": 2.90935711274575e-12,
+            "aic_no_constant": -109.79753337490915,
+            "max_abs_residual": 1.206917119382189e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": 1.1642191743547172e-06,
+            "c": -1.6082732288038675,
+            "rss": 7.250246684694881e-13,
+            "aic_no_constant": -113.3554603051184,
+            "max_abs_residual": 6.969698777229013e-07
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -298.7672922111847,
+            "rss": 0.018088310859846454,
+            "aic_no_constant": -19.59513487721148,
+            "max_abs_residual": 0.09105714429878758
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.10594351639950972,
+            "c": -1.074766791074855,
+            "rss": 1.9800207560740493e-10,
+            "aic_no_constant": -90.91615185417267,
+            "max_abs_residual": 1.1750901747348275e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -299.49086994306316,
+            "rss": 0.018083372548125917,
+            "aic_no_constant": -19.596227071167846,
+            "max_abs_residual": 0.09104820664410168
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.10592905352001847,
+            "c": -1.8389840190443385,
+            "rss": 2.0076103322305487e-10,
+            "aic_no_constant": -90.86080066286638,
+            "max_abs_residual": 1.1829165758966975e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -315.4446808097525,
+            "rss": 0.0201565824430227,
+            "aic_no_constant": -19.162074931778978,
+            "max_abs_residual": 0.09612577334791149
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11183656686202349,
+            "c": -1.1931706189427238,
+            "rss": 2.1939171768499523e-10,
+            "aic_no_constant": -90.5058267190414,
+            "max_abs_residual": 1.2351636459670412e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -315.71030203081455,
+            "rss": 0.02015635652865836,
+            "aic_no_constant": -19.16211976390883,
+            "max_abs_residual": 0.09612163158512074
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.11183594013156138,
+            "c": -1.4605529008075573,
+            "rss": 2.1877007743871956e-10,
+            "aic_no_constant": -90.51717669378189,
+            "max_abs_residual": 1.234737848471168e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -364.0786631909206,
+            "rss": 0.027278643619377797,
+            "aic_no_constant": -17.951782116240704,
+            "max_abs_residual": 0.11181316546156682
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.13010283365712455,
+            "c": 1.499547085296903,
+            "rss": 1.2351247936856275e-09,
+            "aic_no_constant": -83.59355274229037,
+            "max_abs_residual": 3.04097181144658e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -364.54841505346013,
+            "rss": 0.027269477973983797,
+            "aic_no_constant": -17.953126345183886,
+            "max_abs_residual": 0.11181591649822137
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.13008097447816444,
+            "c": 0.9683727364231611,
+            "rss": 1.241489367531747e-09,
+            "aic_no_constant": -83.57299374539252,
+            "max_abs_residual": 3.0487951118041146e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -371.1135609187959,
+            "rss": 0.028382975620281324,
+            "aic_no_constant": -17.793040498667764,
+            "max_abs_residual": 0.11406945754810618
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.13271021143683234,
+            "c": 1.7911654326337807,
+            "rss": 5.975488111353283e-11,
+            "aic_no_constant": -95.70825838918701,
+            "max_abs_residual": 5.927535536492945e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -371.51393484428246,
+            "rss": 0.028382328855489854,
+            "aic_no_constant": -17.793131647977713,
+            "max_abs_residual": 0.1140591089119567
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.13270869938678703,
+            "c": 1.3865427714825074,
+            "rss": 6.109436694325564e-11,
+            "aic_no_constant": -95.61958323670304,
+            "max_abs_residual": 5.962220550548292e-06
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -628.6963713495462,
+            "rss": 0.08070737509721682,
+            "aic_no_constant": -13.612878719763692,
+            "max_abs_residual": 0.19234471443839202
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.223785524459576,
+            "c": 0.12245771041927841,
+            "rss": 1.8169932159451609e-13,
+            "aic_no_constant": -118.89087005716983,
+            "max_abs_residual": 3.259154975621126e-07
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -745.2144473420958,
+            "rss": 0.11380614000398898,
+            "aic_no_constant": -12.238212662097713,
+            "max_abs_residual": 0.2283975524405815
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": -0.26574079219348173,
+            "c": 1.4952166726464726,
+            "rss": 4.672472869071381e-10,
+            "aic_no_constant": -87.48182734896761,
+            "max_abs_residual": 1.8647049723097275e-05
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "top_two_models": [
+        {
+          "c_over_T": {
+            "c": -0.02492189856875029,
+            "rss": 3.406828884243882e-14,
+            "aic_no_constant": -127.58681500151462,
+            "max_abs_residual": 1.3523438264139875e-07
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": 1.3873877466765248e-07,
+            "c": -0.025311743059551965,
+            "rss": 3.0480633773568725e-15,
+            "aic_no_constant": -135.24225730130505,
+            "max_abs_residual": 4.09515281236605e-08
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        },
+        {
+          "c_over_T": {
+            "c": -1.6050018691403904,
+            "rss": 2.90935711274575e-12,
+            "aic_no_constant": -109.79753337490915,
+            "max_abs_residual": 1.206917119382189e-06
+          },
+          "lambda_inf_plus_c_over_T": {
+            "lambda_inf": 1.1642191743547172e-06,
+            "c": -1.6082732288038675,
+            "rss": 7.250246684694881e-13,
+            "aic_no_constant": -113.3554603051184,
+            "max_abs_residual": 6.969698777229013e-07
+          },
+          "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+        }
+      ],
+      "all_horizons_model_comparison_including_50k": {
+        "horizons_periods": [
+          2000,
+          5000,
+          10000,
+          20000,
+          50000
+        ],
+        "top_two_models": [
+          {
+            "c_over_T": {
+              "c": -0.024923779970242334,
+              "rss": 3.48791147730704e-14,
+              "aic_no_constant": -160.9816304391925,
+              "max_abs_residual": 1.3542252279060294e-07
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": 7.865575548460442e-08,
+              "c": -0.02514969778890064,
+              "rss": 1.9405146351284702e-14,
+              "aic_no_constant": -161.91338000307752,
+              "max_abs_residual": 1.0259359667858413e-07
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.6049985748407063,
+              "rss": 2.9118430540499243e-12,
+              "aic_no_constant": -138.85836397877364,
+              "max_abs_residual": 1.2062582594453658e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": 7.689434398890589e-07,
+              "c": -1.60720716114874,
+              "rss": 1.432974804410342e-12,
+              "aic_no_constant": -140.40353231039242,
+              "max_abs_residual": 8.790320811631006e-07
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ],
+        "all_exponent_models": [
+          {
+            "c_over_T": {
+              "c": -0.024923779970242334,
+              "rss": 3.48791147730704e-14,
+              "aic_no_constant": -160.9816304391925,
+              "max_abs_residual": 1.3542252279060294e-07
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": 7.865575548460442e-08,
+              "c": -0.02514969778890064,
+              "rss": 1.9405146351284702e-14,
+              "aic_no_constant": -161.91338000307752,
+              "max_abs_residual": 1.0259359667858413e-07
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -1.6049985748407063,
+              "rss": 2.9118430540499243e-12,
+              "aic_no_constant": -138.85836397877364,
+              "max_abs_residual": 1.2062582594453658e-06
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": 7.689434398890589e-07,
+              "c": -1.60720716114874,
+              "rss": 1.432974804410342e-12,
+              "aic_no_constant": -140.40353231039242,
+              "max_abs_residual": 8.790320811631006e-07
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -305.3690936573425,
+              "rss": 0.028071966159616265,
+              "aic_no_constant": -23.912108793106817,
+              "max_abs_residual": 0.09985224687313565
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.105941487831171,
+              "c": -1.0802378860688127,
+              "rss": 2.166479024428227e-10,
+              "aic_no_constant": -115.3109278100074,
+              "max_abs_residual": 1.268525108728824e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -306.0924840136278,
+              "rss": 0.028066461133855428,
+              "aic_no_constant": -23.913089409423286,
+              "max_abs_residual": 0.09984941281729035
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.10593109953947488,
+              "c": -1.8334658579883891,
+              "rss": 2.1972904800545698e-10,
+              "aic_no_constant": -115.24031920514011,
+              "max_abs_residual": 1.2771553004192748e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -322.41417145695544,
+              "rss": 0.031283291705991416,
+              "aic_no_constant": -23.37054523854145,
+              "max_abs_residual": 0.10541354603894407
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.11183709414528097,
+              "c": -1.1917485239924317,
+              "rss": 2.2065148496480787e-10,
+              "aic_no_constant": -115.21937281356833,
+              "max_abs_residual": 1.2594500727075575e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -322.67956905355254,
+              "rss": 0.031282351775463374,
+              "aic_no_constant": -23.370695469638875,
+              "max_abs_residual": 0.10541016371891118
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.11183541401807211,
+              "c": -1.4619718408658675,
+              "rss": 2.2002426137731924e-10,
+              "aic_no_constant": -115.23360604551377,
+              "max_abs_residual": 1.2589703962326282e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -372.1856559564607,
+              "rss": 0.042333763980768935,
+              "aic_no_constant": -21.85804110451714,
+              "max_abs_residual": 0.12261826557879431
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.13009873957450196,
+              "c": 1.4885052512538037,
+              "rss": 1.3110726581448812e-09,
+              "aic_no_constant": -106.30929062104384,
+              "max_abs_residual": 3.229543392843648e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -372.6554823675042,
+              "rss": 0.04232487521778792,
+              "aic_no_constant": -21.85909105796523,
+              "max_abs_residual": 0.12261939312491603
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.13008508051867523,
+              "c": 0.9794468211635731,
+              "rss": 1.3178815329283496e-09,
+              "aic_no_constant": -106.28339100654694,
+              "max_abs_residual": 3.2379174680768896e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -379.38374205924663,
+              "rss": 0.04405029529665646,
+              "aic_no_constant": -21.659305676933393,
+              "max_abs_residual": 0.12508648974931758
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.13271012719711892,
+              "c": 1.7909382362090078,
+              "rss": 5.978703519599667e-11,
+              "aic_no_constant": -121.74835096826853,
+              "max_abs_residual": 5.888735108011689e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -379.7840470390907,
+              "rss": 0.044049387306892535,
+              "aic_no_constant": -21.65940874084204,
+              "max_abs_residual": 0.12508544694647325
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.13270875943972887,
+              "c": 1.3867047356344033,
+              "rss": 6.111070765412967e-11,
+              "aic_no_constant": -121.6388596475874,
+              "max_abs_residual": 5.934560439097014e-06
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -642.6421181653861,
+              "rss": 0.12525742693338324,
+              "aic_no_constant": -16.43411078167967,
+              "max_abs_residual": 0.2109294205895786
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.22378521832621615,
+              "c": 0.12163206177812207,
+              "rss": 6.063420353031185e-13,
+              "aic_no_constant": -144.7038503290296,
+              "max_abs_residual": 5.227320942768898e-07
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          },
+          {
+            "c_over_T": {
+              "c": -761.774498412394,
+              "rss": 0.17662470402547056,
+              "aic_no_constant": -14.715830130678462,
+              "max_abs_residual": 0.25047077243825816
+            },
+            "lambda_inf_plus_c_over_T": {
+              "lambda_inf": -0.26573904910084606,
+              "c": 1.4905155121231672,
+              "rss": 4.810144132160017e-10,
+              "aic_no_constant": -111.32280896799901,
+              "max_abs_residual": 1.9449910254099034e-05
+            },
+            "interpretation": "Finite-window regression only; model ranking over four horizons is descriptive, not an asymptotic proof."
+          }
+        ]
+      },
+      "divergence_check": [
+        {
+          "horizon_periods": 2000,
+          "sum_exponents_per_tau": -1.450636205748541,
+          "integrated_divergence_per_tau": -1.4506352303467571,
+          "volume_balance_abs_error_per_tau": 9.754017837870776e-07
+        },
+        {
+          "horizon_periods": 5000,
+          "sum_exponents_per_tau": -1.4506784633133685,
+          "integrated_divergence_per_tau": -1.4506339206659074,
+          "volume_balance_abs_error_per_tau": 4.454264746112102e-05
+        },
+        {
+          "horizon_periods": 10000,
+          "sum_exponents_per_tau": -1.4506616185384305,
+          "integrated_divergence_per_tau": -1.4506345906911793,
+          "volume_balance_abs_error_per_tau": 2.702784725117091e-05
+        },
+        {
+          "horizon_periods": 20000,
+          "sum_exponents_per_tau": -1.4506620440270843,
+          "integrated_divergence_per_tau": -1.450634196805907,
+          "volume_balance_abs_error_per_tau": 2.7847221177212944e-05
+        },
+        {
+          "horizon_periods": 50000,
+          "sum_exponents_per_tau": -1.4506673521962614,
+          "integrated_divergence_per_tau": -1.4506343453659531,
+          "volume_balance_abs_error_per_tau": 3.3006830308268675e-05
+        }
+      ],
+      "extra_50k": [
+        -5.269317969719926e-07,
+        -3.2050145214091145e-05,
+        -0.10595962874628251,
+        -0.1059712624975629,
+        -0.11186182946808318,
+        -0.11186375509998224,
+        -0.13006197869792352,
+        -0.13007250277226612,
+        -0.13267416459050252,
+        -0.13268112788725506,
+        -0.2237822629528863,
+        -0.265706262406506
+      ]
+    }
+  },
+  "numerical_sensitivity": {
+    "step64_qr20": {
+      "spectrum_per_tau_descending": [
+        -9.667843315918954e-06,
+        -0.0008087010572040081,
+        -0.1065100363510086,
+        -0.10679950271761911,
+        -0.1124197170333859,
+        -0.11255010703398015,
+        -0.1293367535290631,
+        -0.129602954701502,
+        -0.13181025638244415,
+        -0.1320022661693125,
+        -0.22368934452104997,
+        -0.26505961632571795
+      ],
+      "volume_balance_abs_error_per_tau": 8.083700145511408e-05,
+      "run_id": "refine12_sobol17_240000p_seed__100p_transient__2000p_qr__s64_q20"
+    },
+    "step32_qr5": {
+      "spectrum_per_tau_descending": [
+        -1.2507424453476775e-05,
+        -0.0008031548177051498,
+        -0.1064777438408791,
+        -0.10685172124796391,
+        -0.11243646282869114,
+        -0.1125629021000265,
+        -0.12934411297575285,
+        -0.12960575777357233,
+        -0.13181667091114474,
+        -0.13201336662244767,
+        -0.22372409873436472,
+        -0.26500355305835777
+      ],
+      "volume_balance_abs_error_per_tau": 1.682198862584805e-05,
+      "run_id": "refine12_sobol17_240000p_seed__100p_transient__2000p_qr__s32_q5"
+    },
+    "late_start120k": {
+      "spectrum_per_tau_descending": [
+        3.1166959896260946e-05,
+        -0.0009899829677853917,
+        -0.10667147562689472,
+        -0.10696179381160574,
+        -0.11240850942356523,
+        -0.11261815461372189,
+        -0.1294253492638226,
+        -0.129436256072707,
+        -0.13178661548241485,
+        -0.13191215317905458,
+        -0.22373497673834009,
+        -0.26488198492186577
+      ],
+      "volume_balance_abs_error_per_tau": 0.00016324360403174865,
+      "run_id": "refine12_sobol17_120000p_seed__100p_transient__2000p_qr__s32_q20"
+    }
+  },
+  "caveats": [
+    "The slopes are finite-horizon conditional exponents, not proofs of existence or attraction of a torus.",
+    "A near-zero exponent may represent a neutral orbital phase, very weak contraction, or unresolved transient; direct set-attraction tests remain necessary.",
+    "The volume identity is tested against an independently accumulated analytic divergence along RK4 stages; it does not validate the full physical model."
+  ]
+}

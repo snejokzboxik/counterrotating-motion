@@ -1,0 +1,123 @@
+{
+  "run_id": "refine12_sobol17_240000p_seed__5p_transient__20p_qr__s32_q20",
+  "candidate": "refine12_sobol17",
+  "source_period": 240000,
+  "trajectory_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+  "trajectory_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "seed_sha256": "5dad571ce9addc5cf9d3443d73cf45330618540d2508a0a3fc2ce5d2e375e520",
+  "base_v20b_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+  "parameters": {
+    "p_corrected": [
+      0.03492413282400757,
+      0.15631667332941065,
+      3.2196773638017477,
+      0.015388559140477825,
+      0.10963763906505944,
+      9.747265456858355e-06,
+      0.24452307123064748,
+      0.17736598731050257
+    ],
+    "qratio": 3.449053622502834,
+    "nu": 3.2196773638017477,
+    "re1_per_speed": 6.643729577002431,
+    "re2_per_speed": 43.76775863741318,
+    "gravity_z": -0.009936213855661315
+  },
+  "integration": {
+    "steps_per_rf_period": 32,
+    "dt_tau": 0.19634954084936207,
+    "qr_interval_periods": 20,
+    "transition_periods_discarded": 5,
+    "qr_horizon_periods": 20,
+    "completed_periods": 20.0,
+    "time_unit": "dimensionless tau=Omega1*t",
+    "elapsed_wall_seconds": 14.30826399999205
+  },
+  "forcing_phase_convention": "RF phases are initialized from the archived absolute period and advanced continuously; the carrier time origin is continuous through this QR segment; both forcing phases stay fixed in the conditional tangent perturbations.",
+  "lyapunov_spectrum_per_tau_descending": [
+    -0.010130693224270081,
+    -0.09490692990328553,
+    -0.10475843692810591,
+    -0.10940940025946123,
+    -0.11358622909592167,
+    -0.11682961892334547,
+    -0.11897174045863045,
+    -0.12158142834617999,
+    -0.12220474678268771,
+    -0.13716585166904363,
+    -0.17676857976027796,
+    -0.22400116707171877
+  ],
+  "lyapunov_spectrum_per_rf_period_descending": [
+    -0.06365302281827756,
+    -0.5963178275178466,
+    -0.6582166717097744,
+    -0.6874395361775772,
+    -0.7136833257534294,
+    -0.7340621450625544,
+    -0.74752149161925,
+    -0.7639186442106258,
+    -0.7678350694525852,
+    -0.8618384638537094,
+    -1.1106697431207813,
+    -1.407440841736103
+  ],
+  "sum_exponents_per_tau": -1.4503148224229285,
+  "integrated_divergence_per_tau": -1.4504659594720823,
+  "volume_balance_abs_error_per_tau": 0.00015113704915381554,
+  "rows": [
+    {
+      "qr_periods_after_transient": 20.0,
+      "spectrum_per_tau_descending": [
+        -0.010130693224270081,
+        -0.09490692990328553,
+        -0.10475843692810591,
+        -0.10940940025946123,
+        -0.11358622909592167,
+        -0.11682961892334547,
+        -0.11897174045863045,
+        -0.12158142834617999,
+        -0.12220474678268771,
+        -0.13716585166904363,
+        -0.17676857976027796,
+        -0.22400116707171877
+      ],
+      "spectrum_per_rf_period_descending": [
+        -0.06365302281827756,
+        -0.5963178275178466,
+        -0.6582166717097744,
+        -0.6874395361775772,
+        -0.7136833257534294,
+        -0.7340621450625544,
+        -0.74752149161925,
+        -0.7639186442106258,
+        -0.7678350694525852,
+        -0.8618384638537094,
+        -1.1106697431207813,
+        -1.407440841736103
+      ],
+      "sum_exponents_per_tau": -1.4503148224229285,
+      "integrated_divergence_per_tau": -1.4504659594720823,
+      "volume_balance_abs_error_per_tau": 0.00015113704915381554,
+      "state": [
+        0.23926482655726486,
+        0.5320187025162586,
+        -0.3227474582836668,
+        -0.050449654260298675,
+        0.04009413536659201,
+        -1.548023449234661e-07,
+        -0.7356182187960374,
+        0.07142228316061038,
+        -0.8537828028605905,
+        -0.014227898735947929,
+        0.035092805967942994,
+        -1.0729867108626706e-08
+      ],
+      "forcing_phase": [
+        2.3066744441521223,
+        5.606736929582098
+      ]
+    }
+  ],
+  "scope": "Conditional mechanical QR spectrum with the two independent external RF phases prescribed identically; this is not the full autonomous 14D spectrum."
+}

@@ -1,0 +1,1672 @@
+{
+  "source": "six 5x5 pairwise slices in PARAMETER_COVERAGE.json",
+  "method": "Select up to three adjacent classification transitions per slice, ranked to prefer CR/non-CR boundaries and proximity to baseline; run the exact midpoint with the same 3000-period screen, late state, RF phases and classifier.",
+  "screen_protocol": {
+    "periods": 3000,
+    "transition_periods": 100,
+    "steps_per_period": 32,
+    "minimum_turns": 1.0,
+    "same_refine12_240k_seed_and_RF_phase": true
+  },
+  "max_selected_per_slice": 3,
+  "unique_points": 12,
+  "results": [
+    {
+      "run_id": "refine12_adaptive_89f9600a30ad",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 0.925,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.032304822862207004,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR_SIGN_ONLY_FEW_TURNS",
+      "turns": [
+        0.6713534589009704,
+        -3.2435885381476193
+      ],
+      "late_window_turns": [
+        [
+          0.2107414921122029,
+          -1.0856410700662622
+        ],
+        [
+          0.24723039732397917,
+          -1.0772545929909705
+        ],
+        [
+          0.21338156946479203,
+          -1.080692875090403
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.011189224315016174,
+        -0.05405980896912699
+      ],
+      "mean_radius_R": [
+        0.5642006593185838,
+        0.7551641384955662
+      ],
+      "rmin_R": [
+        0.5177706156630186,
+        0.7263778753966372
+      ],
+      "rmax_R": [
+        0.612098759660764,
+        0.7843141595964805
+      ],
+      "zmax_R": [
+        0.3227857997541425,
+        0.8540253569106878
+      ],
+      "min_pair_distance_R": 0.5589919963551954,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        0.925,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_95fdfc472580",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 0.925,
+        "B": 1.15,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.032304822862207004,
+        0.17976417432882225,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR_SIGN_ONLY_FEW_TURNS",
+      "turns": [
+        0.6993895659832392,
+        -3.263454959835733
+      ],
+      "late_window_turns": [
+        [
+          0.22493023151769087,
+          -1.0931265163475348
+        ],
+        [
+          0.25266872558153475,
+          -1.0844231827735789
+        ],
+        [
+          0.22179060888403265,
+          -1.085905260714628
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.01165649276638732,
+        -0.054390915997262215
+      ],
+      "mean_radius_R": [
+        0.5261047844789136,
+        0.7043212439005526
+      ],
+      "rmin_R": [
+        0.4827572765954785,
+        0.678251649266871
+      ],
+      "rmax_R": [
+        0.5707418449056225,
+        0.7308931457213234
+      ],
+      "zmax_R": [
+        0.3227742836924714,
+        0.8540311229249872
+      ],
+      "min_pair_distance_R": 0.5557689559372245,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        0.925,
+        1.15,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_4884b6b208ca",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              0.85
+            ],
+            [
+              1.0,
+              0.85
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 0.925,
+        "B": 0.85,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.032304822862207004,
+        0.13286917232999906,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR_SIGN_ONLY_FEW_TURNS",
+      "turns": [
+        0.6344061945927044,
+        -2.2622648988358445
+      ],
+      "late_window_turns": [
+        [
+          0.2055382571164963,
+          -0.7479974346164848
+        ],
+        [
+          0.2282148721504568,
+          -0.7597823029710612
+        ],
+        [
+          0.20065306532574712,
+          -0.754485161248329
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.010573436576545074,
+        -0.03770441498059741
+      ],
+      "mean_radius_R": [
+        0.6119862518870594,
+        0.817040205602337
+      ],
+      "rmin_R": [
+        0.5616104108621734,
+        0.7807299842488862
+      ],
+      "rmax_R": [
+        0.6640785328102546,
+        0.8547180995143246
+      ],
+      "zmax_R": [
+        0.322797370464152,
+        0.854019833444613
+      ],
+      "min_pair_distance_R": 0.5615569826823374,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "B",
+          "parent_edge": [
+            [
+              0.85,
+              0.85
+            ],
+            [
+              1.0,
+              0.85
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        0.925,
+        0.85,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_f3de65cfc91a",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              0.8
+            ],
+            [
+              1.0,
+              0.9
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              0.8
+            ],
+            [
+              1.0,
+              0.9
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.8,
+              1.0
+            ],
+            [
+              0.9,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.0,
+        "nu": 0.85,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.15631667332941065,
+        2.7367257592314855,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 2.7367257592314855,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        0.4585577026130778
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR(+−)",
+      "turns": [
+        1.491399940689996,
+        -3.7366580242291674
+      ],
+      "late_window_turns": [
+        [
+          0.5053358734621116,
+          -1.2454084225635844
+        ],
+        [
+          0.4932748378483679,
+          -1.2530382274315015
+        ],
+        [
+          0.49278922937950603,
+          -1.2382113742340355
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.024856665678166603,
+        -0.06227763373715279
+      ],
+      "mean_radius_R": [
+        0.5129468096003665,
+        0.6933167568173811
+      ],
+      "rmin_R": [
+        0.46683214794369776,
+        0.6649438147590782
+      ],
+      "rmax_R": [
+        0.5605551109613972,
+        0.7222759142204732
+      ],
+      "zmax_R": [
+        0.3227706792777592,
+        0.8540299642473662
+      ],
+      "min_pair_distance_R": 0.5562746164383574,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              0.8
+            ],
+            [
+              1.0,
+              0.9
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              0.8
+            ],
+            [
+              1.0,
+              0.9
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        },
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.8,
+              1.0
+            ],
+            [
+              0.9,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        1.0,
+        0.85,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_a7ad14ac402f",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.2
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        },
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.2
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        },
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              1.1,
+              1.0
+            ],
+            [
+              1.2,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.0,
+        "nu": 1.15,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.15631667332941065,
+        3.7026289683720095,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.7026289683720095,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        4.16765339630804
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR(+−)",
+      "turns": [
+        4.497945936023846,
+        -1.700812150928638
+      ],
+      "late_window_turns": [
+        [
+          1.4950517480158403,
+          -0.5719830824870753
+        ],
+        [
+          1.4982842862146677,
+          -0.573178911607197
+        ],
+        [
+          1.5046099017933492,
+          -0.5556501568343774
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.07496576560039743,
+        -0.028346869182143967
+      ],
+      "mean_radius_R": [
+        0.5957031812551744,
+        0.8048505128599521
+      ],
+      "rmin_R": [
+        0.5451564916190536,
+        0.7703099319339203
+      ],
+      "rmax_R": [
+        0.6474593511509557,
+        0.8396809230240048
+      ],
+      "zmax_R": [
+        0.32279461045628666,
+        0.8540178913244365
+      ],
+      "min_pair_distance_R": 0.563179372079169,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.2
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        },
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              1.0,
+              1.1
+            ],
+            [
+              1.0,
+              1.2
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        },
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              1.1,
+              1.0
+            ],
+            [
+              1.2,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        1.0,
+        1.15,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_16c824ce51ae",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 0.925,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 1.15
+      },
+      "p_corrected": [
+        0.032304822862207004,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.017696843011549498,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CO(−−)",
+      "turns": [
+        -1.507266618762615,
+        -3.908809753056184
+      ],
+      "late_window_turns": [
+        [
+          -0.49843871534149403,
+          -1.3008804234194749
+        ],
+        [
+          -0.5043036934706854,
+          -1.306849180789349
+        ],
+        [
+          -0.5045242099504328,
+          -1.3010801488473762
+        ]
+      ],
+      "frequency_Hz_screen": [
+        -0.02512111031271025,
+        -0.06514682921760306
+      ],
+      "mean_radius_R": [
+        0.5904949938606803,
+        0.7843050894135607
+      ],
+      "rmin_R": [
+        0.5406595429818715,
+        0.7521789162344371
+      ],
+      "rmax_R": [
+        0.6421246735855837,
+        0.816768325191702
+      ],
+      "zmax_R": [
+        0.28069257003088066,
+        0.7426880208484918
+      ],
+      "min_pair_distance_R": 0.49379712587638536,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CO(−−)",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        0.925,
+        1.0,
+        1.0,
+        1.15
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_afaaedbdda68",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              0.85
+            ],
+            [
+              1.0,
+              0.85
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 0.925,
+        "B": 1.0,
+        "nu": 1.0,
+        "beta": 0.85
+      },
+      "p_corrected": [
+        0.032304822862207004,
+        0.15631667332941065,
+        3.2196773638017477,
+        0.01308027526940615,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR(+−)",
+      "turns": [
+        2.8872740702157245,
+        -2.4838805979282177
+      ],
+      "late_window_turns": [
+        [
+          0.9692589277060365,
+          -0.8232692452547173
+        ],
+        [
+          0.9579824008049513,
+          -0.83185171631614
+        ],
+        [
+          0.9600327417047237,
+          -0.8287596363573471
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.04812123450359541,
+        -0.041398009965470293
+      ],
+      "mean_radius_R": [
+        0.5335248546531373,
+        0.7217408357625239
+      ],
+      "rmin_R": [
+        0.49070010683954046,
+        0.6956753788950105
+      ],
+      "rmax_R": [
+        0.5773988521373288,
+        0.7482010431148547
+      ],
+      "zmax_R": [
+        0.3797322320720541,
+        1.0046597118405693
+      ],
+      "min_pair_distance_R": 0.6485218307827691,
+      "adaptive_parent_edges": [
+        {
+          "x": "A",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              0.85
+            ],
+            [
+              1.0,
+              0.85
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        0.925,
+        1.0,
+        1.0,
+        0.85
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_6e3e0370677c",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              0.85,
+              1.1
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 0.925,
+        "nu": 1.1,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.14459292282970487,
+        3.5416451001819227,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.5416451001819227,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        3.5494707806921753
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR_SIGN_ONLY_FEW_TURNS",
+      "turns": [
+        4.102352786386364,
+        -0.8711958996032066
+      ],
+      "late_window_turns": [
+        [
+          1.3867399504852667,
+          -0.29108972119055887
+        ],
+        [
+          1.361413116717693,
+          -0.29698079929996385
+        ],
+        [
+          1.3541997191834132,
+          -0.28312537911266933
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.06837254643977272,
+        -0.014519931660053444
+      ],
+      "mean_radius_R": [
+        0.6058938354091312,
+        0.8178829608721421
+      ],
+      "rmin_R": [
+        0.5541171837248667,
+        0.780448511822783
+      ],
+      "rmax_R": [
+        0.6589967244756314,
+        0.855676110866955
+      ],
+      "zmax_R": [
+        0.32279663576033146,
+        0.8540174319225207
+      ],
+      "min_pair_distance_R": 0.5635152626235295,
+      "adaptive_parent_edges": [
+        {
+          "x": "B",
+          "y": "nu",
+          "parent_edge": [
+            [
+              0.85,
+              1.1
+            ],
+            [
+              1.0,
+              1.1
+            ]
+          ],
+          "parent_outcomes": [
+            "CR_SIGN_ONLY_FEW_TURNS",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        0.925,
+        1.1,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_513215d5c7aa",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "UNRESOLVED_SHORT_TURN_COUNT",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 0.925,
+        "nu": 1.0,
+        "beta": 1.15
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.14459292282970487,
+        3.2196773638017477,
+        0.017696843011549498,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR(+−)",
+      "turns": [
+        1.0296067008642111,
+        -2.9296465568843724
+      ],
+      "late_window_turns": [
+        [
+          0.34157523865797895,
+          -0.9767541956006066
+        ],
+        [
+          0.3378533010366101,
+          -0.9679766116591706
+        ],
+        [
+          0.35017816116962036,
+          -0.9849157496245933
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.017160111681070185,
+        -0.048827442614739536
+      ],
+      "mean_radius_R": [
+        0.6064311618862561,
+        0.8109118466197967
+      ],
+      "rmin_R": [
+        0.5523830255782738,
+        0.7732693143938413
+      ],
+      "rmax_R": [
+        0.6623908600889462,
+        0.8498146558546869
+      ],
+      "zmax_R": [
+        0.2806961753751755,
+        0.7426828723239327
+      ],
+      "min_pair_distance_R": 0.4957403494636648,
+      "adaptive_parent_edges": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.15
+            ],
+            [
+              1.0,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "UNRESOLVED_SHORT_TURN_COUNT",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        0.925,
+        1.0,
+        1.15
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_b51c42d8c385",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              0.85,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 0.85,
+        "nu": 1.0,
+        "beta": 1.075
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.13286917232999906,
+        3.2196773638017477,
+        0.01654270107601366,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "UNRESOLVED_SHORT_TURN_COUNT",
+      "turns": [
+        2.092434385545021,
+        3.947844014219289e-05
+      ],
+      "late_window_turns": [
+        [
+          0.7069136091945246,
+          0.0030802614635862917
+        ],
+        [
+          0.6962101172490438,
+          0.0007269801493990284
+        ],
+        [
+          0.6893106591014387,
+          -0.0037677631728432206
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.034873906425750355,
+        6.579740023698816e-07
+      ],
+      "mean_radius_R": [
+        0.6183245977247795,
+        0.8334799993229545
+      ],
+      "rmin_R": [
+        0.5637313100930953,
+        0.8017898707456634
+      ],
+      "rmax_R": [
+        0.6746914068572246,
+        0.8682531066433318
+      ],
+      "zmax_R": [
+        0.30027987097056197,
+        0.7944591420823283
+      ],
+      "min_pair_distance_R": 0.5304803225895888,
+      "adaptive_parent_edges": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.85,
+              1.0
+            ],
+            [
+              0.85,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        0.85,
+        1.0,
+        1.075
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_12307f5d6f3b",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.7,
+              1.0
+            ],
+            [
+              0.85,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "UNRESOLVED_SHORT_TURN_COUNT",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 0.775,
+        "nu": 1.0,
+        "beta": 1.0
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.12114542183029327,
+        3.2196773638017477,
+        0.015388559140477825,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 3.2196773638017477,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        2.3131055494606727
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "UNRESOLVED_SHORT_TURN_COUNT",
+      "turns": [
+        3.1764533039543252,
+        0.0005421885568949558
+      ],
+      "late_window_turns": [
+        [
+          1.0539206347854266,
+          -0.0018913352904794986
+        ],
+        [
+          1.0588953231527354,
+          0.004359638462622699
+        ],
+        [
+          1.0636373460161503,
+          -0.0019261146152482127
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.05294088839923876,
+        9.036475948249263e-06
+      ],
+      "mean_radius_R": [
+        0.6314443041409459,
+        0.8648169739418007
+      ],
+      "rmin_R": [
+        0.5763034788386837,
+        0.8312485851707835
+      ],
+      "rmax_R": [
+        0.6883347097211738,
+        0.8980824971372382
+      ],
+      "zmax_R": [
+        0.3228022651364345,
+        0.8540038701674978
+      ],
+      "min_pair_distance_R": 0.5700967062646484,
+      "adaptive_parent_edges": [
+        {
+          "x": "B",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.7,
+              1.0
+            ],
+            [
+              0.85,
+              1.0
+            ]
+          ],
+          "parent_outcomes": [
+            "UNRESOLVED_SHORT_TURN_COUNT",
+            "CR(+−)"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        0.775,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "run_id": "refine12_adaptive_eede6ca0864d",
+      "origin": "adaptive_boundary_midpoint",
+      "slices": [
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.9,
+              1.0
+            ],
+            [
+              0.9,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "multipliers": {
+        "A": 1.0,
+        "B": 1.0,
+        "nu": 0.9,
+        "beta": 1.075
+      },
+      "p_corrected": [
+        0.03492413282400757,
+        0.15631667332941065,
+        2.8977096274215732,
+        0.01654270107601366,
+        0.10963763906505944,
+        9.747265456858355e-06,
+        0.24452307123064748,
+        0.17736598731050257
+      ],
+      "qratio": 3.449053622502834,
+      "nu": 2.8977096274215732,
+      "starting_state_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "source_period": 240000,
+      "same_initial_mechanical_state": true,
+      "fixed_initial_RF_phases_rad": [
+        2.3066744441521507,
+        1.0767403182289428
+      ],
+      "transition_periods": 100,
+      "periods": 3000,
+      "steps_per_period": 32,
+      "completed_periods": 3000,
+      "status": 0,
+      "outcome": "CR_SIGN_ONLY_FEW_TURNS",
+      "turns": [
+        0.9448357103084072,
+        -3.879571781231665
+      ],
+      "late_window_turns": [
+        [
+          0.31888579024386365,
+          -1.2906921579835313
+        ],
+        [
+          0.28311015736616574,
+          -1.29531684740261
+        ],
+        [
+          0.3428397626983851,
+          -1.293562775845491
+        ]
+      ],
+      "frequency_Hz_screen": [
+        0.015747261838473452,
+        -0.06465952968719442
+      ],
+      "mean_radius_R": [
+        0.5410956681764044,
+        0.7279382039817428
+      ],
+      "rmin_R": [
+        0.49246903941728287,
+        0.6976304121841513
+      ],
+      "rmax_R": [
+        0.5913707041605986,
+        0.7586600919660403
+      ],
+      "zmax_R": [
+        0.30026256729378814,
+        0.7944756267096146
+      ],
+      "min_pair_distance_R": 0.5224712657444995,
+      "adaptive_parent_edges": [
+        {
+          "x": "nu",
+          "y": "beta",
+          "parent_edge": [
+            [
+              0.9,
+              1.0
+            ],
+            [
+              0.9,
+              1.15
+            ]
+          ],
+          "parent_outcomes": [
+            "CR(+−)",
+            "UNRESOLVED_SHORT_TURN_COUNT"
+          ]
+        }
+      ],
+      "midpoint_multipliers": [
+        1.0,
+        1.0,
+        0.9,
+        1.075
+      ]
+    }
+  ],
+  "interpretation_limit": "A midpoint class is a new sampled outcome, not a located bifurcation boundary; short-horizon labels are not attractor classifications."
+}

@@ -1,0 +1,609 @@
+{
+  "question": "Do independent same-phase starts converge to similar late rotations/radii?",
+  "horizon_periods": 15000,
+  "skip_periods": 5000,
+  "data": [
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|edge|476",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11108158929665583,
+        -0.04272788036123756
+      ],
+      "mean_radius_R": [
+        0.5256406835340272,
+        0.7152005749092906
+      ],
+      "turns": [
+        24.68286051569422,
+        -9.498484573502555
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|edge|503",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11107830145628543,
+        -0.0427274533631654
+      ],
+      "mean_radius_R": [
+        0.5256900789394069,
+        0.7151693499854288
+      ],
+      "turns": [
+        24.67731842146806,
+        -9.498010551954804
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|rest|116",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11107706534069689,
+        -0.042726686674309775
+      ],
+      "mean_radius_R": [
+        0.5257352495988284,
+        0.7151177260628141
+      ],
+      "turns": [
+        24.678429485235775,
+        -9.497087822278981
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|rest|5",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11108115489893408,
+        -0.04272443885665741
+      ],
+      "mean_radius_R": [
+        0.5256127853172647,
+        0.7148853959764282
+      ],
+      "turns": [
+        24.68891043469303,
+        -9.495809296200362
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|weak|158",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11108295829655608,
+        -0.04272356429245334
+      ],
+      "mean_radius_R": [
+        0.5257617848613827,
+        0.7147900672556357
+      ],
+      "turns": [
+        24.666625859192553,
+        -9.495566124073576
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|weak|241",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11108361546058516,
+        -0.04272500596634469
+      ],
+      "mean_radius_R": [
+        0.5258030525564965,
+        0.7149380865392119
+      ],
+      "turns": [
+        24.669324668545595,
+        -9.49241343310212
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|wide|311",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.1110838232602864,
+        -0.04272471834026479
+      ],
+      "mean_radius_R": [
+        0.5258497617762343,
+        0.7149359963762625
+      ],
+      "turns": [
+        24.669434570600327,
+        -9.493112784851027
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "candidate52",
+      "candidate": "candidate52",
+      "start": "candidate52|wide|322",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.11108173818267378,
+        -0.04272523578544977
+      ],
+      "mean_radius_R": [
+        0.5256800757646989,
+        0.714995148064456
+      ],
+      "turns": [
+        24.673855618748043,
+        -9.492806199019455
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|edge|476",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273719053073265,
+        -0.053431369143115866
+      ],
+      "mean_radius_R": [
+        0.5490687244305915,
+        0.7660989799912977
+      ],
+      "turns": [
+        12.548418014019685,
+        -10.68359425859833
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|edge|503",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06274034690956505,
+        -0.05343275112004702
+      ],
+      "mean_radius_R": [
+        0.5494695949888727,
+        0.7657447245910995
+      ],
+      "turns": [
+        12.54293798465973,
+        -10.695227996429999
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|rest|116",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273661090941758,
+        -0.053430481859376905
+      ],
+      "mean_radius_R": [
+        0.5489194833558478,
+        0.7660309406836963
+      ],
+      "turns": [
+        12.549957202162062,
+        -10.680568187608152
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|rest|5",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273706533951066,
+        -0.05343061417154613
+      ],
+      "mean_radius_R": [
+        0.5492755335010461,
+        0.7662183016360011
+      ],
+      "turns": [
+        12.548992867462104,
+        -10.678277695600647
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|weak|158",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273767043078357,
+        -0.05343184035417069
+      ],
+      "mean_radius_R": [
+        0.5491131168572555,
+        0.7662374281844073
+      ],
+      "turns": [
+        12.548418472608205,
+        -10.68249801500196
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|weak|241",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273539915109778,
+        -0.05343177432920149
+      ],
+      "mean_radius_R": [
+        0.5490345673898822,
+        0.7661671441557623
+      ],
+      "turns": [
+        12.546079502077392,
+        -10.683955747711213
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|wide|311",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.06273699403718493,
+        -0.05343204670546195
+      ],
+      "mean_radius_R": [
+        0.5489730788183865,
+        0.7659502989382904
+      ],
+      "turns": [
+        12.551216516425223,
+        -10.690625021871252
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "local15",
+      "candidate": "local15",
+      "start": "local15|wide|322",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.0627389923752625,
+        -0.05343133342195841
+      ],
+      "mean_radius_R": [
+        0.5492429807542709,
+        0.7660914729565282
+      ],
+      "turns": [
+        12.545617074867287,
+        -10.684449232509417
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|edge|476",
+      "outcome": "ESCAPE",
+      "retained": false
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|edge|503",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.054086482156721946,
+        -0.048752696351338755
+      ],
+      "mean_radius_R": [
+        0.5559805889362865,
+        0.7520369582577678
+      ],
+      "turns": [
+        10.810946058830192,
+        -9.740964812243234
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|rest|116",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05409269478300749,
+        -0.048754772306809815
+      ],
+      "mean_radius_R": [
+        0.5557285525312808,
+        0.7515060347380506
+      ],
+      "turns": [
+        10.830229603282906,
+        -9.756604025359291
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|rest|5",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.054087792784992275,
+        -0.04875487410016691
+      ],
+      "mean_radius_R": [
+        0.5557204432332249,
+        0.7515034190048557
+      ],
+      "turns": [
+        10.826547694600633,
+        -9.75626936234877
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|weak|158",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05408404124134894,
+        -0.0487549051687635
+      ],
+      "mean_radius_R": [
+        0.5560106974138964,
+        0.7514937097490926
+      ],
+      "turns": [
+        10.808978557596305,
+        -9.756845160554063
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|weak|241",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.054091118215163166,
+        -0.04875486481743126
+      ],
+      "mean_radius_R": [
+        0.5556668924388976,
+        0.7514613147189875
+      ],
+      "turns": [
+        10.833331167654864,
+        -9.756954651119152
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|wide|311",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05409122439106085,
+        -0.04875431575712941
+      ],
+      "mean_radius_R": [
+        0.5557719123738433,
+        0.7516094069624397
+      ],
+      "turns": [
+        10.821416834075315,
+        -9.75258529425869
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "refine12_sobol17",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|wide|322",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05408371389604817,
+        -0.04875427270569218
+      ],
+      "mean_radius_R": [
+        0.5561142545037131,
+        0.7515956070652913
+      ],
+      "turns": [
+        10.804535048183324,
+        -9.754062239517253
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|edge|476",
+      "outcome": "ESCAPE",
+      "retained": false
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|edge|503",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05462834697465596,
+        -0.049063734783481375
+      ],
+      "mean_radius_R": [
+        0.5181963851374433,
+        0.7012168233265322
+      ],
+      "turns": [
+        10.91069379572463,
+        -9.804708778169362
+      ],
+      "ensemble": "edge"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|rest|116",
+      "outcome": "ESCAPE",
+      "retained": false
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|rest|5",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05463729676158691,
+        -0.04906678079922644
+      ],
+      "mean_radius_R": [
+        0.5184367874553341,
+        0.7009190757197941
+      ],
+      "turns": [
+        10.93091907203475,
+        -9.816976617394193
+      ],
+      "ensemble": "rest"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|weak|158",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.054631281152820885,
+        -0.04906710270080215
+      ],
+      "mean_radius_R": [
+        0.5181032799482223,
+        0.7009473308993431
+      ],
+      "turns": [
+        10.929535523457947,
+        -9.820465604841804
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|weak|241",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05463368798356339,
+        -0.0490664850807674
+      ],
+      "mean_radius_R": [
+        0.5183356349762245,
+        0.7009924828117121
+      ],
+      "turns": [
+        10.925416917511342,
+        -9.818729713248848
+      ],
+      "ensemble": "weak"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|wide|311",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.05462876782773793,
+        -0.04906651716963343
+      ],
+      "mean_radius_R": [
+        0.5182990168649038,
+        0.7009505960128336
+      ],
+      "turns": [
+        10.903962616687567,
+        -9.816792752691462
+      ],
+      "ensemble": "wide"
+    },
+    {
+      "variant": "refine12_B115",
+      "candidate": "refine12_sobol17",
+      "start": "refine12_sobol17|B115|wide|322",
+      "outcome": "CR(+−)",
+      "retained": true,
+      "frequency_Hz": [
+        0.054631935546002895,
+        -0.049064116269828345
+      ],
+      "mean_radius_R": [
+        0.5181576031220396,
+        0.7011948734070234
+      ],
+      "turns": [
+        10.92692286416378,
+        -9.806453281271082
+      ],
+      "ensemble": "wide"
+    }
+  ],
+  "caveat": "Selected starts and finite windows; late-observable clustering is not proof of an attractor."
+}

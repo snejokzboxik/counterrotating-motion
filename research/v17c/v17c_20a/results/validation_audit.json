@@ -1,0 +1,118 @@
+{
+  "base_commit": "d1bf252649e174166becf464269318b5f97acd5d",
+  "source_integrity": {
+    "field_sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "integrator_sha256": "d3a094509f5bc8fc3f5a1a74d00c3718528b871b8ffc269dac7d14bbcb60d79f",
+    "verified_pair_integrator_sha256": "1de4fe770a5ab1799483443a33adb67bc0018f2d4dab300c4a2cca72d6d02d44"
+  },
+  "finite_difference_jacobian_audit": [
+    {
+      "candidate": "candidate52",
+      "max_relative_jacobian_error": 3.142494472974023e-09,
+      "samples": 8
+    },
+    {
+      "candidate": "local15",
+      "max_relative_jacobian_error": 4.125398134213653e-09,
+      "samples": 8
+    },
+    {
+      "candidate": "refine12_sobol17",
+      "max_relative_jacobian_error": 6.225499449285924e-09,
+      "samples": 8
+    }
+  ],
+  "new_integrator_vs_frozen_v20b_rk4_one_period": {
+    "state_max_abs": 0.0,
+    "tangent_max_abs": 0.0,
+    "time_abs": 0.0,
+    "divergence_integral_finite": true
+  },
+  "conditional_qr_horizons": [
+    2000,
+    5000,
+    10000,
+    20000,
+    50000
+  ],
+  "extended_qr_spectrum_length": 14,
+  "extended_near_zero_count_at_1e-4": 4,
+  "stroboscopic_checks": [
+    {
+      "candidate": "candidate52",
+      "samples": 5001,
+      "phase_bins": 36
+    },
+    {
+      "candidate": "local15",
+      "samples": 5001,
+      "phase_bins": 36
+    },
+    {
+      "candidate": "refine12_sobol17",
+      "samples": 20001,
+      "phase_bins": 36
+    }
+  ],
+  "same_phase_multistart_runs": 24,
+  "same_phase_multistart_CR_count": 23,
+  "perturbation_panels": 3,
+  "phase_matched_reference_samples": 20001,
+  "rf_parameter_points": 145,
+  "adaptive_transition_midpoints": 12,
+  "adaptive_outcome_counts": {
+    "CO(−−)": 1,
+    "CR(+−)": 4,
+    "CR_SIGN_ONLY_FEW_TURNS": 5,
+    "UNRESOLVED_SHORT_TURN_COUNT": 2
+  },
+  "selected_qr_points_5k": 6,
+  "transferable_candidates": 4,
+  "b115_multistart": {
+    "n": 8,
+    "CR": 6
+  },
+  "figure_formats_verified": {
+    "FIG01": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG02": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG03": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG04": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG05": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG06": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG07": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "FIG08": [
+      "pdf",
+      "png",
+      "svg"
+    ]
+  },
+  "status": "PASS"
+}

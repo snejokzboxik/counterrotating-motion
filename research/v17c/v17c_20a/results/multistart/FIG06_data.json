@@ -1,0 +1,33 @@
+{
+  "question": "Do these selected same-phase mechanical starts converge to the same observed outcome class?",
+  "horizon_periods": 15000,
+  "measurement_periods": 10000,
+  "starts_per_variant": 8,
+  "variants": [
+    {
+      "name": "candidate52",
+      "counterrotating_retained": 8,
+      "other_or_escape": 0,
+      "n": 8
+    },
+    {
+      "name": "local15",
+      "counterrotating_retained": 8,
+      "other_or_escape": 0,
+      "n": 8
+    },
+    {
+      "name": "refine12_sobol17",
+      "counterrotating_retained": 7,
+      "other_or_escape": 1,
+      "n": 8
+    },
+    {
+      "name": "refine12_B115",
+      "counterrotating_retained": 6,
+      "other_or_escape": 2,
+      "n": 8
+    }
+  ],
+  "caveat": "Selected V20B frozen-start panel at fixed forcing phases; counts are not universal basin probabilities."
+}
