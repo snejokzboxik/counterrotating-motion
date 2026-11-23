@@ -77,7 +77,7 @@ def main():
       "FIG03_two_particle_stability":"alpha_pair_panel_fraction",
       "FIG04_polarization_sensitivity":"alpha_pol_PS2",
       "FIG05_axial_DC_transfer":"FIG05_axial_DC_transfer",
-      "FIG06_segmented_geometry":"FIG06_segmented_geometry_schematic",
+      "FIG06_continuous_rods_endcaps":"FIG06_continuous_rods_endcaps",
       "FIG07_representative_trajectories":"FIG07_inherited_pair_trajectories",
       "FIG08_physical_feasibility":"FIG08_physical_feasibility_linked_parameters",
       "FIGS01_frequency_ratio_alpha_nu":"alpha_nu"}
@@ -86,6 +86,14 @@ def main():
             continue
         for ext in ("png","pdf","svg"):
             shutil.copyfile(FIG/f"{src}.{ext}",FIG/f"{dst}.{ext}")
+    # Matplotlib SVG path data may contain whitespace-only line endings; strip
+    # them so generated vector artifacts pass repository whitespace checks.
+    generated_stems=set(named)|set(named.values())
+    for path in (FIG/f"{stem}.svg" for stem in generated_stems):
+        if not path.exists():
+            continue
+        lines=path.read_text(encoding="utf-8").splitlines()
+        path.write_text("\n".join(line.rstrip() for line in lines)+"\n",encoding="utf-8")
     (DATA/"figure_index.json").write_text(json.dumps({"named_figure_stems":named,
       "formats":["PDF","SVG","PNG (600 dpi)"],
       "additional_screen":"FIGS01_frequency_ratio_alpha_nu is an extra one-particle frequency-ratio section."},indent=2)+"\n",encoding="utf-8")

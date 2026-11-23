@@ -5,7 +5,7 @@
     "FIG03_two_particle_stability": "alpha_pair_panel_fraction",
     "FIG04_polarization_sensitivity": "alpha_pol_PS2",
     "FIG05_axial_DC_transfer": "FIG05_axial_DC_transfer",
-    "FIG06_segmented_geometry": "FIG06_segmented_geometry_schematic",
+    "FIG06_continuous_rods_endcaps": "FIG06_continuous_rods_endcaps",
     "FIG07_representative_trajectories": "FIG07_inherited_pair_trajectories",
     "FIG08_physical_feasibility": "FIG08_physical_feasibility_linked_parameters",
     "FIGS01_frequency_ratio_alpha_nu": "alpha_nu"

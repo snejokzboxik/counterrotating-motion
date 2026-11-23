@@ -2,7 +2,7 @@
 
 Screen only: the maps use the 2-D k=+2/-4 field, ideal quadrupole DC, no
 finite-length correction, and RK4.  They do not certify an attractor or a
-physical segmented-electrode device.  Outputs are exact grid points; no
+physical finite-3D endcap device.  Outputs are exact grid points; no
 interpolation or smoothing is used.
 """
 from __future__ import annotations

@@ -1,0 +1,118 @@
+{
+  "geometry_definition": "24 unsegmented RF rods; two separate internal DC endcap disks; grounded cylindrical shield and outer end plates",
+  "solved_mesh_levels": [
+    {
+      "hmax_mm": 0.6,
+      "vertices": 55414,
+      "tetrahedra": 288461,
+      "unclassified_boundary_nodes": 0
+    },
+    {
+      "hmax_mm": 0.45000000000000007,
+      "vertices": 72090,
+      "tetrahedra": 400460,
+      "unclassified_boundary_nodes": 0
+    },
+    {
+      "hmax_mm": 0.34,
+      "vertices": 179027,
+      "tetrahedra": 1016133,
+      "unclassified_boundary_nodes": 0
+    },
+    {
+      "hmax_mm": 0.27,
+      "vertices": 303559,
+      "tetrahedra": 1655198,
+      "unclassified_boundary_nodes": 0
+    },
+    {
+      "hmax_mm": 0.24000000000000002,
+      "vertices": 352144,
+      "tetrahedra": 1992168,
+      "unclassified_boundary_nodes": 0
+    }
+  ],
+  "finest_solved_linear_residual_max": 9.636212957224297e-10,
+  "interval_convergence_audit": [
+    {
+      "coarse_hmax_mm": 0.6,
+      "fine_hmax_mm": 0.45000000000000007,
+      "rf_relative_changes": [
+        0.02111556379651501,
+        0.02469750045425836
+      ],
+      "z_absolute_changes_mm": [
+        0.0,
+        0.008590638617504531
+      ],
+      "per_interval_pass": false
+    },
+    {
+      "coarse_hmax_mm": 0.45000000000000007,
+      "fine_hmax_mm": 0.34,
+      "rf_relative_changes": [
+        0.062064538622561484,
+        0.08239996992706874
+      ],
+      "z_absolute_changes_mm": [
+        4.440892098500626e-16,
+        0.004015138031678411
+      ],
+      "per_interval_pass": false
+    },
+    {
+      "coarse_hmax_mm": 0.34,
+      "fine_hmax_mm": 0.27,
+      "rf_relative_changes": [
+        0.008847753703651772,
+        0.00930430361351513
+      ],
+      "z_absolute_changes_mm": [
+        4.440892098500626e-16,
+        0.00585526067436426
+      ],
+      "per_interval_pass": true
+    },
+    {
+      "coarse_hmax_mm": 0.27,
+      "fine_hmax_mm": 0.24000000000000002,
+      "rf_relative_changes": [
+        0.0032698461779238804,
+        0.0060397910496762745
+      ],
+      "z_absolute_changes_mm": [
+        0.0,
+        0.04001596023579612
+      ],
+      "per_interval_pass": true
+    }
+  ],
+  "two_consecutive_refinement_gate_passed": true,
+  "incomplete_finer_mesh": {
+    "hmax_mm": 0.22,
+    "vertices": 509343,
+    "tetrahedra": 3003109,
+    "field_solved": false,
+    "archive_sha256": "474E1197E35CBF59EF3B361B559954B19E4C9B0C094B72604D65EB5CDB06E7E0",
+    "mesh_sha256": "57E65CF5C60649C337E1D0D61FC91312D106D33978288B65E25A68F574378FFB"
+  },
+  "endcap_force_balance_screen": {
+    "particle1_target_z_mm": -2.5,
+    "equilibrium_z_mm": [
+      -2.5,
+      -4.562978341419816
+    ],
+    "predicted_separation_mm": 2.062978341419816,
+    "equal_endcap_voltage_V": 567299.5491282514,
+    "estimated_nearest_gap_mm": 0.75,
+    "crude_voltage_over_gap_V_m": 756399398.8376685,
+    "screening_only_not_peak_field_or_breakdown_solution": true
+  },
+  "final_trajectories_run": false,
+  "audit_passed": true,
+  "limitations": [
+    "P1 finite-element potential only; full-field derivatives and sharp-edge surface maxima are not convergence-certified",
+    "last-two mesh gate applies only to scalar RF transfers and force-balance roots",
+    "no particle dynamics; endcap voltage screen rejects this placement"
+  ]
+}

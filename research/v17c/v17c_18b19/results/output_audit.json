@@ -42,6 +42,12 @@
     "CR_PLUS_MINUS_SCREEN": 40
   },
   "fem_mesh_levels": 3,
+  "continuous_rods_endcap_fem": {
+    "solved_levels": 5,
+    "scalar_convergence_gate": true,
+    "finest_hmax_mm": 0.24000000000000002,
+    "final_trajectories_run": false
+  },
   "selected_validation": "RK4 64/128/256 and DOP853; 1000 periods",
   "figure_stems": [
     "FIG01_single_particle_alpha_lambda",
@@ -49,7 +55,7 @@
     "FIG03_two_particle_stability",
     "FIG04_polarization_sensitivity",
     "FIG05_axial_DC_transfer",
-    "FIG06_segmented_geometry",
+    "FIG06_continuous_rods_endcaps",
     "FIG07_representative_trajectories",
     "FIG08_physical_feasibility",
     "FIGS01_frequency_ratio_alpha_nu"

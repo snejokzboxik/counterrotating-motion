@@ -45,7 +45,7 @@ def fig05():
     ax.set_ylim(0,1.02); ax.set_xlim(dz[0]/R,dz[-1]/R)
     ax.grid(True,alpha=.22); ax.legend(frameon=False)
     ax.text(.02,.03,"Exact infinite-cylinder Fourier solution; R=5 mm, D=R/0.95.\n"
-            "Screening only: not the segmented 24-rod field.",transform=ax.transAxes,fontsize=7)
+            "Screening only: not the finite endcap field.",transform=ax.transAxes,fontsize=7)
     save(fig,"FIG05_axial_DC_transfer")
     rows=[{"dz_mm":float(d),"dz_over_R":float(d/R),"kD":float(np.pi*D/d),
            "axis_wall_amplitude":float(v),"model":"infinite cylindrical Dirichlet wall; k=pi/dz"}
@@ -54,8 +54,7 @@ def fig05():
 
 
 def fig06():
-    # Publication-sized orthographic schematic. This is deliberately a CAD
-    # concept, not a field plot or a solved finite-length boundary problem.
+    # Main architecture: continuous two-tone RF rods with separate DC endcaps.
     fig=plt.figure(figsize=(12.6,4.65),layout="constrained")
     grid=fig.add_gridspec(2,3,height_ratios=[1,.12],width_ratios=[1,1.15,1.05])
     ax1,ax2,ax3=(fig.add_subplot(grid[0,i]) for i in range(3))
@@ -69,53 +68,63 @@ def fig06():
                             facecolor="#345b75",edgecolor="white",lw=.35))
     ax1.set_aspect("equal"); ax1.set_xlim(-1.28,1.28); ax1.set_ylim(-1.28,1.28)
     ax1.set_xlabel(r"$x/R$"); ax1.set_ylabel(r"$y/R$")
-    ax1.set_title("24 shared two-tone RF rods")
+    ax1.set_title("Cross-section")
     ax1.text(0,-.12,"free aperture R",ha="center",fontsize=8,color="#5f6b73")
     ax1.text(0,1.21,"grounded shield",ha="center",fontsize=8,color="#34495e")
     ax1.grid(False)
 
-    # Axial elevation: 10 equal conceptual cells on each RF rod. All cells
-    # retain common RF phase pattern; colors show illustrative independent
-    # DC offsets. End plates are drawn as separate boundaries.
-    L=10.0; nseg=10; gap=.06; colors=["#728da1","#879daf","#a6b3bd",
-       "#d2a568","#cf8b54","#c77852","#c77852","#d2a568","#a6b3bd","#728da1"]
+    # Axial elevation: all rods are single continuous electrodes. The small
+    # separate DC disks and grounded outer endplates are shown schematically.
+    L=10.0; rod_z0=.6; rod_z1=9.4
     ax2.add_patch(Rectangle((0,-1.16),L,2.32,fill=False,lw=1.3,edgecolor="#34495e"))
     for j in range(24):
         th=2*np.pi*j/24
         y=1.053*np.sin(th)
-        for s in range(nseg):
-            x0=s+gap/2
-            ax2.add_patch(Rectangle((x0,y-.026),(1-gap),.052,
-                facecolor=colors[s],edgecolor="white",lw=.25))
+        ax2.add_patch(Rectangle((rod_z0,y-.018),(rod_z1-rod_z0),.036,
+            facecolor="#345b75",edgecolor="white",lw=.18))
+    for x0 in (.35,9.55):
+        ax2.add_patch(Rectangle((x0,-1.0),.10,2.0,
+            facecolor="#d38b42",edgecolor="#8a5620",lw=.65))
     ax2.axhline(0,color="#202b33",lw=.8,ls="--")
     ax2.axvline(0,color="#34495e",lw=2.2); ax2.axvline(L,color="#34495e",lw=2.2)
     ax2.set_xlim(-.25,L+.25); ax2.set_ylim(-1.38,1.38)
     ax2.set_xlabel(r"$z/R$; total $L/R=10$")
     ax2.set_ylabel(r"rod azimuthal position $y/R$")
-    ax2.set_yticks([-1,0,1]); ax2.set_title("finite RF rods / illustrative DC cells")
-    ax2.text(5,1.23,"grounded end plates",ha="center",fontsize=8,color="#34495e")
-    fem_path=ROOT/"results"/"finite_3d_rf_fem.json"
+    ax2.set_yticks([-1,0,1]); ax2.set_title("Axial electrode layout")
+    ax2.text(5,1.23,"grounded shield and end plates",ha="center",fontsize=8,color="#34495e")
+    ax2.text(.40,-1.28,"DC",ha="center",fontsize=7,color="#8a5620")
+    ax2.text(9.60,-1.28,"DC",ha="center",fontsize=7,color="#8a5620")
+    fem_path=ROOT/"results"/"continuous_rods_endcap_fem.json"
     if fem_path.exists():
         fem=json.loads(fem_path.read_text(encoding="utf-8"))
         rows=fem["mesh_levels"]
         for idx,(mode,color,label) in enumerate(((2,"#287271",r"$m=+2$"),(-4,"#d1495b",r"$m=-4$"))):
-            y=[r["midplane_leading_transfer_sample"][idx]["transfer_magnitude"] for r in rows]
-            ax3.plot([r["mesh_hmax_mm"] for r in rows],y,"o-",color=color,lw=1.1,ms=4,label=f"FEM {label}")
+            y=[next(q["transfer_magnitude_at_0p9R"] for q in r["RF_transfer"] if q["m"]==mode) for r in rows]
+            ax3.scatter([r["mesh_hmax_mm"] for r in rows],y,color=color,s=25,label=f"FEM {label}",zorder=3)
             ref={2:.8703168911*0.9**2,-4:.7982172624*0.9**4}[mode]
             ax3.axhline(ref,color=color,lw=.8,ls="--",alpha=.7,label=f"infinite 2D {label}")
         ax3.set_xlabel("tetra mesh $h_{max}$ (mm)")
         ax3.set_ylabel(r"$|V_m(0.9R,z=0)|/U_{rod}$")
-        ax3.set_title("RF-only FEM transfer; not converged")
+        ax3.set_title("Finite 3D RF transfer")
         ax3.legend(frameon=False,fontsize=6.5)
         ax3.grid(True,alpha=.2)
+        ax3.text(.03,.97,"Scalar mesh gate: PASS",transform=ax3.transAxes,
+                 ha="left",va="top",fontsize=7,color="#8a5620")
+        dc=fem["mesh_levels"][-1]["DC_endcap_screen"]
+        vcap=dc["endcap_voltage_for_particle1_balance_V"]
+        z=dc["particle_force_balance"]
+        dz=abs(z[0]["z_eq_mm"]-z[1]["z_eq_mm"])
+        ax3.text(.03,.03,rf"$V_{{cap}}\approx{vcap/1e3:.0f}$ kV; $\Delta z\approx{dz:.2f}$ mm",
+                 transform=ax3.transAxes,fontsize=7,color="#8a5620")
     else:
         ax3.text(.5,.5,"finite 3D FEM pending",ha="center",va="center",transform=ax3.transAxes)
         ax3.set_axis_off()
-    fig.suptitle("FIG06  Segmented 24-rod concept and finite-RF FEM check",fontsize=12)
-    footer.text(.5,.5,"Left: cross-section. Center: 24 rods projected; DC colors are illustrative, not solved. "
-                "Right: finite-rod RF basis only; no segmented-DC solve, end-field refinement, or surface-field certification.",
+    fig.suptitle("FIG06  Continuous RF rods with separate endcap DC",fontsize=12)
+    footer.text(.5,.5,"Left: cross-section. Center: continuous rods with separate endcap disks (schematic). "
+                "Right: discrete P1 FEM transfers; the last two refinements pass the scalar-field gate. "
+                "About 567 kV is required for DC balance, so no final trajectories were run.",
                 ha="center",va="center",fontsize=7.5)
-    save(fig,"FIG06_segmented_geometry_schematic")
+    save(fig,"FIG06_continuous_rods_endcaps")
 
 
 def fig07():
@@ -134,7 +143,7 @@ def fig07():
         ax.set_box_aspect((1,1,1.25)); ax.legend(frameon=False,loc="upper left")
     fig.suptitle("FIG07  Inherited 1000-period 2D-MFS + ideal-DC trajectories")
     fig.text(.5,-.01,"V17C.16 source; same frozen start and Coulomb scale. P1 is an illustrative instantaneous real-dielectric model; "
-             "neither panel uses finite segmented rods or 3D FEM.",ha="center",fontsize=8)
+             "neither panel uses finite rods, endcap DC fields, or 3D FEM.",ha="center",fontsize=8)
     save(fig,"FIG07_inherited_pair_trajectories")
 
 

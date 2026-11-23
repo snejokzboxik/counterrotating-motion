@@ -3,7 +3,7 @@
 The case is selected before inspecting its convergence output: the V17C.16
 PS pair (alpha1=1, alpha2=0.3412603), with the pair-map zero-velocity start.
 It is a numerical-method check of the planar leading-harmonic model, not a
-3-D segmented-trap validation.
+3-D continuous-rod/endcap-trap validation.
 """
 from __future__ import annotations
 import json

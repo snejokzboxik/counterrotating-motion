@@ -2,17 +2,27 @@
   "study": "V17C.18B-19",
   "algorithm": "SHA-256",
   "scope": "All regular files under this study directory except MANIFEST.json and __pycache__.",
-  "file_count": 92,
+  "file_count": 106,
   "files": [
     {
       "path": "AXIAL_ELECTRODE_DESIGN_RU.md",
-      "bytes": 7758,
-      "sha256": "06e56dc16dfb9a087a235dd71951822bbea8662fd7692897014e01da0bc5530f"
+      "bytes": 10883,
+      "sha256": "4dc1d1d389d1dd722478dc19e83c8c8844f4867be8e4d01d8ec36db4634a8c48"
+    },
+    {
+      "path": "code/audit_endcap_fem.py",
+      "bytes": 5409,
+      "sha256": "da137227335cce21fb1dc14442c427acfb599bf605dbe1a0e4a1e29d335843b6"
     },
     {
       "path": "code/audit_outputs.py",
-      "bytes": 2390,
-      "sha256": "be3726365468c74659304f14842471c253e6c5860928ace73051a672a39bbdec"
+      "bytes": 3256,
+      "sha256": "8537f5f5d16d7c3afb0a439560857dcc7213ca927508296b654e54923774510e"
+    },
+    {
+      "path": "code/endcap_3d_fem.py",
+      "bytes": 19775,
+      "sha256": "7c2b1c0bd3f5065d2d5e5a51c4414bfe86f8eb2906f3b909e1d7aa61bfaf14d8"
     },
     {
       "path": "code/finite_3d_rf_fem.py",
@@ -21,8 +31,8 @@
     },
     {
       "path": "code/make_aux_figures.py",
-      "bytes": 12335,
-      "sha256": "10ae0f349b1e1c07e744c34fbee7853a9ebc4b8d32cc10ae7b5071ad11da97d4"
+      "bytes": 12877,
+      "sha256": "0db5d2fc3749ae51ba339e9f980f428f70465b8ae5b21dd8d8b6084d612bab93"
     },
     {
       "path": "code/make_manifest.py",
@@ -51,13 +61,18 @@
     },
     {
       "path": "code/publish_figures.py",
-      "bytes": 5012,
-      "sha256": "1e05fb18fc0f3144854261f5c35ab34384d0685d93d80aa47b651e091fc7c7e1"
+      "bytes": 5484,
+      "sha256": "ff821bb8ef1f00aa3a46bf09f3236edd8d35e1f68cfbb690f558e346f357849c"
+    },
+    {
+      "path": "code/requirements_endcap_fem.txt",
+      "bytes": 86,
+      "sha256": "509e43dad468f52ccd4bdba37e6b479e2695b0cb4ce403c2f017daf79154f6ea"
     },
     {
       "path": "code/run_screening_maps.py",
-      "bytes": 17478,
-      "sha256": "8cf596e8a70dbe83f68ac3f047706e21ee2d0e675bf7ebf0083d484cacb1d0f9"
+      "bytes": 17475,
+      "sha256": "219c57d043785ae47f29b92e88a998429049d0b4684ee04df0d4d593635f293b"
     },
     {
       "path": "code/two_particle_oseen.py",
@@ -66,8 +81,8 @@
     },
     {
       "path": "code/validate_selected.py",
-      "bytes": 4636,
-      "sha256": "a15031ea8dac54b0cfc7f31771ccb890e7f99177062219b43a59b186f926d05a"
+      "bytes": 4648,
+      "sha256": "b140780f4bfe794c87626fef526768b3e16bd7d8fea4cbcd1513ae87c1ea2933"
     },
     {
       "path": "data/alpha_b_over_a.csv",
@@ -112,7 +127,7 @@
     {
       "path": "data/figure_index.json",
       "bytes": 798,
-      "sha256": "a2ff8688c2f11517e0bec127cbd4aa45557c4c6dd4e23b840f57713731f742d1"
+      "sha256": "c531ffb185ae6c77f61e3b63568aa7242b1f6a6720bd579919a502c3fa1429d9"
     },
     {
       "path": "data/ps_mfs1000_p0_source_v17c16.npz",
@@ -131,18 +146,18 @@
     },
     {
       "path": "DIMENSIONLESS_MODEL_RU.md",
-      "bytes": 7467,
-      "sha256": "b78d2d8350b2becbb43ddb5f59d8b65cd505afea2c5e3ec0968f57ec05b08fad"
+      "bytes": 7861,
+      "sha256": "536e6a0e3f2049981ae6e240a5b093732dfdf64014d78e83ce8e1a3a9ae4faf4"
     },
     {
       "path": "FIGURE_AUDIT_RU.md",
-      "bytes": 5178,
-      "sha256": "96cc70f97edd825301af010e8d356505a67c0c882d0085be9d5d7ecd2add2085"
+      "bytes": 5329,
+      "sha256": "375fd33669d2f0396525298085f764853251b2a22dd0cb4a57055f9a162f8953"
     },
     {
       "path": "figures/alpha_b_over_a.pdf",
       "bytes": 22780,
-      "sha256": "9dde5afaf459c4555848f3c7543975a39c2813dc24e074b43eb1dd63f29c2c96"
+      "sha256": "dbb56d91ffa07069f6878bce8f37309831d849ee0c5d4460de7fe658958cc155"
     },
     {
       "path": "figures/alpha_b_over_a.png",
@@ -151,13 +166,13 @@
     },
     {
       "path": "figures/alpha_b_over_a.svg",
-      "bytes": 47431,
-      "sha256": "55fbc07d95e3ab35425b74cc8c6b9a7df25b895552f6ef877d42bc92668e9564"
+      "bytes": 46472,
+      "sha256": "7b0ccda358081392ad4d946b0b7e99a97879bb2ca9700b05678d01aa08dd9310"
     },
     {
       "path": "figures/alpha_lambda.pdf",
       "bytes": 24225,
-      "sha256": "e6aa49cf5292b368578d6dda673c1454f14151428e7f4f65770236b5e7ba178b"
+      "sha256": "13cb04db622f9142073bfeb6c54eb6f02af78c048f30621877400171ee6eeef8"
     },
     {
       "path": "figures/alpha_lambda.png",
@@ -166,13 +181,13 @@
     },
     {
       "path": "figures/alpha_lambda.svg",
-      "bytes": 50357,
-      "sha256": "6b365210fef489ea65b20dba5b2f25a6b11c2ae22d432d60af69ef12841d2a27"
+      "bytes": 49374,
+      "sha256": "83fc41cc3fa022948ace105cac7e205e70ac0cd5a618713596b79a1502ca4151"
     },
     {
       "path": "figures/alpha_nu.pdf",
       "bytes": 23677,
-      "sha256": "5388005bc0da382ba3f95795b3bc83b2ec2d20f45cd38d3eb87603c937bf4527"
+      "sha256": "cbbf2dafc1f3b4cb3e8916ef3caf371dce0a08acade5ca79c979a234a154ba2a"
     },
     {
       "path": "figures/alpha_nu.png",
@@ -181,13 +196,13 @@
     },
     {
       "path": "figures/alpha_nu.svg",
-      "bytes": 48426,
-      "sha256": "1bfc72266a17f87adfb8646fbb787b788ffad0f46f2d22fbfcf4fa80b6066d9e"
+      "bytes": 47494,
+      "sha256": "9f5176de20586696e2a1e03518c369c398510323abcb9650e9a9c5032634707b"
     },
     {
       "path": "figures/alpha_pair_panel_fraction.pdf",
       "bytes": 31506,
-      "sha256": "f88b319bd7ad10b8e8293fb1d4b42d1541a84f82d993452100494ea4cffdfc89"
+      "sha256": "03f7dcb09576936b68cbc0bf46f68efef1bc6c41d55455c83a150e4828b2e283"
     },
     {
       "path": "figures/alpha_pair_panel_fraction.png",
@@ -196,13 +211,13 @@
     },
     {
       "path": "figures/alpha_pair_panel_fraction.svg",
-      "bytes": 107970,
-      "sha256": "84297c851587d309bb4bd44c848c02b254e1882b2ea9b809aa4ebc856e32e3af"
+      "bytes": 106856,
+      "sha256": "1853319d0d9754ee27b2861fd09b232465a3cbaee338b9eba5bb338da22560ab"
     },
     {
       "path": "figures/alpha_pol_PS2.pdf",
       "bytes": 22346,
-      "sha256": "a2d5af29de551a835c9d14822b8f0acda565c856335475538fe6d235af32815b"
+      "sha256": "b9587edc5184623de04dad2e8d3deee4d58b2231366176b13bf2b0f3c63ae792"
     },
     {
       "path": "figures/alpha_pol_PS2.png",
@@ -211,13 +226,13 @@
     },
     {
       "path": "figures/alpha_pol_PS2.svg",
-      "bytes": 48448,
-      "sha256": "41b02e185c4575da44cecb6fb1ce753c155d399df711a7537afcd8bb080456fb"
+      "bytes": 47547,
+      "sha256": "a956156b8ae74e138c7f203df832bec2d76ce8a1deaf3fe028504b6bcc50a623"
     },
     {
       "path": "figures/FIG01_single_particle_alpha_lambda.pdf",
       "bytes": 24225,
-      "sha256": "e6aa49cf5292b368578d6dda673c1454f14151428e7f4f65770236b5e7ba178b"
+      "sha256": "13cb04db622f9142073bfeb6c54eb6f02af78c048f30621877400171ee6eeef8"
     },
     {
       "path": "figures/FIG01_single_particle_alpha_lambda.png",
@@ -226,13 +241,13 @@
     },
     {
       "path": "figures/FIG01_single_particle_alpha_lambda.svg",
-      "bytes": 50357,
-      "sha256": "6b365210fef489ea65b20dba5b2f25a6b11c2ae22d432d60af69ef12841d2a27"
+      "bytes": 49374,
+      "sha256": "83fc41cc3fa022948ace105cac7e205e70ac0cd5a618713596b79a1502ca4151"
     },
     {
       "path": "figures/FIG02_RF_parameter_alpha_b_over_a.pdf",
       "bytes": 22780,
-      "sha256": "9dde5afaf459c4555848f3c7543975a39c2813dc24e074b43eb1dd63f29c2c96"
+      "sha256": "dbb56d91ffa07069f6878bce8f37309831d849ee0c5d4460de7fe658958cc155"
     },
     {
       "path": "figures/FIG02_RF_parameter_alpha_b_over_a.png",
@@ -241,13 +256,13 @@
     },
     {
       "path": "figures/FIG02_RF_parameter_alpha_b_over_a.svg",
-      "bytes": 47431,
-      "sha256": "55fbc07d95e3ab35425b74cc8c6b9a7df25b895552f6ef877d42bc92668e9564"
+      "bytes": 46472,
+      "sha256": "7b0ccda358081392ad4d946b0b7e99a97879bb2ca9700b05678d01aa08dd9310"
     },
     {
       "path": "figures/FIG03_two_particle_stability.pdf",
       "bytes": 31506,
-      "sha256": "f88b319bd7ad10b8e8293fb1d4b42d1541a84f82d993452100494ea4cffdfc89"
+      "sha256": "03f7dcb09576936b68cbc0bf46f68efef1bc6c41d55455c83a150e4828b2e283"
     },
     {
       "path": "figures/FIG03_two_particle_stability.png",
@@ -256,13 +271,13 @@
     },
     {
       "path": "figures/FIG03_two_particle_stability.svg",
-      "bytes": 107970,
-      "sha256": "84297c851587d309bb4bd44c848c02b254e1882b2ea9b809aa4ebc856e32e3af"
+      "bytes": 106856,
+      "sha256": "1853319d0d9754ee27b2861fd09b232465a3cbaee338b9eba5bb338da22560ab"
     },
     {
       "path": "figures/FIG04_polarization_sensitivity.pdf",
       "bytes": 22346,
-      "sha256": "a2d5af29de551a835c9d14822b8f0acda565c856335475538fe6d235af32815b"
+      "sha256": "b9587edc5184623de04dad2e8d3deee4d58b2231366176b13bf2b0f3c63ae792"
     },
     {
       "path": "figures/FIG04_polarization_sensitivity.png",
@@ -271,23 +286,38 @@
     },
     {
       "path": "figures/FIG04_polarization_sensitivity.svg",
-      "bytes": 48448,
-      "sha256": "41b02e185c4575da44cecb6fb1ce753c155d399df711a7537afcd8bb080456fb"
+      "bytes": 47547,
+      "sha256": "a956156b8ae74e138c7f203df832bec2d76ce8a1deaf3fe028504b6bcc50a623"
     },
     {
       "path": "figures/FIG05_axial_DC_transfer.pdf",
-      "bytes": 25464,
-      "sha256": "55b876c30612da0cf4d5f2b502b583c7adfad34e9c946344b381c8277612c23f"
+      "bytes": 25450,
+      "sha256": "54eaf59333ed474537401801c64be19e19e9b3d7c59b40979e280e00b3f9c429"
     },
     {
       "path": "figures/FIG05_axial_DC_transfer.png",
-      "bytes": 321958,
-      "sha256": "4bc89e201611ec51a4a6e2cdbf40f733cafbaa788538a31ecc02a14b5e2c00c2"
+      "bytes": 318580,
+      "sha256": "3113a201193eb040bbb3359a6861275bedc8ed7f1751887e05386822e9a5c858"
     },
     {
       "path": "figures/FIG05_axial_DC_transfer.svg",
-      "bytes": 61606,
-      "sha256": "229699e7a4f0293f0dde2ed3607501e987415931598494a331a6c4488d155c20"
+      "bytes": 60217,
+      "sha256": "eb17b18656f7d5595490f1160749b08d3052b191d9402b7328949736ae8ff2cf"
+    },
+    {
+      "path": "figures/FIG06_continuous_rods_endcaps.pdf",
+      "bytes": 37551,
+      "sha256": "d37a21a0902bbd3b0472bc97a7ac36a635ddec7760204cc54ffca562bf0182e3"
+    },
+    {
+      "path": "figures/FIG06_continuous_rods_endcaps.png",
+      "bytes": 659868,
+      "sha256": "f27dd9664994a6611b23c58d11ec7645d1ccc44b3ebd3b830f000b1b43077d87"
+    },
+    {
+      "path": "figures/FIG06_continuous_rods_endcaps.svg",
+      "bytes": 129926,
+      "sha256": "58e21f6ddb6b6e5f740a622b74e14fa31e4976825d006005d41dd0b5536bde5d"
     },
     {
       "path": "figures/FIG06_segmented_geometry.pdf",
@@ -321,38 +351,38 @@
     },
     {
       "path": "figures/FIG07_inherited_pair_trajectories.pdf",
-      "bytes": 148355,
-      "sha256": "dd7548cc92372f1cd92ca592915557faccd17e2c5b98d685ca9ef6e6f562b13a"
+      "bytes": 148565,
+      "sha256": "820321fdcd8e153a37271a45a2574b9665cda74a5393d9eba762d25d92c258b0"
     },
     {
       "path": "figures/FIG07_inherited_pair_trajectories.png",
-      "bytes": 1347867,
-      "sha256": "fbff131876d579218d6226c3953d60f954d4fae4f5183d185d8f3665556837e8"
+      "bytes": 1351055,
+      "sha256": "48be3de04e2d2e72cad565f0ac99446c94549b6b8b50d9168c62b1e9eb0fbed1"
     },
     {
       "path": "figures/FIG07_inherited_pair_trajectories.svg",
-      "bytes": 415048,
-      "sha256": "8d87e1f0a723ddd6e187b860d792fc111f9b2cbbedbc2811e43a01441530c101"
+      "bytes": 402045,
+      "sha256": "61e7e8b468f0435fe04bb636226375c0518c46cf38383ee09e0d3bb3e2a279ee"
     },
     {
       "path": "figures/FIG07_representative_trajectories.pdf",
-      "bytes": 148355,
-      "sha256": "dd7548cc92372f1cd92ca592915557faccd17e2c5b98d685ca9ef6e6f562b13a"
+      "bytes": 148565,
+      "sha256": "820321fdcd8e153a37271a45a2574b9665cda74a5393d9eba762d25d92c258b0"
     },
     {
       "path": "figures/FIG07_representative_trajectories.png",
-      "bytes": 1347867,
-      "sha256": "fbff131876d579218d6226c3953d60f954d4fae4f5183d185d8f3665556837e8"
+      "bytes": 1351055,
+      "sha256": "48be3de04e2d2e72cad565f0ac99446c94549b6b8b50d9168c62b1e9eb0fbed1"
     },
     {
       "path": "figures/FIG07_representative_trajectories.svg",
-      "bytes": 415048,
-      "sha256": "8d87e1f0a723ddd6e187b860d792fc111f9b2cbbedbc2811e43a01441530c101"
+      "bytes": 402045,
+      "sha256": "61e7e8b468f0435fe04bb636226375c0518c46cf38383ee09e0d3bb3e2a279ee"
     },
     {
       "path": "figures/FIG08_physical_feasibility.pdf",
       "bytes": 35583,
-      "sha256": "c6ed68513abecfcbf905ce0198457d1b7df2819ae8ac8abc54e2bb0d75fba673"
+      "sha256": "253802cc8fc3766d103db3f2c13143eef70c284d9503ec540d1fc3cf28c8518b"
     },
     {
       "path": "figures/FIG08_physical_feasibility.png",
@@ -361,13 +391,13 @@
     },
     {
       "path": "figures/FIG08_physical_feasibility.svg",
-      "bytes": 142635,
-      "sha256": "e5d00757776dbe415d7cb41bca5fd95e374ec608dd485395ee120ecb0a21a556"
+      "bytes": 140187,
+      "sha256": "7bde0f022ea4eaf52b923aa9995f8c651c624653adbc1d63e4c1f9a1459290e2"
     },
     {
       "path": "figures/FIG08_physical_feasibility_linked_parameters.pdf",
       "bytes": 35583,
-      "sha256": "c6ed68513abecfcbf905ce0198457d1b7df2819ae8ac8abc54e2bb0d75fba673"
+      "sha256": "253802cc8fc3766d103db3f2c13143eef70c284d9503ec540d1fc3cf28c8518b"
     },
     {
       "path": "figures/FIG08_physical_feasibility_linked_parameters.png",
@@ -376,13 +406,13 @@
     },
     {
       "path": "figures/FIG08_physical_feasibility_linked_parameters.svg",
-      "bytes": 142635,
-      "sha256": "e5d00757776dbe415d7cb41bca5fd95e374ec608dd485395ee120ecb0a21a556"
+      "bytes": 140187,
+      "sha256": "7bde0f022ea4eaf52b923aa9995f8c651c624653adbc1d63e4c1f9a1459290e2"
     },
     {
       "path": "figures/FIGS01_frequency_ratio_alpha_nu.pdf",
       "bytes": 23677,
-      "sha256": "5388005bc0da382ba3f95795b3bc83b2ec2d20f45cd38d3eb87603c937bf4527"
+      "sha256": "cbbf2dafc1f3b4cb3e8916ef3caf371dce0a08acade5ca79c979a234a154ba2a"
     },
     {
       "path": "figures/FIGS01_frequency_ratio_alpha_nu.png",
@@ -391,18 +421,58 @@
     },
     {
       "path": "figures/FIGS01_frequency_ratio_alpha_nu.svg",
-      "bytes": 48426,
-      "sha256": "1bfc72266a17f87adfb8646fbb787b788ffad0f46f2d22fbfcf4fa80b6066d9e"
+      "bytes": 47494,
+      "sha256": "9f5176de20586696e2a1e03518c369c398510323abcb9650e9a9c5032634707b"
     },
     {
       "path": "NUMERICAL_VALIDATION_RU.md",
-      "bytes": 6276,
-      "sha256": "ca523b74e3b62a4de0b2b5339db10b532fbba88d72947a1973f0636a64d76b13"
+      "bytes": 8120,
+      "sha256": "f3bbce11510ab10d114ba88349f1923edd76c73b932fda136cebb129ec11e7a3"
     },
     {
       "path": "PHYSICAL_FEASIBILITY_RU.md",
-      "bytes": 12516,
-      "sha256": "7c5cd647f53cee10414df79f8dd42397b7e838dbaf7c27b56e13e5d6d7a9aa0d"
+      "bytes": 16519,
+      "sha256": "292e4e7980727fa83770db9ce06a780a4ce4c797e0f5f4ec1975d8a3b98cc610"
+    },
+    {
+      "path": "results/continuous_rods_endcap_fem.json",
+      "bytes": 323568,
+      "sha256": "5b9783e5c7bdcf1a8b5be4403a4c36b6c7ea9059be686672b734bd3030b43c2c"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.22mm_incomplete_mesh.zip",
+      "bytes": 48160209,
+      "sha256": "474e1197e35cbf59ef3b361b559954b19e4c9b0c094b72604d65eb5cdb06e7e0"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.24mm.msh",
+      "bytes": 103263025,
+      "sha256": "5d32c8b43557ca54b36d55f7ff7e5e4438f781a5b10fdefc5189c9755e12c587"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.27mm.msh",
+      "bytes": 85815382,
+      "sha256": "28f5b7baa53942b7db2718ff668293d3baf8975e906e26ce760ad55574deaf11"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.34mm.msh",
+      "bytes": 50729221,
+      "sha256": "727cbba137ab2e8bfd1262f0d2cd14274ef69e4252faad97f2dcb56a21bf36ab"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.45mm.msh",
+      "bytes": 19380260,
+      "sha256": "6aa7f26e123300e3f7b0385c856374518051ddb9061c4cb8c221b3b9eaf08319"
+    },
+    {
+      "path": "results/continuous_rods_endcaps_h0.60mm.msh",
+      "bytes": 14411820,
+      "sha256": "7785265e4a6d1a9fa0e4fe8277c2b490238aa4074d11c92e0c54b6ebc91eedfc"
+    },
+    {
+      "path": "results/endcap_geometry_audit.json",
+      "bytes": 3412,
+      "sha256": "891b59a6423288231aafd7e71e2deeee7eaca8863a28ceb58ebac7ccb8e88ccf"
     },
     {
       "path": "results/finite_24rod_rf_h0.32mm.msh",
@@ -431,8 +501,8 @@
     },
     {
       "path": "results/output_audit.json",
-      "bytes": 1365,
-      "sha256": "2180ce4f203a35f0e01b4ab581490a8c268e4d61513b300332bb9515740ac211"
+      "bytes": 1555,
+      "sha256": "bcd45f52c79b63f3b215b7d8dba901afb080ee214bd2feb6e2abe39e4824a805"
     },
     {
       "path": "results/screening_summary.json",
@@ -446,8 +516,8 @@
     },
     {
       "path": "SESSION_HANDOFF.md",
-      "bytes": 7257,
-      "sha256": "b4cca35f4025d86c860a00de9003e0521afb4232938012556df89547c4881a87"
+      "bytes": 10367,
+      "sha256": "8c1ce55fad6491e43cde9846f79dbccaed118adcf969b04af11b9540cd8a6fba"
     },
     {
       "path": "sources/REFERENCES_RU.md",
@@ -456,8 +526,8 @@
     },
     {
       "path": "STABILITY_DIAGRAMS_AND_AXIAL_TRAP_RU.md",
-      "bytes": 11981,
-      "sha256": "8b485507b57e7f16a8823bc8dbd569ac528dee010348a4203d927eb3102b46e6"
+      "bytes": 14769,
+      "sha256": "5fa1256f95612c04494c577fcec782dbd80fe991ac5c84032286cacf23d43865"
     },
     {
       "path": "tests/test_model.py",
