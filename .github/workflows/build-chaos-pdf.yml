@@ -1,0 +1,38 @@
+name: Build Chaos-style Russian PDF with pdfLaTeX
+
+on:
+  push:
+    branches:
+      - research/three-parameter-counterrotation-theory
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pdflatex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pdfLaTeX and Cyrillic/REVTeX packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip texlive-latex-base texlive-latex-extra texlive-lang-cyrillic texlive-publishers
+      - name: Build from a clean extraction of the Overleaf ZIP
+        run: |
+          rm -rf /tmp/chaos-overleaf
+          mkdir -p /tmp/chaos-overleaf
+          unzip -q Counterrotating_Motion_Chaos_RU_Overleaf.zip -d /tmp/chaos-overleaf
+          cd /tmp/chaos-overleaf
+          pdflatex -halt-on-error -interaction=nonstopmode main.tex
+          pdflatex -halt-on-error -interaction=nonstopmode main.tex
+          test -s main.pdf
+          if grep -E '(^!|LaTeX Error|Undefined control sequence)' main.log; then exit 1; fi
+          cp main.pdf "$GITHUB_WORKSPACE/Counterrotating_Motion_Chaos_RU.pdf"
+      - name: Publish build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: counterrotating-motion-chaos-russian-pdf-and-overleaf
+          path: |
+            Counterrotating_Motion_Chaos_RU.pdf
+            Counterrotating_Motion_Chaos_RU_Overleaf.zip
