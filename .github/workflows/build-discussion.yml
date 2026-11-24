@@ -1,0 +1,26 @@
+name: Build Semyon discussion
+on:
+  push:
+    branches: [research/semyon-discussion-ru]
+permissions:
+  contents: read
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-lang-cyrillic texlive-publishers cm-super
+      - run: |
+          mkdir -p /tmp/semyon-discussion
+          unzip -q Counterrotating_Motion_Semyon_Discussion_RU.zip -d /tmp/semyon-discussion
+          cd /tmp/semyon-discussion
+          pdflatex -halt-on-error -interaction=nonstopmode main.tex
+          pdflatex -halt-on-error -interaction=nonstopmode main.tex
+          cp main.pdf "$GITHUB_WORKSPACE/Counterrotating_Motion_Semyon_Discussion_RU.pdf"
+          cp main.log "$GITHUB_WORKSPACE/discussion-build.log"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: semyon-discussion
+          path: |
+            Counterrotating_Motion_Semyon_Discussion_RU.pdf
+            discussion-build.log
