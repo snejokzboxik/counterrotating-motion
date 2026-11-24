@@ -1,0 +1,82 @@
+[
+  {
+    "path": "research/v17c/v17c_10/resume_preflight.py",
+    "bytes": 5941,
+    "sha256": "1a1578ab0b113f6c08260f2d7eda0519bb295a39b9d6d6c83e6f3b93ba0b1f60",
+    "git_blob_sha1": "765257f1b966a43a3ebd7ede5fca6c928433b1b7",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_10/resume_preflight.py"
+  },
+  {
+    "path": "research/v17c/v17c_5/input/config.json",
+    "bytes": 1473,
+    "sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d",
+    "git_blob_sha1": "a74ecfb6ba13f9326ce16d60160af0061d8ebf9c",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_5/input/config.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/STOP_MANIFEST.json",
+    "bytes": 12984,
+    "sha256": "487c24654cc37360716c703210d62fca0d5adbd14bb6b82d08ee0239ea80ecdc",
+    "git_blob_sha1": "52a659469f6a04e06f7707e58598e1b697c9c143",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/STOP_MANIFEST.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/optimization/stage5_candidate52/MANIFEST.json",
+    "bytes": 2535,
+    "sha256": "b90f2c8ce1511042c5e04530369d417b27111f6709653e9c94a2a502621f4c02",
+    "git_blob_sha1": "7b4ba5b5aaea4152427bf799117847ac8d9f02ac",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/optimization/stage5_candidate52/MANIFEST.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/optimization/stage5_candidate52/meta.json",
+    "bytes": 1143,
+    "sha256": "c7bf040f171aca6572e7e52ca1c827992b79a48b1c00e1594aee64840c84c040",
+    "git_blob_sha1": "cdc7dba1332abf1d86ea171a213fa50b04ae8285",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/optimization/stage5_candidate52/meta.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/optimization/stage5_candidate52/partial_summary.json",
+    "bytes": 10816,
+    "sha256": "326490799d5fa8b7fd76022020eb724b8940fd3b9aae1dfe98831a85224b8abb",
+    "git_blob_sha1": "6df18fefb84a45702986ada8d49d34633fc32763",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/optimization/stage5_candidate52/partial_summary.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/optimization/stage5_candidate52/ranked.json",
+    "bytes": 15218,
+    "sha256": "bff8ede5ac279e24479d3c0919eb68d881b85c6701f82b1e3d1a63647bf36880",
+    "git_blob_sha1": "3dc1023fdd41b5c83133ba992abdba0f8228a5e3",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/optimization/stage5_candidate52/ranked.json"
+  },
+  {
+    "path": "research/v17c/v17c_9/optimization/stage5_candidate52/runs.jsonl",
+    "bytes": 941319,
+    "sha256": "dd2f3295915a4137e07b496f868b5cebf3856d4befd91980e91965193c0f3b3c",
+    "git_blob_sha1": "815bb0117e96b1db71cd024bae66a3eab346aea7",
+    "exact_blob_in_remote_history": false,
+    "generated_bytecode": false,
+    "secret_pattern_hits": [],
+    "project_path": "migration/local_recovered/research/v17c/v17c_9/optimization/stage5_candidate52/runs.jsonl"
+  }
+]

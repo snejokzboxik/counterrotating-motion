@@ -1,4 +1,0 @@
-model,kind,mesh_um,scale_factor,voltage_V,coupling_Lambda,horizon_RF,samples_per_replicate,complete_replicates,retention_fraction_mean,retention_fraction_replica_SE,a4_dimensionless_mean,a4_dimensionless_replica_SE,A4_m4_per_s2_mean,A4_m4_per_s2_replica_SE,replicate_fractions,complete_counts_by_replicate
-A_h50_scale1,A,50,1.0,250.0,0.009546882869371316,1,8,1,1.0,,0.003312560994758148,,5.356530331278043,,[1.0],[8]
-B_h50_scale1,B,50,1.0,250.0,0.009546882869371316,1,8,1,1.0,,0.003312560994758148,,5.356530331278043,,[1.0],[8]
-C_h50_scale1,C,50,1.0,250.0,0.009546882869371316,1,8,1,1.0,,0.003312560994758148,,5.356530331278043,,[1.0],[8]

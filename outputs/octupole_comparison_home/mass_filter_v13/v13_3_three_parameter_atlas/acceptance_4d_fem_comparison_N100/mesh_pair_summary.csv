@@ -1,5 +1,0 @@
-reference,comparison,point_id,model,mu,horizon_RF,replicates,paired_launches,delta_P_lower_mean,delta_P_lower_t95_low,delta_P_lower_t95_high,delta_P_upper_mean,delta_P_upper_t95_low,delta_P_upper_t95_high,unresolved_pairs
-acceptance_4d_fem_h50_selected_N100,acceptance_4d_fem_h35_selected_N100,a9_b2_e0,Q,1.0,100,4,512,-0.001953125,-0.008168840440007243,0.004262590440007242,-0.001953125,-0.008168840440007243,0.004262590440007242,0
-acceptance_4d_fem_h50_selected_N100,acceptance_4d_fem_h35_selected_N100,a9_b2_e0,RO,1.0,100,4,512,-0.001953125,-0.013855313912725096,0.009949063912725096,-0.001953125,-0.013855313912725096,0.009949063912725096,0
-acceptance_4d_fem_h50_selected_N100,acceptance_4d_fem_h35_selected_N100,ro_gain_negative,Q,1.0,100,4,512,-0.00390625,-0.011083539964988589,0.003271039964988588,-0.00390625,-0.011083539964988589,0.003271039964988588,0
-acceptance_4d_fem_h50_selected_N100,acceptance_4d_fem_h35_selected_N100,ro_gain_negative,RO,1.0,100,4,512,-0.00390625,-0.011083539964988589,0.003271039964988588,-0.00390625,-0.011083539964988589,0.003271039964988588,0

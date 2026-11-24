@@ -1,3 +1,0 @@
-candidate_id,mu_boundary,alpha_boundary,beta_boundary,transition,note
-a9_b2_e0,0.8890764675139019,0.007029766536816218,0.08435719844179464,strictly_stable -> unstable,identical for Q and Q+RO linearization
-a7_b2_e8,0.8890764675101321,-0.007029766536846025,0.08435719844215232,strictly_stable -> unstable,identical for Q and Q+RO linearization

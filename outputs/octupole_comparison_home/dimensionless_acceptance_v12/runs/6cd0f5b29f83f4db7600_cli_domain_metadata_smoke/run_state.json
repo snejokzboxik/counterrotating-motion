@@ -1,9 +1,0 @@
-{
-  "status": "incomplete",
-  "planned_trajectories": 2,
-  "complete_trajectories": 1,
-  "completed_estimates": 0,
-  "wall_seconds_this_invocation": 1.7466066999913892,
-  "config_hash": "6cd0f5b29f83f4db7600",
-  "finished_utc": "2026-11-14T19:54:31Z"
-}

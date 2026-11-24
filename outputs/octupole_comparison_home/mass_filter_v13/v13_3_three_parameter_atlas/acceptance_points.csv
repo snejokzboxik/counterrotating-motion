@@ -1,7 +1,0 @@
-candidate_id,alpha,beta,kappa,reason
-ro_gain_negative,0.0125,0.1125,-0.005625,coarse eta -0.05 RO gain outside Floquet region
-ro_gain_positive,-0.0125,0.1125,0.005625,coarse eta +0.05 RO gain outside Floquet region
-ro_loss_negative,-0.025,0.175,-0.00875,coarse eta -0.05 RO suppression inside Floquet region
-ro_loss_positive,0.025,0.175,0.0175,coarse eta +0.1 RO suppression inside Floquet region near voltage limit
-q_reference_floquet_edge,0.027,0.175,0.0,"pure-Q reference at the V13.1 physical operating point; κ=0, near the first Mathieu/Floquet region edge"
-a9_b2_e0,0.006249999999999999,0.07500000000000001,-0.015000000000000003,"largest negative-eta nonlinear gain; phase-averaged mirror of a7_b2_e8 is exactly related by quarter-turn plus half-period RF phase shift, so only one mirror is sampled"

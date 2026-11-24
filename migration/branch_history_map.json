@@ -1,0 +1,128 @@
+[
+  {
+    "source_branch": "research/v17c",
+    "source_commit_sha": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+    "archive_branch": "research/v17c",
+    "archive_commit_sha_expected": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+    "v17c_file_count": 1565,
+    "v17c_tree_sha": "fb7774ce9c95ee3970fe7684b1835bc35d34c45a",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-crystals",
+    "source_commit_sha": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "archive_branch": "research/v17c-crystals",
+    "archive_commit_sha_expected": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+    "v17c_file_count": 1549,
+    "v17c_tree_sha": "5be85ea9090e062caf0737a52f60dfdc95d4b32c",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-loading",
+    "source_commit_sha": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+    "archive_branch": "research/v17c-loading",
+    "archive_commit_sha_expected": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+    "v17c_file_count": 1284,
+    "v17c_tree_sha": "04800d895776829a41596d0de622f6e01364ec76",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-theory",
+    "source_commit_sha": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+    "archive_branch": "research/v17c-theory",
+    "archive_commit_sha_expected": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+    "v17c_file_count": 1647,
+    "v17c_tree_sha": "c579c3ea7f6b67a9ac9d9cb14004a7ffd62bed30",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-theory-validation",
+    "source_commit_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+    "archive_branch": "research/v17c-theory-validation",
+    "archive_commit_sha_expected": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+    "v17c_file_count": 1889,
+    "v17c_tree_sha": "a0df755b7ceaaf8916fe4775610a19fd7c93e11e",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-two-particle-coulomb-dynamics",
+    "source_commit_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+    "archive_branch": "research/v17c-two-particle-coulomb-dynamics",
+    "archive_commit_sha_expected": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+    "v17c_file_count": 1988,
+    "v17c_tree_sha": "0e81c441389bccaa8878f7ab7ea69b807384b281",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c-two-particle-oseen",
+    "source_commit_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+    "archive_branch": "research/v17c-two-particle-oseen",
+    "archive_commit_sha_expected": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+    "v17c_file_count": 2011,
+    "v17c_tree_sha": "f4de7921b63535fe2885215685021ba66b953062",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c18b19-axial-stability-diagrams",
+    "source_commit_sha": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+    "archive_branch": "research/v17c18b19-axial-stability-diagrams",
+    "archive_commit_sha_expected": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+    "v17c_file_count": 2095,
+    "v17c_tree_sha": "ca1579a2303dda73e0019336e7c60a123f876b92",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c20a-rf-attractor-search",
+    "source_commit_sha": "43c84bf72ce0807d244475518588770fbaf0fb69",
+    "archive_branch": "research/v17c20a-rf-attractor-search",
+    "archive_commit_sha_expected": "43c84bf72ce0807d244475518588770fbaf0fb69",
+    "v17c_file_count": 2327,
+    "v17c_tree_sha": "d12cbb5c0982c1bf98af82dfc729ee84a3c42872",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c20b-particle-attractor-search",
+    "source_commit_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+    "archive_branch": "research/v17c20b-particle-attractor-search",
+    "archive_commit_sha_expected": "d1bf252649e174166becf464269318b5f97acd5d",
+    "v17c_file_count": 2218,
+    "v17c_tree_sha": "9372a2cd9e600b8001a8fc70df646b2e7cbfd3f8",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c21-analytical-counterrotation",
+    "source_commit_sha": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+    "archive_branch": "research/v17c21-analytical-counterrotation",
+    "archive_commit_sha_expected": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+    "v17c_file_count": 2371,
+    "v17c_tree_sha": "7347de3c03c6146a9e55ab281a689c2504a61ee9",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c21a-m3-convergence-stability",
+    "source_commit_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+    "archive_branch": "research/v17c21a-m3-convergence-stability",
+    "archive_commit_sha_expected": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+    "v17c_file_count": 2464,
+    "v17c_tree_sha": "f80ae97319463f2173f9227ca5e7eec7c3113bb7",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c21b-m3-bifurcation-diagrams",
+    "source_commit_sha": "894c6896ce5927371708037ffa4a4021189d2b54",
+    "archive_branch": "research/v17c21b-m3-bifurcation-diagrams",
+    "archive_commit_sha_expected": "894c6896ce5927371708037ffa4a4021189d2b54",
+    "v17c_file_count": 2563,
+    "v17c_tree_sha": "df97aeb14954a91f4b48cc0664933f8498edf545",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  },
+  {
+    "source_branch": "research/v17c22-counterrotation-attraction-theory",
+    "source_commit_sha": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+    "archive_branch": "research/v17c22-counterrotation-attraction-theory",
+    "archive_commit_sha_expected": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+    "v17c_file_count": 2606,
+    "v17c_tree_sha": "b8019467b7cc404c83d192834db858ed587bf1a8",
+    "status": "SOURCE_HASHED_PENDING_REMOTE_VERIFICATION"
+  }
+]

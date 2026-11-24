@@ -1,5 +1,0 @@
-point_id,mu,replica,paired_delta_P_lower,paired_delta_P_upper,paired_delta_A4_lower_m4_s2,paired_delta_A4_upper_m4_s2,phase_slices_and_common_pairs
-ro_gain_negative,1.0,0,0.1484375,0.1484375,24.846825364263083,24.846825364263083,128
-ro_gain_negative,1.0,1,0.125,0.125,20.923642412011016,20.923642412011016,128
-ro_gain_negative,1.0,2,0.109375,0.109375,18.30818711050964,18.30818711050964,128
-ro_gain_negative,1.0,3,0.125,0.125,20.923642412011016,20.923642412011016,128

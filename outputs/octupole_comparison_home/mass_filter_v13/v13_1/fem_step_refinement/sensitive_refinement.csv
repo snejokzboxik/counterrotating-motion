@@ -1,3 +1,0 @@
-mu,phase_deg,model,eta,initial_index,source_status_tau64,audit_status_tau128,status100_tau256,status300_tau256,exit300_tau256,maxrho300_tau256,error_tau256,status100_tau512,status300_tau512,exit300_tau512,maxrho300_tau512,error_tau512
-1.1,0.0,Qopt,0.0,14,retained,escaped,retained,retained,,0.8614682875534697,,retained,escaped,298.42460705503566,1.0,
-1.1,90.0,Qopt,0.0,23,escaped,escaped,escaped,escaped,72.17915679174791,1.0,,escaped,escaped,70.21104721202843,1.0,

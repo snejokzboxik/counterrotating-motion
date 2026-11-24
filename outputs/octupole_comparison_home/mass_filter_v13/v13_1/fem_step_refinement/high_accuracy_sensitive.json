@@ -1,8 +1,0 @@
-{
-  "case": "mu=1.10, phase=0, Qopt, index=14",
-  "field": "full h50 P4 FEM",
-  "max_step_tau": 0.006135923151542565,
-  "rtol": 3e-10,
-  "atol": 3e-12,
-  "purpose": "resolve the step-sensitive 300-cycle status, compare with steps 2\u03c0/256 and 2\u03c0/512"
-}
