@@ -9,7 +9,7 @@
   },
   "test_command": "python -m pytest -q tests",
   "test_result": "11 passed",
-  "latex_build_status": "UNVERIFIED_BUILD: pdfLaTeX not installed; Tectonic not substituted",
+  "latex_build_status": "VERIFIED: GitHub Actions run 45458469061 compiled the clean Overleaf ZIP twice with pdfLaTeX; artifact 14950263409 uploaded",
   "full_rf_new_integrations": 0,
   "scientific_status": "M0 zero-speed slow-torque sign criterion established under stated assumptions; no full-RF attractor or exact boundary claimed",
   "files": [
@@ -100,8 +100,8 @@
     },
     {
       "path": "reports/LATEX_BUILD_REPORT.md",
-      "bytes": 1640,
-      "sha256": "809732c0d1cce384c9e6653f14d1ca88523dc80edd12b7c69dbc668de216698e"
+      "bytes": 1617,
+      "sha256": "4ff818ef893c37c2e964b199d2f08ab2d3b4d77dda240a05a32eeaa0bccbac99"
     },
     {
       "path": "reports/NUMERICAL_VALIDATION_RU.md",
