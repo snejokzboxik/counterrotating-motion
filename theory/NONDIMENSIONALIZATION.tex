@@ -1,0 +1,51 @@
+\section{Exact nondimensionalization and Reynolds-coordinate map}
+Let $\tau=\Omega_1t$, $\boldsymbol\xi_i=\mathbf r_i/R$ and
+$s=m_1/m_2$, $Q=q_2/q_1$, $\alpha_1=1$, $\alpha_2=sQ$.
+For the V20B model (without gas buoyancy or dielectric polarization),
+\begin{align}
+\boldsymbol\xi_i''={}&\alpha_i\mathbf E_{\rm RF}(\boldsymbol\xi_i,\psi_1,\psi_2)
++\alpha_i\beta(\xi_{ix},\xi_{iy},-2\xi_{iz})
++\chi_i C_{12}\frac{\boldsymbol\xi_i-\boldsymbol\xi_j}
+ {|\boldsymbol\xi_i-\boldsymbol\xi_j|^3}
+-\lambda_i\bigl[1+0.15(Re_{*,i}|\boldsymbol\xi_i'|)^{0.687}\bigr]
+ \boldsymbol\xi_i'+g_z\mathbf e_z,
+\end{align}
+where $\chi_1=1$, $\chi_2=s$, and the second Coulomb vector is
+$\boldsymbol\xi_2-\boldsymbol\xi_1$.
+The physical groups are
+\begin{align}
+\lambda_i&=\frac{6\pi\eta a_i}{C_{c,i}m_i\Omega_1}, &
+Re_{*,i}&=\frac{2\rho_g a_i R\Omega_1}{\eta},\\
+C_{12}&=\frac{q_1q_2}{4\pi\epsilon_0m_1R^3\Omega_1^2}, &
+g_z&=\frac{\mathbf g\cdot\mathbf e_z}{R\Omega_1^2}.
+\end{align}
+The leading MFS amplitudes $A=q_1U_1T_1/(m_1R^2\Omega_1^2)$ and
+$B=q_1U_2T_2/(m_1R^2\Omega_1^2)$ contain geometric transfer factors
+$T_j$; they are not electrode voltages.
+
+Set $h_i=Re_{*,i}>0$ and $\boldsymbol\zeta_i=h_i\boldsymbol\xi_i$.
+Then $Re_{d,i}=|\boldsymbol\zeta_i'|$ and
+\begin{align}
+\boldsymbol\zeta_i''={}&h_i\alpha_i
+\mathbf E_{\rm RF}(\boldsymbol\zeta_i/h_i,\psi_1,\psi_2)
++\alpha_i\beta(\zeta_{ix},\zeta_{iy},-2\zeta_{iz})\\
+&+h_i\chi_i C_{12}
+\frac{\boldsymbol\zeta_i/h_i-\boldsymbol\zeta_j/h_j}
+ {|\boldsymbol\zeta_i/h_i-\boldsymbol\zeta_j/h_j|^3}
+-\lambda_i[1+0.15|\boldsymbol\zeta_i'|^{0.687}]
+\boldsymbol\zeta_i'+h_i g_z\mathbf e_z.
+\end{align}
+For an MFS potential mode of spatial degree $n_h=|k_h|$, the RF
+acceleration in $\boldsymbol\zeta_i$ has coefficient proportional to
+$\alpha_i A_{j(h)}h_i^{2-n_h}$. In particular, the $n=2$ and $n=4$
+terms scale as $h_i^0$ and $h_i^{-2}$, respectively. The two particles
+therefore see differently scaled geometries; the substitution does not
+eliminate $h_i$ from the full dynamics.
+
+The admissible aperture becomes $|\boldsymbol\zeta_{i\perp}|/h_i+a_i/R<1$.
+The no-contact condition is
+$|\boldsymbol\zeta_1/h_1-\boldsymbol\zeta_2/h_2|>(a_1+a_2)/R$.
+The physical energy and angular momentum use
+$\mu_1=1$, $\mu_2=1/s$ and include kinetic terms
+$\mu_i|\boldsymbol\zeta_i'|^2/(2h_i^2)$ and moments
+$\mu_i(\boldsymbol\zeta_i\times\boldsymbol\zeta_i')_z/h_i^2$.
