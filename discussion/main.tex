@@ -30,7 +30,7 @@
 
 \begin{figure}[t]
 \includegraphics[width=\columnwidth]{figures/FIG01.pdf}
-\caption{Geometry of the mean counterrotating motion. Schematic only: the circles are not stored RF trajectories. Both particles experience the same two RF families.}
+\caption{Geometry of the mean counterrotating motion. Positions are divided by the trap scale $R$; $\bar\omega_i$ is the mean orbital angular velocity, and $z$ is the common trap axis. Positive and negative signs indicate opposite directions of rotation. Schematic only: the circles are not stored RF trajectories. Both particles experience the same two RF families.}
 \label{fig:geometry}
 \end{figure}
 
@@ -111,7 +111,7 @@ V_i&=\frac{48\alpha_i^2B^2|c_{-4}|^2K_{2i}}{D_{2i}}.
 
 \begin{figure*}[t]
 \includegraphics[width=.94\textwidth]{figures/FIG02.pdf}
-\caption{Radial acceleration balance at nominal parameters in the zero-orbit-speed leading model (M1). The DC term is outward, both RF terms are inward. Dotted lines mark M1 roots; full-RF reference radii are compared in Fig.~5.}
+\caption{Radial acceleration balance: $r/R$ is orbit radius divided by trap scale, and $a_r/(R\Omega_1^2)$ is radial acceleration in RF1 units. Positive acceleration points outward. In panel titles, alpha denotes relative charge-to-mass ratio $\alpha_i$, and lambda denotes dimensionless linear damping $\lambda_i$. Curves are evaluated at nominal parameters in the zero-orbit-speed leading model (M1). The DC term is outward, both RF terms are inward. Dotted lines mark M1 roots; full-RF reference radii are compared in Fig.~5.}
 \label{fig:rad}\end{figure*}
 
 \section{Передача углового момента}
@@ -132,7 +132,7 @@ V_i&=\frac{48\alpha_i^2B^2|c_{-4}|^2K_{2i}}{D_{2i}}.
 Для $+2$ медленная передача пропорциональна $+4\alpha^2A^2\lambda r^2/D_1$, для $-4$ она равна $-48\alpha^2B^2\lambda\nu r^6/D_2$. Их отношение по модулю растёт как $r^4$. Полные RF-моменты имеют вместо коэффициентов $4,48$ коэффициенты $8,64$. На рис.~\ref{fig:torque} эти разные величины показаны раздельно.
 
 \begin{figure*}[t]\includegraphics[width=.94\textwidth]{figures/FIG03.pdf}
-\caption{Competition of the two leading traveling modes at zero mean orbital speed. Top: net torque available to the slow orbit after micromotion drag. Bottom: total RF torque. These are different observables with different zero radii. All curves use nominal finite damping and DC susceptibility.}
+\caption{Competition of the two leading traveling modes at zero mean orbital speed. The horizontal coordinate is normalized orbit radius; moment is divided by $m_iR^2\Omega_1^2$, with the mass of the particle in that panel. Positive moment drives positive rotation. Dotted lines mark zero net moment. Top: net torque available to the slow orbit after micromotion drag. Bottom: total RF torque. These are different observables with different zero radii. All curves use nominal finite damping and DC susceptibility.}
 \label{fig:torque}\end{figure*}
 
 Полное M3-замыкание на одной и той же микродвигательной орбите даёт для частицы~1 моменты RF1 $+7.5171\cdot10^{-4}$ и RF2 $-3.6499\cdot10^{-4}$; их сумма $+3.8672\cdot10^{-4}$ компенсируется drag. Для частицы~2 получены $+1.6793\cdot10^{-4}$ и $-2.6012\cdot10^{-4}$; сумма $-9.2189\cdot10^{-5}$ также компенсируется drag. Это полные RF-моменты, а не две ведущие кривые верхней панели. Разложение по семействам выполнено на общем полном решении, а не сложением независимо рассчитанных одночастотных орбит.
@@ -201,7 +201,7 @@ S_i={}&\left(\alpha_i\beta-
 В парном повторном решении M3 на общей сетке $96\times8\times8$ с удвоенной квадратурой нелинейный drag даёт $+0.0547222,-0.0487402$ Гц; линейный контроль даёт $+0.0405961,-0.0433507$ Гц. Разности модулей относительно нелинейного решения равны $25.8\%$ и $11.1\%$. Радиусы меняются лишь на $0.134\%$ и $0.092\%$. Следовательно, радиальная локализация менее чувствительна к этой замене, чем малый остаток конкурирующих моментов. Знак может сохраняться благодаря запасу до смены направления, хотя частота существенно изменяется. Это не оправдывает пренебрежение нелинейностью для количественного прогноза.
 
 \begin{figure*}[t]\includegraphics[width=.94\textwidth]{figures/FIG05.pdf}
-\caption{Nominal analytical and numerical comparison. Left: leading finite-damping radius, M3 and archived full-RF means. Right: paired M3 roots with nonlinear Schiller--Naumann and linear drag at identical collocation settings. No connecting curve or statistical uncertainty is inferred from these discrete results.}
+\caption{Nominal analytical and numerical comparison. $\bar r/R$ is normalized mean orbit radius; $\bar\omega/\Omega_1=f_{orb}/f_{RF1}$ compares signed orbital rotation with the first RF drive, not with the other particle. SN denotes the speed-dependent Schiller--Naumann drag factor. Left: leading finite-damping radius, M3 and archived full-RF means. Right: paired M3 roots with nonlinear Schiller--Naumann and linear drag at identical collocation settings. No connecting curve or statistical uncertainty is inferred from these discrete results.}
 \label{fig:comparison}\end{figure*}
 
 Выбранная корреляция сопротивления входит в математическую модель; её использование само по себе не проверяет нестационарную гидродинамику, силу памяти, поляризацию или влияние стенок. Данные о численной точности нельзя переносить на физическую точность сопротивления без отдельного анализа этих эффектов.
@@ -218,6 +218,8 @@ S_i={}&\left(\alpha_i\beta-
 Существование алгебраического корня, его локальная устойчивость в M3 и притяжение полной системы являются разными утверждениями. В адиабатическом M3-потоке получены десять собственных значений с отрицательными действительными частями. Но этот поток исключает быстрый ответ квазистационарно. В полной RF-системе два механических условных показателя близки к нулю, остальные существенно отрицательны. Без надёжной идентификации касательных направлений и геометрии инвариантного множества нельзя объявить два первых направления доказанными фазами тора, а остальные автоматически поперечными. Длительное удержание и сохранение знаков совместимы с притягивающим тором, слабым сжатием или квазинейтральной динамикой; они не выбирают единственную альтернативу.
 
 Наиболее сильный вывод имеющихся данных: долгоживущее встречное вращение в полной заданной RF-модели и локально устойчивый корень отдельной усреднённой модели. Полный притягивающий инвариантный тор не доказан. Для усиления вывода потребуются контроль геометрии множества, сжатия поперечных возмущений при сохранённых внешних фазах и сходимости показателей по горизонту.
+
+Для чтения остальных рисунков полезно различать координаты и силы. На рис.~\ref{fig:geometry} $x/R,y/R$ показывают положение в поперечной плоскости, а знаки $\bar\omega_i$ определяют обход вокруг оси $z$. На рис.~\ref{fig:rad} горизонтальная ось есть средний радиус, а вертикальная -- ускорение: положительный знак означает движение наружу. Пересечение суммы с нулём задаёт радиальный баланс; оно само по себе не проверяет все моды устойчивости. На рис.~\ref{fig:torque} вертикальная ось означает момент, нормированный индивидуальной массой частицы; положительный знак подталкивает её в положительном направлении. Верхний и нижний ряды показывают разные моменты. На рис.~\ref{fig:comparison} слева сравнивается положение орбит, справа -- скорость их обхода относительно RF1: $\bar\omega/\Omega_1=10^{-3}$ означает один средний орбитальный оборот примерно за тысячу RF1-периодов. Все эти величины безразмерны; $R$ -- масштаб ловушки, а $\Omega_1$ -- угловая частота первого RF-возбуждения.
 
 \section{Выводы}
 Радиальное исключение даёт компактное неравенство в трёх параметрах, поскольку одинаковый множитель второй гармоники входит в радиальную локализацию и медленный момент. Это условие противоположных знаков нулевого медленного момента в ведущем приближении. Оно объясняет номинальный режим и согласуется с большей частью сохранённых M3-точек; расхождения около смены знака показывают предел его прямого переноса на конечную скорость. Полная динамика подтверждает выбранные встречные и совместные режимы, но точная граница и притягивающий характер остаются неустановленными. Нелинейное сопротивление необходимо для количественного описания частот даже при сохранении качественного знакового механизма.
