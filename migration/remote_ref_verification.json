@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "name": "research/v17c",
+      "source_sha": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+      "target_sha": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-crystals",
+      "source_sha": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+      "target_sha": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-loading",
+      "source_sha": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+      "target_sha": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-theory",
+      "source_sha": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+      "target_sha": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-theory-validation",
+      "source_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+      "target_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-two-particle-coulomb-dynamics",
+      "source_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+      "target_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+      "pass": true
+    },
+    {
+      "name": "research/v17c-two-particle-oseen",
+      "source_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+      "target_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+      "pass": true
+    },
+    {
+      "name": "research/v17c18b19-axial-stability-diagrams",
+      "source_sha": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+      "target_sha": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+      "pass": true
+    },
+    {
+      "name": "research/v17c20a-rf-attractor-search",
+      "source_sha": "43c84bf72ce0807d244475518588770fbaf0fb69",
+      "target_sha": "43c84bf72ce0807d244475518588770fbaf0fb69",
+      "pass": true
+    },
+    {
+      "name": "research/v17c20b-particle-attractor-search",
+      "source_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+      "target_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+      "pass": true
+    },
+    {
+      "name": "research/v17c21-analytical-counterrotation",
+      "source_sha": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+      "target_sha": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+      "pass": true
+    },
+    {
+      "name": "research/v17c21a-m3-convergence-stability",
+      "source_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "target_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "pass": true
+    },
+    {
+      "name": "research/v17c21b-m3-bifurcation-diagrams",
+      "source_sha": "894c6896ce5927371708037ffa4a4021189d2b54",
+      "target_sha": "894c6896ce5927371708037ffa4a4021189d2b54",
+      "pass": true
+    },
+    {
+      "name": "research/v17c22-counterrotation-attraction-theory",
+      "source_sha": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+      "target_sha": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+      "pass": true
+    }
+  ],
+  "source_master": "e5e6b2473bf519c5670ee1c48882183fbcfc8f2d",
+  "target_main": "77f0a4fd70b44e11ddbdc4aa94373b8b24ad70a5",
+  "unexpected_source_v17c": [],
+  "errors": []
+}

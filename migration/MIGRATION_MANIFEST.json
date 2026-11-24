@@ -1,0 +1,188 @@
+{
+  "project": "Counterrotating Motion",
+  "created_utc": "2026-11-24T12:02:35.688485+00:00",
+  "status": "MIGRATION_VERIFIED_PRE_SOURCE_CLEANUP",
+  "source_repository": "https://github.com/snejokzboxik/three-phase-12-electrode-trap",
+  "target_repository": "https://github.com/snejokzboxik/counterrotating-motion",
+  "source_master_sha": "e5e6b2473bf519c5670ee1c48882183fbcfc8f2d",
+  "target_main_sha_before_final_audit_commit": "77f0a4fd70b44e11ddbdc4aa94373b8b24ad70a5",
+  "branches": [
+    {
+      "name": "research/v17c",
+      "source_sha": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+      "target_sha": "fc1d29ecc1067e0191a4cf597189b4973546864f",
+      "v17c_file_count": 1565,
+      "v17c_tree_sha": "fb7774ce9c95ee3970fe7684b1835bc35d34c45a",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-crystals",
+      "source_sha": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+      "target_sha": "5438b1cdd79c47abab45c6cbaf99c6daec9fbb60",
+      "v17c_file_count": 1549,
+      "v17c_tree_sha": "5be85ea9090e062caf0737a52f60dfdc95d4b32c",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-loading",
+      "source_sha": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+      "target_sha": "d40a25b8fc073b43e12ed7d15fe07caa7502c988",
+      "v17c_file_count": 1284,
+      "v17c_tree_sha": "04800d895776829a41596d0de622f6e01364ec76",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-theory",
+      "source_sha": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+      "target_sha": "37c477fbacfccd55e79d6092e6e70d563c559ac6",
+      "v17c_file_count": 1647,
+      "v17c_tree_sha": "c579c3ea7f6b67a9ac9d9cb14004a7ffd62bed30",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-theory-validation",
+      "source_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+      "target_sha": "9716e9a701b4ebd8fc3ae4b72a8aaeda9437289b",
+      "v17c_file_count": 1889,
+      "v17c_tree_sha": "a0df755b7ceaaf8916fe4775610a19fd7c93e11e",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-two-particle-coulomb-dynamics",
+      "source_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+      "target_sha": "718d9eadf5873cdf1a5b602de31ec20647092f0f",
+      "v17c_file_count": 1988,
+      "v17c_tree_sha": "0e81c441389bccaa8878f7ab7ea69b807384b281",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c-two-particle-oseen",
+      "source_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+      "target_sha": "6708ec62acec19f11ade7b8bdc3d24c0b6985a33",
+      "v17c_file_count": 2011,
+      "v17c_tree_sha": "f4de7921b63535fe2885215685021ba66b953062",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c18b19-axial-stability-diagrams",
+      "source_sha": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+      "target_sha": "f74780868fd5bb966d30b3dea6f41ab0f46f83f1",
+      "v17c_file_count": 2095,
+      "v17c_tree_sha": "ca1579a2303dda73e0019336e7c60a123f876b92",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c20a-rf-attractor-search",
+      "source_sha": "43c84bf72ce0807d244475518588770fbaf0fb69",
+      "target_sha": "43c84bf72ce0807d244475518588770fbaf0fb69",
+      "v17c_file_count": 2327,
+      "v17c_tree_sha": "d12cbb5c0982c1bf98af82dfc729ee84a3c42872",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c20b-particle-attractor-search",
+      "source_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+      "target_sha": "d1bf252649e174166becf464269318b5f97acd5d",
+      "v17c_file_count": 2218,
+      "v17c_tree_sha": "9372a2cd9e600b8001a8fc70df646b2e7cbfd3f8",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c21-analytical-counterrotation",
+      "source_sha": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+      "target_sha": "05a8d8ce811c9858ab1e74b67b15139c557018b1",
+      "v17c_file_count": 2371,
+      "v17c_tree_sha": "7347de3c03c6146a9e55ab281a689c2504a61ee9",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c21a-m3-convergence-stability",
+      "source_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "target_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+      "v17c_file_count": 2464,
+      "v17c_tree_sha": "f80ae97319463f2173f9227ca5e7eec7c3113bb7",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c21b-m3-bifurcation-diagrams",
+      "source_sha": "894c6896ce5927371708037ffa4a4021189d2b54",
+      "target_sha": "894c6896ce5927371708037ffa4a4021189d2b54",
+      "v17c_file_count": 2563,
+      "v17c_tree_sha": "df97aeb14954a91f4b48cc0664933f8498edf545",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    },
+    {
+      "name": "research/v17c22-counterrotation-attraction-theory",
+      "source_sha": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+      "target_sha": "f2c0c1c38d7ce76bb55b7a3d7b84e5e321740487",
+      "v17c_file_count": 2606,
+      "v17c_tree_sha": "b8019467b7cc404c83d192834db858ed587bf1a8",
+      "file_hash_ledger": "migration/V17C_FILE_INTEGRITY.csv",
+      "git_lfs": false,
+      "uncommitted_scientific_results": "8 recovered files from local v17c10-research checkout; see local_recovered_manifest.json",
+      "verification": "VERIFIED_REMOTE_SHA_AND_CLEAN_CLONE_SHA256"
+    }
+  ],
+  "integrity": {
+    "ledger_rows": 28577,
+    "unique_blobs": 3095,
+    "verified_unique_blob_bytes": 2616869182,
+    "sha256_mismatches": 0,
+    "source": "fresh independent clone of published counterrotating-motion remote",
+    "ledger_sha256": "95b9caca2165520e438ba8578b14b4e3881208099fadf4fad1840afcd4ccae7e",
+    "recovered_local_files": 8,
+    "recovered_local_bytes": 991429
+  },
+  "backup": {
+    "bundle_path_local": "C:\\Users\\snejochek\\Documents\\ChatGPT\\12electrodes\\counterrotating-motion-migration\\counterrotating-motion-full.bundle",
+    "bundle_bytes": 4979797730,
+    "bundle_sha256": "50c1f0553043a2eae0a8d1409676c80107b370f1349cfbd6b4fb08406f566fb5",
+    "bundle_verify": "PASS_COMPLETE_HISTORY"
+  },
+  "reproducibility": {
+    "fresh_clone": "PASS; core.longpaths=true required on Windows",
+    "selected_tests": "30 passed (V14/V15=17, V18B19=4, V21A/B/V22=9); 6 subtests passed",
+    "saved_npz_load": "PASS (V20B, V21, V22 sampled)",
+    "latex_main": "Tectonic compiled V21A and V22 source; see FILE_INTEGRITY_REPORT.md for historical limitations"
+  },
+  "source_cleanup": "PENDING; no source refs deleted at manifest creation"
+}
