@@ -1,7 +1,7 @@
 {
   "project": "Counterrotating Motion",
   "created_utc": "2026-11-24T12:02:35.688485+00:00",
-  "status": "MIGRATION_VERIFIED_PRE_SOURCE_CLEANUP",
+  "status": "MIGRATION_AND_SOURCE_CLEANUP_VERIFIED",
   "source_repository": "https://github.com/snejokzboxik/three-phase-12-electrode-trap",
   "target_repository": "https://github.com/snejokzboxik/counterrotating-motion",
   "source_master_sha": "e5e6b2473bf519c5670ee1c48882183fbcfc8f2d",
@@ -184,5 +184,18 @@
     "saved_npz_load": "PASS (V20B, V21, V22 sampled)",
     "latex_main": "Tectonic compiled V21A and V22 source; see FILE_INTEGRITY_REPORT.md for historical limitations"
   },
-  "source_cleanup": "PENDING; no source refs deleted at manifest creation"
+  "source_cleanup": {
+    "result": "COMPLETE",
+    "deleted_branch_count": 14,
+    "source_remaining_heads": {
+      "master": "e5e6b2473bf519c5670ee1c48882183fbcfc8f2d",
+      "research/v17b": "9e49ae1d921841a62fbe5d30880722dc8660ed6d"
+    },
+    "target_head_count": 15,
+    "target_main_sha_before_cleanup_report_commit": "25d53a886e42f1fccda70c180ca425b2ae139203",
+    "source_master_v17c_catalog": "ABSENT_IN_TREE",
+    "source_v17b_v17c_catalog": "ABSENT_IN_TREE",
+    "verification_utc": "2026-11-24T12:06:51.021860+00:00",
+    "log": "migration/source_branch_cleanup_log.jsonl"
+  }
 }
