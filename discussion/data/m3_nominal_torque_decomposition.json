@@ -1,0 +1,265 @@
+{
+  "model": "V21A M3, full 8-mode MFS, nonlinear SN drag, fixed published M3 root",
+  "source_sha": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+  "root_source": "research/v17c/v17c_21a/results/full_grid_campaign.json",
+  "HB_grid": [
+    192,
+    16,
+    16
+  ],
+  "HB_config": {
+    "ntheta": 192,
+    "nphase": 16,
+    "cutoff": 0.05,
+    "oversample": 1,
+    "method": "newton_krylov",
+    "tolerance": 1e-07,
+    "equation_tolerance": 5e-05,
+    "max_iter": 30,
+    "relaxation": 0.5,
+    "history": 6,
+    "sn_scale": 1.0,
+    "continuation_scales": []
+  },
+  "parameters": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    0.10963763906505944,
+    9.747265456858355e-06,
+    0.24452307123064748,
+    0.17736598731050257
+  ],
+  "particles": [
+    {
+      "index": 1,
+      "r_over_R": 0.5550374649008335,
+      "omega_over_Omega1": 0.0010944455997807332,
+      "frequency_Hz": 0.05472227998903666,
+      "alpha": 1.0,
+      "lambda": 0.24452307123064748,
+      "Re_star": 6.643729577002431,
+      "m3_modes": [
+        {
+          "family": 1,
+          "k": -46,
+          "torque": 1.763515274443249e-19,
+          "mean_radial_force": 6.706403170444901e-20,
+          "mean_tangential_force": 2.638936726374471e-19
+        },
+        {
+          "family": 1,
+          "k": -22,
+          "torque": 8.783565964393022e-11,
+          "mean_radial_force": -1.1427616623153372e-10,
+          "mean_tangential_force": 1.295391312871094e-10
+        },
+        {
+          "family": 1,
+          "k": 2,
+          "torque": 0.0007517107947662676,
+          "mean_radial_force": -0.002544066962216606,
+          "mean_tangential_force": 0.0006771663656438137
+        },
+        {
+          "family": 1,
+          "k": 26,
+          "torque": 2.201575629731089e-12,
+          "mean_radial_force": -1.977377530605902e-12,
+          "mean_tangential_force": 3.118740155785948e-12
+        },
+        {
+          "family": 2,
+          "k": -28,
+          "torque": 2.7778136379888924e-12,
+          "mean_radial_force": -3.0583174054020455e-12,
+          "mean_tangential_force": 3.943270437227382e-12
+        },
+        {
+          "family": 2,
+          "k": -4,
+          "torque": -0.00036499076095946654,
+          "mean_radial_force": -0.006000064125279196,
+          "mean_tangential_force": -0.0004895305302198418
+        },
+        {
+          "family": 2,
+          "k": 20,
+          "torque": 1.998957937175594e-09,
+          "mean_radial_force": -2.1409790150960684e-09,
+          "mean_tangential_force": 2.9113922320478846e-09
+        },
+        {
+          "family": 2,
+          "k": 44,
+          "torque": 4.1992142296651245e-18,
+          "mean_radial_force": 2.7380623055265995e-18,
+          "mean_tangential_force": 6.294374683085075e-18
+        }
+      ],
+      "m3_RF_family_torques": [
+        0.0007517108848035031,
+        -0.0003649887592237115
+      ],
+      "m3_RF_total_torque": 0.0003867221255797915,
+      "m3_drag_total_torque": -0.0003867221224112842,
+      "m3_RF_force_rotating_xy": [
+        -0.008544133347786633,
+        0.00018763888341735233
+      ],
+      "m3_drag_force_rotating_xyz": [
+        5.701121502219057e-07,
+        -0.0001876388782565731,
+        0.0
+      ],
+      "m3_inner_relative_residual": 4.078850474511155e-09,
+      "m3_inner_converged": true,
+      "leading_linear_at_fixed_m3_radius_and_zero_omega": [
+        {
+          "k": 2,
+          "radial_power": 2,
+          "denominator": 1.090805458397444,
+          "mean_orbit_RF_torque": 0.00033692124053284127,
+          "micromotion_RF_torque": 0.00033692124053284127,
+          "total_RF_torque": 0.0006738424810656825,
+          "micromotion_angular_momentum": 0.0013778709666828893,
+          "micromotion_drag_torque": -0.00033692124053284127,
+          "net_slow_torque_at_zero_omega": 0.00033692124053284127
+        },
+        {
+          "k": -4,
+          "radial_power": 6,
+          "denominator": 108.39973921984769,
+          "mean_orbit_RF_torque": -0.0002490517498563332,
+          "micromotion_RF_torque": -8.301724995211107e-05,
+          "total_RF_torque": -0.0003320689998084443,
+          "micromotion_angular_momentum": -0.0003395068184539719,
+          "micromotion_drag_torque": 8.301724995211107e-05,
+          "net_slow_torque_at_zero_omega": -0.0002490517498563332
+        }
+      ],
+      "leading_critical_radii": {
+        "zero_total_RF_torque_r_over_R": 0.6624526047302017,
+        "zero_net_slow_torque_r_over_R": 0.5985935009307709,
+        "simple_zero_RF_beta_lambda_0": 0.6755335650858937,
+        "simple_zero_slow_beta_lambda_0": 0.610413482917315
+      }
+    },
+    {
+      "index": 2,
+      "r_over_R": 0.7513382762325129,
+      "omega_over_Omega1": -0.0009747968388241109,
+      "frequency_Hz": -0.04873984194120554,
+      "alpha": 0.37814609618000145,
+      "lambda": 0.17736598731050257,
+      "Re_star": 43.76775863741318,
+      "m3_modes": [
+        {
+          "family": 1,
+          "k": -46,
+          "torque": 5.039967201823082e-13,
+          "mean_radial_force": -2.3959813253763627e-12,
+          "mean_tangential_force": 5.944047793101611e-13
+        },
+        {
+          "family": 1,
+          "k": -22,
+          "torque": -3.5908345125524996e-08,
+          "mean_radial_force": -2.412997044615375e-07,
+          "mean_tangential_force": -4.6479784807706386e-08
+        },
+        {
+          "family": 1,
+          "k": 2,
+          "torque": 0.00016795982455452066,
+          "mean_radial_force": -0.0004999526420205338,
+          "mean_tangential_force": 0.00011177344924321393
+        },
+        {
+          "family": 1,
+          "k": 26,
+          "torque": 3.0652874678916907e-09,
+          "mean_radial_force": -1.639538189620866e-08,
+          "mean_tangential_force": 3.6312259686613034e-09
+        },
+        {
+          "family": 2,
+          "k": -28,
+          "torque": -2.4856993928289616e-09,
+          "mean_radial_force": -3.765189958578033e-08,
+          "mean_tangential_force": -3.0370901768699935e-09
+        },
+        {
+          "family": 2,
+          "k": -4,
+          "torque": -0.00026041784689280104,
+          "mean_radial_force": -0.003870388491004184,
+          "mean_tangential_force": -0.0002596945817665113
+        },
+        {
+          "family": 2,
+          "k": 20,
+          "torque": 3.0408819825410395e-07,
+          "mean_radial_force": -3.2746611870243557e-06,
+          "mean_tangential_force": 3.6106987297617096e-07
+        },
+        {
+          "family": 2,
+          "k": 44,
+          "torque": 1.0762406238088389e-11,
+          "mean_radial_force": -3.33045162273888e-11,
+          "mean_tangential_force": 1.2837322565993367e-11
+        }
+      ],
+      "m3_RF_family_torques": [
+        0.00016792698200085974,
+        -0.0002601162336315335
+      ],
+      "m3_RF_total_torque": -9.218925163067378e-05,
+      "m3_drag_total_torque": 9.218925156496376e-05,
+      "m3_RF_force_rotating_xy": [
+        -0.004373911176898191,
+        -0.00014760593486760876
+      ],
+      "m3_drag_force_rotating_xyz": [
+        3.4046809352808353e-07,
+        0.0001476059347904794,
+        0.0
+      ],
+      "m3_inner_relative_residual": 1.597536255833229e-10,
+      "m3_inner_converged": true,
+      "leading_linear_at_fixed_m3_radius_and_zero_omega": [
+        {
+          "k": 2,
+          "radial_power": 2,
+          "denominator": 1.0431308027833055,
+          "mean_orbit_RF_torque": 6.696272143095911e-05,
+          "micromotion_RF_torque": 6.696272143095911e-05,
+          "total_RF_torque": 0.00013392544286191821,
+          "micromotion_angular_momentum": 0.0003775398115859273,
+          "micromotion_drag_torque": -6.696272143095911e-05,
+          "net_slow_torque_at_zero_omega": 6.696272143095911e-05
+        },
+        {
+          "k": -4,
+          "radial_power": 6,
+          "denominator": 107.90742922639147,
+          "mean_orbit_RF_torque": -0.00015966713098665102,
+          "micromotion_RF_torque": -5.3222376995550344e-05,
+          "total_RF_torque": -0.00021288950798220138,
+          "micromotion_angular_momentum": -0.0003000709313132148,
+          "micromotion_drag_torque": 5.3222376995550344e-05,
+          "net_slow_torque_at_zero_omega": -0.00015966713098665102
+        }
+      ],
+      "leading_critical_radii": {
+        "zero_total_RF_torque_r_over_R": 0.6691334215657607,
+        "zero_net_slow_torque_r_over_R": 0.6046303004091323,
+        "simple_zero_RF_beta_lambda_0": 0.6755335650858937,
+        "simple_zero_slow_beta_lambda_0": 0.610413482917315
+      }
+    }
+  ],
+  "caveat": "Per-mode RF torque decomposition is exact for the recomputed M3 collocation field; changing modes would require re-solving micromotion. Leading formulas are zero-omega linear-response approximations, not M3 boundary conditions."
+}
