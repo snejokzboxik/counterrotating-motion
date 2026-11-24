@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.11.24)  24 NOV 2026 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.11.24)  24 NOV 2026 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,18 +715,23 @@ Underfull \hbox (badness 1394) in paragraph at lines 29--30
 []\T2A/cmr/m/n/10 Мы рас-смат-ри-ва-ем по-пе-реч-ное по-ле бес-ко-неч-но
  []
 
-<figures/FIG01.pdf, id=57, 290.56807pt x 255.51962pt>
+<figures/FIG01.pdf, id=57, 305.62825pt x 269.97989pt>
 File: figures/FIG01.pdf Graphic file (type pdf)
 <use figures/FIG01.pdf>
 Package pdftex.def Info: figures/FIG01.pdf  used on input line 32.
-(pdftex.def)             Requested size: 246.0pt x 216.32713pt.
+(pdftex.def)             Requested size: 246.0pt x 217.30656pt.
 
 Underfull \hbox (badness 1102) in paragraph at lines 33--33
 []\T2A/cmr/m/n/9 Рис. 1. []Geometry of the mean counterrotating motion.
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en
-c/dvips/cm-super/cm-super-t2a.enc} <./figures/FIG01.pdf>]
+c/dvips/cm-super/cm-super-t2a.enc}]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 55.
+
+
 Underfull \hbox (badness 1412) in paragraph at lines 77--79
 \T2A/cmr/m/n/10 Последняя фор-му-ла сле-ду-ет из $\OT1/cmr/m/n/10 ^^H[] = \OML/
 cmm/m/it/10 V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 z[] \OMS/cmsy/m/n/10 ^^@
@@ -784,7 +789,7 @@ Underfull \hbox (badness 1789) in paragraph at lines 80--81
 \T2A/cmr/m/n/10 ука-зан-ным из-ме-не-ни-ям по-ля при фик-си-ро-ван-ных
  []
 
-[2]
+[2 <./figures/FIG01.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 110--111
 []\T2A/cmr/m/n/10 В но-ми-на-ле ве-ду-щие ра-ди-у-сы рав-ны
  []
@@ -818,45 +823,45 @@ Underfull \hbox (badness 3930) in paragraph at lines 110--111
 \T2A/cmr/m/n/10 дру-гие па-ра-мет-ры. До-пол-ни-тель-но нуж-ны апер-
  []
 
-<figures/FIG02.pdf, id=152, 497.88211pt x 223.80112pt>
+<figures/FIG02.pdf, id=165, 491.8201pt x 223.32199pt>
 File: figures/FIG02.pdf Graphic file (type pdf)
 <use figures/FIG02.pdf>
 Package pdftex.def Info: figures/FIG02.pdf  used on input line 113.
-(pdftex.def)             Requested size: 479.40125pt x 215.49545pt.
+(pdftex.def)             Requested size: 479.40125pt x 217.68524pt.
 
 Underfull \hbox (badness 3668) in paragraph at lines 132--133
 []\T2A/cmr/m/n/10 Для $\OT1/cmr/m/n/10 +2$ \T2A/cmr/m/n/10 мед-лен-ная пе-ре-да
 -ча про-пор-ци-о-наль-на
  []
 
-<figures/FIG03.pdf, id=154, 497.76103pt x 353.65123pt>
+<figures/FIG03.pdf, id=167, 570.35226pt x 428.31784pt>
 File: figures/FIG03.pdf Graphic file (type pdf)
 <use figures/FIG03.pdf>
 Package pdftex.def Info: figures/FIG03.pdf  used on input line 134.
-(pdftex.def)             Requested size: 479.40125pt x 340.61295pt.
+(pdftex.def)             Requested size: 479.40125pt x 360.0198pt.
 [3]
-<figures/FIG04.pdf, id=168, 498.21837pt x 252.62144pt>
+<figures/FIG04.pdf, id=181, 556.20125pt x 357.87112pt>
 File: figures/FIG04.pdf Graphic file (type pdf)
 <use figures/FIG04.pdf>
 Package pdftex.def Info: figures/FIG04.pdf  used on input line 177.
-(pdftex.def)             Requested size: 479.40125pt x 243.09203pt.
+(pdftex.def)             Requested size: 479.40125pt x 308.46213pt.
 
-Underfull \hbox (badness 1033) in paragraph at lines 182--183
+Underfull \hbox (badness 1033) in paragraph at lines 184--185
 []\T2A/cmr/m/n/10 В даль-ней-шем M0 озна-ча-ет сла-бо-дис-си-па-тив-ное
  []
 
 [4 <./figures/FIG02.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 []\T2A/cmr/m/n/10 Архивная длин-ная но-ми-наль-ная тра-ек-то-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--191
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 \T2A/cmr/m/n/10 рия со-дер-жит 240000 RF1-периодов и да-јт
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 190--191
+Underfull \hbox (badness 1389) in paragraph at lines 192--193
 \OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 = +0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0546
 477$ \T2A/cmr/m/n/10 Гц, $\OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/
 10 ^^@\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0484539$ \T2A/cmr/m/n/
@@ -864,19 +869,19 @@ Underfull \hbox (badness 1389) in paragraph at lines 190--191
  []
 
 [5 <./figures/FIG03.pdf>]
-<figures/FIG05.pdf, id=283, 498.17352pt x 238.16743pt>
+<figures/FIG05.pdf, id=335, 575.19887pt x 274.06657pt>
 File: figures/FIG05.pdf Graphic file (type pdf)
 <use figures/FIG05.pdf>
-Package pdftex.def Info: figures/FIG05.pdf  used on input line 201.
-(pdftex.def)             Requested size: 479.40125pt x 229.19778pt.
+Package pdftex.def Info: figures/FIG05.pdf  used on input line 203.
+(pdftex.def)             Requested size: 479.40125pt x 228.42447pt.
 
-Underfull \hbox (badness 1033) in paragraph at lines 208--209
+Underfull \hbox (badness 1033) in paragraph at lines 210--211
 []\T2A/cmr/m/n/10 Механизм скла-ды-ва-ет-ся из двух по-сле-до-ва-тель-
  []
 
 [6 <./figures/FIG04.pdf>] [7 <./figures/FIG05.pdf>]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-232.
+236.
 
 (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -891,34 +896,38 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 61B966683113972FD939A6227A402BE3;4100.
  ) 
 Here is how much of TeX's memory you used:
- 14230 strings out of 468988
- 213041 string characters out of 5461617
- 665697 words of memory out of 5000000
- 42662 multiletter control sequences out of 15000+600000
- 646358 words of font info for 87 fonts, out of 8000000 for 9000
+ 14247 strings out of 468988
+ 213206 string characters out of 5461617
+ 666773 words of memory out of 5000000
+ 42672 multiletter control sequences out of 15000+600000
+ 648824 words of font info for 96 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 75i,17n,79p,2681b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,2681b,544s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm09
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx144
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb>
-Output written on main.pdf (8 pages, 450684 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sftt0800.pfb>
+Output written on main.pdf (8 pages, 521072 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
+ 644 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
  48 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
