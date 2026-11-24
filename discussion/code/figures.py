@@ -14,7 +14,7 @@ def save(f,n):
 f,ax=plt.subplots(figsize=(6.8,3.5)); th=np.linspace(0,2*np.pi,400)
 for r,c,sg in [(.555,'#167d91',1),(.751,'#b64d36',-1)]:
  ax.plot(r*np.cos(th),r*np.sin(th),color=c); a=.65 if sg>0 else 3.8; b=a+sg*.3; ax.annotate('',xy=(r*np.cos(b),r*np.sin(b)),xytext=(r*np.cos(a),r*np.sin(a)),arrowprops=dict(arrowstyle='->',color=c,lw=2))
-ax.text(.08,.3,r'$\bar\omega_1>0$'); ax.text(-.72,-.55,r'$\bar\omega_2<0$'); ax.plot(0,0,'ko'); ax.text(.03,.03,'trap axis z'); ax.text(-.94,.95,'Common RF: k=+2 and k=-4'); ax.set(xlim=(-1,1),ylim=(-1,1),aspect='equal',xlabel='x/R',ylabel='y/R',title='Schematic mean orbits (not RF trajectory)');save(f,1)
+ax.text(.08,.3,r'$\bar\omega_1>0$'); ax.text(-.72,-.55,r'$\bar\omega_2<0$'); ax.plot(0,0,'ko'); ax.text(.03,.03,'trap axis z'); ax.text(-.92,-.94,'Common RF: k=+2 and k=-4',fontsize=9); ax.set(xlim=(-1,1),ylim=(-1,1),aspect='equal',xlabel='x/R',ylabel='y/R',title='Schematic mean orbits (not RF trajectory)');save(f,1)
 A,B,nu,beta,*_=t['parameters']; rr=np.linspace(.03,.9,450); tables={}
 f,axs=plt.subplots(1,2,figsize=(7,3.2),sharey=True)
 for ax,p in zip(axs,t['particles']):
