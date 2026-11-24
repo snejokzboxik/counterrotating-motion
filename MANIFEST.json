@@ -20,8 +20,8 @@
     },
     {
       "path": "Counterrotating_Motion_Chaos_RU_Overleaf.zip",
-      "bytes": 68261,
-      "sha256": "d3e051d768cc60e95b0e6ce2ac3fa4da26686cfc1b2633b2fd72973563a5208b"
+      "bytes": 68267,
+      "sha256": "0001dad31e29621226d7c8f402f48783363e396b575fc5c1868933caacbb28fc"
     },
     {
       "path": "README.md",
@@ -90,8 +90,8 @@
     },
     {
       "path": "latex/chaos/main.tex",
-      "bytes": 18010,
-      "sha256": "27c46e5b7a1418a593cd23e43c90f383fca1ac22e49de6a67d53e5960711ebd7"
+      "bytes": 18019,
+      "sha256": "addb9bcdf3d7b387c3e5731ec55fa0d0aa4364e932454306a01a31d38c5b3407"
     },
     {
       "path": "reports/BOUNDARY_VALIDATION_RU.md",
