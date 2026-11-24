@@ -1,0 +1,317 @@
+{
+  "formula": "zero-orbital-frequency leading +2/-4 radial balance; no fitted coefficients",
+  "nominal_M3_grid": [
+    192,
+    16,
+    16
+  ],
+  "nominal": [
+    {
+      "particle": 1,
+      "M3_radius_R": 0.5550374649008335,
+      "leading_radius_R": 0.5574490659171588,
+      "leading_vs_M3_error_percent": 0.43449337546181965,
+      "full_RF_RK4_240k_radius_R": 0.5557208179250963,
+      "leading_vs_full_RF_error_percent": 0.3109921270387783,
+      "M3_radial_terms": {
+        "centrifugal": 6.648300757148061e-07,
+        "DC_outward": 0.00854122685380736,
+        "RF_inward": -0.008544133347786633,
+        "drag": 5.701121502219057e-07,
+        "Coulomb": 1.6715610811167768e-06
+      },
+      "M3_radial_sum": 9.327780635257385e-12,
+      "M3_RF_per_mode_radial": [
+        {
+          "k": -46,
+          "mean_radial_force": 6.706403170444901e-20
+        },
+        {
+          "k": -22,
+          "mean_radial_force": -1.1427616623153372e-10
+        },
+        {
+          "k": 2,
+          "mean_radial_force": -0.002544066962216606
+        },
+        {
+          "k": 26,
+          "mean_radial_force": -1.977377530605902e-12
+        },
+        {
+          "k": -28,
+          "mean_radial_force": -3.0583174054020455e-12
+        },
+        {
+          "k": -4,
+          "mean_radial_force": -0.006000064125279196
+        },
+        {
+          "k": 20,
+          "mean_radial_force": -2.1409790150960684e-09
+        },
+        {
+          "k": 44,
+          "mean_radial_force": 2.7380623055265995e-18
+        }
+      ],
+      "leading_RF_plus2": -0.0025206846456600975,
+      "leading_RF_minus4": -0.00591703356271993
+    },
+    {
+      "particle": 2,
+      "M3_radius_R": 0.7513382762325129,
+      "leading_radius_R": 0.7516742262729381,
+      "leading_vs_M3_error_percent": 0.04471355327586579,
+      "full_RF_RK4_240k_radius_R": 0.751515785539555,
+      "leading_vs_full_RF_error_percent": 0.021082821735984858,
+      "M3_radial_terms": {
+        "centrifugal": 7.139433264576214e-07,
+        "DC_outward": 0.004372130268365913,
+        "RF_inward": -0.004373911176898191,
+        "drag": 3.4046809352808353e-07,
+        "Coulomb": 7.264968016938413e-07
+      },
+      "M3_radial_sum": -3.1059834683958983e-13,
+      "M3_RF_per_mode_radial": [
+        {
+          "k": -46,
+          "mean_radial_force": -2.3959813253763627e-12
+        },
+        {
+          "k": -22,
+          "mean_radial_force": -2.412997044615375e-07
+        },
+        {
+          "k": 2,
+          "mean_radial_force": -0.0004999526420205338
+        },
+        {
+          "k": 26,
+          "mean_radial_force": -1.639538189620866e-08
+        },
+        {
+          "k": -28,
+          "mean_radial_force": -3.765189958578033e-08
+        },
+        {
+          "k": -4,
+          "mean_radial_force": -0.003870388491004184
+        },
+        {
+          "k": 20,
+          "mean_radial_force": -3.2746611870243557e-06
+        },
+        {
+          "k": 44,
+          "mean_radial_force": -3.33045162273888e-11
+        }
+      ],
+      "leading_RF_plus2": -0.0005054138387629069,
+      "leading_RF_minus4": -0.003859808368185229
+    }
+  ],
+  "published_holdouts": [
+    {
+      "parameter": "A",
+      "factor": 1.05,
+      "M3_grid": [
+        128,
+        12,
+        12
+      ],
+      "M3_radii_R": [
+        0.5488185357558231,
+        0.7488283438069471
+      ],
+      "leading_radii_R": [
+        0.551369635981974,
+        0.7491438101389893
+      ],
+      "leading_vs_M3_error_percent": [
+        0.46483492446871555,
+        0.04212799029994496
+      ],
+      "leading_vs_full_RF_error_percent": [
+        0.332220689618401,
+        0.017500904675427087
+      ],
+      "full_RF_RK4_reference": {
+        "mean_radius_R": [
+          0.5495439373236413,
+          0.7490127261357815
+        ],
+        "frequency_Hz": [
+          0.08520016500410293,
+          -0.044626968607001355
+        ],
+        "late_window_frequency_Hz": [
+          [
+            0.08515700594660594,
+            -0.04465708879738131
+          ],
+          [
+            0.08521314153684419,
+            -0.04467544786881909
+          ],
+          [
+            0.08523033828115935,
+            -0.04454837560866505
+          ]
+        ],
+        "horizon_periods": 15000
+      }
+    },
+    {
+      "parameter": "B",
+      "factor": 0.95,
+      "M3_grid": [
+        128,
+        12,
+        12
+      ],
+      "M3_radii_R": [
+        0.5694653479069595,
+        0.7706317187199316
+      ],
+      "leading_radii_R": [
+        0.571930674021095,
+        0.7712014839763923
+      ],
+      "leading_vs_M3_error_percent": [
+        0.43291942577308173,
+        0.07393483068762752
+      ],
+      "leading_vs_full_RF_error_percent": [
+        0.3120293308538802,
+        0.04844945526194522
+      ],
+      "full_RF_RK4_reference": {
+        "mean_radius_R": [
+          0.5701516336936283,
+          0.7708280219987275
+        ],
+        "frequency_Hz": [
+          0.054461089109307005,
+          -0.04762834769483145
+        ],
+        "late_window_frequency_Hz": [
+          [
+            0.05432691493692099,
+            -0.047584441909112714
+          ],
+          [
+            0.05452445195819285,
+            -0.047633926200819195
+          ],
+          [
+            0.05453187168324986,
+            -0.04766666556685182
+          ]
+        ],
+        "horizon_periods": 15000
+      }
+    },
+    {
+      "parameter": "nu",
+      "factor": 1.02,
+      "M3_grid": [
+        128,
+        12,
+        12
+      ],
+      "M3_radii_R": [
+        0.5604943004803813,
+        0.7587243679899376
+      ],
+      "leading_radii_R": [
+        0.5629566939458402,
+        0.7591273722105637
+      ],
+      "leading_vs_M3_error_percent": [
+        0.4393253353956572,
+        0.05311602442581442
+      ],
+      "leading_vs_full_RF_error_percent": [
+        0.31835410532541353,
+        0.02951738876257881
+      ],
+      "full_RF_RK4_reference": {
+        "mean_radius_R": [
+          0.5611701856220502,
+          0.758903363754352
+        ],
+        "frequency_Hz": [
+          0.05787229704719891,
+          -0.046748349030926874
+        ],
+        "late_window_frequency_Hz": [
+          [
+            0.05799501091405812,
+            -0.046824561038163584
+          ],
+          [
+            0.05781664129012621,
+            -0.046723096858420556
+          ],
+          [
+            0.05780526523136743,
+            -0.04669740552617815
+          ]
+        ],
+        "horizon_periods": 15000
+      }
+    },
+    {
+      "parameter": "beta",
+      "factor": 1.05,
+      "M3_grid": [
+        128,
+        12,
+        12
+      ],
+      "M3_radii_R": [
+        0.5646064753342035,
+        0.7616193824078071
+      ],
+      "leading_radii_R": [
+        0.5671297679808358,
+        0.7620919144843761
+      ],
+      "leading_vs_M3_error_percent": [
+        0.4469117441734394,
+        0.06204307394004349
+      ],
+      "leading_vs_full_RF_error_percent": [
+        0.3258908057291787,
+        0.037872670138505704
+      ],
+      "full_RF_RK4_reference": {
+        "mean_radius_R": [
+          0.5652875478365047,
+          0.7618033991958947
+        ],
+        "frequency_Hz": [
+          0.04239865620663661,
+          -0.05248001208770784
+        ],
+        "late_window_frequency_Hz": [
+          [
+            0.042445374687175595,
+            -0.052473697448833734
+          ],
+          [
+            0.04238584630362812,
+            -0.05245217420229942
+          ],
+          [
+            0.04236475763949117,
+            -0.05251416325894955
+          ]
+        ],
+        "horizon_periods": 15000
+      }
+    }
+  ],
+  "limits": "Coulomb, drag radial mean, centrifugal and higher harmonics omitted in leading radius; holdouts were published before this calculation. No attractor or global localization proof."
+}
