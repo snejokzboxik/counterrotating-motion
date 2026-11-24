@@ -36,3 +36,11 @@ At 96x8x8 with 2x oversampling, both leading harmonics produce a verified counte
 ## Current evidence limits
 
 The result supports a long-lived counterrotating orbit and a local M3 root. It does not establish transverse attraction, a torus of the full forced system, a global basin, collective phase order, or a finite-electrode experimental trap. One-family solver failures do not imply nonexistence.
+
+## V2 continuation — 24 November 2026
+
+The new V2 work proceeds in branch `research/three-parameter-counterrotation-theory`, based directly on main `97dbf1cd004580a7ec7c698ffe94ad764795da8b`. The M0 criterion, symbolic radius elimination, 36-point comparison against archived M3 continuation, RF-resolved M3 Reynolds audit, paired linear/SN M3 solves, and a three-slice analytical boundary figure have now been added. Targeted tests report 11 passed.
+
+The revised RF-resolved M3 Reynolds medians are 0.332 and 1.605. Mean Schiller–Naumann factors are 1.0640 and 1.1944. Removing this nonlinearity changes frequency magnitudes by 25.8% and 11.1%, while preserving the tested nominal signs. The prior rough Reynolds statistics were superseded after matching the Fourier derivative convention, including the orbital-rate factor and Nyquist treatment.
+
+See the root `SESSION_HANDOFF.md` and `reports/LATEX_BUILD_REPORT.md` for current branch/publication and manuscript build status. The new Overleaf ZIP remains `UNVERIFIED_BUILD` because this host does not contain pdfLaTeX. The criterion establishes zero-speed leading torque signs only; stationary signs need a verified moment root and positive effective angular damping.

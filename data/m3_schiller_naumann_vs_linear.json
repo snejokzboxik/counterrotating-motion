@@ -1,0 +1,86 @@
+{
+  "source": "V21A M3 code and V20B refine12 registry",
+  "paired_runs": [
+    {
+      "sn_scale": 0.0,
+      "status": "VERIFIED_ROOT",
+      "root": {
+        "radii_R": [
+          0.5542931914495166,
+          0.7506499927575543
+        ],
+        "omega_over_Omega1": [
+          0.0008119223022748927,
+          -0.0008670142592928183
+        ],
+        "frequency_Hz": [
+          0.040596115113744634,
+          -0.043350712964640915
+        ],
+        "mean_z_R": [
+          -0.3225712297562072,
+          -0.853834328038252
+        ]
+      },
+      "balance_residual_inf": 1.7509865085640897e-12,
+      "inner_residuals": [
+        3.625640198553182e-15,
+        2.4278646952019613e-15
+      ],
+      "outer_evaluations": 36,
+      "wall_time_s": 218.85832340002526,
+      "grid": [
+        96,
+        8,
+        8
+      ],
+      "oversample": 2
+    },
+    {
+      "sn_scale": 1.0,
+      "status": "VERIFIED_ROOT",
+      "root": {
+        "radii_R": [
+          0.5550374568539861,
+          0.7513382852304624
+        ],
+        "omega_over_Omega1": [
+          0.0010944445776916644,
+          -0.0009748049588604549
+        ],
+        "frequency_Hz": [
+          0.054722228884583224,
+          -0.048740247943022744
+        ],
+        "mean_z_R": [
+          -0.32257152127617605,
+          -0.8538342435165248
+        ]
+      },
+      "balance_residual_inf": 1.463672932855431e-14,
+      "inner_residuals": [
+        2.4687792600969305e-15,
+        2.399270601829742e-15
+      ],
+      "outer_evaluations": 43,
+      "wall_time_s": 240.04884169995785,
+      "grid": [
+        96,
+        8,
+        8
+      ],
+      "oversample": 2
+    }
+  ],
+  "SN_vs_linear_change_percent_relative_to_SN": {
+    "frequency": [
+      25.814214915537388,
+      -11.057668366156413
+    ],
+    "radius": [
+      0.13409282477763906,
+      0.09160886466700048
+    ]
+  },
+  "interpretation": "Same parameter vector and common collocation settings; the SN factor is removed only for the linear control. This isolates the model effect within M3, not hydrodynamic model validity."
+}

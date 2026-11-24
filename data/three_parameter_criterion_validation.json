@@ -1,0 +1,807 @@
+{
+  "definition": "Pi=beta/(4 A^2); alpha1=1; alpha2=(q2/m2)/(q1/m1)",
+  "source_data": "data/m3_nominal_torque_decomposition.json; V21B m3_1d_continuation.csv",
+  "nominal": {
+    "A": 0.03492413282400757,
+    "B": 0.15631667332941065,
+    "nu": 3.2196773638017477,
+    "beta": 0.015388559140477825,
+    "alpha2": 0.37814609618000145,
+    "Pi": 3.154181673568058,
+    "M0_CR_interval_open": [
+      1.5956545222607506,
+      4.219677363801748
+    ],
+    "M0_predicts_CR_plus_minus": true,
+    "particles": [
+      {
+        "particle": 1,
+        "alpha": 1.0,
+        "S_M1_finite_lambda_DC": 0.7521297705726453,
+        "S_M0_weak_damping": 0.6690675586899278,
+        "M1_positive_radius": true,
+        "M1_zero_speed_slow_torque_sign": "+",
+        "M1_radius_R": 0.5574490659171588
+      },
+      {
+        "particle": 2,
+        "alpha": 0.37814609618000145,
+        "S_M1_finite_lambda_DC": 2.3886856828698884,
+        "S_M0_weak_damping": 2.280095577099473,
+        "M1_positive_radius": true,
+        "M1_zero_speed_slow_torque_sign": "-",
+        "M1_radius_R": 0.7516742262729381
+      }
+    ]
+  },
+  "sparse_M3_continuation_comparison": {
+    "rows": [
+      {
+        "varied_parameter": "A",
+        "value": 0.024446892976805294,
+        "Pi": 6.437105456261344,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 1.6887112719397728,
+        "S2_M0": 4.976523554408232,
+        "M0_CR_plus_minus": false,
+        "M3_classification": "CO_MINUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          -0.0018915298372072214,
+          -0.00135234783846596
+        ],
+        "M0_torque_signs": [
+          "-",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.027939306259206056,
+        "Pi": 4.9284088649500895,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 1.2201250066595126,
+        "S2_M0": 3.737356285424426,
+        "M0_CR_plus_minus": false,
+        "M3_classification": "CO_MINUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          -0.001022191714874765,
+          -0.001242041838123395
+        ],
+        "M0_torque_signs": [
+          "-",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.03143171954160681,
+        "Pi": 3.894051448849454,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.8988638058541992,
+        "S2_M0": 2.8877872853721556,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CO_MINUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          -2.9073588949610812e-05,
+          -0.0011162936221029538
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": false
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.03317792618280719,
+        "Pi": 3.494938142457682,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.7749031534984908,
+        "S2_M0": 2.559975750074164,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0005163287463770858,
+          -0.001047535330710707
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.03492413282400757,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.036670339465207945,
+        "Pi": 2.860935758338375,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.5779882727569354,
+        "S2_M0": 2.0392381760762506,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0017044981104137131,
+          -0.0008980300252297211
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.03841654610640833,
+        "Pi": 2.606761713692609,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.4990443240546837,
+        "S2_M0": 1.8304724384427369,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.00234565417945333,
+          -0.0008171797184534043
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.04190895938880908,
+        "Pi": 2.1904039399778186,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.36972771041015334,
+        "S2_M0": 1.4884971676390044,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.003720133316263803,
+          -0.0006429713363754817
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "A",
+        "value": 0.04540137267120984,
+        "Pi": 1.8663796885018094,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.2690889771262053,
+        "S2_M0": 1.2223599939365866,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.005216783848087681,
+          -0.0004515333699080881
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.10942167133058744,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010696213799321237,
+          -0.0006640733259721134
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.12505333866352852,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010760104244763144,
+          -0.0008927718334097095
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.1406850059964696,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.001085670663524135,
+          -0.0009629247416931549
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.14850083966294012,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010901923761247167,
+          -0.0009715929839356124
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.15631667332941065,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.1641325069958812,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010984259955840322,
+          -0.0009757432939843737
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.17194834066235173,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0011021711939995368,
+          -0.0009757562436910657
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.18758000799529279,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.001109024896241298,
+          -0.0009748581688905128
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "B",
+        "value": 0.20321167532823387,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0011151540094552367,
+          -0.0009736879724047188
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 2.2537741546612233,
+        "Pi": 3.154181673568058,
+        "nu": 2.2537741546612233,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.9558107981284685,
+        "S2_M0": 3.25727939585639,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CO_MINUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          -0.0003409999777617085,
+          -0.0016328196630846165
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": false
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 2.5757418910413983,
+        "Pi": 3.154181673568058,
+        "nu": 2.5757418910413983,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.8363344483624098,
+        "S2_M0": 2.850119471374341,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.00026003125897166565,
+          -0.0013584497409808356
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 2.8977096274215732,
+        "Pi": 3.154181673568058,
+        "nu": 2.8977096274215732,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.7434083985443642,
+        "S2_M0": 2.5334395301105253,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0007246678508293737,
+          -0.0011462053919233386
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 3.05869349561166,
+        "Pi": 3.154181673568058,
+        "nu": 3.05869349561166,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.7042816407262399,
+        "S2_M0": 2.4001006074731297,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0009195103412849836,
+          -0.00105588962090011
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 3.2196773638017477,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 3.3806612319918354,
+        "Pi": 3.154181673568058,
+        "nu": 3.3806612319918354,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6372071987523122,
+        "S2_M0": 2.171519597237593,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0012523050398649419,
+          -0.0009002906706879389
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 3.5416451001819227,
+        "Pi": 3.154181673568058,
+        "nu": 3.5416451001819227,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6082432351726617,
+        "S2_M0": 2.0728141609995205,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0013954758106060534,
+          -0.0008302899042092139
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 3.863612836562097,
+        "Pi": 3.154181673568058,
+        "nu": 3.863612836562097,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.5575562989082733,
+        "S2_M0": 1.9000796475828943,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0016451190835031664,
+          -0.0006966284915183461
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "nu",
+        "value": 4.185580572942272,
+        "Pi": 3.154181673568058,
+        "nu": 4.185580572942272,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.514667352838406,
+        "S2_M0": 1.7539196746919021,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0018556357326938028,
+          -0.0005632892075282481
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.010771991398334476,
+        "Pi": 2.2079271714976403,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.375170253106149,
+        "S2_M0": 1.5028898659928303,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0025631476926302067,
+          -0.0004471982332712609
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.01231084731238226,
+        "Pi": 2.5233453388544467,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.4731360216340754,
+        "S2_M0": 1.7619584363617113,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.002072173355333831,
+          -0.0006253288310845277
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.013849703226430043,
+        "Pi": 2.838763506211252,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.5711017901620016,
+        "S2_M0": 2.0210270067305918,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0015825022674496782,
+          -0.0008013827251189002
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.014619131183453933,
+        "Pi": 2.996472589889655,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6200846744259647,
+        "S2_M0": 2.1505612919150323,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0013382337598918865,
+          -0.0008884862538140177
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.015388559140477825,
+        "Pi": 3.154181673568058,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.6690675586899278,
+        "S2_M0": 2.280095577099473,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0010944400480101132,
+          -0.000974797034695844
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.016157987097501717,
+        "Pi": 3.311890757246461,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.718050442953891,
+        "S2_M0": 2.4096298622839134,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0008512912952200881,
+          -0.0010600965206641866
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.016927415054525607,
+        "Pi": 3.469599840924864,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.7670333272178542,
+        "S2_M0": 2.5391641474683535,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0006089040355481862,
+          -0.0011440785284940259
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.018466270968573388,
+        "Pi": 3.785018008281669,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.8649990957457802,
+        "S2_M0": 2.798232717837234,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CR_PLUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          0.0001265058019184329,
+          -0.0013063374752121941
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": true
+      },
+      {
+        "varied_parameter": "beta",
+        "value": 0.020005126882621172,
+        "Pi": 4.1004361756384755,
+        "nu": 3.2196773638017477,
+        "alpha2": 0.37814609618000145,
+        "S1_M0": 0.9629648642737066,
+        "S2_M0": 3.0573012882061152,
+        "M0_CR_plus_minus": true,
+        "M3_classification": "CO_MINUS_MINUS",
+        "M3_status": "VERIFIED_ROOT",
+        "M3_omega_over_Omega1": [
+          -0.0003527824101410044,
+          -0.0014569162155895546
+        ],
+        "M0_torque_signs": [
+          "+",
+          "-"
+        ],
+        "M0_sign_match_M3": false
+      }
+    ],
+    "total": 36,
+    "sign_matches_omega_near_zero_tolerance_1e-5": 33,
+    "warning": "This reuses published branch points and is not an independent M3 scan. M0 predicts signs from zero-speed torque and assumes positive effective angular damping; a point near S=1 is intrinsically sensitive."
+  },
+  "assumptions": [
+    "c_(+2)=c_(-4)=1 normalized leading MFS coefficients",
+    "A,B,beta>0; nu>0; alpha_i>0; lambda_i small",
+    "zero slow orbit speed for the torque threshold",
+    "Coulomb, radial drag, higher harmonics, finite orbit speed omitted",
+    "positive effective angular damping needed to transfer torque sign to stationary omega sign"
+  ]
+}

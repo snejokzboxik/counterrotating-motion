@@ -1,0 +1,89 @@
+{
+  "source": "V21A verified nominal M3 root; 192x16x16 Fourier collocation",
+  "root": {
+    "radii_R": [
+      0.5550374649008335,
+      0.7513382762325129
+    ],
+    "omega_over_Omega1": [
+      0.0010944455997807332,
+      -0.0009747968388241109
+    ],
+    "frequency_Hz": [
+      0.05472227998903666,
+      -0.04873984194120554
+    ],
+    "mean_z_R": [
+      -0.3225715212708577,
+      -0.8538342435180669
+    ]
+  },
+  "model": "Cunningham-corrected Stokes times Schiller-Naumann as used in V20B/V21",
+  "particles": [
+    {
+      "particle": 1,
+      "Re_star": 6.643729577002431,
+      "M3_grid": [
+        192,
+        16,
+        16
+      ],
+      "M3_inner_residual": 4.078850474511155e-09,
+      "Re_statistics": {
+        "min": 0.005003881322610076,
+        "p05": 0.05453630501015815,
+        "median": 0.33201369484591603,
+        "mean": 0.30285124368694344,
+        "p95": 0.48874217784150636,
+        "max": 0.5046553428060846
+      },
+      "SN_relative_drag_factor_statistics": {
+        "min": 1.0039401718933931,
+        "median": 1.0703275389393285,
+        "mean": 1.0639931281190693,
+        "p95": 1.0917252903591546,
+        "max": 1.0937667230360173
+      },
+      "mean_drag_force_magnitude_linear": 0.011146467563745266,
+      "mean_drag_force_magnitude_SN": 0.011980341890395341,
+      "mean_SN_increment_over_linear_force": 0.0008338743266500769,
+      "mean_drag_torque_linear_at_M3_state": -0.00034493827287590626,
+      "mean_drag_torque_SN_at_M3_state": -0.00038672212241128417,
+      "mean_SN_increment_over_linear_torque": -4.178384953537794e-05,
+      "caveat": "Frozen-orbit M3 collocation statistics include modeled RF micromotion, not independent full-RF sampling; drag comparison holds the M3 state fixed and is not a frequency re-solve."
+    },
+    {
+      "particle": 2,
+      "Re_star": 43.76775863741318,
+      "M3_grid": [
+        192,
+        16,
+        16
+      ],
+      "M3_inner_residual": 1.597536255833229e-10,
+      "Re_statistics": {
+        "min": 0.40801851825374325,
+        "p05": 0.5393808674059442,
+        "median": 1.605488675382528,
+        "mean": 1.4989271956725823,
+        "p95": 2.21490182727555,
+        "max": 2.279488003651312
+      },
+      "SN_relative_drag_factor_statistics": {
+        "min": 1.0810267337904742,
+        "median": 1.2076554993449793,
+        "mean": 1.1944300991312762,
+        "p95": 1.2590298343397963,
+        "max": 1.2641955460000731
+      },
+      "mean_drag_force_magnitude_linear": 0.006074304699253468,
+      "mean_drag_force_magnitude_SN": 0.007383973129501034,
+      "mean_SN_increment_over_linear_force": 0.0013096684302475678,
+      "mean_drag_torque_linear_at_M3_state": 8.424570602084135e-05,
+      "mean_drag_torque_SN_at_M3_state": 9.218925156496375e-05,
+      "mean_SN_increment_over_linear_torque": 7.943545544122406e-06,
+      "caveat": "Frozen-orbit M3 collocation statistics include modeled RF micromotion, not independent full-RF sampling; drag comparison holds the M3 state fixed and is not a frequency re-solve."
+    }
+  ],
+  "interpretation": "Re_* cannot be removed from full physical dynamics by coordinate scaling. These statistics quantify the nonlinear correction on the M3 fast-response grid; they do not establish transient-flow validity or replace RF trajectory data."
+}

@@ -1,0 +1,83 @@
+% V2 derivation. This is a leading-order conditional criterion, not a theorem
+% for the full RF equations or a stability result.
+\section{Leading radius-eliminated criterion}
+Let $\tau=\Omega_1t$, $r=\rho/R$, $\alpha_i=(q_i/m_i)/(q_1/m_1)$,
+and normalize the leading $k=+2,-4$ MFS coefficients to one. Write
+\begin{equation}
+K_{1i}=1+\alpha_i\beta,\quad K_{2i}=\nu^2+\alpha_i\beta,\quad
+D_{1i}=K_{1i}^2+\lambda_i^2,\quad
+D_{2i}=K_{2i}^2+(\lambda_i\nu)^2.
+\end{equation}
+At zero slow angular speed, with Coulomb, radial drag, centrifugal force,
+higher harmonics, and finite-size effects omitted, the mean radial balance is
+\begin{equation}
+0=\alpha_i\beta r_i-
+\frac{4\alpha_i^2A^2K_{1i}}{D_{1i}}r_i-
+\frac{48\alpha_i^2B^2K_{2i}}{D_{2i}}r_i^5.
+\end{equation}
+For general leading coefficients $c_2,c_{-4}$, the factors $A^2$ and $B^2$
+are replaced by $A^2|c_2|^2$ and $B^2|c_{-4}|^2$. Define
+\begin{equation}
+U_i=\alpha_i\beta-\frac{4\alpha_i^2A^2|c_2|^2K_{1i}}{D_{1i}},\qquad
+V_i=\frac{48\alpha_i^2B^2|c_{-4}|^2K_{2i}}{D_{2i}}.
+\end{equation}
+A positive algebraic radius exists iff $U_i>0$ and $V_i>0$; it is
+\begin{equation}
+r_i^4=\frac{U_i}{V_i}=
+\frac{\left(\alpha_i\beta D_{1i}-4\alpha_i^2A^2|c_2|^2K_{1i}\right)D_{2i}}
+{48\alpha_i^2B^2|c_{-4}|^2K_{2i}D_{1i}}.
+\end{equation}
+The physical aperture additionally requires $r_i+a_i/R<r_{\rm ap}/R$.
+Small-micromotion validity is a separate condition, e.g. a posteriori
+$\max|\boldsymbol\xi_{\rm micro}|/r_i\ll1$ and no unresolved near-resonant
+combination modes. A positive root alone is not a stability proof.
+
+The linearized scalar radial force at fixed $\omega=0$ has slope
+$F_r'(r_i^*)=-4U_i<0$, a restoring slope in that restricted radial section.
+The full slow dynamics couples radius, radial velocity, angular momentum, and
+the Fourier response; stability must use its coupled Jacobian. In particular,
+eliminating $r_i$ from a stationary algebraic balance does not eliminate a
+radial dynamical degree of freedom.
+
+For the leading traveling modes, the slow-orbit RF torque at zero mean orbit
+speed is proportional to
+\begin{equation}
+\mathcal T_i(0)=\frac{4\alpha_i^2A^2|c_2|^2\lambda_i}{D_{1i}}r_i^2-
+\frac{48\alpha_i^2B^2|c_{-4}|^2\lambda_i\nu}{D_{2i}}r_i^6.
+\end{equation}
+Its zero is
+\begin{equation}
+r_{\rm cr,i}^4=\frac{A^2|c_2|^2D_{2i}}
+{12B^2|c_{-4}|^2\nu D_{1i}}.
+\end{equation}
+Thus $S_i=(r_i/r_{\rm cr,i})^4$ obeys the exactly simplified identity
+within this leading finite-$\lambda$, finite-DC radial/torque model:
+\begin{equation}
+S_i=\frac{\nu}{K_{2i}}
+\left[\frac{\beta D_{1i}}{4\alpha_i A^2|c_2|^2}-K_{1i}\right].
+\end{equation}
+The $B$ and $c_{-4}$ factors cancel because the radial $k=-4$ force and its
+zero-speed slow torque both scale as $B^2|c_{-4}|^2r^6$. This algebraic
+cancellation does not survive as a statement that $B$ is physically
+irrelevant: $B$ sets $r_i$, aperture margin, and the validity of the orbit
+ansatz. It is also singular at $B=0$, where the confining $r^5$ radial term
+vanishes and the finite-radius root may disappear.
+
+If $c_2=c_{-4}=1$, $\lambda_i\to0$, and $|\alpha_i\beta|\ll1$ so that
+$K_{1i}\simeq1$, $K_{2i}\simeq\nu^2$, $D_{1i}\simeq1$,
+$D_{2i}\simeq\nu^4$, then
+\begin{equation}
+S_i\simeq\frac{\Pi/\alpha_i-1}{\nu},\qquad
+\Pi=\frac{\beta}{4A^2}.
+\end{equation}
+For $\alpha_1=1$, $0<\alpha_2<1$, and $\nu>0$, the strict M0 sign
+conditions $0<S_1<1$ and $S_2>1$ reduce to
+\begin{equation}
+\max\{1,\alpha_2(1+\nu)\}<\Pi<1+\nu.
+\end{equation}
+This predicts the signs of the zero-speed slow torque. Transfer to stationary
+orbit signs $\omega_1>0,\omega_2<0$ additionally requires that the total
+slow torque have a relevant root and positive effective angular damping
+$D_i^{\rm eff}=-\partial_\omega\mathcal T_i|_{\rm root}>0$, with no other
+nearby root or non-monotone branch. It is not an unconditional sign theorem
+for finite-speed M3 or the full RF system.

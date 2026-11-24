@@ -1,0 +1,203 @@
+{
+  "schema": "counterrotating-motion-v2-manifest-1",
+  "branch": "research/three-parameter-counterrotation-theory",
+  "base_commit": "97dbf1cd004580a7ec7c698ffe94ad764795da8b",
+  "source_references": {
+    "V17C20B": "d1bf252649e174166becf464269318b5f97acd5d",
+    "V17C21A": "94b8edfaac8a1f0b3eb518ea4c7594a80d47daf8",
+    "V17C21B": "894c6896ce5927371708037ffa4a4021189d2b54"
+  },
+  "test_command": "python -m pytest -q tests",
+  "test_result": "11 passed",
+  "latex_build_status": "UNVERIFIED_BUILD: pdfLaTeX not installed; Tectonic not substituted",
+  "full_rf_new_integrations": 0,
+  "scientific_status": "M0 zero-speed slow-torque sign criterion established under stated assumptions; no full-RF attractor or exact boundary claimed",
+  "files": [
+    {
+      "path": ".github/workflows/build-chaos-pdf.yml",
+      "bytes": 1396,
+      "sha256": "b5b6d6b57db300fba17989266d75eb295a17ceb74bd341517b6da1ff330e64b3"
+    },
+    {
+      "path": "Counterrotating_Motion_Chaos_RU_Overleaf.zip",
+      "bytes": 68261,
+      "sha256": "9f001639ac396b5d66af61b04683e84e71f76b3d0e7d88241e9151514e40c24b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2166,
+      "sha256": "db46405f4737e0263e2e2de28b4ea7abb214164bfed1b183ee12fa9a7deb0f5c"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 2203,
+      "sha256": "f49e1f6ff3778aadda7170f10c9fb21794d1dab90d78c7395b2b2b3d3479177d"
+    },
+    {
+      "path": "data/analytic_phase_boundary.csv",
+      "bytes": 53538,
+      "sha256": "33f6dca9e6ee86c3fc3aca4f199cb2e5add2fa2551fe8738233918949ea91f3b"
+    },
+    {
+      "path": "data/m3_schiller_naumann_vs_linear.json",
+      "bytes": 2163,
+      "sha256": "12349d080c2b52d862b1beb6939a43a0c2806cd84dca3e189d3bb6d6df059460"
+    },
+    {
+      "path": "data/reynolds_m3_grid_audit.json",
+      "bytes": 3389,
+      "sha256": "7ff77500bc9b7f1ab95b27796b7467e6a1b8cc64e76398296d36cfd20e750f48"
+    },
+    {
+      "path": "data/three_parameter_criterion_validation.json",
+      "bytes": 24214,
+      "sha256": "2c9e3be093f861d5768b0994bbcf469604862059afccce9913c08cca1bf5a771"
+    },
+    {
+      "path": "figures/FIG03_three_parameter_M0_region.pdf",
+      "bytes": 42286,
+      "sha256": "9e98f4cdfd41911673e9e65cf7aee13e581baf4f9b03eda212a54546fada4b36"
+    },
+    {
+      "path": "figures/FIG03_three_parameter_M0_region.png",
+      "bytes": 391429,
+      "sha256": "0f71cd4e088279a0b35336740e446409fdfac4d376d9cb5e28971732da233e0d"
+    },
+    {
+      "path": "figures/FIG03_three_parameter_M0_region.svg",
+      "bytes": 132917,
+      "sha256": "dfa0b39e2829977a56a6b511826627d77f6c7bd262d9821fcfae55ea44f02899"
+    },
+    {
+      "path": "latex/chaos/README.md",
+      "bytes": 356,
+      "sha256": "8c2c80da15ef6c7dbfbc4a9a579fc62216537fa0599d2f9f72ab4a7f85c4d38e"
+    },
+    {
+      "path": "latex/chaos/figures/FIG01_m3_harmonic_torques.pdf",
+      "bytes": 18647,
+      "sha256": "c95102bfd2486e4898a8a483f2eddf360f66be622d11b2cb322d2fc0552cab2b"
+    },
+    {
+      "path": "latex/chaos/figures/FIG02_m3_fixed_radius_torque_vs_omega.pdf",
+      "bytes": 21437,
+      "sha256": "e88d0d2a9b33032533db7924f0f95a5f18fde5a9fa7f8d17a611f48ff209198c"
+    },
+    {
+      "path": "latex/chaos/figures/FIG03_three_parameter_M0_region.pdf",
+      "bytes": 42286,
+      "sha256": "9e98f4cdfd41911673e9e65cf7aee13e581baf4f9b03eda212a54546fada4b36"
+    },
+    {
+      "path": "latex/chaos/main.tex",
+      "bytes": 17987,
+      "sha256": "9b944084a3e326635acf0ac9c572873d9e21e9d01503d323dd06807d6421a528"
+    },
+    {
+      "path": "reports/BOUNDARY_VALIDATION_RU.md",
+      "bytes": 3752,
+      "sha256": "8a336b73e2593642001261a7df3462b88e7a7a32c04d55282f8bcd98ca1c6811"
+    },
+    {
+      "path": "reports/LATEX_BUILD_REPORT.md",
+      "bytes": 1640,
+      "sha256": "809732c0d1cce384c9e6653f14d1ca88523dc80edd12b7c69dbc668de216698e"
+    },
+    {
+      "path": "reports/NUMERICAL_VALIDATION_RU.md",
+      "bytes": 3243,
+      "sha256": "665432af8ed7413ae07ddd2438852d368cf3f6df830d6a1b781574edc5b0bd8f"
+    },
+    {
+      "path": "reports/PHYSICAL_MECHANISM_RU.md",
+      "bytes": 6011,
+      "sha256": "e10357a116378f254b65e91acb7564b280d70eeab7acc6b9091d7185ddc45307"
+    },
+    {
+      "path": "reports/RESEARCH_LOOP_LOG.md",
+      "bytes": 9712,
+      "sha256": "6ffab73b8e8931037ed5d1695337505dbf58a88e477e84c7d22cd55a1f475d25"
+    },
+    {
+      "path": "reports/REYNOLDS_VALIDITY_RU.md",
+      "bytes": 3950,
+      "sha256": "b6991579ca23e8ef888eaa19942346302defd86bf1671fca015acc8a9d901d8e"
+    },
+    {
+      "path": "reports/SESSION_HANDOFF.md",
+      "bytes": 4471,
+      "sha256": "1cfcfca730791f7fef8f1afda17b3a502472ea348712c9fc1792af90b039d919"
+    },
+    {
+      "path": "reports/STABILITY_AND_ORBITAL_ORDER_RU.md",
+      "bytes": 3245,
+      "sha256": "a446a6ab7ec5f6522adcc3f70f3dd0c4f5401be34a0c4fb72b78e148f293b4d8"
+    },
+    {
+      "path": "reports/THREE_PARAMETER_THEORY_RU.md",
+      "bytes": 12366,
+      "sha256": "5835a3e5bedcb52f39d6edcead9ed2e9c40381c77ca2825849ed131fd862a98a"
+    },
+    {
+      "path": "tests/test_three_parameter_criterion.py",
+      "bytes": 3102,
+      "sha256": "c31c3eb446f58894e85cefc35f1a71b0647d0f166053f57c4209a7c9f6f53bed"
+    },
+    {
+      "path": "theory/ANGULAR_MOMENTUM_MECHANISM.tex",
+      "bytes": 983,
+      "sha256": "70f1b66ce9ecd674216aae3367890bb5efbe7d4edff3986762eda33cf74c85b3"
+    },
+    {
+      "path": "theory/COUNTERROTATION_INEQUALITY.tex",
+      "bytes": 825,
+      "sha256": "7ac500239a1f34661c30e9edf58826378d616f6397698a405c3885588a1c2e8d"
+    },
+    {
+      "path": "theory/FINITE_DRAG_CORRECTIONS.tex",
+      "bytes": 726,
+      "sha256": "0afeca173b09bde12f746cf205a1a9f7ad6caa2fbc3bfc3adde5ea578c435f66"
+    },
+    {
+      "path": "theory/RADIUS_ELIMINATION.tex",
+      "bytes": 742,
+      "sha256": "2bdccb6c3bd9d42532c9d3aa27a8f287d566c9fcaa1bd69c6d0dfd0d4c871486"
+    },
+    {
+      "path": "theory/REYNOLDS_REDUCTION.tex",
+      "bytes": 1030,
+      "sha256": "93c850bea066e96d064efb4a2d8b9cc359e5e449f708cbb2553a944742a050f2"
+    },
+    {
+      "path": "theory/THREE_PARAMETER_DERIVATION.tex",
+      "bytes": 3864,
+      "sha256": "35c1aa612a8a740ee6aa92912fb06dfdf8298a67a48c3ceb88003cbf645f70f6"
+    },
+    {
+      "path": "theory/build_v2_manifest.py",
+      "bytes": 2275,
+      "sha256": "8c6ea0889f3b1a9812304b563e8218ea3f89dd3e47901bd06afffce0344453a4"
+    },
+    {
+      "path": "theory/drag_model_comparison.py",
+      "bytes": 3353,
+      "sha256": "b957c91002da6f7104d9d21e5d7bc4f4e9bae62776ee3536c41af779f5f1d899"
+    },
+    {
+      "path": "theory/plot_three_parameter_boundary.py",
+      "bytes": 3603,
+      "sha256": "800070afb1542df05d7a70222fa5db45f8890ba4ad9ff5d8a099e35711d38911"
+    },
+    {
+      "path": "theory/reynolds_audit.py",
+      "bytes": 5011,
+      "sha256": "8d1e1a1e29d52a844ac061fb33ee517d97ebc7f798798e0b0cb155b868065e56"
+    },
+    {
+      "path": "theory/three_parameter_criterion.py",
+      "bytes": 6473,
+      "sha256": "e9cbc955214b38300b9d39080cebc8ff93c78cf0293937a2b5dc20f3b1a24c17"
+    }
+  ],
+  "manifest_note": "This manifest excludes its own hash; see MANIFEST.sha256 for the manifest file checksum."
+}
