@@ -1,0 +1,162 @@
+{
+  "source_commit": "4f8232b8d9d1c5ef328f4e6142c102e3749a7690",
+  "build_run": 45465544715,
+  "pages": 8,
+  "files": [
+    {
+      "path": "Counterrotating_Motion_Semyon_Discussion_RU.pdf",
+      "bytes": 450684,
+      "sha256": "897d7a0d84ab436d3c9efeb30b43450c364bc2e184f03e9edd672f89aef3d7d7"
+    },
+    {
+      "path": "Counterrotating_Motion_Semyon_Discussion_RU.zip",
+      "bytes": 93283,
+      "sha256": "567063f2dddf5f80badab9920d5528075532871a8c51fd350ebe4b9eab79b52a"
+    },
+    {
+      "path": "discussion/.gitignore",
+      "bytes": 14,
+      "sha256": "169fbdc8415f0309f55e5a31c1719c4dac886daa4ae5ca84538721585b648600"
+    },
+    {
+      "path": "discussion/code/figures.py",
+      "bytes": 5202,
+      "sha256": "b051aadc79629b9abe4ca4828b75bb4b0e1a8d3b7b2369cc9574cd8297734ec0"
+    },
+    {
+      "path": "discussion/code/manuscript.py",
+      "bytes": 39227,
+      "sha256": "70d4bcf3936a9aeac0ee7cdcb73d270f3dec905b7f6da4220bf801fce5e293f9"
+    },
+    {
+      "path": "discussion/code/package.py",
+      "bytes": 378,
+      "sha256": "962140ac53a4af4d0dcc37a86a3507d15fdd9c63b3080e90febb1dcd69366a43"
+    },
+    {
+      "path": "discussion/COMPILATION.log",
+      "bytes": 38279,
+      "sha256": "112e946e1fda69bbd54aeee14b0aaf7857a6231aef64f7cb69cc6edcf4de578c"
+    },
+    {
+      "path": "discussion/COMPILATION_AND_VISUAL_AUDIT_RU.md",
+      "bytes": 3201,
+      "sha256": "3299644c408ade7e915083434be2d258293e9f37cde6bda952f981fbb8be5cba"
+    },
+    {
+      "path": "discussion/data/m3_nominal_torque_decomposition.json",
+      "bytes": 9086,
+      "sha256": "f51e2d232b3e0cf0350fe8ecddd0fc459794568fe13aac77eb920e23d3aec3ad"
+    },
+    {
+      "path": "discussion/data/m3_schiller_naumann_vs_linear.json",
+      "bytes": 2163,
+      "sha256": "12349d080c2b52d862b1beb6939a43a0c2806cd84dca3e189d3bb6d6df059460"
+    },
+    {
+      "path": "discussion/data/radial_curves.json",
+      "bytes": 81304,
+      "sha256": "d48e1c1376764e68e54659627ff76c2590690252561e9f765e20401c739ce9e6"
+    },
+    {
+      "path": "discussion/data/radial_localization_validation.json",
+      "bytes": 8112,
+      "sha256": "e44f7b2d9cb933c9fd867be5354159270129c005d6834c57c2a86bd7b2355443"
+    },
+    {
+      "path": "discussion/data/three_parameter_criterion_validation.json",
+      "bytes": 24214,
+      "sha256": "2c9e3be093f861d5768b0994bbcf469604862059afccce9913c08cca1bf5a771"
+    },
+    {
+      "path": "discussion/figures/FIG01.pdf",
+      "bytes": 19947,
+      "sha256": "a3ebe5de0e824485dcbbf67181b36c31ba7243fcfee0ba598643c1a979c507c9"
+    },
+    {
+      "path": "discussion/figures/FIG01.png",
+      "bytes": 232597,
+      "sha256": "be893852ab9805dba8347104c5200dffe19470791b72cb97876d2b381cb1d388"
+    },
+    {
+      "path": "discussion/figures/FIG01.svg",
+      "bytes": 19994,
+      "sha256": "a419ed7fe77543a47393b1cdfaf3005a84522641370b98ceb80e178c30d51f7e"
+    },
+    {
+      "path": "discussion/figures/FIG02.pdf",
+      "bytes": 17534,
+      "sha256": "e397666973b51ff05f623379e1d85c9a58720ecb3443a6e4670cc181a7498254"
+    },
+    {
+      "path": "discussion/figures/FIG02.png",
+      "bytes": 280835,
+      "sha256": "87fe17c9ff4fc57ae3f99aa2f9cb73755981340d51937728951701cb9ca03e14"
+    },
+    {
+      "path": "discussion/figures/FIG02.svg",
+      "bytes": 24632,
+      "sha256": "ca4726c2864e8863afc1e90624652d0c63a4dd04d63625801a048df0ef720772"
+    },
+    {
+      "path": "discussion/figures/FIG03.pdf",
+      "bytes": 20202,
+      "sha256": "10101f4d00b79449c74be6e8f8984d8cca9b1411964f61aae418dee1ee9e0c5d"
+    },
+    {
+      "path": "discussion/figures/FIG03.png",
+      "bytes": 461298,
+      "sha256": "bbd28032685b8157838c1a5785d815f65ff55331f565f9e836974fb1bf52a27a"
+    },
+    {
+      "path": "discussion/figures/FIG03.svg",
+      "bytes": 41542,
+      "sha256": "2e1b77720aa42de6b6cef18f055680103be288bbaa597046f2b072ec1a653868"
+    },
+    {
+      "path": "discussion/figures/FIG04.pdf",
+      "bytes": 30752,
+      "sha256": "5ec63d27204973cc85a21d6aa04daab2bddfa8e97ab68bcb27a6bb3716890600"
+    },
+    {
+      "path": "discussion/figures/FIG04.png",
+      "bytes": 234832,
+      "sha256": "95d839d62c64bf8b5a338a8fbfb78e6c3a2674240ba4a72842a5a9b9189fcd13"
+    },
+    {
+      "path": "discussion/figures/FIG04.svg",
+      "bytes": 68185,
+      "sha256": "87d3d78bcb477d1a9c32262d7aa227d3f495785842adf48994fa39954ccde7c9"
+    },
+    {
+      "path": "discussion/figures/FIG05.pdf",
+      "bytes": 17100,
+      "sha256": "a02eec3b9b2b7eb51a250631a141ac57c000a450df90c82af0a820992b0859ad"
+    },
+    {
+      "path": "discussion/figures/FIG05.png",
+      "bytes": 198115,
+      "sha256": "ce7c55ea58d6b8fdd662e1af9da5256929311e3322f5c773ed82dc4c38700159"
+    },
+    {
+      "path": "discussion/figures/FIG05.svg",
+      "bytes": 20250,
+      "sha256": "daabbae6415986b584efe5eae48f323c1cdf0534dfd013e806c39703f2d3d21c"
+    },
+    {
+      "path": "discussion/main.tex",
+      "bytes": 42819,
+      "sha256": "ceeb419ae71d6b1ecd531973b1486b721e0a5fb70109dc8ec1d4468fb93ba133"
+    },
+    {
+      "path": "discussion/MATHEMATICAL_AUDIT_RU.md",
+      "bytes": 5177,
+      "sha256": "bb79150176ea1700c858bda145b0a6d34d9cc77e0b4ef20af752e3ea3eca070f"
+    },
+    {
+      "path": "discussion/SCIENTIFIC_SUMMARY_RU.md",
+      "bytes": 1365,
+      "sha256": "d8ea2025e6f16ff98d657ccabcc2dd85d13d071cae368573577e57d59919c8c0"
+    }
+  ]
+}
