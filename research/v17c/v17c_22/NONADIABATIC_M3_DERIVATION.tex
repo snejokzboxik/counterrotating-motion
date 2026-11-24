@@ -1,0 +1,172 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,bm}
+\usepackage[margin=25mm]{geometry}
+\title{V17C.22: Nonadiabatic extension of the M3 micromotion closure}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Scope and notation}
+This note derives the terms omitted when the converged V17C.21.1 M3
+Fourier--collocation solution is treated as a frozen function of the slow
+orbit.  Time is $\tau=\Omega_1 t$.  The prescribed RF phases satisfy
+\begin{equation}
+ \dot\psi_1=1,\qquad \dot\psi_2=\nu,
+\end{equation}
+and the slow orbital phase of particle $i$ satisfies $\dot\theta_i=\omega_i$.
+For a moving-frame representation write
+\begin{equation}
+ \mathbf r_{i,\perp}=e^{i\theta_i}\bigl(r_i+\xi_i(\theta_i,\psi_1,\psi_2;X_i)\bigr),
+ \qquad z_i=Z_i+\zeta_i,
+ \qquad X_i=(r_i,u_i,\omega_i,Z_i,w_i).
+\end{equation}
+The dependence on all slow coordinates is explicit.  The current M3 closure
+sets $\dot X_i=0$ while solving its fast Fourier equation.
+
+\section{Material derivative of the Fourier response}
+Define the phase transport operator
+\begin{equation}
+ \mathcal L_i(X_i)=\omega_i\partial_{\theta_i}
+                 +\partial_{\psi_1}+\nu\partial_{\psi_2}.
+\end{equation}
+Along a nonstationary slow orbit, the derivative is not $\mathcal L_i$ alone:
+\begin{equation}
+ \mathcal D_i=\mathcal L_i(X_i)+\dot X_i\cdot\nabla_{X_i}.
+\end{equation}
+Consequently,
+\begin{align}
+ \dot\xi_i&=\mathcal L_i\xi_i+\xi_{i,X}\dot X_i,\\
+ \ddot\xi_i&=\mathcal L_i^2\xi_i
+ +\dot\omega_i\,\partial_{\theta_i}\xi_i
+ +2\mathcal L_i(\xi_{i,X}\dot X_i)
+ +\xi_{i,X}\ddot X_i
+ +\xi_{i,XX}[\dot X_i,\dot X_i].
+ \label{eq:material-second}
+\end{align}
+The term $\dot\omega_i\partial_{\theta_i}\xi_i$ is the derivative of the
+phase-transport operator itself.  The last two terms are the acceleration
+and curvature terms of the slow-state-dependent response.  Formula
+\eqref{eq:material-second} follows by applying $\mathcal D_i$ twice; it does
+not assume a perturbation expansion.
+
+\section{Moving-frame acceleration}
+Let $J$ denote a $90^\circ$ rotation in the transverse plane, equivalently
+multiplication by $i$.  Differentiating $e^{i\theta_i}(r_i+\xi_i)$ gives
+\begin{align}
+ e^{-i\theta_i}\ddot{\mathbf r}_{i,\perp}
+ ={}&\ddot r_i-r_i\omega_i^2
+ +i(2\omega_i u_i+r_i\dot\omega_i)\\
+ &+\ddot\xi_i+2i\omega_i\dot\xi_i
+ +(i\dot\omega_i-\omega_i^2)\xi_i.
+ \label{eq:rot-accel}
+\end{align}
+The axial acceleration is $\ddot z_i=\ddot Z_i+\ddot\zeta_i$.  The terms
+proportional to $\omega_i$, $\dot\omega_i$, $u_i$, and $\ddot r_i$ must be
+kept consistently in a transient closure.  At a circular averaged root
+($u_i=w_i=\dot X_i=0$), the nonadiabatic material-derivative terms vanish;
+therefore this correction changes the linear response and relaxation, not
+the defining stationary root to first order.
+
+\section{Nonlinear drag response}
+For the adopted Cunningham-corrected Stokes--Schiller--Naumann model,
+\begin{equation}
+ \mathbf d_i(\mathbf v)=-\lambda_i\left[1+0.15(\chi_i|\mathbf v|)^{0.687}\right]\mathbf v,
+ \qquad \chi_i=\mathrm{Re}_{i,\mathrm{per\ speed}}.
+\end{equation}
+Its velocity derivative is
+\begin{equation}
+ D_{\mathbf v}\mathbf d_i=-\lambda_i\left[
+ (1+0.15\chi_i^{0.687}|\mathbf v|^{0.687})I
+ +0.10305\chi_i^{0.687}|\mathbf v|^{-1.313}
+   \mathbf v\mathbf v^{\mathsf T}\right],
+ \label{eq:drag-jac}
+\end{equation}
+with the continuous limiting value at $|\mathbf v|=0$.  The velocity used in
+\eqref{eq:drag-jac} contains the slow orbital velocity, the rotating-frame
+terms, and $\dot\xi_i=\mathcal L_i\xi_i+\xi_{i,X}\dot X_i$.  Thus a first
+nonadiabatic correction changes both the mean drag force and mean drag torque;
+replacing it by a scalar drag evaluated only at the mean velocity is not
+consistent with Schiller--Naumann nonlinearity.
+
+\section{Dynamic Fourier--Galerkin closure}
+Let $\mathcal R_i(\xi_i;X_i,\psi_1,\psi_2)$ denote the original V21.1
+discretized fast residual, including all eight complex MFS modes and the
+Fourier projection of the nonlinear drag.  The frozen closure solves
+$\mathcal R_i=0$ after selecting the fast subspace.  A dynamic M3+ closure
+replaces the frozen derivative occurrences by \eqref{eq:material-second}
+and \eqref{eq:rot-accel}, evaluates drag at the corresponding full velocity,
+and solves jointly with the slow force/torque balances.  If
+\begin{equation}
+ \mathcal G_i(\xi_i,X_i)=0
+\end{equation}
+is differentiable and its fast-subspace Jacobian is invertible, then
+\begin{equation}
+ \xi_{i,X}=-\mathcal G_{i,\xi}^{-1}\mathcal G_{i,X}.
+\end{equation}
+Second derivatives follow by differentiating this equation again or by
+second-order automatic differentiation.  No empirical fit coefficient is
+introduced.  The coupled solve must include the unknown $\dot X_i$ and
+$\ddot X_i$ consistently; evaluating the correction with arbitrary prescribed
+accelerations is not a closed slow-flow model.
+
+\section{Pair phases and Coulomb force}
+The V21.1 two-particle closure uses a product average over independent ring
+phases.  This is appropriate only when both phases are nonresonant and sample
+their torus uniformly over the averaging window.  The full pair Coulomb force
+is
+\begin{equation}
+ \mathbf F^C_1=C_{12}\frac{\mathbf r_1-\mathbf r_2}
+ {|\mathbf r_1-\mathbf r_2|^3},\qquad
+ \mathbf F^C_2=-\frac{m_1}{m_2}\mathbf F^C_1.
+\end{equation}
+For a phase-resolved M3+ computation, its Fourier projection must retain both
+orbital angles $(\theta_1,\theta_2)$, or a resonant relative phase when a
+combination frequency is slow.  An independent-ring Coulomb average cannot
+represent phase locking, close-approach modulation, or the tangential torque
+along such a locked pair orbit.
+
+\section{Invariant-set formulation and stability}
+For the full 12-dimensional mechanical model define the extended autonomous
+system
+\begin{equation}
+ \dot x=F(x,\psi_1,\psi_2),\qquad \dot\psi_1=1,\quad\dot\psi_2=\nu.
+\end{equation}
+A candidate smooth invariant torus parameterization $K$ with phase vector
+$\varphi$ and frequency vector $\varpi$ must solve
+\begin{equation}
+ DK(\varphi)\varpi=F_{\mathrm{ext}}(K(\varphi)).
+ \label{eq:invariance}
+\end{equation}
+The phase vector can contain the two external RF angles and zero, one, or two
+independent orbital angles.  Its dimension is a result to be tested, not
+assumed.  A Fourier parameterization of \eqref{eq:invariance}, with gauge
+conditions fixing phase origins, provides a direct route to an invariant
+object.  The linear cocycle $\dot\eta=D_xF(K(\varphi),\psi)\eta$ is then
+decomposed into tangent and normal components to measure normal attraction.
+An external phase-neutral exponent is not a mechanical instability; conversely,
+two small conditional mechanical exponents alone do not establish two torus
+angles.
+
+\section{Applicability test}
+At the nominal root, the orbital rates are about $10^{-3}\,\tau^{-1}$,
+while the RF phase rates are $1$ and $3.2197\,\tau^{-1}$.  This gives a
+clear frequency gap for the stationary orbit.  However, the least damped
+adiabatic slow-flow mode is $-0.10593\,\tau^{-1}$, whose e-fold time is only
+$9.44\,\tau=1.50$ RF1 periods.  The V21.1 fast/slow mask excludes modes below
+$\kappa_c=0.05\,\tau^{-1}$; therefore the ratio
+$|\Re\lambda_{\mathrm{slow}}|/\kappa_c\simeq2.12$ is not small for the
+boundary of the excluded band.  The force spectrum and response gain of each
+near-resonant mode must be included before assigning an error bound.  The
+available diagnostics do not yet supply such a bound or a converged M3+
+solution.
+
+\section{Conclusion}
+The equations above define the required nonadiabatic extension and show
+precisely why the old equilibrium Jacobian is insufficient for predicting
+full-system transient recovery.  The present V17C.22 results validate the
+full-system variation equations and quantify finite-time weak directions, but
+do not solve the dynamic Fourier closure or the invariant equation
+\eqref{eq:invariance}.  Accordingly, M3+ remains a derived, testable model
+formulation rather than a numerically validated stability predictor.
+\end{document}

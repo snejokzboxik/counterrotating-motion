@@ -1,0 +1,302 @@
+{
+  "study": "V17C.22 improved analytical theory for stable counterrotation",
+  "branch": "research/v17c22-counterrotation-attraction-theory",
+  "base_branch": "research/v17c21b-m3-bifurcation-diagrams",
+  "base_commit": "894c6896ce5927371708037ffa4a4021189d2b54",
+  "nominal_parameters_unchanged": true,
+  "scientific_status": "LONG_LIVED_COUNTERROTATION; transverse attraction and invariant torus unresolved",
+  "deliverables": [
+    {
+      "path": "research/v17c/v17c_22/ANALYTICAL_VS_FULL_STABILITY_RU.md",
+      "bytes": 4712,
+      "sha256": "0e0d62eb1c84033f55161b84d34d7ef9aee441fbc03441e17a0f2b1ba3f0c34d"
+    },
+    {
+      "path": "research/v17c/v17c_22/code/audit_stability_evidence.py",
+      "bytes": 20154,
+      "sha256": "519f4468393eae9eaf573e923cfd513dc90e896af34f47e96a88fa98b338e9c8"
+    },
+    {
+      "path": "research/v17c/v17c_22/code/build_manifest.py",
+      "bytes": 3112,
+      "sha256": "bcb69c5a93772ec694ec88d73e1df30aff051d806a1fea8b8cf73b7d044bb0da"
+    },
+    {
+      "path": "research/v17c/v17c_22/code/full_rf_short_perturbation.py",
+      "bytes": 11236,
+      "sha256": "8db71f8e5cb71919bb29a99b36691bce7f52ac0ca5f983609d573740d94b0f9e"
+    },
+    {
+      "path": "research/v17c/v17c_22/code/test_artifact_validation.py",
+      "bytes": 2265,
+      "sha256": "3710085743837330be485887ce1598be1b3d3e063225e8be6e5a749fa5e7cd74"
+    },
+    {
+      "path": "research/v17c/v17c_22/code/test_full_rf_jacobian.py",
+      "bytes": 4733,
+      "sha256": "b6f0e1d054da0ba9430a31273f16aba95b938dfe8ff1a59828b051eae807ed25"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG01_lyapunov_and_m3_spectra.pdf",
+      "bytes": 25810,
+      "sha256": "f4fa619b15d731ad09f3d996e1e920499edea30bf2356160316436e3cf19729b"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG01_lyapunov_and_m3_spectra.png",
+      "bytes": 405877,
+      "sha256": "6b428fd1673dc3a966ebcd5c812d74493b22a5823a3cba7056575f09ebe67233"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG01_lyapunov_and_m3_spectra.svg",
+      "bytes": 83026,
+      "sha256": "69ff17125d5431a6ee6b30c0574c6f3226f1ce426f9e57caac2f1737f203af33"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG02_phase_locked_perturbation_growth.pdf",
+      "bytes": 19703,
+      "sha256": "730d2ecdd3a1dba791737c0bc781066408aecb4fb72f412dca9ef9b51f0b956e"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG02_phase_locked_perturbation_growth.png",
+      "bytes": 228337,
+      "sha256": "9b80c76e8ec0fdc2f330f78f6094dc5b18b466b05e8860e83f2a2f9b9c169236"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG02_phase_locked_perturbation_growth.svg",
+      "bytes": 71430,
+      "sha256": "9adb7e9f76f4493b1b81bc7f9fd96ea9073a1a0ad9101d5717ebb9a9a655a55e"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG03_phase_dephasing_vs_observables.pdf",
+      "bytes": 28737,
+      "sha256": "713cf781064a31a80c239de1217e0eac09b78f9db9eab0db129303a05ccc9d5f"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG03_phase_dephasing_vs_observables.png",
+      "bytes": 647329,
+      "sha256": "c8ed312a8fb26bb407d127a766613c4a62cf7942f5b59a2572368cf0b2bdb5e1"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG03_phase_dephasing_vs_observables.svg",
+      "bytes": 158591,
+      "sha256": "fca05e24e3169925b25e3356c8c0cad98f2c47c4a27ed3cef4aac358cd648dbc"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG04_timescale_and_cutoff_audit.pdf",
+      "bytes": 25292,
+      "sha256": "14f49e029fddc3e1833f6f11281cd798d0dd865ddc9fb1ed6b5328bddeb7844f"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG04_timescale_and_cutoff_audit.png",
+      "bytes": 189280,
+      "sha256": "031d16e732dbfdfeb1096e3a318463690429a5ab64f1fef1b9725f84e8b8aedf"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG04_timescale_and_cutoff_audit.svg",
+      "bytes": 62142,
+      "sha256": "bf05f7cb6236aaf63ff54da65b2cb100da42e3c0d5dbccad59100a466eac2737"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG05_short_full_rf_perturbation_response.pdf",
+      "bytes": 44973,
+      "sha256": "a4929994592c8f46d32c10bb539b1d7e30491e01230b1dacc490caf52e420cc1"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG05_short_full_rf_perturbation_response.png",
+      "bytes": 955258,
+      "sha256": "bf1c63148b0a7eb7075f71741499e784010193f5816acf3ca88d97abc52d85d4"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG05_short_full_rf_perturbation_response.svg",
+      "bytes": 226582,
+      "sha256": "53ada31200127b0ffdf1dfbf8b84c42d04f29802f98e6ffa4151500502c4f64e"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG06_observed_invariant_set_projection.pdf",
+      "bytes": 516649,
+      "sha256": "f2de4789d59b0b03f4444469752f31f5caf98712f9686273485399f29677e90e"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG06_observed_invariant_set_projection.png",
+      "bytes": 6300732,
+      "sha256": "252b3b94af7724c5716428bd8a542d5380d5c3b6325c1c8831a3692e29e7b15e"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG06_observed_invariant_set_projection.svg",
+      "bytes": 762865,
+      "sha256": "13e6b597a0160c8d48c13bbf280259806de7369aa625fb689f9f5e21a80f896a"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG07_m3_vs_full_rf_stability_spectra.pdf",
+      "bytes": 21932,
+      "sha256": "7b8d4a429de99323ad76f13f52887ba2a0523f52c821be58e820d4eceb13a85c"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG07_m3_vs_full_rf_stability_spectra.png",
+      "bytes": 234556,
+      "sha256": "48b429ebddcf143da5c3dfe906a9a6c2d39b66a178ee430f8e469e0d95b55bdb"
+    },
+    {
+      "path": "research/v17c/v17c_22/figures/FIG07_m3_vs_full_rf_stability_spectra.svg",
+      "bytes": 57128,
+      "sha256": "200a957e1d64dec7eeddd07ee79b430a2e365ab0041182b128b1253c7019ddbc"
+    },
+    {
+      "path": "research/v17c/v17c_22/FULL_RF_VARIATIONAL_STABILITY_RU.md",
+      "bytes": 5055,
+      "sha256": "a20dd58ff57cfdfc2ebac77f5acbb29d8a70db4a1fada47b1950939e7951d6a9"
+    },
+    {
+      "path": "research/v17c/v17c_22/INVARIANT_SET_GEOMETRY_RU.md",
+      "bytes": 4631,
+      "sha256": "8dcc995b20fd91d2a14c63dda15947def48468a7ac71685fb4d667314ca6d446"
+    },
+    {
+      "path": "research/v17c/v17c_22/M3_PLUS_ANALYTICAL_MODEL_RU.md",
+      "bytes": 7025,
+      "sha256": "2473aa0c58cfe2e9fe5dcbe7d35322db8577a03102bc0832bee8dd386f658b2e"
+    },
+    {
+      "path": "research/v17c/v17c_22/NONADIABATIC_M3_DERIVATION.tex",
+      "bytes": 8167,
+      "sha256": "116512638cccdc9df7839a8d9cd8143a9d9823dd1cd9998d8594516a0e24086a"
+    },
+    {
+      "path": "research/v17c/v17c_22/NUMERICAL_VALIDATION_RU.md",
+      "bytes": 5241,
+      "sha256": "1a14f5dd0a059053640da31a67eaf810f55d196455c8e90a339b60eefad6a250"
+    },
+    {
+      "path": "research/v17c/v17c_22/PERTURBATION_RECOVERY_RU.md",
+      "bytes": 4936,
+      "sha256": "349c394f5d4bab476d7cfdfc965afa6f256202f80922636c7897ff1b08408431"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/conditional_qr_horizon_spectrum.csv",
+      "bytes": 1501,
+      "sha256": "864aecd8fcad30e4bfac160a51cb7c41fb96d9447deb69faebcd3da407923bc8"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/full_rf_jacobian_fd_test.json",
+      "bytes": 784,
+      "sha256": "cf166e5d80b0375893641a3ef5baf3086174eb5c6a407d9aace4f5ac09ec51ed"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/phase_locked_perturbation_reanalysis.csv",
+      "bytes": 3297,
+      "sha256": "6761b1d1bb58226ebaca7bcc7c726025bb8dc7d0b7ad6c3ecf75cbe5d69b1d09"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/short_dop853_perturbation_summary.json",
+      "bytes": 12822,
+      "sha256": "7e9f8f24aed4726839f2d55126c20ad0145c19fc69e1893a3d51cc231a644ec9"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/short_dop853_perturbation_trajectories.npz",
+      "bytes": 219729,
+      "sha256": "6e2a07b0d3cef3338febcc4f9c7a5389b0d7f8aa8a9819cdfe488d991e4b1577"
+    },
+    {
+      "path": "research/v17c/v17c_22/results/stability_evidence_audit.json",
+      "bytes": 12396,
+      "sha256": "7290fd5f894e3b14f5763495b4b0da18aedda049e369b7a2cbb0765b8d113a0e"
+    },
+    {
+      "path": "research/v17c/v17c_22/SESSION_HANDOFF.md",
+      "bytes": 3671,
+      "sha256": "87553ec5554c20158c94604d5527664b2b58ebca0ee5551d1bb039b8dbca9eee"
+    },
+    {
+      "path": "research/v17c/v17c_22/STABLE_COUNTERROTATION_THEORY_RU.md",
+      "bytes": 11284,
+      "sha256": "43ce2acfac30b0aefc591efeb4c00aad580b62b48844d44fb5f5cfe9fedc877d"
+    },
+    {
+      "path": "research/v17c/v17c_22/TRANSVERSE_ATTRACTION_RU.md",
+      "bytes": 5675,
+      "sha256": "ee0d033a477f00c80f8fad7ed8aa2f10b448eef064e1ff665bef5c8d15a7bf51"
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "research/v17c/v17c_12b/model/field_model.json",
+      "bytes": 1473,
+      "sha256": "3e61c2b72629cb36684f182eaa52336d6d4f2439a74b80a17b684ed17b60354d"
+    },
+    {
+      "path": "research/v17c/v17c_20a/results/extended_qr/refine12_sobol17_240000p_seed__100p_transient__20000p_extqr__s32_q20/result.json",
+      "bytes": 158339,
+      "sha256": "ca9789792d29c0bd8bdd01a9a28c4a5e3f8e6e13e4468064349bb4336b2398a2"
+    },
+    {
+      "path": "research/v17c/v17c_20a/results/lyapunov/refine12_sobol17_240000p_seed__100p_transient__50000p_qr__s32_q20/result.json",
+      "bytes": 788422,
+      "sha256": "83a3f684e4fdfbf96b1ecb9c105b1b2a8ddc8de3e9b7694c58e42ce63c315344"
+    },
+    {
+      "path": "research/v17c/v17c_20a/results/lyapunov_horizon_fits.json",
+      "bytes": 72729,
+      "sha256": "f3eea7830a15a9c66dcecd7d47d27876ae4e47b358dc23aad2d5b8272ab075ec"
+    },
+    {
+      "path": "research/v17c/v17c_20a/results/perturbations/refine12_sobol17_240000p_seed_5000p_phase_locked.json",
+      "bytes": 34699,
+      "sha256": "cfdd7407450bd4ee0df989c151767ef7cace959de22d1de27fe76d8be1d5e1e5"
+    },
+    {
+      "path": "research/v17c/v17c_20a/results/stroboscopic/refine12_sobol17_240000p_seed_100p_transient_20000p_every_rf1.npz",
+      "bytes": 3296200,
+      "sha256": "f7665edea7bfd5daf3f20111b8c478815ba4086f9af18a0607b3daaa9f5b2c4b"
+    },
+    {
+      "path": "research/v17c/v17c_20b/code/dop853_independent.py",
+      "bytes": 3944,
+      "sha256": "f1118f98768e72f06d3ab4343fa4ed118efe8e689499d65fd464963204eea0d7"
+    },
+    {
+      "path": "research/v17c/v17c_20b/code/variational_qr.py",
+      "bytes": 9142,
+      "sha256": "45a1920a3d4c60ec6a01ab878ba14dc3071966883fc8032ada6c4609d2edbb85"
+    },
+    {
+      "path": "research/v17c/v17c_20b/results/candidate_parameters.json",
+      "bytes": 18703,
+      "sha256": "6a1db9987b864eab7be176da5bfbacb3f78a5f128e41a83d5be78d6e925b6af8"
+    },
+    {
+      "path": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+      "bytes": 570799,
+      "sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_adiabatic_slow_flow.py",
+      "bytes": 7676,
+      "sha256": "102fc27dc202e22639912066eea6f2462f964ec36c090d5ccda801ecd189ac48"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_harmonic_balance.py",
+      "bytes": 21766,
+      "sha256": "cba9613561d3a75cc8c48155bce75799c7b5198d693d2dfea79d43df37303327"
+    },
+    {
+      "path": "research/v17c/v17c_21a/code/m3_system.py",
+      "bytes": 5211,
+      "sha256": "cd82723a0d5db7f3fd9f9e8bd3fc1a8ff514d56b7249dd232d19575ee6131cab"
+    },
+    {
+      "path": "research/v17c/v17c_21a/results/m3_slowflow_stability.json",
+      "bytes": 22700,
+      "sha256": "e380a9515376ff175a5adf4d55914b9e74bc5c4215bce5a66a5d73edebc6267d"
+    },
+    {
+      "path": "research/v17c/v17c_21b/FULL_RF_BOUNDARY_VALIDATION_RU.md",
+      "bytes": 5233,
+      "sha256": "1a0e088d65c01a54f728f22fa15e613ffb2a73894978f486d2f28f77e4bfe833"
+    },
+    {
+      "path": "research/v17c/v17c_21b/results/full_rf_validation.json",
+      "bytes": 22128,
+      "sha256": "15ae555adf6a5132a6d067b23b874d450f5d5540c38641b0a10d26430fcd4560"
+    }
+  ]
+}

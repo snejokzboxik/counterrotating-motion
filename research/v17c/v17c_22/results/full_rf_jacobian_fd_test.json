@@ -1,0 +1,26 @@
+{
+  "test": "full RF 12D state Jacobian vs central differences of independent NumPy RHS",
+  "seed": 20261124,
+  "samples": 12,
+  "finite_difference_steps": {
+    "position": 2e-06,
+    "velocity": 2e-07
+  },
+  "max_scaled_error": 5.966699356802276e-11,
+  "errors": [
+    2.0730695372088638e-11,
+    1.970122415895389e-11,
+    2.7496501765940805e-11,
+    2.3421636158252107e-11,
+    3.079456828416942e-11,
+    4.621304163983226e-11,
+    5.966699356802276e-11,
+    5.744238418243619e-11,
+    2.9251998392907307e-11,
+    2.2142068994224725e-11,
+    1.9304017612871715e-11,
+    2.1960711027386617e-11
+  ],
+  "expected": "Analytic MFS Hessian, Coulomb derivative, and Schiller-Naumann velocity derivative agree with the RHS finite differences.",
+  "pass": true
+}

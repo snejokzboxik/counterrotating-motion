@@ -1,0 +1,354 @@
+{
+  "study": "V17C.22 short full-RF perturbation recheck",
+  "source_commit": "894c6896ce5927371708037ffa4a4021189d2b54",
+  "source_candidate_registry": "research/v17c/v17c_20b/results/candidate_parameters.json",
+  "trajectory_source": "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_trajectory.npz",
+  "trajectory_sha256": "3dd89790f75effe7bb40fb2d3107dd540cff74a3ef8225093c983c40c5122435",
+  "model": "Full 12D V20B equations, complete eight-mode MFS field, two RF phases, Coulomb, ideal DC quadrupole, gravity, Cunningham-corrected Stokes and Schiller-Naumann drag; polarization off; infinite rods.",
+  "parameters_unchanged": [
+    0.03492413282400757,
+    0.15631667332941065,
+    3.2196773638017477,
+    0.015388559140477825,
+    0.10963763906505944,
+    9.747265456858355e-06,
+    0.24452307123064748,
+    0.17736598731050257
+  ],
+  "qratio": 3.4490536225028334,
+  "protocol": "Two exact archived late RF1 states; reference plus radial, azimuthal, axial, and tangential-velocity perturbations at fixed RF phases; 300-period DOP853 local diagnostic.",
+  "elapsed_wall_seconds": 168.23209580010734,
+  "runs": [
+    {
+      "phase_start_rad": [
+        2.306674444169289,
+        0.2870045842730349
+      ],
+      "phase_end_rad": [
+        2.3066744441693743,
+        5.962034985324983
+      ],
+      "rows": [
+        {
+          "case": "reference",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.09511587782683345,
+            -0.09239153238276808
+          ],
+          "late_frequency_Hz": [
+            0.047557938913416725,
+            -0.04619576619138404
+          ],
+          "late_mean_radius_R": [
+            0.5887751232421501,
+            0.7696783941800269
+          ],
+          "late_radius_std_R": [
+            0.009600046387902747,
+            0.007348555484245282
+          ],
+          "late_mean_z_R": [
+            -0.32211900666985527,
+            -0.8539665459950652
+          ],
+          "minimum_pair_center_distance_R": 0.5606240243926468,
+          "pair_surface_clearance_R": 0.5482858256299646,
+          "maximum_phase_locked_state_distance_metric": 0.0,
+          "final_phase_locked_state_distance_metric": 0.0,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_radial_position_1e-4R",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.09511677146607334,
+            -0.0923916548307464
+          ],
+          "late_frequency_Hz": [
+            0.04755838573303667,
+            -0.046195827415373196
+          ],
+          "late_mean_radius_R": [
+            0.5887721211339956,
+            0.769678388955629
+          ],
+          "late_radius_std_R": [
+            0.009601751194660049,
+            0.007348555839182691
+          ],
+          "late_mean_z_R": [
+            -0.32211903235165656,
+            -0.8539665394170731
+          ],
+          "minimum_pair_center_distance_R": 0.5606235293965892,
+          "pair_surface_clearance_R": 0.548285330633907,
+          "maximum_phase_locked_state_distance_metric": 0.007184334523993906,
+          "final_phase_locked_state_distance_metric": 0.002550450466026677,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_azimuth_1e-4rad",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.0951166287408052,
+            -0.09239163527685013
+          ],
+          "late_frequency_Hz": [
+            0.04755831437040261,
+            -0.046195817638425056
+          ],
+          "late_mean_radius_R": [
+            0.588772600328822,
+            0.7696783897882177
+          ],
+          "late_radius_std_R": [
+            0.00960147909563993,
+            0.007348555782692757
+          ],
+          "late_mean_z_R": [
+            -0.3221190282523326,
+            -0.8539665404670994
+          ],
+          "minimum_pair_center_distance_R": 0.5606236075974363,
+          "pair_surface_clearance_R": 0.5482854088347542,
+          "maximum_phase_locked_state_distance_metric": 0.004440571171815598,
+          "final_phase_locked_state_distance_metric": 0.0021435002707790324,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_axial_position_1e-4R",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.09511587785117254,
+            -0.09239153238351795
+          ],
+          "late_frequency_Hz": [
+            0.04755793892558627,
+            -0.046195766191758976
+          ],
+          "late_mean_radius_R": [
+            0.5887751231577703,
+            0.7696783941797072
+          ],
+          "late_radius_std_R": [
+            0.009600046435838552,
+            0.007348555484278002
+          ],
+          "late_mean_z_R": [
+            -0.32211900667056487,
+            -0.8539665459948836
+          ],
+          "minimum_pair_center_distance_R": 0.5606240243792221,
+          "pair_surface_clearance_R": 0.5482858256165399,
+          "maximum_phase_locked_state_distance_metric": 0.002038181235769581,
+          "final_phase_locked_state_distance_metric": 7.174179195433383e-08,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_tangential_velocity_1e-4scale",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.09511589527771386,
+            -0.09239153477657777
+          ],
+          "late_frequency_Hz": [
+            0.04755794763885693,
+            -0.04619576738828888
+          ],
+          "late_mean_radius_R": [
+            0.5887750645797234,
+            0.7696783940779035
+          ],
+          "late_radius_std_R": [
+            0.009600079703553975,
+            0.00734855549118412
+          ],
+          "late_mean_z_R": [
+            -0.32211900717169756,
+            -0.8539665458665331
+          ],
+          "minimum_pair_center_distance_R": 0.5606240146038568,
+          "pair_surface_clearance_R": 0.5482858158411746,
+          "maximum_phase_locked_state_distance_metric": 0.00010328632340954934,
+          "final_phase_locked_state_distance_metric": 4.9858471714024324e-05,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        }
+      ],
+      "source_period": 238000,
+      "horizon_rf1_periods": 300,
+      "steps_per_rf1_period_maximum": 96,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "nfev": 362081,
+      "success": true,
+      "phase_rule": "phase0 + 2*pi*(1,nu)*absolute_RF1_period; local solve time starts at zero only after rebasing both RF phases to the archived absolute time"
+    },
+    {
+      "phase_start_rad": [
+        2.3066744441521223,
+        2.5158238505715005
+      ],
+      "phase_end_rad": [
+        2.306674444152094,
+        1.9076689444444668
+      ],
+      "rows": [
+        {
+          "case": "reference",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.12404184862582299,
+            -0.09612849680646203
+          ],
+          "late_frequency_Hz": [
+            0.062020924312911486,
+            -0.048064248403231015
+          ],
+          "late_mean_radius_R": [
+            0.523749012799388,
+            0.7645746634658978
+          ],
+          "late_radius_std_R": [
+            0.00992470262849832,
+            0.008603878050741599
+          ],
+          "late_mean_z_R": [
+            -0.32248301052805955,
+            -0.8538630241377108
+          ],
+          "minimum_pair_center_distance_R": 0.5673359638172399,
+          "pair_surface_clearance_R": 0.5549977650545578,
+          "maximum_phase_locked_state_distance_metric": 0.0,
+          "final_phase_locked_state_distance_metric": 0.0,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_radial_position_1e-4R",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.12404272116384155,
+            -0.09612847873883361
+          ],
+          "late_frequency_Hz": [
+            0.06202136058192077,
+            -0.048064239369416804
+          ],
+          "late_mean_radius_R": [
+            0.5237467276525738,
+            0.7645746677089661
+          ],
+          "late_radius_std_R": [
+            0.009923265177577658,
+            0.008603877228629283
+          ],
+          "late_mean_z_R": [
+            -0.3224830473043744,
+            -0.8538630132661548
+          ],
+          "minimum_pair_center_distance_R": 0.567337110191254,
+          "pair_surface_clearance_R": 0.5549989114285718,
+          "maximum_phase_locked_state_distance_metric": 0.007704248139220547,
+          "final_phase_locked_state_distance_metric": 0.0021922322370718926,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_azimuth_1e-4rad",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.12404292779845777,
+            -0.09612847448821905
+          ],
+          "late_frequency_Hz": [
+            0.062021463899228885,
+            -0.048064237244109534
+          ],
+          "late_mean_radius_R": [
+            0.5237461866468875,
+            0.7645746686951508
+          ],
+          "late_radius_std_R": [
+            0.009922924816614368,
+            0.00860387703597865
+          ],
+          "late_mean_z_R": [
+            -0.32248305601200794,
+            -0.8538630106920558
+          ],
+          "minimum_pair_center_distance_R": 0.5673373821952673,
+          "pair_surface_clearance_R": 0.5549991834325851,
+          "maximum_phase_locked_state_distance_metric": 0.003282347274546772,
+          "final_phase_locked_state_distance_metric": 0.002711325624483621,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_axial_position_1e-4R",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.12404184883677256,
+            -0.09612849676398649
+          ],
+          "late_frequency_Hz": [
+            0.06202092441838628,
+            -0.048064248381993246
+          ],
+          "late_mean_radius_R": [
+            0.5237490122379572,
+            0.7645746634916261
+          ],
+          "late_radius_std_R": [
+            0.00992470227536092,
+            0.00860387804783942
+          ],
+          "late_mean_z_R": [
+            -0.32248301053760897,
+            -0.8538630241348875
+          ],
+          "minimum_pair_center_distance_R": 0.567335964095793,
+          "pair_surface_clearance_R": 0.5549977653331108,
+          "maximum_phase_locked_state_distance_metric": 0.0020413082456947197,
+          "final_phase_locked_state_distance_metric": 5.383159032099841e-07,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        },
+        {
+          "case": "p1_tangential_velocity_1e-4scale",
+          "late_window_periods": 100,
+          "late_turns": [
+            0.12404187724261713,
+            -0.09612849621379732
+          ],
+          "late_frequency_Hz": [
+            0.06202093862130856,
+            -0.04806424810689866
+          ],
+          "late_mean_radius_R": [
+            0.5237489378360047,
+            0.7645746636051655
+          ],
+          "late_radius_std_R": [
+            0.009924655478470563,
+            0.00860387802376686
+          ],
+          "late_mean_z_R": [
+            -0.322483011734357,
+            -0.8538630237811146
+          ],
+          "minimum_pair_center_distance_R": 0.567336001358664,
+          "pair_surface_clearance_R": 0.5549978025959819,
+          "maximum_phase_locked_state_distance_metric": 9.999999999979528e-05,
+          "final_phase_locked_state_distance_metric": 7.190617668095586e-05,
+          "classification": "SHORT_HORIZON_ONLY_NOT_ATTRACTOR_EVIDENCE"
+        }
+      ],
+      "source_period": 240000,
+      "horizon_rf1_periods": 300,
+      "steps_per_rf1_period_maximum": 96,
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "nfev": 362381,
+      "success": true,
+      "phase_rule": "phase0 + 2*pi*(1,nu)*absolute_RF1_period; local solve time starts at zero only after rebasing both RF phases to the archived absolute time"
+    }
+  ],
+  "interpretation_limit": "The horizon is too short for long-term frequency classification and no invariant set is fitted. These trajectories test short-time response and integrator execution only; existing V20A 5000-period perturbation data remain the long-horizon evidence."
+}

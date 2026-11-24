@@ -1,0 +1,388 @@
+{
+  "source_commit": "894c6896ce5927371708037ffa4a4021189d2b54",
+  "baseline_parameters": {
+    "p_corrected": [
+      0.03492413282400757,
+      0.15631667332941065,
+      3.2196773638017477,
+      0.015388559140477825,
+      0.10963763906505944,
+      9.747265456858355e-06,
+      0.24452307123064748,
+      0.17736598731050257
+    ],
+    "qratio": 3.449053622502834,
+    "nu": 3.2196773638017477,
+    "re1_per_speed": 6.643729577002431,
+    "re2_per_speed": 43.76775863741318,
+    "gravity_z": -0.009936213855661315
+  },
+  "source_file_sha256": {
+    "research/v17c/v17c_20a/results/lyapunov/refine12_sobol17_240000p_seed__100p_transient__50000p_qr__s32_q20/result.json": "83a3f684e4fdfbf96b1ecb9c105b1b2a8ddc8de3e9b7694c58e42ce63c315344",
+    "research/v17c/v17c_20a/results/extended_qr/refine12_sobol17_240000p_seed__100p_transient__20000p_extqr__s32_q20/result.json": "ca9789792d29c0bd8bdd01a9a28c4a5e3f8e6e13e4468064349bb4336b2398a2",
+    "research/v17c/v17c_20a/results/lyapunov_horizon_fits.json": "f3eea7830a15a9c66dcecd7d47d27876ae4e47b358dc23aad2d5b8272ab075ec",
+    "research/v17c/v17c_20a/results/perturbations/refine12_sobol17_240000p_seed_5000p_phase_locked.json": "cfdd7407450bd4ee0df989c151767ef7cace959de22d1de27fe76d8be1d5e1e5",
+    "research/v17c/v17c_20a/results/stroboscopic/refine12_sobol17_240000p_seed_100p_transient_20000p_every_rf1.npz": "f7665edea7bfd5daf3f20111b8c478815ba4086f9af18a0607b3daaa9f5b2c4b",
+    "research/v17c/v17c_21a/results/m3_slowflow_stability.json": "e380a9515376ff175a5adf4d55914b9e74bc5c4215bce5a66a5d73edebc6267d",
+    "research/v17c/v17c_20b/results/refine12_240k_corrected_drag_summary.json": "7d37646cedf45815e6404b1b7518a6dfef2fa00d385d50f527861c39aea31ca6"
+  },
+  "conditional_qr": {
+    "horizon_periods": [
+      2000,
+      5000,
+      10000,
+      20000
+    ],
+    "first_two_exponents_at_horizons_per_tau": [
+      [
+        -1.2507424474295315e-05,
+        -0.000803154817720558
+      ],
+      [
+        -4.964561365366401e-06,
+        -0.0003197934567086959
+      ],
+      [
+        -2.3569554742336304e-06,
+        -0.00016011221090238406
+      ],
+      [
+        -1.1310851880532029e-06,
+        -7.931488245422926e-05
+      ]
+    ],
+    "spectrum_50000_periods_per_tau": [
+      -5.269317969719926e-07,
+      -3.2050145214091145e-05,
+      -0.10595962874628251,
+      -0.1059712624975629,
+      -0.11186182946808318,
+      -0.11186375509998224,
+      -0.13006197869792352,
+      -0.13007250277226612,
+      -0.13267416459050252,
+      -0.13268112788725506,
+      -0.2237822629528863,
+      -0.265706262406506
+    ],
+    "sum_per_tau": -1.4506673521962614,
+    "integrated_trace_per_tau": -1.4506343453659531,
+    "sum_trace_absolute_difference_per_tau": 3.3006830308268675e-05,
+    "max_step_per_period": 32,
+    "qr_interval_periods": 20
+  },
+  "extended_qr_20000_periods_per_tau": [
+    0.0,
+    0.0,
+    -1.1310855676670212e-06,
+    -7.931488316906406e-05,
+    -0.10599550890857755,
+    -0.10602275014212528,
+    -0.11189800738611352,
+    -0.11190714668894773,
+    -0.13001709862166652,
+    -0.13004333725047681,
+    -0.13262513560169728,
+    -0.13263480564709595,
+    -0.2237792521723831,
+    -0.2656716588575165
+  ],
+  "extended_exact_external_phase_rates": [
+    1.0,
+    3.2196773638017477
+  ],
+  "m3_adiabatic_slow_flow": {
+    "root_state": [
+      0.5550374649008335,
+      0.0,
+      0.0010944455997807332,
+      -0.3225715212708577,
+      0.0,
+      0.7513382762325129,
+      0.0,
+      -0.0009747968388241109,
+      -0.8538342435180669,
+      0.0
+    ],
+    "eigenvalues_real_imag": [
+      [
+        -0.13253443480993676,
+        0.1612649821585973
+      ],
+      [
+        -0.13253443480993676,
+        -0.1612649821585973
+      ],
+      [
+        -0.25620984616372433,
+        0.0
+      ],
+      [
+        -0.13008494045652724,
+        0.11775791219792213
+      ],
+      [
+        -0.13008494045652724,
+        -0.11775791219792213
+      ],
+      [
+        -0.11153740449024971,
+        0.09113313244681588
+      ],
+      [
+        -0.11153740449024971,
+        -0.09113313244681588
+      ],
+      [
+        -0.1059257146015027,
+        0.020476661334191487
+      ],
+      [
+        -0.1059257146015027,
+        -0.020476661334191487
+      ],
+      [
+        -0.22221882207414864,
+        0.0
+      ]
+    ],
+    "max_real_per_tau": -0.1059257146015027,
+    "inner_solve_status": [
+      "CONVERGED",
+      "CONVERGED"
+    ],
+    "inner_residuals": [
+      1.8561298466125771e-09,
+      2.7813242282357496e-09
+    ],
+    "approximation": "Quasi-steady frozen-torus M3 closure: micromotion is recomputed at each slow state; slow accelerations are omitted from the fast HB operator; Coulomb uses independent-phase ring averages. This is a local adiabatic averaged-flow model, not a full-system Floquet or Lyapunov spectrum."
+  },
+  "phase_locked_perturbations_5000_periods": {
+    "initial_rf_phase": [
+      2.3066744441521223,
+      2.515823851502823
+    ],
+    "directions": {
+      "azimuth_position_p1": {
+        "final_over_initial_distance": [
+          50.00945976647628,
+          50.0094646959509,
+          50.00936389576681,
+          50.00823215135286,
+          49.99691049514575
+        ],
+        "max_over_initial_distance": [
+          53.8458782402561,
+          53.845904636814204,
+          53.8457772003313,
+          53.84451324414425,
+          53.83187587418181
+        ],
+        "finite_rate_per_tau": [
+          1.2279982986235797e-05,
+          1.2280060689828635e-05,
+          1.2280068182703918e-05,
+          1.2279990941043444e-05,
+          1.22792162717846e-05
+        ],
+        "max_abs_late_mean_radius_difference_R": [
+          1.970257290651034e-11,
+          1.970269503104305e-10,
+          1.970246521487695e-09,
+          1.9700223341523326e-08,
+          1.9677805196405274e-07
+        ],
+        "max_abs_late_frequency_difference_Hz": [
+          3.67171570925251e-13,
+          3.67111202548287e-12,
+          3.671075249345179e-11,
+          3.671786971692903e-10,
+          3.6789194399200476e-09
+        ]
+      },
+      "azimuth_position_p2": {
+        "final_over_initial_distance": [
+          23.89641650239411,
+          23.896438730884018,
+          23.896468102112866,
+          23.8967435622827,
+          23.899497262402175
+        ],
+        "max_over_initial_distance": [
+          27.561078617843993,
+          27.561080921164116,
+          27.5611216176779,
+          27.56154329605419,
+          27.565753460571216
+        ],
+        "finite_rate_per_tau": [
+          1.0118971813552964e-05,
+          1.0118960311284948e-05,
+          1.0118964413239767e-05,
+          1.0119009728399268e-05,
+          1.0119464399838007e-05
+        ],
+        "max_abs_late_mean_radius_difference_R": [
+          1.2694068018959115e-11,
+          1.2694045814498622e-10,
+          1.269393479219616e-09,
+          1.2692779050027525e-08,
+          1.2681217076426776e-07
+        ],
+        "max_abs_late_frequency_difference_Hz": [
+          7.798622858601334e-13,
+          7.798720003115989e-12,
+          7.798697104766106e-11,
+          7.79851190568781e-10,
+          7.796664459880365e-09
+        ]
+      },
+      "radial_position_p1": {
+        "final_over_initial_distance": [
+          24.1200866230926,
+          24.12018617141858,
+          24.120211956266296,
+          24.120467517965594,
+          24.123009391195602
+        ],
+        "max_over_initial_distance": [
+          25.970561243657862,
+          25.970551672002387,
+          25.970580233775628,
+          25.97084370486029,
+          25.97347660869332
+        ],
+        "finite_rate_per_tau": [
+          9.654309865283574e-06,
+          9.654497342395072e-06,
+          9.654512435962545e-06,
+          9.654555639494441e-06,
+          9.654954881039505e-06
+        ],
+        "max_abs_late_mean_radius_difference_R": [
+          1.865755328012142e-10,
+          1.8657562161905616e-09,
+          1.8657561495771802e-08,
+          1.8657558842338773e-07,
+          1.8657532536714427e-06
+        ],
+        "max_abs_late_frequency_difference_Hz": [
+          1.2780818070545763e-12,
+          1.2781442570997115e-11,
+          1.278148906158627e-10,
+          1.2781607716672028e-09,
+          1.2782691481694197e-08
+        ]
+      },
+      "tangential_velocity_p1": {
+        "final_over_initial_distance": [
+          0.791090463276523,
+          0.7912201325179017,
+          0.7912301943708507,
+          0.7912298191662841,
+          0.7912301992165538
+        ],
+        "max_over_initial_distance": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "finite_rate_per_tau": [
+          -2.6600692363610774e-06,
+          -2.650795690797767e-06,
+          -2.6501853233542337e-06,
+          -2.6501738297103615e-06,
+          -2.6501653731648137e-06
+        ],
+        "max_abs_late_mean_radius_difference_R": [
+          3.1175062531474396e-13,
+          3.117173186240052e-12,
+          3.117273106312268e-11,
+          3.117265334751096e-10,
+          3.1172584513683432e-09
+        ],
+        "max_abs_late_frequency_difference_Hz": [
+          4.181377466494496e-14,
+          4.192132752045552e-13,
+          4.1927711302847115e-12,
+          4.192785008072519e-11,
+          4.1927909061323376e-10
+        ]
+      },
+      "random_full_state": {
+        "final_over_initial_distance": [
+          0.9432599933354711,
+          0.9434271541913833,
+          0.9434441786549933,
+          0.9434449127673413,
+          0.9434433653283749
+        ],
+        "max_over_initial_distance": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "finite_rate_per_tau": [
+          -2.096471878206128e-06,
+          -2.0898123724388354e-06,
+          -2.0890213104304687e-06,
+          -2.088980587771501e-06,
+          -2.0889801790050534e-06
+        ],
+        "max_abs_late_mean_radius_difference_R": [
+          8.645306692756094e-13,
+          8.645084648151169e-12,
+          8.645117954841908e-11,
+          8.645120175287957e-10,
+          8.645137272722536e-09
+        ],
+        "max_abs_late_frequency_difference_Hz": [
+          3.640837631380123e-14,
+          3.651592916931179e-13,
+          3.65253660650211e-12,
+          3.6526080771093206e-11,
+          3.6525994034919407e-10
+        ]
+      }
+    },
+    "source_period": 240000
+  },
+  "section_record": {
+    "samples": 20001,
+    "start_rf1_period": 0.0,
+    "end_rf1_period": 20000.0,
+    "sampling_interval_rf1_periods": 1.0,
+    "phase2_start_end_rad": [
+      2.3131055494606727,
+      5.751742291283826
+    ],
+    "interpretation": "Single projected orbit record; not a reconstruction proof, no invariant dimension assigned."
+  },
+  "short_full_rf_perturbation_recheck": {
+    "summary_file_sha256": "7e9f8f24aed4726839f2d55126c20ad0145c19fc69e1893a3d51cc231a644ec9",
+    "trajectory_file_sha256": "6e2a07b0d3cef3338febcc4f9c7a5389b0d7f8aa8a9819cdfe488d991e4b1577",
+    "source_periods": [
+      238000,
+      240000
+    ],
+    "horizon_rf1_periods": 300,
+    "method": "Independent Python NumPy RHS with SciPy DOP853; 12D state variational Jacobian checked separately against centered differences.",
+    "maximum_steps_per_rf1_period": 96,
+    "rtol_atol": [
+      1e-09,
+      1e-11
+    ],
+    "interpretation": "Short-horizon local response only. Radial/azimuthal phase-locked state distances grow to about 2e-3 to 2.7e-3 from 1e-4 seeds, while their late-window mean radii/frequencies remain close; axial perturbations decay strongly in this sample. The horizon does not resolve long-term orbital frequencies or prove attraction."
+  },
+  "numerical_conclusion": {
+    "positive_conditional_exponent_seen_in_archives": false,
+    "two_weak_conditional_directions_finite_horizon": true,
+    "m3_has_ten_stable_linear_modes": true,
+    "attractor_or_torus_proved": false,
+    "strongest_status": "LONG_LIVED_COUNTERROTATION; weak phase-like directions remain unresolved between true neutrality and very slow contraction"
+  }
+}
